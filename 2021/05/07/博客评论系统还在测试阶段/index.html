@@ -150,15 +150,15 @@
   const init = () => {
     twikoo.init(Object.assign({
       el: '#twikoo-wrap',
-      envId: '',
-      region: ''
+      envId: 'env-9gzgtnd6259035cb',
+      region: 'ap-shanghai'
     }, null))
   }
 
   const getCount = () => {
     twikoo.getCommentsCount({
-      envId: '',
-      region: '',
+      envId: 'env-9gzgtnd6259035cb',
+      region: 'ap-shanghai',
       urls: [window.location.pathname],
       includeReply: false
     }).then(function (res) {
