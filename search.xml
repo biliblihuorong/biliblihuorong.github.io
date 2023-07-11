@@ -1,6 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Linux安装宝塔面板</title>
+    <url>/posts/21-8-3/</url>
+    <content><![CDATA[<html><head></head><body><blockquote>
+<p>本篇，是未其他博文服务，帮助小白更容易接触，还能节省博文写作时间</p>
+</blockquote>
+<h1 id="连接服务器"><a href="#连接服务器" class="headerlink" title="连接服务器"></a>连接服务器</h1><p>你可以购买腾讯云，阿里云等云服务厂商。</p>
+<p>你也可以在虚拟机或者已经退役的电脑上安装完Linux继续安装宝塔面板。</p>
+<h2 id="云服务厂商连接"><a href="#云服务厂商连接" class="headerlink" title="云服务厂商连接"></a>云服务厂商连接</h2><p><code>这里以腾讯云为例</code></p>
+<ol>
+<li>进入控制台一般是整个web端的右上角。</li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/biliblihuorong/Resources@master/Image/20210804122647.png" alt="image-20210804122645077"></p>
+<ol start="2">
+<li>进入这个页面首先我们需要提一下权限，在里面输入<code>sudo su</code>即可</li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/biliblihuorong/Resources@master/Image/20210804122851.png" alt="image-20210804122848569"></p>
+<h2 id="使用ssh连接"><a href="#使用ssh连接" class="headerlink" title="使用ssh连接"></a>使用ssh连接</h2><p>ssh连接的话你可以使用Xshell或其他的ssh连接工具,如果你是Windows10或者是MAC的话可以直接在终端连接</p>
+<p>以Windows10为例,打开<code>cmd</code>输入用户名@主机地址</p>
+<p>tips:一般用户名就是root</p>
+<p>弹出这些东西:</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">C:\Users\shell&gt;ssh root@10.10.10.194</span><br><span class="line">The authenticity of host <span class="string">'10.10.10.194 (10.10.10.194)'</span> can<span class="string">'t be established.</span></span><br><span class="line"><span class="string">ECDSA key fingerprint is SHA256:wTW6E3eH1uT9NXqPIYJdfBFWSv9LyAenGMIKKAJD1TA.</span></span><br><span class="line"><span class="string">Are you sure you want to continue connecting (yes/no/[fingerprint])?</span></span><br><span class="line"><span class="string"></span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>输入<code>yes</code>回车</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">C:\Users\shell&gt;ssh root@10.10.10.194</span><br><span class="line">The authenticity of host <span class="string">'10.10.10.194 (10.10.10.194)'</span> can<span class="string">'t be established.</span></span><br><span class="line"><span class="string">ECDSA key fingerprint is SHA256:wTW6E3eH1uT9NXqPIYJdfBFWSv9LyAenGMIKKAJD1TA.</span></span><br><span class="line"><span class="string">Are you sure you want to continue connecting (yes/no/[fingerprint])? yes</span></span><br><span class="line"><span class="string">Warning: Permanently added '</span>10.10.10.194<span class="string">' (ECDSA) to the list of known hosts.</span></span><br><span class="line"><span class="string">root@10.10.10.194'</span>s password:</span><br></pre></td></tr></tbody></table></figure>
+
+<p>现在输入你的密码,密码输入时不会显示密码.</p>
+<h1 id="安装宝塔"><a href="#安装宝塔" class="headerlink" title="安装宝塔"></a>安装宝塔</h1><p>[点击这个连接跳转到宝塔官网安装界面.][<a href="https://www.bt.cn/download/linux.html]">https://www.bt.cn/download/linux.html]</a></p>
+<p><img src="https://cdn.jsdelivr.net/gh/biliblihuorong/Resources@master/Image/20210806125447.png" alt="image-20210806125445624"></p>
+<p>根据你用的Linux的发行商来复制哪一个指令,执行.</p>
+<p><img src="https://cdn.jsdelivr.net/gh/biliblihuorong/Resources@master/Image/20210806125859.png" alt="image-20210806125629698"></p>
+<p>输入<code>y</code>回车.</p>
+<p>出现这样的记得保存一下账号和密码,如果你是云服务商的服务器请到防火墙放行8888端口才可以.</p>
+<p><img src="https://cdn.jsdelivr.net/gh/biliblihuorong/Resources@master/Image/20210806125902.png" alt="image-20210806125855734"></p>
+</body></html>]]></content>
+      <categories>
+        <category>网络技术</category>
+      </categories>
+      <tags>
+        <tag>宝塔</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>markdown使用方法</title>
     <url>/posts/17-1/</url>
     <content><![CDATA[<html><head></head><body><p>我身为一代神鸽,建立博客那么就了,更新几篇我原创的博文或者.（关键还是我不会正在学很多东西~逃</p>
@@ -50,45 +92,26 @@
       </tags>
   </entry>
   <entry>
-    <title>Linux安装宝塔面板</title>
-    <url>/posts/21-8-3/</url>
-    <content><![CDATA[<html><head></head><body><blockquote>
-<p>本篇，是未其他博文服务，帮助小白更容易接触，还能节省博文写作时间</p>
-</blockquote>
-<h1 id="连接服务器"><a href="#连接服务器" class="headerlink" title="连接服务器"></a>连接服务器</h1><p>你可以购买腾讯云，阿里云等云服务厂商。</p>
-<p>你也可以在虚拟机或者已经退役的电脑上安装完Linux继续安装宝塔面板。</p>
-<h2 id="云服务厂商连接"><a href="#云服务厂商连接" class="headerlink" title="云服务厂商连接"></a>云服务厂商连接</h2><p><code>这里以腾讯云为例</code></p>
-<ol>
-<li>进入控制台一般是整个web端的右上角。</li>
-</ol>
-<p><img src="https://cdn.jsdelivr.net/gh/biliblihuorong/Resources@master/Image/20210804122647.png" alt="image-20210804122645077"></p>
-<ol start="2">
-<li>进入这个页面首先我们需要提一下权限，在里面输入<code>sudo su</code>即可</li>
-</ol>
-<p><img src="https://cdn.jsdelivr.net/gh/biliblihuorong/Resources@master/Image/20210804122851.png" alt="image-20210804122848569"></p>
-<h2 id="使用ssh连接"><a href="#使用ssh连接" class="headerlink" title="使用ssh连接"></a>使用ssh连接</h2><p>ssh连接的话你可以使用Xshell或其他的ssh连接工具,如果你是Windows10或者是MAC的话可以直接在终端连接</p>
-<p>以Windows10为例,打开<code>cmd</code>输入用户名@主机地址</p>
-<p>tips:一般用户名就是root</p>
-<p>弹出这些东西:</p>
-<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">C:\Users\shell&gt;ssh root@10.10.10.194</span><br><span class="line">The authenticity of host <span class="string">'10.10.10.194 (10.10.10.194)'</span> can<span class="string">'t be established.</span></span><br><span class="line"><span class="string">ECDSA key fingerprint is SHA256:wTW6E3eH1uT9NXqPIYJdfBFWSv9LyAenGMIKKAJD1TA.</span></span><br><span class="line"><span class="string">Are you sure you want to continue connecting (yes/no/[fingerprint])?</span></span><br><span class="line"><span class="string"></span></span><br></pre></td></tr></tbody></table></figure>
+    <title>ArchLinux 使用体验</title>
+    <url>/posts/ArchLinux/</url>
+    <content><![CDATA[<html><head></head><body><img src="https://img.c-dreamer.top/i/1/2023/02/09/63e4c0b786de8.webp" alt="archlinux-logo-dark-1200dpi.webp" style="zoom: 25%;">
 
-<p>输入<code>yes</code>回车</p>
-<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">C:\Users\shell&gt;ssh root@10.10.10.194</span><br><span class="line">The authenticity of host <span class="string">'10.10.10.194 (10.10.10.194)'</span> can<span class="string">'t be established.</span></span><br><span class="line"><span class="string">ECDSA key fingerprint is SHA256:wTW6E3eH1uT9NXqPIYJdfBFWSv9LyAenGMIKKAJD1TA.</span></span><br><span class="line"><span class="string">Are you sure you want to continue connecting (yes/no/[fingerprint])? yes</span></span><br><span class="line"><span class="string">Warning: Permanently added '</span>10.10.10.194<span class="string">' (ECDSA) to the list of known hosts.</span></span><br><span class="line"><span class="string">root@10.10.10.194'</span>s password:</span><br></pre></td></tr></tbody></table></figure>
-
-<p>现在输入你的密码,密码输入时不会显示密码.</p>
-<h1 id="安装宝塔"><a href="#安装宝塔" class="headerlink" title="安装宝塔"></a>安装宝塔</h1><p>[点击这个连接跳转到宝塔官网安装界面.][<a href="https://www.bt.cn/download/linux.html]">https://www.bt.cn/download/linux.html]</a></p>
-<p><img src="https://cdn.jsdelivr.net/gh/biliblihuorong/Resources@master/Image/20210806125447.png" alt="image-20210806125445624"></p>
-<p>根据你用的Linux的发行商来复制哪一个指令,执行.</p>
-<p><img src="https://cdn.jsdelivr.net/gh/biliblihuorong/Resources@master/Image/20210806125859.png" alt="image-20210806125629698"></p>
-<p>输入<code>y</code>回车.</p>
-<p>出现这样的记得保存一下账号和密码,如果你是云服务商的服务器请到防火墙放行8888端口才可以.</p>
-<p><img src="https://cdn.jsdelivr.net/gh/biliblihuorong/Resources@master/Image/20210806125902.png" alt="image-20210806125855734"></p>
+<h1 id="关于-ArchLinux"><a href="#关于-ArchLinux" class="headerlink" title="关于 ArchLinux"></a>关于 ArchLinux</h1><p>Arch 是Linux发行版的一个分支，arch的理念是完全自定义，没有所谓的系统版本，全部是滚动升级（长时间不滚，会滚炸，当然我每天开机第一件事就是滚一下）</p>
+<h1 id="正片开始"><a href="#正片开始" class="headerlink" title="正片开始"></a>正片开始</h1><h2 id="为什么非要选择Arch？"><a href="#为什么非要选择Arch？" class="headerlink" title="为什么非要选择Arch？"></a>为什么非要选择Arch？</h2><p>其实如果你要是在非中国大陆的话，我觉得你使用Ubuntu 或者其他的发行版大同小异，因为我看中了 Arch的万能的AUR软件仓库源，这里面有各位大佬自封装的软件，庞大的软件仓库，例如微信 需要wine 以及烦琐的配置 AUR 可以直接解决这些问题。</p>
+<h2 id="听说安装Arch很难？"><a href="#听说安装Arch很难？" class="headerlink" title="听说安装Arch很难？"></a>听说安装Arch很难？</h2><p>是的 Arch 的安装异常的烦琐切复杂 ，不过如果你擅用<code>Search</code>和<a href="https://wiki.archlinuxcn.org/wiki/%E9%A6%96%E9%A1%B5" title="ArchWiKi">ArchWiki</a> 和时间耐心的研究，其实很简单，我是一个纯Linux小白，在查阅ArchWiki花费大量的时间研究之后也安装成功。</p>
+<h2 id="我现在的状态？"><a href="#我现在的状态？" class="headerlink" title="我现在的状态？"></a>我现在的状态？</h2><p>我现在给电脑装载了双系统（怕arch崩了就无了） win11+arch</p>
+<p><img src="https://img.c-dreamer.top/i/1/2023/02/09/63e4bbfff1e9c.webp" alt="ArchLinux 配置.webp"></p>
+<h2 id="使用体验"><a href="#使用体验" class="headerlink" title="使用体验"></a>使用体验</h2><p>我用Arch差不多3个月了，除了刚开始的不适逐渐慢慢适应之后逐渐习惯，但我偶尔也很想换回windows，因为我现在还没有适应在linux只用一个根的感念，而不像windows的区概念（而且我分区还很多）。</p>
+<h1 id="你要现在立刻安装Arch？"><a href="#你要现在立刻安装Arch？" class="headerlink" title="你要现在立刻安装Arch？"></a>你要现在立刻安装Arch？</h1><h3 id="你会首先面临的问题"><a href="#你会首先面临的问题" class="headerlink" title="你会首先面临的问题"></a>你会首先面临的问题</h3><h4 id="游戏生态"><a href="#游戏生态" class="headerlink" title="游戏生态"></a>游戏生态</h4><p>首先Linux上虽然有steam 的Steam Play的加持，游戏生态逐步扩大，但还是有诸多游戏不能游玩，详情可以看这个<a href="https://www.protondb.com/" title="protondb">protondb</a>上搜索🔍，还有原神属于能玩的级别但是配置很烦琐。</p>
+<h4 id="软件的生态"><a href="#软件的生态" class="headerlink" title="软件的生态"></a>软件的生态</h4><p>虽然有AUR 的加持但仍然有很多软件只有windows平台还用<code>wine</code>调教不好它例如<code>office</code> ，但这不是说你不能使用这些功能，Linux有很多平替软件可以选择例如 <code>libreoffice</code> or <code>WPS</code>。</p>
+<h4 id="使用习惯"><a href="#使用习惯" class="headerlink" title="使用习惯"></a>使用习惯</h4><p>就像我前面提到的 Linux和Windows对于磁盘区的概念来说，以及你要面临一个新的桌面使用环境。</p>
 </body></html>]]></content>
       <categories>
-        <category>网络技术</category>
+        <category>生活随想</category>
       </categories>
       <tags>
-        <tag>宝塔</tag>
+        <tag>Arch</tag>
+        <tag>Linux</tag>
       </tags>
   </entry>
   <entry>
@@ -141,29 +164,6 @@
         <tag>ufw</tag>
         <tag>IPtables</tag>
         <tag>防火墙</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>ArchLinux 使用体验</title>
-    <url>/posts/ArchLinux/</url>
-    <content><![CDATA[<html><head></head><body><img src="https://img.c-dreamer.top/i/1/2023/02/09/63e4c0b786de8.webp" alt="archlinux-logo-dark-1200dpi.webp" style="zoom: 25%;">
-
-<h1 id="关于-ArchLinux"><a href="#关于-ArchLinux" class="headerlink" title="关于 ArchLinux"></a>关于 ArchLinux</h1><p>Arch 是Linux发行版的一个分支，arch的理念是完全自定义，没有所谓的系统版本，全部是滚动升级（长时间不滚，会滚炸，当然我每天开机第一件事就是滚一下）</p>
-<h1 id="正片开始"><a href="#正片开始" class="headerlink" title="正片开始"></a>正片开始</h1><h2 id="为什么非要选择Arch？"><a href="#为什么非要选择Arch？" class="headerlink" title="为什么非要选择Arch？"></a>为什么非要选择Arch？</h2><p>其实如果你要是在非中国大陆的话，我觉得你使用Ubuntu 或者其他的发行版大同小异，因为我看中了 Arch的万能的AUR软件仓库源，这里面有各位大佬自封装的软件，庞大的软件仓库，例如微信 需要wine 以及烦琐的配置 AUR 可以直接解决这些问题。</p>
-<h2 id="听说安装Arch很难？"><a href="#听说安装Arch很难？" class="headerlink" title="听说安装Arch很难？"></a>听说安装Arch很难？</h2><p>是的 Arch 的安装异常的烦琐切复杂 ，不过如果你擅用<code>Search</code>和<a href="https://wiki.archlinuxcn.org/wiki/%E9%A6%96%E9%A1%B5" title="ArchWiKi">ArchWiki</a> 和时间耐心的研究，其实很简单，我是一个纯Linux小白，在查阅ArchWiki花费大量的时间研究之后也安装成功。</p>
-<h2 id="我现在的状态？"><a href="#我现在的状态？" class="headerlink" title="我现在的状态？"></a>我现在的状态？</h2><p>我现在给电脑装载了双系统（怕arch崩了就无了） win11+arch</p>
-<p><img src="https://img.c-dreamer.top/i/1/2023/02/09/63e4bbfff1e9c.webp" alt="ArchLinux 配置.webp"></p>
-<h2 id="使用体验"><a href="#使用体验" class="headerlink" title="使用体验"></a>使用体验</h2><p>我用Arch差不多3个月了，除了刚开始的不适逐渐慢慢适应之后逐渐习惯，但我偶尔也很想换回windows，因为我现在还没有适应在linux只用一个根的感念，而不像windows的区概念（而且我分区还很多）。</p>
-<h1 id="你要现在立刻安装Arch？"><a href="#你要现在立刻安装Arch？" class="headerlink" title="你要现在立刻安装Arch？"></a>你要现在立刻安装Arch？</h1><h3 id="你会首先面临的问题"><a href="#你会首先面临的问题" class="headerlink" title="你会首先面临的问题"></a>你会首先面临的问题</h3><h4 id="游戏生态"><a href="#游戏生态" class="headerlink" title="游戏生态"></a>游戏生态</h4><p>首先Linux上虽然有steam 的Steam Play的加持，游戏生态逐步扩大，但还是有诸多游戏不能游玩，详情可以看这个<a href="https://www.protondb.com/" title="protondb">protondb</a>上搜索🔍，还有原神属于能玩的级别但是配置很烦琐。</p>
-<h4 id="软件的生态"><a href="#软件的生态" class="headerlink" title="软件的生态"></a>软件的生态</h4><p>虽然有AUR 的加持但仍然有很多软件只有windows平台还用<code>wine</code>调教不好它例如<code>office</code> ，但这不是说你不能使用这些功能，Linux有很多平替软件可以选择例如 <code>libreoffice</code> or <code>WPS</code>。</p>
-<h4 id="使用习惯"><a href="#使用习惯" class="headerlink" title="使用习惯"></a>使用习惯</h4><p>就像我前面提到的 Linux和Windows对于磁盘区的概念来说，以及你要面临一个新的桌面使用环境。</p>
-</body></html>]]></content>
-      <categories>
-        <category>生活随想</category>
-      </categories>
-      <tags>
-        <tag>Arch</tag>
-        <tag>Linux</tag>
       </tags>
   </entry>
   <entry>
@@ -384,9 +384,9 @@
         <category>网络技术</category>
       </categories>
       <tags>
+        <tag>Linux</tag>
         <tag>IPtables</tag>
         <tag>防火墙</tag>
-        <tag>Linux</tag>
         <tag>网络安全</tag>
       </tags>
   </entry>
@@ -759,6 +759,61 @@
       </tags>
   </entry>
   <entry>
+    <title>关于启动CDN发生一些难受的小bug</title>
+    <url>/posts/cdn/</url>
+    <content><![CDATA[<html><head></head><body><p>好久没有更新了，如果你要问我这段鸽了半年干了什么，我只能说啥事情都没有干，还是没有想好写什么,但是我一定会在6月结束会高产的。 当然关于:部署多的CDN同时加速的网上教程也很少（也可能我没有找到太多）</p>
+<blockquote>
+<p><strong>在这个星期又又又白嫖了Tencent Cloud的CDN活动</strong>，上次白嫖了一百块无门槛优惠卷，貌似我的域名在Tencent cloud只是首年续费了9块剩下5年都没有花过其他的了。</p>
+</blockquote>
+<p>国内用腾讯的国外用的是CF，现在也是国内国外都使用的CDN(我是不会告诉你我原来没有使用CDN的)</p>
+<h2 id="bug总结"><a href="#bug总结" class="headerlink" title="bug总结:"></a>bug总结:</h2><ol>
+<li> https的问题: 使用腾讯CDN就麻烦不行，CF特别顺畅没有发生过https的问题.在腾讯云的CDN想开https你需要上传你的证书才可以。</li>
+<li> 开启CDN之后WordPress出现无法登陆后台的问题，腾讯需要**/wp-admin**变成不缓存即可。 3.指开启国内加速，可能导致国外的朋友出现无法访问的问题: 这个问题我还发过工单给腾讯云,简单总结一句话,你开国内的加速，跟国外有什么关系。 这个问题我只遇到过一次，有几率会抽风一下。 如果嫌麻烦的话你就顺便在腾讯也开启境外的，不麻烦的CF的好处就来了。 4.还有一个就是评论不会实时同步,其实这也不算是bug,毕竟CDN也不可能做到全访问实时的不过也不会特别慢。</li>
+</ol>
+<p>如果有错的地方欢迎指出,萌新下手麻烦轻一点.</p>
+</body></html>]]></content>
+      <categories>
+        <category>网络技术</category>
+      </categories>
+      <tags>
+        <tag>CDN</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>解决Hexo博客框架中Twikoo评论框架路径不一致的问题</title>
+    <url>/posts/fix-hexo-twikoocomment-path-inconsistency/</url>
+    <content><![CDATA[<html><head></head><body><p>引言：</p>
+<p>在我继续修理博客的过程中，没错，你没有看错，我陆续从今年1月开始维护博客至今。主要原因是我很忙，维护工作也需要时间，而且在修复之后还需要处理一些细节问题，这是我之前没有注意到的。由于当时静态资源几乎全部丢失，现在我已经基本上优化了访问速度，这使得我的Hexo博客框架名副其实。随着我对网站的打理以及撰写一些有用的内容，网站的访问量逐渐提升。然而，我注意到了一些之前未曾注意到的问题。在Hexo博客生成过程中存在一个问题，你可以访问这篇文章的链接<code>https://blog.ning.moe/post/fix-hexo-twikoocomment-path-inconsistency/</code>，也可以在该链接后面添加<code>index.html</code>，但对于Twikoo评论框架而言，这两个链接并不相同。</p>
+<p>阅读须知：</p>
+<p>本文的操作是在使用”butterfly”主题的情况下进行的，其他主题也可以模仿这个操作，但需要注意先查找自己的主题是否可以直接在配置文件中进行更改。更多细节请参考这个”issues”链接：<a href="https://github.com/imaegoo/twikoo/issues/138%E3%80%82">https://github.com/imaegoo/twikoo/issues/138。</a></p>
+<p>正文：</p>
+<blockquote>
+<p>下面我将直接进入正文。</p>
+</blockquote>
+<h2 id="Butterfly的问题"><a href="#Butterfly的问题" class="headerlink" title="Butterfly的问题"></a>Butterfly的问题</h2><p>我的博客主题是<a href="https://github.com/jerryc127/hexo-theme-butterfly">butterfly</a>，本身已经对Twikoo进行了适配。但我不好意思提出”issues”来更改它，因为我通过搜索找到了Twikoo官方的一个”issues”：<a href="https://github.com/imaegoo/twikoo/issues/138%EF%BC%8C%E9%87%8C%E9%9D%A2%E4%BD%9C%E8%80%85%E5%B7%B2%E7%BB%8F%E5%9B%9E%E5%A4%8D%E4%BA%86%E3%80%82">https://github.com/imaegoo/twikoo/issues/138，里面作者已经回复了。</a></p>
+<figure class="highlight javascript"><table><tbody><tr><td class="code"><pre><span class="line">twikoo.<span class="title function_">init</span>({</span><br><span class="line">  <span class="comment">// ......,</span></span><br><span class="line">  <span class="attr">path</span>: <span class="string">'window.location.pathname.replace(\'index.html\',\'\')'</span></span><br><span class="line">})</span><br></pre></td></tr></tbody></table></figure>
+
+<p>但问题是，Butterfly主题本身没有额外的选项来配置Twikoo，所以我决定直接修改主题的源码。</p>
+<h2 id="更改主题模板"><a href="#更改主题模板" class="headerlink" title="更改主题模板"></a>更改主题模板</h2><p>首先，确保你找到了Butterfly主题的文件夹，它的目录结构应该是这样的：</p>
+<figure class="highlight powershell"><table><tbody><tr><td class="code"><pre><span class="line">├─.github</span><br><span class="line">├─languages</span><br><span class="line">├─layout</span><br><span class="line">├─scripts</span><br><span class="line">└─source</span><br></pre></td></tr></tbody></table></figure>
+
+<p>然后，找到<code>/layout/includes/third-party/comments/twikoo.pug</code>这个文件。</p>
+<p>在大约第11行的位置添加以下代码：<code>path: window.location.pathname.replace('index.html','')</code>，下面是我已经添加好的代码：</p>
+<figure class="highlight javascript"><table><tbody><tr><td class="code"><pre><span class="line">script.</span><br><span class="line">  (<span class="function">()=&gt;</span>{</span><br><span class="line">    <span class="keyword">const</span> <span class="title function_">init</span> = (<span class="params"></span>) =&gt; {</span><br><span class="line">      twikoo.<span class="title function_">init</span>(<span class="title class_">Object</span>.<span class="title function_">assign</span>({</span><br><span class="line">        <span class="attr">el</span>: <span class="string">'#twikoo-wrap'</span>,</span><br><span class="line">        <span class="attr">envId</span>: <span class="string">'!{envId}'</span>,</span><br><span class="line">        <span class="attr">region</span>: <span class="string">'!{region}'</span>,</span><br><span class="line">        <span class="attr">path</span>: <span class="variable language_">window</span>.<span class="property">location</span>.<span class="property">pathname</span>.<span class="title function_">replace</span>(<span class="string">'index.html'</span>,<span class="string">''</span>),</span><br><span class="line">        <span class="attr">onCommentLoaded</span>: <span class="keyword">function</span> (<span class="params"></span>) {</span><br><span class="line">          btf.<span class="title function_">loadLightbox</span>(<span class="variable language_">document</span>.<span class="title function_">querySelectorAll</span>(<span class="string">'#twikoo .tk-content img:not(.tk-owo-emotion)'</span>))</span><br><span class="line">        }</span><br><span class="line">      }, !{<span class="title class_">JSON</span>.<span class="title function_">stringify</span>(option)}))</span><br><span class="line">    }</span><br></pre></td></tr></tbody></table></figure>
+
+<p>引用：</p>
+<p>Twikoo的”issues”链接：<a href="https://github.com/imaegoo/twikoo/issues/138">https://github.com/imaegoo/twikoo/issues/138</a></p>
+</body></html>]]></content>
+      <categories>
+        <category>网络技术</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>twikoo</tag>
+        <tag>评论</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>使用GitHub Actions 自动构建部署发布Spring Boot应用</title>
     <url>/posts/gitub-actions/</url>
     <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>最近这一周，我加入了奇奇怪怪的Team，我负责将编写的新接口打包并发布到服务器上。每次都需要手动执行打包、发布、关闭旧版本程序和启动新版本程序等繁琐的步骤，这让我感到非常不便，而且也非常重复。对于这种重复性的任务，我想到了可以利用机器来完成，于是决定尝试使用 GitHub 上的工作流。</p>
@@ -832,61 +887,6 @@
       </tags>
   </entry>
   <entry>
-    <title>关于启动CDN发生一些难受的小bug</title>
-    <url>/posts/cdn/</url>
-    <content><![CDATA[<html><head></head><body><p>好久没有更新了，如果你要问我这段鸽了半年干了什么，我只能说啥事情都没有干，还是没有想好写什么,但是我一定会在6月结束会高产的。 当然关于:部署多的CDN同时加速的网上教程也很少（也可能我没有找到太多）</p>
-<blockquote>
-<p><strong>在这个星期又又又白嫖了Tencent Cloud的CDN活动</strong>，上次白嫖了一百块无门槛优惠卷，貌似我的域名在Tencent cloud只是首年续费了9块剩下5年都没有花过其他的了。</p>
-</blockquote>
-<p>国内用腾讯的国外用的是CF，现在也是国内国外都使用的CDN(我是不会告诉你我原来没有使用CDN的)</p>
-<h2 id="bug总结"><a href="#bug总结" class="headerlink" title="bug总结:"></a>bug总结:</h2><ol>
-<li> https的问题: 使用腾讯CDN就麻烦不行，CF特别顺畅没有发生过https的问题.在腾讯云的CDN想开https你需要上传你的证书才可以。</li>
-<li> 开启CDN之后WordPress出现无法登陆后台的问题，腾讯需要**/wp-admin**变成不缓存即可。 3.指开启国内加速，可能导致国外的朋友出现无法访问的问题: 这个问题我还发过工单给腾讯云,简单总结一句话,你开国内的加速，跟国外有什么关系。 这个问题我只遇到过一次，有几率会抽风一下。 如果嫌麻烦的话你就顺便在腾讯也开启境外的，不麻烦的CF的好处就来了。 4.还有一个就是评论不会实时同步,其实这也不算是bug,毕竟CDN也不可能做到全访问实时的不过也不会特别慢。</li>
-</ol>
-<p>如果有错的地方欢迎指出,萌新下手麻烦轻一点.</p>
-</body></html>]]></content>
-      <categories>
-        <category>网络技术</category>
-      </categories>
-      <tags>
-        <tag>CDN</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>解决Hexo博客框架中Twikoo评论框架路径不一致的问题</title>
-    <url>/posts/fix-hexo-twikoocomment-path-inconsistency/</url>
-    <content><![CDATA[<html><head></head><body><p>引言：</p>
-<p>在我继续修理博客的过程中，没错，你没有看错，我陆续从今年1月开始维护博客至今。主要原因是我很忙，维护工作也需要时间，而且在修复之后还需要处理一些细节问题，这是我之前没有注意到的。由于当时静态资源几乎全部丢失，现在我已经基本上优化了访问速度，这使得我的Hexo博客框架名副其实。随着我对网站的打理以及撰写一些有用的内容，网站的访问量逐渐提升。然而，我注意到了一些之前未曾注意到的问题。在Hexo博客生成过程中存在一个问题，你可以访问这篇文章的链接<code>https://blog.ning.moe/post/fix-hexo-twikoocomment-path-inconsistency/</code>，也可以在该链接后面添加<code>index.html</code>，但对于Twikoo评论框架而言，这两个链接并不相同。</p>
-<p>阅读须知：</p>
-<p>本文的操作是在使用”butterfly”主题的情况下进行的，其他主题也可以模仿这个操作，但需要注意先查找自己的主题是否可以直接在配置文件中进行更改。更多细节请参考这个”issues”链接：<a href="https://github.com/imaegoo/twikoo/issues/138%E3%80%82">https://github.com/imaegoo/twikoo/issues/138。</a></p>
-<p>正文：</p>
-<blockquote>
-<p>下面我将直接进入正文。</p>
-</blockquote>
-<h2 id="Butterfly的问题"><a href="#Butterfly的问题" class="headerlink" title="Butterfly的问题"></a>Butterfly的问题</h2><p>我的博客主题是<a href="https://github.com/jerryc127/hexo-theme-butterfly">butterfly</a>，本身已经对Twikoo进行了适配。但我不好意思提出”issues”来更改它，因为我通过搜索找到了Twikoo官方的一个”issues”：<a href="https://github.com/imaegoo/twikoo/issues/138%EF%BC%8C%E9%87%8C%E9%9D%A2%E4%BD%9C%E8%80%85%E5%B7%B2%E7%BB%8F%E5%9B%9E%E5%A4%8D%E4%BA%86%E3%80%82">https://github.com/imaegoo/twikoo/issues/138，里面作者已经回复了。</a></p>
-<figure class="highlight javascript"><table><tbody><tr><td class="code"><pre><span class="line">twikoo.<span class="title function_">init</span>({</span><br><span class="line">  <span class="comment">// ......,</span></span><br><span class="line">  <span class="attr">path</span>: <span class="string">'window.location.pathname.replace(\'index.html\',\'\')'</span></span><br><span class="line">})</span><br></pre></td></tr></tbody></table></figure>
-
-<p>但问题是，Butterfly主题本身没有额外的选项来配置Twikoo，所以我决定直接修改主题的源码。</p>
-<h2 id="更改主题模板"><a href="#更改主题模板" class="headerlink" title="更改主题模板"></a>更改主题模板</h2><p>首先，确保你找到了Butterfly主题的文件夹，它的目录结构应该是这样的：</p>
-<figure class="highlight powershell"><table><tbody><tr><td class="code"><pre><span class="line">├─.github</span><br><span class="line">├─languages</span><br><span class="line">├─layout</span><br><span class="line">├─scripts</span><br><span class="line">└─source</span><br></pre></td></tr></tbody></table></figure>
-
-<p>然后，找到<code>/layout/includes/third-party/comments/twikoo.pug</code>这个文件。</p>
-<p>在大约第11行的位置添加以下代码：<code>path: window.location.pathname.replace('index.html','')</code>，下面是我已经添加好的代码：</p>
-<figure class="highlight javascript"><table><tbody><tr><td class="code"><pre><span class="line">script.</span><br><span class="line">  (<span class="function">()=&gt;</span>{</span><br><span class="line">    <span class="keyword">const</span> <span class="title function_">init</span> = (<span class="params"></span>) =&gt; {</span><br><span class="line">      twikoo.<span class="title function_">init</span>(<span class="title class_">Object</span>.<span class="title function_">assign</span>({</span><br><span class="line">        <span class="attr">el</span>: <span class="string">'#twikoo-wrap'</span>,</span><br><span class="line">        <span class="attr">envId</span>: <span class="string">'!{envId}'</span>,</span><br><span class="line">        <span class="attr">region</span>: <span class="string">'!{region}'</span>,</span><br><span class="line">        <span class="attr">path</span>: <span class="variable language_">window</span>.<span class="property">location</span>.<span class="property">pathname</span>.<span class="title function_">replace</span>(<span class="string">'index.html'</span>,<span class="string">''</span>),</span><br><span class="line">        <span class="attr">onCommentLoaded</span>: <span class="keyword">function</span> (<span class="params"></span>) {</span><br><span class="line">          btf.<span class="title function_">loadLightbox</span>(<span class="variable language_">document</span>.<span class="title function_">querySelectorAll</span>(<span class="string">'#twikoo .tk-content img:not(.tk-owo-emotion)'</span>))</span><br><span class="line">        }</span><br><span class="line">      }, !{<span class="title class_">JSON</span>.<span class="title function_">stringify</span>(option)}))</span><br><span class="line">    }</span><br></pre></td></tr></tbody></table></figure>
-
-<p>引用：</p>
-<p>Twikoo的”issues”链接：<a href="https://github.com/imaegoo/twikoo/issues/138">https://github.com/imaegoo/twikoo/issues/138</a></p>
-</body></html>]]></content>
-      <categories>
-        <category>网络技术</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>twikoo</tag>
-        <tag>评论</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>世界，您好！</title>
     <url>/posts/hello-world-2-2/</url>
     <content><![CDATA[<html><head></head><body><p>欢迎使用WordPress。这是您的第一篇文章。编辑或删除它，然后开始写作吧！</p>
@@ -895,6 +895,48 @@
       <categories>
         <category>生活随想</category>
       </categories>
+  </entry>
+  <entry>
+    <title>萌国ICP备案</title>
+    <url>/posts/moeICP/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="萌国ICP备案"><a href="#萌国ICP备案" class="headerlink" title="萌国ICP备案"></a>萌国ICP备案</h1><blockquote>
+<p>启元</p>
+</blockquote>
+<p>自从某萌主申请了 icp.gov.moe 域名以后</p>
+<p>萌童鞋在百忙中抽空写了个萌备系统</p>
+<p>然后大家看到萌国ICP备案查询系统就上线了</p>
+<blockquote>
+<p>萌国ICP备案</p>
+</blockquote>
+<p>嗯，你没看错，这是萌国的ICP备案。</p>
+<p>萌国在哪呢，听某萌主说，好像是个网络上虚拟的国度。</p>
+<p>反正别问博主了，本博主也是听来的。</p>
+<p>我们说的是萌国ICP备案，号称萌ICP备，简称萌备</p>
+<blockquote>
+<p>萌ICP备 纯属萌友网站联萌！<br>是一种次元中的爱好，文化的展现。</p>
+</blockquote>
+<p>若你在万千网站中遇到萌备<br>甚有缘分</p>
+<p>萌主：“欢迎各大热爱萌文化的站长加入</p>
+<p> 给自己的网站加上个萌萌的备案号”</p>
+<p>博主：能不能不打广告？……</p>
+<blockquote>
+<p>加入萌备</p>
+</blockquote>
+<p>申请地址： <a href="https://icp.gov.moe/join.php">https://icp.gov.moe/join.php</a></p>
+<p>萌备主页<br><a href="https://icp.gov.moe/">https://icp.gov.moe</a></p>
+<p>然后按提示在页脚加上萌备的链接，以便查询对接系统，最后自动就加入萌备了，好简单啊。</p>
+<blockquote>
+<p>后话</p>
+</blockquote>
+<p>感觉好简单的样子，本博客已经在用了，还PY了个好号码，是不是很好看呢。</p>
+</body></html>]]></content>
+      <categories>
+        <category>生活随想</category>
+      </categories>
+      <tags>
+        <tag>备案</tag>
+        <tag>萌国</tag>
+      </tags>
   </entry>
   <entry>
     <title>hexo博客搭建教程</title>
@@ -1043,48 +1085,6 @@
       </tags>
   </entry>
   <entry>
-    <title>萌国ICP备案</title>
-    <url>/posts/moeICP/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="萌国ICP备案"><a href="#萌国ICP备案" class="headerlink" title="萌国ICP备案"></a>萌国ICP备案</h1><blockquote>
-<p>启元</p>
-</blockquote>
-<p>自从某萌主申请了 icp.gov.moe 域名以后</p>
-<p>萌童鞋在百忙中抽空写了个萌备系统</p>
-<p>然后大家看到萌国ICP备案查询系统就上线了</p>
-<blockquote>
-<p>萌国ICP备案</p>
-</blockquote>
-<p>嗯，你没看错，这是萌国的ICP备案。</p>
-<p>萌国在哪呢，听某萌主说，好像是个网络上虚拟的国度。</p>
-<p>反正别问博主了，本博主也是听来的。</p>
-<p>我们说的是萌国ICP备案，号称萌ICP备，简称萌备</p>
-<blockquote>
-<p>萌ICP备 纯属萌友网站联萌！<br>是一种次元中的爱好，文化的展现。</p>
-</blockquote>
-<p>若你在万千网站中遇到萌备<br>甚有缘分</p>
-<p>萌主：“欢迎各大热爱萌文化的站长加入</p>
-<p> 给自己的网站加上个萌萌的备案号”</p>
-<p>博主：能不能不打广告？……</p>
-<blockquote>
-<p>加入萌备</p>
-</blockquote>
-<p>申请地址： <a href="https://icp.gov.moe/join.php">https://icp.gov.moe/join.php</a></p>
-<p>萌备主页<br><a href="https://icp.gov.moe/">https://icp.gov.moe</a></p>
-<p>然后按提示在页脚加上萌备的链接，以便查询对接系统，最后自动就加入萌备了，好简单啊。</p>
-<blockquote>
-<p>后话</p>
-</blockquote>
-<p>感觉好简单的样子，本博客已经在用了，还PY了个好号码，是不是很好看呢。</p>
-</body></html>]]></content>
-      <categories>
-        <category>生活随想</category>
-      </categories>
-      <tags>
-        <tag>备案</tag>
-        <tag>萌国</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>关于WordPress分类目录404问题</title>
     <url>/posts/%E5%85%B3%E4%BA%8Ewordpress%E5%88%86%E7%B1%BB%E7%9B%AE%E5%BD%95404%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<html><head></head><body><h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>前两天把博客给玩脱了和，也没有备份，重新搞了之后我其实想隐藏博文中链接地址里面的index.php无意间隐藏了index.php还神奇的把分类目录的404解决了。</p>
@@ -1101,6 +1101,15 @@
         <tag>WordPress</tag>
         <tag>Nginx</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>博客数据库损坏，正在维护！</title>
+    <url>/posts/%E5%8D%9A%E5%AE%A2%E6%95%B0%E6%8D%AE%E5%BA%93%E6%8D%9F%E5%9D%8F%EF%BC%8C%E6%AD%A3%E5%9C%A8%E7%BB%B4%E6%8A%A4%EF%BC%81/</url>
+    <content><![CDATA[<html><head></head><body><p>因博主手残把动了数据库而且还没有恢复到最近的备份，本博客访问可能会存在一定问题，在博主紧急抢修下，恢复了部分基础功能，博文图片可能暂时无法加载，我相信很快恢复，我现在先睡觉了都12点了。</p>
+</body></html>]]></content>
+      <categories>
+        <category>网络技术</category>
+      </categories>
   </entry>
   <entry>
     <title>使用QQ机器人来进行通知课程信息</title>
@@ -1139,6 +1148,11 @@
       </tags>
   </entry>
   <entry>
+    <title>博客评论系统还在测试阶段</title>
+    <url>/posts/%E5%8D%9A%E5%AE%A2%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E8%BF%98%E5%9C%A8%E6%B5%8B%E8%AF%95%E9%98%B6%E6%AE%B5/</url>
+    <content><![CDATA[<html><head></head><body></body></html>]]></content>
+  </entry>
+  <entry>
     <title>博客转移备案</title>
     <url>/posts/%E5%8D%9A%E5%AE%A2%E8%BD%AC%E7%A7%BB%E5%A4%87%E6%A1%88/</url>
     <content><![CDATA[<html><head></head><body><p>本站已经从wordpress转到hexo，再加上转移服务器提供商需要接入备案原因,所以蒋本站暂时挂到GitHub上.</p>
@@ -1150,20 +1164,6 @@
       <tags>
         <tag>备案</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>博客数据库损坏，正在维护！</title>
-    <url>/posts/%E5%8D%9A%E5%AE%A2%E6%95%B0%E6%8D%AE%E5%BA%93%E6%8D%9F%E5%9D%8F%EF%BC%8C%E6%AD%A3%E5%9C%A8%E7%BB%B4%E6%8A%A4%EF%BC%81/</url>
-    <content><![CDATA[<html><head></head><body><p>因博主手残把动了数据库而且还没有恢复到最近的备份，本博客访问可能会存在一定问题，在博主紧急抢修下，恢复了部分基础功能，博文图片可能暂时无法加载，我相信很快恢复，我现在先睡觉了都12点了。</p>
-</body></html>]]></content>
-      <categories>
-        <category>网络技术</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>博客评论系统还在测试阶段</title>
-    <url>/posts/%E5%8D%9A%E5%AE%A2%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E8%BF%98%E5%9C%A8%E6%B5%8B%E8%AF%95%E9%98%B6%E6%AE%B5/</url>
-    <content><![CDATA[<html><head></head><body></body></html>]]></content>
   </entry>
   <entry>
     <title>备案</title>
@@ -1189,18 +1189,6 @@
       </categories>
   </entry>
   <entry>
-    <title>本站建立一周年!</title>
-    <url>/posts/%E6%9C%AC%E7%AB%99%E5%BB%BA%E7%AB%8B%E4%B8%80%E5%91%A8%E5%B9%B4/</url>
-    <content><![CDATA[<html><head></head><body><p>不知不觉当中,blog已经陪我走完一年,而我在这一年当中也没有写过什么东西,觉得浪费了资源.虽然建站容易但是,维护确实相当的麻烦. 大概明年五月份的时候可能本站要从word press迁移至Typecho. 不过至于下一次更新可能要继续等到2021年暑假的时候.</p>
-</body></html>]]></content>
-      <categories>
-        <category>生活随想</category>
-      </categories>
-      <tags>
-        <tag>生活随想</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>本站正式启动邮箱评论功能</title>
     <url>/posts/%E6%9C%AC%E7%AB%99%E6%AD%A3%E5%BC%8F%E5%90%AF%E5%8A%A8%E9%82%AE%E7%AE%B1%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/</url>
     <content><![CDATA[<html><head></head><body><p>邮箱评论功能欢迎大家测试如有bug,请联系我的QQ，谢谢！</p>
@@ -1211,6 +1199,18 @@
       <tags>
         <tag>Email</tag>
         <tag>SMTP</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>本站建立一周年!</title>
+    <url>/posts/%E6%9C%AC%E7%AB%99%E5%BB%BA%E7%AB%8B%E4%B8%80%E5%91%A8%E5%B9%B4/</url>
+    <content><![CDATA[<html><head></head><body><p>不知不觉当中,blog已经陪我走完一年,而我在这一年当中也没有写过什么东西,觉得浪费了资源.虽然建站容易但是,维护确实相当的麻烦. 大概明年五月份的时候可能本站要从word press迁移至Typecho. 不过至于下一次更新可能要继续等到2021年暑假的时候.</p>
+</body></html>]]></content>
+      <categories>
+        <category>生活随想</category>
+      </categories>
+      <tags>
+        <tag>生活随想</tag>
       </tags>
   </entry>
   <entry>
