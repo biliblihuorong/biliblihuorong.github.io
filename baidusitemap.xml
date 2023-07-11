@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://blog.ning.moe/posts/fix-hexo-twikoocomment-path-inconsistency/</loc>
+    <lastmod>2023-07-11</lastmod>
+  </url>
+  <url>
     <loc>https://blog.ning.moe/posts/%E7%94%A8java%E7%BC%96%E5%86%99%E4%B8%80%E4%B8%AA%E7%AE%80%E6%98%93%E7%9A%84%E8%AE%A1%E7%AE%97%E5%99%A8/</loc>
     <lastmod>2023-07-02</lastmod>
   </url>
@@ -62,10 +66,6 @@
   </url>
   <url>
     <loc>https://blog.ning.moe/posts/clash/</loc>
-    <lastmod>2023-07-02</lastmod>
-  </url>
-  <url>
-    <loc>https://blog.ning.moe/posts/fix-hexo-twikoocomment-path-inconsistency/</loc>
     <lastmod>2023-07-02</lastmod>
   </url>
   <url>

@@ -783,7 +783,7 @@
     <title>解决Hexo博客框架中Twikoo评论框架路径不一致的问题</title>
     <url>/posts/fix-hexo-twikoocomment-path-inconsistency/</url>
     <content><![CDATA[<html><head></head><body><p>引言：</p>
-<p>在我继续修理博客的过程中，没错，你没有看错，我陆续从今年1月开始维护博客至今。主要原因是我很忙，维护工作也需要时间，而且在修复之后还需要处理一些细节问题，这是我之前没有注意到的。由于当时静态资源几乎全部丢失，现在我已经基本上优化了访问速度，这使得我的Hexo博客框架名副其实。随着我对网站的打理以及撰写一些有用的内容，网站的访问量逐渐提升。然而，我注意到了一些之前未曾注意到的问题。在Hexo博客生成过程中存在一个问题，你可以访问这篇文章的链接<code>https://www.c-dreamer.top/post/fix-hexo-twikoocomment-path-inconsistency/</code>，也可以在该链接后面添加<code>index.html</code>，但对于Twikoo评论框架而言，这两个链接并不相同。</p>
+<p>在我继续修理博客的过程中，没错，你没有看错，我陆续从今年1月开始维护博客至今。主要原因是我很忙，维护工作也需要时间，而且在修复之后还需要处理一些细节问题，这是我之前没有注意到的。由于当时静态资源几乎全部丢失，现在我已经基本上优化了访问速度，这使得我的Hexo博客框架名副其实。随着我对网站的打理以及撰写一些有用的内容，网站的访问量逐渐提升。然而，我注意到了一些之前未曾注意到的问题。在Hexo博客生成过程中存在一个问题，你可以访问这篇文章的链接<code>https://blog.ning.moe/post/fix-hexo-twikoocomment-path-inconsistency/</code>，也可以在该链接后面添加<code>index.html</code>，但对于Twikoo评论框架而言，这两个链接并不相同。</p>
 <p>阅读须知：</p>
 <p>本文的操作是在使用”butterfly”主题的情况下进行的，其他主题也可以模仿这个操作，但需要注意先查找自己的主题是否可以直接在配置文件中进行更改。更多细节请参考这个”issues”链接：<a href="https://github.com/imaegoo/twikoo/issues/138%E3%80%82">https://github.com/imaegoo/twikoo/issues/138。</a></p>
 <p>正文：</p>
