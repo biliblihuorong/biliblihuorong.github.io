@@ -7,10 +7,10 @@
 <p>不说废话了.</p>
 <hr>
 <h2 id="首先是markdown用什么软件打开"><a href="#首先是markdown用什么软件打开" class="headerlink" title="首先是markdown用什么软件打开?"></a>首先是markdown用什么软件打开?</h2><p>我这里使用的是<a href="https://typora.io/">Typora</a>,开源免费的markdown语法编辑器,支持Windows,Mac,以及Linxu,系统.</p>
-<p>首先Typroa可以支持HTML的语法,我就把他当成一个浏览器.<img src="https://img.asshell.top/i/1/23/01/29/63d5ef0645d19.png">为了后面方便我就简写成md.</p>
+<p>首先Typroa可以支持HTML的语法,我就把他当成一个浏览器.<img src="https://img.misaka.pics/i/1/23/01/29/63d5ef0645d19.png">为了后面方便我就简写成md.</p>
 <h1 id="二、Markdown基本语法"><a href="#二、Markdown基本语法" class="headerlink" title="二、Markdown基本语法:"></a>二、Markdown基本语法:</h1><p><strong>注意写语法全部转换成英文表符!</strong></p>
 <h3 id="标题"><a href="#标题" class="headerlink" title="标题:"></a>标题:</h3><p>一个#是一级标题，二个#是二级标题，三个#是三级标题，…..等，最多支持六级标题也就是六个#。标准语法一般在#后跟个空格再写文字，如下图所示：</p>
-<h3 id=""><a href="#" class="headerlink" title=""></a><img src="https://img.asshell.top/i/1/23/01/29/63d5ef05e4b14.png"><img src="https://cdn.jsdelivr.net/gh/biliblihuorong/Resources/Image/md01-1.png"></h3><h3 id="字体"><a href="#字体" class="headerlink" title="字体:"></a>字体:</h3><p><strong>加粗</strong>:在要加粗的文字两边用**框起来了.</p>
+<h3 id=""><a href="#" class="headerlink" title=""></a><img src="https://img.misaka.pics/i/1/23/01/29/63d5ef05e4b14.png"><img src="https://cdn.jsdelivr.net/gh/biliblihuorong/Resources/Image/md01-1.png"></h3><h3 id="字体"><a href="#字体" class="headerlink" title="字体:"></a>字体:</h3><p><strong>加粗</strong>:在要加粗的文字两边用**框起来了.</p>
 <p><em>斜体</em>:在要斜体的文字旁边用*框起来.</p>
 <p>如图所示:</p>
 <p>**<em>什么你想说说:我又想加粗又想斜体怎么办?</em>**就在文字两边加***</p>
@@ -18,7 +18,7 @@
 <h3 id="分割线"><a href="#分割线" class="headerlink" title="分割线:"></a>分割线:</h3><p>用—或者***在没有文字的地方进行添加.</p>
 <p>如图所示:</p>
 <h3 id="图片"><a href="#图片" class="headerlink" title="图片:"></a>图片:</h3><p>用<code>![图片名字](图片地址).</code> 如图所示:</p>
-<p><img src="https://img.asshell.top/i/1/23/01/29/63d5ef0ad139d.png" alt="御坂美琴"></p>
+<p><img src="https://img.misaka.pics/i/1/23/01/29/63d5ef0ad139d.png" alt="御坂美琴"></p>
 <p><img src="https://cdn.jsdelivr.net/gh/biliblihuorong/Resources/Image/md04.png"></p>
 <h3 id="列表"><a href="#列表" class="headerlink" title="列表:"></a>列表:</h3><ol>
 <li>有序列表例如:</li>
@@ -40,7 +40,7 @@
 <figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line">System.out.println(<span class="string">"这是一句输出语句"</span>);</span><br></pre></td></tr></tbody></table></figure>
 
 <hr>
-<p>如果有错的地方欢迎指出,萌新下手麻烦轻一点.<img src="https://img.asshell.top/i/1/23/01/29/63d5ef0645d19.png"></p>
+<p>如果有错的地方欢迎指出,萌新下手麻烦轻一点.<img src="https://img.misaka.pics/i/1/23/01/29/63d5ef0645d19.png"></p>
 </body></html>]]></content>
       <categories>
         <category>生活随想</category>
@@ -89,6 +89,29 @@
       </categories>
       <tags>
         <tag>宝塔</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>ArchLinux 使用体验</title>
+    <url>/posts/ArchLinux/</url>
+    <content><![CDATA[<html><head></head><body><img src="https://img.c-dreamer.top/i/1/2023/02/09/63e4c0b786de8.webp" alt="archlinux-logo-dark-1200dpi.webp" style="zoom: 25%;">
+
+<h1 id="关于-ArchLinux"><a href="#关于-ArchLinux" class="headerlink" title="关于 ArchLinux"></a>关于 ArchLinux</h1><p>Arch 是Linux发行版的一个分支，arch的理念是完全自定义，没有所谓的系统版本，全部是滚动升级（长时间不滚，会滚炸，当然我每天开机第一件事就是滚一下）</p>
+<h1 id="正片开始"><a href="#正片开始" class="headerlink" title="正片开始"></a>正片开始</h1><h2 id="为什么非要选择Arch？"><a href="#为什么非要选择Arch？" class="headerlink" title="为什么非要选择Arch？"></a>为什么非要选择Arch？</h2><p>其实如果你要是在非中国大陆的话，我觉得你使用Ubuntu 或者其他的发行版大同小异，因为我看中了 Arch的万能的AUR软件仓库源，这里面有各位大佬自封装的软件，庞大的软件仓库，例如微信 需要wine 以及烦琐的配置 AUR 可以直接解决这些问题。</p>
+<h2 id="听说安装Arch很难？"><a href="#听说安装Arch很难？" class="headerlink" title="听说安装Arch很难？"></a>听说安装Arch很难？</h2><p>是的 Arch 的安装异常的烦琐切复杂 ，不过如果你擅用<code>Search</code>和<a href="https://wiki.archlinuxcn.org/wiki/%E9%A6%96%E9%A1%B5" title="ArchWiKi">ArchWiki</a> 和时间耐心的研究，其实很简单，我是一个纯Linux小白，在查阅ArchWiki花费大量的时间研究之后也安装成功。</p>
+<h2 id="我现在的状态？"><a href="#我现在的状态？" class="headerlink" title="我现在的状态？"></a>我现在的状态？</h2><p>我现在给电脑装载了双系统（怕arch崩了就无了） win11+arch</p>
+<p><img src="https://img.c-dreamer.top/i/1/2023/02/09/63e4bbfff1e9c.webp" alt="ArchLinux 配置.webp"></p>
+<h2 id="使用体验"><a href="#使用体验" class="headerlink" title="使用体验"></a>使用体验</h2><p>我用Arch差不多3个月了，除了刚开始的不适逐渐慢慢适应之后逐渐习惯，但我偶尔也很想换回windows，因为我现在还没有适应在linux只用一个根的感念，而不像windows的区概念（而且我分区还很多）。</p>
+<h1 id="你要现在立刻安装Arch？"><a href="#你要现在立刻安装Arch？" class="headerlink" title="你要现在立刻安装Arch？"></a>你要现在立刻安装Arch？</h1><h3 id="你会首先面临的问题"><a href="#你会首先面临的问题" class="headerlink" title="你会首先面临的问题"></a>你会首先面临的问题</h3><h4 id="游戏生态"><a href="#游戏生态" class="headerlink" title="游戏生态"></a>游戏生态</h4><p>首先Linux上虽然有steam 的Steam Play的加持，游戏生态逐步扩大，但还是有诸多游戏不能游玩，详情可以看这个<a href="https://www.protondb.com/" title="protondb">protondb</a>上搜索🔍，还有原神属于能玩的级别但是配置很烦琐。</p>
+<h4 id="软件的生态"><a href="#软件的生态" class="headerlink" title="软件的生态"></a>软件的生态</h4><p>虽然有AUR 的加持但仍然有很多软件只有windows平台还用<code>wine</code>调教不好它例如<code>office</code> ，但这不是说你不能使用这些功能，Linux有很多平替软件可以选择例如 <code>libreoffice</code> or <code>WPS</code>。</p>
+<h4 id="使用习惯"><a href="#使用习惯" class="headerlink" title="使用习惯"></a>使用习惯</h4><p>就像我前面提到的 Linux和Windows对于磁盘区的概念来说，以及你要面临一个新的桌面使用环境。</p>
+</body></html>]]></content>
+      <categories>
+        <category>生活随想</category>
+      </categories>
+      <tags>
+        <tag>Arch</tag>
+        <tag>Linux</tag>
       </tags>
   </entry>
   <entry>
@@ -144,58 +167,108 @@
       </tags>
   </entry>
   <entry>
-    <title>ArchLinux 使用体验</title>
-    <url>/posts/ArchLinux/</url>
-    <content><![CDATA[<html><head></head><body><img src="https://img.c-dreamer.top/i/1/2023/02/09/63e4c0b786de8.webp" alt="archlinux-logo-dark-1200dpi.webp" style="zoom: 25%;">
-
-<h1 id="关于-ArchLinux"><a href="#关于-ArchLinux" class="headerlink" title="关于 ArchLinux"></a>关于 ArchLinux</h1><p>Arch 是Linux发行版的一个分支，arch的理念是完全自定义，没有所谓的系统版本，全部是滚动升级（长时间不滚，会滚炸，当然我每天开机第一件事就是滚一下）</p>
-<h1 id="正片开始"><a href="#正片开始" class="headerlink" title="正片开始"></a>正片开始</h1><h2 id="为什么非要选择Arch？"><a href="#为什么非要选择Arch？" class="headerlink" title="为什么非要选择Arch？"></a>为什么非要选择Arch？</h2><p>其实如果你要是在非中国大陆的话，我觉得你使用Ubuntu 或者其他的发行版大同小异，因为我看中了 Arch的万能的AUR软件仓库源，这里面有各位大佬自封装的软件，庞大的软件仓库，例如微信 需要wine 以及烦琐的配置 AUR 可以直接解决这些问题。</p>
-<h2 id="听说安装Arch很难？"><a href="#听说安装Arch很难？" class="headerlink" title="听说安装Arch很难？"></a>听说安装Arch很难？</h2><p>是的 Arch 的安装异常的烦琐切复杂 ，不过如果你擅用<code>Search</code>和<a href="https://wiki.archlinuxcn.org/wiki/%E9%A6%96%E9%A1%B5" title="ArchWiKi">ArchWiki</a> 和时间耐心的研究，其实很简单，我是一个纯Linux小白，在查阅ArchWiki花费大量的时间研究之后也安装成功。</p>
-<h2 id="我现在的状态？"><a href="#我现在的状态？" class="headerlink" title="我现在的状态？"></a>我现在的状态？</h2><p>我现在给电脑装载了双系统（怕arch崩了就无了） win11+arch</p>
-<p><img src="https://img.c-dreamer.top/i/1/2023/02/09/63e4bbfff1e9c.webp" alt="ArchLinux 配置.webp"></p>
-<h2 id="使用体验"><a href="#使用体验" class="headerlink" title="使用体验"></a>使用体验</h2><p>我用Arch差不多3个月了，除了刚开始的不适逐渐慢慢适应之后逐渐习惯，但我偶尔也很想换回windows，因为我现在还没有适应在linux只用一个根的感念，而不像windows的区概念（而且我分区还很多）。</p>
-<h1 id="你要现在立刻安装Arch？"><a href="#你要现在立刻安装Arch？" class="headerlink" title="你要现在立刻安装Arch？"></a>你要现在立刻安装Arch？</h1><h3 id="你会首先面临的问题"><a href="#你会首先面临的问题" class="headerlink" title="你会首先面临的问题"></a>你会首先面临的问题</h3><h4 id="游戏生态"><a href="#游戏生态" class="headerlink" title="游戏生态"></a>游戏生态</h4><p>首先Linux上虽然有steam 的Steam Play的加持，游戏生态逐步扩大，但还是有诸多游戏不能游玩，详情可以看这个<a href="https://www.protondb.com/" title="protondb">protondb</a>上搜索🔍，还有原神属于能玩的级别但是配置很烦琐。</p>
-<h4 id="软件的生态"><a href="#软件的生态" class="headerlink" title="软件的生态"></a>软件的生态</h4><p>虽然有AUR 的加持但仍然有很多软件只有windows平台还用<code>wine</code>调教不好它例如<code>office</code> ，但这不是说你不能使用这些功能，Linux有很多平替软件可以选择例如 <code>libreoffice</code> or <code>WPS</code>。</p>
-<h4 id="使用习惯"><a href="#使用习惯" class="headerlink" title="使用习惯"></a>使用习惯</h4><p>就像我前面提到的 Linux和Windows对于磁盘区的概念来说，以及你要面临一个新的桌面使用环境。</p>
-</body></html>]]></content>
-      <categories>
-        <category>生活随想</category>
-      </categories>
-      <tags>
-        <tag>Arch</tag>
-        <tag>Linux</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>御坂美琴生日快乐</title>
-    <url>/posts/MisakaMikoto/</url>
-    <content><![CDATA[<html><head></head><body><blockquote>
-<p><strong>你指间闪烁的电光，是我此生不变的信仰唯有这超电磁炮将永世长存！！！</strong></p>
+    <title>Java使用CloudFlare Turnstile 验证码</title>
+    <url>/posts/Java-CAPTCHA-cloudflare/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="引言："><a href="#引言：" class="headerlink" title="引言："></a>引言：</h1><blockquote>
+<p>在学习springMVC 和Spring Security中，总有一个服务，叫做验证码，每次我自己写这个验证码的时候，最后还要在测试，而且特别的不友好，甚至我自己都分不清那个字母，当然Java里面有个很优秀的滑块验证码比如这个大佬开发的<a href="https://gitee.com/tianai/tianai-captcha">tianai-captcha</a><br>总是给人一种不是很优雅，我自己是人类，为什么还要进行验证码，而且这种验证往往经过训练的ai更容易比人类做的好，这就失去了验证码的意义<code>CAPTCHA</code>，Cloud Flare就做了一个无需进行让你输入字符或者滑动以及选择图片的验证码，如果需要更多了解你可以访问CF的官方介绍<a href="https://blog.cloudflare.com/zh-cn/turnstile-private-captcha-alternative-zh-cn/">CloudFlare-Turnstile</a></p>
 </blockquote>
-<h1 id="首先-祝姐姐大人生日快乐，又一年生日到啦吗，真快呀。"><a href="#首先-祝姐姐大人生日快乐，又一年生日到啦吗，真快呀。" class="headerlink" title="首先,祝姐姐大人生日快乐，又一年生日到啦吗，真快呀。"></a>首先,祝姐姐大人生日快乐，又一年生日到啦吗，真快呀。</h1><img src="https://img.c-dreamer.top/i/1/2023/05/01/644f7e2e4fa62.webp" alt="d6e89b5.webp" style="zoom:50%;">
-
-<img src="https://img.c-dreamer.top/i/1/2023/05/01/644f7e24d2d9a.webp" alt="7606d4f59bf.webp" style="zoom:50%;">
-
-
-
-
-<h1 id="感想"><a href="#感想" class="headerlink" title="感想"></a>感想</h1><h2 id="对我个人："><a href="#对我个人：" class="headerlink" title="对我个人："></a>对我个人：</h2><p>我已经是一个入宅很晚很晚的人了，我的入宅番是 <code>约战</code> 我并不是完完全全的 某科学的 世界的粉丝，我也并没有看过魔法禁书目录，我仅对于 超电磁炮 御坂美琴的热爱。</p>
+<h1 id="需要准备"><a href="#需要准备" class="headerlink" title="需要准备"></a>需要准备</h1><ol>
+<li>一个Cloud Flare账号</li>
+<li>一个域名（不需要接入Cloud Flare）<h1 id="流程"><a href="#流程" class="headerlink" title="流程"></a>流程</h1></li>
+</ol>
 <blockquote>
-<p>摘抄一部分萌娘百科的话。</p>
-<p>天真活泼、爱唠叨的14岁元气少女。有着一头及肩的茶色发丝、同样是茶色的瞳孔、绝不服输的眼神、不需要化妆也很俏丽的面孔。因为外形秀丽加上成绩优秀，因此成为校内学生心目中的偶像，甚至会被学妹们尊称为“御坂大人”。平素都是穿着常盘台的制服，而裙底的安全裤则是美琴活泼的象征。性格好胜、正义感强，有着男孩子般的爽朗性格，但是尤其是在面对可爱的东西时，就显得缺乏耐心、非常不坦率。当喜欢的东西（呱太）或中意的东西被别人评价说“太儿童化”的时候，都会义正言辞地的否决，然后愉♂悦地享受。紧张时会蹦出“喵”的口癖，并且在担心他人慌乱时会自称“美琴姐姐”</p>
+<p>CloudFlare以下简称CF， 官网的配置文件已经写的很清楚<br> <img src="https://img.misaka.pics/i/1/2023/04/21/64423eac7e80f.webp" alt="Turnstile" style="zoom: 67%;"></p>
+<ol>
+<li>用户打开受验证码保护的网页，先会和CF的验证码服务器进行通讯拿到，JWT令牌（令牌有效300秒）</li>
+<li>用户会把提交内容以及CF生成的令牌发送到服务器，</li>
+<li>服务器会拿着CF令牌进行和CF验证码服务器通讯，拿到JSON数值</li>
+</ol>
 </blockquote>
-<h2 id="对于B站："><a href="#对于B站：" class="headerlink" title="对于B站："></a>对于B站：</h2><p>虽然我入宅很晚，我接触B站也是比较晚了，但最近几年B站环境都是人尽皆知的事情了，对于 B站往年 不管是对 美琴的庆生 还是对其他知名的动漫人物，都是在发的，对于去年B站没有给美琴庆生以及其他人物，我表示非常是生气也表示非常的无奈，但对于今年B站的改变，对于庆生很早就开始宣传了，但并不是 哔哩哔哩弹幕网 这个账号进行宣传，而是 哔哩哔哩番剧组和哔哩哔哩会员购 进行宣传的。剩下的我就不想多说了，B站快要嗝屁的时候还想在收割一波自己以前最老以及起家的人，怎么说呢。从以前B站属于二次元的天地，到最后 二次元滚出B站。</p>
-<p>可能以前 别人说我是二刺螈 我表示可能会有点开心，但对于近几年 <strong>滚，老子不是二次元</strong></p>
-<h2 id="结束语"><a href="#结束语" class="headerlink" title="结束语"></a>结束语</h2><p>时间会磨损一切，那么我又能坚持多久呢？</p>
-<h1 id="引用："><a href="#引用：" class="headerlink" title="引用："></a>引用：</h1><p> 萌娘百科：<a href="%5Bhttps://zh.moegirl.org.cn/%E5%BE%A1%E5%9D%82%E7%BE%8E%E7%90%B4%5D(https://zh.moegirl.org.cn/%E5%BE%A1%E5%9D%82%E7%BE%8E%E7%90%B4)">御坂美琴人物简介</a></p>
+<h1 id="快速使用"><a href="#快速使用" class="headerlink" title="快速使用"></a>快速使用</h1><ol>
+<li>登录你的CF账号会在仪表盘的左侧看到<code>Turnstile </code></li>
+<li>点击添加</li>
+<li><img src="https://img.misaka.pics/i/1/2023/03/28/6422b39497161.webp" alt="image-20230328110719966" style="zoom:50%;"></li>
+</ol>
+<p>我一般是选择托管，由cf来决定用户需不需要进行交互一下，</p>
+<ol start="4">
+<li>注册完毕之后我们会得到两个值一个是站点密钥，一个是密钥，密钥是用来进行服务端和CF通讯的，而站点密钥是放在被保护的资源上的。</li>
+</ol>
+<p>按照<a href="https://developers.cloudflare.com/turnstile/get-started/client-side-rendering/">CF文档的客户端配置</a>我这里就那官方的例子来</p>
+<figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"X-UA-Compatible"</span> <span class="attr">content</span>=<span class="string">"IE=edge"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width, initial-scale=1.0"</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- 引用CF的验证码js --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://challenges.cloudflare.com/turnstile/v0/api.js"</span> <span class="attr">async</span> <span class="attr">defer</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">form</span> <span class="attr">id</span>=<span class="string">"form"</span> <span class="attr">action</span>=<span class="string">"/login"</span> <span class="attr">method</span>=<span class="string">"POST"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">"username"</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">placeholder</span>=<span class="string">"username"</span> <span class="attr">name</span>=<span class="string">"username"</span> /&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">"password"</span> <span class="attr">type</span>=<span class="string">"password"</span> <span class="attr">placeholder</span>=<span class="string">"password"</span> <span class="attr">name</span>=<span class="string">"password"</span> /&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- 在data-sitekey中需要填写站点密钥 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"cf-turnstile"</span> <span class="attr">data-sitekey</span>=<span class="string">"0x4AAAAAAACzpeJEUBQ4rBi-"</span> <span class="attr">data-callback</span>=<span class="string">"javascriptCallback"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">button</span> <span class="attr">id</span>=<span class="string">"button"</span> <span class="attr">type</span>=<span class="string">"submit"</span> <span class="attr">value</span>=<span class="string">"Submit"</span>&gt;</span>Log in<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>用户单击的登陆之后我们就能在后端拿到用户的账号密码以及CF的令牌。我们会在后端拿到一个名为：<code>cf-turnstile-response</code>的键值对，这里面存放的是cf的令牌。</p>
+<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> String <span class="title function_">test</span><span class="params">(String req)</span> <span class="keyword">throws</span> IOException {</span><br><span class="line">	<span class="comment">//secret 是填写密钥</span></span><br><span class="line">	<span class="type">String</span> <span class="variable">secret</span> <span class="operator">=</span> <span class="string">""</span>;</span><br><span class="line">	<span class="comment">//url是默认的地址无需更改</span></span><br><span class="line">	<span class="type">URL</span> <span class="variable">url</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">URL</span>(<span class="string">"https://challenges.cloudflare.com/turnstile/v0/siteverify"</span>);</span><br><span class="line">	<span class="type">HttpURLConnection</span> <span class="variable">httpConn</span> <span class="operator">=</span> (HttpURLConnection) url.openConnection();</span><br><span class="line">	httpConn.setRequestMethod(<span class="string">"POST"</span>);</span><br><span class="line">	<span class="comment">//请求类型cf 请求仅支持 application/x-www-form-urlencoded 或者是 application/JSON</span></span><br><span class="line">	httpConn.setRequestProperty(<span class="string">"Content-Type"</span>, <span class="string">"application/x-www-form-urlencoded"</span>);</span><br><span class="line"></span><br><span class="line">	httpConn.setDoOutput(<span class="literal">true</span>);</span><br><span class="line">	<span class="type">OutputStreamWriter</span> <span class="variable">writer</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">OutputStreamWriter</span>(httpConn.getOutputStream());</span><br><span class="line">	writer.write(<span class="string">"secret="</span>+secret+<span class="string">"&amp;response="</span>+req);</span><br><span class="line">	writer.flush();</span><br><span class="line">	writer.close();</span><br><span class="line">	httpConn.getOutputStream().close();</span><br><span class="line"></span><br><span class="line">	<span class="type">InputStream</span> <span class="variable">responseStream</span> <span class="operator">=</span> httpConn.getResponseCode() / <span class="number">100</span> == <span class="number">2</span></span><br><span class="line">			? httpConn.getInputStream()</span><br><span class="line">			: httpConn.getErrorStream();</span><br><span class="line">	<span class="type">Scanner</span> <span class="variable">s</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(responseStream).useDelimiter(<span class="string">"\\A"</span>);</span><br><span class="line">	<span class="type">String</span> <span class="variable">response</span> <span class="operator">=</span> s.hasNext() ? s.next() : <span class="string">""</span>;</span><br><span class="line">	System.out.println(response);</span><br><span class="line">	<span class="keyword">return</span> response;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<p>上述是我们拿到用户的<code>cf-turnstile-response</code>值然后和cf通讯返回的<code>response</code>就是CF给我们的JSON。</p>
+<p>根据官方文档：</p>
+<p>如果验证成功，响应应类似于以下内容：</p>
+<figure class="highlight json"><table><tbody><tr><td class="code"><pre><span class="line"><span class="punctuation">{</span></span><br><span class="line">  <span class="attr">"success"</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">"challenge_ts"</span><span class="punctuation">:</span> <span class="string">"2022-02-28T15:14:30.096Z"</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">"hostname"</span><span class="punctuation">:</span> <span class="string">"example.com"</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">"error-codes"</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">"action"</span><span class="punctuation">:</span> <span class="string">"login"</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">"cdata"</span><span class="punctuation">:</span> <span class="string">"sessionid-123456789"</span></span><br><span class="line"><span class="punctuation">}</span></span><br></pre></td></tr></tbody></table></figure>
+
+
+
+<ul>
+<li><code>challenge_ts</code>是解决挑战时的 ISO 时间戳。</li>
+<li><code>hostname</code>是为其提供质询的主机名。</li>
+<li><code>action</code>是传递给客户端小部件的客户小部件标识符。这用于区分在分析中使用相同站点密钥的小部件。它的完整性受到攻击者修改的保护。建议验证操作是否与预期值匹配。</li>
+<li><code>cdata</code>是传递给客户端小部件的客户数据。客户可以使用它来传达状态。它的完整性受到攻击者修改的保护。</li>
+<li><code>error-codes</code>是发生的错误列表。</li>
+</ul>
+<p>如果验证失败，响应应类似于以下内容：</p>
+<figure class="highlight json"><table><tbody><tr><td class="code"><pre><span class="line"><span class="punctuation">{</span></span><br><span class="line">  <span class="attr">"success"</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">false</span></span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">"error-codes"</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">    <span class="string">"invalid-input-response"</span></span><br><span class="line">  <span class="punctuation">]</span></span><br><span class="line"><span class="punctuation">}</span></span><br></pre></td></tr></tbody></table></figure>
+
+
+
+<p><code>success</code>通过将属性设置为 来指示验证错误<code>false</code>。提供了错误代码列表以指示响应无法验证的原因。响应还可能包含其他字段，具体取决于 Turnstile siteverify 是否能够成功或不成功地解析响应。</p>
+<p> <strong>错误代码</strong>：</p>
+<table>
+<thead>
+<tr>
+<th align="left">错误代码</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>missing-input-secret</code></td>
+<td align="left">未传递秘密参数。</td>
+</tr>
+<tr>
+<td align="left"><code>invalid-input-secret</code></td>
+<td align="left">秘密参数无效或不存在。</td>
+</tr>
+<tr>
+<td align="left"><code>missing-input-response</code></td>
+<td align="left">未传递响应参数。</td>
+</tr>
+<tr>
+<td align="left"><code>invalid-input-response</code></td>
+<td align="left">响应参数无效或已过期。</td>
+</tr>
+<tr>
+<td align="left"><code>bad-request</code></td>
+<td align="left">该请求被拒绝，因为它格式不正确。</td>
+</tr>
+<tr>
+<td align="left"><code>timeout-or-duplicate</code></td>
+<td align="left">响应参数之前已经过验证。</td>
+</tr>
+<tr>
+<td align="left"><code>internal-error</code></td>
+<td align="left">验证响应时发生内部错误。可以重试该请求。</td>
+</tr>
+</tbody></table>
+<p>根据以上信息我们就可以判断并且，接收cf的保护了。</p>
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><blockquote>
+<p><a href="https://developers.cloudflare.com/turnstile/">CF Turnstile 开发文档</a><br><a href="https://blog.cloudflare.com/zh-cn/turnstile-private-captcha-alternative-zh-cn/">CloudFlare-Turnstile介绍</a></p>
+</blockquote>
 </body></html>]]></content>
       <categories>
-        <category>生活随想</category>
+        <category>网络技术</category>
       </categories>
       <tags>
-        <tag>Misaka</tag>
-        <tag>御坂美琴</tag>
-        <tag>某科学的</tag>
+        <tag>Spring</tag>
+        <tag>Java</tag>
+        <tag>CloudFlare</tag>
+        <tag>CAPTCHA</tag>
       </tags>
   </entry>
   <entry>
@@ -416,115 +489,76 @@
         <category>网络技术</category>
       </categories>
       <tags>
+        <tag>Linux</tag>
         <tag>IPtables</tag>
         <tag>防火墙</tag>
-        <tag>Linux</tag>
         <tag>网络安全</tag>
       </tags>
   </entry>
   <entry>
-    <title>Java使用CloudFlare Turnstile 验证码</title>
-    <url>/posts/Java-CAPTCHA-cloudflare/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="引言："><a href="#引言：" class="headerlink" title="引言："></a>引言：</h1><blockquote>
-<p>在学习springMVC 和Spring Security中，总有一个服务，叫做验证码，每次我自己写这个验证码的时候，最后还要在测试，而且特别的不友好，甚至我自己都分不清那个字母，当然Java里面有个很优秀的滑块验证码比如这个大佬开发的<a href="https://gitee.com/tianai/tianai-captcha">tianai-captcha</a><br>总是给人一种不是很优雅，我自己是人类，为什么还要进行验证码，而且这种验证往往经过训练的ai更容易比人类做的好，这就失去了验证码的意义<code>CAPTCHA</code>，Cloud Flare就做了一个无需进行让你输入字符或者滑动以及选择图片的验证码，如果需要更多了解你可以访问CF的官方介绍<a href="https://blog.cloudflare.com/zh-cn/turnstile-private-captcha-alternative-zh-cn/">CloudFlare-Turnstile</a></p>
+    <title>御坂美琴生日快乐</title>
+    <url>/posts/MisakaMikoto/</url>
+    <content><![CDATA[<html><head></head><body><blockquote>
+<p><strong>你指间闪烁的电光，是我此生不变的信仰唯有这超电磁炮将永世长存！！！</strong></p>
 </blockquote>
-<h1 id="需要准备"><a href="#需要准备" class="headerlink" title="需要准备"></a>需要准备</h1><ol>
-<li>一个Cloud Flare账号</li>
-<li>一个域名（不需要接入Cloud Flare）<h1 id="流程"><a href="#流程" class="headerlink" title="流程"></a>流程</h1></li>
-</ol>
+<h1 id="首先-祝姐姐大人生日快乐，又一年生日到啦吗，真快呀。"><a href="#首先-祝姐姐大人生日快乐，又一年生日到啦吗，真快呀。" class="headerlink" title="首先,祝姐姐大人生日快乐，又一年生日到啦吗，真快呀。"></a>首先,祝姐姐大人生日快乐，又一年生日到啦吗，真快呀。</h1><img src="https://img.c-dreamer.top/i/1/2023/05/01/644f7e2e4fa62.webp" alt="d6e89b5.webp" style="zoom:50%;">
+
+<img src="https://img.c-dreamer.top/i/1/2023/05/01/644f7e24d2d9a.webp" alt="7606d4f59bf.webp" style="zoom:50%;">
+
+
+
+
+<h1 id="感想"><a href="#感想" class="headerlink" title="感想"></a>感想</h1><h2 id="对我个人："><a href="#对我个人：" class="headerlink" title="对我个人："></a>对我个人：</h2><p>我已经是一个入宅很晚很晚的人了，我的入宅番是 <code>约战</code> 我并不是完完全全的 某科学的 世界的粉丝，我也并没有看过魔法禁书目录，我仅对于 超电磁炮 御坂美琴的热爱。</p>
 <blockquote>
-<p>CloudFlare以下简称CF， 官网的配置文件已经写的很清楚<br> <img src="https://img.misaka.pics/i/1/2023/04/21/64423eac7e80f.webp" alt="Turnstile" style="zoom: 67%;"></p>
-<ol>
-<li>用户打开受验证码保护的网页，先会和CF的验证码服务器进行通讯拿到，JWT令牌（令牌有效300秒）</li>
-<li>用户会把提交内容以及CF生成的令牌发送到服务器，</li>
-<li>服务器会拿着CF令牌进行和CF验证码服务器通讯，拿到JSON数值</li>
-</ol>
+<p>摘抄一部分萌娘百科的话。</p>
+<p>天真活泼、爱唠叨的14岁元气少女。有着一头及肩的茶色发丝、同样是茶色的瞳孔、绝不服输的眼神、不需要化妆也很俏丽的面孔。因为外形秀丽加上成绩优秀，因此成为校内学生心目中的偶像，甚至会被学妹们尊称为“御坂大人”。平素都是穿着常盘台的制服，而裙底的安全裤则是美琴活泼的象征。性格好胜、正义感强，有着男孩子般的爽朗性格，但是尤其是在面对可爱的东西时，就显得缺乏耐心、非常不坦率。当喜欢的东西（呱太）或中意的东西被别人评价说“太儿童化”的时候，都会义正言辞地的否决，然后愉♂悦地享受。紧张时会蹦出“喵”的口癖，并且在担心他人慌乱时会自称“美琴姐姐”</p>
 </blockquote>
-<h1 id="快速使用"><a href="#快速使用" class="headerlink" title="快速使用"></a>快速使用</h1><ol>
-<li>登录你的CF账号会在仪表盘的左侧看到<code>Turnstile </code></li>
-<li>点击添加</li>
-<li><img src="https://img.misaka.pics/i/1/2023/03/28/6422b39497161.webp" alt="image-20230328110719966" style="zoom:50%;"></li>
-</ol>
-<p>我一般是选择托管，由cf来决定用户需不需要进行交互一下，</p>
-<ol start="4">
-<li>注册完毕之后我们会得到两个值一个是站点密钥，一个是密钥，密钥是用来进行服务端和CF通讯的，而站点密钥是放在被保护的资源上的。</li>
-</ol>
-<p>按照<a href="https://developers.cloudflare.com/turnstile/get-started/client-side-rendering/">CF文档的客户端配置</a>我这里就那官方的例子来</p>
-<figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"X-UA-Compatible"</span> <span class="attr">content</span>=<span class="string">"IE=edge"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width, initial-scale=1.0"</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- 引用CF的验证码js --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://challenges.cloudflare.com/turnstile/v0/api.js"</span> <span class="attr">async</span> <span class="attr">defer</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">form</span> <span class="attr">id</span>=<span class="string">"form"</span> <span class="attr">action</span>=<span class="string">"/login"</span> <span class="attr">method</span>=<span class="string">"POST"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">"username"</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">placeholder</span>=<span class="string">"username"</span> <span class="attr">name</span>=<span class="string">"username"</span> /&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">"password"</span> <span class="attr">type</span>=<span class="string">"password"</span> <span class="attr">placeholder</span>=<span class="string">"password"</span> <span class="attr">name</span>=<span class="string">"password"</span> /&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- 在data-sitekey中需要填写站点密钥 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"cf-turnstile"</span> <span class="attr">data-sitekey</span>=<span class="string">"0x4AAAAAAACzpeJEUBQ4rBi-"</span> <span class="attr">data-callback</span>=<span class="string">"javascriptCallback"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">button</span> <span class="attr">id</span>=<span class="string">"button"</span> <span class="attr">type</span>=<span class="string">"submit"</span> <span class="attr">value</span>=<span class="string">"Submit"</span>&gt;</span>Log in<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
-
-<p>用户单击的登陆之后我们就能在后端拿到用户的账号密码以及CF的令牌。我们会在后端拿到一个名为：<code>cf-turnstile-response</code>的键值对，这里面存放的是cf的令牌。</p>
-<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> String <span class="title function_">test</span><span class="params">(String req)</span> <span class="keyword">throws</span> IOException {</span><br><span class="line">	<span class="comment">//secret 是填写密钥</span></span><br><span class="line">	<span class="type">String</span> <span class="variable">secret</span> <span class="operator">=</span> <span class="string">""</span>;</span><br><span class="line">	<span class="comment">//url是默认的地址无需更改</span></span><br><span class="line">	<span class="type">URL</span> <span class="variable">url</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">URL</span>(<span class="string">"https://challenges.cloudflare.com/turnstile/v0/siteverify"</span>);</span><br><span class="line">	<span class="type">HttpURLConnection</span> <span class="variable">httpConn</span> <span class="operator">=</span> (HttpURLConnection) url.openConnection();</span><br><span class="line">	httpConn.setRequestMethod(<span class="string">"POST"</span>);</span><br><span class="line">	<span class="comment">//请求类型cf 请求仅支持 application/x-www-form-urlencoded 或者是 application/JSON</span></span><br><span class="line">	httpConn.setRequestProperty(<span class="string">"Content-Type"</span>, <span class="string">"application/x-www-form-urlencoded"</span>);</span><br><span class="line"></span><br><span class="line">	httpConn.setDoOutput(<span class="literal">true</span>);</span><br><span class="line">	<span class="type">OutputStreamWriter</span> <span class="variable">writer</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">OutputStreamWriter</span>(httpConn.getOutputStream());</span><br><span class="line">	writer.write(<span class="string">"secret="</span>+secret+<span class="string">"&amp;response="</span>+req);</span><br><span class="line">	writer.flush();</span><br><span class="line">	writer.close();</span><br><span class="line">	httpConn.getOutputStream().close();</span><br><span class="line"></span><br><span class="line">	<span class="type">InputStream</span> <span class="variable">responseStream</span> <span class="operator">=</span> httpConn.getResponseCode() / <span class="number">100</span> == <span class="number">2</span></span><br><span class="line">			? httpConn.getInputStream()</span><br><span class="line">			: httpConn.getErrorStream();</span><br><span class="line">	<span class="type">Scanner</span> <span class="variable">s</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(responseStream).useDelimiter(<span class="string">"\\A"</span>);</span><br><span class="line">	<span class="type">String</span> <span class="variable">response</span> <span class="operator">=</span> s.hasNext() ? s.next() : <span class="string">""</span>;</span><br><span class="line">	System.out.println(response);</span><br><span class="line">	<span class="keyword">return</span> response;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-
-<p>上述是我们拿到用户的<code>cf-turnstile-response</code>值然后和cf通讯返回的<code>response</code>就是CF给我们的JSON。</p>
-<p>根据官方文档：</p>
-<p>如果验证成功，响应应类似于以下内容：</p>
-<figure class="highlight json"><table><tbody><tr><td class="code"><pre><span class="line"><span class="punctuation">{</span></span><br><span class="line">  <span class="attr">"success"</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">"challenge_ts"</span><span class="punctuation">:</span> <span class="string">"2022-02-28T15:14:30.096Z"</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">"hostname"</span><span class="punctuation">:</span> <span class="string">"example.com"</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">"error-codes"</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">"action"</span><span class="punctuation">:</span> <span class="string">"login"</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">"cdata"</span><span class="punctuation">:</span> <span class="string">"sessionid-123456789"</span></span><br><span class="line"><span class="punctuation">}</span></span><br></pre></td></tr></tbody></table></figure>
-
-
-
-<ul>
-<li><code>challenge_ts</code>是解决挑战时的 ISO 时间戳。</li>
-<li><code>hostname</code>是为其提供质询的主机名。</li>
-<li><code>action</code>是传递给客户端小部件的客户小部件标识符。这用于区分在分析中使用相同站点密钥的小部件。它的完整性受到攻击者修改的保护。建议验证操作是否与预期值匹配。</li>
-<li><code>cdata</code>是传递给客户端小部件的客户数据。客户可以使用它来传达状态。它的完整性受到攻击者修改的保护。</li>
-<li><code>error-codes</code>是发生的错误列表。</li>
-</ul>
-<p>如果验证失败，响应应类似于以下内容：</p>
-<figure class="highlight json"><table><tbody><tr><td class="code"><pre><span class="line"><span class="punctuation">{</span></span><br><span class="line">  <span class="attr">"success"</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">false</span></span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">"error-codes"</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">    <span class="string">"invalid-input-response"</span></span><br><span class="line">  <span class="punctuation">]</span></span><br><span class="line"><span class="punctuation">}</span></span><br></pre></td></tr></tbody></table></figure>
-
-
-
-<p><code>success</code>通过将属性设置为 来指示验证错误<code>false</code>。提供了错误代码列表以指示响应无法验证的原因。响应还可能包含其他字段，具体取决于 Turnstile siteverify 是否能够成功或不成功地解析响应。</p>
-<p> <strong>错误代码</strong>：</p>
-<table>
-<thead>
-<tr>
-<th align="left">错误代码</th>
-<th align="left">描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><code>missing-input-secret</code></td>
-<td align="left">未传递秘密参数。</td>
-</tr>
-<tr>
-<td align="left"><code>invalid-input-secret</code></td>
-<td align="left">秘密参数无效或不存在。</td>
-</tr>
-<tr>
-<td align="left"><code>missing-input-response</code></td>
-<td align="left">未传递响应参数。</td>
-</tr>
-<tr>
-<td align="left"><code>invalid-input-response</code></td>
-<td align="left">响应参数无效或已过期。</td>
-</tr>
-<tr>
-<td align="left"><code>bad-request</code></td>
-<td align="left">该请求被拒绝，因为它格式不正确。</td>
-</tr>
-<tr>
-<td align="left"><code>timeout-or-duplicate</code></td>
-<td align="left">响应参数之前已经过验证。</td>
-</tr>
-<tr>
-<td align="left"><code>internal-error</code></td>
-<td align="left">验证响应时发生内部错误。可以重试该请求。</td>
-</tr>
-</tbody></table>
-<p>根据以上信息我们就可以判断并且，接收cf的保护了。</p>
-<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><blockquote>
-<p><a href="https://developers.cloudflare.com/turnstile/">CF Turnstile 开发文档</a><br><a href="https://blog.cloudflare.com/zh-cn/turnstile-private-captcha-alternative-zh-cn/">CloudFlare-Turnstile介绍</a></p>
-</blockquote>
+<h2 id="对于B站："><a href="#对于B站：" class="headerlink" title="对于B站："></a>对于B站：</h2><p>虽然我入宅很晚，我接触B站也是比较晚了，但最近几年B站环境都是人尽皆知的事情了，对于 B站往年 不管是对 美琴的庆生 还是对其他知名的动漫人物，都是在发的，对于去年B站没有给美琴庆生以及其他人物，我表示非常是生气也表示非常的无奈，但对于今年B站的改变，对于庆生很早就开始宣传了，但并不是 哔哩哔哩弹幕网 这个账号进行宣传，而是 哔哩哔哩番剧组和哔哩哔哩会员购 进行宣传的。剩下的我就不想多说了，B站快要嗝屁的时候还想在收割一波自己以前最老以及起家的人，怎么说呢。从以前B站属于二次元的天地，到最后 二次元滚出B站。</p>
+<p>可能以前 别人说我是二刺螈 我表示可能会有点开心，但对于近几年 <strong>滚，老子不是二次元</strong></p>
+<h2 id="结束语"><a href="#结束语" class="headerlink" title="结束语"></a>结束语</h2><p>时间会磨损一切，那么我又能坚持多久呢？</p>
+<h1 id="引用："><a href="#引用：" class="headerlink" title="引用："></a>引用：</h1><p> 萌娘百科：<a href="%5Bhttps://zh.moegirl.org.cn/%E5%BE%A1%E5%9D%82%E7%BE%8E%E7%90%B4%5D(https://zh.moegirl.org.cn/%E5%BE%A1%E5%9D%82%E7%BE%8E%E7%90%B4)">御坂美琴人物简介</a></p>
 </body></html>]]></content>
       <categories>
-        <category>网络技术</category>
+        <category>生活随想</category>
+      </categories>
+      <tags>
+        <tag>Misaka</tag>
+        <tag>御坂美琴</tag>
+        <tag>某科学的</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>新版本Spring-Security配置踩坑</title>
+    <url>/posts/Spring-Security/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="引言："><a href="#引言：" class="headerlink" title="引言："></a>引言：</h1><blockquote>
+<p>事情是这样的，我最近打算学习了springSecurity的时候，跟着视频学习的时候发现配置类 <code>WebSecurityConfigurerAdapter</code> 过时了，这个问题本篇的文章会告诉你答案，以及我有不小心选择了spring boot3.0 的版本然后<code>authorizeRequests</code>也过时了。如果此文章有错欢迎大佬批评指教。</p>
+</blockquote>
+<h1 id="Spring-Security的版本"><a href="#Spring-Security的版本" class="headerlink" title="Spring-Security的版本"></a>Spring-Security的版本</h1><h2 id="Spring-Security5-7-版本"><a href="#Spring-Security5-7-版本" class="headerlink" title="Spring-Security5.7+版本"></a>Spring-Security5.7+版本</h2><p>这个版本差不多是spring-boot 2.7版本使用的，首先<code>WebSecurityConfigurerAdapter</code> 过时，但是在在过时的源码类中，会叫我们如何进行配置新版本的Spring-Security的配置，官方的我贴这里</p>
+<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">提供用于创建 WebSecurityConfigurer 实例的方便基类。该实现允许通过重写方法进行自定义。</span></span><br><span class="line"><span class="comment">将自动应用查找 AbstractHttpConfigurer 自 SpringFactoriesLoader 的结果，以允许开发人员扩展默认值。</span></span><br><span class="line"><span class="comment">为此，您必须创建一个扩展 AbstractHttpConfigurer 的类，</span></span><br><span class="line"><span class="comment">然后在“META-INF/spring.factory”的类路径中创建一个文件，如下所示：</span></span><br><span class="line"><span class="comment">org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer=</span></span><br><span class="line"><span class="comment">sample.MyClassThatExtendsAbstractHttpConfigurer</span></span><br><span class="line"><span class="comment">如果有多个应添加的类，则可以使用 “，”分隔值。例如：</span></span><br><span class="line"><span class="comment">  org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer=</span></span><br><span class="line"><span class="comment">  sample.MyClassThatExtendsAbstractHttpConfigurer, sample.OtherThatExtendsAbstractHttpConfigurer</span></span><br><span class="line"><span class="comment">已弃用</span></span><br><span class="line"><span class="comment">org.springframework.security.web.SecurityFilterChain使用</span></span><br><span class="line"><span class="comment">Bean 进行配置或WebSecurityCustomizer使用 Bean 进行配置 HttpSecurity WebSecurity。</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line">      <span class="meta">@Bean</span></span><br><span class="line">      <span class="keyword">public</span> SecurityFilterChain <span class="title function_">securityFilterChain</span><span class="params">(HttpSecurity http)</span> <span class="keyword">throws</span> Exception {</span><br><span class="line">          http</span><br><span class="line">              .authorizeHttpRequests((authz) -&gt;</span><br><span class="line">                  authz.anyRequest().authenticated()</span><br><span class="line">              );</span><br><span class="line">              <span class="comment">// ...</span></span><br><span class="line">          <span class="keyword">return</span> http.build();</span><br><span class="line">      }</span><br><span class="line"> </span><br><span class="line">     <span class="meta">@Bean</span></span><br><span class="line">     <span class="keyword">public</span> WebSecurityCustomizer <span class="title function_">webSecurityCustomizer</span><span class="params">(WebSecurity web)</span> {</span><br><span class="line">         <span class="keyword">return</span> (web) -&gt; web.ignoring().antMatchers(<span class="string">"/resources/**"</span>);</span><br><span class="line">     }</span><br><span class="line">  <span class="comment">/**</span></span><br><span class="line"><span class="comment">请参阅 Spring Security without WebSecurityConfigurerAdapter  以获取更多详细信息。</span></span><br><span class="line"><span class="comment">请参阅:</span></span><br><span class="line"><span class="comment">EnableWebSecurity</span></span><br><span class="line"><span class="comment">作者:</span></span><br><span class="line"><span class="comment">罗伯·温奇</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>可以看到，新版本官方推荐使用@Bean 进行配置，这个感觉更加优雅了，和我们原来使用配置类进行配置的都是大同小异，但这里有个问题官方没有讲（或许我没有找到）。</p>
+<h3 id="关于-AuthenticationManager-认证类的问题"><a href="#关于-AuthenticationManager-认证类的问题" class="headerlink" title="关于 AuthenticationManager 认证类的问题"></a>关于 <code>AuthenticationManager</code> 认证类的问题</h3><p>因为，可能我们需要因为某种原因重写 过滤器的类，但最后我们在旧版本需要指定一个<code>AuthenticationManager</code> 类不管是工厂里的还是直接springboot启动时创建的。这个地方我查了好久网上的没有一个能一个找到的，全部都是重复。</p>
+<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">@Autowired</span></span><br><span class="line">AuthenticationConfiguration authenticationConfiguration;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> AuthenticationManager <span class="title function_">authenticationManager</span><span class="params">()</span> <span class="keyword">throws</span> Exception {</span><br><span class="line">    <span class="type">AuthenticationManager</span> <span class="variable">authenticationManager</span> <span class="operator">=</span> </span><br><span class="line">        authenticationConfiguration.getAuthenticationManager();</span><br><span class="line">    <span class="keyword">return</span> authenticationManager;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<p>我们只需要使用 <code>AuthenticationConfiguration</code> 创建一个``AuthenticationManager<code> </code> 类即可，推荐写在Security配置类中，这样可以直接方便调用即可。</p>
+<p>例如我重写了 <code>UsernamePasswordAuthenticationFilter</code>的过滤器 <code>KaptchaFilter</code> 是继承了<code>UsernamePasswordAuthenticationFilter</code> 和并且重写了里面的方法加入了验证码。</p>
+<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">@Bean</span></span><br><span class="line"><span class="keyword">public</span> KaptchaFilter <span class="title function_">kaptchaFilter</span><span class="params">()</span> <span class="keyword">throws</span> Exception {</span><br><span class="line">    <span class="type">KaptchaFilter</span> <span class="variable">kaptchaFilter</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">KaptchaFilter</span>();</span><br><span class="line">    kaptchaFilter.setFilterProcessesUrl(<span class="string">"/doLogin"</span>);</span><br><span class="line">    kaptchaFilter.setUsernameParameter(<span class="string">"uname"</span>);</span><br><span class="line">    kaptchaFilter.setPasswordParameter(<span class="string">"passwd"</span>);</span><br><span class="line">    kaptchaFilter.setKaptcha(<span class="string">"kaptcha"</span>);</span><br><span class="line">    <span class="comment">//指定认证管理器</span></span><br><span class="line">    kaptchaFilter.setAuthenticationManager(authenticationManager());</span><br><span class="line">    kaptchaFilter.setAuthenticationSuccessHandler((request, response, authentication) -&gt; {</span><br><span class="line">        response.sendRedirect(<span class="string">"/index.html"</span>);</span><br><span class="line">    });</span><br><span class="line">    kaptchaFilter.setAuthenticationFailureHandler((request, response, exception) -&gt; {</span><br><span class="line">        response.sendRedirect(<span class="string">"/login.html"</span>);</span><br><span class="line">    });</span><br><span class="line">    <span class="keyword">return</span> kaptchaFilter;</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="meta">@Bean</span></span><br><span class="line"><span class="keyword">public</span> SecurityFilterChain <span class="title function_">securityFilter</span><span class="params">(HttpSecurity http)</span><span class="keyword">throws</span> Exception{</span><br><span class="line">    <span class="keyword">return</span> http.authorizeRequests()</span><br><span class="line">            .mvcMatchers(<span class="string">"/login.html"</span>).permitAll()</span><br><span class="line">            .mvcMatchers(<span class="string">"/vc.jpg"</span>).permitAll()</span><br><span class="line">            .anyRequest().authenticated()</span><br><span class="line">            .and()</span><br><span class="line">            .formLogin()</span><br><span class="line">            .loginPage(<span class="string">"/login.html"</span>)</span><br><span class="line">            .loginProcessingUrl(<span class="string">"/doLogin"</span>)</span><br><span class="line">            .usernameParameter(<span class="string">"uname"</span>)</span><br><span class="line">            .passwordParameter(<span class="string">"passwd"</span>)</span><br><span class="line">            .defaultSuccessUrl(<span class="string">"/index.html"</span>,<span class="literal">true</span>)</span><br><span class="line">            .and()</span><br><span class="line">            .csrf().disable()</span><br><span class="line">            .addFilterAt(kaptchaFilter(), UsernamePasswordAuthenticationFilter.class)</span><br><span class="line">            .build();</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+
+
+<h2 id="关于SpringSecurity6-02-版本"><a href="#关于SpringSecurity6-02-版本" class="headerlink" title="关于SpringSecurity6.02+版本"></a>关于SpringSecurity6.02+版本</h2><p>这个版本差不多是spring boot 3.0+开始使用的，如果你按照上面新版本使用@Bean配置的话，会发现<code>HttpSecurity</code>中的<code>authorizeRequests</code> 方法标记为过时了，而且<code>mvcMatchers</code>也没有这个方法了，原因6.0的SpringSecurity推荐使用<code>authorizeHttpRequests</code>进行配置，对就是很烦人，不能一个版本改完，而且文档及其混乱。</p>
+<p>例如：</p>
+<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">@Bean</span></span><br><span class="line"><span class="keyword">public</span> SecurityFilterChain <span class="title function_">securityFilterChain</span><span class="params">(HttpSecurity http)</span> <span class="keyword">throws</span> Exception {</span><br><span class="line">    <span class="keyword">return</span> http.authorizeHttpRequests()</span><br><span class="line">            .requestMatchers(<span class="string">"/vc.jpg"</span>).permitAll()<span class="comment">//放行指定选项</span></span><br><span class="line">        	.anyRequest().authenticated()<span class="comment">//拦截所有请求都需要认证</span></span><br><span class="line">            .and()</span><br><span class="line">            .formLogin()</span><br><span class="line">            .and()</span><br><span class="line">            .logout()</span><br><span class="line">            .and()</span><br><span class="line">            .addFilterAt(loginKaptchaFilter(),UsernamePasswordAuthenticationFilter.class)</span><br><span class="line">            .csrf().disable()</span><br><span class="line">            .build();</span><br><span class="line"></span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<p>其他配置和SpringSecurity5.7+的配置一样。</p>
+</body></html>]]></content>
+      <categories>
+        <category>Bug生成者</category>
       </categories>
       <tags>
         <tag>Spring</tag>
         <tag>Java</tag>
-        <tag>CloudFlare</tag>
-        <tag>CAPTCHA</tag>
+        <tag>Security</tag>
       </tags>
   </entry>
   <entry>
@@ -575,37 +609,34 @@
       </tags>
   </entry>
   <entry>
-    <title>新版本Spring-Security配置踩坑</title>
-    <url>/posts/Spring-Security/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="引言："><a href="#引言：" class="headerlink" title="引言："></a>引言：</h1><blockquote>
-<p>事情是这样的，我最近打算学习了springSecurity的时候，跟着视频学习的时候发现配置类 <code>WebSecurityConfigurerAdapter</code> 过时了，这个问题本篇的文章会告诉你答案，以及我有不小心选择了spring boot3.0 的版本然后<code>authorizeRequests</code>也过时了。如果此文章有错欢迎大佬批评指教。</p>
+    <title>Hexo butterfly 优化</title>
+    <url>/posts/butterfly/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
+<p>我也来水一篇博文吧，最近我也不知道在忙什么（<del>明明就是懒得更新</del>），也感谢  @<a href="https://yujie.pro/network/52.html">夜灭</a>博主,让我可以水一篇博文以及再次优化hexo博客，如你所见我的博客在国内访问基本上都能在5秒以内完成这个所有加载。</p>
 </blockquote>
-<h1 id="Spring-Security的版本"><a href="#Spring-Security的版本" class="headerlink" title="Spring-Security的版本"></a>Spring-Security的版本</h1><h2 id="Spring-Security5-7-版本"><a href="#Spring-Security5-7-版本" class="headerlink" title="Spring-Security5.7+版本"></a>Spring-Security5.7+版本</h2><p>这个版本差不多是spring-boot 2.7版本使用的，首先<code>WebSecurityConfigurerAdapter</code> 过时，但是在在过时的源码类中，会叫我们如何进行配置新版本的Spring-Security的配置，官方的我贴这里</p>
-<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">提供用于创建 WebSecurityConfigurer 实例的方便基类。该实现允许通过重写方法进行自定义。</span></span><br><span class="line"><span class="comment">将自动应用查找 AbstractHttpConfigurer 自 SpringFactoriesLoader 的结果，以允许开发人员扩展默认值。</span></span><br><span class="line"><span class="comment">为此，您必须创建一个扩展 AbstractHttpConfigurer 的类，</span></span><br><span class="line"><span class="comment">然后在“META-INF/spring.factory”的类路径中创建一个文件，如下所示：</span></span><br><span class="line"><span class="comment">org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer=</span></span><br><span class="line"><span class="comment">sample.MyClassThatExtendsAbstractHttpConfigurer</span></span><br><span class="line"><span class="comment">如果有多个应添加的类，则可以使用 “，”分隔值。例如：</span></span><br><span class="line"><span class="comment">  org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer=</span></span><br><span class="line"><span class="comment">  sample.MyClassThatExtendsAbstractHttpConfigurer, sample.OtherThatExtendsAbstractHttpConfigurer</span></span><br><span class="line"><span class="comment">已弃用</span></span><br><span class="line"><span class="comment">org.springframework.security.web.SecurityFilterChain使用</span></span><br><span class="line"><span class="comment">Bean 进行配置或WebSecurityCustomizer使用 Bean 进行配置 HttpSecurity WebSecurity。</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line">      <span class="meta">@Bean</span></span><br><span class="line">      <span class="keyword">public</span> SecurityFilterChain <span class="title function_">securityFilterChain</span><span class="params">(HttpSecurity http)</span> <span class="keyword">throws</span> Exception {</span><br><span class="line">          http</span><br><span class="line">              .authorizeHttpRequests((authz) -&gt;</span><br><span class="line">                  authz.anyRequest().authenticated()</span><br><span class="line">              );</span><br><span class="line">              <span class="comment">// ...</span></span><br><span class="line">          <span class="keyword">return</span> http.build();</span><br><span class="line">      }</span><br><span class="line"> </span><br><span class="line">     <span class="meta">@Bean</span></span><br><span class="line">     <span class="keyword">public</span> WebSecurityCustomizer <span class="title function_">webSecurityCustomizer</span><span class="params">(WebSecurity web)</span> {</span><br><span class="line">         <span class="keyword">return</span> (web) -&gt; web.ignoring().antMatchers(<span class="string">"/resources/**"</span>);</span><br><span class="line">     }</span><br><span class="line">  <span class="comment">/**</span></span><br><span class="line"><span class="comment">请参阅 Spring Security without WebSecurityConfigurerAdapter  以获取更多详细信息。</span></span><br><span class="line"><span class="comment">请参阅:</span></span><br><span class="line"><span class="comment">EnableWebSecurity</span></span><br><span class="line"><span class="comment">作者:</span></span><br><span class="line"><span class="comment">罗伯·温奇</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></tbody></table></figure>
+<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><h2 id="博客基本情况"><a href="#博客基本情况" class="headerlink" title="博客基本情况"></a>博客基本情况</h2><p>优化过的情况</p>
+<ol>
+<li>源站在GitHub Pages上</li>
+<li>使用双解析模式（国内 腾讯云 国外Cloudflare）</li>
+<li>把 hexo 需要的静态js 资源全部缓存到源站，不在走<code>jsdelivr</code></li>
+<li>图床使用自建数据在cloud flare R2存储桶上</li>
+<li>图床使用cf的自定义域名进行双解析和第二点一样。</li>
+</ol>
+<p><img src="https://img.c-dreamer.top/i/1/2023/04/22/64439fea99b29.webp" alt="图.webp"></p>
+<h2 id="butterfly-静态资源优化"><a href="#butterfly-静态资源优化" class="headerlink" title="butterfly 静态资源优化"></a>butterfly 静态资源优化</h2><p>在最新的 <code>butterfly </code>4.8.1 中加入了自定义cdn 功能，虽然以前也能改那就要一个一个配置文件上改了</p>
+<figure class="highlight yaml"><table><tbody><tr><td class="code"><pre><span class="line"><span class="attr">CDN:</span></span><br><span class="line">  <span class="comment"># The CDN provider of internal scripts (主題內部 js 的 cdn 配置)</span></span><br><span class="line">  <span class="comment"># option: local/jsdelivr/unpkg/cdnjs/custom</span></span><br><span class="line">  <span class="comment"># Dev version can only choose. ( dev版的主題只能設置為 local )</span></span><br><span class="line">  <span class="attr">internal_provider:</span> <span class="string">local</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># The CDN provider of third party scripts (第三方 js 的 cdn 配置)</span></span><br><span class="line">  <span class="comment"># option: local/jsdelivr/unpkg/cdnjs/custom</span></span><br><span class="line">  <span class="comment"># when set it to local, you need to install hexo-butterfly-extjs</span></span><br><span class="line">  <span class="attr">third_party_provider:</span> <span class="string">local</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># Add version number to url, true or false</span></span><br><span class="line">  <span class="attr">version:</span> <span class="literal">false</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># Custom format</span></span><br><span class="line">  <span class="comment"># For example: https://cdn.staticfile.org/${cdnjs_name}/${version}/${min_cdnjs_file}</span></span><br><span class="line">  <span class="attr">custom_format:</span> </span><br><span class="line">  <span class="comment">#以下省略</span></span><br></pre></td></tr></tbody></table></figure>
 
-<p>可以看到，新版本官方推荐使用@Bean 进行配置，这个感觉更加优雅了，和我们原来使用配置类进行配置的都是大同小异，但这里有个问题官方没有讲（或许我没有找到）。</p>
-<h3 id="关于-AuthenticationManager-认证类的问题"><a href="#关于-AuthenticationManager-认证类的问题" class="headerlink" title="关于 AuthenticationManager 认证类的问题"></a>关于 <code>AuthenticationManager</code> 认证类的问题</h3><p>因为，可能我们需要因为某种原因重写 过滤器的类，但最后我们在旧版本需要指定一个<code>AuthenticationManager</code> 类不管是工厂里的还是直接springboot启动时创建的。这个地方我查了好久网上的没有一个能一个找到的，全部都是重复。</p>
-<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">@Autowired</span></span><br><span class="line">AuthenticationConfiguration authenticationConfiguration;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> AuthenticationManager <span class="title function_">authenticationManager</span><span class="params">()</span> <span class="keyword">throws</span> Exception {</span><br><span class="line">    <span class="type">AuthenticationManager</span> <span class="variable">authenticationManager</span> <span class="operator">=</span> </span><br><span class="line">        authenticationConfiguration.getAuthenticationManager();</span><br><span class="line">    <span class="keyword">return</span> authenticationManager;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-
-<p>我们只需要使用 <code>AuthenticationConfiguration</code> 创建一个``AuthenticationManager<code> </code> 类即可，推荐写在Security配置类中，这样可以直接方便调用即可。</p>
-<p>例如我重写了 <code>UsernamePasswordAuthenticationFilter</code>的过滤器 <code>KaptchaFilter</code> 是继承了<code>UsernamePasswordAuthenticationFilter</code> 和并且重写了里面的方法加入了验证码。</p>
-<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">@Bean</span></span><br><span class="line"><span class="keyword">public</span> KaptchaFilter <span class="title function_">kaptchaFilter</span><span class="params">()</span> <span class="keyword">throws</span> Exception {</span><br><span class="line">    <span class="type">KaptchaFilter</span> <span class="variable">kaptchaFilter</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">KaptchaFilter</span>();</span><br><span class="line">    kaptchaFilter.setFilterProcessesUrl(<span class="string">"/doLogin"</span>);</span><br><span class="line">    kaptchaFilter.setUsernameParameter(<span class="string">"uname"</span>);</span><br><span class="line">    kaptchaFilter.setPasswordParameter(<span class="string">"passwd"</span>);</span><br><span class="line">    kaptchaFilter.setKaptcha(<span class="string">"kaptcha"</span>);</span><br><span class="line">    <span class="comment">//指定认证管理器</span></span><br><span class="line">    kaptchaFilter.setAuthenticationManager(authenticationManager());</span><br><span class="line">    kaptchaFilter.setAuthenticationSuccessHandler((request, response, authentication) -&gt; {</span><br><span class="line">        response.sendRedirect(<span class="string">"/index.html"</span>);</span><br><span class="line">    });</span><br><span class="line">    kaptchaFilter.setAuthenticationFailureHandler((request, response, exception) -&gt; {</span><br><span class="line">        response.sendRedirect(<span class="string">"/login.html"</span>);</span><br><span class="line">    });</span><br><span class="line">    <span class="keyword">return</span> kaptchaFilter;</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="meta">@Bean</span></span><br><span class="line"><span class="keyword">public</span> SecurityFilterChain <span class="title function_">securityFilter</span><span class="params">(HttpSecurity http)</span><span class="keyword">throws</span> Exception{</span><br><span class="line">    <span class="keyword">return</span> http.authorizeRequests()</span><br><span class="line">            .mvcMatchers(<span class="string">"/login.html"</span>).permitAll()</span><br><span class="line">            .mvcMatchers(<span class="string">"/vc.jpg"</span>).permitAll()</span><br><span class="line">            .anyRequest().authenticated()</span><br><span class="line">            .and()</span><br><span class="line">            .formLogin()</span><br><span class="line">            .loginPage(<span class="string">"/login.html"</span>)</span><br><span class="line">            .loginProcessingUrl(<span class="string">"/doLogin"</span>)</span><br><span class="line">            .usernameParameter(<span class="string">"uname"</span>)</span><br><span class="line">            .passwordParameter(<span class="string">"passwd"</span>)</span><br><span class="line">            .defaultSuccessUrl(<span class="string">"/index.html"</span>,<span class="literal">true</span>)</span><br><span class="line">            .and()</span><br><span class="line">            .csrf().disable()</span><br><span class="line">            .addFilterAt(kaptchaFilter(), UsernamePasswordAuthenticationFilter.class)</span><br><span class="line">            .build();</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-
-
-
-<h2 id="关于SpringSecurity6-02-版本"><a href="#关于SpringSecurity6-02-版本" class="headerlink" title="关于SpringSecurity6.02+版本"></a>关于SpringSecurity6.02+版本</h2><p>这个版本差不多是spring boot 3.0+开始使用的，如果你按照上面新版本使用@Bean配置的话，会发现<code>HttpSecurity</code>中的<code>authorizeRequests</code> 方法标记为过时了，而且<code>mvcMatchers</code>也没有这个方法了，原因6.0的SpringSecurity推荐使用<code>authorizeHttpRequests</code>进行配置，对就是很烦人，不能一个版本改完，而且文档及其混乱。</p>
-<p>例如：</p>
-<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">@Bean</span></span><br><span class="line"><span class="keyword">public</span> SecurityFilterChain <span class="title function_">securityFilterChain</span><span class="params">(HttpSecurity http)</span> <span class="keyword">throws</span> Exception {</span><br><span class="line">    <span class="keyword">return</span> http.authorizeHttpRequests()</span><br><span class="line">            .requestMatchers(<span class="string">"/vc.jpg"</span>).permitAll()<span class="comment">//放行指定选项</span></span><br><span class="line">        	.anyRequest().authenticated()<span class="comment">//拦截所有请求都需要认证</span></span><br><span class="line">            .and()</span><br><span class="line">            .formLogin()</span><br><span class="line">            .and()</span><br><span class="line">            .logout()</span><br><span class="line">            .and()</span><br><span class="line">            .addFilterAt(loginKaptchaFilter(),UsernamePasswordAuthenticationFilter.class)</span><br><span class="line">            .csrf().disable()</span><br><span class="line">            .build();</span><br><span class="line"></span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-
-<p>其他配置和SpringSecurity5.7+的配置一样。</p>
+<p>我这里使用了 <code>local</code>的CDN就是把所有资源封装在本地了，你需要执行<code>npm install hexo-butterfly-extjs</code>命令，hexo 三连命令即可。</p>
+<p>如果你不喜欢这样的话，<a href="https://butterfly.js.org/posts/ceeb73f/#CDN">可以参考主题官方提供的配置</a>,可以选择如 七牛云 BootCDN Elemecdn 等<br>但是这个配置其他cdn 我测试的时候偶尔也会丢失一部分静态资源。</p>
 </body></html>]]></content>
       <categories>
-        <category>Bug生成者</category>
+        <category>网络技术</category>
       </categories>
       <tags>
-        <tag>Spring</tag>
-        <tag>Java</tag>
-        <tag>Security</tag>
+        <tag>hexo</tag>
+        <tag>butterfly</tag>
+        <tag>jsdelivr</tag>
+        <tag>CDN</tag>
       </tags>
   </entry>
   <entry>
@@ -703,37 +734,6 @@
         <tag>docker</tag>
         <tag>bitwarden</tag>
         <tag>Vaultwarden</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo butterfly 优化</title>
-    <url>/posts/butterfly/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
-<p>我也来水一篇博文吧，最近我也不知道在忙什么（<del>明明就是懒得更新</del>），也感谢  @<a href="https://yujie.pro/network/52.html">夜灭</a>博主,让我可以水一篇博文以及再次优化hexo博客，如你所见我的博客在国内访问基本上都能在5秒以内完成这个所有加载。</p>
-</blockquote>
-<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><h2 id="博客基本情况"><a href="#博客基本情况" class="headerlink" title="博客基本情况"></a>博客基本情况</h2><p>优化过的情况</p>
-<ol>
-<li>源站在GitHub Pages上</li>
-<li>使用双解析模式（国内 腾讯云 国外Cloudflare）</li>
-<li>把 hexo 需要的静态js 资源全部缓存到源站，不在走<code>jsdelivr</code></li>
-<li>图床使用自建数据在cloud flare R2存储桶上</li>
-<li>图床使用cf的自定义域名进行双解析和第二点一样。</li>
-</ol>
-<p><img src="https://img.c-dreamer.top/i/1/2023/04/22/64439fea99b29.webp" alt="图.webp"></p>
-<h2 id="butterfly-静态资源优化"><a href="#butterfly-静态资源优化" class="headerlink" title="butterfly 静态资源优化"></a>butterfly 静态资源优化</h2><p>在最新的 <code>butterfly </code>4.8.1 中加入了自定义cdn 功能，虽然以前也能改那就要一个一个配置文件上改了</p>
-<figure class="highlight yaml"><table><tbody><tr><td class="code"><pre><span class="line"><span class="attr">CDN:</span></span><br><span class="line">  <span class="comment"># The CDN provider of internal scripts (主題內部 js 的 cdn 配置)</span></span><br><span class="line">  <span class="comment"># option: local/jsdelivr/unpkg/cdnjs/custom</span></span><br><span class="line">  <span class="comment"># Dev version can only choose. ( dev版的主題只能設置為 local )</span></span><br><span class="line">  <span class="attr">internal_provider:</span> <span class="string">local</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># The CDN provider of third party scripts (第三方 js 的 cdn 配置)</span></span><br><span class="line">  <span class="comment"># option: local/jsdelivr/unpkg/cdnjs/custom</span></span><br><span class="line">  <span class="comment"># when set it to local, you need to install hexo-butterfly-extjs</span></span><br><span class="line">  <span class="attr">third_party_provider:</span> <span class="string">local</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># Add version number to url, true or false</span></span><br><span class="line">  <span class="attr">version:</span> <span class="literal">false</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># Custom format</span></span><br><span class="line">  <span class="comment"># For example: https://cdn.staticfile.org/${cdnjs_name}/${version}/${min_cdnjs_file}</span></span><br><span class="line">  <span class="attr">custom_format:</span> </span><br><span class="line">  <span class="comment">#以下省略</span></span><br></pre></td></tr></tbody></table></figure>
-
-<p>我这里使用了 <code>local</code>的CDN就是把所有资源封装在本地了，你需要执行<code>npm install hexo-butterfly-extjs</code>命令，hexo 三连命令即可。</p>
-<p>如果你不喜欢这样的话，<a href="https://butterfly.js.org/posts/ceeb73f/#CDN">可以参考主题官方提供的配置</a>,可以选择如 七牛云 BootCDN Elemecdn 等<br>但是这个配置其他cdn 我测试的时候偶尔也会丢失一部分静态资源。</p>
-</body></html>]]></content>
-      <categories>
-        <category>网络技术</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>butterfly</tag>
-        <tag>jsdelivr</tag>
-        <tag>CDN</tag>
       </tags>
   </entry>
   <entry>
@@ -887,80 +887,6 @@
       </tags>
   </entry>
   <entry>
-    <title>世界，您好！</title>
-    <url>/posts/hello-world-2-2/</url>
-    <content><![CDATA[<html><head></head><body><p>欢迎使用WordPress。这是您的第一篇文章。编辑或删除它，然后开始写作吧！</p>
-<p><embed src="//music.163.com/style/swf/widget.swf?sid=5110133&amp;type=2&amp;auto=1&amp;width=320&amp;height=66" width="340" height="86" allownetworking="all"></p>
-</body></html>]]></content>
-      <categories>
-        <category>生活随想</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>兰空图床使用backblaze作为存储策略</title>
-    <url>/posts/lskypro-backblaze/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h1><p>因为我很久之前就在使用兰空了，当时是直接默认存储扔到本地的，反正也没有啥问题，还很方便，但那台服务器快到期了。所以我就打算迁移，先来说说虽然为什么不用CF的R2存储，原因是我尝试了很多种办法，但这个兰空图床对于我自己而言就是链接不上，很烦人，所以找到了也是S3协议的<code>backblaze</code>作为我后面使用的存储策略。</p>
-<h1 id="为什么要使用-backblaze"><a href="#为什么要使用-backblaze" class="headerlink" title="为什么要使用 backblaze"></a>为什么要使用 backblaze</h1><p>有以下几点</p>
-<ol>
-<li>所有用户无需信用卡都有10gb存储</li>
-<li>从<code>CloudFlare</code>出去的流量每个月免费1TB</li>
-<li>价格十分便宜，你可以去他们的官网了解更多：<a href="https://www.backblaze.com/b2/cloud-storage-pricing.html">官网地址价格</a></li>
-</ol>
-<h1 id="开始准备前"><a href="#开始准备前" class="headerlink" title="开始准备前"></a>开始准备前</h1><p>在开始之前你需要知道和准备的东西：</p>
-<ol>
-<li> 兰空图床的版本确保是和我在同一个版本在V2.1</li>
-<li>有一个<code>Cloud Flare</code>的账号</li>
-<li>有一个<code>backblaze</code>的账号</li>
-<li>你需要有一个域名（应该看到这一篇博文的人都有吧）</li>
-<li>在后面的内容<code>CloudFlare</code> 将被简写成CF</li>
-<li>在后面的内容<code>backblaze</code>将被简写成B2</li>
-</ol>
-<h1 id="正片开始"><a href="#正片开始" class="headerlink" title="正片开始"></a>正片开始</h1><h2 id="B2创建存储桶"><a href="#B2创建存储桶" class="headerlink" title="B2创建存储桶"></a>B2创建存储桶</h2><p>请访问：<a href="https://secure.backblaze.com/b2_buckets.htm">https://secure.backblaze.com/b2_buckets.htm</a> 进入B2创建页面。再此页面往下翻，可以更改语言。</p>
-<p>起一个你的桶的名字，你需要把桶的档案改成<code>公众</code>。</p>
-<p><img src="https://img.c-dreamer.top/ShellBlogImg/1/2023/06/18/648edb4430902.webp"></p>
-<p>很好你现在应该已经创建好桶了并选择<code>上传/下载</code></p>
-<p><img src="https://img.c-dreamer.top/ShellBlogImg/1/2023/06/18/648edbb7f1ea5.webp"></p>
-<p>你需要上传一个文件用作与测试，知道你的桶的地址。</p>
-<p><img src="https://img.c-dreamer.top/ShellBlogImg/1/2023/06/18/648edc77d6fda.webp"></p>
-<p>你需要记得<code>友好地址</code>以及<code>S3</code>地址</p>
-<ul>
-<li>友好地址你需要记住到你的桶名</li>
-<li>S3 地址你只需要记住S3的域名即可。</li>
-</ul>
-<h2 id="CF的配置"><a href="#CF的配置" class="headerlink" title="CF的配置"></a>CF的配置</h2><blockquote>
-<p>B2只允许https，并且需要有效证书的验证，你需要检查以下你的CF上的 SSL/TLS –&gt; 概述调成完全严格</p>
-</blockquote>
-<p>你现在需要解析一个<code>CNAME</code>的域名,例如img.example.com,解析到友好URL的域名上，如果你解析成功你可以试着访问你的域名并带上桶名/以及文件名进行访问。</p>
-<p>到这里你应该也许已经明白我们需要后面要配置什么了，我们需要使用CF的    规则–&gt;转换规则—&gt;URi 重写。</p>
-<p><img src="https://img.c-dreamer.top/ShellBlogImg/1/2023/06/18/648ede10f0886.webp"></p>
-<p>我这边提供一下表达式，需要把<code>&lt;&gt;</code>的内容替换成你自己的包括<code>&lt;&gt;</code></p>
-<figure class="highlight js"><table><tbody><tr><td class="code"><pre><span class="line">(http.<span class="property">request</span>.<span class="property">uri</span>.<span class="property">path</span> ne <span class="string">"/file/&lt;桶名&gt;"</span> and http.<span class="property">host</span> eq <span class="string">"&lt;你的域名&gt;"</span>)</span><br></pre></td></tr></tbody></table></figure>
-
-<p><img src="https://img.c-dreamer.top/ShellBlogImg/1/2023/06/18/648edeb220412.webp"></p>
-<p>这里提供一些Dynamic的表达式写法</p>
-<figure class="highlight js"><table><tbody><tr><td class="code"><pre><span class="line"><span class="title function_">concat</span>(<span class="string">"/file/&lt;你的域名&gt;"</span>,http.<span class="property">request</span>.<span class="property">uri</span>.<span class="property">path</span>)</span><br></pre></td></tr></tbody></table></figure>
-
-<p>经过这样一改，你可以现在尝试以下，不加任何东西直接使用域名+上文件名再试试。</p>
-<h2 id="兰空图床更改策略"><a href="#兰空图床更改策略" class="headerlink" title="兰空图床更改策略"></a>兰空图床更改策略</h2><p>你可以参考这一篇官方的 <a href="https://github.com/lsky-org/lsky-pro/discussions/448">discussions</a> 进行改写，我就不再重复造轮子了。</p>
-<p>我在这边贴一张我自己配置的图，方便各位佬进行参考。</p>
-<ul>
-<li>存储策略选择Minio</li>
-<li>区域根据S3的URL 域名中就有写。</li>
-</ul>
-<p><img src="https://img.c-dreamer.top/ShellBlogImg/1/2023/06/18/648ee05d47c3b.webp"></p>
-<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p> 兰空Github Discussions：<a href="https://github.com/lsky-org/lsky-pro/discussions/448">https://github.com/lsky-org/lsky-pro/discussions/448</a></p>
-</body></html>]]></content>
-      <categories>
-        <category>网络技术</category>
-      </categories>
-      <tags>
-        <tag>backblaze</tag>
-        <tag>lskypro</tag>
-        <tag>蓝空图床</tag>
-        <tag>兰空图床</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>hexo博客搭建教程</title>
     <url>/posts/hexo-1/</url>
     <content><![CDATA[<html><head></head><body><h1 id="部署hexo需要用到的东西"><a href="#部署hexo需要用到的东西" class="headerlink" title="部署hexo需要用到的东西:"></a>部署hexo需要用到的东西:</h1><ol>
@@ -1041,6 +967,80 @@
 <p>改主题和背景,一定要详细看每个主题的官方文档,基本上就可以大差不差,如果要添加其他的花里胡哨的东西看点前端三剑客(html,css,js)基本上就可以了</p>
 <p>以上说的仅为个人观点,欢迎大家来进行交流.</p>
 </body></html>]]></content>
+  </entry>
+  <entry>
+    <title>世界，您好！</title>
+    <url>/posts/hello-world-2-2/</url>
+    <content><![CDATA[<html><head></head><body><p>欢迎使用WordPress。这是您的第一篇文章。编辑或删除它，然后开始写作吧！</p>
+<p><embed src="//music.163.com/style/swf/widget.swf?sid=5110133&amp;type=2&amp;auto=1&amp;width=320&amp;height=66" width="340" height="86" allownetworking="all"></p>
+</body></html>]]></content>
+      <categories>
+        <category>生活随想</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>兰空图床使用backblaze作为存储策略</title>
+    <url>/posts/lskypro-backblaze/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h1><p>因为我很久之前就在使用兰空了，当时是直接默认存储扔到本地的，反正也没有啥问题，还很方便，但那台服务器快到期了。所以我就打算迁移，先来说说虽然为什么不用CF的R2存储，原因是我尝试了很多种办法，但这个兰空图床对于我自己而言就是链接不上，很烦人，所以找到了也是S3协议的<code>backblaze</code>作为我后面使用的存储策略。</p>
+<h1 id="为什么要使用-backblaze"><a href="#为什么要使用-backblaze" class="headerlink" title="为什么要使用 backblaze"></a>为什么要使用 backblaze</h1><p>有以下几点</p>
+<ol>
+<li>所有用户无需信用卡都有10gb存储</li>
+<li>从<code>CloudFlare</code>出去的流量每个月免费1TB</li>
+<li>价格十分便宜，你可以去他们的官网了解更多：<a href="https://www.backblaze.com/b2/cloud-storage-pricing.html">官网地址价格</a></li>
+</ol>
+<h1 id="开始准备前"><a href="#开始准备前" class="headerlink" title="开始准备前"></a>开始准备前</h1><p>在开始之前你需要知道和准备的东西：</p>
+<ol>
+<li> 兰空图床的版本确保是和我在同一个版本在V2.1</li>
+<li>有一个<code>Cloud Flare</code>的账号</li>
+<li>有一个<code>backblaze</code>的账号</li>
+<li>你需要有一个域名（应该看到这一篇博文的人都有吧）</li>
+<li>在后面的内容<code>CloudFlare</code> 将被简写成CF</li>
+<li>在后面的内容<code>backblaze</code>将被简写成B2</li>
+</ol>
+<h1 id="正片开始"><a href="#正片开始" class="headerlink" title="正片开始"></a>正片开始</h1><h2 id="B2创建存储桶"><a href="#B2创建存储桶" class="headerlink" title="B2创建存储桶"></a>B2创建存储桶</h2><p>请访问：<a href="https://secure.backblaze.com/b2_buckets.htm">https://secure.backblaze.com/b2_buckets.htm</a> 进入B2创建页面。再此页面往下翻，可以更改语言。</p>
+<p>起一个你的桶的名字，你需要把桶的档案改成<code>公众</code>。</p>
+<p><img src="https://img.c-dreamer.top/ShellBlogImg/1/2023/06/18/648edb4430902.webp"></p>
+<p>很好你现在应该已经创建好桶了并选择<code>上传/下载</code></p>
+<p><img src="https://img.c-dreamer.top/ShellBlogImg/1/2023/06/18/648edbb7f1ea5.webp"></p>
+<p>你需要上传一个文件用作与测试，知道你的桶的地址。</p>
+<p><img src="https://img.c-dreamer.top/ShellBlogImg/1/2023/06/18/648edc77d6fda.webp"></p>
+<p>你需要记得<code>友好地址</code>以及<code>S3</code>地址</p>
+<ul>
+<li>友好地址你需要记住到你的桶名</li>
+<li>S3 地址你只需要记住S3的域名即可。</li>
+</ul>
+<h2 id="CF的配置"><a href="#CF的配置" class="headerlink" title="CF的配置"></a>CF的配置</h2><blockquote>
+<p>B2只允许https，并且需要有效证书的验证，你需要检查以下你的CF上的 SSL/TLS –&gt; 概述调成完全严格</p>
+</blockquote>
+<p>你现在需要解析一个<code>CNAME</code>的域名,例如img.example.com,解析到友好URL的域名上，如果你解析成功你可以试着访问你的域名并带上桶名/以及文件名进行访问。</p>
+<p>到这里你应该也许已经明白我们需要后面要配置什么了，我们需要使用CF的    规则–&gt;转换规则—&gt;URi 重写。</p>
+<p><img src="https://img.c-dreamer.top/ShellBlogImg/1/2023/06/18/648ede10f0886.webp"></p>
+<p>我这边提供一下表达式，需要把<code>&lt;&gt;</code>的内容替换成你自己的包括<code>&lt;&gt;</code></p>
+<figure class="highlight js"><table><tbody><tr><td class="code"><pre><span class="line">(http.<span class="property">request</span>.<span class="property">uri</span>.<span class="property">path</span> ne <span class="string">"/file/&lt;桶名&gt;"</span> and http.<span class="property">host</span> eq <span class="string">"&lt;你的域名&gt;"</span>)</span><br></pre></td></tr></tbody></table></figure>
+
+<p><img src="https://img.c-dreamer.top/ShellBlogImg/1/2023/06/18/648edeb220412.webp"></p>
+<p>这里提供一些Dynamic的表达式写法</p>
+<figure class="highlight js"><table><tbody><tr><td class="code"><pre><span class="line"><span class="title function_">concat</span>(<span class="string">"/file/&lt;你的域名&gt;"</span>,http.<span class="property">request</span>.<span class="property">uri</span>.<span class="property">path</span>)</span><br></pre></td></tr></tbody></table></figure>
+
+<p>经过这样一改，你可以现在尝试以下，不加任何东西直接使用域名+上文件名再试试。</p>
+<h2 id="兰空图床更改策略"><a href="#兰空图床更改策略" class="headerlink" title="兰空图床更改策略"></a>兰空图床更改策略</h2><p>你可以参考这一篇官方的 <a href="https://github.com/lsky-org/lsky-pro/discussions/448">discussions</a> 进行改写，我就不再重复造轮子了。</p>
+<p>我在这边贴一张我自己配置的图，方便各位佬进行参考。</p>
+<ul>
+<li>存储策略选择Minio</li>
+<li>区域根据S3的URL 域名中就有写。</li>
+</ul>
+<p><img src="https://img.c-dreamer.top/ShellBlogImg/1/2023/06/18/648ee05d47c3b.webp"></p>
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p> 兰空Github Discussions：<a href="https://github.com/lsky-org/lsky-pro/discussions/448">https://github.com/lsky-org/lsky-pro/discussions/448</a></p>
+</body></html>]]></content>
+      <categories>
+        <category>网络技术</category>
+      </categories>
+      <tags>
+        <tag>backblaze</tag>
+        <tag>lskypro</tag>
+        <tag>蓝空图床</tag>
+        <tag>兰空图床</tag>
+      </tags>
   </entry>
   <entry>
     <title>萌国ICP备案</title>
@@ -1166,17 +1166,6 @@
       </tags>
   </entry>
   <entry>
-    <title>搭建镜像网站</title>
-    <url>/posts/%E6%90%AD%E5%BB%BA%E9%95%9C%E5%83%8F%E7%BD%91%E7%AB%99/</url>
-    <content><![CDATA[<html><head></head><body><ol>
-<li>不过多介绍知道就好，使用Cloudflare Worker来建造镜像网站。 2. 为什么选择Cloudflare Worker因为他免费而且个人进步够用还能访问全球。 - 开始操练起来！ 1. 你需要首先用一个Cloudflare账号<a href="https://dash.cloudflare.com/sign-up">打开注册链接</a><img src="https://c-dreamer.top/wp-content/uploads/2020/01/%E5%AE%9E%E4%BE%8B0-1024x430.png" alt="width=640height">搭建<a href="https://workers.cloudflare.com/">Cloudflare Workerd</a> <img src="https://c-dreamer.top/wp-content/uploads/2020/01/2-1024x551.png"><img src="https://c-dreamer.top/wp-content/uploads/2020/01/3-1024x483.png"><img src="https://c-dreamer.top/wp-content/uploads/2020/01/4-1024x453.png"><img src="https://c-dreamer.top/wp-content/uploads/2020/01/4-1024x453.png"><img src="https://c-dreamer.top/wp-content/uploads/2020/01/5-1024x551.png"><img src="https://c-dreamer.top/wp-content/uploads/2020/01/6-1024x458.png"><img src="https://c-dreamer.top/wp-content/uploads/2020/01/7-1024x504.png"><img src="https://c-dreamer.top/wp-content/uploads/2020/01/8-1024x509.png"><img src="https://c-dreamer.top/wp-content/uploads/2020/01/9-1024x559.png"> <figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">// 替换成你想镜像的站点</span><br><span class="line">const upstream = 'www.google.com'</span><br><span class="line">// 如果那个站点有专门的移动适配站点，否则保持和上面一致</span><br><span class="line">const upstream_mobile = 'www.google.com'</span><br><span class="line">// 你希望禁止哪些国家访问</span><br><span class="line">const blocked_region = ['KP', 'SY', 'PK', 'CU']</span><br><span class="line">// 禁止自访问</span><br><span class="line">const blocked_ip_address = ['0.0.0.0', '127.0.0.1']</span><br><span class="line">// 替换成你想镜像的站点</span><br><span class="line">const replace_dict = {</span><br><span class="line">'$upstream': '$custom_domain',</span><br><span class="line">'//google.com': ''</span><br><span class="line">}</span><br><span class="line">//以下内容都不用动</span><br><span class="line">addEventListener('fetch', event =&gt; {</span><br><span class="line">event.respondWith(fetchAndApply(event.request));</span><br><span class="line">})</span><br><span class="line">async function fetchAndApply(request) {</span><br><span class="line">const region = request.headers.get('cf-ipcountry').toUpperCase();</span><br><span class="line">const ip_address = request.headers.get('cf-connecting-ip');</span><br><span class="line">const user_agent = request.headers.get('user-agent');</span><br><span class="line">let response = null;</span><br><span class="line">let url = new URL(request.url);</span><br><span class="line">let url_host = url.host;</span><br><span class="line">if (url.protocol == 'http:') {</span><br><span class="line">url.protocol = 'https:'</span><br><span class="line">response = Response.redirect(url.href);</span><br><span class="line">return response;</span><br><span class="line">}</span><br><span class="line">if (await device_status(user_agent)) {</span><br><span class="line">upstream_domain = upstream</span><br><span class="line">} else {</span><br><span class="line">upstream_domain = upstream_mobile</span><br><span class="line">}</span><br><span class="line">url.host = upstream_domain;</span><br><span class="line">if (blocked_region.includes(region)) {</span><br><span class="line">response = new Response('Access denied: WorkersProxy is not available in your region yet.', {</span><br><span class="line">status: 403</span><br><span class="line">});</span><br><span class="line">} else if(blocked_ip_address.includes(ip_address)){</span><br><span class="line">response = new Response('Access denied: Your IP address is blocked by WorkersProxy.', {</span><br><span class="line">status: 403</span><br><span class="line">});</span><br><span class="line">} else{</span><br><span class="line">let method = request.method;</span><br><span class="line">let request_headers = request.headers;</span><br><span class="line">let new_request_headers = new Headers(request_headers);</span><br><span class="line">new_request_headers.set('Host', upstream_domain);</span><br><span class="line">new_request_headers.set('Referer', url.href);</span><br><span class="line">let original_response = await fetch(url.href, {</span><br><span class="line">method: method,</span><br><span class="line">headers: new_request_headers</span><br><span class="line">})</span><br><span class="line">let original_response_clone = original_response.clone();</span><br><span class="line">let original_text = null;</span><br><span class="line">let response_headers = original_response.headers;</span><br><span class="line">let new_response_headers = new Headers(response_headers);</span><br><span class="line">let status = original_response.status;</span><br><span class="line">new_response_headers.set('access-control-allow-origin', '*');</span><br><span class="line">new_response_headers.set('access-control-allow-credentials', true);</span><br><span class="line">new_response_headers.delete('content-security-policy');</span><br><span class="line">new_response_headers.delete('content-security-policy-report-only');</span><br><span class="line">new_response_headers.delete('clear-site-data');</span><br><span class="line">const content_type = new_response_headers.get('content-type');</span><br><span class="line">if (content_type.includes('text/html') &amp;&amp; content_type.includes('UTF-8')) {</span><br><span class="line">original_text = await replace_response_text(original_response_clone, upstream_domain, url_host);</span><br><span class="line">} else {</span><br><span class="line">original_text = original_response_clone.body</span><br><span class="line">}</span><br><span class="line">response = new Response(original_text, {</span><br><span class="line">status,</span><br><span class="line">headers: new_response_headers</span><br><span class="line">})</span><br><span class="line">}</span><br><span class="line">return response;</span><br><span class="line">}</span><br><span class="line">async function replace_response_text(response, upstream_domain, host_name) {</span><br><span class="line">let text = await response.text()</span><br><span class="line">var i, j;</span><br><span class="line">for (i in replace_dict) {</span><br><span class="line">j = replace_dict[i]</span><br><span class="line">if (i == '$upstream') {</span><br><span class="line">i = upstream_domain</span><br><span class="line">} else if (i == '$custom_domain') {</span><br><span class="line">i = host_name</span><br><span class="line">}</span><br><span class="line">if (j == '$upstream') {</span><br><span class="line">j = upstream_domain</span><br><span class="line">} else if (j == '$custom_domain') {</span><br><span class="line">j = host_name</span><br><span class="line">}</span><br><span class="line">let re = new RegExp(i, 'g')</span><br><span class="line">text = text.replace(re, j);</span><br><span class="line">}</span><br><span class="line">return text;</span><br><span class="line">}</span><br><span class="line">async function device_status (user_agent_info) {</span><br><span class="line">var agents = ["Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod"];</span><br><span class="line">var flag = true;</span><br><span class="line">for (var v = 0; v &lt; agents.length; v++) {</span><br><span class="line">if (user_agent_info.indexOf(agents[v]) &gt; 0) {</span><br><span class="line">flag = false;</span><br><span class="line">break;</span><br><span class="line">}</span><br><span class="line">}</span><br><span class="line">return flag;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure></li>
-</ol>
-</body></html>]]></content>
-      <categories>
-        <category>网络技术</category>
-      </categories>
-  </entry>
-  <entry>
     <title>备案</title>
     <url>/posts/%E5%A4%87%E6%A1%88/</url>
     <content><![CDATA[<html><head></head><body><p>历尽千辛万苦终于备案了感谢 工信部的速度，本以为要等20天才可以，没有想到工信部工作效率如此之高仅用2天时间审核完毕，也感谢阿里云初审人员的速度审核。</p>
@@ -1187,6 +1176,17 @@
       <tags>
         <tag>备案</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>搭建镜像网站</title>
+    <url>/posts/%E6%90%AD%E5%BB%BA%E9%95%9C%E5%83%8F%E7%BD%91%E7%AB%99/</url>
+    <content><![CDATA[<html><head></head><body><ol>
+<li>不过多介绍知道就好，使用Cloudflare Worker来建造镜像网站。 2. 为什么选择Cloudflare Worker因为他免费而且个人进步够用还能访问全球。 - 开始操练起来！ 1. 你需要首先用一个Cloudflare账号<a href="https://dash.cloudflare.com/sign-up">打开注册链接</a><img src="https://c-dreamer.top/wp-content/uploads/2020/01/%E5%AE%9E%E4%BE%8B0-1024x430.png" alt="width=640height">搭建<a href="https://workers.cloudflare.com/">Cloudflare Workerd</a> <img src="https://c-dreamer.top/wp-content/uploads/2020/01/2-1024x551.png"><img src="https://c-dreamer.top/wp-content/uploads/2020/01/3-1024x483.png"><img src="https://c-dreamer.top/wp-content/uploads/2020/01/4-1024x453.png"><img src="https://c-dreamer.top/wp-content/uploads/2020/01/4-1024x453.png"><img src="https://c-dreamer.top/wp-content/uploads/2020/01/5-1024x551.png"><img src="https://c-dreamer.top/wp-content/uploads/2020/01/6-1024x458.png"><img src="https://c-dreamer.top/wp-content/uploads/2020/01/7-1024x504.png"><img src="https://c-dreamer.top/wp-content/uploads/2020/01/8-1024x509.png"><img src="https://c-dreamer.top/wp-content/uploads/2020/01/9-1024x559.png"> <figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">// 替换成你想镜像的站点</span><br><span class="line">const upstream = 'www.google.com'</span><br><span class="line">// 如果那个站点有专门的移动适配站点，否则保持和上面一致</span><br><span class="line">const upstream_mobile = 'www.google.com'</span><br><span class="line">// 你希望禁止哪些国家访问</span><br><span class="line">const blocked_region = ['KP', 'SY', 'PK', 'CU']</span><br><span class="line">// 禁止自访问</span><br><span class="line">const blocked_ip_address = ['0.0.0.0', '127.0.0.1']</span><br><span class="line">// 替换成你想镜像的站点</span><br><span class="line">const replace_dict = {</span><br><span class="line">'$upstream': '$custom_domain',</span><br><span class="line">'//google.com': ''</span><br><span class="line">}</span><br><span class="line">//以下内容都不用动</span><br><span class="line">addEventListener('fetch', event =&gt; {</span><br><span class="line">event.respondWith(fetchAndApply(event.request));</span><br><span class="line">})</span><br><span class="line">async function fetchAndApply(request) {</span><br><span class="line">const region = request.headers.get('cf-ipcountry').toUpperCase();</span><br><span class="line">const ip_address = request.headers.get('cf-connecting-ip');</span><br><span class="line">const user_agent = request.headers.get('user-agent');</span><br><span class="line">let response = null;</span><br><span class="line">let url = new URL(request.url);</span><br><span class="line">let url_host = url.host;</span><br><span class="line">if (url.protocol == 'http:') {</span><br><span class="line">url.protocol = 'https:'</span><br><span class="line">response = Response.redirect(url.href);</span><br><span class="line">return response;</span><br><span class="line">}</span><br><span class="line">if (await device_status(user_agent)) {</span><br><span class="line">upstream_domain = upstream</span><br><span class="line">} else {</span><br><span class="line">upstream_domain = upstream_mobile</span><br><span class="line">}</span><br><span class="line">url.host = upstream_domain;</span><br><span class="line">if (blocked_region.includes(region)) {</span><br><span class="line">response = new Response('Access denied: WorkersProxy is not available in your region yet.', {</span><br><span class="line">status: 403</span><br><span class="line">});</span><br><span class="line">} else if(blocked_ip_address.includes(ip_address)){</span><br><span class="line">response = new Response('Access denied: Your IP address is blocked by WorkersProxy.', {</span><br><span class="line">status: 403</span><br><span class="line">});</span><br><span class="line">} else{</span><br><span class="line">let method = request.method;</span><br><span class="line">let request_headers = request.headers;</span><br><span class="line">let new_request_headers = new Headers(request_headers);</span><br><span class="line">new_request_headers.set('Host', upstream_domain);</span><br><span class="line">new_request_headers.set('Referer', url.href);</span><br><span class="line">let original_response = await fetch(url.href, {</span><br><span class="line">method: method,</span><br><span class="line">headers: new_request_headers</span><br><span class="line">})</span><br><span class="line">let original_response_clone = original_response.clone();</span><br><span class="line">let original_text = null;</span><br><span class="line">let response_headers = original_response.headers;</span><br><span class="line">let new_response_headers = new Headers(response_headers);</span><br><span class="line">let status = original_response.status;</span><br><span class="line">new_response_headers.set('access-control-allow-origin', '*');</span><br><span class="line">new_response_headers.set('access-control-allow-credentials', true);</span><br><span class="line">new_response_headers.delete('content-security-policy');</span><br><span class="line">new_response_headers.delete('content-security-policy-report-only');</span><br><span class="line">new_response_headers.delete('clear-site-data');</span><br><span class="line">const content_type = new_response_headers.get('content-type');</span><br><span class="line">if (content_type.includes('text/html') &amp;&amp; content_type.includes('UTF-8')) {</span><br><span class="line">original_text = await replace_response_text(original_response_clone, upstream_domain, url_host);</span><br><span class="line">} else {</span><br><span class="line">original_text = original_response_clone.body</span><br><span class="line">}</span><br><span class="line">response = new Response(original_text, {</span><br><span class="line">status,</span><br><span class="line">headers: new_response_headers</span><br><span class="line">})</span><br><span class="line">}</span><br><span class="line">return response;</span><br><span class="line">}</span><br><span class="line">async function replace_response_text(response, upstream_domain, host_name) {</span><br><span class="line">let text = await response.text()</span><br><span class="line">var i, j;</span><br><span class="line">for (i in replace_dict) {</span><br><span class="line">j = replace_dict[i]</span><br><span class="line">if (i == '$upstream') {</span><br><span class="line">i = upstream_domain</span><br><span class="line">} else if (i == '$custom_domain') {</span><br><span class="line">i = host_name</span><br><span class="line">}</span><br><span class="line">if (j == '$upstream') {</span><br><span class="line">j = upstream_domain</span><br><span class="line">} else if (j == '$custom_domain') {</span><br><span class="line">j = host_name</span><br><span class="line">}</span><br><span class="line">let re = new RegExp(i, 'g')</span><br><span class="line">text = text.replace(re, j);</span><br><span class="line">}</span><br><span class="line">return text;</span><br><span class="line">}</span><br><span class="line">async function device_status (user_agent_info) {</span><br><span class="line">var agents = ["Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod"];</span><br><span class="line">var flag = true;</span><br><span class="line">for (var v = 0; v &lt; agents.length; v++) {</span><br><span class="line">if (user_agent_info.indexOf(agents[v]) &gt; 0) {</span><br><span class="line">flag = false;</span><br><span class="line">break;</span><br><span class="line">}</span><br><span class="line">}</span><br><span class="line">return flag;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure></li>
+</ol>
+</body></html>]]></content>
+      <categories>
+        <category>网络技术</category>
+      </categories>
   </entry>
   <entry>
     <title>本站建立一周年!</title>
