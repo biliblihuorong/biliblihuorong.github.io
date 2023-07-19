@@ -1,9 +1,9 @@
 User-agent: Baiduspider
 Disallow: /posts/clash/
 
-Sitemap: https://www.c-dreamer.top/baidusitemap.xml
+Sitemap: https://blog.ning.moe/baidusitemap.xml
 
 User-agent: *
 Disallow:
 
-Sitemap: https://www.c-dreamer.top/sitemap.xml
+Sitemap: https://blog.ning.moe/sitemap.xml
