@@ -1251,7 +1251,7 @@
       </tags>
   </entry>
   <entry>
-    <title>Umami v2.2 Something went wrong.</title>
+    <title>解决Umami v2.3升级问题，Something went wrong.</title>
     <url>/posts/Umami-fix/</url>
     <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>是的没错，发生这样的事情，应该很多<code>Umami</code>只要是v2.2版本应该都遇到了。 </p>
 <p><img src="https://img.misaka.pics/ShellBlogImg/1/2023/07/19/64b7cb785693f.webp" alt="Umami v2.2 Something went wrong."></p>
@@ -1285,7 +1285,9 @@
       <tags>
         <tag>Umami</tag>
         <tag>PV</tag>
-        <tag>网站统计</tag>
+        <tag>网站统计，UV</tag>
+        <tag>Ip</tag>
+        <tag>MySql</tag>
       </tags>
   </entry>
 </search>
