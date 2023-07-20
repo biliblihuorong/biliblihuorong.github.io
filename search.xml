@@ -50,29 +50,6 @@
       </tags>
   </entry>
   <entry>
-    <title>ArchLinux 使用体验</title>
-    <url>/posts/ArchLinux/</url>
-    <content><![CDATA[<html><head></head><body><img src="https://img.c-dreamer.top/i/1/2023/02/09/63e4c0b786de8.webp" alt="archlinux-logo-dark-1200dpi.webp" style="zoom: 25%;">
-
-<h1 id="关于-ArchLinux"><a href="#关于-ArchLinux" class="headerlink" title="关于 ArchLinux"></a>关于 ArchLinux</h1><p>Arch 是Linux发行版的一个分支，arch的理念是完全自定义，没有所谓的系统版本，全部是滚动升级（长时间不滚，会滚炸，当然我每天开机第一件事就是滚一下）</p>
-<h1 id="正片开始"><a href="#正片开始" class="headerlink" title="正片开始"></a>正片开始</h1><h2 id="为什么非要选择Arch？"><a href="#为什么非要选择Arch？" class="headerlink" title="为什么非要选择Arch？"></a>为什么非要选择Arch？</h2><p>其实如果你要是在非中国大陆的话，我觉得你使用Ubuntu 或者其他的发行版大同小异，因为我看中了 Arch的万能的AUR软件仓库源，这里面有各位大佬自封装的软件，庞大的软件仓库，例如微信 需要wine 以及烦琐的配置 AUR 可以直接解决这些问题。</p>
-<h2 id="听说安装Arch很难？"><a href="#听说安装Arch很难？" class="headerlink" title="听说安装Arch很难？"></a>听说安装Arch很难？</h2><p>是的 Arch 的安装异常的烦琐切复杂 ，不过如果你擅用<code>Search</code>和<a href="https://wiki.archlinuxcn.org/wiki/%E9%A6%96%E9%A1%B5" rel="external nofollow noreferrer" title="ArchWiKi">ArchWiki</a> 和时间耐心的研究，其实很简单，我是一个纯Linux小白，在查阅ArchWiki花费大量的时间研究之后也安装成功。</p>
-<h2 id="我现在的状态？"><a href="#我现在的状态？" class="headerlink" title="我现在的状态？"></a>我现在的状态？</h2><p>我现在给电脑装载了双系统（怕arch崩了就无了） win11+arch</p>
-<p><img src="https://img.c-dreamer.top/i/1/2023/02/09/63e4bbfff1e9c.webp" alt="ArchLinux 配置.webp"></p>
-<h2 id="使用体验"><a href="#使用体验" class="headerlink" title="使用体验"></a>使用体验</h2><p>我用Arch差不多3个月了，除了刚开始的不适逐渐慢慢适应之后逐渐习惯，但我偶尔也很想换回windows，因为我现在还没有适应在linux只用一个根的感念，而不像windows的区概念（而且我分区还很多）。</p>
-<h1 id="你要现在立刻安装Arch？"><a href="#你要现在立刻安装Arch？" class="headerlink" title="你要现在立刻安装Arch？"></a>你要现在立刻安装Arch？</h1><h3 id="你会首先面临的问题"><a href="#你会首先面临的问题" class="headerlink" title="你会首先面临的问题"></a>你会首先面临的问题</h3><h4 id="游戏生态"><a href="#游戏生态" class="headerlink" title="游戏生态"></a>游戏生态</h4><p>首先Linux上虽然有steam 的Steam Play的加持，游戏生态逐步扩大，但还是有诸多游戏不能游玩，详情可以看这个<a href="https://www.protondb.com/" rel="external nofollow noreferrer" title="protondb">protondb</a>上搜索🔍，还有原神属于能玩的级别但是配置很烦琐。</p>
-<h4 id="软件的生态"><a href="#软件的生态" class="headerlink" title="软件的生态"></a>软件的生态</h4><p>虽然有AUR 的加持但仍然有很多软件只有windows平台还用<code>wine</code>调教不好它例如<code>office</code> ，但这不是说你不能使用这些功能，Linux有很多平替软件可以选择例如 <code>libreoffice</code> or <code>WPS</code>。</p>
-<h4 id="使用习惯"><a href="#使用习惯" class="headerlink" title="使用习惯"></a>使用习惯</h4><p>就像我前面提到的 Linux和Windows对于磁盘区的概念来说，以及你要面临一个新的桌面使用环境。</p>
-</body></html>]]></content>
-      <categories>
-        <category>生活随想</category>
-      </categories>
-      <tags>
-        <tag>Arch</tag>
-        <tag>Linux</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Linux安装宝塔面板</title>
     <url>/posts/21-8-3/</url>
     <content><![CDATA[<html><head></head><body><blockquote>
@@ -115,207 +92,26 @@
       </tags>
   </entry>
   <entry>
-    <title>你可能需要知道的docker 的端口问题。</title>
-    <url>/posts/DockerSecurity/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h1><p>docker 这个东西呢，对于我来说又爱又恨吧，爱的事情是可以很快速的进行部署项目，解决一些复杂和繁琐的问题，这也是docker 设计的初衷。恨得呢，本身我对于docker 来说是是一个小白用户，我只会 docker run xxxx 来完成我在github 找到的有趣应用，但是出了问题的时候，我需要去使用搜索引擎查阅的知识。</p>
-<h1 id="需要准备的东西？"><a href="#需要准备的东西？" class="headerlink" title="需要准备的东西？"></a>需要准备的东西？</h1><ul>
-<li>掌握搜索引擎技能（下面的文章只会叫你如何进行使用基本的iptables）</li>
-<li>一个大脑🧠</li>
-<li>一台运行了Linux系统的电脑</li>
-<li>掌握基本的Linux基本知识</li>
-</ul>
-<h1 id="抛出问题"><a href="#抛出问题" class="headerlink" title="抛出问题"></a>抛出问题</h1><p>应该在阅读这篇文章的人，都在很疑惑，为什么我在docker上使用 docker run -p 指令的时候，和宿主机进行绑定端口，本来我是想使用nginx 进行反代的，我自己的防火墙也没有放行这个端口，但从外部确确实实的可以访问。</p>
-<h1 id="为什么会出现这个问题？"><a href="#为什么会出现这个问题？" class="headerlink" title="为什么会出现这个问题？"></a>为什么会出现这个问题？</h1><p>在docker 官方文档上就有这个解释，docker 使用 -p 进行放行端口的时候，低层使用 <code>iptables防火墙 FORWARD</code>将流量转发到docker 运行的容器里面。</p>
-<p>我拿 <a href="https://www.c-dreamer.top/posts/IPtables/#%E5%9B%9B%E8%A1%A8%E9%A1%BA%E5%BA%8F" rel="external nofollow noreferrer">Iptables防火墙</a> 这篇文章的图进行来说明一下</p>
-<p><img src="https://img.c-dreamer.top/i/1/2023/01/30/63d77669edb42.webp" alt="iptables.png"></p>
-<p>因为 流量在进入iptables 防火墙的时候 会经过路由选择进行判定，这个流量是要转发还是要流入本机里面，由于docker 自身创建了一个单独的内网环境一般这个 IP段是 <code>172.17.0.0/16</code> ,然后流浪回去转入对应的容器里面。</p>
-<h1 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h1><p>知道了为什么会出现这个问题，其实就可以知道其中一种解决办法了，就是不适用 -p 指令不让宿主机和容器进行绑定，然后使用nginx 进行，反向代理就可以了，一般情况下是，docker 使用 桥接网络模式 ，Docker 会为每个容器分配一个唯一的 IP 地址。可以查询这个docker 容器的ip 就可以实现反代，但是这个方法会有些问题，</p>
-<ol>
-<li>有点麻烦，你需要创建一个docker 容器就要进行配置反代。</li>
-<li> nginx 不支持 udp 代理所以说还要安装和配置能代理udp 的软件实现反代。</li>
-<li>还有一种办法就是直接在docker 的配置文件中关闭使用 IP tables 防护墙，交给其他防火墙进行保护例如 ufw 等</li>
-</ol>
-<h2 id="方法一：-nginx-反向代理"><a href="#方法一：-nginx-反向代理" class="headerlink" title="方法一： nginx 反向代理"></a>方法一： nginx 反向代理</h2><p>使用这个方法需要拿到容器的IP</p>
-<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">sudo docker inspect &lt;你的容器唯一<span class="built_in">id</span>或者容器的名字&gt; | grep <span class="string">"IPAddress"</span></span><br></pre></td></tr></tbody></table></figure>
-<p>应该会返回，一下信息，例如我的这个测试容器的IP就是 <code>172.17.0.4</code></p>
-<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">docker inspect nginx-8080 | grep <span class="string">"IPAddress"</span></span><br><span class="line">            <span class="string">"SecondaryIPAddresses"</span>: null,</span><br><span class="line">            <span class="string">"IPAddress"</span>: <span class="string">"172.17.0.4"</span>,</span><br><span class="line">                    <span class="string">"IPAddress"</span>: <span class="string">"172.17.0.4"</span>,</span><br></pre></td></tr></tbody></table></figure>
+    <title>ArchLinux 使用体验</title>
+    <url>/posts/ArchLinux/</url>
+    <content><![CDATA[<html><head></head><body><img src="https://img.c-dreamer.top/i/1/2023/02/09/63e4c0b786de8.webp" alt="archlinux-logo-dark-1200dpi.webp" style="zoom: 25%;">
 
-<p>然后去你的nginx 配置新增你的配置文件</p>
-<figure class="highlight yaml"><table><tbody><tr><td class="code"><pre><span class="line"><span class="string">server</span> {</span><br><span class="line">    <span class="string">listen</span> <span class="number">80</span><span class="string">;</span> <span class="string">//监听端口</span></span><br><span class="line">    <span class="string">server_name</span> <span class="string">localhost;</span> <span class="string">//</span> <span class="string">localhost</span> <span class="string">是监听域名或者是ip</span></span><br><span class="line">    </span><br><span class="line">    <span class="string">location</span> <span class="string">/</span> {</span><br><span class="line">        <span class="string">proxy_pass</span> <span class="string">http://容器的IP地址:容器内部Nginx服务器监听的端口;</span></span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-
-<p>如果你是使用BT面板进行管理的，只需要去网站 - 创建一个新的站点，然后打开配置选择反向代理，填入对应信息即可。</p>
-<h2 id="方法二：-修改docker-配置文件"><a href="#方法二：-修改docker-配置文件" class="headerlink" title="方法二： 修改docker 配置文件"></a>方法二： 修改docker 配置文件</h2><p>这个方法就比较简单和直接，一般默认情况下docker 的配置文件会在  <code> /etc/docker/daemon.json</code> 如果没有这个 <code>daemon.json</code>可以直接创建就行了。</p>
-<p>注意如果你不会使用vi 或者是vim 编辑器的基本使用，你应该需要去学习一下vi或者vim 的简单使用即可。</p>
-<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">sudo vi /etc/docker/daemon.json</span><br></pre></td></tr></tbody></table></figure>
-<p>加入这段配置</p>
-<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">{</span><br><span class="line">    <span class="string">"iptables"</span>: <span class="literal">false</span></span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-
-<p>重启一下docker 以及docker 的守护进程</p>
-<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">sudo systemctl restart docker</span><br></pre></td></tr></tbody></table></figure>
-
-<p>注意重启 docker 和docker的守护进程，会需要手动重启创建的docker 容器。在docker 容器重新启动之后 -p 只会绑定宿主机端口号，宿主机端口受现在防火墙进行管理。</p>
-</body></html>]]></content>
-      <categories>
-        <category>网络技术</category>
-      </categories>
-      <tags>
-        <tag>docker</tag>
-        <tag>安全</tag>
-        <tag>ufw</tag>
-        <tag>IPtables</tag>
-        <tag>防火墙</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Java使用CloudFlare Turnstile 验证码</title>
-    <url>/posts/Java-CAPTCHA-cloudflare/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="引言："><a href="#引言：" class="headerlink" title="引言："></a>引言：</h1><blockquote>
-<p>在学习springMVC 和Spring Security中，总有一个服务，叫做验证码，每次我自己写这个验证码的时候，最后还要在测试，而且特别的不友好，甚至我自己都分不清那个字母，当然Java里面有个很优秀的滑块验证码比如这个大佬开发的<a href="https://gitee.com/tianai/tianai-captcha" rel="external nofollow noreferrer">tianai-captcha</a><br>总是给人一种不是很优雅，我自己是人类，为什么还要进行验证码，而且这种验证往往经过训练的ai更容易比人类做的好，这就失去了验证码的意义<code>CAPTCHA</code>，Cloud Flare就做了一个无需进行让你输入字符或者滑动以及选择图片的验证码，如果需要更多了解你可以访问CF的官方介绍<a href="https://blog.cloudflare.com/zh-cn/turnstile-private-captcha-alternative-zh-cn/" rel="external nofollow noreferrer">CloudFlare-Turnstile</a></p>
-</blockquote>
-<h1 id="需要准备"><a href="#需要准备" class="headerlink" title="需要准备"></a>需要准备</h1><ol>
-<li>一个Cloud Flare账号</li>
-<li>一个域名（不需要接入Cloud Flare）<h1 id="流程"><a href="#流程" class="headerlink" title="流程"></a>流程</h1></li>
-</ol>
-<blockquote>
-<p>CloudFlare以下简称CF， 官网的配置文件已经写的很清楚<br> <img src="https://img.misaka.pics/i/1/2023/04/21/64423eac7e80f.webp" alt="Turnstile" style="zoom: 67%;"></p>
-<ol>
-<li>用户打开受验证码保护的网页，先会和CF的验证码服务器进行通讯拿到，JWT令牌（令牌有效300秒）</li>
-<li>用户会把提交内容以及CF生成的令牌发送到服务器，</li>
-<li>服务器会拿着CF令牌进行和CF验证码服务器通讯，拿到JSON数值</li>
-</ol>
-</blockquote>
-<h1 id="快速使用"><a href="#快速使用" class="headerlink" title="快速使用"></a>快速使用</h1><ol>
-<li>登录你的CF账号会在仪表盘的左侧看到<code>Turnstile </code></li>
-<li>点击添加</li>
-<li><img src="https://img.misaka.pics/i/1/2023/03/28/6422b39497161.webp" alt="image-20230328110719966" style="zoom:50%;"></li>
-</ol>
-<p>我一般是选择托管，由cf来决定用户需不需要进行交互一下，</p>
-<ol start="4">
-<li>注册完毕之后我们会得到两个值一个是站点密钥，一个是密钥，密钥是用来进行服务端和CF通讯的，而站点密钥是放在被保护的资源上的。</li>
-</ol>
-<p>按照<a href="https://developers.cloudflare.com/turnstile/get-started/client-side-rendering/" rel="external nofollow noreferrer">CF文档的客户端配置</a>我这里就那官方的例子来</p>
-<figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"X-UA-Compatible"</span> <span class="attr">content</span>=<span class="string">"IE=edge"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width, initial-scale=1.0"</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- 引用CF的验证码js --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://challenges.cloudflare.com/turnstile/v0/api.js"</span> <span class="attr">async</span> <span class="attr">defer</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">form</span> <span class="attr">id</span>=<span class="string">"form"</span> <span class="attr">action</span>=<span class="string">"/login"</span> <span class="attr">method</span>=<span class="string">"POST"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">"username"</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">placeholder</span>=<span class="string">"username"</span> <span class="attr">name</span>=<span class="string">"username"</span> /&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">"password"</span> <span class="attr">type</span>=<span class="string">"password"</span> <span class="attr">placeholder</span>=<span class="string">"password"</span> <span class="attr">name</span>=<span class="string">"password"</span> /&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- 在data-sitekey中需要填写站点密钥 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"cf-turnstile"</span> <span class="attr">data-sitekey</span>=<span class="string">"0x4AAAAAAACzpeJEUBQ4rBi-"</span> <span class="attr">data-callback</span>=<span class="string">"javascriptCallback"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">button</span> <span class="attr">id</span>=<span class="string">"button"</span> <span class="attr">type</span>=<span class="string">"submit"</span> <span class="attr">value</span>=<span class="string">"Submit"</span>&gt;</span>Log in<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
-
-<p>用户单击的登陆之后我们就能在后端拿到用户的账号密码以及CF的令牌。我们会在后端拿到一个名为：<code>cf-turnstile-response</code>的键值对，这里面存放的是cf的令牌。</p>
-<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> String <span class="title function_">test</span><span class="params">(String req)</span> <span class="keyword">throws</span> IOException {</span><br><span class="line">	<span class="comment">//secret 是填写密钥</span></span><br><span class="line">	<span class="type">String</span> <span class="variable">secret</span> <span class="operator">=</span> <span class="string">""</span>;</span><br><span class="line">	<span class="comment">//url是默认的地址无需更改</span></span><br><span class="line">	<span class="type">URL</span> <span class="variable">url</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">URL</span>(<span class="string">"https://challenges.cloudflare.com/turnstile/v0/siteverify"</span>);</span><br><span class="line">	<span class="type">HttpURLConnection</span> <span class="variable">httpConn</span> <span class="operator">=</span> (HttpURLConnection) url.openConnection();</span><br><span class="line">	httpConn.setRequestMethod(<span class="string">"POST"</span>);</span><br><span class="line">	<span class="comment">//请求类型cf 请求仅支持 application/x-www-form-urlencoded 或者是 application/JSON</span></span><br><span class="line">	httpConn.setRequestProperty(<span class="string">"Content-Type"</span>, <span class="string">"application/x-www-form-urlencoded"</span>);</span><br><span class="line"></span><br><span class="line">	httpConn.setDoOutput(<span class="literal">true</span>);</span><br><span class="line">	<span class="type">OutputStreamWriter</span> <span class="variable">writer</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">OutputStreamWriter</span>(httpConn.getOutputStream());</span><br><span class="line">	writer.write(<span class="string">"secret="</span>+secret+<span class="string">"&amp;response="</span>+req);</span><br><span class="line">	writer.flush();</span><br><span class="line">	writer.close();</span><br><span class="line">	httpConn.getOutputStream().close();</span><br><span class="line"></span><br><span class="line">	<span class="type">InputStream</span> <span class="variable">responseStream</span> <span class="operator">=</span> httpConn.getResponseCode() / <span class="number">100</span> == <span class="number">2</span></span><br><span class="line">			? httpConn.getInputStream()</span><br><span class="line">			: httpConn.getErrorStream();</span><br><span class="line">	<span class="type">Scanner</span> <span class="variable">s</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(responseStream).useDelimiter(<span class="string">"\\A"</span>);</span><br><span class="line">	<span class="type">String</span> <span class="variable">response</span> <span class="operator">=</span> s.hasNext() ? s.next() : <span class="string">""</span>;</span><br><span class="line">	System.out.println(response);</span><br><span class="line">	<span class="keyword">return</span> response;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-
-<p>上述是我们拿到用户的<code>cf-turnstile-response</code>值然后和cf通讯返回的<code>response</code>就是CF给我们的JSON。</p>
-<p>根据官方文档：</p>
-<p>如果验证成功，响应应类似于以下内容：</p>
-<figure class="highlight json"><table><tbody><tr><td class="code"><pre><span class="line"><span class="punctuation">{</span></span><br><span class="line">  <span class="attr">"success"</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">"challenge_ts"</span><span class="punctuation">:</span> <span class="string">"2022-02-28T15:14:30.096Z"</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">"hostname"</span><span class="punctuation">:</span> <span class="string">"example.com"</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">"error-codes"</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">"action"</span><span class="punctuation">:</span> <span class="string">"login"</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">"cdata"</span><span class="punctuation">:</span> <span class="string">"sessionid-123456789"</span></span><br><span class="line"><span class="punctuation">}</span></span><br></pre></td></tr></tbody></table></figure>
-
-
-
-<ul>
-<li><code>challenge_ts</code>是解决挑战时的 ISO 时间戳。</li>
-<li><code>hostname</code>是为其提供质询的主机名。</li>
-<li><code>action</code>是传递给客户端小部件的客户小部件标识符。这用于区分在分析中使用相同站点密钥的小部件。它的完整性受到攻击者修改的保护。建议验证操作是否与预期值匹配。</li>
-<li><code>cdata</code>是传递给客户端小部件的客户数据。客户可以使用它来传达状态。它的完整性受到攻击者修改的保护。</li>
-<li><code>error-codes</code>是发生的错误列表。</li>
-</ul>
-<p>如果验证失败，响应应类似于以下内容：</p>
-<figure class="highlight json"><table><tbody><tr><td class="code"><pre><span class="line"><span class="punctuation">{</span></span><br><span class="line">  <span class="attr">"success"</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">false</span></span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">"error-codes"</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">    <span class="string">"invalid-input-response"</span></span><br><span class="line">  <span class="punctuation">]</span></span><br><span class="line"><span class="punctuation">}</span></span><br></pre></td></tr></tbody></table></figure>
-
-
-
-<p><code>success</code>通过将属性设置为 来指示验证错误<code>false</code>。提供了错误代码列表以指示响应无法验证的原因。响应还可能包含其他字段，具体取决于 Turnstile siteverify 是否能够成功或不成功地解析响应。</p>
-<p> <strong>错误代码</strong>：</p>
-<table>
-<thead>
-<tr>
-<th align="left">错误代码</th>
-<th align="left">描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><code>missing-input-secret</code></td>
-<td align="left">未传递秘密参数。</td>
-</tr>
-<tr>
-<td align="left"><code>invalid-input-secret</code></td>
-<td align="left">秘密参数无效或不存在。</td>
-</tr>
-<tr>
-<td align="left"><code>missing-input-response</code></td>
-<td align="left">未传递响应参数。</td>
-</tr>
-<tr>
-<td align="left"><code>invalid-input-response</code></td>
-<td align="left">响应参数无效或已过期。</td>
-</tr>
-<tr>
-<td align="left"><code>bad-request</code></td>
-<td align="left">该请求被拒绝，因为它格式不正确。</td>
-</tr>
-<tr>
-<td align="left"><code>timeout-or-duplicate</code></td>
-<td align="left">响应参数之前已经过验证。</td>
-</tr>
-<tr>
-<td align="left"><code>internal-error</code></td>
-<td align="left">验证响应时发生内部错误。可以重试该请求。</td>
-</tr>
-</tbody></table>
-<p>根据以上信息我们就可以判断并且，接收cf的保护了。</p>
-<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><blockquote>
-<p><a href="https://developers.cloudflare.com/turnstile/" rel="external nofollow noreferrer">CF Turnstile 开发文档</a><br><a href="https://blog.cloudflare.com/zh-cn/turnstile-private-captcha-alternative-zh-cn/" rel="external nofollow noreferrer">CloudFlare-Turnstile介绍</a></p>
-</blockquote>
-</body></html>]]></content>
-      <categories>
-        <category>网络技术</category>
-      </categories>
-      <tags>
-        <tag>Spring</tag>
-        <tag>Java</tag>
-        <tag>CloudFlare</tag>
-        <tag>CAPTCHA</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>2023年好耶！</title>
-    <url>/posts/New2023/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="博客补全计划"><a href="#博客补全计划" class="headerlink" title="博客补全计划"></a>博客补全计划</h1><p>对于突然诈尸的我，在这两年里面我也写了很多稿子（虽然都没有发出来），其实要么是不满意不太像水，要么就是写着写着发现，貌似有很多问题。</p>
-<blockquote>
-<p>如今看着我的博客日渐没有维护（上次小范围维护还是在6个月以前）我决定不能在这样怠惰下去了。</p>
-</blockquote>
-<h1 id="制定计划ing"><a href="#制定计划ing" class="headerlink" title="制定计划ing"></a>制定计划ing</h1><ol>
-<li><ul>
-<li><input checked="" disabled="" type="checkbox"> 修改<code>butterfly</code>主题</li>
-</ul>
-</li>
-<li><ul>
-<li><input checked="" disabled="" type="checkbox"> 重新整理图片的地址</li>
-</ul>
-</li>
-<li><ul>
-<li><input disabled="" type="checkbox"> 将以前废稿进行优化处理，达到可发布</li>
-</ul>
-</li>
-<li><ul>
-<li><input checked="" disabled="" type="checkbox"> 修复大陆评论时，评论插件响应慢的问题</li>
-</ul>
-</li>
-<li><ul>
-<li><input checked="" disabled="" type="checkbox"> 修改以前博文的地址链接，进行缩短处理</li>
-</ul>
-</li>
-</ol>
-<blockquote>
-<p>差不多先这样，让博客先复活，后续应该不会一年+一更了 哎<del>嘿</del></p>
-</blockquote>
-<hr>
-<p>23年1-29日</p>
-<p>现在基本上已经快修理 80%了，另外我好重写补写了一遍文章，好气刚搭建完，自己的访客分析系统就被adguard给ban了我在想想办法吧。</p>
-<p>至于评论（twikoo）的话我现在还没有看，因为我放在了vercel 大陆访问是真的很慢了，博客的图像也全部换成了webp，关键是首页的横幅是真的大大概5mb的图像。</p>
-<hr>
-<p>23年1-30</p>
-<p>现在已经吧 twikoo部署到私服上，速度会有明显的提升，现在就差几篇废稿了。</p>
+<h1 id="关于-ArchLinux"><a href="#关于-ArchLinux" class="headerlink" title="关于 ArchLinux"></a>关于 ArchLinux</h1><p>Arch 是Linux发行版的一个分支，arch的理念是完全自定义，没有所谓的系统版本，全部是滚动升级（长时间不滚，会滚炸，当然我每天开机第一件事就是滚一下）</p>
+<h1 id="正片开始"><a href="#正片开始" class="headerlink" title="正片开始"></a>正片开始</h1><h2 id="为什么非要选择Arch？"><a href="#为什么非要选择Arch？" class="headerlink" title="为什么非要选择Arch？"></a>为什么非要选择Arch？</h2><p>其实如果你要是在非中国大陆的话，我觉得你使用Ubuntu 或者其他的发行版大同小异，因为我看中了 Arch的万能的AUR软件仓库源，这里面有各位大佬自封装的软件，庞大的软件仓库，例如微信 需要wine 以及烦琐的配置 AUR 可以直接解决这些问题。</p>
+<h2 id="听说安装Arch很难？"><a href="#听说安装Arch很难？" class="headerlink" title="听说安装Arch很难？"></a>听说安装Arch很难？</h2><p>是的 Arch 的安装异常的烦琐切复杂 ，不过如果你擅用<code>Search</code>和<a href="https://wiki.archlinuxcn.org/wiki/%E9%A6%96%E9%A1%B5" rel="external nofollow noreferrer" title="ArchWiKi">ArchWiki</a> 和时间耐心的研究，其实很简单，我是一个纯Linux小白，在查阅ArchWiki花费大量的时间研究之后也安装成功。</p>
+<h2 id="我现在的状态？"><a href="#我现在的状态？" class="headerlink" title="我现在的状态？"></a>我现在的状态？</h2><p>我现在给电脑装载了双系统（怕arch崩了就无了） win11+arch</p>
+<p><img src="https://img.c-dreamer.top/i/1/2023/02/09/63e4bbfff1e9c.webp" alt="ArchLinux 配置.webp"></p>
+<h2 id="使用体验"><a href="#使用体验" class="headerlink" title="使用体验"></a>使用体验</h2><p>我用Arch差不多3个月了，除了刚开始的不适逐渐慢慢适应之后逐渐习惯，但我偶尔也很想换回windows，因为我现在还没有适应在linux只用一个根的感念，而不像windows的区概念（而且我分区还很多）。</p>
+<h1 id="你要现在立刻安装Arch？"><a href="#你要现在立刻安装Arch？" class="headerlink" title="你要现在立刻安装Arch？"></a>你要现在立刻安装Arch？</h1><h3 id="你会首先面临的问题"><a href="#你会首先面临的问题" class="headerlink" title="你会首先面临的问题"></a>你会首先面临的问题</h3><h4 id="游戏生态"><a href="#游戏生态" class="headerlink" title="游戏生态"></a>游戏生态</h4><p>首先Linux上虽然有steam 的Steam Play的加持，游戏生态逐步扩大，但还是有诸多游戏不能游玩，详情可以看这个<a href="https://www.protondb.com/" rel="external nofollow noreferrer" title="protondb">protondb</a>上搜索🔍，还有原神属于能玩的级别但是配置很烦琐。</p>
+<h4 id="软件的生态"><a href="#软件的生态" class="headerlink" title="软件的生态"></a>软件的生态</h4><p>虽然有AUR 的加持但仍然有很多软件只有windows平台还用<code>wine</code>调教不好它例如<code>office</code> ，但这不是说你不能使用这些功能，Linux有很多平替软件可以选择例如 <code>libreoffice</code> or <code>WPS</code>。</p>
+<h4 id="使用习惯"><a href="#使用习惯" class="headerlink" title="使用习惯"></a>使用习惯</h4><p>就像我前面提到的 Linux和Windows对于磁盘区的概念来说，以及你要面临一个新的桌面使用环境。</p>
 </body></html>]]></content>
       <categories>
         <category>生活随想</category>
       </categories>
       <tags>
-        <tag>TODO</tag>
+        <tag>Arch</tag>
+        <tag>Linux</tag>
       </tags>
   </entry>
   <entry>
@@ -537,9 +333,213 @@
       </categories>
       <tags>
         <tag>Linux</tag>
-        <tag>IPtables</tag>
-        <tag>防火墙</tag>
         <tag>网络安全</tag>
+        <tag>防火墙</tag>
+        <tag>IPtables</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java使用CloudFlare Turnstile 验证码</title>
+    <url>/posts/Java-CAPTCHA-cloudflare/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="引言："><a href="#引言：" class="headerlink" title="引言："></a>引言：</h1><blockquote>
+<p>在学习springMVC 和Spring Security中，总有一个服务，叫做验证码，每次我自己写这个验证码的时候，最后还要在测试，而且特别的不友好，甚至我自己都分不清那个字母，当然Java里面有个很优秀的滑块验证码比如这个大佬开发的<a href="https://gitee.com/tianai/tianai-captcha" rel="external nofollow noreferrer">tianai-captcha</a><br>总是给人一种不是很优雅，我自己是人类，为什么还要进行验证码，而且这种验证往往经过训练的ai更容易比人类做的好，这就失去了验证码的意义<code>CAPTCHA</code>，Cloud Flare就做了一个无需进行让你输入字符或者滑动以及选择图片的验证码，如果需要更多了解你可以访问CF的官方介绍<a href="https://blog.cloudflare.com/zh-cn/turnstile-private-captcha-alternative-zh-cn/" rel="external nofollow noreferrer">CloudFlare-Turnstile</a></p>
+</blockquote>
+<h1 id="需要准备"><a href="#需要准备" class="headerlink" title="需要准备"></a>需要准备</h1><ol>
+<li>一个Cloud Flare账号</li>
+<li>一个域名（不需要接入Cloud Flare）<h1 id="流程"><a href="#流程" class="headerlink" title="流程"></a>流程</h1></li>
+</ol>
+<blockquote>
+<p>CloudFlare以下简称CF， 官网的配置文件已经写的很清楚<br> <img src="https://img.misaka.pics/i/1/2023/04/21/64423eac7e80f.webp" alt="Turnstile" style="zoom: 67%;"></p>
+<ol>
+<li>用户打开受验证码保护的网页，先会和CF的验证码服务器进行通讯拿到，JWT令牌（令牌有效300秒）</li>
+<li>用户会把提交内容以及CF生成的令牌发送到服务器，</li>
+<li>服务器会拿着CF令牌进行和CF验证码服务器通讯，拿到JSON数值</li>
+</ol>
+</blockquote>
+<h1 id="快速使用"><a href="#快速使用" class="headerlink" title="快速使用"></a>快速使用</h1><ol>
+<li>登录你的CF账号会在仪表盘的左侧看到<code>Turnstile </code></li>
+<li>点击添加</li>
+<li><img src="https://img.misaka.pics/i/1/2023/03/28/6422b39497161.webp" alt="image-20230328110719966" style="zoom:50%;"></li>
+</ol>
+<p>我一般是选择托管，由cf来决定用户需不需要进行交互一下，</p>
+<ol start="4">
+<li>注册完毕之后我们会得到两个值一个是站点密钥，一个是密钥，密钥是用来进行服务端和CF通讯的，而站点密钥是放在被保护的资源上的。</li>
+</ol>
+<p>按照<a href="https://developers.cloudflare.com/turnstile/get-started/client-side-rendering/" rel="external nofollow noreferrer">CF文档的客户端配置</a>我这里就那官方的例子来</p>
+<figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"X-UA-Compatible"</span> <span class="attr">content</span>=<span class="string">"IE=edge"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width, initial-scale=1.0"</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- 引用CF的验证码js --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://challenges.cloudflare.com/turnstile/v0/api.js"</span> <span class="attr">async</span> <span class="attr">defer</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">form</span> <span class="attr">id</span>=<span class="string">"form"</span> <span class="attr">action</span>=<span class="string">"/login"</span> <span class="attr">method</span>=<span class="string">"POST"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">"username"</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">placeholder</span>=<span class="string">"username"</span> <span class="attr">name</span>=<span class="string">"username"</span> /&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">"password"</span> <span class="attr">type</span>=<span class="string">"password"</span> <span class="attr">placeholder</span>=<span class="string">"password"</span> <span class="attr">name</span>=<span class="string">"password"</span> /&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- 在data-sitekey中需要填写站点密钥 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"cf-turnstile"</span> <span class="attr">data-sitekey</span>=<span class="string">"0x4AAAAAAACzpeJEUBQ4rBi-"</span> <span class="attr">data-callback</span>=<span class="string">"javascriptCallback"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">button</span> <span class="attr">id</span>=<span class="string">"button"</span> <span class="attr">type</span>=<span class="string">"submit"</span> <span class="attr">value</span>=<span class="string">"Submit"</span>&gt;</span>Log in<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>用户单击的登陆之后我们就能在后端拿到用户的账号密码以及CF的令牌。我们会在后端拿到一个名为：<code>cf-turnstile-response</code>的键值对，这里面存放的是cf的令牌。</p>
+<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> String <span class="title function_">test</span><span class="params">(String req)</span> <span class="keyword">throws</span> IOException {</span><br><span class="line">	<span class="comment">//secret 是填写密钥</span></span><br><span class="line">	<span class="type">String</span> <span class="variable">secret</span> <span class="operator">=</span> <span class="string">""</span>;</span><br><span class="line">	<span class="comment">//url是默认的地址无需更改</span></span><br><span class="line">	<span class="type">URL</span> <span class="variable">url</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">URL</span>(<span class="string">"https://challenges.cloudflare.com/turnstile/v0/siteverify"</span>);</span><br><span class="line">	<span class="type">HttpURLConnection</span> <span class="variable">httpConn</span> <span class="operator">=</span> (HttpURLConnection) url.openConnection();</span><br><span class="line">	httpConn.setRequestMethod(<span class="string">"POST"</span>);</span><br><span class="line">	<span class="comment">//请求类型cf 请求仅支持 application/x-www-form-urlencoded 或者是 application/JSON</span></span><br><span class="line">	httpConn.setRequestProperty(<span class="string">"Content-Type"</span>, <span class="string">"application/x-www-form-urlencoded"</span>);</span><br><span class="line"></span><br><span class="line">	httpConn.setDoOutput(<span class="literal">true</span>);</span><br><span class="line">	<span class="type">OutputStreamWriter</span> <span class="variable">writer</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">OutputStreamWriter</span>(httpConn.getOutputStream());</span><br><span class="line">	writer.write(<span class="string">"secret="</span>+secret+<span class="string">"&amp;response="</span>+req);</span><br><span class="line">	writer.flush();</span><br><span class="line">	writer.close();</span><br><span class="line">	httpConn.getOutputStream().close();</span><br><span class="line"></span><br><span class="line">	<span class="type">InputStream</span> <span class="variable">responseStream</span> <span class="operator">=</span> httpConn.getResponseCode() / <span class="number">100</span> == <span class="number">2</span></span><br><span class="line">			? httpConn.getInputStream()</span><br><span class="line">			: httpConn.getErrorStream();</span><br><span class="line">	<span class="type">Scanner</span> <span class="variable">s</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(responseStream).useDelimiter(<span class="string">"\\A"</span>);</span><br><span class="line">	<span class="type">String</span> <span class="variable">response</span> <span class="operator">=</span> s.hasNext() ? s.next() : <span class="string">""</span>;</span><br><span class="line">	System.out.println(response);</span><br><span class="line">	<span class="keyword">return</span> response;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<p>上述是我们拿到用户的<code>cf-turnstile-response</code>值然后和cf通讯返回的<code>response</code>就是CF给我们的JSON。</p>
+<p>根据官方文档：</p>
+<p>如果验证成功，响应应类似于以下内容：</p>
+<figure class="highlight json"><table><tbody><tr><td class="code"><pre><span class="line"><span class="punctuation">{</span></span><br><span class="line">  <span class="attr">"success"</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">"challenge_ts"</span><span class="punctuation">:</span> <span class="string">"2022-02-28T15:14:30.096Z"</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">"hostname"</span><span class="punctuation">:</span> <span class="string">"example.com"</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">"error-codes"</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">"action"</span><span class="punctuation">:</span> <span class="string">"login"</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">"cdata"</span><span class="punctuation">:</span> <span class="string">"sessionid-123456789"</span></span><br><span class="line"><span class="punctuation">}</span></span><br></pre></td></tr></tbody></table></figure>
+
+
+
+<ul>
+<li><code>challenge_ts</code>是解决挑战时的 ISO 时间戳。</li>
+<li><code>hostname</code>是为其提供质询的主机名。</li>
+<li><code>action</code>是传递给客户端小部件的客户小部件标识符。这用于区分在分析中使用相同站点密钥的小部件。它的完整性受到攻击者修改的保护。建议验证操作是否与预期值匹配。</li>
+<li><code>cdata</code>是传递给客户端小部件的客户数据。客户可以使用它来传达状态。它的完整性受到攻击者修改的保护。</li>
+<li><code>error-codes</code>是发生的错误列表。</li>
+</ul>
+<p>如果验证失败，响应应类似于以下内容：</p>
+<figure class="highlight json"><table><tbody><tr><td class="code"><pre><span class="line"><span class="punctuation">{</span></span><br><span class="line">  <span class="attr">"success"</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">false</span></span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">"error-codes"</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">    <span class="string">"invalid-input-response"</span></span><br><span class="line">  <span class="punctuation">]</span></span><br><span class="line"><span class="punctuation">}</span></span><br></pre></td></tr></tbody></table></figure>
+
+
+
+<p><code>success</code>通过将属性设置为 来指示验证错误<code>false</code>。提供了错误代码列表以指示响应无法验证的原因。响应还可能包含其他字段，具体取决于 Turnstile siteverify 是否能够成功或不成功地解析响应。</p>
+<p> <strong>错误代码</strong>：</p>
+<table>
+<thead>
+<tr>
+<th align="left">错误代码</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>missing-input-secret</code></td>
+<td align="left">未传递秘密参数。</td>
+</tr>
+<tr>
+<td align="left"><code>invalid-input-secret</code></td>
+<td align="left">秘密参数无效或不存在。</td>
+</tr>
+<tr>
+<td align="left"><code>missing-input-response</code></td>
+<td align="left">未传递响应参数。</td>
+</tr>
+<tr>
+<td align="left"><code>invalid-input-response</code></td>
+<td align="left">响应参数无效或已过期。</td>
+</tr>
+<tr>
+<td align="left"><code>bad-request</code></td>
+<td align="left">该请求被拒绝，因为它格式不正确。</td>
+</tr>
+<tr>
+<td align="left"><code>timeout-or-duplicate</code></td>
+<td align="left">响应参数之前已经过验证。</td>
+</tr>
+<tr>
+<td align="left"><code>internal-error</code></td>
+<td align="left">验证响应时发生内部错误。可以重试该请求。</td>
+</tr>
+</tbody></table>
+<p>根据以上信息我们就可以判断并且，接收cf的保护了。</p>
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><blockquote>
+<p><a href="https://developers.cloudflare.com/turnstile/" rel="external nofollow noreferrer">CF Turnstile 开发文档</a><br><a href="https://blog.cloudflare.com/zh-cn/turnstile-private-captcha-alternative-zh-cn/" rel="external nofollow noreferrer">CloudFlare-Turnstile介绍</a></p>
+</blockquote>
+</body></html>]]></content>
+      <categories>
+        <category>网络技术</category>
+      </categories>
+      <tags>
+        <tag>Spring</tag>
+        <tag>Java</tag>
+        <tag>CloudFlare</tag>
+        <tag>CAPTCHA</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>你可能需要知道的docker 的端口问题。</title>
+    <url>/posts/DockerSecurity/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h1><p>docker 这个东西呢，对于我来说又爱又恨吧，爱的事情是可以很快速的进行部署项目，解决一些复杂和繁琐的问题，这也是docker 设计的初衷。恨得呢，本身我对于docker 来说是是一个小白用户，我只会 docker run xxxx 来完成我在github 找到的有趣应用，但是出了问题的时候，我需要去使用搜索引擎查阅的知识。</p>
+<h1 id="需要准备的东西？"><a href="#需要准备的东西？" class="headerlink" title="需要准备的东西？"></a>需要准备的东西？</h1><ul>
+<li>掌握搜索引擎技能（下面的文章只会叫你如何进行使用基本的iptables）</li>
+<li>一个大脑🧠</li>
+<li>一台运行了Linux系统的电脑</li>
+<li>掌握基本的Linux基本知识</li>
+</ul>
+<h1 id="抛出问题"><a href="#抛出问题" class="headerlink" title="抛出问题"></a>抛出问题</h1><p>应该在阅读这篇文章的人，都在很疑惑，为什么我在docker上使用 docker run -p 指令的时候，和宿主机进行绑定端口，本来我是想使用nginx 进行反代的，我自己的防火墙也没有放行这个端口，但从外部确确实实的可以访问。</p>
+<h1 id="为什么会出现这个问题？"><a href="#为什么会出现这个问题？" class="headerlink" title="为什么会出现这个问题？"></a>为什么会出现这个问题？</h1><p>在docker 官方文档上就有这个解释，docker 使用 -p 进行放行端口的时候，低层使用 <code>iptables防火墙 FORWARD</code>将流量转发到docker 运行的容器里面。</p>
+<p>我拿 <a href="https://www.c-dreamer.top/posts/IPtables/#%E5%9B%9B%E8%A1%A8%E9%A1%BA%E5%BA%8F" rel="external nofollow noreferrer">Iptables防火墙</a> 这篇文章的图进行来说明一下</p>
+<p><img src="https://img.c-dreamer.top/i/1/2023/01/30/63d77669edb42.webp" alt="iptables.png"></p>
+<p>因为 流量在进入iptables 防火墙的时候 会经过路由选择进行判定，这个流量是要转发还是要流入本机里面，由于docker 自身创建了一个单独的内网环境一般这个 IP段是 <code>172.17.0.0/16</code> ,然后流浪回去转入对应的容器里面。</p>
+<h1 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h1><p>知道了为什么会出现这个问题，其实就可以知道其中一种解决办法了，就是不适用 -p 指令不让宿主机和容器进行绑定，然后使用nginx 进行，反向代理就可以了，一般情况下是，docker 使用 桥接网络模式 ，Docker 会为每个容器分配一个唯一的 IP 地址。可以查询这个docker 容器的ip 就可以实现反代，但是这个方法会有些问题，</p>
+<ol>
+<li>有点麻烦，你需要创建一个docker 容器就要进行配置反代。</li>
+<li> nginx 不支持 udp 代理所以说还要安装和配置能代理udp 的软件实现反代。</li>
+<li>还有一种办法就是直接在docker 的配置文件中关闭使用 IP tables 防护墙，交给其他防火墙进行保护例如 ufw 等</li>
+</ol>
+<h2 id="方法一：-nginx-反向代理"><a href="#方法一：-nginx-反向代理" class="headerlink" title="方法一： nginx 反向代理"></a>方法一： nginx 反向代理</h2><p>使用这个方法需要拿到容器的IP</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">sudo docker inspect &lt;你的容器唯一<span class="built_in">id</span>或者容器的名字&gt; | grep <span class="string">"IPAddress"</span></span><br></pre></td></tr></tbody></table></figure>
+<p>应该会返回，一下信息，例如我的这个测试容器的IP就是 <code>172.17.0.4</code></p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">docker inspect nginx-8080 | grep <span class="string">"IPAddress"</span></span><br><span class="line">            <span class="string">"SecondaryIPAddresses"</span>: null,</span><br><span class="line">            <span class="string">"IPAddress"</span>: <span class="string">"172.17.0.4"</span>,</span><br><span class="line">                    <span class="string">"IPAddress"</span>: <span class="string">"172.17.0.4"</span>,</span><br></pre></td></tr></tbody></table></figure>
+
+<p>然后去你的nginx 配置新增你的配置文件</p>
+<figure class="highlight yaml"><table><tbody><tr><td class="code"><pre><span class="line"><span class="string">server</span> {</span><br><span class="line">    <span class="string">listen</span> <span class="number">80</span><span class="string">;</span> <span class="string">//监听端口</span></span><br><span class="line">    <span class="string">server_name</span> <span class="string">localhost;</span> <span class="string">//</span> <span class="string">localhost</span> <span class="string">是监听域名或者是ip</span></span><br><span class="line">    </span><br><span class="line">    <span class="string">location</span> <span class="string">/</span> {</span><br><span class="line">        <span class="string">proxy_pass</span> <span class="string">http://容器的IP地址:容器内部Nginx服务器监听的端口;</span></span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<p>如果你是使用BT面板进行管理的，只需要去网站 - 创建一个新的站点，然后打开配置选择反向代理，填入对应信息即可。</p>
+<h2 id="方法二：-修改docker-配置文件"><a href="#方法二：-修改docker-配置文件" class="headerlink" title="方法二： 修改docker 配置文件"></a>方法二： 修改docker 配置文件</h2><p>这个方法就比较简单和直接，一般默认情况下docker 的配置文件会在  <code> /etc/docker/daemon.json</code> 如果没有这个 <code>daemon.json</code>可以直接创建就行了。</p>
+<p>注意如果你不会使用vi 或者是vim 编辑器的基本使用，你应该需要去学习一下vi或者vim 的简单使用即可。</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">sudo vi /etc/docker/daemon.json</span><br></pre></td></tr></tbody></table></figure>
+<p>加入这段配置</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">{</span><br><span class="line">    <span class="string">"iptables"</span>: <span class="literal">false</span></span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<p>重启一下docker 以及docker 的守护进程</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">sudo systemctl restart docker</span><br></pre></td></tr></tbody></table></figure>
+
+<p>注意重启 docker 和docker的守护进程，会需要手动重启创建的docker 容器。在docker 容器重新启动之后 -p 只会绑定宿主机端口号，宿主机端口受现在防火墙进行管理。</p>
+</body></html>]]></content>
+      <categories>
+        <category>网络技术</category>
+      </categories>
+      <tags>
+        <tag>防火墙</tag>
+        <tag>IPtables</tag>
+        <tag>docker</tag>
+        <tag>安全</tag>
+        <tag>ufw</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2023年好耶！</title>
+    <url>/posts/New2023/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="博客补全计划"><a href="#博客补全计划" class="headerlink" title="博客补全计划"></a>博客补全计划</h1><p>对于突然诈尸的我，在这两年里面我也写了很多稿子（虽然都没有发出来），其实要么是不满意不太像水，要么就是写着写着发现，貌似有很多问题。</p>
+<blockquote>
+<p>如今看着我的博客日渐没有维护（上次小范围维护还是在6个月以前）我决定不能在这样怠惰下去了。</p>
+</blockquote>
+<h1 id="制定计划ing"><a href="#制定计划ing" class="headerlink" title="制定计划ing"></a>制定计划ing</h1><ol>
+<li><ul>
+<li><input checked="" disabled="" type="checkbox"> 修改<code>butterfly</code>主题</li>
+</ul>
+</li>
+<li><ul>
+<li><input checked="" disabled="" type="checkbox"> 重新整理图片的地址</li>
+</ul>
+</li>
+<li><ul>
+<li><input disabled="" type="checkbox"> 将以前废稿进行优化处理，达到可发布</li>
+</ul>
+</li>
+<li><ul>
+<li><input checked="" disabled="" type="checkbox"> 修复大陆评论时，评论插件响应慢的问题</li>
+</ul>
+</li>
+<li><ul>
+<li><input checked="" disabled="" type="checkbox"> 修改以前博文的地址链接，进行缩短处理</li>
+</ul>
+</li>
+</ol>
+<blockquote>
+<p>差不多先这样，让博客先复活，后续应该不会一年+一更了 哎<del>嘿</del></p>
+</blockquote>
+<hr>
+<p>23年1-29日</p>
+<p>现在基本上已经快修理 80%了，另外我好重写补写了一遍文章，好气刚搭建完，自己的访客分析系统就被adguard给ban了我在想想办法吧。</p>
+<p>至于评论（twikoo）的话我现在还没有看，因为我放在了vercel 大陆访问是真的很慢了，博客的图像也全部换成了webp，关键是首页的横幅是真的大大概5mb的图像。</p>
+<hr>
+<p>23年1-30</p>
+<p>现在已经吧 twikoo部署到私服上，速度会有明显的提升，现在就差几篇废稿了。</p>
+</body></html>]]></content>
+      <categories>
+        <category>生活随想</category>
+      </categories>
+      <tags>
+        <tag>TODO</tag>
       </tags>
   </entry>
   <entry>
@@ -606,6 +606,46 @@
         <tag>Spring</tag>
         <tag>Java</tag>
         <tag>Security</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>解决Umami v2.3升级问题，Something went wrong.</title>
+    <url>/posts/Umami-fix/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>是的没错，发生这样的事情，应该很多<code>Umami</code>只要是v2.2版本应该都遇到了。 </p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2023/07/19/64b7cb785693f.webp" alt="Umami v2.2 Something went wrong."></p>
+<p>我浏览了部分 <code>issues</code> 只能升级到v2.3版本了。</p>
+<h1 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h1><p>我先说一下我自己的环境，我自己的使用：</p>
+<ol>
+<li>属于编译安装，没有放在docker</li>
+<li>Mysql 5.7</li>
+<li>nodjs 18.16.0</li>
+<li>npm 9.5.1</li>
+</ol>
+<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><p>解决办法有两种，第一种你可以直接尝试升级到<code>MySQL</code> 8.0，如果你想继续和我一样，小鸡的配置不行还想用5.7，请继续往下看。</p>
+<p>如果你是和我一样都是<code>Mysql</code> 5.7版本，你需要查看这篇 <a href="https://github.com/umami-software/umami/issues/2118" rel="external nofollow noreferrer">issues</a> 或者继续往下看。</p>
+<ol>
+<li>你需要从GitHub 拉去一份最新的<a href="https://github.com/umami-software/umami/releases" rel="external nofollow noreferrer">Umami</a> 的代码，你需要找到<code>db/mysql/migrations/02_report_schema_session_data</code>文件夹下的<code>migration.sql</code>这份sql文件，将下面的代码替换和保存。</li>
+</ol>
+<figure class="highlight sql"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> `event_data` CHANGE `event_data_type` `data_type` <span class="type">int</span> unsigned <span class="keyword">NOT</span> <span class="keyword">NULL</span>;</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> `event_data` CHANGE `event_date_value` `date_value` <span class="type">timestamp</span> <span class="keyword">NULL</span>;</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> `event_data` CHANGE `event_id` `event_data_id` <span class="type">varchar</span>(<span class="number">36</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span>;</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> `event_data` CHANGE `event_numeric_value` `number_value` <span class="type">decimal</span>(<span class="number">19</span>, <span class="number">4</span>) <span class="keyword">NULL</span>;</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> `event_data` CHANGE `event_string_value` `string_value`<span class="type">varchar</span>(<span class="number">500</span>) <span class="keyword">NULL</span>;</span><br></pre></td></tr></tbody></table></figure>
+
+<p>终于我遇到的问题，你需要备份原来的 <code>Umami</code> 数据库，然后创建一个新的数据库，讲数据源配置在<code>.env</code>里面，不然通过初始化数据库。</p>
+<ol start="2">
+<li><p>然后你需要在终端中运行这段命令<code>npx prisma migrate resolve --rolled-back "02_report_schema_session_data"</code></p>
+</li>
+<li><p>重新部署，请看 <a href="https://umami.is/docs/install" rel="external nofollow noreferrer">https://umami.is/docs/install</a></p>
+</li>
+</ol>
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>Umami 的GitHub issues ：<a href="https://github.com/umami-software/umami/issues/2118" rel="external nofollow noreferrer">https://github.com/umami-software/umami/issues/2118</a></p>
+</body></html>]]></content>
+      <categories>
+        <category>网络技术</category>
+      </categories>
+      <tags>
+        <tag>Umami</tag>
+        <tag>PV</tag>
+        <tag>网站统计，UV</tag>
+        <tag>Ip</tag>
+        <tag>MySql</tag>
       </tags>
   </entry>
   <entry>
@@ -737,6 +777,27 @@
       </tags>
   </entry>
   <entry>
+    <title>关于启动CDN发生一些难受的小bug</title>
+    <url>/posts/cdn/</url>
+    <content><![CDATA[<html><head></head><body><p>好久没有更新了，如果你要问我这段鸽了半年干了什么，我只能说啥事情都没有干，还是没有想好写什么,但是我一定会在6月结束会高产的。 当然关于:部署多的CDN同时加速的网上教程也很少（也可能我没有找到太多）</p>
+<blockquote>
+<p><strong>在这个星期又又又白嫖了Tencent Cloud的CDN活动</strong>，上次白嫖了一百块无门槛优惠卷，貌似我的域名在Tencent cloud只是首年续费了9块剩下5年都没有花过其他的了。</p>
+</blockquote>
+<p>国内用腾讯的国外用的是CF，现在也是国内国外都使用的CDN(我是不会告诉你我原来没有使用CDN的)</p>
+<h2 id="bug总结"><a href="#bug总结" class="headerlink" title="bug总结:"></a>bug总结:</h2><ol>
+<li> https的问题: 使用腾讯CDN就麻烦不行，CF特别顺畅没有发生过https的问题.在腾讯云的CDN想开https你需要上传你的证书才可以。</li>
+<li> 开启CDN之后WordPress出现无法登陆后台的问题，腾讯需要**/wp-admin**变成不缓存即可。 3.指开启国内加速，可能导致国外的朋友出现无法访问的问题: 这个问题我还发过工单给腾讯云,简单总结一句话,你开国内的加速，跟国外有什么关系。 这个问题我只遇到过一次，有几率会抽风一下。 如果嫌麻烦的话你就顺便在腾讯也开启境外的，不麻烦的CF的好处就来了。 4.还有一个就是评论不会实时同步,其实这也不算是bug,毕竟CDN也不可能做到全访问实时的不过也不会特别慢。</li>
+</ol>
+<p>如果有错的地方欢迎指出,萌新下手麻烦轻一点.</p>
+</body></html>]]></content>
+      <categories>
+        <category>网络技术</category>
+      </categories>
+      <tags>
+        <tag>CDN</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>clash 使用</title>
     <url>/posts/clash/</url>
     <content><![CDATA[<html><head></head><body><p><strong><font color="red">请根据当地网络法律使用,本文章仅供学习使用,不负任何责任!</font></strong><br><strong><font color="red">请根据当地网络法律使用,本文章仅供学习使用,不负任何责任!</font></strong><br><strong><font color="red">请根据当地网络法律使用,本文章仅供学习使用,不负任何责任!</font></strong></p>
@@ -756,27 +817,6 @@
       </categories>
       <tags>
         <tag>clash</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>关于启动CDN发生一些难受的小bug</title>
-    <url>/posts/cdn/</url>
-    <content><![CDATA[<html><head></head><body><p>好久没有更新了，如果你要问我这段鸽了半年干了什么，我只能说啥事情都没有干，还是没有想好写什么,但是我一定会在6月结束会高产的。 当然关于:部署多的CDN同时加速的网上教程也很少（也可能我没有找到太多）</p>
-<blockquote>
-<p><strong>在这个星期又又又白嫖了Tencent Cloud的CDN活动</strong>，上次白嫖了一百块无门槛优惠卷，貌似我的域名在Tencent cloud只是首年续费了9块剩下5年都没有花过其他的了。</p>
-</blockquote>
-<p>国内用腾讯的国外用的是CF，现在也是国内国外都使用的CDN(我是不会告诉你我原来没有使用CDN的)</p>
-<h2 id="bug总结"><a href="#bug总结" class="headerlink" title="bug总结:"></a>bug总结:</h2><ol>
-<li> https的问题: 使用腾讯CDN就麻烦不行，CF特别顺畅没有发生过https的问题.在腾讯云的CDN想开https你需要上传你的证书才可以。</li>
-<li> 开启CDN之后WordPress出现无法登陆后台的问题，腾讯需要**/wp-admin**变成不缓存即可。 3.指开启国内加速，可能导致国外的朋友出现无法访问的问题: 这个问题我还发过工单给腾讯云,简单总结一句话,你开国内的加速，跟国外有什么关系。 这个问题我只遇到过一次，有几率会抽风一下。 如果嫌麻烦的话你就顺便在腾讯也开启境外的，不麻烦的CF的好处就来了。 4.还有一个就是评论不会实时同步,其实这也不算是bug,毕竟CDN也不可能做到全访问实时的不过也不会特别慢。</li>
-</ol>
-<p>如果有错的地方欢迎指出,萌新下手麻烦轻一点.</p>
-</body></html>]]></content>
-      <categories>
-        <category>网络技术</category>
-      </categories>
-      <tags>
-        <tag>CDN</tag>
       </tags>
   </entry>
   <entry>
@@ -897,70 +937,6 @@
       </categories>
   </entry>
   <entry>
-    <title>兰空图床使用backblaze作为存储策略</title>
-    <url>/posts/lskypro-backblaze/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h1><p>因为我很久之前就在使用兰空了，当时是直接默认存储扔到本地的，反正也没有啥问题，还很方便，但那台服务器快到期了。所以我就打算迁移，先来说说虽然为什么不用CF的R2存储，原因是我尝试了很多种办法，但这个兰空图床对于我自己而言就是链接不上，很烦人，所以找到了也是S3协议的<code>backblaze</code>作为我后面使用的存储策略。</p>
-<h1 id="为什么要使用-backblaze"><a href="#为什么要使用-backblaze" class="headerlink" title="为什么要使用 backblaze"></a>为什么要使用 backblaze</h1><p>有以下几点</p>
-<ol>
-<li>所有用户无需信用卡都有10gb存储</li>
-<li>从<code>CloudFlare</code>出去的流量每个月免费1TB</li>
-<li>价格十分便宜，你可以去他们的官网了解更多：<a href="https://www.backblaze.com/b2/cloud-storage-pricing.html" rel="external nofollow noreferrer">官网地址价格</a></li>
-</ol>
-<h1 id="开始准备前"><a href="#开始准备前" class="headerlink" title="开始准备前"></a>开始准备前</h1><p>在开始之前你需要知道和准备的东西：</p>
-<ol>
-<li> 兰空图床的版本确保是和我在同一个版本在V2.1</li>
-<li>有一个<code>Cloud Flare</code>的账号</li>
-<li>有一个<code>backblaze</code>的账号</li>
-<li>你需要有一个域名（应该看到这一篇博文的人都有吧）</li>
-<li>在后面的内容<code>CloudFlare</code> 将被简写成CF</li>
-<li>在后面的内容<code>backblaze</code>将被简写成B2</li>
-</ol>
-<h1 id="正片开始"><a href="#正片开始" class="headerlink" title="正片开始"></a>正片开始</h1><h2 id="B2创建存储桶"><a href="#B2创建存储桶" class="headerlink" title="B2创建存储桶"></a>B2创建存储桶</h2><p>请访问：<a href="https://secure.backblaze.com/b2_buckets.htm" rel="external nofollow noreferrer">https://secure.backblaze.com/b2_buckets.htm</a> 进入B2创建页面。再此页面往下翻，可以更改语言。</p>
-<p>起一个你的桶的名字，你需要把桶的档案改成<code>公众</code>。</p>
-<p><img src="https://img.c-dreamer.top/ShellBlogImg/1/2023/06/18/648edb4430902.webp"></p>
-<p>很好你现在应该已经创建好桶了并选择<code>上传/下载</code></p>
-<p><img src="https://img.c-dreamer.top/ShellBlogImg/1/2023/06/18/648edbb7f1ea5.webp"></p>
-<p>你需要上传一个文件用作与测试，知道你的桶的地址。</p>
-<p><img src="https://img.c-dreamer.top/ShellBlogImg/1/2023/06/18/648edc77d6fda.webp"></p>
-<p>你需要记得<code>友好地址</code>以及<code>S3</code>地址</p>
-<ul>
-<li>友好地址你需要记住到你的桶名</li>
-<li>S3 地址你只需要记住S3的域名即可。</li>
-</ul>
-<h2 id="CF的配置"><a href="#CF的配置" class="headerlink" title="CF的配置"></a>CF的配置</h2><blockquote>
-<p>B2只允许https，并且需要有效证书的验证，你需要检查以下你的CF上的 SSL/TLS –&gt; 概述调成完全严格</p>
-</blockquote>
-<p>你现在需要解析一个<code>CNAME</code>的域名,例如img.example.com,解析到友好URL的域名上，如果你解析成功你可以试着访问你的域名并带上桶名/以及文件名进行访问。</p>
-<p>到这里你应该也许已经明白我们需要后面要配置什么了，我们需要使用CF的    规则–&gt;转换规则—&gt;URi 重写。</p>
-<p><img src="https://img.c-dreamer.top/ShellBlogImg/1/2023/06/18/648ede10f0886.webp"></p>
-<p>我这边提供一下表达式，需要把<code>&lt;&gt;</code>的内容替换成你自己的包括<code>&lt;&gt;</code></p>
-<figure class="highlight js"><table><tbody><tr><td class="code"><pre><span class="line">(http.<span class="property">request</span>.<span class="property">uri</span>.<span class="property">path</span> ne <span class="string">"/file/&lt;桶名&gt;"</span> and http.<span class="property">host</span> eq <span class="string">"&lt;你的域名&gt;"</span>)</span><br></pre></td></tr></tbody></table></figure>
-
-<p><img src="https://img.c-dreamer.top/ShellBlogImg/1/2023/06/18/648edeb220412.webp"></p>
-<p>这里提供一些Dynamic的表达式写法</p>
-<figure class="highlight js"><table><tbody><tr><td class="code"><pre><span class="line"><span class="title function_">concat</span>(<span class="string">"/file/&lt;你的域名&gt;"</span>,http.<span class="property">request</span>.<span class="property">uri</span>.<span class="property">path</span>)</span><br></pre></td></tr></tbody></table></figure>
-
-<p>经过这样一改，你可以现在尝试以下，不加任何东西直接使用域名+上文件名再试试。</p>
-<h2 id="兰空图床更改策略"><a href="#兰空图床更改策略" class="headerlink" title="兰空图床更改策略"></a>兰空图床更改策略</h2><p>你可以参考这一篇官方的 <a href="https://github.com/lsky-org/lsky-pro/discussions/448" rel="external nofollow noreferrer">discussions</a> 进行改写，我就不再重复造轮子了。</p>
-<p>我在这边贴一张我自己配置的图，方便各位佬进行参考。</p>
-<ul>
-<li>存储策略选择Minio</li>
-<li>区域根据S3的URL 域名中就有写。</li>
-</ul>
-<p><img src="https://img.c-dreamer.top/ShellBlogImg/1/2023/06/18/648ee05d47c3b.webp"></p>
-<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p> 兰空Github Discussions：<a href="https://github.com/lsky-org/lsky-pro/discussions/448" rel="external nofollow noreferrer">https://github.com/lsky-org/lsky-pro/discussions/448</a></p>
-</body></html>]]></content>
-      <categories>
-        <category>网络技术</category>
-      </categories>
-      <tags>
-        <tag>backblaze</tag>
-        <tag>lskypro</tag>
-        <tag>蓝空图床</tag>
-        <tag>兰空图床</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>hexo博客搭建教程</title>
     <url>/posts/hexo-1/</url>
     <content><![CDATA[<html><head></head><body><h1 id="部署hexo需要用到的东西"><a href="#部署hexo需要用到的东西" class="headerlink" title="部署hexo需要用到的东西:"></a>部署hexo需要用到的东西:</h1><ol>
@@ -1043,24 +1019,67 @@
 </body></html>]]></content>
   </entry>
   <entry>
-    <title>换域名了！！</title>
-    <url>/posts/moe/</url>
-    <content><![CDATA[<html><head></head><body><blockquote>
-<p>换域名了正好可以来水一篇文章了。</p>
+    <title>兰空图床使用backblaze作为存储策略</title>
+    <url>/posts/lskypro-backblaze/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h1><p>因为我很久之前就在使用兰空了，当时是直接默认存储扔到本地的，反正也没有啥问题，还很方便，但那台服务器快到期了。所以我就打算迁移，先来说说虽然为什么不用CF的R2存储，原因是我尝试了很多种办法，但这个兰空图床对于我自己而言就是链接不上，很烦人，所以找到了也是S3协议的<code>backblaze</code>作为我后面使用的存储策略。</p>
+<h1 id="为什么要使用-backblaze"><a href="#为什么要使用-backblaze" class="headerlink" title="为什么要使用 backblaze"></a>为什么要使用 backblaze</h1><p>有以下几点</p>
+<ol>
+<li>所有用户无需信用卡都有10gb存储</li>
+<li>从<code>CloudFlare</code>出去的流量每个月免费1TB</li>
+<li>价格十分便宜，你可以去他们的官网了解更多：<a href="https://www.backblaze.com/b2/cloud-storage-pricing.html" rel="external nofollow noreferrer">官网地址价格</a></li>
+</ol>
+<h1 id="开始准备前"><a href="#开始准备前" class="headerlink" title="开始准备前"></a>开始准备前</h1><p>在开始之前你需要知道和准备的东西：</p>
+<ol>
+<li> 兰空图床的版本确保是和我在同一个版本在V2.1</li>
+<li>有一个<code>Cloud Flare</code>的账号</li>
+<li>有一个<code>backblaze</code>的账号</li>
+<li>你需要有一个域名（应该看到这一篇博文的人都有吧）</li>
+<li>在后面的内容<code>CloudFlare</code> 将被简写成CF</li>
+<li>在后面的内容<code>backblaze</code>将被简写成B2</li>
+</ol>
+<h1 id="正片开始"><a href="#正片开始" class="headerlink" title="正片开始"></a>正片开始</h1><h2 id="B2创建存储桶"><a href="#B2创建存储桶" class="headerlink" title="B2创建存储桶"></a>B2创建存储桶</h2><p>请访问：<a href="https://secure.backblaze.com/b2_buckets.htm" rel="external nofollow noreferrer">https://secure.backblaze.com/b2_buckets.htm</a> 进入B2创建页面。再此页面往下翻，可以更改语言。</p>
+<p>起一个你的桶的名字，你需要把桶的档案改成<code>公众</code>。</p>
+<p><img src="https://img.c-dreamer.top/ShellBlogImg/1/2023/06/18/648edb4430902.webp"></p>
+<p>很好你现在应该已经创建好桶了并选择<code>上传/下载</code></p>
+<p><img src="https://img.c-dreamer.top/ShellBlogImg/1/2023/06/18/648edbb7f1ea5.webp"></p>
+<p>你需要上传一个文件用作与测试，知道你的桶的地址。</p>
+<p><img src="https://img.c-dreamer.top/ShellBlogImg/1/2023/06/18/648edc77d6fda.webp"></p>
+<p>你需要记得<code>友好地址</code>以及<code>S3</code>地址</p>
+<ul>
+<li>友好地址你需要记住到你的桶名</li>
+<li>S3 地址你只需要记住S3的域名即可。</li>
+</ul>
+<h2 id="CF的配置"><a href="#CF的配置" class="headerlink" title="CF的配置"></a>CF的配置</h2><blockquote>
+<p>B2只允许https，并且需要有效证书的验证，你需要检查以下你的CF上的 SSL/TLS –&gt; 概述调成完全严格</p>
 </blockquote>
-<p>对于域名对于网站来说，很是重要的一部分了，但是我创建博客的时候，对于域名而言起什么，一直很苦恼，然后就给自己起了一个c-dreamer 的域，但是后来慢慢用下来，域名太长了而且也不方便记忆，就四处寻找这域名。</p>
-<p><code>ning.moe</code> 这个域名其实我想给我的朋友的，他的网名就是 <code>lemon</code> 但他自己也不会建站 ，对建站没有任何想法，所以这个个域名就纳入我的手里吧。</p>
-<h1 id="moe-的意义？"><a href="#moe-的意义？" class="headerlink" title="moe 的意义？"></a>moe 的意义？</h1><p>对于我而言正好可以组成 拼音的 <code>柠檬</code> 对于域名本身？ </p>
-<p>看看wiki？：<a href="https://zh.moegirl.org.cn/.moe" rel="external nofollow noreferrer">https://zh.moegirl.org.cn/.moe</a></p>
-<p>当然悄悄告诉你，貌似有一个虚拟的国度叫做 <code>gov.moe</code></p>
+<p>你现在需要解析一个<code>CNAME</code>的域名,例如img.example.com,解析到友好URL的域名上，如果你解析成功你可以试着访问你的域名并带上桶名/以及文件名进行访问。</p>
+<p>到这里你应该也许已经明白我们需要后面要配置什么了，我们需要使用CF的    规则–&gt;转换规则—&gt;URi 重写。</p>
+<p><img src="https://img.c-dreamer.top/ShellBlogImg/1/2023/06/18/648ede10f0886.webp"></p>
+<p>我这边提供一下表达式，需要把<code>&lt;&gt;</code>的内容替换成你自己的包括<code>&lt;&gt;</code></p>
+<figure class="highlight js"><table><tbody><tr><td class="code"><pre><span class="line">(http.<span class="property">request</span>.<span class="property">uri</span>.<span class="property">path</span> ne <span class="string">"/file/&lt;桶名&gt;"</span> and http.<span class="property">host</span> eq <span class="string">"&lt;你的域名&gt;"</span>)</span><br></pre></td></tr></tbody></table></figure>
+
+<p><img src="https://img.c-dreamer.top/ShellBlogImg/1/2023/06/18/648edeb220412.webp"></p>
+<p>这里提供一些Dynamic的表达式写法</p>
+<figure class="highlight js"><table><tbody><tr><td class="code"><pre><span class="line"><span class="title function_">concat</span>(<span class="string">"/file/&lt;你的域名&gt;"</span>,http.<span class="property">request</span>.<span class="property">uri</span>.<span class="property">path</span>)</span><br></pre></td></tr></tbody></table></figure>
+
+<p>经过这样一改，你可以现在尝试以下，不加任何东西直接使用域名+上文件名再试试。</p>
+<h2 id="兰空图床更改策略"><a href="#兰空图床更改策略" class="headerlink" title="兰空图床更改策略"></a>兰空图床更改策略</h2><p>你可以参考这一篇官方的 <a href="https://github.com/lsky-org/lsky-pro/discussions/448" rel="external nofollow noreferrer">discussions</a> 进行改写，我就不再重复造轮子了。</p>
+<p>我在这边贴一张我自己配置的图，方便各位佬进行参考。</p>
+<ul>
+<li>存储策略选择Minio</li>
+<li>区域根据S3的URL 域名中就有写。</li>
+</ul>
+<p><img src="https://img.c-dreamer.top/ShellBlogImg/1/2023/06/18/648ee05d47c3b.webp"></p>
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p> 兰空Github Discussions：<a href="https://github.com/lsky-org/lsky-pro/discussions/448" rel="external nofollow noreferrer">https://github.com/lsky-org/lsky-pro/discussions/448</a></p>
 </body></html>]]></content>
       <categories>
-        <category>生活随想</category>
+        <category>网络技术</category>
       </categories>
       <tags>
-        <tag>moe</tag>
-        <tag>域名</tag>
-        <tag>柠檬</tag>
+        <tag>backblaze</tag>
+        <tag>lskypro</tag>
+        <tag>蓝空图床</tag>
+        <tag>兰空图床</tag>
       </tags>
   </entry>
   <entry>
@@ -1103,6 +1122,27 @@
       <tags>
         <tag>备案</tag>
         <tag>萌国</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>换域名了！！</title>
+    <url>/posts/moe/</url>
+    <content><![CDATA[<html><head></head><body><blockquote>
+<p>换域名了正好可以来水一篇文章了。</p>
+</blockquote>
+<p>对于域名对于网站来说，很是重要的一部分了，但是我创建博客的时候，对于域名而言起什么，一直很苦恼，然后就给自己起了一个c-dreamer 的域，但是后来慢慢用下来，域名太长了而且也不方便记忆，就四处寻找这域名。</p>
+<p><code>ning.moe</code> 这个域名其实我想给我的朋友的，他的网名就是 <code>lemon</code> 但他自己也不会建站 ，对建站没有任何想法，所以这个个域名就纳入我的手里吧。</p>
+<h1 id="moe-的意义？"><a href="#moe-的意义？" class="headerlink" title="moe 的意义？"></a>moe 的意义？</h1><p>对于我而言正好可以组成 拼音的 <code>柠檬</code> 对于域名本身？ </p>
+<p>看看wiki？：<a href="https://zh.moegirl.org.cn/.moe" rel="external nofollow noreferrer">https://zh.moegirl.org.cn/.moe</a></p>
+<p>当然悄悄告诉你，貌似有一个虚拟的国度叫做 <code>gov.moe</code></p>
+</body></html>]]></content>
+      <categories>
+        <category>生活随想</category>
+      </categories>
+      <tags>
+        <tag>moe</tag>
+        <tag>域名</tag>
+        <tag>柠檬</tag>
       </tags>
   </entry>
   <entry>
@@ -1160,11 +1200,6 @@
       </tags>
   </entry>
   <entry>
-    <title>博客评论系统还在测试阶段</title>
-    <url>/posts/%E5%8D%9A%E5%AE%A2%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E8%BF%98%E5%9C%A8%E6%B5%8B%E8%AF%95%E9%98%B6%E6%AE%B5/</url>
-    <content><![CDATA[<html><head></head><body></body></html>]]></content>
-  </entry>
-  <entry>
     <title>博客数据库损坏，正在维护！</title>
     <url>/posts/%E5%8D%9A%E5%AE%A2%E6%95%B0%E6%8D%AE%E5%BA%93%E6%8D%9F%E5%9D%8F%EF%BC%8C%E6%AD%A3%E5%9C%A8%E7%BB%B4%E6%8A%A4%EF%BC%81/</url>
     <content><![CDATA[<html><head></head><body><p>因博主手残把动了数据库而且还没有恢复到最近的备份，本博客访问可能会存在一定问题，在博主紧急抢修下，恢复了部分基础功能，博文图片可能暂时无法加载，我相信很快恢复，我现在先睡觉了都12点了。</p>
@@ -1172,6 +1207,23 @@
       <categories>
         <category>网络技术</category>
       </categories>
+  </entry>
+  <entry>
+    <title>博客评论系统还在测试阶段</title>
+    <url>/posts/%E5%8D%9A%E5%AE%A2%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E8%BF%98%E5%9C%A8%E6%B5%8B%E8%AF%95%E9%98%B6%E6%AE%B5/</url>
+    <content><![CDATA[<html><head></head><body></body></html>]]></content>
+  </entry>
+  <entry>
+    <title>备案</title>
+    <url>/posts/%E5%A4%87%E6%A1%88/</url>
+    <content><![CDATA[<html><head></head><body><p>历尽千辛万苦终于备案了感谢 工信部的速度，本以为要等20天才可以，没有想到工信部工作效率如此之高仅用2天时间审核完毕，也感谢阿里云初审人员的速度审核。</p>
+</body></html>]]></content>
+      <categories>
+        <category>生活随想</category>
+      </categories>
+      <tags>
+        <tag>备案</tag>
+      </tags>
   </entry>
   <entry>
     <title>博客转移备案</title>
@@ -1187,17 +1239,6 @@
       </tags>
   </entry>
   <entry>
-    <title>搭建镜像网站</title>
-    <url>/posts/%E6%90%AD%E5%BB%BA%E9%95%9C%E5%83%8F%E7%BD%91%E7%AB%99/</url>
-    <content><![CDATA[<html><head></head><body><ol>
-<li>不过多介绍知道就好，使用Cloudflare Worker来建造镜像网站。 2. 为什么选择Cloudflare Worker因为他免费而且个人进步够用还能访问全球。 - 开始操练起来！ 1. 你需要首先用一个Cloudflare账号<a href="https://dash.cloudflare.com/sign-up" rel="external nofollow noreferrer">打开注册链接</a><img src="https://c-dreamer.top/wp-content/uploads/2020/01/%E5%AE%9E%E4%BE%8B0-1024x430.png" alt="width=640height">搭建<a href="https://workers.cloudflare.com/" rel="external nofollow noreferrer">Cloudflare Workerd</a> <img src="https://c-dreamer.top/wp-content/uploads/2020/01/2-1024x551.png"><img src="https://c-dreamer.top/wp-content/uploads/2020/01/3-1024x483.png"><img src="https://c-dreamer.top/wp-content/uploads/2020/01/4-1024x453.png"><img src="https://c-dreamer.top/wp-content/uploads/2020/01/4-1024x453.png"><img src="https://c-dreamer.top/wp-content/uploads/2020/01/5-1024x551.png"><img src="https://c-dreamer.top/wp-content/uploads/2020/01/6-1024x458.png"><img src="https://c-dreamer.top/wp-content/uploads/2020/01/7-1024x504.png"><img src="https://c-dreamer.top/wp-content/uploads/2020/01/8-1024x509.png"><img src="https://c-dreamer.top/wp-content/uploads/2020/01/9-1024x559.png"> <figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">// 替换成你想镜像的站点</span><br><span class="line">const upstream = 'www.google.com'</span><br><span class="line">// 如果那个站点有专门的移动适配站点，否则保持和上面一致</span><br><span class="line">const upstream_mobile = 'www.google.com'</span><br><span class="line">// 你希望禁止哪些国家访问</span><br><span class="line">const blocked_region = ['KP', 'SY', 'PK', 'CU']</span><br><span class="line">// 禁止自访问</span><br><span class="line">const blocked_ip_address = ['0.0.0.0', '127.0.0.1']</span><br><span class="line">// 替换成你想镜像的站点</span><br><span class="line">const replace_dict = {</span><br><span class="line">'$upstream': '$custom_domain',</span><br><span class="line">'//google.com': ''</span><br><span class="line">}</span><br><span class="line">//以下内容都不用动</span><br><span class="line">addEventListener('fetch', event =&gt; {</span><br><span class="line">event.respondWith(fetchAndApply(event.request));</span><br><span class="line">})</span><br><span class="line">async function fetchAndApply(request) {</span><br><span class="line">const region = request.headers.get('cf-ipcountry').toUpperCase();</span><br><span class="line">const ip_address = request.headers.get('cf-connecting-ip');</span><br><span class="line">const user_agent = request.headers.get('user-agent');</span><br><span class="line">let response = null;</span><br><span class="line">let url = new URL(request.url);</span><br><span class="line">let url_host = url.host;</span><br><span class="line">if (url.protocol == 'http:') {</span><br><span class="line">url.protocol = 'https:'</span><br><span class="line">response = Response.redirect(url.href);</span><br><span class="line">return response;</span><br><span class="line">}</span><br><span class="line">if (await device_status(user_agent)) {</span><br><span class="line">upstream_domain = upstream</span><br><span class="line">} else {</span><br><span class="line">upstream_domain = upstream_mobile</span><br><span class="line">}</span><br><span class="line">url.host = upstream_domain;</span><br><span class="line">if (blocked_region.includes(region)) {</span><br><span class="line">response = new Response('Access denied: WorkersProxy is not available in your region yet.', {</span><br><span class="line">status: 403</span><br><span class="line">});</span><br><span class="line">} else if(blocked_ip_address.includes(ip_address)){</span><br><span class="line">response = new Response('Access denied: Your IP address is blocked by WorkersProxy.', {</span><br><span class="line">status: 403</span><br><span class="line">});</span><br><span class="line">} else{</span><br><span class="line">let method = request.method;</span><br><span class="line">let request_headers = request.headers;</span><br><span class="line">let new_request_headers = new Headers(request_headers);</span><br><span class="line">new_request_headers.set('Host', upstream_domain);</span><br><span class="line">new_request_headers.set('Referer', url.href);</span><br><span class="line">let original_response = await fetch(url.href, {</span><br><span class="line">method: method,</span><br><span class="line">headers: new_request_headers</span><br><span class="line">})</span><br><span class="line">let original_response_clone = original_response.clone();</span><br><span class="line">let original_text = null;</span><br><span class="line">let response_headers = original_response.headers;</span><br><span class="line">let new_response_headers = new Headers(response_headers);</span><br><span class="line">let status = original_response.status;</span><br><span class="line">new_response_headers.set('access-control-allow-origin', '*');</span><br><span class="line">new_response_headers.set('access-control-allow-credentials', true);</span><br><span class="line">new_response_headers.delete('content-security-policy');</span><br><span class="line">new_response_headers.delete('content-security-policy-report-only');</span><br><span class="line">new_response_headers.delete('clear-site-data');</span><br><span class="line">const content_type = new_response_headers.get('content-type');</span><br><span class="line">if (content_type.includes('text/html') &amp;&amp; content_type.includes('UTF-8')) {</span><br><span class="line">original_text = await replace_response_text(original_response_clone, upstream_domain, url_host);</span><br><span class="line">} else {</span><br><span class="line">original_text = original_response_clone.body</span><br><span class="line">}</span><br><span class="line">response = new Response(original_text, {</span><br><span class="line">status,</span><br><span class="line">headers: new_response_headers</span><br><span class="line">})</span><br><span class="line">}</span><br><span class="line">return response;</span><br><span class="line">}</span><br><span class="line">async function replace_response_text(response, upstream_domain, host_name) {</span><br><span class="line">let text = await response.text()</span><br><span class="line">var i, j;</span><br><span class="line">for (i in replace_dict) {</span><br><span class="line">j = replace_dict[i]</span><br><span class="line">if (i == '$upstream') {</span><br><span class="line">i = upstream_domain</span><br><span class="line">} else if (i == '$custom_domain') {</span><br><span class="line">i = host_name</span><br><span class="line">}</span><br><span class="line">if (j == '$upstream') {</span><br><span class="line">j = upstream_domain</span><br><span class="line">} else if (j == '$custom_domain') {</span><br><span class="line">j = host_name</span><br><span class="line">}</span><br><span class="line">let re = new RegExp(i, 'g')</span><br><span class="line">text = text.replace(re, j);</span><br><span class="line">}</span><br><span class="line">return text;</span><br><span class="line">}</span><br><span class="line">async function device_status (user_agent_info) {</span><br><span class="line">var agents = ["Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod"];</span><br><span class="line">var flag = true;</span><br><span class="line">for (var v = 0; v &lt; agents.length; v++) {</span><br><span class="line">if (user_agent_info.indexOf(agents[v]) &gt; 0) {</span><br><span class="line">flag = false;</span><br><span class="line">break;</span><br><span class="line">}</span><br><span class="line">}</span><br><span class="line">return flag;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure></li>
-</ol>
-</body></html>]]></content>
-      <categories>
-        <category>网络技术</category>
-      </categories>
-  </entry>
-  <entry>
     <title>本站建立一周年!</title>
     <url>/posts/%E6%9C%AC%E7%AB%99%E5%BB%BA%E7%AB%8B%E4%B8%80%E5%91%A8%E5%B9%B4/</url>
     <content><![CDATA[<html><head></head><body><p>不知不觉当中,blog已经陪我走完一年,而我在这一年当中也没有写过什么东西,觉得浪费了资源.虽然建站容易但是,维护确实相当的麻烦. 大概明年五月份的时候可能本站要从word press迁移至Typecho. 不过至于下一次更新可能要继续等到2021年暑假的时候.</p>
@@ -1210,16 +1251,15 @@
       </tags>
   </entry>
   <entry>
-    <title>备案</title>
-    <url>/posts/%E5%A4%87%E6%A1%88/</url>
-    <content><![CDATA[<html><head></head><body><p>历尽千辛万苦终于备案了感谢 工信部的速度，本以为要等20天才可以，没有想到工信部工作效率如此之高仅用2天时间审核完毕，也感谢阿里云初审人员的速度审核。</p>
+    <title>搭建镜像网站</title>
+    <url>/posts/%E6%90%AD%E5%BB%BA%E9%95%9C%E5%83%8F%E7%BD%91%E7%AB%99/</url>
+    <content><![CDATA[<html><head></head><body><ol>
+<li>不过多介绍知道就好，使用Cloudflare Worker来建造镜像网站。 2. 为什么选择Cloudflare Worker因为他免费而且个人进步够用还能访问全球。 - 开始操练起来！ 1. 你需要首先用一个Cloudflare账号<a href="https://dash.cloudflare.com/sign-up" rel="external nofollow noreferrer">打开注册链接</a><img src="https://c-dreamer.top/wp-content/uploads/2020/01/%E5%AE%9E%E4%BE%8B0-1024x430.png" alt="width=640height">搭建<a href="https://workers.cloudflare.com/" rel="external nofollow noreferrer">Cloudflare Workerd</a> <img src="https://c-dreamer.top/wp-content/uploads/2020/01/2-1024x551.png"><img src="https://c-dreamer.top/wp-content/uploads/2020/01/3-1024x483.png"><img src="https://c-dreamer.top/wp-content/uploads/2020/01/4-1024x453.png"><img src="https://c-dreamer.top/wp-content/uploads/2020/01/4-1024x453.png"><img src="https://c-dreamer.top/wp-content/uploads/2020/01/5-1024x551.png"><img src="https://c-dreamer.top/wp-content/uploads/2020/01/6-1024x458.png"><img src="https://c-dreamer.top/wp-content/uploads/2020/01/7-1024x504.png"><img src="https://c-dreamer.top/wp-content/uploads/2020/01/8-1024x509.png"><img src="https://c-dreamer.top/wp-content/uploads/2020/01/9-1024x559.png"> <figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">// 替换成你想镜像的站点</span><br><span class="line">const upstream = 'www.google.com'</span><br><span class="line">// 如果那个站点有专门的移动适配站点，否则保持和上面一致</span><br><span class="line">const upstream_mobile = 'www.google.com'</span><br><span class="line">// 你希望禁止哪些国家访问</span><br><span class="line">const blocked_region = ['KP', 'SY', 'PK', 'CU']</span><br><span class="line">// 禁止自访问</span><br><span class="line">const blocked_ip_address = ['0.0.0.0', '127.0.0.1']</span><br><span class="line">// 替换成你想镜像的站点</span><br><span class="line">const replace_dict = {</span><br><span class="line">'$upstream': '$custom_domain',</span><br><span class="line">'//google.com': ''</span><br><span class="line">}</span><br><span class="line">//以下内容都不用动</span><br><span class="line">addEventListener('fetch', event =&gt; {</span><br><span class="line">event.respondWith(fetchAndApply(event.request));</span><br><span class="line">})</span><br><span class="line">async function fetchAndApply(request) {</span><br><span class="line">const region = request.headers.get('cf-ipcountry').toUpperCase();</span><br><span class="line">const ip_address = request.headers.get('cf-connecting-ip');</span><br><span class="line">const user_agent = request.headers.get('user-agent');</span><br><span class="line">let response = null;</span><br><span class="line">let url = new URL(request.url);</span><br><span class="line">let url_host = url.host;</span><br><span class="line">if (url.protocol == 'http:') {</span><br><span class="line">url.protocol = 'https:'</span><br><span class="line">response = Response.redirect(url.href);</span><br><span class="line">return response;</span><br><span class="line">}</span><br><span class="line">if (await device_status(user_agent)) {</span><br><span class="line">upstream_domain = upstream</span><br><span class="line">} else {</span><br><span class="line">upstream_domain = upstream_mobile</span><br><span class="line">}</span><br><span class="line">url.host = upstream_domain;</span><br><span class="line">if (blocked_region.includes(region)) {</span><br><span class="line">response = new Response('Access denied: WorkersProxy is not available in your region yet.', {</span><br><span class="line">status: 403</span><br><span class="line">});</span><br><span class="line">} else if(blocked_ip_address.includes(ip_address)){</span><br><span class="line">response = new Response('Access denied: Your IP address is blocked by WorkersProxy.', {</span><br><span class="line">status: 403</span><br><span class="line">});</span><br><span class="line">} else{</span><br><span class="line">let method = request.method;</span><br><span class="line">let request_headers = request.headers;</span><br><span class="line">let new_request_headers = new Headers(request_headers);</span><br><span class="line">new_request_headers.set('Host', upstream_domain);</span><br><span class="line">new_request_headers.set('Referer', url.href);</span><br><span class="line">let original_response = await fetch(url.href, {</span><br><span class="line">method: method,</span><br><span class="line">headers: new_request_headers</span><br><span class="line">})</span><br><span class="line">let original_response_clone = original_response.clone();</span><br><span class="line">let original_text = null;</span><br><span class="line">let response_headers = original_response.headers;</span><br><span class="line">let new_response_headers = new Headers(response_headers);</span><br><span class="line">let status = original_response.status;</span><br><span class="line">new_response_headers.set('access-control-allow-origin', '*');</span><br><span class="line">new_response_headers.set('access-control-allow-credentials', true);</span><br><span class="line">new_response_headers.delete('content-security-policy');</span><br><span class="line">new_response_headers.delete('content-security-policy-report-only');</span><br><span class="line">new_response_headers.delete('clear-site-data');</span><br><span class="line">const content_type = new_response_headers.get('content-type');</span><br><span class="line">if (content_type.includes('text/html') &amp;&amp; content_type.includes('UTF-8')) {</span><br><span class="line">original_text = await replace_response_text(original_response_clone, upstream_domain, url_host);</span><br><span class="line">} else {</span><br><span class="line">original_text = original_response_clone.body</span><br><span class="line">}</span><br><span class="line">response = new Response(original_text, {</span><br><span class="line">status,</span><br><span class="line">headers: new_response_headers</span><br><span class="line">})</span><br><span class="line">}</span><br><span class="line">return response;</span><br><span class="line">}</span><br><span class="line">async function replace_response_text(response, upstream_domain, host_name) {</span><br><span class="line">let text = await response.text()</span><br><span class="line">var i, j;</span><br><span class="line">for (i in replace_dict) {</span><br><span class="line">j = replace_dict[i]</span><br><span class="line">if (i == '$upstream') {</span><br><span class="line">i = upstream_domain</span><br><span class="line">} else if (i == '$custom_domain') {</span><br><span class="line">i = host_name</span><br><span class="line">}</span><br><span class="line">if (j == '$upstream') {</span><br><span class="line">j = upstream_domain</span><br><span class="line">} else if (j == '$custom_domain') {</span><br><span class="line">j = host_name</span><br><span class="line">}</span><br><span class="line">let re = new RegExp(i, 'g')</span><br><span class="line">text = text.replace(re, j);</span><br><span class="line">}</span><br><span class="line">return text;</span><br><span class="line">}</span><br><span class="line">async function device_status (user_agent_info) {</span><br><span class="line">var agents = ["Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod"];</span><br><span class="line">var flag = true;</span><br><span class="line">for (var v = 0; v &lt; agents.length; v++) {</span><br><span class="line">if (user_agent_info.indexOf(agents[v]) &gt; 0) {</span><br><span class="line">flag = false;</span><br><span class="line">break;</span><br><span class="line">}</span><br><span class="line">}</span><br><span class="line">return flag;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure></li>
+</ol>
 </body></html>]]></content>
       <categories>
-        <category>生活随想</category>
+        <category>网络技术</category>
       </categories>
-      <tags>
-        <tag>备案</tag>
-      </tags>
   </entry>
   <entry>
     <title>本站正式启动邮箱评论功能</title>
@@ -1248,46 +1288,6 @@
       </categories>
       <tags>
         <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>解决Umami v2.3升级问题，Something went wrong.</title>
-    <url>/posts/Umami-fix/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>是的没错，发生这样的事情，应该很多<code>Umami</code>只要是v2.2版本应该都遇到了。 </p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2023/07/19/64b7cb785693f.webp" alt="Umami v2.2 Something went wrong."></p>
-<p>我浏览了部分 <code>issues</code> 只能升级到v2.3版本了。</p>
-<h1 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h1><p>我先说一下我自己的环境，我自己的使用：</p>
-<ol>
-<li>属于编译安装，没有放在docker</li>
-<li>Mysql 5.7</li>
-<li>nodjs 18.16.0</li>
-<li>npm 9.5.1</li>
-</ol>
-<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><p>解决办法有两种，第一种你可以直接尝试升级到<code>MySQL</code> 8.0，如果你想继续和我一样，小鸡的配置不行还想用5.7，请继续往下看。</p>
-<p>如果你是和我一样都是<code>Mysql</code> 5.7版本，你需要查看这篇 <a href="https://github.com/umami-software/umami/issues/2118" rel="external nofollow noreferrer">issues</a> 或者继续往下看。</p>
-<ol>
-<li>你需要从GitHub 拉去一份最新的<a href="https://github.com/umami-software/umami/releases" rel="external nofollow noreferrer">Umami</a> 的代码，你需要找到<code>db/mysql/migrations/02_report_schema_session_data</code>文件夹下的<code>migration.sql</code>这份sql文件，将下面的代码替换和保存。</li>
-</ol>
-<figure class="highlight sql"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> `event_data` CHANGE `event_data_type` `data_type` <span class="type">int</span> unsigned <span class="keyword">NOT</span> <span class="keyword">NULL</span>;</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> `event_data` CHANGE `event_date_value` `date_value` <span class="type">timestamp</span> <span class="keyword">NULL</span>;</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> `event_data` CHANGE `event_id` `event_data_id` <span class="type">varchar</span>(<span class="number">36</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span>;</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> `event_data` CHANGE `event_numeric_value` `number_value` <span class="type">decimal</span>(<span class="number">19</span>, <span class="number">4</span>) <span class="keyword">NULL</span>;</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> `event_data` CHANGE `event_string_value` `string_value`<span class="type">varchar</span>(<span class="number">500</span>) <span class="keyword">NULL</span>;</span><br></pre></td></tr></tbody></table></figure>
-
-<p>终于我遇到的问题，你需要备份原来的 <code>Umami</code> 数据库，然后创建一个新的数据库，讲数据源配置在<code>.env</code>里面，不然通过初始化数据库。</p>
-<ol start="2">
-<li><p>然后你需要在终端中运行这段命令<code>npx prisma migrate resolve --rolled-back "02_report_schema_session_data"</code></p>
-</li>
-<li><p>重新部署，请看 <a href="https://umami.is/docs/install" rel="external nofollow noreferrer">https://umami.is/docs/install</a></p>
-</li>
-</ol>
-<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>Umami 的GitHub issues ：<a href="https://github.com/umami-software/umami/issues/2118" rel="external nofollow noreferrer">https://github.com/umami-software/umami/issues/2118</a></p>
-</body></html>]]></content>
-      <categories>
-        <category>网络技术</category>
-      </categories>
-      <tags>
-        <tag>Umami</tag>
-        <tag>PV</tag>
-        <tag>网站统计，UV</tag>
-        <tag>Ip</tag>
-        <tag>MySql</tag>
       </tags>
   </entry>
 </search>
