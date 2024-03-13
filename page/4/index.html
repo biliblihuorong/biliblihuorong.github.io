@@ -1,0 +1,328 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>某科学的贝壳 - 一个贝壳的博客</title><meta name="author" content="shell"><meta name="copyright" content="shell"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="没错这是一个在学园都市的贝壳建立的博客!"><link rel="shortcut icon" href="https://img.misaka.pics/i/1/23/01/30/63d755db9649a.ico"><link rel="canonical" href="https://blog.ning.moe/page/4/index.html"><link rel="preconnect"><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="/pluginsSrc/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="/pluginsSrc/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="/pluginsSrc/@fancyapps/ui/dist/fancybox/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  noticeOutdate: {"limitDay":500,"position":"top","messagePrev":null,"messageNext":"自上次更新以来的天，文章的内容可能已过时。"},
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: true
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体中文","cht_to_chs":"你已切换为简体中文","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#121212","position":"bottom-left"},
+  infinitegrid: {
+    js: '/pluginsSrc/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '某科学的贝壳',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2024-03-13 10:24:38'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 8 || hour >= 22
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(e => {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><link rel="stylesheet" href="https://at.alicdn.com/t/c/font_4164402_l5xr85kewa.css?spm=a313x.7781069.1998910419.53&amp;file=font_4164402_l5xr85kewa.css"><script async="" defer="" src="https://blog.ning.moe/static/js/script.js" data-website-id="9ff73ab5-a863-462d-8695-5db50d42cf66" data-host-url="https://umami.asshell.top/"></script><meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="某科学的贝壳" type="application/atom+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://img.misaka.pics/i/1/23/01/30/63d7559a451ec.webp" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">39</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">76</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><hr class="custom-hr"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa-fw fas fa-filter"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa-fw fa fa-gamepad"></i><span> 娱乐</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/movies/"><i class="fa-fw fab fa-youtube"></i><span> 追番</span></a></li><li><a class="site-page child" href="/steamgames/"><i class="fa-fw fab fa-steam"></i><span> Steam库</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/atom.xml"><i class="fa-fw fa fa-rss"></i><span> Rss订阅</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://travel.moe/go.html"><i class="fa-fw iconfont icon-xingqiu"></i><span> 异次元之旅</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://www.travellings.cn/go.html"><i class="fa-fw fas fa-train"></i><span> 开往</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-heart"></i><span> 关于</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/privacy-policy/"><i class="fa-fw fa-solid fa-user-secret"></i><span> 隐私</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fa-solid fa-user"></i><span> 我?</span></a></li><li><a class="site-page child" href="/blog/"><i class="fa-fw fa-solid fa-blog"></i><span> 本站?</span></a></li></ul></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('https://img.misaka.pics/i/1/2023/03/10/640a945955c47.webp')"><nav id="nav"><span id="blog-info"><a href="/" title="某科学的贝壳"><span class="site-name">某科学的贝壳</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa-fw fas fa-filter"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa-fw fa fa-gamepad"></i><span> 娱乐</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/movies/"><i class="fa-fw fab fa-youtube"></i><span> 追番</span></a></li><li><a class="site-page child" href="/steamgames/"><i class="fa-fw fab fa-steam"></i><span> Steam库</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/atom.xml"><i class="fa-fw fa fa-rss"></i><span> Rss订阅</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://travel.moe/go.html"><i class="fa-fw iconfont icon-xingqiu"></i><span> 异次元之旅</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://www.travellings.cn/go.html"><i class="fa-fw fas fa-train"></i><span> 开往</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-heart"></i><span> 关于</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/privacy-policy/"><i class="fa-fw fa-solid fa-user-secret"></i><span> 隐私</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fa-solid fa-user"></i><span> 我?</span></a></li><li><a class="site-page child" href="/blog/"><i class="fa-fw fa-solid fa-blog"></i><span> 本站?</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">某科学的贝壳</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://t.me/shell_science" target="_blank" title="Telegram"><i class="fa-brands fa-telegram"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left"><a href="/posts/%E5%85%B3%E4%BA%8Ewordpress%E5%88%86%E7%B1%BB%E7%9B%AE%E5%BD%95404%E9%97%AE%E9%A2%98/" title="关于WordPress分类目录404问题"><img class="post-bg" src="https://img.misaka.pics/i/1/23/01/30/63d759cdaccfe.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="关于WordPress分类目录404问题"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/%E5%85%B3%E4%BA%8Ewordpress%E5%88%86%E7%B1%BB%E7%9B%AE%E5%BD%95404%E9%97%AE%E9%A2%98/" title="关于WordPress分类目录404问题">关于WordPress分类目录404问题</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-06-18T02:56:33.000Z" title="发表于 2020-06-18 10:56:33">2020-06-18</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-03-12T16:32:13.697Z" title="更新于 2024-03-13 00:32:13">2024-03-13</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/">网络技术</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/WordPress/">WordPress</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/Nginx/">Nginx</a></span></div><div class="content">概述前两天把博客给玩脱了和，也没有备份，重新搞了之后我其实想隐藏博文中链接地址里面的index.php无意间隐藏了index.php还神奇的把分类目录的404解决了。
+我遇到的问题，本人萌新，如果有什么不对的地方希望大佬手下留情ヾ(≧へ≦)〃我的博客的问题是就算使用word press的 月份和名称型类型地址也会报错。 以及我的分类目录404，但是文章标签就可以正常打开，这对于我来说已经非常玄学了。
+开始解决：我是用的nginx。我抄的是nginx修改的代码是这个博主写的
+123456location / {       if (!-e $request_filename) {            #一级目录            rewrite ^/(.*)$ /index.php/$1 last;        }     }
+
+然后进入你的宝塔面板，网站——选择你需要改的网站——设置——更改配置——拆入代码。我插入的是第50行 
+</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/posts/%E5%8D%9A%E5%AE%A2%E6%95%B0%E6%8D%AE%E5%BA%93%E6%8D%9F%E5%9D%8F%EF%BC%8C%E6%AD%A3%E5%9C%A8%E7%BB%B4%E6%8A%A4%EF%BC%81/" title="博客数据库损坏，正在维护！"><img class="post-bg" src="https://img.misaka.pics/i/1/23/01/30/63d759cdaccfe.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="博客数据库损坏，正在维护！"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/%E5%8D%9A%E5%AE%A2%E6%95%B0%E6%8D%AE%E5%BA%93%E6%8D%9F%E5%9D%8F%EF%BC%8C%E6%AD%A3%E5%9C%A8%E7%BB%B4%E6%8A%A4%EF%BC%81/" title="博客数据库损坏，正在维护！">博客数据库损坏，正在维护！</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-06-16T15:38:45.000Z" title="发表于 2020-06-16 23:38:45">2020-06-16</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-03-12T16:32:13.697Z" title="更新于 2024-03-13 00:32:13">2024-03-13</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/">网络技术</a></span></div><div class="content">因博主手残把动了数据库而且还没有恢复到最近的备份，本博客访问可能会存在一定问题，在博主紧急抢修下，恢复了部分基础功能，博文图片可能暂时无法加载，我相信很快恢复，我现在先睡觉了都12点了。
+</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/posts/moeICP/" title="萌国ICP备案"><img class="post-bg" src="https://img.misaka.pics/i/1/23/01/30/63d759cdaccfe.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="萌国ICP备案"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/moeICP/" title="萌国ICP备案">萌国ICP备案</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-06-16T05:00:24.000Z" title="发表于 2020-06-16 13:00:24">2020-06-16</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-03-12T16:32:13.696Z" title="更新于 2024-03-13 00:32:13">2024-03-13</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E6%83%B3/">生活随想</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E5%A4%87%E6%A1%88/">备案</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E8%90%8C%E5%9B%BD/">萌国</a></span></div><div class="content">萌国ICP备案
+启元
+
+自从某萌主申请了 icp.gov.moe 域名以后
+萌童鞋在百忙中抽空写了个萌备系统
+然后大家看到萌国ICP备案查询系统就上线了
+
+萌国ICP备案
+
+嗯，你没看错，这是萌国的ICP备案。
+萌国在哪呢，听某萌主说，好像是个网络上虚拟的国度。
+反正别问博主了，本博主也是听来的。
+我们说的是萌国ICP备案，号称萌ICP备，简称萌备
+
+萌ICP备 纯属萌友网站联萌！是一种次元中的爱好，文化的展现。
+
+若你在万千网站中遇到萌备甚有缘分
+萌主：“欢迎各大热爱萌文化的站长加入
+ 给自己的网站加上个萌萌的备案号”
+博主：能不能不打广告？……
+
+加入萌备
+
+申请地址： https://icp.gov.moe/join.php
+萌备主页https://icp.gov.moe
+然后按提示在页脚加上萌备的链接，以便查询对接系统，最后自动就加入萌备了，好简单啊。
+
+后话
+
+感觉好简单的样子，本博客已经在用了，还PY了个好号码，是不是很好看呢。
+</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/posts/clash/" title="clash 使用"><img class="post-bg" src="https://img.misaka.pics/i/1/23/01/30/63d75b0dbac21.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="clash 使用"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/clash/" title="clash 使用">clash 使用</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-03-14T01:22:07.000Z" title="发表于 2020-03-14 09:22:07">2020-03-14</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-03-12T16:32:13.693Z" title="更新于 2024-03-13 00:32:13">2024-03-13</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/">网络技术</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/clash/">clash</a></span></div><div class="content">请根据当地网络法律使用,本文章仅供学习使用,不负任何责任!请根据当地网络法律使用,本文章仅供学习使用,不负任何责任!请根据当地网络法律使用,本文章仅供学习使用,不负任何责任!
+clash for windows :此项目地址:https://github.com/Fndroid/clash_for_windows_pkg/releases
+安装运行是这样的页面:
+导入配置文件然后我们到Proflies.
+支持url和本地配置文件直接拖入的两种方式.
+URL导入:
+文件导入:
+记得回到General把System Proxy和Start with windows打开即可.
+Clash for Android :项目地址: https://github.com/Kr328/ClashForAndroid/releases
+导入配置文件:导入和Windows基本一样,只不过Androidapp语言是中文了.
+
+</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/posts/%E6%90%AD%E5%BB%BA%E9%95%9C%E5%83%8F%E7%BD%91%E7%AB%99/" title="搭建镜像网站"><img class="post-bg" src="https://img.misaka.pics/i/1/23/01/30/63d759cdaccfe.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="搭建镜像网站"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/%E6%90%AD%E5%BB%BA%E9%95%9C%E5%83%8F%E7%BD%91%E7%AB%99/" title="搭建镜像网站">搭建镜像网站</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-01-11T13:26:15.000Z" title="发表于 2020-01-11 21:26:15">2020-01-11</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-03-12T16:32:13.698Z" title="更新于 2024-03-13 00:32:13">2024-03-13</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/">网络技术</a></span></div><div class="content">
+不过多介绍知道就好，使用Cloudflare Worker来建造镜像网站。 2. 为什么选择Cloudflare Worker因为他免费而且个人进步够用还能访问全球。 - 开始操练起来！ 1. 你需要首先用一个Cloudflare账号打开注册链接搭建Cloudflare Workerd  123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100101102103104105106107// 替换成你想镜像的站点const upstream = 'www.google.com'// 如果那个站点有专门的移动适配站点，否则保持和上面一致const upstream_mobile = 'www.google.com'// 你希望禁止哪些国家访问const blocke ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/posts/%E6%9C%AC%E7%AB%99%E6%AD%A3%E5%BC%8F%E5%90%AF%E5%8A%A8%E9%82%AE%E7%AE%B1%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/" title="本站正式启动邮箱评论功能"><img class="post-bg" src="https://img.misaka.pics/i/1/23/01/30/63d759cdaccfe.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="本站正式启动邮箱评论功能"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/%E6%9C%AC%E7%AB%99%E6%AD%A3%E5%BC%8F%E5%90%AF%E5%8A%A8%E9%82%AE%E7%AE%B1%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/" title="本站正式启动邮箱评论功能">本站正式启动邮箱评论功能</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-01-11T01:47:41.000Z" title="发表于 2020-01-11 09:47:41">2020-01-11</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-03-12T16:32:13.699Z" title="更新于 2024-03-13 00:32:13">2024-03-13</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/">网络技术</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/Email/">Email</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/SMTP/">SMTP</a></span></div><div class="content">邮箱评论功能欢迎大家测试如有bug,请联系我的QQ，谢谢！
+</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/posts/hello-world-2-2/" title="世界，您好！"><img class="post-bg" src="https://img.misaka.pics/i/1/23/01/30/63d759cdaccfe.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="世界，您好！"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/hello-world-2-2/" title="世界，您好！">世界，您好！</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-01-05T15:35:12.000Z" title="发表于 2020-01-05 23:35:12">2020-01-05</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-03-12T16:32:13.694Z" title="更新于 2024-03-13 00:32:13">2024-03-13</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E6%83%B3/">生活随想</a></span></div><div class="content">欢迎使用WordPress。这是您的第一篇文章。编辑或删除它，然后开始写作吧！
+
+</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/posts/%E7%94%A8java%E7%BC%96%E5%86%99%E4%B8%80%E4%B8%AA%E7%AE%80%E6%98%93%E7%9A%84%E8%AE%A1%E7%AE%97%E5%99%A8/" title="用Java编写一个简易的计算器"><img class="post-bg" src="https://img.misaka.pics/i/1/23/01/30/63d759cdaccfe.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="用Java编写一个简易的计算器"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/%E7%94%A8java%E7%BC%96%E5%86%99%E4%B8%80%E4%B8%AA%E7%AE%80%E6%98%93%E7%9A%84%E8%AE%A1%E7%AE%97%E5%99%A8/" title="用Java编写一个简易的计算器">用Java编写一个简易的计算器</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2019-04-27T01:48:43.000Z" title="发表于 2019-04-27 09:48:43">2019-04-27</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-03-12T16:32:13.699Z" title="更新于 2024-03-13 00:32:13">2024-03-13</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Bug%E7%94%9F%E6%88%90%E8%80%85/">Bug生成者</a><i class="fas fa-angle-right article-meta-link"></i><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Java/">Java</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/java/">java</a></span></div><div class="content">思路： 利用Scanner建立一个扫描对象，在用switch语句进行判断。
+1234567891011121314151617181920212223242526272829303132333435363738394041public class Calculator {    public static void main(String[] args) {        Scanner scanner =new Scanner(System.in);        System.out.println("请输入计算的A值");        double a =scanner.nextDouble();        System.out.println("运算符");        String b =scanner.next();        System.out.println("请输入计算B值");        double c =scanner.nextDouble();        switch (b){            case "+" :          ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/posts/%E5%A4%87%E6%A1%88/" title="备案"><img class="post-bg" src="https://img.misaka.pics/i/1/23/01/30/63d759cdaccfe.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="备案"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/%E5%A4%87%E6%A1%88/" title="备案">备案</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2019-01-10T09:33:14.000Z" title="发表于 2019-01-10 17:33:14">2019-01-10</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-03-12T16:32:13.698Z" title="更新于 2024-03-13 00:32:13">2024-03-13</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E6%83%B3/">生活随想</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E5%A4%87%E6%A1%88/">备案</a></span></div><div class="content">历尽千辛万苦终于备案了感谢 工信部的速度，本以为要等20天才可以，没有想到工信部工作效率如此之高仅用2天时间审核完毕，也感谢阿里云初审人员的速度审核。
+</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/page/3/#content-inner"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="space">…</span><a class="page-number" href="/page/3/#content-inner">3</a><span class="page-number current">4</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://img.misaka.pics/i/1/23/01/30/63d7559a451ec.webp" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"></div><div class="author-info__name">shell</div><div class="author-info__description">没错这是一个在学园都市的贝壳建立的博客!</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">39</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">76</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/biliblihuorong"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://t.me/shell_science" target="_blank" title="Telegram"><i class="fa-brands fa-telegram"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">欢迎访问本站,今天又是咕咕咕的一天!<br>
+<a href="https://blog.ning.moe/privacy-policy/" target="_blank">本站的隐私政策</a>
+</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/Ikuai-firewall-IPv6/" title="爱快IPv6防火墙配置"><img src="https://img.misaka.pics/i/1/2023/05/05/64544daf7c924.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="爱快IPv6防火墙配置"></a><div class="content"><a class="title" href="/posts/Ikuai-firewall-IPv6/" title="爱快IPv6防火墙配置">爱快IPv6防火墙配置</a><time datetime="2024-03-01T15:59:59.000Z" title="发表于 2024-03-01 23:59:59">2024-03-01</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/Home-NetWork/" title="改造家里网络"><img src="https://img.misaka.pics/i/1/23/01/30/63d759cdaccfe.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="改造家里网络"></a><div class="content"><a class="title" href="/posts/Home-NetWork/" title="改造家里网络">改造家里网络</a><time datetime="2024-02-08T03:13:49.000Z" title="发表于 2024-02-08 11:13:49">2024-02-08</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/2023-Annual-Summary/" title="2023 总结"><img src="https://img.misaka.pics/ShellBlogImg/1/2023/12/31/659170d8cb147.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2023 总结"></a><div class="content"><a class="title" href="/posts/2023-Annual-Summary/" title="2023 总结">2023 总结</a><time datetime="2023-12-31T15:59:59.000Z" title="发表于 2023-12-31 23:59:59">2023-12-31</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/teamspeak-run-one-year/" title="TeamSpeak 已经运行一年"><img src="https://img.misaka.pics/i/1/23/01/30/63d759cdaccfe.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="TeamSpeak 已经运行一年"></a><div class="content"><a class="title" href="/posts/teamspeak-run-one-year/" title="TeamSpeak 已经运行一年">TeamSpeak 已经运行一年</a><time datetime="2023-11-06T13:32:10.000Z" title="发表于 2023-11-06 21:32:10">2023-11-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/fuck-easyconnect/" title="封印 Easyconnect"><img src="https://img.misaka.pics/i/1/23/01/30/63d759cdaccfe.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="封印 Easyconnect"></a><div class="content"><a class="title" href="/posts/fuck-easyconnect/" title="封印 Easyconnect">封印 Easyconnect</a><time datetime="2023-10-15T16:02:08.000Z" title="发表于 2023-10-16 00:02:08">2023-10-16</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            
+            </div>
+            <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Bug%E7%94%9F%E6%88%90%E8%80%85/"><span class="card-category-list-name">Bug生成者</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Java/"><span class="card-category-list-name">Java</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E6%83%B3/"><span class="card-category-list-name">生活随想</span><span class="card-category-list-count">11</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/"><span class="card-category-list-name">网络技术</span><span class="card-category-list-count">22</span></a></li>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/%E6%80%BB%E7%BB%93/" style="font-size: 1.15em; color: rgb(164, 92, 194)">总结</a><a href="/tags/2023/" style="font-size: 1.15em; color: rgb(84, 172, 158)">2023</a><a href="/tags/backblaze/" style="font-size: 1.15em; color: rgb(157, 119, 170)">backblaze</a><a href="/tags/lskypro/" style="font-size: 1.15em; color: rgb(64, 184, 76)">lskypro</a><a href="/tags/%E8%93%9D%E7%A9%BA%E5%9B%BE%E5%BA%8A/" style="font-size: 1.15em; color: rgb(176, 43, 32)">蓝空图床</a><a href="/tags/%E5%85%B0%E7%A9%BA%E5%9B%BE%E5%BA%8A/" style="font-size: 1.15em; color: rgb(76, 100, 148)">兰空图床</a><a href="/tags/MarkDown/" style="font-size: 1.15em; color: rgb(53, 179, 33)">MarkDown</a><a href="/tags/%E5%AE%9D%E5%A1%94/" style="font-size: 1.15em; color: rgb(106, 2, 103)">宝塔</a><a href="/tags/Arch/" style="font-size: 1.15em; color: rgb(3, 184, 7)">Arch</a><a href="/tags/Linux/" style="font-size: 1.3em; color: rgb(41, 174, 51)">Linux</a><a href="/tags/Ikuai/" style="font-size: 1.3em; color: rgb(141, 128, 14)">Ikuai</a><a href="/tags/J4125/" style="font-size: 1.15em; color: rgb(172, 168, 168)">J4125</a><a href="/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/" style="font-size: 1.15em; color: rgb(48, 162, 16)">网络安全</a><a href="/tags/%E9%98%B2%E7%81%AB%E5%A2%99/" style="font-size: 1.45em; color: rgb(160, 73, 172)">防火墙</a><a href="/tags/IPtables/" style="font-size: 1.3em; color: rgb(169, 127, 177)">IPtables</a><a href="/tags/firewall/" style="font-size: 1.45em; color: rgb(169, 94, 192)">firewall</a><a href="/tags/go/" style="font-size: 1.15em; color: rgb(41, 87, 90)">go</a><a href="/tags/Cachefly/" style="font-size: 1.15em; color: rgb(148, 126, 150)">Cachefly</a><a href="/tags/SSL/" style="font-size: 1.15em; color: rgb(103, 95, 2)">SSL</a><a href="/tags/%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF/" style="font-size: 1.15em; color: rgb(155, 144, 134)">宝塔面板</a><a href="/tags/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/" style="font-size: 1.15em; color: rgb(136, 46, 3)">网络技术</a><a href="/tags/CloudFalre/" style="font-size: 1.15em; color: rgb(28, 92, 163)">CloudFalre</a><a href="/tags/%E5%86%99bug%E7%9A%84%E5%B0%8F%E8%83%BD%E6%89%8B/" style="font-size: 1.15em; color: rgb(162, 47, 72)">写bug的小能手</a><a href="/tags/docker/" style="font-size: 1.3em; color: rgb(125, 118, 184)">docker</a><a href="/tags/%E5%AE%89%E5%85%A8/" style="font-size: 1.15em; color: rgb(43, 13, 39)">安全</a><a href="/tags/ufw/" style="font-size: 1.15em; color: rgb(48, 96, 165)">ufw</a><a href="/tags/IPv6/" style="font-size: 1.15em; color: rgb(188, 21, 199)">IPv6</a><a href="/tags/Spring/" style="font-size: 1.45em; color: rgb(107, 137, 71)">Spring</a><a href="/tags/Java/" style="font-size: 1.45em; color: rgb(42, 50, 31)">Java</a><a href="/tags/CloudFlare/" style="font-size: 1.15em; color: rgb(35, 61, 29)">CloudFlare</a><a href="/tags/CAPTCHA/" style="font-size: 1.15em; color: rgb(138, 182, 84)">CAPTCHA</a><a href="/tags/Misaka/" style="font-size: 1.15em; color: rgb(11, 56, 24)">Misaka</a><a href="/tags/%E5%BE%A1%E5%9D%82%E7%BE%8E%E7%90%B4/" style="font-size: 1.15em; color: rgb(123, 123, 76)">御坂美琴</a><a href="/tags/%E6%9F%90%E7%A7%91%E5%AD%A6%E7%9A%84/" style="font-size: 1.15em; color: rgb(170, 184, 154)">某科学的</a><a href="/tags/TODO/" style="font-size: 1.15em; color: rgb(130, 68, 70)">TODO</a><a href="/tags/Security/" style="font-size: 1.3em; color: rgb(10, 171, 108)">Security</a><a href="/tags/SpringSecuriy/" style="font-size: 1.3em; color: rgb(68, 33, 184)">SpringSecuriy</a><a href="/tags/Umami/" style="font-size: 1.15em; color: rgb(71, 47, 199)">Umami</a><a href="/tags/PV/" style="font-size: 1.15em; color: rgb(42, 33, 179)">PV</a><a href="/tags/%E7%BD%91%E7%AB%99%E7%BB%9F%E8%AE%A1%EF%BC%8CUV/" style="font-size: 1.15em; color: rgb(177, 171, 77)">网站统计，UV</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span><a class="card-more-btn" href="/archives/" title="查看更多">
+    <i class="fas fa-angle-right"></i></a></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/03/"><span class="card-archive-list-date">三月 2024</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/02/"><span class="card-archive-list-date">二月 2024</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/12/"><span class="card-archive-list-date">十二月 2023</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/11/"><span class="card-archive-list-date">十一月 2023</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/10/"><span class="card-archive-list-date">十月 2023</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/09/"><span class="card-archive-list-date">九月 2023</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/07/"><span class="card-archive-list-date">七月 2023</span><span class="card-archive-list-count">4</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/06/"><span class="card-archive-list-date">六月 2023</span><span class="card-archive-list-count">2</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">39</div></div><div class="webinfo-item"><div class="item-name">已运行时间 :</div><div class="item-count" id="runtimeshow" data-publishdate="2019-12-26T16:00:00.000Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">21.9k</div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastpushdate="2024-03-13T02:24:38.025Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">©2019 - 2024 By shell</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text"><a href="https://icp.gov.moe/?keyword=2020021021" target="_blank"><img src="https://img.misaka.pics/i/1/23/01/30/63d75baf92f17.webp" width="20px" height="20px" alt="萌国ICP备案"> 萌ICP备 2020021021号</a> | 
+<a style="text-decoration:none;" href="https://travel.moe/go.html" title="异次元之旅-跃迁-我们一起去萌站成员的星球旅行吧！" target="_blank"><img src="https://travel.moe/images/icon/icon64.png" style="width:24px;height:24px" alt="travel.moe">异次元之旅</a> |
+<a href="https://umami.asshell.top/share/zv9wNlkWxWXKIkc9/ShellBlog" target="_blank" rel="external nofollow">Umami</a> |
+<a href="https://www.travellings.cn/go.html" target="_blank" rel="noopener" title="开往-友链接力"><img src="https://www.travellings.cn/assets/logo.gif" alt="开往-友链接力" width="120"></a><br>
+<a href="https://www.cloudflare.com/" target="_blank" rel="external nofollow"><img src="https://img.misaka.pics/i/1/23/01/30/63d75c34b7358.webp" width="80px" height="30px" alt="CloudFlare"></a><br>
+</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/pluginsSrc/@fancyapps/ui/dist/fancybox/fancybox.umd.js"></script><script src="/pluginsSrc/instant.page/instantpage.js" type="module"></script><script src="/pluginsSrc/node-snackbar/dist/snackbar.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('/pluginsSrc/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (true){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-pjax"><script>window.typedJSFn = {
+  init: (str) => {
+    window.typed = new Typed('#subtitle', Object.assign({
+      strings: str,
+      startDelay: 300,
+      typeSpeed: 150,
+      loop: true,
+      backSpeed: 50,
+    }, null))
+  },
+  run: (subtitleType) => {
+    if (true) {
+      if (typeof Typed === 'function') {
+        subtitleType()
+      } else {
+        getScript('/pluginsSrc/typed.js/dist/typed.umd.js').then(subtitleType)
+      }
+    } else {
+      subtitleType()
+    }
+  }
+}
+</script><script>function subtitleType () {
+  if (true) {
+    typedJSFn.init(["Get busy living or get busy dying.","让子弹飞一会!","永远相信 美好的事情 即将发生.","写代码是热爱 ，写到世界充满爱。","此情可待成追忆，只是当时已惘然。"])
+  } else {
+    document.getElementById("subtitle").textContent = "Get busy living or get busy dying."
+  }
+}
+typedJSFn.run(subtitleType)</script></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"></div></div><hr><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div>
+      <div id="sakana" style="position:fixed;right:0;bottom:0px;"></div>
+      <script async="" onload="initSakanaWidget({&quot;character&quot;:&quot;takina&quot;,&quot;enable&quot;:true,&quot;enable_mobile&quot;:false,&quot;size&quot;:200,&quot;autoFit&quot;:false,&quot;bottom&quot;:&quot;0px&quot;,&quot;controls&quot;:true,&quot;stroke&quot;:{&quot;color&quot;:&quot;#b4b4b4&quot;,&quot;width&quot;:10},&quot;threshold&quot;:0.1,&quot;rotate&quot;:0,&quot;customCharacters&quot;:[]})" src="https://blog.ning.moe/static/js/sakana.min.js"></script>
+      <script>
+      function log(msg) {
+        console.log("[hexo-sakana] " + msg);
+      }
+
+      function initSakanaWidget(config) {
+        if (
+          !config.enable_mobile &&
+          window.navigator.userAgent.match(
+            /(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i
+          )
+        ) {
+          log(
+            '检测为移动端，且配置中未开启在移动端启用组件，hexo-sakana 已禁用'
+          );
+          return;
+        }
+        for (character of config.customCharacters) {
+          if (!["takina", "chisato"].includes(character.base)) {
+            log(`无效基础角色 ${character.base}，取消注册`);
+            continue;
+          }
+          if (character.name === "") {
+            log("名称为空，取消注册");
+            continue;
+          }
+          const originCharacter = SakanaWidget.getCharacter(character.base);
+          originCharacter.initialState = {
+            ...originCharacter.initialState,
+            ...character,
+          };
+          originCharacter.image = !character.image ? originCharacter.image : character.image
+          SakanaWidget.registerCharacter(character.name, originCharacter);
+          log(`注册自定义角色：${character.name}`)
+        }
+        new SakanaWidget({
+          character: config.character,
+          size: config.size,
+          autoFit: config.autoFit,
+          controls: config.controls,
+          stroke: config.stroke,
+          threshold: config.threshold,
+          rotate: config.rotate,
+        }).mount("#sakana");
+      }
+  </script>
+    <script type="text/javascript" charset="utf-8" src="/js/lazyload-plugin/lazyload.intersectionObserver.min.js"></script></body></html>
