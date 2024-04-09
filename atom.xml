@@ -6,7 +6,7 @@
   <link href="https://blog.ning.moe/atom.xml" rel="self"/>
   
   <link href="https://blog.ning.moe/"/>
-  <updated>2024-03-12T16:32:13.690Z</updated>
+  <updated>2024-04-09T15:34:34.933Z</updated>
   <id>https://blog.ning.moe/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Memos 对接 Authentik</title>
+    <link href="https://blog.ning.moe/posts/authentik-OAuth2-memos/"/>
+    <id>https://blog.ning.moe/posts/authentik-OAuth2-memos/</id>
+    <published>2024-04-09T14:40:34.000Z</published>
+    <updated>2024-04-09T15:34:34.933Z</updated>
+    
+    <content type="html"><![CDATA[<html><head></head><body><blockquote><p> 配置中：这是什么啊，这么麻烦还没过去啊。 配置后：真香好方便。</p></blockquote><p>使用本文前请自行在 <code>Authentik </code>配置好 Memos使用的<code>应用程序</code>和<code>提供程序</code></p><h1 id="Authentik-配置"><a href="#Authentik-配置" class="headerlink" title="Authentik 配置"></a>Authentik 配置</h1><p>默认你已经创建好了，一个给Memos使用的<code>应用程序</code>和<code>提供程序</code>,我们需要更改<code>提供程序</code>(给Memos 的)我们点击编辑</p><p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/09/66155d6445bbc.webp" alt="Authentik 配置 Memos-1.webp"></p><blockquote><p>选择客户端可以使用哪些作用域。客户端仍然需要指定访问数据的范围。</p><p>按住 <code>ctrl/command</code> 键可选择多个项目。</p></blockquote><p>我们选中<code>authentik default OAuth Mapping: OpenID email</code> 和 <code>authentik default OAuth Mapping: OpenID openid</code>将<code>Subject 模式</code>改成基于用户名，然后更新。</p><p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/09/6615597f90737.webp" alt="Authentik 配置 Memos.webp"></p><h1 id="Memos配置"><a href="#Memos配置" class="headerlink" title="Memos配置"></a>Memos配置</h1><blockquote><p>在截至发文时 <code>Memos</code> 的版本为<code>v0.20.1</code>版本，<code>Memos</code>通过用户名为主键，其实只需要给<code>username</code>字段即可。</p></blockquote><p>根据上文调整的，现在sub 是我们的用户名字段，按照文章截屏填写其他的自行替换。这样你的的<code>Memos</code>就可以使用<code>Authentik</code>进行登录了。</p><p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/09/66155e6ca6dc7.webp" alt="Memos-Oauth2-config.webp"></p><h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p><code>Memos</code>的文档：<a href="https://www.usememos.com/docs/advanced-settings/keycloak" rel="external nofollow noreferrer">https://www.usememos.com/docs/advanced-settings/keycloak</a></p></body></html>]]></content>
+    
+    
+    <summary type="html">Authentik uses OAuth2 to interface with Memos. Authentik 使用 OAuth2 对接 Memos</summary>
+    
+    
+    
+    <category term="网络技术" scheme="https://blog.ning.moe/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="Memos" scheme="https://blog.ning.moe/tags/Memos/"/>
+    
+    <category term="Authentik" scheme="https://blog.ning.moe/tags/Authentik/"/>
+    
+    <category term="SSO" scheme="https://blog.ning.moe/tags/SSO/"/>
+    
+    <category term="OAuth2" scheme="https://blog.ning.moe/tags/OAuth2/"/>
+    
+  </entry>
   
   <entry>
     <title>爱快IPv6防火墙配置</title>
@@ -527,13 +554,13 @@
     <category term="网络技术" scheme="https://blog.ning.moe/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="CDN" scheme="https://blog.ning.moe/tags/CDN/"/>
-    
     <category term="hexo" scheme="https://blog.ning.moe/tags/hexo/"/>
     
     <category term="butterfly" scheme="https://blog.ning.moe/tags/butterfly/"/>
     
     <category term="jsdelivr" scheme="https://blog.ning.moe/tags/jsdelivr/"/>
+    
+    <category term="CDN" scheme="https://blog.ning.moe/tags/CDN/"/>
     
   </entry>
   
@@ -596,32 +623,6 @@
     <category term="Security" scheme="https://blog.ning.moe/tags/Security/"/>
     
     <category term="SpringSecuriy" scheme="https://blog.ning.moe/tags/SpringSecuriy/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ArchLinux 使用体验</title>
-    <link href="https://blog.ning.moe/posts/ArchLinux/"/>
-    <id>https://blog.ning.moe/posts/ArchLinux/</id>
-    <published>2023-02-09T08:52:37.000Z</published>
-    <updated>2024-03-12T16:32:13.688Z</updated>
-    
-    <content type="html"><![CDATA[<html><head></head><body><img src="https://img.c-dreamer.top/i/1/2023/02/09/63e4c0b786de8.webp" alt="archlinux-logo-dark-1200dpi.webp" style="zoom: 25%;"><h1 id="关于-ArchLinux"><a href="#关于-ArchLinux" class="headerlink" title="关于 ArchLinux"></a>关于 ArchLinux</h1><p>Arch 是Linux发行版的一个分支，arch的理念是完全自定义，没有所谓的系统版本，全部是滚动升级（长时间不滚，会滚炸，当然我每天开机第一件事就是滚一下）</p><h1 id="正片开始"><a href="#正片开始" class="headerlink" title="正片开始"></a>正片开始</h1><h2 id="为什么非要选择Arch？"><a href="#为什么非要选择Arch？" class="headerlink" title="为什么非要选择Arch？"></a>为什么非要选择Arch？</h2><p>其实如果你要是在非中国大陆的话，我觉得你使用Ubuntu 或者其他的发行版大同小异，因为我看中了 Arch的万能的AUR软件仓库源，这里面有各位大佬自封装的软件，庞大的软件仓库，例如微信 需要wine 以及烦琐的配置 AUR 可以直接解决这些问题。</p><h2 id="听说安装Arch很难？"><a href="#听说安装Arch很难？" class="headerlink" title="听说安装Arch很难？"></a>听说安装Arch很难？</h2><p>是的 Arch 的安装异常的烦琐切复杂 ，不过如果你擅用<code>Search</code>和<a href="https://wiki.archlinuxcn.org/wiki/%E9%A6%96%E9%A1%B5" rel="external nofollow noreferrer" title="ArchWiKi">ArchWiki</a> 和时间耐心的研究，其实很简单，我是一个纯Linux小白，在查阅ArchWiki花费大量的时间研究之后也安装成功。</p><h2 id="我现在的状态？"><a href="#我现在的状态？" class="headerlink" title="我现在的状态？"></a>我现在的状态？</h2><p>我现在给电脑装载了双系统（怕arch崩了就无了） win11+arch</p><p><img src="https://img.c-dreamer.top/i/1/2023/02/09/63e4bbfff1e9c.webp" alt="ArchLinux 配置.webp"></p><h2 id="使用体验"><a href="#使用体验" class="headerlink" title="使用体验"></a>使用体验</h2><p>我用Arch差不多3个月了，除了刚开始的不适逐渐慢慢适应之后逐渐习惯，但我偶尔也很想换回windows，因为我现在还没有适应在linux只用一个根的感念，而不像windows的区概念（而且我分区还很多）。</p><h1 id="你要现在立刻安装Arch？"><a href="#你要现在立刻安装Arch？" class="headerlink" title="你要现在立刻安装Arch？"></a>你要现在立刻安装Arch？</h1><h3 id="你会首先面临的问题"><a href="#你会首先面临的问题" class="headerlink" title="你会首先面临的问题"></a>你会首先面临的问题</h3><h4 id="游戏生态"><a href="#游戏生态" class="headerlink" title="游戏生态"></a>游戏生态</h4><p>首先Linux上虽然有steam 的Steam Play的加持，游戏生态逐步扩大，但还是有诸多游戏不能游玩，详情可以看这个<a href="https://www.protondb.com/" rel="external nofollow noreferrer" title="protondb">protondb</a>上搜索🔍，还有原神属于能玩的级别但是配置很烦琐。</p><h4 id="软件的生态"><a href="#软件的生态" class="headerlink" title="软件的生态"></a>软件的生态</h4><p>虽然有AUR 的加持但仍然有很多软件只有windows平台还用<code>wine</code>调教不好它例如<code>office</code> ，但这不是说你不能使用这些功能，Linux有很多平替软件可以选择例如 <code>libreoffice</code> or <code>WPS</code>。</p><h4 id="使用习惯"><a href="#使用习惯" class="headerlink" title="使用习惯"></a>使用习惯</h4><p>就像我前面提到的 Linux和Windows对于磁盘区的概念来说，以及你要面临一个新的桌面使用环境。</p></body></html>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;img src=&quot;https://img.c-dreamer.top/i/1/2023/02/09/63e4c0b786de8.webp&quot; alt=&quot;archlinux-logo-dark-1200dpi.webp&quot; style</summary>
-      
-    
-    
-    
-    <category term="生活随想" scheme="https://blog.ning.moe/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E6%83%B3/"/>
-    
-    
-    <category term="Arch" scheme="https://blog.ning.moe/tags/Arch/"/>
-    
-    <category term="Linux" scheme="https://blog.ning.moe/tags/Linux/"/>
     
   </entry>
   
