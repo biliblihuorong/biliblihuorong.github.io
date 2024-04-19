@@ -285,6 +285,8 @@
     <category term="网络技术" scheme="https://blog.ning.moe/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/"/>
     
     
+    <category term="MySql" scheme="https://blog.ning.moe/tags/MySql/"/>
+    
     <category term="Umami" scheme="https://blog.ning.moe/tags/Umami/"/>
     
     <category term="PV" scheme="https://blog.ning.moe/tags/PV/"/>
@@ -292,8 +294,6 @@
     <category term="网站统计，UV" scheme="https://blog.ning.moe/tags/%E7%BD%91%E7%AB%99%E7%BB%9F%E8%AE%A1%EF%BC%8CUV/"/>
     
     <category term="Ip" scheme="https://blog.ning.moe/tags/Ip/"/>
-    
-    <category term="MySql" scheme="https://blog.ning.moe/tags/MySql/"/>
     
   </entry>
   
@@ -348,15 +348,15 @@
     <category term="网络技术" scheme="https://blog.ning.moe/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="butterfly" scheme="https://blog.ning.moe/tags/butterfly/"/>
-    
-    <category term="backblaze" scheme="https://blog.ning.moe/tags/backblaze/"/>
-    
     <category term="lskypro" scheme="https://blog.ning.moe/tags/lskypro/"/>
     
     <category term="蓝空图床" scheme="https://blog.ning.moe/tags/%E8%93%9D%E7%A9%BA%E5%9B%BE%E5%BA%8A/"/>
     
     <category term="兰空图床" scheme="https://blog.ning.moe/tags/%E5%85%B0%E7%A9%BA%E5%9B%BE%E5%BA%8A/"/>
+    
+    <category term="backblaze" scheme="https://blog.ning.moe/tags/backblaze/"/>
+    
+    <category term="butterfly" scheme="https://blog.ning.moe/tags/butterfly/"/>
     
   </entry>
   
