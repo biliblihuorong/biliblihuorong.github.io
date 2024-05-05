@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://blog.ning.moe/posts/CacheflySSLUpDate/</loc>
+    <lastmod>2024-05-05</lastmod>
+  </url>
+  <url>
     <loc>https://blog.ning.moe/posts/CloudFlare-Tunnel-Application-Access/</loc>
     <lastmod>2024-04-24</lastmod>
   </url>
@@ -134,10 +138,6 @@
   </url>
   <url>
     <loc>https://blog.ning.moe/posts/Java-CAPTCHA-cloudflare/</loc>
-    <lastmod>2024-03-12</lastmod>
-  </url>
-  <url>
-    <loc>https://blog.ning.moe/posts/CacheflySSLUpDate/</loc>
     <lastmod>2024-03-12</lastmod>
   </url>
   <url>
