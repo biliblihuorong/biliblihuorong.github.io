@@ -50,34 +50,6 @@
       </tags>
   </entry>
   <entry>
-    <title>2023 总结</title>
-    <url>/posts/2023-Annual-Summary/</url>
-    <content><![CDATA[<html><head></head><body><blockquote>
-<p>应该这个文章会在 31/12/2024 发表</p>
-</blockquote>
-<p>转眼间 23年的就快过完了，回顾过往这一年的时间，貌似有些许的特殊，不至于和前几年一样是一个无聊又无趣。</p>
-<h1 id="博客"><a href="#博客" class="headerlink" title="博客"></a>博客</h1><p>两年的宁静，博客在23年重新绽放光彩。</p>
-<p>23年共计写了 19 篇 文章其中阅读最多的 <a href="https://blog.ning.moe/posts/Spring-Security/">新版本 Spring-Security 配置踩坑</a>  共阅读了 227次 从Google 来的最多，文章是其次是<br><a href="https://blog.ning.moe/posts/Java-CAPTCHA-cloudflare/">Java 使用 CloudFlare Turnstile 验证码</a> 共阅读了 205次。在重新开始写博客之后 本站从 23年6月记录截稿，共收获了  PV <strong>6.52k</strong>  UV <strong>2.16k</strong>。</p>
-<img src="https://img.misaka.pics/ShellBlogImg/1/2023/12/29/658ed5482b2d5.webp" alt="2023-Blog-PV&amp;UV-Date.webp" style="zoom: 80%;">
-
-<blockquote>
-<p>为什么只有6-12月的数据呢？</p>
-<p><del>因为我把1-5月的数据搞丢了。</del></p>
-</blockquote>
-<p>在截稿前收到Google 发来的Email 28天从Google 来了120 的</p>
-<img src="https://img.misaka.pics/ShellBlogImg/1/2023/12/31/65916362b2813.webp" alt="Google-search-PV.webp" style="zoom:50%;">
-
-<h1 id="赛项"><a href="#赛项" class="headerlink" title="赛项"></a>赛项</h1><p>我参加了<code>应用软件系统开发</code>  荣获一等奖。然而，对于这次比赛，我心中并未留下太多深刻的评价，因为涉及的内容大多是繁琐且重复的工作。</p>
-<img src="https://img.misaka.pics/ShellBlogImg/1/2023/12/31/65916654c7cc0.webp" alt="ChinaSkills.webp" style="zoom: 50%;">
-
-<h1 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h1><p>23年的故事就此落幕，还有23年所遇到的人们，也开启了我线下第一次面基之旅（不展开叙述）。24年的故事即将开启，这一年里展开新的冒险。我希望在24年，能够踏上旅途，探访不同的地方，因为美好的青春如此短暂，而旅行是拓展视野和经历的最佳方式。同时，我收集更多计算机知识的奥秘，为自己的技术之旅添上浓墨重彩的一笔。至于博客吗，我也会继续写下去的。</p>
-</body></html>]]></content>
-      <tags>
-        <tag>总结</tag>
-        <tag>2023</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Linux安装宝塔面板</title>
     <url>/posts/21-8-3/</url>
     <content><![CDATA[<html><head></head><body><blockquote>
@@ -120,29 +92,6 @@
       </tags>
   </entry>
   <entry>
-    <title>ArchLinux 使用体验</title>
-    <url>/posts/ArchLinux/</url>
-    <content><![CDATA[<html><head></head><body><img src="https://img.c-dreamer.top/i/1/2023/02/09/63e4c0b786de8.webp" alt="archlinux-logo-dark-1200dpi.webp" style="zoom: 25%;">
-
-<h1 id="关于-ArchLinux"><a href="#关于-ArchLinux" class="headerlink" title="关于 ArchLinux"></a>关于 ArchLinux</h1><p>Arch 是Linux发行版的一个分支，arch的理念是完全自定义，没有所谓的系统版本，全部是滚动升级（长时间不滚，会滚炸，当然我每天开机第一件事就是滚一下）</p>
-<h1 id="正片开始"><a href="#正片开始" class="headerlink" title="正片开始"></a>正片开始</h1><h2 id="为什么非要选择Arch？"><a href="#为什么非要选择Arch？" class="headerlink" title="为什么非要选择Arch？"></a>为什么非要选择Arch？</h2><p>其实如果你要是在非中国大陆的话，我觉得你使用Ubuntu 或者其他的发行版大同小异，因为我看中了 Arch的万能的AUR软件仓库源，这里面有各位大佬自封装的软件，庞大的软件仓库，例如微信 需要wine 以及烦琐的配置 AUR 可以直接解决这些问题。</p>
-<h2 id="听说安装Arch很难？"><a href="#听说安装Arch很难？" class="headerlink" title="听说安装Arch很难？"></a>听说安装Arch很难？</h2><p>是的 Arch 的安装异常的烦琐切复杂 ，不过如果你擅用<code>Search</code>和<a href="https://wiki.archlinuxcn.org/wiki/%E9%A6%96%E9%A1%B5" rel="external nofollow noreferrer" title="ArchWiKi">ArchWiki</a> 和时间耐心的研究，其实很简单，我是一个纯Linux小白，在查阅ArchWiki花费大量的时间研究之后也安装成功。</p>
-<h2 id="我现在的状态？"><a href="#我现在的状态？" class="headerlink" title="我现在的状态？"></a>我现在的状态？</h2><p>我现在给电脑装载了双系统（怕arch崩了就无了） win11+arch</p>
-<p><img src="https://img.c-dreamer.top/i/1/2023/02/09/63e4bbfff1e9c.webp" alt="ArchLinux 配置.webp"></p>
-<h2 id="使用体验"><a href="#使用体验" class="headerlink" title="使用体验"></a>使用体验</h2><p>我用Arch差不多3个月了，除了刚开始的不适逐渐慢慢适应之后逐渐习惯，但我偶尔也很想换回windows，因为我现在还没有适应在linux只用一个根的感念，而不像windows的区概念（而且我分区还很多）。</p>
-<h1 id="你要现在立刻安装Arch？"><a href="#你要现在立刻安装Arch？" class="headerlink" title="你要现在立刻安装Arch？"></a>你要现在立刻安装Arch？</h1><h3 id="你会首先面临的问题"><a href="#你会首先面临的问题" class="headerlink" title="你会首先面临的问题"></a>你会首先面临的问题</h3><h4 id="游戏生态"><a href="#游戏生态" class="headerlink" title="游戏生态"></a>游戏生态</h4><p>首先Linux上虽然有steam 的Steam Play的加持，游戏生态逐步扩大，但还是有诸多游戏不能游玩，详情可以看这个<a href="https://www.protondb.com/" rel="external nofollow noreferrer" title="protondb">protondb</a>上搜索🔍，还有原神属于能玩的级别但是配置很烦琐。</p>
-<h4 id="软件的生态"><a href="#软件的生态" class="headerlink" title="软件的生态"></a>软件的生态</h4><p>虽然有AUR 的加持但仍然有很多软件只有windows平台还用<code>wine</code>调教不好它例如<code>office</code> ，但这不是说你不能使用这些功能，Linux有很多平替软件可以选择例如 <code>libreoffice</code> or <code>WPS</code>。</p>
-<h4 id="使用习惯"><a href="#使用习惯" class="headerlink" title="使用习惯"></a>使用习惯</h4><p>就像我前面提到的 Linux和Windows对于磁盘区的概念来说，以及你要面临一个新的桌面使用环境。</p>
-</body></html>]]></content>
-      <categories>
-        <category>生活随想</category>
-      </categories>
-      <tags>
-        <tag>Arch</tag>
-        <tag>Linux</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Cachefly自动证书上传</title>
     <url>/posts/CacheflySSLUpDate/</url>
     <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>自从 <code>Cachefly</code> 推出了<a href="https://www.cachefly.com/pricing/" rel="external nofollow noreferrer">免费套餐</a>， 作为一个白嫖党，第一时间就去体验了一下，注册需要外币卡需要注意一下，所以注册门槛稍微相对较高吧。试了一下速度，很不错，回国速度非常好，北方基本上走的是ntt 和俄罗斯的线路，南方走的是 hk 的CN2 线路，至少分发的图片和静态资源不成问题。</p>
@@ -181,6 +130,34 @@
         <tag>网络技术</tag>
         <tag>CloudFlare</tag>
         <tag>写bug的小能手</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2023 总结</title>
+    <url>/posts/2023-Annual-Summary/</url>
+    <content><![CDATA[<html><head></head><body><blockquote>
+<p>应该这个文章会在 31/12/2024 发表</p>
+</blockquote>
+<p>转眼间 23年的就快过完了，回顾过往这一年的时间，貌似有些许的特殊，不至于和前几年一样是一个无聊又无趣。</p>
+<h1 id="博客"><a href="#博客" class="headerlink" title="博客"></a>博客</h1><p>两年的宁静，博客在23年重新绽放光彩。</p>
+<p>23年共计写了 19 篇 文章其中阅读最多的 <a href="https://blog.ning.moe/posts/Spring-Security/">新版本 Spring-Security 配置踩坑</a>  共阅读了 227次 从Google 来的最多，文章是其次是<br><a href="https://blog.ning.moe/posts/Java-CAPTCHA-cloudflare/">Java 使用 CloudFlare Turnstile 验证码</a> 共阅读了 205次。在重新开始写博客之后 本站从 23年6月记录截稿，共收获了  PV <strong>6.52k</strong>  UV <strong>2.16k</strong>。</p>
+<img src="https://img.misaka.pics/ShellBlogImg/1/2023/12/29/658ed5482b2d5.webp" alt="2023-Blog-PV&amp;UV-Date.webp" style="zoom: 80%;">
+
+<blockquote>
+<p>为什么只有6-12月的数据呢？</p>
+<p><del>因为我把1-5月的数据搞丢了。</del></p>
+</blockquote>
+<p>在截稿前收到Google 发来的Email 28天从Google 来了120 的</p>
+<img src="https://img.misaka.pics/ShellBlogImg/1/2023/12/31/65916362b2813.webp" alt="Google-search-PV.webp" style="zoom:50%;">
+
+<h1 id="赛项"><a href="#赛项" class="headerlink" title="赛项"></a>赛项</h1><p>我参加了<code>应用软件系统开发</code>  荣获一等奖。然而，对于这次比赛，我心中并未留下太多深刻的评价，因为涉及的内容大多是繁琐且重复的工作。</p>
+<img src="https://img.misaka.pics/ShellBlogImg/1/2023/12/31/65916654c7cc0.webp" alt="ChinaSkills.webp" style="zoom: 50%;">
+
+<h1 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h1><p>23年的故事就此落幕，还有23年所遇到的人们，也开启了我线下第一次面基之旅（不展开叙述）。24年的故事即将开启，这一年里展开新的冒险。我希望在24年，能够踏上旅途，探访不同的地方，因为美好的青春如此短暂，而旅行是拓展视野和经历的最佳方式。同时，我收集更多计算机知识的奥秘，为自己的技术之旅添上浓墨重彩的一笔。至于博客吗，我也会继续写下去的。</p>
+</body></html>]]></content>
+      <tags>
+        <tag>总结</tag>
+        <tag>2023</tag>
       </tags>
   </entry>
   <entry>
@@ -237,35 +214,26 @@
       </tags>
   </entry>
   <entry>
-    <title>改造家里网络</title>
-    <url>/posts/Home-NetWork/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
-<p>也好久没更新来水一波。</p>
-</blockquote>
-<p>寒假里面，打算在折腾一下家里面的网络，将家里21年买的<code>r2s</code>换成<code>J4125</code>这下就够我折腾的了。</p>
-<img src="https://img.misaka.pics/ShellBlogImg/1/2024/03/06/65e8108d61fe7.webp" alt="网络拓补图.webp" style="zoom:50%;">
+    <title>ArchLinux 使用体验</title>
+    <url>/posts/ArchLinux/</url>
+    <content><![CDATA[<html><head></head><body><img src="https://img.c-dreamer.top/i/1/2023/02/09/63e4c0b786de8.webp" alt="archlinux-logo-dark-1200dpi.webp" style="zoom: 25%;">
 
-<p>这是我目前的家里主题结构 由<code>r2s</code>软路由担任<code>PPPOE</code>拨号，有两个<code>AP</code> 组成有线<code>mesh</code>。</p>
-<p>对于 <code>J4125 </code>我打算使用<code>PVE</code>+<code>Ikuai</code>+<code>Debian</code></p>
-<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><h2 id="折腾前的痛点"><a href="#折腾前的痛点" class="headerlink" title="折腾前的痛点"></a>折腾前的痛点</h2><ul>
-<li>稳定：对于<code>r2s</code>来说有时候不是特别问题定，需要定时重启，我尝试换了很多的固件，都无法解决此问题</li>
-<li>性能不足 ：<code>r2s</code>有人测试基本上稳定千兆是没有问题的了（在不使用科学上网的时候），但对于小包转发来说多少有些吃力。</li>
-<li>ARM 生态问题：我知道ARM 发展的很好，但很多老的程序还只能支持<code>X86</code>.</li>
-</ul>
-<h2 id="折腾解决之后的"><a href="#折腾解决之后的" class="headerlink" title="折腾解决之后的"></a>折腾解决之后的</h2><ul>
-<li>稳定：目前连续运行了20天没有发现异常</li>
-<li>性能：<code>J4125</code>妥妥够我300mbps 的带宽使用了（满载带宽，CPU占用15%~20%）</li>
-<li>软件：解决了ARM 部分软件问题。</li>
-</ul>
-<p><code>J4125</code>进行<code>PVE </code>虚拟化，由<code>Ikuai </code>作为主路由进行<code>PPPOE</code> 以及流控管理，<code>Debian`` docker</code> 化跑<code>Adguard Heome </code>家用<code>DNS </code>。</p>
-<img src="https://img.misaka.pics/ShellBlogImg/1/2024/03/06/65e82e1b241e5.webp" alt="网络拓补图-2.webp" style="zoom: 67%;">
+<h1 id="关于-ArchLinux"><a href="#关于-ArchLinux" class="headerlink" title="关于 ArchLinux"></a>关于 ArchLinux</h1><p>Arch 是Linux发行版的一个分支，arch的理念是完全自定义，没有所谓的系统版本，全部是滚动升级（长时间不滚，会滚炸，当然我每天开机第一件事就是滚一下）</p>
+<h1 id="正片开始"><a href="#正片开始" class="headerlink" title="正片开始"></a>正片开始</h1><h2 id="为什么非要选择Arch？"><a href="#为什么非要选择Arch？" class="headerlink" title="为什么非要选择Arch？"></a>为什么非要选择Arch？</h2><p>其实如果你要是在非中国大陆的话，我觉得你使用Ubuntu 或者其他的发行版大同小异，因为我看中了 Arch的万能的AUR软件仓库源，这里面有各位大佬自封装的软件，庞大的软件仓库，例如微信 需要wine 以及烦琐的配置 AUR 可以直接解决这些问题。</p>
+<h2 id="听说安装Arch很难？"><a href="#听说安装Arch很难？" class="headerlink" title="听说安装Arch很难？"></a>听说安装Arch很难？</h2><p>是的 Arch 的安装异常的烦琐切复杂 ，不过如果你擅用<code>Search</code>和<a href="https://wiki.archlinuxcn.org/wiki/%E9%A6%96%E9%A1%B5" rel="external nofollow noreferrer" title="ArchWiKi">ArchWiki</a> 和时间耐心的研究，其实很简单，我是一个纯Linux小白，在查阅ArchWiki花费大量的时间研究之后也安装成功。</p>
+<h2 id="我现在的状态？"><a href="#我现在的状态？" class="headerlink" title="我现在的状态？"></a>我现在的状态？</h2><p>我现在给电脑装载了双系统（怕arch崩了就无了） win11+arch</p>
+<p><img src="https://img.c-dreamer.top/i/1/2023/02/09/63e4bbfff1e9c.webp" alt="ArchLinux 配置.webp"></p>
+<h2 id="使用体验"><a href="#使用体验" class="headerlink" title="使用体验"></a>使用体验</h2><p>我用Arch差不多3个月了，除了刚开始的不适逐渐慢慢适应之后逐渐习惯，但我偶尔也很想换回windows，因为我现在还没有适应在linux只用一个根的感念，而不像windows的区概念（而且我分区还很多）。</p>
+<h1 id="你要现在立刻安装Arch？"><a href="#你要现在立刻安装Arch？" class="headerlink" title="你要现在立刻安装Arch？"></a>你要现在立刻安装Arch？</h1><h3 id="你会首先面临的问题"><a href="#你会首先面临的问题" class="headerlink" title="你会首先面临的问题"></a>你会首先面临的问题</h3><h4 id="游戏生态"><a href="#游戏生态" class="headerlink" title="游戏生态"></a>游戏生态</h4><p>首先Linux上虽然有steam 的Steam Play的加持，游戏生态逐步扩大，但还是有诸多游戏不能游玩，详情可以看这个<a href="https://www.protondb.com/" rel="external nofollow noreferrer" title="protondb">protondb</a>上搜索🔍，还有原神属于能玩的级别但是配置很烦琐。</p>
+<h4 id="软件的生态"><a href="#软件的生态" class="headerlink" title="软件的生态"></a>软件的生态</h4><p>虽然有AUR 的加持但仍然有很多软件只有windows平台还用<code>wine</code>调教不好它例如<code>office</code> ，但这不是说你不能使用这些功能，Linux有很多平替软件可以选择例如 <code>libreoffice</code> or <code>WPS</code>。</p>
+<h4 id="使用习惯"><a href="#使用习惯" class="headerlink" title="使用习惯"></a>使用习惯</h4><p>就像我前面提到的 Linux和Windows对于磁盘区的概念来说，以及你要面临一个新的桌面使用环境。</p>
 </body></html>]]></content>
       <categories>
-        <category>网络技术</category>
+        <category>生活随想</category>
       </categories>
       <tags>
-        <tag>Ikuai</tag>
-        <tag>J4125</tag>
+        <tag>Arch</tag>
+        <tag>Linux</tag>
       </tags>
   </entry>
   <entry>
@@ -486,11 +454,43 @@
         <category>网络技术</category>
       </categories>
       <tags>
-        <tag>Linux</tag>
         <tag>IPtables</tag>
         <tag>防火墙</tag>
         <tag>firewall</tag>
+        <tag>Linux</tag>
         <tag>网络安全</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>改造家里网络</title>
+    <url>/posts/Home-NetWork/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
+<p>也好久没更新来水一波。</p>
+</blockquote>
+<p>寒假里面，打算在折腾一下家里面的网络，将家里21年买的<code>r2s</code>换成<code>J4125</code>这下就够我折腾的了。</p>
+<img src="https://img.misaka.pics/ShellBlogImg/1/2024/03/06/65e8108d61fe7.webp" alt="网络拓补图.webp" style="zoom:50%;">
+
+<p>这是我目前的家里主题结构 由<code>r2s</code>软路由担任<code>PPPOE</code>拨号，有两个<code>AP</code> 组成有线<code>mesh</code>。</p>
+<p>对于 <code>J4125 </code>我打算使用<code>PVE</code>+<code>Ikuai</code>+<code>Debian</code></p>
+<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><h2 id="折腾前的痛点"><a href="#折腾前的痛点" class="headerlink" title="折腾前的痛点"></a>折腾前的痛点</h2><ul>
+<li>稳定：对于<code>r2s</code>来说有时候不是特别问题定，需要定时重启，我尝试换了很多的固件，都无法解决此问题</li>
+<li>性能不足 ：<code>r2s</code>有人测试基本上稳定千兆是没有问题的了（在不使用科学上网的时候），但对于小包转发来说多少有些吃力。</li>
+<li>ARM 生态问题：我知道ARM 发展的很好，但很多老的程序还只能支持<code>X86</code>.</li>
+</ul>
+<h2 id="折腾解决之后的"><a href="#折腾解决之后的" class="headerlink" title="折腾解决之后的"></a>折腾解决之后的</h2><ul>
+<li>稳定：目前连续运行了20天没有发现异常</li>
+<li>性能：<code>J4125</code>妥妥够我300mbps 的带宽使用了（满载带宽，CPU占用15%~20%）</li>
+<li>软件：解决了ARM 部分软件问题。</li>
+</ul>
+<p><code>J4125</code>进行<code>PVE </code>虚拟化，由<code>Ikuai </code>作为主路由进行<code>PPPOE</code> 以及流控管理，<code>Debian`` docker</code> 化跑<code>Adguard Heome </code>家用<code>DNS </code>。</p>
+<img src="https://img.misaka.pics/ShellBlogImg/1/2024/03/06/65e82e1b241e5.webp" alt="网络拓补图-2.webp" style="zoom: 67%;">
+</body></html>]]></content>
+      <categories>
+        <category>网络技术</category>
+      </categories>
+      <tags>
+        <tag>Ikuai</tag>
+        <tag>J4125</tag>
       </tags>
   </entry>
   <entry>
@@ -527,6 +527,38 @@
       </tags>
   </entry>
   <entry>
+    <title>御坂美琴生日快乐</title>
+    <url>/posts/MisakaMikoto/</url>
+    <content><![CDATA[<html><head></head><body><blockquote>
+<p><strong>你指间闪烁的电光，是我此生不变的信仰唯有这超电磁炮将永世长存！！！</strong></p>
+</blockquote>
+<h1 id="首先-祝姐姐大人生日快乐，又一年生日到啦吗，真快呀。"><a href="#首先-祝姐姐大人生日快乐，又一年生日到啦吗，真快呀。" class="headerlink" title="首先,祝姐姐大人生日快乐，又一年生日到啦吗，真快呀。"></a>首先,祝姐姐大人生日快乐，又一年生日到啦吗，真快呀。</h1><img src="https://img.c-dreamer.top/i/1/2023/05/01/644f7e2e4fa62.webp" alt="d6e89b5.webp" style="zoom:50%;">
+
+<img src="https://img.c-dreamer.top/i/1/2023/05/01/644f7e24d2d9a.webp" alt="7606d4f59bf.webp" style="zoom:50%;">
+
+
+
+
+<h1 id="感想"><a href="#感想" class="headerlink" title="感想"></a>感想</h1><h2 id="对我个人："><a href="#对我个人：" class="headerlink" title="对我个人："></a>对我个人：</h2><p>我已经是一个入宅很晚很晚的人了，我的入宅番是 <code>约战</code> 我并不是完完全全的 某科学的 世界的粉丝，我也并没有看过魔法禁书目录，我仅对于 超电磁炮 御坂美琴的热爱。</p>
+<blockquote>
+<p>摘抄一部分萌娘百科的话。</p>
+<p>天真活泼、爱唠叨的14岁元气少女。有着一头及肩的茶色发丝、同样是茶色的瞳孔、绝不服输的眼神、不需要化妆也很俏丽的面孔。因为外形秀丽加上成绩优秀，因此成为校内学生心目中的偶像，甚至会被学妹们尊称为“御坂大人”。平素都是穿着常盘台的制服，而裙底的安全裤则是美琴活泼的象征。性格好胜、正义感强，有着男孩子般的爽朗性格，但是尤其是在面对可爱的东西时，就显得缺乏耐心、非常不坦率。当喜欢的东西（呱太）或中意的东西被别人评价说“太儿童化”的时候，都会义正言辞地的否决，然后愉♂悦地享受。紧张时会蹦出“喵”的口癖，并且在担心他人慌乱时会自称“美琴姐姐”</p>
+</blockquote>
+<h2 id="对于B站："><a href="#对于B站：" class="headerlink" title="对于B站："></a>对于B站：</h2><p>虽然我入宅很晚，我接触B站也是比较晚了，但最近几年B站环境都是人尽皆知的事情了，对于 B站往年 不管是对 美琴的庆生 还是对其他知名的动漫人物，都是在发的，对于去年B站没有给美琴庆生以及其他人物，我表示非常是生气也表示非常的无奈，但对于今年B站的改变，对于庆生很早就开始宣传了，但并不是 哔哩哔哩弹幕网 这个账号进行宣传，而是 哔哩哔哩番剧组和哔哩哔哩会员购 进行宣传的。剩下的我就不想多说了，B站快要嗝屁的时候还想在收割一波自己以前最老以及起家的人，怎么说呢。从以前B站属于二次元的天地，到最后 二次元滚出B站。</p>
+<p>可能以前 别人说我是二刺螈 我表示可能会有点开心，但对于近几年 <strong>滚，老子不是二次元</strong></p>
+<h2 id="结束语"><a href="#结束语" class="headerlink" title="结束语"></a>结束语</h2><p>时间会磨损一切，那么我又能坚持多久呢？</p>
+<h1 id="引用："><a href="#引用：" class="headerlink" title="引用："></a>引用：</h1><p> 萌娘百科：<a href="https://zh.moegirl.org.cn/%E5%BE%A1%E5%9D%82%E7%BE%8E%E7%90%B4" rel="external nofollow noreferrer">御坂美琴人物简介</a></p>
+</body></html>]]></content>
+      <categories>
+        <category>生活随想</category>
+      </categories>
+      <tags>
+        <tag>Misaka</tag>
+        <tag>御坂美琴</tag>
+        <tag>某科学的</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>使用Cloud Flare Tunnel和 Acces Application安全的暴露在公网</title>
     <url>/posts/CloudFlare-Tunnel-Application-Access/</url>
     <content><![CDATA[<html><head></head><body><h1 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h1><p>如果搞 Home Lab 始终绕不开的话题是，我们如何将自己的内网服务暴露到公网上，又如何保证我们的安全。<br>现在可以使用我们赛博菩萨 Cloudflare 提供的 Zero Trust 来保护我们的安全。</p>
@@ -553,41 +585,6 @@
       <tags>
         <tag>CloudFlare</tag>
         <tag>Zero Trust</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>新版本Spring-Security配置踩坑</title>
-    <url>/posts/Spring-Security/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="引言："><a href="#引言：" class="headerlink" title="引言："></a>引言：</h1><blockquote>
-<p>事情是这样的，我最近打算学习了springSecurity的时候，跟着视频学习的时候发现配置类 <code>WebSecurityConfigurerAdapter</code> 过时了，这个问题本篇的文章会告诉你答案，以及我有不小心选择了spring boot3.0 的版本然后<code>authorizeRequests</code>也过时了。如果此文章有错欢迎大佬批评指教。</p>
-</blockquote>
-<h1 id="Spring-Security的版本"><a href="#Spring-Security的版本" class="headerlink" title="Spring-Security的版本"></a>Spring-Security的版本</h1><h2 id="Spring-Security5-7-版本"><a href="#Spring-Security5-7-版本" class="headerlink" title="Spring-Security5.7+版本"></a>Spring-Security5.7+版本</h2><p>这个版本差不多是spring-boot 2.7版本使用的，首先<code>WebSecurityConfigurerAdapter</code> 过时，但是在在过时的源码类中，会叫我们如何进行配置新版本的Spring-Security的配置，官方的我贴这里</p>
-<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">提供用于创建 WebSecurityConfigurer 实例的方便基类。该实现允许通过重写方法进行自定义。</span></span><br><span class="line"><span class="comment">将自动应用查找 AbstractHttpConfigurer 自 SpringFactoriesLoader 的结果，以允许开发人员扩展默认值。</span></span><br><span class="line"><span class="comment">为此，您必须创建一个扩展 AbstractHttpConfigurer 的类，</span></span><br><span class="line"><span class="comment">然后在“META-INF/spring.factory”的类路径中创建一个文件，如下所示：</span></span><br><span class="line"><span class="comment">org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer=</span></span><br><span class="line"><span class="comment">sample.MyClassThatExtendsAbstractHttpConfigurer</span></span><br><span class="line"><span class="comment">如果有多个应添加的类，则可以使用 “，”分隔值。例如：</span></span><br><span class="line"><span class="comment">  org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer=</span></span><br><span class="line"><span class="comment">  sample.MyClassThatExtendsAbstractHttpConfigurer, sample.OtherThatExtendsAbstractHttpConfigurer</span></span><br><span class="line"><span class="comment">已弃用</span></span><br><span class="line"><span class="comment">org.springframework.security.web.SecurityFilterChain使用</span></span><br><span class="line"><span class="comment">Bean 进行配置或WebSecurityCustomizer使用 Bean 进行配置 HttpSecurity WebSecurity。</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line">      <span class="meta">@Bean</span></span><br><span class="line">      <span class="keyword">public</span> SecurityFilterChain <span class="title function_">securityFilterChain</span><span class="params">(HttpSecurity http)</span> <span class="keyword">throws</span> Exception {</span><br><span class="line">          http</span><br><span class="line">              .authorizeHttpRequests((authz) -&gt;</span><br><span class="line">                  authz.anyRequest().authenticated()</span><br><span class="line">              );</span><br><span class="line">              <span class="comment">// ...</span></span><br><span class="line">          <span class="keyword">return</span> http.build();</span><br><span class="line">      }</span><br><span class="line"> </span><br><span class="line">     <span class="meta">@Bean</span></span><br><span class="line">     <span class="keyword">public</span> WebSecurityCustomizer <span class="title function_">webSecurityCustomizer</span><span class="params">(WebSecurity web)</span> {</span><br><span class="line">         <span class="keyword">return</span> (web) -&gt; web.ignoring().antMatchers(<span class="string">"/resources/**"</span>);</span><br><span class="line">     }</span><br><span class="line">  <span class="comment">/**</span></span><br><span class="line"><span class="comment">请参阅 Spring Security without WebSecurityConfigurerAdapter  以获取更多详细信息。</span></span><br><span class="line"><span class="comment">请参阅:</span></span><br><span class="line"><span class="comment">EnableWebSecurity</span></span><br><span class="line"><span class="comment">作者:</span></span><br><span class="line"><span class="comment">罗伯·温奇</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></tbody></table></figure>
-
-<p>可以看到，新版本官方推荐使用@Bean 进行配置，这个感觉更加优雅了，和我们原来使用配置类进行配置的都是大同小异，但这里有个问题官方没有讲（或许我没有找到）。</p>
-<h3 id="关于-AuthenticationManager-认证类的问题"><a href="#关于-AuthenticationManager-认证类的问题" class="headerlink" title="关于 AuthenticationManager 认证类的问题"></a>关于 <code>AuthenticationManager</code> 认证类的问题</h3><p>因为，可能我们需要因为某种原因重写 过滤器的类，但最后我们在旧版本需要指定一个<code>AuthenticationManager</code> 类不管是工厂里的还是直接springboot启动时创建的。这个地方我查了好久网上的没有一个能一个找到的，全部都是重复。</p>
-<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">@Autowired</span></span><br><span class="line">AuthenticationConfiguration authenticationConfiguration;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> AuthenticationManager <span class="title function_">authenticationManager</span><span class="params">()</span> <span class="keyword">throws</span> Exception {</span><br><span class="line">    <span class="type">AuthenticationManager</span> <span class="variable">authenticationManager</span> <span class="operator">=</span> </span><br><span class="line">        authenticationConfiguration.getAuthenticationManager();</span><br><span class="line">    <span class="keyword">return</span> authenticationManager;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-
-<p>我们只需要使用 <code>AuthenticationConfiguration</code> 创建一个``AuthenticationManager<code> </code> 类即可，推荐写在Security配置类中，这样可以直接方便调用即可。</p>
-<p>例如我重写了 <code>UsernamePasswordAuthenticationFilter</code>的过滤器 <code>KaptchaFilter</code> 是继承了<code>UsernamePasswordAuthenticationFilter</code> 和并且重写了里面的方法加入了验证码。</p>
-<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">@Bean</span></span><br><span class="line"><span class="keyword">public</span> KaptchaFilter <span class="title function_">kaptchaFilter</span><span class="params">()</span> <span class="keyword">throws</span> Exception {</span><br><span class="line">    <span class="type">KaptchaFilter</span> <span class="variable">kaptchaFilter</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">KaptchaFilter</span>();</span><br><span class="line">    kaptchaFilter.setFilterProcessesUrl(<span class="string">"/doLogin"</span>);</span><br><span class="line">    kaptchaFilter.setUsernameParameter(<span class="string">"uname"</span>);</span><br><span class="line">    kaptchaFilter.setPasswordParameter(<span class="string">"passwd"</span>);</span><br><span class="line">    kaptchaFilter.setKaptcha(<span class="string">"kaptcha"</span>);</span><br><span class="line">    <span class="comment">//指定认证管理器</span></span><br><span class="line">    kaptchaFilter.setAuthenticationManager(authenticationManager());</span><br><span class="line">    kaptchaFilter.setAuthenticationSuccessHandler((request, response, authentication) -&gt; {</span><br><span class="line">        response.sendRedirect(<span class="string">"/index.html"</span>);</span><br><span class="line">    });</span><br><span class="line">    kaptchaFilter.setAuthenticationFailureHandler((request, response, exception) -&gt; {</span><br><span class="line">        response.sendRedirect(<span class="string">"/login.html"</span>);</span><br><span class="line">    });</span><br><span class="line">    <span class="keyword">return</span> kaptchaFilter;</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="meta">@Bean</span></span><br><span class="line"><span class="keyword">public</span> SecurityFilterChain <span class="title function_">securityFilter</span><span class="params">(HttpSecurity http)</span><span class="keyword">throws</span> Exception{</span><br><span class="line">    <span class="keyword">return</span> http.authorizeRequests()</span><br><span class="line">            .mvcMatchers(<span class="string">"/login.html"</span>).permitAll()</span><br><span class="line">            .mvcMatchers(<span class="string">"/vc.jpg"</span>).permitAll()</span><br><span class="line">            .anyRequest().authenticated()</span><br><span class="line">            .and()</span><br><span class="line">            .formLogin()</span><br><span class="line">            .loginPage(<span class="string">"/login.html"</span>)</span><br><span class="line">            .loginProcessingUrl(<span class="string">"/doLogin"</span>)</span><br><span class="line">            .usernameParameter(<span class="string">"uname"</span>)</span><br><span class="line">            .passwordParameter(<span class="string">"passwd"</span>)</span><br><span class="line">            .defaultSuccessUrl(<span class="string">"/index.html"</span>,<span class="literal">true</span>)</span><br><span class="line">            .and()</span><br><span class="line">            .csrf().disable()</span><br><span class="line">            .addFilterAt(kaptchaFilter(), UsernamePasswordAuthenticationFilter.class)</span><br><span class="line">            .build();</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-
-
-
-<h2 id="关于SpringSecurity6-02-版本"><a href="#关于SpringSecurity6-02-版本" class="headerlink" title="关于SpringSecurity6.02+版本"></a>关于SpringSecurity6.02+版本</h2><p>这个版本差不多是spring boot 3.0+开始使用的，如果你按照上面新版本使用@Bean配置的话，会发现<code>HttpSecurity</code>中的<code>authorizeRequests</code> 方法标记为过时了，而且<code>mvcMatchers</code>也没有这个方法了，原因6.0的SpringSecurity推荐使用<code>authorizeHttpRequests</code>进行配置，对就是很烦人，不能一个版本改完，而且文档及其混乱。</p>
-<p>例如：</p>
-<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">@Bean</span></span><br><span class="line"><span class="keyword">public</span> SecurityFilterChain <span class="title function_">securityFilterChain</span><span class="params">(HttpSecurity http)</span> <span class="keyword">throws</span> Exception {</span><br><span class="line">    <span class="keyword">return</span> http.authorizeHttpRequests()</span><br><span class="line">            .requestMatchers(<span class="string">"/vc.jpg"</span>).permitAll()<span class="comment">//放行指定选项</span></span><br><span class="line">        	.anyRequest().authenticated()<span class="comment">//拦截所有请求都需要认证</span></span><br><span class="line">            .and()</span><br><span class="line">            .formLogin()</span><br><span class="line">            .and()</span><br><span class="line">            .logout()</span><br><span class="line">            .and()</span><br><span class="line">            .addFilterAt(loginKaptchaFilter(),UsernamePasswordAuthenticationFilter.class)</span><br><span class="line">            .csrf().disable()</span><br><span class="line">            .build();</span><br><span class="line"></span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-
-<p>其他配置和SpringSecurity5.7+的配置一样。</p>
-</body></html>]]></content>
-      <categories>
-        <category>Bug生成者</category>
-      </categories>
-      <tags>
-        <tag>Spring</tag>
-        <tag>Java</tag>
-        <tag>Security</tag>
-        <tag>SpringSecuriy</tag>
       </tags>
   </entry>
   <entry>
@@ -696,38 +693,6 @@
       </tags>
   </entry>
   <entry>
-    <title>御坂美琴生日快乐</title>
-    <url>/posts/MisakaMikoto/</url>
-    <content><![CDATA[<html><head></head><body><blockquote>
-<p><strong>你指间闪烁的电光，是我此生不变的信仰唯有这超电磁炮将永世长存！！！</strong></p>
-</blockquote>
-<h1 id="首先-祝姐姐大人生日快乐，又一年生日到啦吗，真快呀。"><a href="#首先-祝姐姐大人生日快乐，又一年生日到啦吗，真快呀。" class="headerlink" title="首先,祝姐姐大人生日快乐，又一年生日到啦吗，真快呀。"></a>首先,祝姐姐大人生日快乐，又一年生日到啦吗，真快呀。</h1><img src="https://img.c-dreamer.top/i/1/2023/05/01/644f7e2e4fa62.webp" alt="d6e89b5.webp" style="zoom:50%;">
-
-<img src="https://img.c-dreamer.top/i/1/2023/05/01/644f7e24d2d9a.webp" alt="7606d4f59bf.webp" style="zoom:50%;">
-
-
-
-
-<h1 id="感想"><a href="#感想" class="headerlink" title="感想"></a>感想</h1><h2 id="对我个人："><a href="#对我个人：" class="headerlink" title="对我个人："></a>对我个人：</h2><p>我已经是一个入宅很晚很晚的人了，我的入宅番是 <code>约战</code> 我并不是完完全全的 某科学的 世界的粉丝，我也并没有看过魔法禁书目录，我仅对于 超电磁炮 御坂美琴的热爱。</p>
-<blockquote>
-<p>摘抄一部分萌娘百科的话。</p>
-<p>天真活泼、爱唠叨的14岁元气少女。有着一头及肩的茶色发丝、同样是茶色的瞳孔、绝不服输的眼神、不需要化妆也很俏丽的面孔。因为外形秀丽加上成绩优秀，因此成为校内学生心目中的偶像，甚至会被学妹们尊称为“御坂大人”。平素都是穿着常盘台的制服，而裙底的安全裤则是美琴活泼的象征。性格好胜、正义感强，有着男孩子般的爽朗性格，但是尤其是在面对可爱的东西时，就显得缺乏耐心、非常不坦率。当喜欢的东西（呱太）或中意的东西被别人评价说“太儿童化”的时候，都会义正言辞地的否决，然后愉♂悦地享受。紧张时会蹦出“喵”的口癖，并且在担心他人慌乱时会自称“美琴姐姐”</p>
-</blockquote>
-<h2 id="对于B站："><a href="#对于B站：" class="headerlink" title="对于B站："></a>对于B站：</h2><p>虽然我入宅很晚，我接触B站也是比较晚了，但最近几年B站环境都是人尽皆知的事情了，对于 B站往年 不管是对 美琴的庆生 还是对其他知名的动漫人物，都是在发的，对于去年B站没有给美琴庆生以及其他人物，我表示非常是生气也表示非常的无奈，但对于今年B站的改变，对于庆生很早就开始宣传了，但并不是 哔哩哔哩弹幕网 这个账号进行宣传，而是 哔哩哔哩番剧组和哔哩哔哩会员购 进行宣传的。剩下的我就不想多说了，B站快要嗝屁的时候还想在收割一波自己以前最老以及起家的人，怎么说呢。从以前B站属于二次元的天地，到最后 二次元滚出B站。</p>
-<p>可能以前 别人说我是二刺螈 我表示可能会有点开心，但对于近几年 <strong>滚，老子不是二次元</strong></p>
-<h2 id="结束语"><a href="#结束语" class="headerlink" title="结束语"></a>结束语</h2><p>时间会磨损一切，那么我又能坚持多久呢？</p>
-<h1 id="引用："><a href="#引用：" class="headerlink" title="引用："></a>引用：</h1><p> 萌娘百科：<a href="https://zh.moegirl.org.cn/%E5%BE%A1%E5%9D%82%E7%BE%8E%E7%90%B4" rel="external nofollow noreferrer">御坂美琴人物简介</a></p>
-</body></html>]]></content>
-      <categories>
-        <category>生活随想</category>
-      </categories>
-      <tags>
-        <tag>Misaka</tag>
-        <tag>御坂美琴</tag>
-        <tag>某科学的</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>2023年好耶！</title>
     <url>/posts/New2023/</url>
     <content><![CDATA[<html><head></head><body><h1 id="博客补全计划"><a href="#博客补全计划" class="headerlink" title="博客补全计划"></a>博客补全计划</h1><p>对于突然诈尸的我，在这两年里面我也写了很多稿子（虽然都没有发出来），其实要么是不满意不太像水，要么就是写着写着发现，貌似有很多问题。</p>
@@ -775,75 +740,38 @@
       </tags>
   </entry>
   <entry>
-    <title>Memos 对接 Authentik</title>
-    <url>/posts/authentik-OAuth2-memos/</url>
-    <content><![CDATA[<html><head></head><body><blockquote>
-<p> 配置中：这是什么啊，这么麻烦还没过去啊。 配置后：真香好方便。</p>
+    <title>新版本Spring-Security配置踩坑</title>
+    <url>/posts/Spring-Security/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="引言："><a href="#引言：" class="headerlink" title="引言："></a>引言：</h1><blockquote>
+<p>事情是这样的，我最近打算学习了springSecurity的时候，跟着视频学习的时候发现配置类 <code>WebSecurityConfigurerAdapter</code> 过时了，这个问题本篇的文章会告诉你答案，以及我有不小心选择了spring boot3.0 的版本然后<code>authorizeRequests</code>也过时了。如果此文章有错欢迎大佬批评指教。</p>
 </blockquote>
-<p>使用本文前请自行在 <code>Authentik </code>配置好 Memos使用的<code>应用程序</code>和<code>提供程序</code></p>
-<h1 id="Authentik-配置"><a href="#Authentik-配置" class="headerlink" title="Authentik 配置"></a>Authentik 配置</h1><p>默认你已经创建好了，一个给Memos使用的<code>应用程序</code>和<code>提供程序</code>,我们需要更改<code>提供程序</code>(给Memos 的)我们点击编辑</p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/09/66155d6445bbc.webp" alt="Authentik 配置 Memos-1.webp"></p>
-<blockquote>
-<p>选择客户端可以使用哪些作用域。客户端仍然需要指定访问数据的范围。</p>
-<p>按住 <code>ctrl/command</code> 键可选择多个项目。</p>
-</blockquote>
-<p>我们选中<code>authentik default OAuth Mapping: OpenID email</code> 和 <code>authentik default OAuth Mapping: OpenID openid</code>将<code>Subject 模式</code>改成基于用户名，然后更新。</p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/09/6615597f90737.webp" alt="Authentik 配置 Memos.webp"></p>
-<h1 id="Memos配置"><a href="#Memos配置" class="headerlink" title="Memos配置"></a>Memos配置</h1><blockquote>
-<p>在截至发文时 <code>Memos</code> 的版本为<code>v0.20.1</code>版本，<code>Memos</code>通过用户名为主键，其实只需要给<code>username</code>字段即可。</p>
-</blockquote>
-<p>根据上文调整的，现在sub 是我们的用户名字段，按照文章截屏填写其他的自行替换。这样你的的<code>Memos</code>就可以使用<code>Authentik</code>进行登录了。</p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/09/66155e6ca6dc7.webp" alt="Memos-Oauth2-config.webp"></p>
-<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p><code>Memos</code>的文档：<a href="https://www.usememos.com/docs/advanced-settings/keycloak" rel="external nofollow noreferrer">https://www.usememos.com/docs/advanced-settings/keycloak</a></p>
-</body></html>]]></content>
-      <categories>
-        <category>网络技术</category>
-      </categories>
-      <tags>
-        <tag>Memos</tag>
-        <tag>Authentik</tag>
-        <tag>SSO</tag>
-        <tag>OAuth2</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>解决Umami v2.3升级问题，Something went wrong.</title>
-    <url>/posts/Umami-fix/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>是的没错，发生这样的事情，应该很多<code>Umami</code>只要是v2.2版本应该都遇到了。 </p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2023/07/19/64b7cb785693f.webp" alt="Umami v2.2 Something went wrong."></p>
-<p>我浏览了部分 <code>issues</code> 只能升级到v2.3版本了。</p>
-<h1 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h1><p>我先说一下我自己的环境，我自己的使用：</p>
-<ol>
-<li>属于编译安装，没有放在docker</li>
-<li>Mysql 5.7</li>
-<li>nodjs 18.16.0</li>
-<li>npm 9.5.1</li>
-</ol>
-<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><p>解决办法有两种，第一种你可以直接尝试升级到<code>MySQL</code> 8.0，如果你想继续和我一样，小鸡的配置不行还想用5.7，请继续往下看。</p>
-<p>如果你是和我一样都是<code>Mysql</code> 5.7版本，你需要查看这篇 <a href="https://github.com/umami-software/umami/issues/2118" rel="external nofollow noreferrer">issues</a> 或者继续往下看。</p>
-<ol>
-<li>你需要从GitHub 拉去一份最新的<a href="https://github.com/umami-software/umami/releases" rel="external nofollow noreferrer">Umami</a> 的代码，你需要找到<code>db/mysql/migrations/02_report_schema_session_data</code>文件夹下的<code>migration.sql</code>这份sql文件，将下面的代码替换和保存。</li>
-</ol>
-<figure class="highlight sql"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> `event_data` CHANGE `event_data_type` `data_type` <span class="type">int</span> unsigned <span class="keyword">NOT</span> <span class="keyword">NULL</span>;</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> `event_data` CHANGE `event_date_value` `date_value` <span class="type">timestamp</span> <span class="keyword">NULL</span>;</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> `event_data` CHANGE `event_id` `event_data_id` <span class="type">varchar</span>(<span class="number">36</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span>;</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> `event_data` CHANGE `event_numeric_value` `number_value` <span class="type">decimal</span>(<span class="number">19</span>, <span class="number">4</span>) <span class="keyword">NULL</span>;</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> `event_data` CHANGE `event_string_value` `string_value`<span class="type">varchar</span>(<span class="number">500</span>) <span class="keyword">NULL</span>;</span><br></pre></td></tr></tbody></table></figure>
+<h1 id="Spring-Security的版本"><a href="#Spring-Security的版本" class="headerlink" title="Spring-Security的版本"></a>Spring-Security的版本</h1><h2 id="Spring-Security5-7-版本"><a href="#Spring-Security5-7-版本" class="headerlink" title="Spring-Security5.7+版本"></a>Spring-Security5.7+版本</h2><p>这个版本差不多是spring-boot 2.7版本使用的，首先<code>WebSecurityConfigurerAdapter</code> 过时，但是在在过时的源码类中，会叫我们如何进行配置新版本的Spring-Security的配置，官方的我贴这里</p>
+<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">提供用于创建 WebSecurityConfigurer 实例的方便基类。该实现允许通过重写方法进行自定义。</span></span><br><span class="line"><span class="comment">将自动应用查找 AbstractHttpConfigurer 自 SpringFactoriesLoader 的结果，以允许开发人员扩展默认值。</span></span><br><span class="line"><span class="comment">为此，您必须创建一个扩展 AbstractHttpConfigurer 的类，</span></span><br><span class="line"><span class="comment">然后在“META-INF/spring.factory”的类路径中创建一个文件，如下所示：</span></span><br><span class="line"><span class="comment">org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer=</span></span><br><span class="line"><span class="comment">sample.MyClassThatExtendsAbstractHttpConfigurer</span></span><br><span class="line"><span class="comment">如果有多个应添加的类，则可以使用 “，”分隔值。例如：</span></span><br><span class="line"><span class="comment">  org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer=</span></span><br><span class="line"><span class="comment">  sample.MyClassThatExtendsAbstractHttpConfigurer, sample.OtherThatExtendsAbstractHttpConfigurer</span></span><br><span class="line"><span class="comment">已弃用</span></span><br><span class="line"><span class="comment">org.springframework.security.web.SecurityFilterChain使用</span></span><br><span class="line"><span class="comment">Bean 进行配置或WebSecurityCustomizer使用 Bean 进行配置 HttpSecurity WebSecurity。</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line">      <span class="meta">@Bean</span></span><br><span class="line">      <span class="keyword">public</span> SecurityFilterChain <span class="title function_">securityFilterChain</span><span class="params">(HttpSecurity http)</span> <span class="keyword">throws</span> Exception {</span><br><span class="line">          http</span><br><span class="line">              .authorizeHttpRequests((authz) -&gt;</span><br><span class="line">                  authz.anyRequest().authenticated()</span><br><span class="line">              );</span><br><span class="line">              <span class="comment">// ...</span></span><br><span class="line">          <span class="keyword">return</span> http.build();</span><br><span class="line">      }</span><br><span class="line"> </span><br><span class="line">     <span class="meta">@Bean</span></span><br><span class="line">     <span class="keyword">public</span> WebSecurityCustomizer <span class="title function_">webSecurityCustomizer</span><span class="params">(WebSecurity web)</span> {</span><br><span class="line">         <span class="keyword">return</span> (web) -&gt; web.ignoring().antMatchers(<span class="string">"/resources/**"</span>);</span><br><span class="line">     }</span><br><span class="line">  <span class="comment">/**</span></span><br><span class="line"><span class="comment">请参阅 Spring Security without WebSecurityConfigurerAdapter  以获取更多详细信息。</span></span><br><span class="line"><span class="comment">请参阅:</span></span><br><span class="line"><span class="comment">EnableWebSecurity</span></span><br><span class="line"><span class="comment">作者:</span></span><br><span class="line"><span class="comment">罗伯·温奇</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></tbody></table></figure>
 
-<p>终于我遇到的问题，你需要备份原来的 <code>Umami</code> 数据库，然后创建一个新的数据库，讲数据源配置在<code>.env</code>里面，不然通过初始化数据库。</p>
-<ol start="2">
-<li><p>然后你需要在终端中运行这段命令<code>npx prisma migrate resolve --rolled-back "02_report_schema_session_data"</code></p>
-</li>
-<li><p>重新部署，请看 <a href="https://umami.is/docs/install" rel="external nofollow noreferrer">https://umami.is/docs/install</a></p>
-</li>
-</ol>
-<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>Umami 的GitHub issues ：<a href="https://github.com/umami-software/umami/issues/2118" rel="external nofollow noreferrer">https://github.com/umami-software/umami/issues/2118</a></p>
+<p>可以看到，新版本官方推荐使用@Bean 进行配置，这个感觉更加优雅了，和我们原来使用配置类进行配置的都是大同小异，但这里有个问题官方没有讲（或许我没有找到）。</p>
+<h3 id="关于-AuthenticationManager-认证类的问题"><a href="#关于-AuthenticationManager-认证类的问题" class="headerlink" title="关于 AuthenticationManager 认证类的问题"></a>关于 <code>AuthenticationManager</code> 认证类的问题</h3><p>因为，可能我们需要因为某种原因重写 过滤器的类，但最后我们在旧版本需要指定一个<code>AuthenticationManager</code> 类不管是工厂里的还是直接springboot启动时创建的。这个地方我查了好久网上的没有一个能一个找到的，全部都是重复。</p>
+<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">@Autowired</span></span><br><span class="line">AuthenticationConfiguration authenticationConfiguration;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> AuthenticationManager <span class="title function_">authenticationManager</span><span class="params">()</span> <span class="keyword">throws</span> Exception {</span><br><span class="line">    <span class="type">AuthenticationManager</span> <span class="variable">authenticationManager</span> <span class="operator">=</span> </span><br><span class="line">        authenticationConfiguration.getAuthenticationManager();</span><br><span class="line">    <span class="keyword">return</span> authenticationManager;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<p>我们只需要使用 <code>AuthenticationConfiguration</code> 创建一个``AuthenticationManager<code> </code> 类即可，推荐写在Security配置类中，这样可以直接方便调用即可。</p>
+<p>例如我重写了 <code>UsernamePasswordAuthenticationFilter</code>的过滤器 <code>KaptchaFilter</code> 是继承了<code>UsernamePasswordAuthenticationFilter</code> 和并且重写了里面的方法加入了验证码。</p>
+<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">@Bean</span></span><br><span class="line"><span class="keyword">public</span> KaptchaFilter <span class="title function_">kaptchaFilter</span><span class="params">()</span> <span class="keyword">throws</span> Exception {</span><br><span class="line">    <span class="type">KaptchaFilter</span> <span class="variable">kaptchaFilter</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">KaptchaFilter</span>();</span><br><span class="line">    kaptchaFilter.setFilterProcessesUrl(<span class="string">"/doLogin"</span>);</span><br><span class="line">    kaptchaFilter.setUsernameParameter(<span class="string">"uname"</span>);</span><br><span class="line">    kaptchaFilter.setPasswordParameter(<span class="string">"passwd"</span>);</span><br><span class="line">    kaptchaFilter.setKaptcha(<span class="string">"kaptcha"</span>);</span><br><span class="line">    <span class="comment">//指定认证管理器</span></span><br><span class="line">    kaptchaFilter.setAuthenticationManager(authenticationManager());</span><br><span class="line">    kaptchaFilter.setAuthenticationSuccessHandler((request, response, authentication) -&gt; {</span><br><span class="line">        response.sendRedirect(<span class="string">"/index.html"</span>);</span><br><span class="line">    });</span><br><span class="line">    kaptchaFilter.setAuthenticationFailureHandler((request, response, exception) -&gt; {</span><br><span class="line">        response.sendRedirect(<span class="string">"/login.html"</span>);</span><br><span class="line">    });</span><br><span class="line">    <span class="keyword">return</span> kaptchaFilter;</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="meta">@Bean</span></span><br><span class="line"><span class="keyword">public</span> SecurityFilterChain <span class="title function_">securityFilter</span><span class="params">(HttpSecurity http)</span><span class="keyword">throws</span> Exception{</span><br><span class="line">    <span class="keyword">return</span> http.authorizeRequests()</span><br><span class="line">            .mvcMatchers(<span class="string">"/login.html"</span>).permitAll()</span><br><span class="line">            .mvcMatchers(<span class="string">"/vc.jpg"</span>).permitAll()</span><br><span class="line">            .anyRequest().authenticated()</span><br><span class="line">            .and()</span><br><span class="line">            .formLogin()</span><br><span class="line">            .loginPage(<span class="string">"/login.html"</span>)</span><br><span class="line">            .loginProcessingUrl(<span class="string">"/doLogin"</span>)</span><br><span class="line">            .usernameParameter(<span class="string">"uname"</span>)</span><br><span class="line">            .passwordParameter(<span class="string">"passwd"</span>)</span><br><span class="line">            .defaultSuccessUrl(<span class="string">"/index.html"</span>,<span class="literal">true</span>)</span><br><span class="line">            .and()</span><br><span class="line">            .csrf().disable()</span><br><span class="line">            .addFilterAt(kaptchaFilter(), UsernamePasswordAuthenticationFilter.class)</span><br><span class="line">            .build();</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+
+
+<h2 id="关于SpringSecurity6-02-版本"><a href="#关于SpringSecurity6-02-版本" class="headerlink" title="关于SpringSecurity6.02+版本"></a>关于SpringSecurity6.02+版本</h2><p>这个版本差不多是spring boot 3.0+开始使用的，如果你按照上面新版本使用@Bean配置的话，会发现<code>HttpSecurity</code>中的<code>authorizeRequests</code> 方法标记为过时了，而且<code>mvcMatchers</code>也没有这个方法了，原因6.0的SpringSecurity推荐使用<code>authorizeHttpRequests</code>进行配置，对就是很烦人，不能一个版本改完，而且文档及其混乱。</p>
+<p>例如：</p>
+<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">@Bean</span></span><br><span class="line"><span class="keyword">public</span> SecurityFilterChain <span class="title function_">securityFilterChain</span><span class="params">(HttpSecurity http)</span> <span class="keyword">throws</span> Exception {</span><br><span class="line">    <span class="keyword">return</span> http.authorizeHttpRequests()</span><br><span class="line">            .requestMatchers(<span class="string">"/vc.jpg"</span>).permitAll()<span class="comment">//放行指定选项</span></span><br><span class="line">        	.anyRequest().authenticated()<span class="comment">//拦截所有请求都需要认证</span></span><br><span class="line">            .and()</span><br><span class="line">            .formLogin()</span><br><span class="line">            .and()</span><br><span class="line">            .logout()</span><br><span class="line">            .and()</span><br><span class="line">            .addFilterAt(loginKaptchaFilter(),UsernamePasswordAuthenticationFilter.class)</span><br><span class="line">            .csrf().disable()</span><br><span class="line">            .build();</span><br><span class="line"></span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<p>其他配置和SpringSecurity5.7+的配置一样。</p>
 </body></html>]]></content>
       <categories>
-        <category>网络技术</category>
+        <category>Bug生成者</category>
       </categories>
       <tags>
-        <tag>MySql</tag>
-        <tag>Umami</tag>
-        <tag>PV</tag>
-        <tag>网站统计，UV</tag>
-        <tag>Ip</tag>
+        <tag>Spring</tag>
+        <tag>Java</tag>
+        <tag>Security</tag>
+        <tag>SpringSecuriy</tag>
       </tags>
   </entry>
   <entry>
@@ -946,24 +874,43 @@
       </tags>
   </entry>
   <entry>
-    <title>关于启动CDN发生一些难受的小bug</title>
-    <url>/posts/cdn/</url>
-    <content><![CDATA[<html><head></head><body><p>好久没有更新了，如果你要问我这段鸽了半年干了什么，我只能说啥事情都没有干，还是没有想好写什么,但是我一定会在6月结束会高产的。 当然关于:部署多的CDN同时加速的网上教程也很少（也可能我没有找到太多）</p>
-<blockquote>
-<p><strong>在这个星期又又又白嫖了Tencent Cloud的CDN活动</strong>，上次白嫖了一百块无门槛优惠卷，貌似我的域名在Tencent cloud只是首年续费了9块剩下5年都没有花过其他的了。</p>
-</blockquote>
-<p>国内用腾讯的国外用的是CF，现在也是国内国外都使用的CDN(我是不会告诉你我原来没有使用CDN的)</p>
-<h2 id="bug总结"><a href="#bug总结" class="headerlink" title="bug总结:"></a>bug总结:</h2><ol>
-<li> https的问题: 使用腾讯CDN就麻烦不行，CF特别顺畅没有发生过https的问题.在腾讯云的CDN想开https你需要上传你的证书才可以。</li>
-<li> 开启CDN之后WordPress出现无法登陆后台的问题，腾讯需要**/wp-admin**变成不缓存即可。 3.指开启国内加速，可能导致国外的朋友出现无法访问的问题: 这个问题我还发过工单给腾讯云,简单总结一句话,你开国内的加速，跟国外有什么关系。 这个问题我只遇到过一次，有几率会抽风一下。 如果嫌麻烦的话你就顺便在腾讯也开启境外的，不麻烦的CF的好处就来了。 4.还有一个就是评论不会实时同步,其实这也不算是bug,毕竟CDN也不可能做到全访问实时的不过也不会特别慢。</li>
+    <title>解决Umami v2.3升级问题，Something went wrong.</title>
+    <url>/posts/Umami-fix/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>是的没错，发生这样的事情，应该很多<code>Umami</code>只要是v2.2版本应该都遇到了。 </p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2023/07/19/64b7cb785693f.webp" alt="Umami v2.2 Something went wrong."></p>
+<p>我浏览了部分 <code>issues</code> 只能升级到v2.3版本了。</p>
+<h1 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h1><p>我先说一下我自己的环境，我自己的使用：</p>
+<ol>
+<li>属于编译安装，没有放在docker</li>
+<li>Mysql 5.7</li>
+<li>nodjs 18.16.0</li>
+<li>npm 9.5.1</li>
 </ol>
-<p>如果有错的地方欢迎指出,萌新下手麻烦轻一点.</p>
+<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><p>解决办法有两种，第一种你可以直接尝试升级到<code>MySQL</code> 8.0，如果你想继续和我一样，小鸡的配置不行还想用5.7，请继续往下看。</p>
+<p>如果你是和我一样都是<code>Mysql</code> 5.7版本，你需要查看这篇 <a href="https://github.com/umami-software/umami/issues/2118" rel="external nofollow noreferrer">issues</a> 或者继续往下看。</p>
+<ol>
+<li>你需要从GitHub 拉去一份最新的<a href="https://github.com/umami-software/umami/releases" rel="external nofollow noreferrer">Umami</a> 的代码，你需要找到<code>db/mysql/migrations/02_report_schema_session_data</code>文件夹下的<code>migration.sql</code>这份sql文件，将下面的代码替换和保存。</li>
+</ol>
+<figure class="highlight sql"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> `event_data` CHANGE `event_data_type` `data_type` <span class="type">int</span> unsigned <span class="keyword">NOT</span> <span class="keyword">NULL</span>;</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> `event_data` CHANGE `event_date_value` `date_value` <span class="type">timestamp</span> <span class="keyword">NULL</span>;</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> `event_data` CHANGE `event_id` `event_data_id` <span class="type">varchar</span>(<span class="number">36</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span>;</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> `event_data` CHANGE `event_numeric_value` `number_value` <span class="type">decimal</span>(<span class="number">19</span>, <span class="number">4</span>) <span class="keyword">NULL</span>;</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> `event_data` CHANGE `event_string_value` `string_value`<span class="type">varchar</span>(<span class="number">500</span>) <span class="keyword">NULL</span>;</span><br></pre></td></tr></tbody></table></figure>
+
+<p>终于我遇到的问题，你需要备份原来的 <code>Umami</code> 数据库，然后创建一个新的数据库，讲数据源配置在<code>.env</code>里面，不然通过初始化数据库。</p>
+<ol start="2">
+<li><p>然后你需要在终端中运行这段命令<code>npx prisma migrate resolve --rolled-back "02_report_schema_session_data"</code></p>
+</li>
+<li><p>重新部署，请看 <a href="https://umami.is/docs/install" rel="external nofollow noreferrer">https://umami.is/docs/install</a></p>
+</li>
+</ol>
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>Umami 的GitHub issues ：<a href="https://github.com/umami-software/umami/issues/2118" rel="external nofollow noreferrer">https://github.com/umami-software/umami/issues/2118</a></p>
 </body></html>]]></content>
       <categories>
         <category>网络技术</category>
       </categories>
       <tags>
-        <tag>CDN</tag>
+        <tag>MySql</tag>
+        <tag>Umami</tag>
+        <tag>PV</tag>
+        <tag>网站统计，UV</tag>
+        <tag>Ip</tag>
       </tags>
   </entry>
   <entry>
@@ -991,10 +938,63 @@
         <category>网络技术</category>
       </categories>
       <tags>
-        <tag>CDN</tag>
         <tag>hexo</tag>
         <tag>butterfly</tag>
         <tag>jsdelivr</tag>
+        <tag>CDN</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Memos 对接 Authentik</title>
+    <url>/posts/authentik-OAuth2-memos/</url>
+    <content><![CDATA[<html><head></head><body><blockquote>
+<p> 配置中：这是什么啊，这么麻烦还没过去啊。 配置后：真香好方便。</p>
+</blockquote>
+<p>使用本文前请自行在 <code>Authentik </code>配置好 Memos使用的<code>应用程序</code>和<code>提供程序</code></p>
+<h1 id="Authentik-配置"><a href="#Authentik-配置" class="headerlink" title="Authentik 配置"></a>Authentik 配置</h1><p>默认你已经创建好了，一个给Memos使用的<code>应用程序</code>和<code>提供程序</code>,我们需要更改<code>提供程序</code>(给Memos 的)我们点击编辑</p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/09/66155d6445bbc.webp" alt="Authentik 配置 Memos-1.webp"></p>
+<blockquote>
+<p>选择客户端可以使用哪些作用域。客户端仍然需要指定访问数据的范围。</p>
+<p>按住 <code>ctrl/command</code> 键可选择多个项目。</p>
+</blockquote>
+<p>我们选中<code>authentik default OAuth Mapping: OpenID email</code> 和 <code>authentik default OAuth Mapping: OpenID openid</code>将<code>Subject 模式</code>改成基于用户名，然后更新。</p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/09/6615597f90737.webp" alt="Authentik 配置 Memos.webp"></p>
+<h1 id="Memos配置"><a href="#Memos配置" class="headerlink" title="Memos配置"></a>Memos配置</h1><blockquote>
+<p>在截至发文时 <code>Memos</code> 的版本为<code>v0.20.1</code>版本，<code>Memos</code>通过用户名为主键，其实只需要给<code>username</code>字段即可。</p>
+</blockquote>
+<p>根据上文调整的，现在sub 是我们的用户名字段，按照文章截屏填写其他的自行替换。这样你的的<code>Memos</code>就可以使用<code>Authentik</code>进行登录了。</p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/09/66155e6ca6dc7.webp" alt="Memos-Oauth2-config.webp"></p>
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p><code>Memos</code>的文档：<a href="https://www.usememos.com/docs/advanced-settings/keycloak" rel="external nofollow noreferrer">https://www.usememos.com/docs/advanced-settings/keycloak</a></p>
+</body></html>]]></content>
+      <categories>
+        <category>网络技术</category>
+      </categories>
+      <tags>
+        <tag>Memos</tag>
+        <tag>Authentik</tag>
+        <tag>SSO</tag>
+        <tag>OAuth2</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于启动CDN发生一些难受的小bug</title>
+    <url>/posts/cdn/</url>
+    <content><![CDATA[<html><head></head><body><p>好久没有更新了，如果你要问我这段鸽了半年干了什么，我只能说啥事情都没有干，还是没有想好写什么,但是我一定会在6月结束会高产的。 当然关于:部署多的CDN同时加速的网上教程也很少（也可能我没有找到太多）</p>
+<blockquote>
+<p><strong>在这个星期又又又白嫖了Tencent Cloud的CDN活动</strong>，上次白嫖了一百块无门槛优惠卷，貌似我的域名在Tencent cloud只是首年续费了9块剩下5年都没有花过其他的了。</p>
+</blockquote>
+<p>国内用腾讯的国外用的是CF，现在也是国内国外都使用的CDN(我是不会告诉你我原来没有使用CDN的)</p>
+<h2 id="bug总结"><a href="#bug总结" class="headerlink" title="bug总结:"></a>bug总结:</h2><ol>
+<li> https的问题: 使用腾讯CDN就麻烦不行，CF特别顺畅没有发生过https的问题.在腾讯云的CDN想开https你需要上传你的证书才可以。</li>
+<li> 开启CDN之后WordPress出现无法登陆后台的问题，腾讯需要**/wp-admin**变成不缓存即可。 3.指开启国内加速，可能导致国外的朋友出现无法访问的问题: 这个问题我还发过工单给腾讯云,简单总结一句话,你开国内的加速，跟国外有什么关系。 这个问题我只遇到过一次，有几率会抽风一下。 如果嫌麻烦的话你就顺便在腾讯也开启境外的，不麻烦的CF的好处就来了。 4.还有一个就是评论不会实时同步,其实这也不算是bug,毕竟CDN也不可能做到全访问实时的不过也不会特别慢。</li>
+</ol>
+<p>如果有错的地方欢迎指出,萌新下手麻烦轻一点.</p>
+</body></html>]]></content>
+      <categories>
+        <category>网络技术</category>
+      </categories>
+      <tags>
+        <tag>CDN</tag>
       </tags>
   </entry>
   <entry>
@@ -1017,41 +1017,6 @@
       </categories>
       <tags>
         <tag>clash</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>解决Hexo博客框架中Twikoo评论框架路径不一致的问题</title>
-    <url>/posts/fix-hexo-twikoocomment-path-inconsistency/</url>
-    <content><![CDATA[<html><head></head><body><p>引言：</p>
-<p>在我继续修理博客的过程中，没错，你没有看错，我陆续从今年1月开始维护博客至今。主要原因是我很忙，维护工作也需要时间，而且在修复之后还需要处理一些细节问题，这是我之前没有注意到的。由于当时静态资源几乎全部丢失，现在我已经基本上优化了访问速度，这使得我的Hexo博客框架名副其实。随着我对网站的打理以及撰写一些有用的内容，网站的访问量逐渐提升。然而，我注意到了一些之前未曾注意到的问题。在Hexo博客生成过程中存在一个问题，你可以访问这篇文章的链接<code>https://blog.ning.moe/post/fix-hexo-twikoocomment-path-inconsistency/</code>，也可以在该链接后面添加<code>index.html</code>，但对于Twikoo评论框架而言，这两个链接并不相同。</p>
-<p>阅读须知：</p>
-<p>本文的操作是在使用”butterfly”主题的情况下进行的，其他主题也可以模仿这个操作，但需要注意先查找自己的主题是否可以直接在配置文件中进行更改。更多细节请参考这个”issues”链接：<a href="https://github.com/imaegoo/twikoo/issues/138%E3%80%82" rel="external nofollow noreferrer">https://github.com/imaegoo/twikoo/issues/138。</a></p>
-<p>正文：</p>
-<blockquote>
-<p>下面我将直接进入正文。</p>
-</blockquote>
-<h2 id="Butterfly的问题"><a href="#Butterfly的问题" class="headerlink" title="Butterfly的问题"></a>Butterfly的问题</h2><p>我的博客主题是<a href="https://github.com/jerryc127/hexo-theme-butterfly" rel="external nofollow noreferrer">butterfly</a>，本身已经对Twikoo进行了适配。但我不好意思提出”issues”来更改它，因为我通过搜索找到了Twikoo官方的一个”issues”：<a href="https://github.com/imaegoo/twikoo/issues/138" rel="external nofollow noreferrer">里面作者已经回复了</a>。</p>
-<figure class="highlight javascript"><table><tbody><tr><td class="code"><pre><span class="line">twikoo.<span class="title function_">init</span>({</span><br><span class="line">  <span class="comment">// ......,</span></span><br><span class="line">  <span class="attr">path</span>: <span class="string">'window.location.pathname.replace(\'index.html\',\'\')'</span></span><br><span class="line">})</span><br></pre></td></tr></tbody></table></figure>
-
-<p>但问题是，Butterfly主题本身没有额外的选项来配置Twikoo，所以我决定直接修改主题的源码。</p>
-<h2 id="更改主题模板"><a href="#更改主题模板" class="headerlink" title="更改主题模板"></a>更改主题模板</h2><p>首先，确保你找到了Butterfly主题的文件夹，它的目录结构应该是这样的：</p>
-<figure class="highlight powershell"><table><tbody><tr><td class="code"><pre><span class="line">├─.github</span><br><span class="line">├─languages</span><br><span class="line">├─layout</span><br><span class="line">├─scripts</span><br><span class="line">└─source</span><br></pre></td></tr></tbody></table></figure>
-
-<p>然后，找到<code>/layout/includes/third-party/comments/twikoo.pug</code>这个文件。</p>
-<p>在大约第11行的位置添加以下代码：<code>path: window.location.pathname.replace('index.html','')</code>，下面是我已经添加好的代码：</p>
-<figure class="highlight javascript"><table><tbody><tr><td class="code"><pre><span class="line">script.</span><br><span class="line">  (<span class="function">()=&gt;</span>{</span><br><span class="line">    <span class="keyword">const</span> <span class="title function_">init</span> = (<span class="params"></span>) =&gt; {</span><br><span class="line">      twikoo.<span class="title function_">init</span>(<span class="title class_">Object</span>.<span class="title function_">assign</span>({</span><br><span class="line">        <span class="attr">el</span>: <span class="string">'#twikoo-wrap'</span>,</span><br><span class="line">        <span class="attr">envId</span>: <span class="string">'!{envId}'</span>,</span><br><span class="line">        <span class="attr">region</span>: <span class="string">'!{region}'</span>,</span><br><span class="line">        <span class="attr">path</span>: <span class="variable language_">window</span>.<span class="property">location</span>.<span class="property">pathname</span>.<span class="title function_">replace</span>(<span class="string">'index.html'</span>,<span class="string">''</span>),</span><br><span class="line">        <span class="attr">onCommentLoaded</span>: <span class="keyword">function</span> (<span class="params"></span>) {</span><br><span class="line">          btf.<span class="title function_">loadLightbox</span>(<span class="variable language_">document</span>.<span class="title function_">querySelectorAll</span>(<span class="string">'#twikoo .tk-content img:not(.tk-owo-emotion)'</span>))</span><br><span class="line">        }</span><br><span class="line">      }, !{<span class="title class_">JSON</span>.<span class="title function_">stringify</span>(option)}))</span><br><span class="line">    }</span><br></pre></td></tr></tbody></table></figure>
-
-<p>引用：</p>
-<p>Twikoo的”issues”链接：<a href="https://github.com/imaegoo/twikoo/issues/138" rel="external nofollow noreferrer">https://github.com/imaegoo/twikoo/issues/138</a></p>
-</body></html>]]></content>
-      <categories>
-        <category>网络技术</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>butterfly</tag>
-        <tag>twikoo</tag>
-        <tag>评论</tag>
       </tags>
   </entry>
   <entry>
@@ -1184,6 +1149,41 @@
       </tags>
   </entry>
   <entry>
+    <title>解决Hexo博客框架中Twikoo评论框架路径不一致的问题</title>
+    <url>/posts/fix-hexo-twikoocomment-path-inconsistency/</url>
+    <content><![CDATA[<html><head></head><body><p>引言：</p>
+<p>在我继续修理博客的过程中，没错，你没有看错，我陆续从今年1月开始维护博客至今。主要原因是我很忙，维护工作也需要时间，而且在修复之后还需要处理一些细节问题，这是我之前没有注意到的。由于当时静态资源几乎全部丢失，现在我已经基本上优化了访问速度，这使得我的Hexo博客框架名副其实。随着我对网站的打理以及撰写一些有用的内容，网站的访问量逐渐提升。然而，我注意到了一些之前未曾注意到的问题。在Hexo博客生成过程中存在一个问题，你可以访问这篇文章的链接<code>https://blog.ning.moe/post/fix-hexo-twikoocomment-path-inconsistency/</code>，也可以在该链接后面添加<code>index.html</code>，但对于Twikoo评论框架而言，这两个链接并不相同。</p>
+<p>阅读须知：</p>
+<p>本文的操作是在使用”butterfly”主题的情况下进行的，其他主题也可以模仿这个操作，但需要注意先查找自己的主题是否可以直接在配置文件中进行更改。更多细节请参考这个”issues”链接：<a href="https://github.com/imaegoo/twikoo/issues/138%E3%80%82" rel="external nofollow noreferrer">https://github.com/imaegoo/twikoo/issues/138。</a></p>
+<p>正文：</p>
+<blockquote>
+<p>下面我将直接进入正文。</p>
+</blockquote>
+<h2 id="Butterfly的问题"><a href="#Butterfly的问题" class="headerlink" title="Butterfly的问题"></a>Butterfly的问题</h2><p>我的博客主题是<a href="https://github.com/jerryc127/hexo-theme-butterfly" rel="external nofollow noreferrer">butterfly</a>，本身已经对Twikoo进行了适配。但我不好意思提出”issues”来更改它，因为我通过搜索找到了Twikoo官方的一个”issues”：<a href="https://github.com/imaegoo/twikoo/issues/138" rel="external nofollow noreferrer">里面作者已经回复了</a>。</p>
+<figure class="highlight javascript"><table><tbody><tr><td class="code"><pre><span class="line">twikoo.<span class="title function_">init</span>({</span><br><span class="line">  <span class="comment">// ......,</span></span><br><span class="line">  <span class="attr">path</span>: <span class="string">'window.location.pathname.replace(\'index.html\',\'\')'</span></span><br><span class="line">})</span><br></pre></td></tr></tbody></table></figure>
+
+<p>但问题是，Butterfly主题本身没有额外的选项来配置Twikoo，所以我决定直接修改主题的源码。</p>
+<h2 id="更改主题模板"><a href="#更改主题模板" class="headerlink" title="更改主题模板"></a>更改主题模板</h2><p>首先，确保你找到了Butterfly主题的文件夹，它的目录结构应该是这样的：</p>
+<figure class="highlight powershell"><table><tbody><tr><td class="code"><pre><span class="line">├─.github</span><br><span class="line">├─languages</span><br><span class="line">├─layout</span><br><span class="line">├─scripts</span><br><span class="line">└─source</span><br></pre></td></tr></tbody></table></figure>
+
+<p>然后，找到<code>/layout/includes/third-party/comments/twikoo.pug</code>这个文件。</p>
+<p>在大约第11行的位置添加以下代码：<code>path: window.location.pathname.replace('index.html','')</code>，下面是我已经添加好的代码：</p>
+<figure class="highlight javascript"><table><tbody><tr><td class="code"><pre><span class="line">script.</span><br><span class="line">  (<span class="function">()=&gt;</span>{</span><br><span class="line">    <span class="keyword">const</span> <span class="title function_">init</span> = (<span class="params"></span>) =&gt; {</span><br><span class="line">      twikoo.<span class="title function_">init</span>(<span class="title class_">Object</span>.<span class="title function_">assign</span>({</span><br><span class="line">        <span class="attr">el</span>: <span class="string">'#twikoo-wrap'</span>,</span><br><span class="line">        <span class="attr">envId</span>: <span class="string">'!{envId}'</span>,</span><br><span class="line">        <span class="attr">region</span>: <span class="string">'!{region}'</span>,</span><br><span class="line">        <span class="attr">path</span>: <span class="variable language_">window</span>.<span class="property">location</span>.<span class="property">pathname</span>.<span class="title function_">replace</span>(<span class="string">'index.html'</span>,<span class="string">''</span>),</span><br><span class="line">        <span class="attr">onCommentLoaded</span>: <span class="keyword">function</span> (<span class="params"></span>) {</span><br><span class="line">          btf.<span class="title function_">loadLightbox</span>(<span class="variable language_">document</span>.<span class="title function_">querySelectorAll</span>(<span class="string">'#twikoo .tk-content img:not(.tk-owo-emotion)'</span>))</span><br><span class="line">        }</span><br><span class="line">      }, !{<span class="title class_">JSON</span>.<span class="title function_">stringify</span>(option)}))</span><br><span class="line">    }</span><br></pre></td></tr></tbody></table></figure>
+
+<p>引用：</p>
+<p>Twikoo的”issues”链接：<a href="https://github.com/imaegoo/twikoo/issues/138" rel="external nofollow noreferrer">https://github.com/imaegoo/twikoo/issues/138</a></p>
+</body></html>]]></content>
+      <categories>
+        <category>网络技术</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>butterfly</tag>
+        <tag>twikoo</tag>
+        <tag>评论</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>世界，您好！</title>
     <url>/posts/hello-world-2-2/</url>
     <content><![CDATA[<html><head></head><body><p>欢迎使用WordPress。这是您的第一篇文章。编辑或删除它，然后开始写作吧！</p>
@@ -1192,6 +1192,88 @@
       <categories>
         <category>生活随想</category>
       </categories>
+  </entry>
+  <entry>
+    <title>hexo博客搭建教程</title>
+    <url>/posts/hexo-1/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="部署hexo需要用到的东西"><a href="#部署hexo需要用到的东西" class="headerlink" title="部署hexo需要用到的东西:"></a>部署hexo需要用到的东西:</h1><ol>
+<li>部署hexo可以没有服务器可以没有域名,但只需要你有一台电脑.</li>
+<li>需要一个GitHub的账号没有的话可以<a href="https://github.com/join?ref_cta=Sign+up&amp;ref_loc=header+logged+out&amp;ref_page=/&amp;source=header-home" rel="external nofollow noreferrer">“点击此处注册一个”</a></li>
+<li>git软件:<a href="https://git-scm.com/" rel="external nofollow noreferrer">下载地址</a></li>
+<li>node.js软件:<a href="https://nodejs.org/zh-cn/download/" rel="external nofollow noreferrer">下载地址</a></li>
+<li>vs coed软件:<a href="https://code.visualstudio.com/" rel="external nofollow noreferrer">下载地址</a></li>
+<li>搭建完成之后写文章的typora(当然你也可以用vscode):<a href="https://typora.io/" rel="external nofollow noreferrer">下载地址</a></li>
+</ol>
+<p>以上网站均为国外网站如果打不开的话建议先更改一下dns,或者找第三方下载站,其中vscode安装一个插件就可以变成简体中文.</p>
+<h1 id="配置环境"><a href="#配置环境" class="headerlink" title="配置环境:"></a>配置环境:</h1><p><strong>注:这里默认已经把上面的软件全部安装完毕了!</strong></p>
+<ol>
+<li>首先是npm(node.js),设置下载的镜像服务器是淘宝镜像,大陆网络都懂.用<code>cmd</code>或者<code>PowerShell</code>属于一下命令.</li>
+</ol>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">npm config set registry https://registry.npm.taobao.org</span><br></pre></td></tr></tbody></table></figure>
+
+<p>测试是否成功:</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">npm config get registry</span><br></pre></td></tr></tbody></table></figure>
+
+<p>如果返回:<img src="https://cdn.jsdelivr.net/gh/biliblihuorong/Resources/Image/2021-5-8-hexo01.png" alt="2021-5-8-hexo01"></p>
+<p>是成功.</p>
+<ol start="2">
+<li>vscode改中文这篇文档:<a href="https://www.php.cn/tool/vscode/464167.html" rel="external nofollow noreferrer">https://www.php.cn/tool/vscode/464167.html</a> 也顺便再安装一个叫yml的插件方便改配置文件的时候不容易报错.</li>
+</ol>
+<h1 id="hexo框架部署"><a href="#hexo框架部署" class="headerlink" title="hexo框架部署:"></a>hexo框架部署:</h1><p>首先你可以选择本机的任意一个地方进行部署,但我推荐找一个磁盘的根目录创建专门对hexo的文件夹方便管理.</p>
+<p>例如:C\hexo</p>
+<p>我再C盘下的根目录创建了一个叫hexo进去到文件夹右键,git bash here</p>
+<p><img src="https://cdn.jsdelivr.net/gh/biliblihuorong/Resources/Image/2021-5-8-hexo02.png" alt="2021-5-8-hexo02"></p>
+<p>输入:</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></tbody></table></figure>
+
+<p>然后:</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></tbody></table></figure>
+
+<p>此时你博客文件夹下就会多出很多文件,如果没有多试几次,因为要从GitHub上下载.</p>
+<p>此时在输入:</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">hexo g &amp;&amp; hexo s</span><br></pre></td></tr></tbody></table></figure>
+
+<p>然后Windows防火墙会弹出警告:<img src="https://cdn.jsdelivr.net/gh/biliblihuorong/Resources/Image/2021-5-8-hexo03.png" alt="2021-5-8-hexo03"></p>
+<p>允许之后打开浏览器输入:<a href="http://localhost:4000/" rel="external nofollow noreferrer">http://localhost:4000</a></p>
+<p>将会有hello word的文章.</p>
+<p>回到原来的窗口,ctrl+c断开.</p>
+<h2 id="配置网站"><a href="#配置网站" class="headerlink" title="配置网站:"></a>配置网站:</h2><p>使用vs code打开目录下的<code>_config.yml</code>文件.</p>
+<figure class="highlight yml"><table><tbody><tr><td class="code"><pre><span class="line"><span class="attr">title:</span> <span class="string">某科学的贝壳</span>       <span class="comment">#网站标题</span></span><br><span class="line"><span class="attr">subtitle:</span> <span class="string">''</span>            <span class="comment">#网站副标题</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">''</span>         <span class="comment">#网站表述</span></span><br><span class="line"><span class="attr">keywords:</span>               <span class="comment">#网站关键字</span></span><br><span class="line"><span class="attr">author:</span> <span class="string">shell</span>           <span class="comment">#网站主人</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-CN</span>         <span class="comment">#网站使用的语言</span></span><br><span class="line"><span class="attr">timezone:</span> <span class="string">'Asia/Shanghai'</span> <span class="comment">#网站时间</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>其他的暂时不要动了,网站时间如果是大陆朋友就不要动了哦~</p>
+<p>关于主题?:</p>
+<p>主题这里博主使用的是<a href="https://github.com/jerryc127" rel="external nofollow noreferrer">jerryc127</a>大佬的<a href="https://github.com/jerryc127/hexo-theme-butterfly" rel="external nofollow noreferrer">Butterfly</a>当然也可以前往<a href="https://hexo.io/themes/%E6%88%96%E8%80%85%E5%8E%BB[GitHub](GitHub.com)%E6%89%BE%E6%89%BE%E5%90%A7" rel="external nofollow noreferrer">https://hexo.io/themes/或者去[GitHub](GitHub.com)找找吧</a>.</p>
+<h1 id="部署到GitHub"><a href="#部署到GitHub" class="headerlink" title="部署到GitHub"></a>部署到GitHub</h1><h2 id="创建GitHub仓库"><a href="#创建GitHub仓库" class="headerlink" title="创建GitHub仓库"></a>创建GitHub仓库</h2><p>登录你的GitHub-来创建一个仓库:</p>
+<p><img src="https://cdn.jsdelivr.net/gh/biliblihuorong/Resources/Image/image-20210520092450492.png" alt="image-20210520092450492"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/biliblihuorong/Resources/Image/image-20210520094408081.png" alt="image-20210520094408081"></p>
+<p>然后点击create a license.<img src="https://cdn.jsdelivr.net/gh/biliblihuorong/Resources/Image/image-20210520095725211.png" alt="image-20210520095725211"></p>
+<h2 id="配置git用于连接GitHub"><a href="#配置git用于连接GitHub" class="headerlink" title="配置git用于连接GitHub"></a>配置git用于连接GitHub</h2><p>右键博客目录,选择Git Bash Here,安装git部署器.</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></tbody></table></figure>
+
+<p>继续输入:</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">git config --global user.name <span class="string">"GitHub 用户名"</span></span><br><span class="line">git config --global user.email <span class="string">"GitHub 邮箱"</span></span><br></pre></td></tr></tbody></table></figure>
+<p>再博客目录下用vs code打开<code>_config.yml</code>,最底下会有一个<code>Deployment</code>或者叫<code>deploy</code></p>
+<figure class="highlight yml"><table><tbody><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">'git'</span></span><br><span class="line">  <span class="attr">repository:</span>           <span class="comment">#你的GitHub的仓库地址(上图的2号)</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">main</span>          <span class="comment">#分支(看看三号是不是和这个一样不一样就改)</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>现在可以推送到GitHub,在Git Bash Here,输入:</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">hexo g &amp;&amp; hexo d</span><br></pre></td></tr></tbody></table></figure>
+
+<p><img src="https://cdn.jsdelivr.net/gh/biliblihuorong/Resources/Image/image-20210520100443142.png" alt="image-20210520100443142"><img src="https://cdn.jsdelivr.net/gh/biliblihuorong/Resources/Image/image-20210520100528999.png" alt="image-20210520100528999"></p>
+<p>显示:<code>INFO  Deploy done: git</code>,代表成功了,现在访问<code>用户名</code>.GitHub.io就可以了(如果没有等一等).</p>
+<h2 id="自定义域名"><a href="#自定义域名" class="headerlink" title="自定义域名:"></a>自定义域名:</h2><p>这一步需要域名哦,没有的话推荐腾讯云注册一个.</p>
+<ol>
+<li>在博客目录下找到<code>source</code>文件夹,新建一个文本文件,填写完你的域名之后保存,名字改成<code>CNAME</code>去掉.txt哦</li>
+<li>在你购买的域名服务商,添加CNAME解析记录记录值就是你<code>用户名</code>.GitHub.io.</li>
+</ol>
+<h1 id="hexo常用命令"><a href="#hexo常用命令" class="headerlink" title="hexo常用命令:"></a>hexo常用命令:</h1><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">hexo n <span class="string">"第一篇博文"</span>  </span><br></pre></td></tr></tbody></table></figure>
+<p>新建一篇文章,文章名称和标题分别为 第一篇博文.md 和 第一篇博文.<br>此时会在站点根目录下的—-&gt;source—–&gt;_post文件夹下生成 第一篇博文.md文件, 第一篇博文.<br>md文件的顶部(—–分割线上方区域,也称作Front matter区)</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">hexo g              <span class="comment">#生成HTML静态网页生成文件在给目录下的 public            g是generate</span></span><br><span class="line">hexo s				<span class="comment">#在本地启动hexo s是sever</span></span><br><span class="line">hexo d				<span class="comment">#将本地数据部署到远端服务器(如GitHub)</span></span><br><span class="line">hexo clean			<span class="comment">#清除缓存 ,网页正常情况下可以忽略此条命令,执行该指令后,会删掉站点根目录下的public文件夹.</span></span><br></pre></td></tr></tbody></table></figure>
+
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结:"></a>总结:</h1><p>hexo搭建并不困难,唯一麻烦的地方就是推送到GitHub或者服务器,但其实本质就是把根目录下的<code>public</code>下的文件推送上去,当然服务器需要安装hexo进行解释.</p>
+<p>写作方面就是需要了解一下MakrDown的基本使用就可以了.</p>
+<p>改主题和背景,一定要详细看每个主题的官方文档,基本上就可以大差不差,如果要添加其他的花里胡哨的东西看点前端三剑客(html,css,js)基本上就可以了</p>
+<p>以上说的仅为个人观点,欢迎大家来进行交流.</p>
+</body></html>]]></content>
   </entry>
   <entry>
     <title>Hexo Butterfly的SEO优化</title>
@@ -1313,88 +1395,6 @@
       </tags>
   </entry>
   <entry>
-    <title>hexo博客搭建教程</title>
-    <url>/posts/hexo-1/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="部署hexo需要用到的东西"><a href="#部署hexo需要用到的东西" class="headerlink" title="部署hexo需要用到的东西:"></a>部署hexo需要用到的东西:</h1><ol>
-<li>部署hexo可以没有服务器可以没有域名,但只需要你有一台电脑.</li>
-<li>需要一个GitHub的账号没有的话可以<a href="https://github.com/join?ref_cta=Sign+up&amp;ref_loc=header+logged+out&amp;ref_page=/&amp;source=header-home" rel="external nofollow noreferrer">“点击此处注册一个”</a></li>
-<li>git软件:<a href="https://git-scm.com/" rel="external nofollow noreferrer">下载地址</a></li>
-<li>node.js软件:<a href="https://nodejs.org/zh-cn/download/" rel="external nofollow noreferrer">下载地址</a></li>
-<li>vs coed软件:<a href="https://code.visualstudio.com/" rel="external nofollow noreferrer">下载地址</a></li>
-<li>搭建完成之后写文章的typora(当然你也可以用vscode):<a href="https://typora.io/" rel="external nofollow noreferrer">下载地址</a></li>
-</ol>
-<p>以上网站均为国外网站如果打不开的话建议先更改一下dns,或者找第三方下载站,其中vscode安装一个插件就可以变成简体中文.</p>
-<h1 id="配置环境"><a href="#配置环境" class="headerlink" title="配置环境:"></a>配置环境:</h1><p><strong>注:这里默认已经把上面的软件全部安装完毕了!</strong></p>
-<ol>
-<li>首先是npm(node.js),设置下载的镜像服务器是淘宝镜像,大陆网络都懂.用<code>cmd</code>或者<code>PowerShell</code>属于一下命令.</li>
-</ol>
-<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">npm config set registry https://registry.npm.taobao.org</span><br></pre></td></tr></tbody></table></figure>
-
-<p>测试是否成功:</p>
-<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">npm config get registry</span><br></pre></td></tr></tbody></table></figure>
-
-<p>如果返回:<img src="https://cdn.jsdelivr.net/gh/biliblihuorong/Resources/Image/2021-5-8-hexo01.png" alt="2021-5-8-hexo01"></p>
-<p>是成功.</p>
-<ol start="2">
-<li>vscode改中文这篇文档:<a href="https://www.php.cn/tool/vscode/464167.html" rel="external nofollow noreferrer">https://www.php.cn/tool/vscode/464167.html</a> 也顺便再安装一个叫yml的插件方便改配置文件的时候不容易报错.</li>
-</ol>
-<h1 id="hexo框架部署"><a href="#hexo框架部署" class="headerlink" title="hexo框架部署:"></a>hexo框架部署:</h1><p>首先你可以选择本机的任意一个地方进行部署,但我推荐找一个磁盘的根目录创建专门对hexo的文件夹方便管理.</p>
-<p>例如:C\hexo</p>
-<p>我再C盘下的根目录创建了一个叫hexo进去到文件夹右键,git bash here</p>
-<p><img src="https://cdn.jsdelivr.net/gh/biliblihuorong/Resources/Image/2021-5-8-hexo02.png" alt="2021-5-8-hexo02"></p>
-<p>输入:</p>
-<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></tbody></table></figure>
-
-<p>然后:</p>
-<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></tbody></table></figure>
-
-<p>此时你博客文件夹下就会多出很多文件,如果没有多试几次,因为要从GitHub上下载.</p>
-<p>此时在输入:</p>
-<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">hexo g &amp;&amp; hexo s</span><br></pre></td></tr></tbody></table></figure>
-
-<p>然后Windows防火墙会弹出警告:<img src="https://cdn.jsdelivr.net/gh/biliblihuorong/Resources/Image/2021-5-8-hexo03.png" alt="2021-5-8-hexo03"></p>
-<p>允许之后打开浏览器输入:<a href="http://localhost:4000/" rel="external nofollow noreferrer">http://localhost:4000</a></p>
-<p>将会有hello word的文章.</p>
-<p>回到原来的窗口,ctrl+c断开.</p>
-<h2 id="配置网站"><a href="#配置网站" class="headerlink" title="配置网站:"></a>配置网站:</h2><p>使用vs code打开目录下的<code>_config.yml</code>文件.</p>
-<figure class="highlight yml"><table><tbody><tr><td class="code"><pre><span class="line"><span class="attr">title:</span> <span class="string">某科学的贝壳</span>       <span class="comment">#网站标题</span></span><br><span class="line"><span class="attr">subtitle:</span> <span class="string">''</span>            <span class="comment">#网站副标题</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">''</span>         <span class="comment">#网站表述</span></span><br><span class="line"><span class="attr">keywords:</span>               <span class="comment">#网站关键字</span></span><br><span class="line"><span class="attr">author:</span> <span class="string">shell</span>           <span class="comment">#网站主人</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-CN</span>         <span class="comment">#网站使用的语言</span></span><br><span class="line"><span class="attr">timezone:</span> <span class="string">'Asia/Shanghai'</span> <span class="comment">#网站时间</span></span><br></pre></td></tr></tbody></table></figure>
-
-<p>其他的暂时不要动了,网站时间如果是大陆朋友就不要动了哦~</p>
-<p>关于主题?:</p>
-<p>主题这里博主使用的是<a href="https://github.com/jerryc127" rel="external nofollow noreferrer">jerryc127</a>大佬的<a href="https://github.com/jerryc127/hexo-theme-butterfly" rel="external nofollow noreferrer">Butterfly</a>当然也可以前往<a href="https://hexo.io/themes/%E6%88%96%E8%80%85%E5%8E%BB[GitHub](GitHub.com)%E6%89%BE%E6%89%BE%E5%90%A7" rel="external nofollow noreferrer">https://hexo.io/themes/或者去[GitHub](GitHub.com)找找吧</a>.</p>
-<h1 id="部署到GitHub"><a href="#部署到GitHub" class="headerlink" title="部署到GitHub"></a>部署到GitHub</h1><h2 id="创建GitHub仓库"><a href="#创建GitHub仓库" class="headerlink" title="创建GitHub仓库"></a>创建GitHub仓库</h2><p>登录你的GitHub-来创建一个仓库:</p>
-<p><img src="https://cdn.jsdelivr.net/gh/biliblihuorong/Resources/Image/image-20210520092450492.png" alt="image-20210520092450492"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/biliblihuorong/Resources/Image/image-20210520094408081.png" alt="image-20210520094408081"></p>
-<p>然后点击create a license.<img src="https://cdn.jsdelivr.net/gh/biliblihuorong/Resources/Image/image-20210520095725211.png" alt="image-20210520095725211"></p>
-<h2 id="配置git用于连接GitHub"><a href="#配置git用于连接GitHub" class="headerlink" title="配置git用于连接GitHub"></a>配置git用于连接GitHub</h2><p>右键博客目录,选择Git Bash Here,安装git部署器.</p>
-<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></tbody></table></figure>
-
-<p>继续输入:</p>
-<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">git config --global user.name <span class="string">"GitHub 用户名"</span></span><br><span class="line">git config --global user.email <span class="string">"GitHub 邮箱"</span></span><br></pre></td></tr></tbody></table></figure>
-<p>再博客目录下用vs code打开<code>_config.yml</code>,最底下会有一个<code>Deployment</code>或者叫<code>deploy</code></p>
-<figure class="highlight yml"><table><tbody><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">'git'</span></span><br><span class="line">  <span class="attr">repository:</span>           <span class="comment">#你的GitHub的仓库地址(上图的2号)</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">main</span>          <span class="comment">#分支(看看三号是不是和这个一样不一样就改)</span></span><br></pre></td></tr></tbody></table></figure>
-
-<p>现在可以推送到GitHub,在Git Bash Here,输入:</p>
-<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">hexo g &amp;&amp; hexo d</span><br></pre></td></tr></tbody></table></figure>
-
-<p><img src="https://cdn.jsdelivr.net/gh/biliblihuorong/Resources/Image/image-20210520100443142.png" alt="image-20210520100443142"><img src="https://cdn.jsdelivr.net/gh/biliblihuorong/Resources/Image/image-20210520100528999.png" alt="image-20210520100528999"></p>
-<p>显示:<code>INFO  Deploy done: git</code>,代表成功了,现在访问<code>用户名</code>.GitHub.io就可以了(如果没有等一等).</p>
-<h2 id="自定义域名"><a href="#自定义域名" class="headerlink" title="自定义域名:"></a>自定义域名:</h2><p>这一步需要域名哦,没有的话推荐腾讯云注册一个.</p>
-<ol>
-<li>在博客目录下找到<code>source</code>文件夹,新建一个文本文件,填写完你的域名之后保存,名字改成<code>CNAME</code>去掉.txt哦</li>
-<li>在你购买的域名服务商,添加CNAME解析记录记录值就是你<code>用户名</code>.GitHub.io.</li>
-</ol>
-<h1 id="hexo常用命令"><a href="#hexo常用命令" class="headerlink" title="hexo常用命令:"></a>hexo常用命令:</h1><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">hexo n <span class="string">"第一篇博文"</span>  </span><br></pre></td></tr></tbody></table></figure>
-<p>新建一篇文章,文章名称和标题分别为 第一篇博文.md 和 第一篇博文.<br>此时会在站点根目录下的—-&gt;source—–&gt;_post文件夹下生成 第一篇博文.md文件, 第一篇博文.<br>md文件的顶部(—–分割线上方区域,也称作Front matter区)</p>
-<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">hexo g              <span class="comment">#生成HTML静态网页生成文件在给目录下的 public            g是generate</span></span><br><span class="line">hexo s				<span class="comment">#在本地启动hexo s是sever</span></span><br><span class="line">hexo d				<span class="comment">#将本地数据部署到远端服务器(如GitHub)</span></span><br><span class="line">hexo clean			<span class="comment">#清除缓存 ,网页正常情况下可以忽略此条命令,执行该指令后,会删掉站点根目录下的public文件夹.</span></span><br></pre></td></tr></tbody></table></figure>
-
-<h1 id="总结"><a href="#总结" class="headerlink" title="总结:"></a>总结:</h1><p>hexo搭建并不困难,唯一麻烦的地方就是推送到GitHub或者服务器,但其实本质就是把根目录下的<code>public</code>下的文件推送上去,当然服务器需要安装hexo进行解释.</p>
-<p>写作方面就是需要了解一下MakrDown的基本使用就可以了.</p>
-<p>改主题和背景,一定要详细看每个主题的官方文档,基本上就可以大差不差,如果要添加其他的花里胡哨的东西看点前端三剑客(html,css,js)基本上就可以了</p>
-<p>以上说的仅为个人观点,欢迎大家来进行交流.</p>
-</body></html>]]></content>
-  </entry>
-  <entry>
     <title>换域名了！！</title>
     <url>/posts/moe/</url>
     <content><![CDATA[<html><head></head><body><blockquote>
@@ -1489,11 +1489,6 @@
       </tags>
   </entry>
   <entry>
-    <title>博客评论系统还在测试阶段</title>
-    <url>/posts/%E5%8D%9A%E5%AE%A2%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E8%BF%98%E5%9C%A8%E6%B5%8B%E8%AF%95%E9%98%B6%E6%AE%B5/</url>
-    <content><![CDATA[<html><head></head><body></body></html>]]></content>
-  </entry>
-  <entry>
     <title>TeamSpeak 已经运行一年</title>
     <url>/posts/teamspeak-run-one-year/</url>
     <content><![CDATA[<html><head></head><body><blockquote>
@@ -1568,9 +1563,48 @@
       </tags>
   </entry>
   <entry>
+    <title>博客数据库损坏，正在维护！</title>
+    <url>/posts/%E5%8D%9A%E5%AE%A2%E6%95%B0%E6%8D%AE%E5%BA%93%E6%8D%9F%E5%9D%8F%EF%BC%8C%E6%AD%A3%E5%9C%A8%E7%BB%B4%E6%8A%A4%EF%BC%81/</url>
+    <content><![CDATA[<html><head></head><body><p>因博主手残把动了数据库而且还没有恢复到最近的备份，本博客访问可能会存在一定问题，在博主紧急抢修下，恢复了部分基础功能，博文图片可能暂时无法加载，我相信很快恢复，我现在先睡觉了都12点了。</p>
+</body></html>]]></content>
+      <categories>
+        <category>网络技术</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>博客评论系统还在测试阶段</title>
+    <url>/posts/%E5%8D%9A%E5%AE%A2%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E8%BF%98%E5%9C%A8%E6%B5%8B%E8%AF%95%E9%98%B6%E6%AE%B5/</url>
+    <content><![CDATA[<html><head></head><body></body></html>]]></content>
+  </entry>
+  <entry>
     <title>备案</title>
     <url>/posts/%E5%A4%87%E6%A1%88/</url>
     <content><![CDATA[<html><head></head><body><p>历尽千辛万苦终于备案了感谢 工信部的速度，本以为要等20天才可以，没有想到工信部工作效率如此之高仅用2天时间审核完毕，也感谢阿里云初审人员的速度审核。</p>
+</body></html>]]></content>
+      <categories>
+        <category>生活随想</category>
+      </categories>
+      <tags>
+        <tag>备案</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>本站建立一周年!</title>
+    <url>/posts/%E6%9C%AC%E7%AB%99%E5%BB%BA%E7%AB%8B%E4%B8%80%E5%91%A8%E5%B9%B4/</url>
+    <content><![CDATA[<html><head></head><body><p>不知不觉当中,blog已经陪我走完一年,而我在这一年当中也没有写过什么东西,觉得浪费了资源.虽然建站容易但是,维护确实相当的麻烦. 大概明年五月份的时候可能本站要从word press迁移至Typecho. 不过至于下一次更新可能要继续等到2021年暑假的时候.</p>
+</body></html>]]></content>
+      <categories>
+        <category>生活随想</category>
+      </categories>
+      <tags>
+        <tag>生活随想</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>博客转移备案</title>
+    <url>/posts/%E5%8D%9A%E5%AE%A2%E8%BD%AC%E7%A7%BB%E5%A4%87%E6%A1%88/</url>
+    <content><![CDATA[<html><head></head><body><p>本站已经从wordpress转到hexo，再加上转移服务器提供商需要接入备案原因,所以蒋本站暂时挂到GitHub上.</p>
+<p>本站尚未完全制作完毕,遇到问题请在首页的tg联系我,谢谢!</p>
 </body></html>]]></content>
       <categories>
         <category>生活随想</category>
@@ -1591,25 +1625,17 @@
       </categories>
   </entry>
   <entry>
-    <title>本站建立一周年!</title>
-    <url>/posts/%E6%9C%AC%E7%AB%99%E5%BB%BA%E7%AB%8B%E4%B8%80%E5%91%A8%E5%B9%B4/</url>
-    <content><![CDATA[<html><head></head><body><p>不知不觉当中,blog已经陪我走完一年,而我在这一年当中也没有写过什么东西,觉得浪费了资源.虽然建站容易但是,维护确实相当的麻烦. 大概明年五月份的时候可能本站要从word press迁移至Typecho. 不过至于下一次更新可能要继续等到2021年暑假的时候.</p>
-</body></html>]]></content>
-      <categories>
-        <category>生活随想</category>
-      </categories>
-      <tags>
-        <tag>生活随想</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>博客数据库损坏，正在维护！</title>
-    <url>/posts/%E5%8D%9A%E5%AE%A2%E6%95%B0%E6%8D%AE%E5%BA%93%E6%8D%9F%E5%9D%8F%EF%BC%8C%E6%AD%A3%E5%9C%A8%E7%BB%B4%E6%8A%A4%EF%BC%81/</url>
-    <content><![CDATA[<html><head></head><body><p>因博主手残把动了数据库而且还没有恢复到最近的备份，本博客访问可能会存在一定问题，在博主紧急抢修下，恢复了部分基础功能，博文图片可能暂时无法加载，我相信很快恢复，我现在先睡觉了都12点了。</p>
+    <title>本站正式启动邮箱评论功能</title>
+    <url>/posts/%E6%9C%AC%E7%AB%99%E6%AD%A3%E5%BC%8F%E5%90%AF%E5%8A%A8%E9%82%AE%E7%AE%B1%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/</url>
+    <content><![CDATA[<html><head></head><body><p>邮箱评论功能欢迎大家测试如有bug,请联系我的QQ，谢谢！</p>
 </body></html>]]></content>
       <categories>
         <category>网络技术</category>
       </categories>
+      <tags>
+        <tag>Email</tag>
+        <tag>SMTP</tag>
+      </tags>
   </entry>
   <entry>
     <title>用Java编写一个简易的计算器</title>
@@ -1625,32 +1651,6 @@
       </categories>
       <tags>
         <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>博客转移备案</title>
-    <url>/posts/%E5%8D%9A%E5%AE%A2%E8%BD%AC%E7%A7%BB%E5%A4%87%E6%A1%88/</url>
-    <content><![CDATA[<html><head></head><body><p>本站已经从wordpress转到hexo，再加上转移服务器提供商需要接入备案原因,所以蒋本站暂时挂到GitHub上.</p>
-<p>本站尚未完全制作完毕,遇到问题请在首页的tg联系我,谢谢!</p>
-</body></html>]]></content>
-      <categories>
-        <category>生活随想</category>
-      </categories>
-      <tags>
-        <tag>备案</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>本站正式启动邮箱评论功能</title>
-    <url>/posts/%E6%9C%AC%E7%AB%99%E6%AD%A3%E5%BC%8F%E5%90%AF%E5%8A%A8%E9%82%AE%E7%AE%B1%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/</url>
-    <content><![CDATA[<html><head></head><body><p>邮箱评论功能欢迎大家测试如有bug,请联系我的QQ，谢谢！</p>
-</body></html>]]></content>
-      <categories>
-        <category>网络技术</category>
-      </categories>
-      <tags>
-        <tag>Email</tag>
-        <tag>SMTP</tag>
       </tags>
   </entry>
 </search>
