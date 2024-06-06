@@ -50,6 +50,29 @@
       </tags>
   </entry>
   <entry>
+    <title>ArchLinux 使用体验</title>
+    <url>/posts/ArchLinux/</url>
+    <content><![CDATA[<html><head></head><body><img src="https://img.c-dreamer.top/i/1/2023/02/09/63e4c0b786de8.webp" alt="archlinux-logo-dark-1200dpi.webp" style="zoom: 25%;">
+
+<h1 id="关于-ArchLinux"><a href="#关于-ArchLinux" class="headerlink" title="关于 ArchLinux"></a>关于 ArchLinux</h1><p>Arch 是Linux发行版的一个分支，arch的理念是完全自定义，没有所谓的系统版本，全部是滚动升级（长时间不滚，会滚炸，当然我每天开机第一件事就是滚一下）</p>
+<h1 id="正片开始"><a href="#正片开始" class="headerlink" title="正片开始"></a>正片开始</h1><h2 id="为什么非要选择Arch？"><a href="#为什么非要选择Arch？" class="headerlink" title="为什么非要选择Arch？"></a>为什么非要选择Arch？</h2><p>其实如果你要是在非中国大陆的话，我觉得你使用Ubuntu 或者其他的发行版大同小异，因为我看中了 Arch的万能的AUR软件仓库源，这里面有各位大佬自封装的软件，庞大的软件仓库，例如微信 需要wine 以及烦琐的配置 AUR 可以直接解决这些问题。</p>
+<h2 id="听说安装Arch很难？"><a href="#听说安装Arch很难？" class="headerlink" title="听说安装Arch很难？"></a>听说安装Arch很难？</h2><p>是的 Arch 的安装异常的烦琐切复杂 ，不过如果你擅用<code>Search</code>和<a href="https://wiki.archlinuxcn.org/wiki/%E9%A6%96%E9%A1%B5" rel="external nofollow noreferrer" title="ArchWiKi">ArchWiki</a> 和时间耐心的研究，其实很简单，我是一个纯Linux小白，在查阅ArchWiki花费大量的时间研究之后也安装成功。</p>
+<h2 id="我现在的状态？"><a href="#我现在的状态？" class="headerlink" title="我现在的状态？"></a>我现在的状态？</h2><p>我现在给电脑装载了双系统（怕arch崩了就无了） win11+arch</p>
+<p><img src="https://img.c-dreamer.top/i/1/2023/02/09/63e4bbfff1e9c.webp" alt="ArchLinux 配置.webp"></p>
+<h2 id="使用体验"><a href="#使用体验" class="headerlink" title="使用体验"></a>使用体验</h2><p>我用Arch差不多3个月了，除了刚开始的不适逐渐慢慢适应之后逐渐习惯，但我偶尔也很想换回windows，因为我现在还没有适应在linux只用一个根的感念，而不像windows的区概念（而且我分区还很多）。</p>
+<h1 id="你要现在立刻安装Arch？"><a href="#你要现在立刻安装Arch？" class="headerlink" title="你要现在立刻安装Arch？"></a>你要现在立刻安装Arch？</h1><h3 id="你会首先面临的问题"><a href="#你会首先面临的问题" class="headerlink" title="你会首先面临的问题"></a>你会首先面临的问题</h3><h4 id="游戏生态"><a href="#游戏生态" class="headerlink" title="游戏生态"></a>游戏生态</h4><p>首先Linux上虽然有steam 的Steam Play的加持，游戏生态逐步扩大，但还是有诸多游戏不能游玩，详情可以看这个<a href="https://www.protondb.com/" rel="external nofollow noreferrer" title="protondb">protondb</a>上搜索🔍，还有原神属于能玩的级别但是配置很烦琐。</p>
+<h4 id="软件的生态"><a href="#软件的生态" class="headerlink" title="软件的生态"></a>软件的生态</h4><p>虽然有AUR 的加持但仍然有很多软件只有windows平台还用<code>wine</code>调教不好它例如<code>office</code> ，但这不是说你不能使用这些功能，Linux有很多平替软件可以选择例如 <code>libreoffice</code> or <code>WPS</code>。</p>
+<h4 id="使用习惯"><a href="#使用习惯" class="headerlink" title="使用习惯"></a>使用习惯</h4><p>就像我前面提到的 Linux和Windows对于磁盘区的概念来说，以及你要面临一个新的桌面使用环境。</p>
+</body></html>]]></content>
+      <categories>
+        <category>生活随想</category>
+      </categories>
+      <tags>
+        <tag>Arch</tag>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Linux安装宝塔面板</title>
     <url>/posts/21-8-3/</url>
     <content><![CDATA[<html><head></head><body><blockquote>
@@ -89,6 +112,34 @@
       </categories>
       <tags>
         <tag>宝塔</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2023 总结</title>
+    <url>/posts/2023-Annual-Summary/</url>
+    <content><![CDATA[<html><head></head><body><blockquote>
+<p>应该这个文章会在 31/12/2024 发表</p>
+</blockquote>
+<p>转眼间 23年的就快过完了，回顾过往这一年的时间，貌似有些许的特殊，不至于和前几年一样是一个无聊又无趣。</p>
+<h1 id="博客"><a href="#博客" class="headerlink" title="博客"></a>博客</h1><p>两年的宁静，博客在23年重新绽放光彩。</p>
+<p>23年共计写了 19 篇 文章其中阅读最多的 <a href="https://blog.ning.moe/posts/Spring-Security/">新版本 Spring-Security 配置踩坑</a>  共阅读了 227次 从Google 来的最多，文章是其次是<br><a href="https://blog.ning.moe/posts/Java-CAPTCHA-cloudflare/">Java 使用 CloudFlare Turnstile 验证码</a> 共阅读了 205次。在重新开始写博客之后 本站从 23年6月记录截稿，共收获了  PV <strong>6.52k</strong>  UV <strong>2.16k</strong>。</p>
+<img src="https://img.misaka.pics/ShellBlogImg/1/2023/12/29/658ed5482b2d5.webp" alt="2023-Blog-PV&amp;UV-Date.webp" style="zoom: 80%;">
+
+<blockquote>
+<p>为什么只有6-12月的数据呢？</p>
+<p><del>因为我把1-5月的数据搞丢了。</del></p>
+</blockquote>
+<p>在截稿前收到Google 发来的Email 28天从Google 来了120 的</p>
+<img src="https://img.misaka.pics/ShellBlogImg/1/2023/12/31/65916362b2813.webp" alt="Google-search-PV.webp" style="zoom:50%;">
+
+<h1 id="赛项"><a href="#赛项" class="headerlink" title="赛项"></a>赛项</h1><p>我参加了<code>应用软件系统开发</code>  荣获一等奖。然而，对于这次比赛，我心中并未留下太多深刻的评价，因为涉及的内容大多是繁琐且重复的工作。</p>
+<img src="https://img.misaka.pics/ShellBlogImg/1/2023/12/31/65916654c7cc0.webp" alt="ChinaSkills.webp" style="zoom: 50%;">
+
+<h1 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h1><p>23年的故事就此落幕，还有23年所遇到的人们，也开启了我线下第一次面基之旅（不展开叙述）。24年的故事即将开启，这一年里展开新的冒险。我希望在24年，能够踏上旅途，探访不同的地方，因为美好的青春如此短暂，而旅行是拓展视野和经历的最佳方式。同时，我收集更多计算机知识的奥秘，为自己的技术之旅添上浓墨重彩的一笔。至于博客吗，我也会继续写下去的。</p>
+</body></html>]]></content>
+      <tags>
+        <tag>总结</tag>
+        <tag>2023</tag>
       </tags>
   </entry>
   <entry>
@@ -133,31 +184,32 @@
       </tags>
   </entry>
   <entry>
-    <title>2023 总结</title>
-    <url>/posts/2023-Annual-Summary/</url>
-    <content><![CDATA[<html><head></head><body><blockquote>
-<p>应该这个文章会在 31/12/2024 发表</p>
-</blockquote>
-<p>转眼间 23年的就快过完了，回顾过往这一年的时间，貌似有些许的特殊，不至于和前几年一样是一个无聊又无趣。</p>
-<h1 id="博客"><a href="#博客" class="headerlink" title="博客"></a>博客</h1><p>两年的宁静，博客在23年重新绽放光彩。</p>
-<p>23年共计写了 19 篇 文章其中阅读最多的 <a href="https://blog.ning.moe/posts/Spring-Security/">新版本 Spring-Security 配置踩坑</a>  共阅读了 227次 从Google 来的最多，文章是其次是<br><a href="https://blog.ning.moe/posts/Java-CAPTCHA-cloudflare/">Java 使用 CloudFlare Turnstile 验证码</a> 共阅读了 205次。在重新开始写博客之后 本站从 23年6月记录截稿，共收获了  PV <strong>6.52k</strong>  UV <strong>2.16k</strong>。</p>
-<img src="https://img.misaka.pics/ShellBlogImg/1/2023/12/29/658ed5482b2d5.webp" alt="2023-Blog-PV&amp;UV-Date.webp" style="zoom: 80%;">
-
-<blockquote>
-<p>为什么只有6-12月的数据呢？</p>
-<p><del>因为我把1-5月的数据搞丢了。</del></p>
-</blockquote>
-<p>在截稿前收到Google 发来的Email 28天从Google 来了120 的</p>
-<img src="https://img.misaka.pics/ShellBlogImg/1/2023/12/31/65916362b2813.webp" alt="Google-search-PV.webp" style="zoom:50%;">
-
-<h1 id="赛项"><a href="#赛项" class="headerlink" title="赛项"></a>赛项</h1><p>我参加了<code>应用软件系统开发</code>  荣获一等奖。然而，对于这次比赛，我心中并未留下太多深刻的评价，因为涉及的内容大多是繁琐且重复的工作。</p>
-<img src="https://img.misaka.pics/ShellBlogImg/1/2023/12/31/65916654c7cc0.webp" alt="ChinaSkills.webp" style="zoom: 50%;">
-
-<h1 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h1><p>23年的故事就此落幕，还有23年所遇到的人们，也开启了我线下第一次面基之旅（不展开叙述）。24年的故事即将开启，这一年里展开新的冒险。我希望在24年，能够踏上旅途，探访不同的地方，因为美好的青春如此短暂，而旅行是拓展视野和经历的最佳方式。同时，我收集更多计算机知识的奥秘，为自己的技术之旅添上浓墨重彩的一笔。至于博客吗，我也会继续写下去的。</p>
+    <title>使用Cloud Flare Tunnel和 Acces Application安全的暴露在公网</title>
+    <url>/posts/CloudFlare-Tunnel-Application-Access/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h1><p>如果搞 Home Lab 始终绕不开的话题是，我们如何将自己的内网服务暴露到公网上，又如何保证我们的安全。<br>现在可以使用我们赛博菩萨 Cloudflare 提供的 Zero Trust 来保护我们的安全。</p>
+<p>演示的dome ： <a href="https://hp.ning.moe/" rel="external nofollow noreferrer">HomePage</a> 和 <a href="https://misakashell.cloudflareaccess.com/" rel="external nofollow noreferrer">Cloud Flare Zero Trust 主页</a></p>
+<h1 id="正文："><a href="#正文：" class="headerlink" title="正文："></a>正文：</h1><h2 id="使用-Tunnel-暴露服务"><a href="#使用-Tunnel-暴露服务" class="headerlink" title="使用 Tunnel 暴露服务"></a>使用 Tunnel 暴露服务</h2><p>我们需要先登录<a href="https://one.dash.cloudflare.com/" rel="external nofollow noreferrer">CF zero trust的管理平台</a>，添加新的隧道点击：<code>Networks/Tunnels</code> 我们需要添加一个隧道让我们本地和 <code>Cloudflare Zero Trust</code>服务器进行连接。简单的配置完隧道名字</p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/22/6626359570249.webp" alt="Cloud-Flare-Zero-Trust-Dash-Tunnels.webp"></p>
+<p>会自动跳转到tunnel 这个页面，没跳转的 Networks/Tunnels/你的隧道/config。我们需要安装一个cloudflared的程序，这个页面已经为我们提供好了常见的系统，如Linux MacOS Windows，复制命令直接在我们终端运行即可。</p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/22/66263669cc5c3.webp" alt="CloudFlared-Download.webp"></p>
+<p>然后 下一步 ，简单配置一下。保存即可。返回菜单会发现刚刚创建的 <code>Tunnel</code> 等待 <code>Status</code> 显示<code>HEALTHY</code> 访问你的 配置好的域名应该就可以访问了。</p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/22/6626371255c1f.webp" alt="Cloud-Flare-Tunnel-Config.webp"></p>
+<h2 id="使用-Access-Applications-认证"><a href="#使用-Access-Applications-认证" class="headerlink" title="使用 Access Applications 认证"></a>使用 Access Applications 认证</h2><p>首先你需要确保你有登录方式 <code>Settings</code> –&gt;<code>Authentication</code>–&gt;<code>Login methods</code> ,如果没有你需要自行创建。</p>
+<p>来到<code> Access</code> –&gt;<code> Applications</code> –&gt; <code> Add an application</code> 选择<code>Self-hosted</code>，填写你刚才的域名，然后下一步。</p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/22/66263cfec6386.webp" alt="CF-Access-Applications.webp"></p>
+<p><code>policy name</code> 可以随便填写 记得 <code>Action</code>是 <code>Allow</code>，这里的Session 是多久在进行登录验证，可以调节时间长一点。</p>
+<p><code>Create additional rules</code> 根据你刚才配置的 <code>Authentication</code> 来填写，我这里是填写CF自带的邮箱验证码进行登录的。</p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/22/66263cff40b37.webp" alt="CF-Add an application.webp"></p>
+<p>配置完毕之后，访问你配置的域名就会出现拦截了，例如我<a href="https://hp.ning.moe/" rel="external nofollow noreferrer">配置好的</a>这我设置了自动跳转所以会到我的<code>SSO.ning.moe</code></p>
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p><a href="https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/" rel="external nofollow noreferrer">Cloudflare Tunnel 配置文档</a></p>
+<p><a href="https://developers.cloudflare.com/cloudflare-one/applications/" rel="external nofollow noreferrer">Applications Access</a></p>
 </body></html>]]></content>
+      <categories>
+        <category>网络技术</category>
+      </categories>
       <tags>
-        <tag>总结</tag>
-        <tag>2023</tag>
+        <tag>CloudFlare</tag>
+        <tag>Zero Trust</tag>
       </tags>
   </entry>
   <entry>
@@ -214,26 +266,173 @@
       </tags>
   </entry>
   <entry>
-    <title>ArchLinux 使用体验</title>
-    <url>/posts/ArchLinux/</url>
-    <content><![CDATA[<html><head></head><body><img src="https://img.c-dreamer.top/i/1/2023/02/09/63e4c0b786de8.webp" alt="archlinux-logo-dark-1200dpi.webp" style="zoom: 25%;">
+    <title>改造家里网络</title>
+    <url>/posts/Home-NetWork/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
+<p>也好久没更新来水一波。</p>
+</blockquote>
+<p>寒假里面，打算在折腾一下家里面的网络，将家里21年买的<code>r2s</code>换成<code>J4125</code>这下就够我折腾的了。</p>
+<img src="https://img.misaka.pics/ShellBlogImg/1/2024/03/06/65e8108d61fe7.webp" alt="网络拓补图.webp" style="zoom:50%;">
 
-<h1 id="关于-ArchLinux"><a href="#关于-ArchLinux" class="headerlink" title="关于 ArchLinux"></a>关于 ArchLinux</h1><p>Arch 是Linux发行版的一个分支，arch的理念是完全自定义，没有所谓的系统版本，全部是滚动升级（长时间不滚，会滚炸，当然我每天开机第一件事就是滚一下）</p>
-<h1 id="正片开始"><a href="#正片开始" class="headerlink" title="正片开始"></a>正片开始</h1><h2 id="为什么非要选择Arch？"><a href="#为什么非要选择Arch？" class="headerlink" title="为什么非要选择Arch？"></a>为什么非要选择Arch？</h2><p>其实如果你要是在非中国大陆的话，我觉得你使用Ubuntu 或者其他的发行版大同小异，因为我看中了 Arch的万能的AUR软件仓库源，这里面有各位大佬自封装的软件，庞大的软件仓库，例如微信 需要wine 以及烦琐的配置 AUR 可以直接解决这些问题。</p>
-<h2 id="听说安装Arch很难？"><a href="#听说安装Arch很难？" class="headerlink" title="听说安装Arch很难？"></a>听说安装Arch很难？</h2><p>是的 Arch 的安装异常的烦琐切复杂 ，不过如果你擅用<code>Search</code>和<a href="https://wiki.archlinuxcn.org/wiki/%E9%A6%96%E9%A1%B5" rel="external nofollow noreferrer" title="ArchWiKi">ArchWiki</a> 和时间耐心的研究，其实很简单，我是一个纯Linux小白，在查阅ArchWiki花费大量的时间研究之后也安装成功。</p>
-<h2 id="我现在的状态？"><a href="#我现在的状态？" class="headerlink" title="我现在的状态？"></a>我现在的状态？</h2><p>我现在给电脑装载了双系统（怕arch崩了就无了） win11+arch</p>
-<p><img src="https://img.c-dreamer.top/i/1/2023/02/09/63e4bbfff1e9c.webp" alt="ArchLinux 配置.webp"></p>
-<h2 id="使用体验"><a href="#使用体验" class="headerlink" title="使用体验"></a>使用体验</h2><p>我用Arch差不多3个月了，除了刚开始的不适逐渐慢慢适应之后逐渐习惯，但我偶尔也很想换回windows，因为我现在还没有适应在linux只用一个根的感念，而不像windows的区概念（而且我分区还很多）。</p>
-<h1 id="你要现在立刻安装Arch？"><a href="#你要现在立刻安装Arch？" class="headerlink" title="你要现在立刻安装Arch？"></a>你要现在立刻安装Arch？</h1><h3 id="你会首先面临的问题"><a href="#你会首先面临的问题" class="headerlink" title="你会首先面临的问题"></a>你会首先面临的问题</h3><h4 id="游戏生态"><a href="#游戏生态" class="headerlink" title="游戏生态"></a>游戏生态</h4><p>首先Linux上虽然有steam 的Steam Play的加持，游戏生态逐步扩大，但还是有诸多游戏不能游玩，详情可以看这个<a href="https://www.protondb.com/" rel="external nofollow noreferrer" title="protondb">protondb</a>上搜索🔍，还有原神属于能玩的级别但是配置很烦琐。</p>
-<h4 id="软件的生态"><a href="#软件的生态" class="headerlink" title="软件的生态"></a>软件的生态</h4><p>虽然有AUR 的加持但仍然有很多软件只有windows平台还用<code>wine</code>调教不好它例如<code>office</code> ，但这不是说你不能使用这些功能，Linux有很多平替软件可以选择例如 <code>libreoffice</code> or <code>WPS</code>。</p>
-<h4 id="使用习惯"><a href="#使用习惯" class="headerlink" title="使用习惯"></a>使用习惯</h4><p>就像我前面提到的 Linux和Windows对于磁盘区的概念来说，以及你要面临一个新的桌面使用环境。</p>
+<p>这是我目前的家里主题结构 由<code>r2s</code>软路由担任<code>PPPOE</code>拨号，有两个<code>AP</code> 组成有线<code>mesh</code>。</p>
+<p>对于 <code>J4125 </code>我打算使用<code>PVE</code>+<code>Ikuai</code>+<code>Debian</code></p>
+<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><h2 id="折腾前的痛点"><a href="#折腾前的痛点" class="headerlink" title="折腾前的痛点"></a>折腾前的痛点</h2><ul>
+<li>稳定：对于<code>r2s</code>来说有时候不是特别问题定，需要定时重启，我尝试换了很多的固件，都无法解决此问题</li>
+<li>性能不足 ：<code>r2s</code>有人测试基本上稳定千兆是没有问题的了（在不使用科学上网的时候），但对于小包转发来说多少有些吃力。</li>
+<li>ARM 生态问题：我知道ARM 发展的很好，但很多老的程序还只能支持<code>X86</code>.</li>
+</ul>
+<h2 id="折腾解决之后的"><a href="#折腾解决之后的" class="headerlink" title="折腾解决之后的"></a>折腾解决之后的</h2><ul>
+<li>稳定：目前连续运行了20天没有发现异常</li>
+<li>性能：<code>J4125</code>妥妥够我300mbps 的带宽使用了（满载带宽，CPU占用15%~20%）</li>
+<li>软件：解决了ARM 部分软件问题。</li>
+</ul>
+<p><code>J4125</code>进行<code>PVE </code>虚拟化，由<code>Ikuai </code>作为主路由进行<code>PPPOE</code> 以及流控管理，<code>Debian`` docker</code> 化跑<code>Adguard Heome </code>家用<code>DNS </code>。</p>
+<img src="https://img.misaka.pics/ShellBlogImg/1/2024/03/06/65e82e1b241e5.webp" alt="网络拓补图-2.webp" style="zoom: 67%;">
 </body></html>]]></content>
       <categories>
-        <category>生活随想</category>
+        <category>网络技术</category>
       </categories>
       <tags>
-        <tag>Arch</tag>
-        <tag>Linux</tag>
+        <tag>Ikuai</tag>
+        <tag>J4125</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>爱快IPv6防火墙配置</title>
+    <url>/posts/Ikuai-firewall-IPv6/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>爱快尽然默认没有开启<code>IPv6</code>对内网设备的阻断，我发现的时候十分震惊，而且已经在公网上暴露有一天以上了，最糟糕的事情，内网设备的密码全部是弱密码，吓得我先立刻断掉<code>IPv6</code>接入，仔细排查了一下内网设备还好没有人扫到并且进行爆破。</p>
+<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><p>请确保你的<code>ikuai </code>系统是最新版本并且登录<code>ikuai Web</code>后台，<code>安全设置</code> –&gt;<code>ACL规则</code></p>
+<h2 id="阻断所有IPv6链接"><a href="#阻断所有IPv6链接" class="headerlink" title="阻断所有IPv6链接"></a>阻断所有IPv6链接</h2><blockquote>
+<p>此操作不会阻断响应<code>IPv6</code>的流量</p>
+</blockquote>
+<p>由于 <code>ikuai </code>在 3.7.11 版本还不支持放行或阻断<code> ICMP</code> 协议，如果您想外网设备能ping通内网的话，需要需要创建两个配置，一个是阻断<code>TCP</code>还有一个阻断<code>UDP</code>，不想<code>ping</code>通的话，只需要创建一个配置选择任意协议即可。</p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/03/06/65e834d3a0bdd.webp" alt="ipv6防护墙介绍.webp"></p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/03/06/65e834d40ca02.webp" alt="ipv6阻断.webp"></p>
+<p>进接口一定是<code>wan</code>口由于笔者只有一个<code>wan</code>口，如果您有多个话请务必全部勾选，出接口是<code>lan</code>同样如果您有多个<code>lan</code>接口请全部勾上，这样我们内网设备就不会暴露外网了。</p>
+<h2 id="打开指定IPv6的连接"><a href="#打开指定IPv6的连接" class="headerlink" title="打开指定IPv6的连接"></a>打开指定IPv6的连接</h2><blockquote>
+<p>再说指定放行<code>IPv6</code>地址，如果您是静态<code>IPv6</code>，那你自己放行那个ip 即可，但是身为家庭宽带的话都是动态<code>IPv6</code>地址根本不可能知道ip会变成什么样子，还是说每次变化ip 的地址重新改吗？这里需要了解一下ipv6 的后缀生成是受MAC 地址影响的，通过EUI-64 编码进行处理，详情访问: <a href="https://ccie.lol/knowledge-base/ipv6-use-eui-64-convert-link-local-address/" rel="external nofollow noreferrer">【转】通过EUI-64自动生成IPv6地址和IPv6链路本地地址（Link-Local Address）</a></p>
+</blockquote>
+<p><strong>对于windows 获取ipv6地址使用 EUI-64 编码得到的理论值和实际值可能不一样</strong></p>
+<p>可以使用 <a href="https://eui64-calc.princelle.org/" rel="external nofollow noreferrer">EUI-64 计算器</a></p>
+<p>例如 <code>bc:34:11:c6:8a:19 </code>通过计算可以得到 <code>BE34:11FF:FEC6:8A19</code> 理论情况的<code>ipv6</code>，据我测试后四位基本上都是一样的，前面受到<code>IPv6</code>前缀影响。</p>
+<img src="https://img.misaka.pics/ShellBlogImg/1/2024/03/06/65e846c30a412.webp" alt="指定IPv6放行.webp" style="zoom:67%;">
+
+<p>在已经匹配的内容中<code>::8A19</code>改成你自己的后缀四位，<code>ikuai </code>的防火墙逻辑是先放行后阻断，所以不需要关系防火墙配置的顺序。</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">::8a1f/::ffff</span><br></pre></td></tr></tbody></table></figure>
+
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p><a href="https://ccie.lol/knowledge-base/ipv6-use-eui-64-convert-link-local-address/" rel="external nofollow noreferrer">【转】通过EUI-64自动生成IPv6地址和IPv6链路本地地址（Link-Local Address）</a></p>
+<p> <a href="https://eui64-calc.princelle.org/" rel="external nofollow noreferrer">EUI-64 计算器</a></p>
+</body></html>]]></content>
+      <tags>
+        <tag>防火墙</tag>
+        <tag>firewall</tag>
+        <tag>Ikuai</tag>
+        <tag>IPv6</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java使用CloudFlare Turnstile 验证码</title>
+    <url>/posts/Java-CAPTCHA-cloudflare/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="引言："><a href="#引言：" class="headerlink" title="引言："></a>引言：</h1><blockquote>
+<p>在学习springMVC 和Spring Security中，总有一个服务，叫做验证码，每次我自己写这个验证码的时候，最后还要在测试，而且特别的不友好，甚至我自己都分不清那个字母，当然Java里面有个很优秀的滑块验证码比如这个大佬开发的<a href="https://gitee.com/tianai/tianai-captcha" rel="external nofollow noreferrer">tianai-captcha</a><br>总是给人一种不是很优雅，我自己是人类，为什么还要进行验证码，而且这种验证往往经过训练的ai更容易比人类做的好，这就失去了验证码的意义<code>CAPTCHA</code>，Cloud Flare就做了一个无需进行让你输入字符或者滑动以及选择图片的验证码，如果需要更多了解你可以访问CF的官方介绍<a href="https://blog.cloudflare.com/zh-cn/turnstile-private-captcha-alternative-zh-cn/" rel="external nofollow noreferrer">CloudFlare-Turnstile</a></p>
+</blockquote>
+<h1 id="需要准备"><a href="#需要准备" class="headerlink" title="需要准备"></a>需要准备</h1><ol>
+<li>一个Cloud Flare账号</li>
+<li>一个域名（不需要接入Cloud Flare）<h1 id="流程"><a href="#流程" class="headerlink" title="流程"></a>流程</h1></li>
+</ol>
+<blockquote>
+<p>CloudFlare以下简称CF， 官网的配置文件已经写的很清楚<br> <img src="https://img.misaka.pics/i/1/2023/04/21/64423eac7e80f.webp" alt="Turnstile" style="zoom: 67%;"></p>
+<ol>
+<li>用户打开受验证码保护的网页，先会和CF的验证码服务器进行通讯拿到，JWT令牌（令牌有效300秒）</li>
+<li>用户会把提交内容以及CF生成的令牌发送到服务器，</li>
+<li>服务器会拿着CF令牌进行和CF验证码服务器通讯，拿到JSON数值</li>
+</ol>
+</blockquote>
+<h1 id="快速使用"><a href="#快速使用" class="headerlink" title="快速使用"></a>快速使用</h1><ol>
+<li>登录你的CF账号会在仪表盘的左侧看到<code>Turnstile </code></li>
+<li>点击添加</li>
+<li><img src="https://img.misaka.pics/i/1/2023/03/28/6422b39497161.webp" alt="image-20230328110719966" style="zoom:50%;"></li>
+</ol>
+<p>我一般是选择托管，由cf来决定用户需不需要进行交互一下，</p>
+<ol start="4">
+<li>注册完毕之后我们会得到两个值一个是站点密钥，一个是密钥，密钥是用来进行服务端和CF通讯的，而站点密钥是放在被保护的资源上的。</li>
+</ol>
+<p>按照<a href="https://developers.cloudflare.com/turnstile/get-started/client-side-rendering/" rel="external nofollow noreferrer">CF文档的客户端配置</a>我这里就那官方的例子来</p>
+<figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"X-UA-Compatible"</span> <span class="attr">content</span>=<span class="string">"IE=edge"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width, initial-scale=1.0"</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- 引用CF的验证码js --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://challenges.cloudflare.com/turnstile/v0/api.js"</span> <span class="attr">async</span> <span class="attr">defer</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">form</span> <span class="attr">id</span>=<span class="string">"form"</span> <span class="attr">action</span>=<span class="string">"/login"</span> <span class="attr">method</span>=<span class="string">"POST"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">"username"</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">placeholder</span>=<span class="string">"username"</span> <span class="attr">name</span>=<span class="string">"username"</span> /&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">"password"</span> <span class="attr">type</span>=<span class="string">"password"</span> <span class="attr">placeholder</span>=<span class="string">"password"</span> <span class="attr">name</span>=<span class="string">"password"</span> /&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- 在data-sitekey中需要填写站点密钥 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"cf-turnstile"</span> <span class="attr">data-sitekey</span>=<span class="string">"0x4AAAAAAACzpeJEUBQ4rBi-"</span> <span class="attr">data-callback</span>=<span class="string">"javascriptCallback"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">button</span> <span class="attr">id</span>=<span class="string">"button"</span> <span class="attr">type</span>=<span class="string">"submit"</span> <span class="attr">value</span>=<span class="string">"Submit"</span>&gt;</span>Log in<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>用户单击的登陆之后我们就能在后端拿到用户的账号密码以及CF的令牌。我们会在后端拿到一个名为：<code>cf-turnstile-response</code>的键值对，这里面存放的是cf的令牌。</p>
+<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> String <span class="title function_">test</span><span class="params">(String req)</span> <span class="keyword">throws</span> IOException {</span><br><span class="line">	<span class="comment">//secret 是填写密钥</span></span><br><span class="line">	<span class="type">String</span> <span class="variable">secret</span> <span class="operator">=</span> <span class="string">""</span>;</span><br><span class="line">	<span class="comment">//url是默认的地址无需更改</span></span><br><span class="line">	<span class="type">URL</span> <span class="variable">url</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">URL</span>(<span class="string">"https://challenges.cloudflare.com/turnstile/v0/siteverify"</span>);</span><br><span class="line">	<span class="type">HttpURLConnection</span> <span class="variable">httpConn</span> <span class="operator">=</span> (HttpURLConnection) url.openConnection();</span><br><span class="line">	httpConn.setRequestMethod(<span class="string">"POST"</span>);</span><br><span class="line">	<span class="comment">//请求类型cf 请求仅支持 application/x-www-form-urlencoded 或者是 application/JSON</span></span><br><span class="line">	httpConn.setRequestProperty(<span class="string">"Content-Type"</span>, <span class="string">"application/x-www-form-urlencoded"</span>);</span><br><span class="line"></span><br><span class="line">	httpConn.setDoOutput(<span class="literal">true</span>);</span><br><span class="line">	<span class="type">OutputStreamWriter</span> <span class="variable">writer</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">OutputStreamWriter</span>(httpConn.getOutputStream());</span><br><span class="line">	writer.write(<span class="string">"secret="</span>+secret+<span class="string">"&amp;response="</span>+req);</span><br><span class="line">	writer.flush();</span><br><span class="line">	writer.close();</span><br><span class="line">	httpConn.getOutputStream().close();</span><br><span class="line"></span><br><span class="line">	<span class="type">InputStream</span> <span class="variable">responseStream</span> <span class="operator">=</span> httpConn.getResponseCode() / <span class="number">100</span> == <span class="number">2</span></span><br><span class="line">			? httpConn.getInputStream()</span><br><span class="line">			: httpConn.getErrorStream();</span><br><span class="line">	<span class="type">Scanner</span> <span class="variable">s</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(responseStream).useDelimiter(<span class="string">"\\A"</span>);</span><br><span class="line">	<span class="type">String</span> <span class="variable">response</span> <span class="operator">=</span> s.hasNext() ? s.next() : <span class="string">""</span>;</span><br><span class="line">	System.out.println(response);</span><br><span class="line">	<span class="keyword">return</span> response;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<p>上述是我们拿到用户的<code>cf-turnstile-response</code>值然后和cf通讯返回的<code>response</code>就是CF给我们的JSON。</p>
+<p>根据官方文档：</p>
+<p>如果验证成功，响应应类似于以下内容：</p>
+<figure class="highlight json"><table><tbody><tr><td class="code"><pre><span class="line"><span class="punctuation">{</span></span><br><span class="line">  <span class="attr">"success"</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">"challenge_ts"</span><span class="punctuation">:</span> <span class="string">"2022-02-28T15:14:30.096Z"</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">"hostname"</span><span class="punctuation">:</span> <span class="string">"example.com"</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">"error-codes"</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">"action"</span><span class="punctuation">:</span> <span class="string">"login"</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">"cdata"</span><span class="punctuation">:</span> <span class="string">"sessionid-123456789"</span></span><br><span class="line"><span class="punctuation">}</span></span><br></pre></td></tr></tbody></table></figure>
+
+
+
+<ul>
+<li><code>challenge_ts</code>是解决挑战时的 ISO 时间戳。</li>
+<li><code>hostname</code>是为其提供质询的主机名。</li>
+<li><code>action</code>是传递给客户端小部件的客户小部件标识符。这用于区分在分析中使用相同站点密钥的小部件。它的完整性受到攻击者修改的保护。建议验证操作是否与预期值匹配。</li>
+<li><code>cdata</code>是传递给客户端小部件的客户数据。客户可以使用它来传达状态。它的完整性受到攻击者修改的保护。</li>
+<li><code>error-codes</code>是发生的错误列表。</li>
+</ul>
+<p>如果验证失败，响应应类似于以下内容：</p>
+<figure class="highlight json"><table><tbody><tr><td class="code"><pre><span class="line"><span class="punctuation">{</span></span><br><span class="line">  <span class="attr">"success"</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">false</span></span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">"error-codes"</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">    <span class="string">"invalid-input-response"</span></span><br><span class="line">  <span class="punctuation">]</span></span><br><span class="line"><span class="punctuation">}</span></span><br></pre></td></tr></tbody></table></figure>
+
+
+
+<p><code>success</code>通过将属性设置为 来指示验证错误<code>false</code>。提供了错误代码列表以指示响应无法验证的原因。响应还可能包含其他字段，具体取决于 Turnstile siteverify 是否能够成功或不成功地解析响应。</p>
+<p> <strong>错误代码</strong>：</p>
+<table>
+<thead>
+<tr>
+<th align="left">错误代码</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>missing-input-secret</code></td>
+<td align="left">未传递秘密参数。</td>
+</tr>
+<tr>
+<td align="left"><code>invalid-input-secret</code></td>
+<td align="left">秘密参数无效或不存在。</td>
+</tr>
+<tr>
+<td align="left"><code>missing-input-response</code></td>
+<td align="left">未传递响应参数。</td>
+</tr>
+<tr>
+<td align="left"><code>invalid-input-response</code></td>
+<td align="left">响应参数无效或已过期。</td>
+</tr>
+<tr>
+<td align="left"><code>bad-request</code></td>
+<td align="left">该请求被拒绝，因为它格式不正确。</td>
+</tr>
+<tr>
+<td align="left"><code>timeout-or-duplicate</code></td>
+<td align="left">响应参数之前已经过验证。</td>
+</tr>
+<tr>
+<td align="left"><code>internal-error</code></td>
+<td align="left">验证响应时发生内部错误。可以重试该请求。</td>
+</tr>
+</tbody></table>
+<p>根据以上信息我们就可以判断并且，接收cf的保护了。</p>
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><blockquote>
+<p><a href="https://developers.cloudflare.com/turnstile/" rel="external nofollow noreferrer">CF Turnstile 开发文档</a><br><a href="https://blog.cloudflare.com/zh-cn/turnstile-private-captcha-alternative-zh-cn/" rel="external nofollow noreferrer">CloudFlare-Turnstile介绍</a></p>
+</blockquote>
+</body></html>]]></content>
+      <categories>
+        <category>网络技术</category>
+      </categories>
+      <tags>
+        <tag>CloudFlare</tag>
+        <tag>Spring</tag>
+        <tag>Java</tag>
+        <tag>CAPTCHA</tag>
       </tags>
   </entry>
   <entry>
@@ -454,242 +653,46 @@
         <category>网络技术</category>
       </categories>
       <tags>
+        <tag>Linux</tag>
         <tag>IPtables</tag>
         <tag>防火墙</tag>
         <tag>firewall</tag>
-        <tag>Linux</tag>
         <tag>网络安全</tag>
       </tags>
   </entry>
   <entry>
-    <title>改造家里网络</title>
-    <url>/posts/Home-NetWork/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
-<p>也好久没更新来水一波。</p>
-</blockquote>
-<p>寒假里面，打算在折腾一下家里面的网络，将家里21年买的<code>r2s</code>换成<code>J4125</code>这下就够我折腾的了。</p>
-<img src="https://img.misaka.pics/ShellBlogImg/1/2024/03/06/65e8108d61fe7.webp" alt="网络拓补图.webp" style="zoom:50%;">
-
-<p>这是我目前的家里主题结构 由<code>r2s</code>软路由担任<code>PPPOE</code>拨号，有两个<code>AP</code> 组成有线<code>mesh</code>。</p>
-<p>对于 <code>J4125 </code>我打算使用<code>PVE</code>+<code>Ikuai</code>+<code>Debian</code></p>
-<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><h2 id="折腾前的痛点"><a href="#折腾前的痛点" class="headerlink" title="折腾前的痛点"></a>折腾前的痛点</h2><ul>
-<li>稳定：对于<code>r2s</code>来说有时候不是特别问题定，需要定时重启，我尝试换了很多的固件，都无法解决此问题</li>
-<li>性能不足 ：<code>r2s</code>有人测试基本上稳定千兆是没有问题的了（在不使用科学上网的时候），但对于小包转发来说多少有些吃力。</li>
-<li>ARM 生态问题：我知道ARM 发展的很好，但很多老的程序还只能支持<code>X86</code>.</li>
-</ul>
-<h2 id="折腾解决之后的"><a href="#折腾解决之后的" class="headerlink" title="折腾解决之后的"></a>折腾解决之后的</h2><ul>
-<li>稳定：目前连续运行了20天没有发现异常</li>
-<li>性能：<code>J4125</code>妥妥够我300mbps 的带宽使用了（满载带宽，CPU占用15%~20%）</li>
-<li>软件：解决了ARM 部分软件问题。</li>
-</ul>
-<p><code>J4125</code>进行<code>PVE </code>虚拟化，由<code>Ikuai </code>作为主路由进行<code>PPPOE</code> 以及流控管理，<code>Debian`` docker</code> 化跑<code>Adguard Heome </code>家用<code>DNS </code>。</p>
-<img src="https://img.misaka.pics/ShellBlogImg/1/2024/03/06/65e82e1b241e5.webp" alt="网络拓补图-2.webp" style="zoom: 67%;">
-</body></html>]]></content>
-      <categories>
-        <category>网络技术</category>
-      </categories>
-      <tags>
-        <tag>Ikuai</tag>
-        <tag>J4125</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>爱快IPv6防火墙配置</title>
-    <url>/posts/Ikuai-firewall-IPv6/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>爱快尽然默认没有开启<code>IPv6</code>对内网设备的阻断，我发现的时候十分震惊，而且已经在公网上暴露有一天以上了，最糟糕的事情，内网设备的密码全部是弱密码，吓得我先立刻断掉<code>IPv6</code>接入，仔细排查了一下内网设备还好没有人扫到并且进行爆破。</p>
-<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><p>请确保你的<code>ikuai </code>系统是最新版本并且登录<code>ikuai Web</code>后台，<code>安全设置</code> –&gt;<code>ACL规则</code></p>
-<h2 id="阻断所有IPv6链接"><a href="#阻断所有IPv6链接" class="headerlink" title="阻断所有IPv6链接"></a>阻断所有IPv6链接</h2><blockquote>
-<p>此操作不会阻断响应<code>IPv6</code>的流量</p>
-</blockquote>
-<p>由于 <code>ikuai </code>在 3.7.11 版本还不支持放行或阻断<code> ICMP</code> 协议，如果您想外网设备能ping通内网的话，需要需要创建两个配置，一个是阻断<code>TCP</code>还有一个阻断<code>UDP</code>，不想<code>ping</code>通的话，只需要创建一个配置选择任意协议即可。</p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/03/06/65e834d3a0bdd.webp" alt="ipv6防护墙介绍.webp"></p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/03/06/65e834d40ca02.webp" alt="ipv6阻断.webp"></p>
-<p>进接口一定是<code>wan</code>口由于笔者只有一个<code>wan</code>口，如果您有多个话请务必全部勾选，出接口是<code>lan</code>同样如果您有多个<code>lan</code>接口请全部勾上，这样我们内网设备就不会暴露外网了。</p>
-<h2 id="打开指定IPv6的连接"><a href="#打开指定IPv6的连接" class="headerlink" title="打开指定IPv6的连接"></a>打开指定IPv6的连接</h2><blockquote>
-<p>再说指定放行<code>IPv6</code>地址，如果您是静态<code>IPv6</code>，那你自己放行那个ip 即可，但是身为家庭宽带的话都是动态<code>IPv6</code>地址根本不可能知道ip会变成什么样子，还是说每次变化ip 的地址重新改吗？这里需要了解一下ipv6 的后缀生成是受MAC 地址影响的，通过EUI-64 编码进行处理，详情访问: <a href="https://ccie.lol/knowledge-base/ipv6-use-eui-64-convert-link-local-address/" rel="external nofollow noreferrer">【转】通过EUI-64自动生成IPv6地址和IPv6链路本地地址（Link-Local Address）</a></p>
-</blockquote>
-<p><strong>对于windows 获取ipv6地址使用 EUI-64 编码得到的理论值和实际值可能不一样</strong></p>
-<p>可以使用 <a href="https://eui64-calc.princelle.org/" rel="external nofollow noreferrer">EUI-64 计算器</a></p>
-<p>例如 <code>bc:34:11:c6:8a:19 </code>通过计算可以得到 <code>BE34:11FF:FEC6:8A19</code> 理论情况的<code>ipv6</code>，据我测试后四位基本上都是一样的，前面受到<code>IPv6</code>前缀影响。</p>
-<img src="https://img.misaka.pics/ShellBlogImg/1/2024/03/06/65e846c30a412.webp" alt="指定IPv6放行.webp" style="zoom:67%;">
-
-<p>在已经匹配的内容中<code>::8A19</code>改成你自己的后缀四位，<code>ikuai </code>的防火墙逻辑是先放行后阻断，所以不需要关系防火墙配置的顺序。</p>
-<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">::8a1f/::ffff</span><br></pre></td></tr></tbody></table></figure>
-
-<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p><a href="https://ccie.lol/knowledge-base/ipv6-use-eui-64-convert-link-local-address/" rel="external nofollow noreferrer">【转】通过EUI-64自动生成IPv6地址和IPv6链路本地地址（Link-Local Address）</a></p>
-<p> <a href="https://eui64-calc.princelle.org/" rel="external nofollow noreferrer">EUI-64 计算器</a></p>
-</body></html>]]></content>
-      <tags>
-        <tag>防火墙</tag>
-        <tag>firewall</tag>
-        <tag>Ikuai</tag>
-        <tag>IPv6</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>御坂美琴生日快乐</title>
-    <url>/posts/MisakaMikoto/</url>
-    <content><![CDATA[<html><head></head><body><blockquote>
-<p><strong>你指间闪烁的电光，是我此生不变的信仰唯有这超电磁炮将永世长存！！！</strong></p>
-</blockquote>
-<h1 id="首先-祝姐姐大人生日快乐，又一年生日到啦吗，真快呀。"><a href="#首先-祝姐姐大人生日快乐，又一年生日到啦吗，真快呀。" class="headerlink" title="首先,祝姐姐大人生日快乐，又一年生日到啦吗，真快呀。"></a>首先,祝姐姐大人生日快乐，又一年生日到啦吗，真快呀。</h1><img src="https://img.c-dreamer.top/i/1/2023/05/01/644f7e2e4fa62.webp" alt="d6e89b5.webp" style="zoom:50%;">
-
-<img src="https://img.c-dreamer.top/i/1/2023/05/01/644f7e24d2d9a.webp" alt="7606d4f59bf.webp" style="zoom:50%;">
-
-
-
-
-<h1 id="感想"><a href="#感想" class="headerlink" title="感想"></a>感想</h1><h2 id="对我个人："><a href="#对我个人：" class="headerlink" title="对我个人："></a>对我个人：</h2><p>我已经是一个入宅很晚很晚的人了，我的入宅番是 <code>约战</code> 我并不是完完全全的 某科学的 世界的粉丝，我也并没有看过魔法禁书目录，我仅对于 超电磁炮 御坂美琴的热爱。</p>
-<blockquote>
-<p>摘抄一部分萌娘百科的话。</p>
-<p>天真活泼、爱唠叨的14岁元气少女。有着一头及肩的茶色发丝、同样是茶色的瞳孔、绝不服输的眼神、不需要化妆也很俏丽的面孔。因为外形秀丽加上成绩优秀，因此成为校内学生心目中的偶像，甚至会被学妹们尊称为“御坂大人”。平素都是穿着常盘台的制服，而裙底的安全裤则是美琴活泼的象征。性格好胜、正义感强，有着男孩子般的爽朗性格，但是尤其是在面对可爱的东西时，就显得缺乏耐心、非常不坦率。当喜欢的东西（呱太）或中意的东西被别人评价说“太儿童化”的时候，都会义正言辞地的否决，然后愉♂悦地享受。紧张时会蹦出“喵”的口癖，并且在担心他人慌乱时会自称“美琴姐姐”</p>
-</blockquote>
-<h2 id="对于B站："><a href="#对于B站：" class="headerlink" title="对于B站："></a>对于B站：</h2><p>虽然我入宅很晚，我接触B站也是比较晚了，但最近几年B站环境都是人尽皆知的事情了，对于 B站往年 不管是对 美琴的庆生 还是对其他知名的动漫人物，都是在发的，对于去年B站没有给美琴庆生以及其他人物，我表示非常是生气也表示非常的无奈，但对于今年B站的改变，对于庆生很早就开始宣传了，但并不是 哔哩哔哩弹幕网 这个账号进行宣传，而是 哔哩哔哩番剧组和哔哩哔哩会员购 进行宣传的。剩下的我就不想多说了，B站快要嗝屁的时候还想在收割一波自己以前最老以及起家的人，怎么说呢。从以前B站属于二次元的天地，到最后 二次元滚出B站。</p>
-<p>可能以前 别人说我是二刺螈 我表示可能会有点开心，但对于近几年 <strong>滚，老子不是二次元</strong></p>
-<h2 id="结束语"><a href="#结束语" class="headerlink" title="结束语"></a>结束语</h2><p>时间会磨损一切，那么我又能坚持多久呢？</p>
-<h1 id="引用："><a href="#引用：" class="headerlink" title="引用："></a>引用：</h1><p> 萌娘百科：<a href="https://zh.moegirl.org.cn/%E5%BE%A1%E5%9D%82%E7%BE%8E%E7%90%B4" rel="external nofollow noreferrer">御坂美琴人物简介</a></p>
-</body></html>]]></content>
-      <categories>
-        <category>生活随想</category>
-      </categories>
-      <tags>
-        <tag>Misaka</tag>
-        <tag>御坂美琴</tag>
-        <tag>某科学的</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>使用Cloud Flare Tunnel和 Acces Application安全的暴露在公网</title>
-    <url>/posts/CloudFlare-Tunnel-Application-Access/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h1><p>如果搞 Home Lab 始终绕不开的话题是，我们如何将自己的内网服务暴露到公网上，又如何保证我们的安全。<br>现在可以使用我们赛博菩萨 Cloudflare 提供的 Zero Trust 来保护我们的安全。</p>
-<p>演示的dome ： <a href="https://hp.ning.moe/" rel="external nofollow noreferrer">HomePage</a> 和 <a href="https://misakashell.cloudflareaccess.com/" rel="external nofollow noreferrer">Cloud Flare Zero Trust 主页</a></p>
-<h1 id="正文："><a href="#正文：" class="headerlink" title="正文："></a>正文：</h1><h2 id="使用-Tunnel-暴露服务"><a href="#使用-Tunnel-暴露服务" class="headerlink" title="使用 Tunnel 暴露服务"></a>使用 Tunnel 暴露服务</h2><p>我们需要先登录<a href="https://one.dash.cloudflare.com/" rel="external nofollow noreferrer">CF zero trust的管理平台</a>，添加新的隧道点击：<code>Networks/Tunnels</code> 我们需要添加一个隧道让我们本地和 <code>Cloudflare Zero Trust</code>服务器进行连接。简单的配置完隧道名字</p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/22/6626359570249.webp" alt="Cloud-Flare-Zero-Trust-Dash-Tunnels.webp"></p>
-<p>会自动跳转到tunnel 这个页面，没跳转的 Networks/Tunnels/你的隧道/config。我们需要安装一个cloudflared的程序，这个页面已经为我们提供好了常见的系统，如Linux MacOS Windows，复制命令直接在我们终端运行即可。</p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/22/66263669cc5c3.webp" alt="CloudFlared-Download.webp"></p>
-<p>然后 下一步 ，简单配置一下。保存即可。返回菜单会发现刚刚创建的 <code>Tunnel</code> 等待 <code>Status</code> 显示<code>HEALTHY</code> 访问你的 配置好的域名应该就可以访问了。</p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/22/6626371255c1f.webp" alt="Cloud-Flare-Tunnel-Config.webp"></p>
-<h2 id="使用-Access-Applications-认证"><a href="#使用-Access-Applications-认证" class="headerlink" title="使用 Access Applications 认证"></a>使用 Access Applications 认证</h2><p>首先你需要确保你有登录方式 <code>Settings</code> –&gt;<code>Authentication</code>–&gt;<code>Login methods</code> ,如果没有你需要自行创建。</p>
-<p>来到<code> Access</code> –&gt;<code> Applications</code> –&gt; <code> Add an application</code> 选择<code>Self-hosted</code>，填写你刚才的域名，然后下一步。</p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/22/66263cfec6386.webp" alt="CF-Access-Applications.webp"></p>
-<p><code>policy name</code> 可以随便填写 记得 <code>Action</code>是 <code>Allow</code>，这里的Session 是多久在进行登录验证，可以调节时间长一点。</p>
-<p><code>Create additional rules</code> 根据你刚才配置的 <code>Authentication</code> 来填写，我这里是填写CF自带的邮箱验证码进行登录的。</p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/22/66263cff40b37.webp" alt="CF-Add an application.webp"></p>
-<p>配置完毕之后，访问你配置的域名就会出现拦截了，例如我<a href="https://hp.ning.moe/" rel="external nofollow noreferrer">配置好的</a>这我设置了自动跳转所以会到我的<code>SSO.ning.moe</code></p>
-<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p><a href="https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/" rel="external nofollow noreferrer">Cloudflare Tunnel 配置文档</a></p>
-<p><a href="https://developers.cloudflare.com/cloudflare-one/applications/" rel="external nofollow noreferrer">Applications Access</a></p>
-</body></html>]]></content>
-      <categories>
-        <category>网络技术</category>
-      </categories>
-      <tags>
-        <tag>CloudFlare</tag>
-        <tag>Zero Trust</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Java使用CloudFlare Turnstile 验证码</title>
-    <url>/posts/Java-CAPTCHA-cloudflare/</url>
+    <title>新版本Spring-Security配置踩坑</title>
+    <url>/posts/Spring-Security/</url>
     <content><![CDATA[<html><head></head><body><h1 id="引言："><a href="#引言：" class="headerlink" title="引言："></a>引言：</h1><blockquote>
-<p>在学习springMVC 和Spring Security中，总有一个服务，叫做验证码，每次我自己写这个验证码的时候，最后还要在测试，而且特别的不友好，甚至我自己都分不清那个字母，当然Java里面有个很优秀的滑块验证码比如这个大佬开发的<a href="https://gitee.com/tianai/tianai-captcha" rel="external nofollow noreferrer">tianai-captcha</a><br>总是给人一种不是很优雅，我自己是人类，为什么还要进行验证码，而且这种验证往往经过训练的ai更容易比人类做的好，这就失去了验证码的意义<code>CAPTCHA</code>，Cloud Flare就做了一个无需进行让你输入字符或者滑动以及选择图片的验证码，如果需要更多了解你可以访问CF的官方介绍<a href="https://blog.cloudflare.com/zh-cn/turnstile-private-captcha-alternative-zh-cn/" rel="external nofollow noreferrer">CloudFlare-Turnstile</a></p>
+<p>事情是这样的，我最近打算学习了springSecurity的时候，跟着视频学习的时候发现配置类 <code>WebSecurityConfigurerAdapter</code> 过时了，这个问题本篇的文章会告诉你答案，以及我有不小心选择了spring boot3.0 的版本然后<code>authorizeRequests</code>也过时了。如果此文章有错欢迎大佬批评指教。</p>
 </blockquote>
-<h1 id="需要准备"><a href="#需要准备" class="headerlink" title="需要准备"></a>需要准备</h1><ol>
-<li>一个Cloud Flare账号</li>
-<li>一个域名（不需要接入Cloud Flare）<h1 id="流程"><a href="#流程" class="headerlink" title="流程"></a>流程</h1></li>
-</ol>
-<blockquote>
-<p>CloudFlare以下简称CF， 官网的配置文件已经写的很清楚<br> <img src="https://img.misaka.pics/i/1/2023/04/21/64423eac7e80f.webp" alt="Turnstile" style="zoom: 67%;"></p>
-<ol>
-<li>用户打开受验证码保护的网页，先会和CF的验证码服务器进行通讯拿到，JWT令牌（令牌有效300秒）</li>
-<li>用户会把提交内容以及CF生成的令牌发送到服务器，</li>
-<li>服务器会拿着CF令牌进行和CF验证码服务器通讯，拿到JSON数值</li>
-</ol>
-</blockquote>
-<h1 id="快速使用"><a href="#快速使用" class="headerlink" title="快速使用"></a>快速使用</h1><ol>
-<li>登录你的CF账号会在仪表盘的左侧看到<code>Turnstile </code></li>
-<li>点击添加</li>
-<li><img src="https://img.misaka.pics/i/1/2023/03/28/6422b39497161.webp" alt="image-20230328110719966" style="zoom:50%;"></li>
-</ol>
-<p>我一般是选择托管，由cf来决定用户需不需要进行交互一下，</p>
-<ol start="4">
-<li>注册完毕之后我们会得到两个值一个是站点密钥，一个是密钥，密钥是用来进行服务端和CF通讯的，而站点密钥是放在被保护的资源上的。</li>
-</ol>
-<p>按照<a href="https://developers.cloudflare.com/turnstile/get-started/client-side-rendering/" rel="external nofollow noreferrer">CF文档的客户端配置</a>我这里就那官方的例子来</p>
-<figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"X-UA-Compatible"</span> <span class="attr">content</span>=<span class="string">"IE=edge"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width, initial-scale=1.0"</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- 引用CF的验证码js --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://challenges.cloudflare.com/turnstile/v0/api.js"</span> <span class="attr">async</span> <span class="attr">defer</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">form</span> <span class="attr">id</span>=<span class="string">"form"</span> <span class="attr">action</span>=<span class="string">"/login"</span> <span class="attr">method</span>=<span class="string">"POST"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">"username"</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">placeholder</span>=<span class="string">"username"</span> <span class="attr">name</span>=<span class="string">"username"</span> /&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">"password"</span> <span class="attr">type</span>=<span class="string">"password"</span> <span class="attr">placeholder</span>=<span class="string">"password"</span> <span class="attr">name</span>=<span class="string">"password"</span> /&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- 在data-sitekey中需要填写站点密钥 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"cf-turnstile"</span> <span class="attr">data-sitekey</span>=<span class="string">"0x4AAAAAAACzpeJEUBQ4rBi-"</span> <span class="attr">data-callback</span>=<span class="string">"javascriptCallback"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">button</span> <span class="attr">id</span>=<span class="string">"button"</span> <span class="attr">type</span>=<span class="string">"submit"</span> <span class="attr">value</span>=<span class="string">"Submit"</span>&gt;</span>Log in<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
+<h1 id="Spring-Security的版本"><a href="#Spring-Security的版本" class="headerlink" title="Spring-Security的版本"></a>Spring-Security的版本</h1><h2 id="Spring-Security5-7-版本"><a href="#Spring-Security5-7-版本" class="headerlink" title="Spring-Security5.7+版本"></a>Spring-Security5.7+版本</h2><p>这个版本差不多是spring-boot 2.7版本使用的，首先<code>WebSecurityConfigurerAdapter</code> 过时，但是在在过时的源码类中，会叫我们如何进行配置新版本的Spring-Security的配置，官方的我贴这里</p>
+<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">提供用于创建 WebSecurityConfigurer 实例的方便基类。该实现允许通过重写方法进行自定义。</span></span><br><span class="line"><span class="comment">将自动应用查找 AbstractHttpConfigurer 自 SpringFactoriesLoader 的结果，以允许开发人员扩展默认值。</span></span><br><span class="line"><span class="comment">为此，您必须创建一个扩展 AbstractHttpConfigurer 的类，</span></span><br><span class="line"><span class="comment">然后在“META-INF/spring.factory”的类路径中创建一个文件，如下所示：</span></span><br><span class="line"><span class="comment">org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer=</span></span><br><span class="line"><span class="comment">sample.MyClassThatExtendsAbstractHttpConfigurer</span></span><br><span class="line"><span class="comment">如果有多个应添加的类，则可以使用 “，”分隔值。例如：</span></span><br><span class="line"><span class="comment">  org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer=</span></span><br><span class="line"><span class="comment">  sample.MyClassThatExtendsAbstractHttpConfigurer, sample.OtherThatExtendsAbstractHttpConfigurer</span></span><br><span class="line"><span class="comment">已弃用</span></span><br><span class="line"><span class="comment">org.springframework.security.web.SecurityFilterChain使用</span></span><br><span class="line"><span class="comment">Bean 进行配置或WebSecurityCustomizer使用 Bean 进行配置 HttpSecurity WebSecurity。</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line">      <span class="meta">@Bean</span></span><br><span class="line">      <span class="keyword">public</span> SecurityFilterChain <span class="title function_">securityFilterChain</span><span class="params">(HttpSecurity http)</span> <span class="keyword">throws</span> Exception {</span><br><span class="line">          http</span><br><span class="line">              .authorizeHttpRequests((authz) -&gt;</span><br><span class="line">                  authz.anyRequest().authenticated()</span><br><span class="line">              );</span><br><span class="line">              <span class="comment">// ...</span></span><br><span class="line">          <span class="keyword">return</span> http.build();</span><br><span class="line">      }</span><br><span class="line"> </span><br><span class="line">     <span class="meta">@Bean</span></span><br><span class="line">     <span class="keyword">public</span> WebSecurityCustomizer <span class="title function_">webSecurityCustomizer</span><span class="params">(WebSecurity web)</span> {</span><br><span class="line">         <span class="keyword">return</span> (web) -&gt; web.ignoring().antMatchers(<span class="string">"/resources/**"</span>);</span><br><span class="line">     }</span><br><span class="line">  <span class="comment">/**</span></span><br><span class="line"><span class="comment">请参阅 Spring Security without WebSecurityConfigurerAdapter  以获取更多详细信息。</span></span><br><span class="line"><span class="comment">请参阅:</span></span><br><span class="line"><span class="comment">EnableWebSecurity</span></span><br><span class="line"><span class="comment">作者:</span></span><br><span class="line"><span class="comment">罗伯·温奇</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></tbody></table></figure>
 
-<p>用户单击的登陆之后我们就能在后端拿到用户的账号密码以及CF的令牌。我们会在后端拿到一个名为：<code>cf-turnstile-response</code>的键值对，这里面存放的是cf的令牌。</p>
-<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> String <span class="title function_">test</span><span class="params">(String req)</span> <span class="keyword">throws</span> IOException {</span><br><span class="line">	<span class="comment">//secret 是填写密钥</span></span><br><span class="line">	<span class="type">String</span> <span class="variable">secret</span> <span class="operator">=</span> <span class="string">""</span>;</span><br><span class="line">	<span class="comment">//url是默认的地址无需更改</span></span><br><span class="line">	<span class="type">URL</span> <span class="variable">url</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">URL</span>(<span class="string">"https://challenges.cloudflare.com/turnstile/v0/siteverify"</span>);</span><br><span class="line">	<span class="type">HttpURLConnection</span> <span class="variable">httpConn</span> <span class="operator">=</span> (HttpURLConnection) url.openConnection();</span><br><span class="line">	httpConn.setRequestMethod(<span class="string">"POST"</span>);</span><br><span class="line">	<span class="comment">//请求类型cf 请求仅支持 application/x-www-form-urlencoded 或者是 application/JSON</span></span><br><span class="line">	httpConn.setRequestProperty(<span class="string">"Content-Type"</span>, <span class="string">"application/x-www-form-urlencoded"</span>);</span><br><span class="line"></span><br><span class="line">	httpConn.setDoOutput(<span class="literal">true</span>);</span><br><span class="line">	<span class="type">OutputStreamWriter</span> <span class="variable">writer</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">OutputStreamWriter</span>(httpConn.getOutputStream());</span><br><span class="line">	writer.write(<span class="string">"secret="</span>+secret+<span class="string">"&amp;response="</span>+req);</span><br><span class="line">	writer.flush();</span><br><span class="line">	writer.close();</span><br><span class="line">	httpConn.getOutputStream().close();</span><br><span class="line"></span><br><span class="line">	<span class="type">InputStream</span> <span class="variable">responseStream</span> <span class="operator">=</span> httpConn.getResponseCode() / <span class="number">100</span> == <span class="number">2</span></span><br><span class="line">			? httpConn.getInputStream()</span><br><span class="line">			: httpConn.getErrorStream();</span><br><span class="line">	<span class="type">Scanner</span> <span class="variable">s</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(responseStream).useDelimiter(<span class="string">"\\A"</span>);</span><br><span class="line">	<span class="type">String</span> <span class="variable">response</span> <span class="operator">=</span> s.hasNext() ? s.next() : <span class="string">""</span>;</span><br><span class="line">	System.out.println(response);</span><br><span class="line">	<span class="keyword">return</span> response;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<p>可以看到，新版本官方推荐使用@Bean 进行配置，这个感觉更加优雅了，和我们原来使用配置类进行配置的都是大同小异，但这里有个问题官方没有讲（或许我没有找到）。</p>
+<h3 id="关于-AuthenticationManager-认证类的问题"><a href="#关于-AuthenticationManager-认证类的问题" class="headerlink" title="关于 AuthenticationManager 认证类的问题"></a>关于 <code>AuthenticationManager</code> 认证类的问题</h3><p>因为，可能我们需要因为某种原因重写 过滤器的类，但最后我们在旧版本需要指定一个<code>AuthenticationManager</code> 类不管是工厂里的还是直接springboot启动时创建的。这个地方我查了好久网上的没有一个能一个找到的，全部都是重复。</p>
+<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">@Autowired</span></span><br><span class="line">AuthenticationConfiguration authenticationConfiguration;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> AuthenticationManager <span class="title function_">authenticationManager</span><span class="params">()</span> <span class="keyword">throws</span> Exception {</span><br><span class="line">    <span class="type">AuthenticationManager</span> <span class="variable">authenticationManager</span> <span class="operator">=</span> </span><br><span class="line">        authenticationConfiguration.getAuthenticationManager();</span><br><span class="line">    <span class="keyword">return</span> authenticationManager;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 
-<p>上述是我们拿到用户的<code>cf-turnstile-response</code>值然后和cf通讯返回的<code>response</code>就是CF给我们的JSON。</p>
-<p>根据官方文档：</p>
-<p>如果验证成功，响应应类似于以下内容：</p>
-<figure class="highlight json"><table><tbody><tr><td class="code"><pre><span class="line"><span class="punctuation">{</span></span><br><span class="line">  <span class="attr">"success"</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">"challenge_ts"</span><span class="punctuation">:</span> <span class="string">"2022-02-28T15:14:30.096Z"</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">"hostname"</span><span class="punctuation">:</span> <span class="string">"example.com"</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">"error-codes"</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">"action"</span><span class="punctuation">:</span> <span class="string">"login"</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">"cdata"</span><span class="punctuation">:</span> <span class="string">"sessionid-123456789"</span></span><br><span class="line"><span class="punctuation">}</span></span><br></pre></td></tr></tbody></table></figure>
+<p>我们只需要使用 <code>AuthenticationConfiguration</code> 创建一个``AuthenticationManager<code> </code> 类即可，推荐写在Security配置类中，这样可以直接方便调用即可。</p>
+<p>例如我重写了 <code>UsernamePasswordAuthenticationFilter</code>的过滤器 <code>KaptchaFilter</code> 是继承了<code>UsernamePasswordAuthenticationFilter</code> 和并且重写了里面的方法加入了验证码。</p>
+<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">@Bean</span></span><br><span class="line"><span class="keyword">public</span> KaptchaFilter <span class="title function_">kaptchaFilter</span><span class="params">()</span> <span class="keyword">throws</span> Exception {</span><br><span class="line">    <span class="type">KaptchaFilter</span> <span class="variable">kaptchaFilter</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">KaptchaFilter</span>();</span><br><span class="line">    kaptchaFilter.setFilterProcessesUrl(<span class="string">"/doLogin"</span>);</span><br><span class="line">    kaptchaFilter.setUsernameParameter(<span class="string">"uname"</span>);</span><br><span class="line">    kaptchaFilter.setPasswordParameter(<span class="string">"passwd"</span>);</span><br><span class="line">    kaptchaFilter.setKaptcha(<span class="string">"kaptcha"</span>);</span><br><span class="line">    <span class="comment">//指定认证管理器</span></span><br><span class="line">    kaptchaFilter.setAuthenticationManager(authenticationManager());</span><br><span class="line">    kaptchaFilter.setAuthenticationSuccessHandler((request, response, authentication) -&gt; {</span><br><span class="line">        response.sendRedirect(<span class="string">"/index.html"</span>);</span><br><span class="line">    });</span><br><span class="line">    kaptchaFilter.setAuthenticationFailureHandler((request, response, exception) -&gt; {</span><br><span class="line">        response.sendRedirect(<span class="string">"/login.html"</span>);</span><br><span class="line">    });</span><br><span class="line">    <span class="keyword">return</span> kaptchaFilter;</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="meta">@Bean</span></span><br><span class="line"><span class="keyword">public</span> SecurityFilterChain <span class="title function_">securityFilter</span><span class="params">(HttpSecurity http)</span><span class="keyword">throws</span> Exception{</span><br><span class="line">    <span class="keyword">return</span> http.authorizeRequests()</span><br><span class="line">            .mvcMatchers(<span class="string">"/login.html"</span>).permitAll()</span><br><span class="line">            .mvcMatchers(<span class="string">"/vc.jpg"</span>).permitAll()</span><br><span class="line">            .anyRequest().authenticated()</span><br><span class="line">            .and()</span><br><span class="line">            .formLogin()</span><br><span class="line">            .loginPage(<span class="string">"/login.html"</span>)</span><br><span class="line">            .loginProcessingUrl(<span class="string">"/doLogin"</span>)</span><br><span class="line">            .usernameParameter(<span class="string">"uname"</span>)</span><br><span class="line">            .passwordParameter(<span class="string">"passwd"</span>)</span><br><span class="line">            .defaultSuccessUrl(<span class="string">"/index.html"</span>,<span class="literal">true</span>)</span><br><span class="line">            .and()</span><br><span class="line">            .csrf().disable()</span><br><span class="line">            .addFilterAt(kaptchaFilter(), UsernamePasswordAuthenticationFilter.class)</span><br><span class="line">            .build();</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 
 
 
-<ul>
-<li><code>challenge_ts</code>是解决挑战时的 ISO 时间戳。</li>
-<li><code>hostname</code>是为其提供质询的主机名。</li>
-<li><code>action</code>是传递给客户端小部件的客户小部件标识符。这用于区分在分析中使用相同站点密钥的小部件。它的完整性受到攻击者修改的保护。建议验证操作是否与预期值匹配。</li>
-<li><code>cdata</code>是传递给客户端小部件的客户数据。客户可以使用它来传达状态。它的完整性受到攻击者修改的保护。</li>
-<li><code>error-codes</code>是发生的错误列表。</li>
-</ul>
-<p>如果验证失败，响应应类似于以下内容：</p>
-<figure class="highlight json"><table><tbody><tr><td class="code"><pre><span class="line"><span class="punctuation">{</span></span><br><span class="line">  <span class="attr">"success"</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">false</span></span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">"error-codes"</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">    <span class="string">"invalid-input-response"</span></span><br><span class="line">  <span class="punctuation">]</span></span><br><span class="line"><span class="punctuation">}</span></span><br></pre></td></tr></tbody></table></figure>
+<h2 id="关于SpringSecurity6-02-版本"><a href="#关于SpringSecurity6-02-版本" class="headerlink" title="关于SpringSecurity6.02+版本"></a>关于SpringSecurity6.02+版本</h2><p>这个版本差不多是spring boot 3.0+开始使用的，如果你按照上面新版本使用@Bean配置的话，会发现<code>HttpSecurity</code>中的<code>authorizeRequests</code> 方法标记为过时了，而且<code>mvcMatchers</code>也没有这个方法了，原因6.0的SpringSecurity推荐使用<code>authorizeHttpRequests</code>进行配置，对就是很烦人，不能一个版本改完，而且文档及其混乱。</p>
+<p>例如：</p>
+<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">@Bean</span></span><br><span class="line"><span class="keyword">public</span> SecurityFilterChain <span class="title function_">securityFilterChain</span><span class="params">(HttpSecurity http)</span> <span class="keyword">throws</span> Exception {</span><br><span class="line">    <span class="keyword">return</span> http.authorizeHttpRequests()</span><br><span class="line">            .requestMatchers(<span class="string">"/vc.jpg"</span>).permitAll()<span class="comment">//放行指定选项</span></span><br><span class="line">        	.anyRequest().authenticated()<span class="comment">//拦截所有请求都需要认证</span></span><br><span class="line">            .and()</span><br><span class="line">            .formLogin()</span><br><span class="line">            .and()</span><br><span class="line">            .logout()</span><br><span class="line">            .and()</span><br><span class="line">            .addFilterAt(loginKaptchaFilter(),UsernamePasswordAuthenticationFilter.class)</span><br><span class="line">            .csrf().disable()</span><br><span class="line">            .build();</span><br><span class="line"></span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 
-
-
-<p><code>success</code>通过将属性设置为 来指示验证错误<code>false</code>。提供了错误代码列表以指示响应无法验证的原因。响应还可能包含其他字段，具体取决于 Turnstile siteverify 是否能够成功或不成功地解析响应。</p>
-<p> <strong>错误代码</strong>：</p>
-<table>
-<thead>
-<tr>
-<th align="left">错误代码</th>
-<th align="left">描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><code>missing-input-secret</code></td>
-<td align="left">未传递秘密参数。</td>
-</tr>
-<tr>
-<td align="left"><code>invalid-input-secret</code></td>
-<td align="left">秘密参数无效或不存在。</td>
-</tr>
-<tr>
-<td align="left"><code>missing-input-response</code></td>
-<td align="left">未传递响应参数。</td>
-</tr>
-<tr>
-<td align="left"><code>invalid-input-response</code></td>
-<td align="left">响应参数无效或已过期。</td>
-</tr>
-<tr>
-<td align="left"><code>bad-request</code></td>
-<td align="left">该请求被拒绝，因为它格式不正确。</td>
-</tr>
-<tr>
-<td align="left"><code>timeout-or-duplicate</code></td>
-<td align="left">响应参数之前已经过验证。</td>
-</tr>
-<tr>
-<td align="left"><code>internal-error</code></td>
-<td align="left">验证响应时发生内部错误。可以重试该请求。</td>
-</tr>
-</tbody></table>
-<p>根据以上信息我们就可以判断并且，接收cf的保护了。</p>
-<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><blockquote>
-<p><a href="https://developers.cloudflare.com/turnstile/" rel="external nofollow noreferrer">CF Turnstile 开发文档</a><br><a href="https://blog.cloudflare.com/zh-cn/turnstile-private-captcha-alternative-zh-cn/" rel="external nofollow noreferrer">CloudFlare-Turnstile介绍</a></p>
-</blockquote>
+<p>其他配置和SpringSecurity5.7+的配置一样。</p>
 </body></html>]]></content>
       <categories>
-        <category>网络技术</category>
+        <category>Bug生成者</category>
       </categories>
       <tags>
-        <tag>CloudFlare</tag>
         <tag>Spring</tag>
         <tag>Java</tag>
-        <tag>CAPTCHA</tag>
+        <tag>Security</tag>
+        <tag>SpringSecuriy</tag>
       </tags>
   </entry>
   <entry>
@@ -740,38 +743,107 @@
       </tags>
   </entry>
   <entry>
-    <title>新版本Spring-Security配置踩坑</title>
-    <url>/posts/Spring-Security/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="引言："><a href="#引言：" class="headerlink" title="引言："></a>引言：</h1><blockquote>
-<p>事情是这样的，我最近打算学习了springSecurity的时候，跟着视频学习的时候发现配置类 <code>WebSecurityConfigurerAdapter</code> 过时了，这个问题本篇的文章会告诉你答案，以及我有不小心选择了spring boot3.0 的版本然后<code>authorizeRequests</code>也过时了。如果此文章有错欢迎大佬批评指教。</p>
+    <title>御坂美琴生日快乐</title>
+    <url>/posts/MisakaMikoto/</url>
+    <content><![CDATA[<html><head></head><body><blockquote>
+<p><strong>你指间闪烁的电光，是我此生不变的信仰唯有这超电磁炮将永世长存！！！</strong></p>
 </blockquote>
-<h1 id="Spring-Security的版本"><a href="#Spring-Security的版本" class="headerlink" title="Spring-Security的版本"></a>Spring-Security的版本</h1><h2 id="Spring-Security5-7-版本"><a href="#Spring-Security5-7-版本" class="headerlink" title="Spring-Security5.7+版本"></a>Spring-Security5.7+版本</h2><p>这个版本差不多是spring-boot 2.7版本使用的，首先<code>WebSecurityConfigurerAdapter</code> 过时，但是在在过时的源码类中，会叫我们如何进行配置新版本的Spring-Security的配置，官方的我贴这里</p>
-<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">提供用于创建 WebSecurityConfigurer 实例的方便基类。该实现允许通过重写方法进行自定义。</span></span><br><span class="line"><span class="comment">将自动应用查找 AbstractHttpConfigurer 自 SpringFactoriesLoader 的结果，以允许开发人员扩展默认值。</span></span><br><span class="line"><span class="comment">为此，您必须创建一个扩展 AbstractHttpConfigurer 的类，</span></span><br><span class="line"><span class="comment">然后在“META-INF/spring.factory”的类路径中创建一个文件，如下所示：</span></span><br><span class="line"><span class="comment">org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer=</span></span><br><span class="line"><span class="comment">sample.MyClassThatExtendsAbstractHttpConfigurer</span></span><br><span class="line"><span class="comment">如果有多个应添加的类，则可以使用 “，”分隔值。例如：</span></span><br><span class="line"><span class="comment">  org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer=</span></span><br><span class="line"><span class="comment">  sample.MyClassThatExtendsAbstractHttpConfigurer, sample.OtherThatExtendsAbstractHttpConfigurer</span></span><br><span class="line"><span class="comment">已弃用</span></span><br><span class="line"><span class="comment">org.springframework.security.web.SecurityFilterChain使用</span></span><br><span class="line"><span class="comment">Bean 进行配置或WebSecurityCustomizer使用 Bean 进行配置 HttpSecurity WebSecurity。</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line">      <span class="meta">@Bean</span></span><br><span class="line">      <span class="keyword">public</span> SecurityFilterChain <span class="title function_">securityFilterChain</span><span class="params">(HttpSecurity http)</span> <span class="keyword">throws</span> Exception {</span><br><span class="line">          http</span><br><span class="line">              .authorizeHttpRequests((authz) -&gt;</span><br><span class="line">                  authz.anyRequest().authenticated()</span><br><span class="line">              );</span><br><span class="line">              <span class="comment">// ...</span></span><br><span class="line">          <span class="keyword">return</span> http.build();</span><br><span class="line">      }</span><br><span class="line"> </span><br><span class="line">     <span class="meta">@Bean</span></span><br><span class="line">     <span class="keyword">public</span> WebSecurityCustomizer <span class="title function_">webSecurityCustomizer</span><span class="params">(WebSecurity web)</span> {</span><br><span class="line">         <span class="keyword">return</span> (web) -&gt; web.ignoring().antMatchers(<span class="string">"/resources/**"</span>);</span><br><span class="line">     }</span><br><span class="line">  <span class="comment">/**</span></span><br><span class="line"><span class="comment">请参阅 Spring Security without WebSecurityConfigurerAdapter  以获取更多详细信息。</span></span><br><span class="line"><span class="comment">请参阅:</span></span><br><span class="line"><span class="comment">EnableWebSecurity</span></span><br><span class="line"><span class="comment">作者:</span></span><br><span class="line"><span class="comment">罗伯·温奇</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></tbody></table></figure>
+<h1 id="首先-祝姐姐大人生日快乐，又一年生日到啦吗，真快呀。"><a href="#首先-祝姐姐大人生日快乐，又一年生日到啦吗，真快呀。" class="headerlink" title="首先,祝姐姐大人生日快乐，又一年生日到啦吗，真快呀。"></a>首先,祝姐姐大人生日快乐，又一年生日到啦吗，真快呀。</h1><img src="https://img.c-dreamer.top/i/1/2023/05/01/644f7e2e4fa62.webp" alt="d6e89b5.webp" style="zoom:50%;">
 
-<p>可以看到，新版本官方推荐使用@Bean 进行配置，这个感觉更加优雅了，和我们原来使用配置类进行配置的都是大同小异，但这里有个问题官方没有讲（或许我没有找到）。</p>
-<h3 id="关于-AuthenticationManager-认证类的问题"><a href="#关于-AuthenticationManager-认证类的问题" class="headerlink" title="关于 AuthenticationManager 认证类的问题"></a>关于 <code>AuthenticationManager</code> 认证类的问题</h3><p>因为，可能我们需要因为某种原因重写 过滤器的类，但最后我们在旧版本需要指定一个<code>AuthenticationManager</code> 类不管是工厂里的还是直接springboot启动时创建的。这个地方我查了好久网上的没有一个能一个找到的，全部都是重复。</p>
-<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">@Autowired</span></span><br><span class="line">AuthenticationConfiguration authenticationConfiguration;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> AuthenticationManager <span class="title function_">authenticationManager</span><span class="params">()</span> <span class="keyword">throws</span> Exception {</span><br><span class="line">    <span class="type">AuthenticationManager</span> <span class="variable">authenticationManager</span> <span class="operator">=</span> </span><br><span class="line">        authenticationConfiguration.getAuthenticationManager();</span><br><span class="line">    <span class="keyword">return</span> authenticationManager;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-
-<p>我们只需要使用 <code>AuthenticationConfiguration</code> 创建一个``AuthenticationManager<code> </code> 类即可，推荐写在Security配置类中，这样可以直接方便调用即可。</p>
-<p>例如我重写了 <code>UsernamePasswordAuthenticationFilter</code>的过滤器 <code>KaptchaFilter</code> 是继承了<code>UsernamePasswordAuthenticationFilter</code> 和并且重写了里面的方法加入了验证码。</p>
-<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">@Bean</span></span><br><span class="line"><span class="keyword">public</span> KaptchaFilter <span class="title function_">kaptchaFilter</span><span class="params">()</span> <span class="keyword">throws</span> Exception {</span><br><span class="line">    <span class="type">KaptchaFilter</span> <span class="variable">kaptchaFilter</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">KaptchaFilter</span>();</span><br><span class="line">    kaptchaFilter.setFilterProcessesUrl(<span class="string">"/doLogin"</span>);</span><br><span class="line">    kaptchaFilter.setUsernameParameter(<span class="string">"uname"</span>);</span><br><span class="line">    kaptchaFilter.setPasswordParameter(<span class="string">"passwd"</span>);</span><br><span class="line">    kaptchaFilter.setKaptcha(<span class="string">"kaptcha"</span>);</span><br><span class="line">    <span class="comment">//指定认证管理器</span></span><br><span class="line">    kaptchaFilter.setAuthenticationManager(authenticationManager());</span><br><span class="line">    kaptchaFilter.setAuthenticationSuccessHandler((request, response, authentication) -&gt; {</span><br><span class="line">        response.sendRedirect(<span class="string">"/index.html"</span>);</span><br><span class="line">    });</span><br><span class="line">    kaptchaFilter.setAuthenticationFailureHandler((request, response, exception) -&gt; {</span><br><span class="line">        response.sendRedirect(<span class="string">"/login.html"</span>);</span><br><span class="line">    });</span><br><span class="line">    <span class="keyword">return</span> kaptchaFilter;</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="meta">@Bean</span></span><br><span class="line"><span class="keyword">public</span> SecurityFilterChain <span class="title function_">securityFilter</span><span class="params">(HttpSecurity http)</span><span class="keyword">throws</span> Exception{</span><br><span class="line">    <span class="keyword">return</span> http.authorizeRequests()</span><br><span class="line">            .mvcMatchers(<span class="string">"/login.html"</span>).permitAll()</span><br><span class="line">            .mvcMatchers(<span class="string">"/vc.jpg"</span>).permitAll()</span><br><span class="line">            .anyRequest().authenticated()</span><br><span class="line">            .and()</span><br><span class="line">            .formLogin()</span><br><span class="line">            .loginPage(<span class="string">"/login.html"</span>)</span><br><span class="line">            .loginProcessingUrl(<span class="string">"/doLogin"</span>)</span><br><span class="line">            .usernameParameter(<span class="string">"uname"</span>)</span><br><span class="line">            .passwordParameter(<span class="string">"passwd"</span>)</span><br><span class="line">            .defaultSuccessUrl(<span class="string">"/index.html"</span>,<span class="literal">true</span>)</span><br><span class="line">            .and()</span><br><span class="line">            .csrf().disable()</span><br><span class="line">            .addFilterAt(kaptchaFilter(), UsernamePasswordAuthenticationFilter.class)</span><br><span class="line">            .build();</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<img src="https://img.c-dreamer.top/i/1/2023/05/01/644f7e24d2d9a.webp" alt="7606d4f59bf.webp" style="zoom:50%;">
 
 
 
-<h2 id="关于SpringSecurity6-02-版本"><a href="#关于SpringSecurity6-02-版本" class="headerlink" title="关于SpringSecurity6.02+版本"></a>关于SpringSecurity6.02+版本</h2><p>这个版本差不多是spring boot 3.0+开始使用的，如果你按照上面新版本使用@Bean配置的话，会发现<code>HttpSecurity</code>中的<code>authorizeRequests</code> 方法标记为过时了，而且<code>mvcMatchers</code>也没有这个方法了，原因6.0的SpringSecurity推荐使用<code>authorizeHttpRequests</code>进行配置，对就是很烦人，不能一个版本改完，而且文档及其混乱。</p>
-<p>例如：</p>
-<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">@Bean</span></span><br><span class="line"><span class="keyword">public</span> SecurityFilterChain <span class="title function_">securityFilterChain</span><span class="params">(HttpSecurity http)</span> <span class="keyword">throws</span> Exception {</span><br><span class="line">    <span class="keyword">return</span> http.authorizeHttpRequests()</span><br><span class="line">            .requestMatchers(<span class="string">"/vc.jpg"</span>).permitAll()<span class="comment">//放行指定选项</span></span><br><span class="line">        	.anyRequest().authenticated()<span class="comment">//拦截所有请求都需要认证</span></span><br><span class="line">            .and()</span><br><span class="line">            .formLogin()</span><br><span class="line">            .and()</span><br><span class="line">            .logout()</span><br><span class="line">            .and()</span><br><span class="line">            .addFilterAt(loginKaptchaFilter(),UsernamePasswordAuthenticationFilter.class)</span><br><span class="line">            .csrf().disable()</span><br><span class="line">            .build();</span><br><span class="line"></span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 
-<p>其他配置和SpringSecurity5.7+的配置一样。</p>
+<h1 id="感想"><a href="#感想" class="headerlink" title="感想"></a>感想</h1><h2 id="对我个人："><a href="#对我个人：" class="headerlink" title="对我个人："></a>对我个人：</h2><p>我已经是一个入宅很晚很晚的人了，我的入宅番是 <code>约战</code> 我并不是完完全全的 某科学的 世界的粉丝，我也并没有看过魔法禁书目录，我仅对于 超电磁炮 御坂美琴的热爱。</p>
+<blockquote>
+<p>摘抄一部分萌娘百科的话。</p>
+<p>天真活泼、爱唠叨的14岁元气少女。有着一头及肩的茶色发丝、同样是茶色的瞳孔、绝不服输的眼神、不需要化妆也很俏丽的面孔。因为外形秀丽加上成绩优秀，因此成为校内学生心目中的偶像，甚至会被学妹们尊称为“御坂大人”。平素都是穿着常盘台的制服，而裙底的安全裤则是美琴活泼的象征。性格好胜、正义感强，有着男孩子般的爽朗性格，但是尤其是在面对可爱的东西时，就显得缺乏耐心、非常不坦率。当喜欢的东西（呱太）或中意的东西被别人评价说“太儿童化”的时候，都会义正言辞地的否决，然后愉♂悦地享受。紧张时会蹦出“喵”的口癖，并且在担心他人慌乱时会自称“美琴姐姐”</p>
+</blockquote>
+<h2 id="对于B站："><a href="#对于B站：" class="headerlink" title="对于B站："></a>对于B站：</h2><p>虽然我入宅很晚，我接触B站也是比较晚了，但最近几年B站环境都是人尽皆知的事情了，对于 B站往年 不管是对 美琴的庆生 还是对其他知名的动漫人物，都是在发的，对于去年B站没有给美琴庆生以及其他人物，我表示非常是生气也表示非常的无奈，但对于今年B站的改变，对于庆生很早就开始宣传了，但并不是 哔哩哔哩弹幕网 这个账号进行宣传，而是 哔哩哔哩番剧组和哔哩哔哩会员购 进行宣传的。剩下的我就不想多说了，B站快要嗝屁的时候还想在收割一波自己以前最老以及起家的人，怎么说呢。从以前B站属于二次元的天地，到最后 二次元滚出B站。</p>
+<p>可能以前 别人说我是二刺螈 我表示可能会有点开心，但对于近几年 <strong>滚，老子不是二次元</strong></p>
+<h2 id="结束语"><a href="#结束语" class="headerlink" title="结束语"></a>结束语</h2><p>时间会磨损一切，那么我又能坚持多久呢？</p>
+<h1 id="引用："><a href="#引用：" class="headerlink" title="引用："></a>引用：</h1><p> 萌娘百科：<a href="https://zh.moegirl.org.cn/%E5%BE%A1%E5%9D%82%E7%BE%8E%E7%90%B4" rel="external nofollow noreferrer">御坂美琴人物简介</a></p>
 </body></html>]]></content>
       <categories>
-        <category>Bug生成者</category>
+        <category>生活随想</category>
       </categories>
       <tags>
-        <tag>Spring</tag>
-        <tag>Java</tag>
-        <tag>Security</tag>
-        <tag>SpringSecuriy</tag>
+        <tag>Misaka</tag>
+        <tag>御坂美琴</tag>
+        <tag>某科学的</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>解决Umami v2.3升级问题，Something went wrong.</title>
+    <url>/posts/Umami-fix/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>是的没错，发生这样的事情，应该很多<code>Umami</code>只要是v2.2版本应该都遇到了。 </p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2023/07/19/64b7cb785693f.webp" alt="Umami v2.2 Something went wrong."></p>
+<p>我浏览了部分 <code>issues</code> 只能升级到v2.3版本了。</p>
+<h1 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h1><p>我先说一下我自己的环境，我自己的使用：</p>
+<ol>
+<li>属于编译安装，没有放在docker</li>
+<li>Mysql 5.7</li>
+<li>nodjs 18.16.0</li>
+<li>npm 9.5.1</li>
+</ol>
+<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><p>解决办法有两种，第一种你可以直接尝试升级到<code>MySQL</code> 8.0，如果你想继续和我一样，小鸡的配置不行还想用5.7，请继续往下看。</p>
+<p>如果你是和我一样都是<code>Mysql</code> 5.7版本，你需要查看这篇 <a href="https://github.com/umami-software/umami/issues/2118" rel="external nofollow noreferrer">issues</a> 或者继续往下看。</p>
+<ol>
+<li>你需要从GitHub 拉去一份最新的<a href="https://github.com/umami-software/umami/releases" rel="external nofollow noreferrer">Umami</a> 的代码，你需要找到<code>db/mysql/migrations/02_report_schema_session_data</code>文件夹下的<code>migration.sql</code>这份sql文件，将下面的代码替换和保存。</li>
+</ol>
+<figure class="highlight sql"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> `event_data` CHANGE `event_data_type` `data_type` <span class="type">int</span> unsigned <span class="keyword">NOT</span> <span class="keyword">NULL</span>;</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> `event_data` CHANGE `event_date_value` `date_value` <span class="type">timestamp</span> <span class="keyword">NULL</span>;</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> `event_data` CHANGE `event_id` `event_data_id` <span class="type">varchar</span>(<span class="number">36</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span>;</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> `event_data` CHANGE `event_numeric_value` `number_value` <span class="type">decimal</span>(<span class="number">19</span>, <span class="number">4</span>) <span class="keyword">NULL</span>;</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> `event_data` CHANGE `event_string_value` `string_value`<span class="type">varchar</span>(<span class="number">500</span>) <span class="keyword">NULL</span>;</span><br></pre></td></tr></tbody></table></figure>
+
+<p>终于我遇到的问题，你需要备份原来的 <code>Umami</code> 数据库，然后创建一个新的数据库，讲数据源配置在<code>.env</code>里面，不然通过初始化数据库。</p>
+<ol start="2">
+<li><p>然后你需要在终端中运行这段命令<code>npx prisma migrate resolve --rolled-back "02_report_schema_session_data"</code></p>
+</li>
+<li><p>重新部署，请看 <a href="https://umami.is/docs/install" rel="external nofollow noreferrer">https://umami.is/docs/install</a></p>
+</li>
+</ol>
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>Umami 的GitHub issues ：<a href="https://github.com/umami-software/umami/issues/2118" rel="external nofollow noreferrer">https://github.com/umami-software/umami/issues/2118</a></p>
+</body></html>]]></content>
+      <categories>
+        <category>网络技术</category>
+      </categories>
+      <tags>
+        <tag>MySql</tag>
+        <tag>Umami</tag>
+        <tag>PV</tag>
+        <tag>网站统计，UV</tag>
+        <tag>Ip</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Memos 对接 Authentik</title>
+    <url>/posts/authentik-OAuth2-memos/</url>
+    <content><![CDATA[<html><head></head><body><blockquote>
+<p> 配置中：这是什么啊，这么麻烦还没过去啊。 配置后：真香好方便。</p>
+</blockquote>
+<p>使用本文前请自行在 <code>Authentik </code>配置好 Memos使用的<code>应用程序</code>和<code>提供程序</code></p>
+<h1 id="Authentik-配置"><a href="#Authentik-配置" class="headerlink" title="Authentik 配置"></a>Authentik 配置</h1><p>默认你已经创建好了，一个给Memos使用的<code>应用程序</code>和<code>提供程序</code>,我们需要更改<code>提供程序</code>(给Memos 的)我们点击编辑</p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/09/66155d6445bbc.webp" alt="Authentik 配置 Memos-1.webp"></p>
+<blockquote>
+<p>选择客户端可以使用哪些作用域。客户端仍然需要指定访问数据的范围。</p>
+<p>按住 <code>ctrl/command</code> 键可选择多个项目。</p>
+</blockquote>
+<p>我们选中<code>authentik default OAuth Mapping: OpenID email</code> 和 <code>authentik default OAuth Mapping: OpenID openid</code>将<code>Subject 模式</code>改成基于用户名，然后更新。</p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/09/6615597f90737.webp" alt="Authentik 配置 Memos.webp"></p>
+<h1 id="Memos配置"><a href="#Memos配置" class="headerlink" title="Memos配置"></a>Memos配置</h1><blockquote>
+<p>在截至发文时 <code>Memos</code> 的版本为<code>v0.20.1</code>版本，<code>Memos</code>通过用户名为主键，其实只需要给<code>username</code>字段即可。</p>
+</blockquote>
+<p>根据上文调整的，现在sub 是我们的用户名字段，按照文章截屏填写其他的自行替换。这样你的的<code>Memos</code>就可以使用<code>Authentik</code>进行登录了。</p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/09/66155e6ca6dc7.webp" alt="Memos-Oauth2-config.webp"></p>
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p><code>Memos</code>的文档：<a href="https://www.usememos.com/docs/advanced-settings/keycloak" rel="external nofollow noreferrer">https://www.usememos.com/docs/advanced-settings/keycloak</a></p>
+</body></html>]]></content>
+      <categories>
+        <category>网络技术</category>
+      </categories>
+      <tags>
+        <tag>Memos</tag>
+        <tag>Authentik</tag>
+        <tag>SSO</tag>
+        <tag>OAuth2</tag>
       </tags>
   </entry>
   <entry>
@@ -874,46 +946,6 @@
       </tags>
   </entry>
   <entry>
-    <title>解决Umami v2.3升级问题，Something went wrong.</title>
-    <url>/posts/Umami-fix/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>是的没错，发生这样的事情，应该很多<code>Umami</code>只要是v2.2版本应该都遇到了。 </p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2023/07/19/64b7cb785693f.webp" alt="Umami v2.2 Something went wrong."></p>
-<p>我浏览了部分 <code>issues</code> 只能升级到v2.3版本了。</p>
-<h1 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h1><p>我先说一下我自己的环境，我自己的使用：</p>
-<ol>
-<li>属于编译安装，没有放在docker</li>
-<li>Mysql 5.7</li>
-<li>nodjs 18.16.0</li>
-<li>npm 9.5.1</li>
-</ol>
-<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><p>解决办法有两种，第一种你可以直接尝试升级到<code>MySQL</code> 8.0，如果你想继续和我一样，小鸡的配置不行还想用5.7，请继续往下看。</p>
-<p>如果你是和我一样都是<code>Mysql</code> 5.7版本，你需要查看这篇 <a href="https://github.com/umami-software/umami/issues/2118" rel="external nofollow noreferrer">issues</a> 或者继续往下看。</p>
-<ol>
-<li>你需要从GitHub 拉去一份最新的<a href="https://github.com/umami-software/umami/releases" rel="external nofollow noreferrer">Umami</a> 的代码，你需要找到<code>db/mysql/migrations/02_report_schema_session_data</code>文件夹下的<code>migration.sql</code>这份sql文件，将下面的代码替换和保存。</li>
-</ol>
-<figure class="highlight sql"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> `event_data` CHANGE `event_data_type` `data_type` <span class="type">int</span> unsigned <span class="keyword">NOT</span> <span class="keyword">NULL</span>;</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> `event_data` CHANGE `event_date_value` `date_value` <span class="type">timestamp</span> <span class="keyword">NULL</span>;</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> `event_data` CHANGE `event_id` `event_data_id` <span class="type">varchar</span>(<span class="number">36</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span>;</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> `event_data` CHANGE `event_numeric_value` `number_value` <span class="type">decimal</span>(<span class="number">19</span>, <span class="number">4</span>) <span class="keyword">NULL</span>;</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> `event_data` CHANGE `event_string_value` `string_value`<span class="type">varchar</span>(<span class="number">500</span>) <span class="keyword">NULL</span>;</span><br></pre></td></tr></tbody></table></figure>
-
-<p>终于我遇到的问题，你需要备份原来的 <code>Umami</code> 数据库，然后创建一个新的数据库，讲数据源配置在<code>.env</code>里面，不然通过初始化数据库。</p>
-<ol start="2">
-<li><p>然后你需要在终端中运行这段命令<code>npx prisma migrate resolve --rolled-back "02_report_schema_session_data"</code></p>
-</li>
-<li><p>重新部署，请看 <a href="https://umami.is/docs/install" rel="external nofollow noreferrer">https://umami.is/docs/install</a></p>
-</li>
-</ol>
-<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>Umami 的GitHub issues ：<a href="https://github.com/umami-software/umami/issues/2118" rel="external nofollow noreferrer">https://github.com/umami-software/umami/issues/2118</a></p>
-</body></html>]]></content>
-      <categories>
-        <category>网络技术</category>
-      </categories>
-      <tags>
-        <tag>MySql</tag>
-        <tag>Umami</tag>
-        <tag>PV</tag>
-        <tag>网站统计，UV</tag>
-        <tag>Ip</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hexo butterfly 优化</title>
     <url>/posts/butterfly/</url>
     <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
@@ -942,38 +974,6 @@
         <tag>butterfly</tag>
         <tag>jsdelivr</tag>
         <tag>CDN</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Memos 对接 Authentik</title>
-    <url>/posts/authentik-OAuth2-memos/</url>
-    <content><![CDATA[<html><head></head><body><blockquote>
-<p> 配置中：这是什么啊，这么麻烦还没过去啊。 配置后：真香好方便。</p>
-</blockquote>
-<p>使用本文前请自行在 <code>Authentik </code>配置好 Memos使用的<code>应用程序</code>和<code>提供程序</code></p>
-<h1 id="Authentik-配置"><a href="#Authentik-配置" class="headerlink" title="Authentik 配置"></a>Authentik 配置</h1><p>默认你已经创建好了，一个给Memos使用的<code>应用程序</code>和<code>提供程序</code>,我们需要更改<code>提供程序</code>(给Memos 的)我们点击编辑</p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/09/66155d6445bbc.webp" alt="Authentik 配置 Memos-1.webp"></p>
-<blockquote>
-<p>选择客户端可以使用哪些作用域。客户端仍然需要指定访问数据的范围。</p>
-<p>按住 <code>ctrl/command</code> 键可选择多个项目。</p>
-</blockquote>
-<p>我们选中<code>authentik default OAuth Mapping: OpenID email</code> 和 <code>authentik default OAuth Mapping: OpenID openid</code>将<code>Subject 模式</code>改成基于用户名，然后更新。</p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/09/6615597f90737.webp" alt="Authentik 配置 Memos.webp"></p>
-<h1 id="Memos配置"><a href="#Memos配置" class="headerlink" title="Memos配置"></a>Memos配置</h1><blockquote>
-<p>在截至发文时 <code>Memos</code> 的版本为<code>v0.20.1</code>版本，<code>Memos</code>通过用户名为主键，其实只需要给<code>username</code>字段即可。</p>
-</blockquote>
-<p>根据上文调整的，现在sub 是我们的用户名字段，按照文章截屏填写其他的自行替换。这样你的的<code>Memos</code>就可以使用<code>Authentik</code>进行登录了。</p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/09/66155e6ca6dc7.webp" alt="Memos-Oauth2-config.webp"></p>
-<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p><code>Memos</code>的文档：<a href="https://www.usememos.com/docs/advanced-settings/keycloak" rel="external nofollow noreferrer">https://www.usememos.com/docs/advanced-settings/keycloak</a></p>
-</body></html>]]></content>
-      <categories>
-        <category>网络技术</category>
-      </categories>
-      <tags>
-        <tag>Memos</tag>
-        <tag>Authentik</tag>
-        <tag>SSO</tag>
-        <tag>OAuth2</tag>
       </tags>
   </entry>
   <entry>
@@ -1017,6 +1017,97 @@
       </categories>
       <tags>
         <tag>clash</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>解决Hexo博客框架中Twikoo评论框架路径不一致的问题</title>
+    <url>/posts/fix-hexo-twikoocomment-path-inconsistency/</url>
+    <content><![CDATA[<html><head></head><body><p>引言：</p>
+<p>在我继续修理博客的过程中，没错，你没有看错，我陆续从今年1月开始维护博客至今。主要原因是我很忙，维护工作也需要时间，而且在修复之后还需要处理一些细节问题，这是我之前没有注意到的。由于当时静态资源几乎全部丢失，现在我已经基本上优化了访问速度，这使得我的Hexo博客框架名副其实。随着我对网站的打理以及撰写一些有用的内容，网站的访问量逐渐提升。然而，我注意到了一些之前未曾注意到的问题。在Hexo博客生成过程中存在一个问题，你可以访问这篇文章的链接<code>https://blog.ning.moe/post/fix-hexo-twikoocomment-path-inconsistency/</code>，也可以在该链接后面添加<code>index.html</code>，但对于Twikoo评论框架而言，这两个链接并不相同。</p>
+<p>阅读须知：</p>
+<p>本文的操作是在使用”butterfly”主题的情况下进行的，其他主题也可以模仿这个操作，但需要注意先查找自己的主题是否可以直接在配置文件中进行更改。更多细节请参考这个”issues”链接：<a href="https://github.com/imaegoo/twikoo/issues/138%E3%80%82" rel="external nofollow noreferrer">https://github.com/imaegoo/twikoo/issues/138。</a></p>
+<p>正文：</p>
+<blockquote>
+<p>下面我将直接进入正文。</p>
+</blockquote>
+<h2 id="Butterfly的问题"><a href="#Butterfly的问题" class="headerlink" title="Butterfly的问题"></a>Butterfly的问题</h2><p>我的博客主题是<a href="https://github.com/jerryc127/hexo-theme-butterfly" rel="external nofollow noreferrer">butterfly</a>，本身已经对Twikoo进行了适配。但我不好意思提出”issues”来更改它，因为我通过搜索找到了Twikoo官方的一个”issues”：<a href="https://github.com/imaegoo/twikoo/issues/138" rel="external nofollow noreferrer">里面作者已经回复了</a>。</p>
+<figure class="highlight javascript"><table><tbody><tr><td class="code"><pre><span class="line">twikoo.<span class="title function_">init</span>({</span><br><span class="line">  <span class="comment">// ......,</span></span><br><span class="line">  <span class="attr">path</span>: <span class="string">'window.location.pathname.replace(\'index.html\',\'\')'</span></span><br><span class="line">})</span><br></pre></td></tr></tbody></table></figure>
+
+<p>但问题是，Butterfly主题本身没有额外的选项来配置Twikoo，所以我决定直接修改主题的源码。</p>
+<h2 id="更改主题模板"><a href="#更改主题模板" class="headerlink" title="更改主题模板"></a>更改主题模板</h2><p>首先，确保你找到了Butterfly主题的文件夹，它的目录结构应该是这样的：</p>
+<figure class="highlight powershell"><table><tbody><tr><td class="code"><pre><span class="line">├─.github</span><br><span class="line">├─languages</span><br><span class="line">├─layout</span><br><span class="line">├─scripts</span><br><span class="line">└─source</span><br></pre></td></tr></tbody></table></figure>
+
+<p>然后，找到<code>/layout/includes/third-party/comments/twikoo.pug</code>这个文件。</p>
+<p>在大约第11行的位置添加以下代码：<code>path: window.location.pathname.replace('index.html','')</code>，下面是我已经添加好的代码：</p>
+<figure class="highlight javascript"><table><tbody><tr><td class="code"><pre><span class="line">script.</span><br><span class="line">  (<span class="function">()=&gt;</span>{</span><br><span class="line">    <span class="keyword">const</span> <span class="title function_">init</span> = (<span class="params"></span>) =&gt; {</span><br><span class="line">      twikoo.<span class="title function_">init</span>(<span class="title class_">Object</span>.<span class="title function_">assign</span>({</span><br><span class="line">        <span class="attr">el</span>: <span class="string">'#twikoo-wrap'</span>,</span><br><span class="line">        <span class="attr">envId</span>: <span class="string">'!{envId}'</span>,</span><br><span class="line">        <span class="attr">region</span>: <span class="string">'!{region}'</span>,</span><br><span class="line">        <span class="attr">path</span>: <span class="variable language_">window</span>.<span class="property">location</span>.<span class="property">pathname</span>.<span class="title function_">replace</span>(<span class="string">'index.html'</span>,<span class="string">''</span>),</span><br><span class="line">        <span class="attr">onCommentLoaded</span>: <span class="keyword">function</span> (<span class="params"></span>) {</span><br><span class="line">          btf.<span class="title function_">loadLightbox</span>(<span class="variable language_">document</span>.<span class="title function_">querySelectorAll</span>(<span class="string">'#twikoo .tk-content img:not(.tk-owo-emotion)'</span>))</span><br><span class="line">        }</span><br><span class="line">      }, !{<span class="title class_">JSON</span>.<span class="title function_">stringify</span>(option)}))</span><br><span class="line">    }</span><br></pre></td></tr></tbody></table></figure>
+
+<p>引用：</p>
+<p>Twikoo的”issues”链接：<a href="https://github.com/imaegoo/twikoo/issues/138" rel="external nofollow noreferrer">https://github.com/imaegoo/twikoo/issues/138</a></p>
+</body></html>]]></content>
+      <categories>
+        <category>网络技术</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>butterfly</tag>
+        <tag>twikoo</tag>
+        <tag>评论</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>封印 Easyconnect</title>
+    <url>/posts/fuck-easyconnect/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="故事的起点"><a href="#故事的起点" class="headerlink" title="故事的起点"></a>故事的起点</h1><p>因为已经到了实习期，走<del>(滚)</del>出了学校,还要写这些烦人的周记属实难绷，还必须使用这个<code>Easyconnect</code>进行访问。</p>
+<p>如果你只是想搜索 <code>Easyconnect</code>却看到了这一篇文章，那么您可以仔细权衡一下有必要再去下载和使用<code>Easyconnect</code>了,如果问为什么不要使用<code>Easyconnect</code>。您可以去跳转到<a href="https://taoshu.in/easyconnect-in-docker.html" rel="external nofollow noreferrer">这一篇文章</a>或者可以看我使用<code>Chat GPT</code>进行总结这一篇文章的核心。</p>
+<blockquote>
+<p>当讨论深信服的 EasyConnect 客户端的安全隐患时，可以简化描述如下：</p>
+<ol>
+<li><p><strong>依赖问题：</strong> EasyConnect 客户端使用了一些旧的系统功能，这在最新版本的 macOS 上会导致它无法正常工作。这就好比用一个老式的车钥匙开启现代汽车一样，不再适配。</p>
+</li>
+<li><p><strong>根证书问题：</strong> EasyConnect 客户端在你的电脑上安装了一个特殊的证书，而这个证书的作用可能不仅限于官方所说的提供更好的浏览体验。这有点像你的家门锁被复制一把，而你不知道。</p>
+</li>
+<li><p><strong>自启动问题：</strong> EasyConnect 客户端还有一个进程，名为 EasyMonitor，它在你的电脑开机时就自动启动。这个进程有权监听你的一举一动，而你却不能简单地关闭它，否则你无法使用 VPN 服务。</p>
+</li>
+</ol>
+</blockquote>
+<p>而且这个东西还是全局代理的，所有流量都要经过转发，以及可能会对一些游戏例如CSGO 进行冲突。</p>
+<h1 id="需要准备的东西"><a href="#需要准备的东西" class="headerlink" title="需要准备的东西"></a>需要准备的东西</h1><ul>
+<li>一台运行了 Windows/MAC os /Linux 的电脑</li>
+<li>需要 docker 的使用</li>
+<li>需要 vnc 的连接</li>
+</ul>
+<h1 id="开始启动"><a href="#开始启动" class="headerlink" title="开始启动"></a>开始启动</h1><p>当然有这种烦人的东西也就有大佬挺身而出，<a href="https://github.com/docker-easyconnect/docker-easyconnect" rel="external nofollow noreferrer">docker-easyconnect</a>就是来解决这个问题，使用docker 进行封印。</p>
+<p>至于docker 和VNC的安装在这里就不进行赘述了，不是本篇文章的重点。使用以下命令运行docker 容器。</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">docker run --<span class="built_in">rm</span> --device /dev/net/tun --cap-add NET_ADMIN -ti -e PASSWORD=xxxx -e URLWIN=1 -v ~/.ecdata:/root -p 5901:5901 -p 1080:1080 -p 8888:8888 hagb/docker-easyconnect:7.6.7</span><br></pre></td></tr></tbody></table></figure>
+
+<p>windows 版本的：</p>
+<figure class="highlight powershell"><table><tbody><tr><td class="code"><pre><span class="line">docker run <span class="literal">--rm</span> <span class="literal">--device</span> /dev/net/tun <span class="literal">--cap-add</span> NET_ADMIN <span class="literal">-ti</span> <span class="literal">-e</span> PASSWORD=xxxx <span class="literal">-e</span> URLWIN=<span class="number">1</span> <span class="literal">-v</span> C:\Users\&lt;你的用户名&gt;\.ecdata:/root <span class="literal">-p</span> <span class="number">5901</span>:<span class="number">5901</span> <span class="literal">-p</span> <span class="number">1080</span>:<span class="number">1080</span> <span class="literal">-p</span> <span class="number">8888</span>:<span class="number">8888</span> hagb/docker<span class="literal">-easyconnect</span>:<span class="number">7.6</span>.<span class="number">7</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>其中<code> -v ~/.ecdata:/root</code> 运行成功后会在你的用户目录下创建一个<code>.ecdata</code>文件夹里面保存了你的登陆信息，下一次运行的时候就可以不需要输入用户和密码以及连接地址了。</p>
+<p>使用 <code>VNC</code> 连接就会发现和你在电脑版安装的之后页面是一样的输入连接的服务器地址以及账号和密码，记得勾选自动登录，下次启动的时候回去读取，你用户目录下的 <code>ecdata</code> 的文件。</p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2023/10/22/65347edfb2da2.webp" alt="VNC-1.webp"></p>
+<h1 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h1><p>我们暴露的 <code>1080</code> 和 <code>8888</code> 的端口分别是 <code>socket5</code>代理和<code>http</code>代理。</p>
+<p>Firefox 的浏览器的用户可以直接使用 设置 配置有个代理配置。</p>
+<p>这里更推荐使用edge ，因为国内好下载插件 打开这个网址下载：<a href="https://microsoftedge.microsoft.com/addons/detail/proxy-switchyomega/fdbloeknjpnloaggplaobopplkdhnikc?hl=zh-CN" rel="external nofollow noreferrer">Proxy SwitchyOmega - Microsoft Edge Addons</a></p>
+<p>我们打开插件的配置选项，按照下方图片的填写。</p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2023/10/22/65347b7f9620e.webp" alt="SwitchyOmega.webp"></p>
+<p>然后选择 proxy 的代理组，访问完毕内网资源，记住调成 系统代理选项卡，不然这个安装这个浏览器的插件会无法上网。</p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2023/10/22/65347c0eac9b4.webp" alt="SwitchyOmega-1.webp"></p>
+<h1 id="意外情况？"><a href="#意外情况？" class="headerlink" title="意外情况？"></a>意外情况？</h1><p>如果你运行第一次是没问题的但第二次运行之后报错:</p>
+<figure class="highlight powershell"><table><tbody><tr><td class="code"><pre><span class="line">docker: Error response from daemon: Ports are not available: exposing port TCP <span class="number">0.0</span>.<span class="number">0.0</span>:<span class="number">1080</span> -&gt; <span class="number">0.0</span>.<span class="number">0.0</span>:<span class="number">0</span>: listen tcp <span class="number">0.0</span>.<span class="number">0.0</span>:<span class="number">1080</span>: bind: An attempt was made to access a socket <span class="keyword">in</span> a way forbidden by its access permissions. time=<span class="string">"2023-10-15T10:13:34+08:00"</span> level=error msg=<span class="string">"error waiting for container: "</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>是说明你的 1080 端口被占用了，你可以使用<code>netstat -aon | findstr :1080</code> 的命令进行查询如果发现没有程序出现问题的话。那就是其实这是Windows中的一个小问题，只需要重启NAT网络就可以解决了，执行如下两条命令：</p>
+<figure class="highlight powershell"><table><tbody><tr><td class="code"><pre><span class="line">net stop winnat</span><br><span class="line">net <span class="built_in">start</span> winnat</span><br></pre></td></tr></tbody></table></figure>
+
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>引用涛叔博客 使用 Docker 封印 EasyConnect 一篇文章：<a href="https://taoshu.in/easyconnect-in-docker.html" rel="external nofollow noreferrer">https://taoshu.in/easyconnect-in-docker.html</a></p>
+</body></html>]]></content>
+      <categories>
+        <category>网络技术</category>
+      </categories>
+      <tags>
+        <tag>easyconnect</tag>
+        <tag>深信服</tag>
+        <tag>vpn</tag>
       </tags>
   </entry>
   <entry>
@@ -1090,97 +1181,6 @@
         <tag>SpringBoot</tag>
         <tag>java</tag>
         <tag>ci/cd</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>封印 Easyconnect</title>
-    <url>/posts/fuck-easyconnect/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="故事的起点"><a href="#故事的起点" class="headerlink" title="故事的起点"></a>故事的起点</h1><p>因为已经到了实习期，走<del>(滚)</del>出了学校,还要写这些烦人的周记属实难绷，还必须使用这个<code>Easyconnect</code>进行访问。</p>
-<p>如果你只是想搜索 <code>Easyconnect</code>却看到了这一篇文章，那么您可以仔细权衡一下有必要再去下载和使用<code>Easyconnect</code>了,如果问为什么不要使用<code>Easyconnect</code>。您可以去跳转到<a href="https://taoshu.in/easyconnect-in-docker.html" rel="external nofollow noreferrer">这一篇文章</a>或者可以看我使用<code>Chat GPT</code>进行总结这一篇文章的核心。</p>
-<blockquote>
-<p>当讨论深信服的 EasyConnect 客户端的安全隐患时，可以简化描述如下：</p>
-<ol>
-<li><p><strong>依赖问题：</strong> EasyConnect 客户端使用了一些旧的系统功能，这在最新版本的 macOS 上会导致它无法正常工作。这就好比用一个老式的车钥匙开启现代汽车一样，不再适配。</p>
-</li>
-<li><p><strong>根证书问题：</strong> EasyConnect 客户端在你的电脑上安装了一个特殊的证书，而这个证书的作用可能不仅限于官方所说的提供更好的浏览体验。这有点像你的家门锁被复制一把，而你不知道。</p>
-</li>
-<li><p><strong>自启动问题：</strong> EasyConnect 客户端还有一个进程，名为 EasyMonitor，它在你的电脑开机时就自动启动。这个进程有权监听你的一举一动，而你却不能简单地关闭它，否则你无法使用 VPN 服务。</p>
-</li>
-</ol>
-</blockquote>
-<p>而且这个东西还是全局代理的，所有流量都要经过转发，以及可能会对一些游戏例如CSGO 进行冲突。</p>
-<h1 id="需要准备的东西"><a href="#需要准备的东西" class="headerlink" title="需要准备的东西"></a>需要准备的东西</h1><ul>
-<li>一台运行了 Windows/MAC os /Linux 的电脑</li>
-<li>需要 docker 的使用</li>
-<li>需要 vnc 的连接</li>
-</ul>
-<h1 id="开始启动"><a href="#开始启动" class="headerlink" title="开始启动"></a>开始启动</h1><p>当然有这种烦人的东西也就有大佬挺身而出，<a href="https://github.com/docker-easyconnect/docker-easyconnect" rel="external nofollow noreferrer">docker-easyconnect</a>就是来解决这个问题，使用docker 进行封印。</p>
-<p>至于docker 和VNC的安装在这里就不进行赘述了，不是本篇文章的重点。使用以下命令运行docker 容器。</p>
-<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">docker run --<span class="built_in">rm</span> --device /dev/net/tun --cap-add NET_ADMIN -ti -e PASSWORD=xxxx -e URLWIN=1 -v ~/.ecdata:/root -p 5901:5901 -p 1080:1080 -p 8888:8888 hagb/docker-easyconnect:7.6.7</span><br></pre></td></tr></tbody></table></figure>
-
-<p>windows 版本的：</p>
-<figure class="highlight powershell"><table><tbody><tr><td class="code"><pre><span class="line">docker run <span class="literal">--rm</span> <span class="literal">--device</span> /dev/net/tun <span class="literal">--cap-add</span> NET_ADMIN <span class="literal">-ti</span> <span class="literal">-e</span> PASSWORD=xxxx <span class="literal">-e</span> URLWIN=<span class="number">1</span> <span class="literal">-v</span> C:\Users\&lt;你的用户名&gt;\.ecdata:/root <span class="literal">-p</span> <span class="number">5901</span>:<span class="number">5901</span> <span class="literal">-p</span> <span class="number">1080</span>:<span class="number">1080</span> <span class="literal">-p</span> <span class="number">8888</span>:<span class="number">8888</span> hagb/docker<span class="literal">-easyconnect</span>:<span class="number">7.6</span>.<span class="number">7</span></span><br></pre></td></tr></tbody></table></figure>
-
-<p>其中<code> -v ~/.ecdata:/root</code> 运行成功后会在你的用户目录下创建一个<code>.ecdata</code>文件夹里面保存了你的登陆信息，下一次运行的时候就可以不需要输入用户和密码以及连接地址了。</p>
-<p>使用 <code>VNC</code> 连接就会发现和你在电脑版安装的之后页面是一样的输入连接的服务器地址以及账号和密码，记得勾选自动登录，下次启动的时候回去读取，你用户目录下的 <code>ecdata</code> 的文件。</p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2023/10/22/65347edfb2da2.webp" alt="VNC-1.webp"></p>
-<h1 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h1><p>我们暴露的 <code>1080</code> 和 <code>8888</code> 的端口分别是 <code>socket5</code>代理和<code>http</code>代理。</p>
-<p>Firefox 的浏览器的用户可以直接使用 设置 配置有个代理配置。</p>
-<p>这里更推荐使用edge ，因为国内好下载插件 打开这个网址下载：<a href="https://microsoftedge.microsoft.com/addons/detail/proxy-switchyomega/fdbloeknjpnloaggplaobopplkdhnikc?hl=zh-CN" rel="external nofollow noreferrer">Proxy SwitchyOmega - Microsoft Edge Addons</a></p>
-<p>我们打开插件的配置选项，按照下方图片的填写。</p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2023/10/22/65347b7f9620e.webp" alt="SwitchyOmega.webp"></p>
-<p>然后选择 proxy 的代理组，访问完毕内网资源，记住调成 系统代理选项卡，不然这个安装这个浏览器的插件会无法上网。</p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2023/10/22/65347c0eac9b4.webp" alt="SwitchyOmega-1.webp"></p>
-<h1 id="意外情况？"><a href="#意外情况？" class="headerlink" title="意外情况？"></a>意外情况？</h1><p>如果你运行第一次是没问题的但第二次运行之后报错:</p>
-<figure class="highlight powershell"><table><tbody><tr><td class="code"><pre><span class="line">docker: Error response from daemon: Ports are not available: exposing port TCP <span class="number">0.0</span>.<span class="number">0.0</span>:<span class="number">1080</span> -&gt; <span class="number">0.0</span>.<span class="number">0.0</span>:<span class="number">0</span>: listen tcp <span class="number">0.0</span>.<span class="number">0.0</span>:<span class="number">1080</span>: bind: An attempt was made to access a socket <span class="keyword">in</span> a way forbidden by its access permissions. time=<span class="string">"2023-10-15T10:13:34+08:00"</span> level=error msg=<span class="string">"error waiting for container: "</span></span><br></pre></td></tr></tbody></table></figure>
-
-<p>是说明你的 1080 端口被占用了，你可以使用<code>netstat -aon | findstr :1080</code> 的命令进行查询如果发现没有程序出现问题的话。那就是其实这是Windows中的一个小问题，只需要重启NAT网络就可以解决了，执行如下两条命令：</p>
-<figure class="highlight powershell"><table><tbody><tr><td class="code"><pre><span class="line">net stop winnat</span><br><span class="line">net <span class="built_in">start</span> winnat</span><br></pre></td></tr></tbody></table></figure>
-
-<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>引用涛叔博客 使用 Docker 封印 EasyConnect 一篇文章：<a href="https://taoshu.in/easyconnect-in-docker.html" rel="external nofollow noreferrer">https://taoshu.in/easyconnect-in-docker.html</a></p>
-</body></html>]]></content>
-      <categories>
-        <category>网络技术</category>
-      </categories>
-      <tags>
-        <tag>easyconnect</tag>
-        <tag>深信服</tag>
-        <tag>vpn</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>解决Hexo博客框架中Twikoo评论框架路径不一致的问题</title>
-    <url>/posts/fix-hexo-twikoocomment-path-inconsistency/</url>
-    <content><![CDATA[<html><head></head><body><p>引言：</p>
-<p>在我继续修理博客的过程中，没错，你没有看错，我陆续从今年1月开始维护博客至今。主要原因是我很忙，维护工作也需要时间，而且在修复之后还需要处理一些细节问题，这是我之前没有注意到的。由于当时静态资源几乎全部丢失，现在我已经基本上优化了访问速度，这使得我的Hexo博客框架名副其实。随着我对网站的打理以及撰写一些有用的内容，网站的访问量逐渐提升。然而，我注意到了一些之前未曾注意到的问题。在Hexo博客生成过程中存在一个问题，你可以访问这篇文章的链接<code>https://blog.ning.moe/post/fix-hexo-twikoocomment-path-inconsistency/</code>，也可以在该链接后面添加<code>index.html</code>，但对于Twikoo评论框架而言，这两个链接并不相同。</p>
-<p>阅读须知：</p>
-<p>本文的操作是在使用”butterfly”主题的情况下进行的，其他主题也可以模仿这个操作，但需要注意先查找自己的主题是否可以直接在配置文件中进行更改。更多细节请参考这个”issues”链接：<a href="https://github.com/imaegoo/twikoo/issues/138%E3%80%82" rel="external nofollow noreferrer">https://github.com/imaegoo/twikoo/issues/138。</a></p>
-<p>正文：</p>
-<blockquote>
-<p>下面我将直接进入正文。</p>
-</blockquote>
-<h2 id="Butterfly的问题"><a href="#Butterfly的问题" class="headerlink" title="Butterfly的问题"></a>Butterfly的问题</h2><p>我的博客主题是<a href="https://github.com/jerryc127/hexo-theme-butterfly" rel="external nofollow noreferrer">butterfly</a>，本身已经对Twikoo进行了适配。但我不好意思提出”issues”来更改它，因为我通过搜索找到了Twikoo官方的一个”issues”：<a href="https://github.com/imaegoo/twikoo/issues/138" rel="external nofollow noreferrer">里面作者已经回复了</a>。</p>
-<figure class="highlight javascript"><table><tbody><tr><td class="code"><pre><span class="line">twikoo.<span class="title function_">init</span>({</span><br><span class="line">  <span class="comment">// ......,</span></span><br><span class="line">  <span class="attr">path</span>: <span class="string">'window.location.pathname.replace(\'index.html\',\'\')'</span></span><br><span class="line">})</span><br></pre></td></tr></tbody></table></figure>
-
-<p>但问题是，Butterfly主题本身没有额外的选项来配置Twikoo，所以我决定直接修改主题的源码。</p>
-<h2 id="更改主题模板"><a href="#更改主题模板" class="headerlink" title="更改主题模板"></a>更改主题模板</h2><p>首先，确保你找到了Butterfly主题的文件夹，它的目录结构应该是这样的：</p>
-<figure class="highlight powershell"><table><tbody><tr><td class="code"><pre><span class="line">├─.github</span><br><span class="line">├─languages</span><br><span class="line">├─layout</span><br><span class="line">├─scripts</span><br><span class="line">└─source</span><br></pre></td></tr></tbody></table></figure>
-
-<p>然后，找到<code>/layout/includes/third-party/comments/twikoo.pug</code>这个文件。</p>
-<p>在大约第11行的位置添加以下代码：<code>path: window.location.pathname.replace('index.html','')</code>，下面是我已经添加好的代码：</p>
-<figure class="highlight javascript"><table><tbody><tr><td class="code"><pre><span class="line">script.</span><br><span class="line">  (<span class="function">()=&gt;</span>{</span><br><span class="line">    <span class="keyword">const</span> <span class="title function_">init</span> = (<span class="params"></span>) =&gt; {</span><br><span class="line">      twikoo.<span class="title function_">init</span>(<span class="title class_">Object</span>.<span class="title function_">assign</span>({</span><br><span class="line">        <span class="attr">el</span>: <span class="string">'#twikoo-wrap'</span>,</span><br><span class="line">        <span class="attr">envId</span>: <span class="string">'!{envId}'</span>,</span><br><span class="line">        <span class="attr">region</span>: <span class="string">'!{region}'</span>,</span><br><span class="line">        <span class="attr">path</span>: <span class="variable language_">window</span>.<span class="property">location</span>.<span class="property">pathname</span>.<span class="title function_">replace</span>(<span class="string">'index.html'</span>,<span class="string">''</span>),</span><br><span class="line">        <span class="attr">onCommentLoaded</span>: <span class="keyword">function</span> (<span class="params"></span>) {</span><br><span class="line">          btf.<span class="title function_">loadLightbox</span>(<span class="variable language_">document</span>.<span class="title function_">querySelectorAll</span>(<span class="string">'#twikoo .tk-content img:not(.tk-owo-emotion)'</span>))</span><br><span class="line">        }</span><br><span class="line">      }, !{<span class="title class_">JSON</span>.<span class="title function_">stringify</span>(option)}))</span><br><span class="line">    }</span><br></pre></td></tr></tbody></table></figure>
-
-<p>引用：</p>
-<p>Twikoo的”issues”链接：<a href="https://github.com/imaegoo/twikoo/issues/138" rel="external nofollow noreferrer">https://github.com/imaegoo/twikoo/issues/138</a></p>
-</body></html>]]></content>
-      <categories>
-        <category>网络技术</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>butterfly</tag>
-        <tag>twikoo</tag>
-        <tag>评论</tag>
       </tags>
   </entry>
   <entry>
@@ -1329,6 +1329,48 @@
       </tags>
   </entry>
   <entry>
+    <title>萌国ICP备案</title>
+    <url>/posts/moeICP/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="萌国ICP备案"><a href="#萌国ICP备案" class="headerlink" title="萌国ICP备案"></a>萌国ICP备案</h1><blockquote>
+<p>启元</p>
+</blockquote>
+<p>自从某萌主申请了 icp.gov.moe 域名以后</p>
+<p>萌童鞋在百忙中抽空写了个萌备系统</p>
+<p>然后大家看到萌国ICP备案查询系统就上线了</p>
+<blockquote>
+<p>萌国ICP备案</p>
+</blockquote>
+<p>嗯，你没看错，这是萌国的ICP备案。</p>
+<p>萌国在哪呢，听某萌主说，好像是个网络上虚拟的国度。</p>
+<p>反正别问博主了，本博主也是听来的。</p>
+<p>我们说的是萌国ICP备案，号称萌ICP备，简称萌备</p>
+<blockquote>
+<p>萌ICP备 纯属萌友网站联萌！<br>是一种次元中的爱好，文化的展现。</p>
+</blockquote>
+<p>若你在万千网站中遇到萌备<br>甚有缘分</p>
+<p>萌主：“欢迎各大热爱萌文化的站长加入</p>
+<p> 给自己的网站加上个萌萌的备案号”</p>
+<p>博主：能不能不打广告？……</p>
+<blockquote>
+<p>加入萌备</p>
+</blockquote>
+<p>申请地址： <a href="https://icp.gov.moe/join.php">https://icp.gov.moe/join.php</a></p>
+<p>萌备主页<br><a href="https://icp.gov.moe/">https://icp.gov.moe</a></p>
+<p>然后按提示在页脚加上萌备的链接，以便查询对接系统，最后自动就加入萌备了，好简单啊。</p>
+<blockquote>
+<p>后话</p>
+</blockquote>
+<p>感觉好简单的样子，本博客已经在用了，还PY了个好号码，是不是很好看呢。</p>
+</body></html>]]></content>
+      <categories>
+        <category>生活随想</category>
+      </categories>
+      <tags>
+        <tag>备案</tag>
+        <tag>萌国</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>兰空图床使用backblaze作为存储策略</title>
     <url>/posts/lskypro-backblaze/</url>
     <content><![CDATA[<html><head></head><body><h1 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h1><p>因为我很久之前就在使用兰空了，当时是直接默认存储扔到本地的，反正也没有啥问题，还很方便，但那台服务器快到期了。所以我就打算迁移，先来说说虽然为什么不用CF的R2存储，原因是我尝试了很多种办法，但这个兰空图床对于我自己而言就是链接不上，很烦人，所以找到了也是S3协议的<code>backblaze</code>作为我后面使用的存储策略。</p>
@@ -1447,48 +1489,6 @@
       </tags>
   </entry>
   <entry>
-    <title>萌国ICP备案</title>
-    <url>/posts/moeICP/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="萌国ICP备案"><a href="#萌国ICP备案" class="headerlink" title="萌国ICP备案"></a>萌国ICP备案</h1><blockquote>
-<p>启元</p>
-</blockquote>
-<p>自从某萌主申请了 icp.gov.moe 域名以后</p>
-<p>萌童鞋在百忙中抽空写了个萌备系统</p>
-<p>然后大家看到萌国ICP备案查询系统就上线了</p>
-<blockquote>
-<p>萌国ICP备案</p>
-</blockquote>
-<p>嗯，你没看错，这是萌国的ICP备案。</p>
-<p>萌国在哪呢，听某萌主说，好像是个网络上虚拟的国度。</p>
-<p>反正别问博主了，本博主也是听来的。</p>
-<p>我们说的是萌国ICP备案，号称萌ICP备，简称萌备</p>
-<blockquote>
-<p>萌ICP备 纯属萌友网站联萌！<br>是一种次元中的爱好，文化的展现。</p>
-</blockquote>
-<p>若你在万千网站中遇到萌备<br>甚有缘分</p>
-<p>萌主：“欢迎各大热爱萌文化的站长加入</p>
-<p> 给自己的网站加上个萌萌的备案号”</p>
-<p>博主：能不能不打广告？……</p>
-<blockquote>
-<p>加入萌备</p>
-</blockquote>
-<p>申请地址： <a href="https://icp.gov.moe/join.php">https://icp.gov.moe/join.php</a></p>
-<p>萌备主页<br><a href="https://icp.gov.moe/">https://icp.gov.moe</a></p>
-<p>然后按提示在页脚加上萌备的链接，以便查询对接系统，最后自动就加入萌备了，好简单啊。</p>
-<blockquote>
-<p>后话</p>
-</blockquote>
-<p>感觉好简单的样子，本博客已经在用了，还PY了个好号码，是不是很好看呢。</p>
-</body></html>]]></content>
-      <categories>
-        <category>生活随想</category>
-      </categories>
-      <tags>
-        <tag>备案</tag>
-        <tag>萌国</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>TeamSpeak 已经运行一年</title>
     <url>/posts/teamspeak-run-one-year/</url>
     <content><![CDATA[<html><head></head><body><blockquote>
@@ -1545,6 +1545,11 @@
       </tags>
   </entry>
   <entry>
+    <title>博客评论系统还在测试阶段</title>
+    <url>/posts/%E5%8D%9A%E5%AE%A2%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E8%BF%98%E5%9C%A8%E6%B5%8B%E8%AF%95%E9%98%B6%E6%AE%B5/</url>
+    <content><![CDATA[<html><head></head><body></body></html>]]></content>
+  </entry>
+  <entry>
     <title>关于WordPress分类目录404问题</title>
     <url>/posts/%E5%85%B3%E4%BA%8Ewordpress%E5%88%86%E7%B1%BB%E7%9B%AE%E5%BD%95404%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<html><head></head><body><h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>前两天把博客给玩脱了和，也没有备份，重新搞了之后我其实想隐藏博文中链接地址里面的index.php无意间隐藏了index.php还神奇的把分类目录的404解决了。</p>
@@ -1572,14 +1577,10 @@
       </categories>
   </entry>
   <entry>
-    <title>博客评论系统还在测试阶段</title>
-    <url>/posts/%E5%8D%9A%E5%AE%A2%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E8%BF%98%E5%9C%A8%E6%B5%8B%E8%AF%95%E9%98%B6%E6%AE%B5/</url>
-    <content><![CDATA[<html><head></head><body></body></html>]]></content>
-  </entry>
-  <entry>
-    <title>备案</title>
-    <url>/posts/%E5%A4%87%E6%A1%88/</url>
-    <content><![CDATA[<html><head></head><body><p>历尽千辛万苦终于备案了感谢 工信部的速度，本以为要等20天才可以，没有想到工信部工作效率如此之高仅用2天时间审核完毕，也感谢阿里云初审人员的速度审核。</p>
+    <title>博客转移备案</title>
+    <url>/posts/%E5%8D%9A%E5%AE%A2%E8%BD%AC%E7%A7%BB%E5%A4%87%E6%A1%88/</url>
+    <content><![CDATA[<html><head></head><body><p>本站已经从wordpress转到hexo，再加上转移服务器提供商需要接入备案原因,所以蒋本站暂时挂到GitHub上.</p>
+<p>本站尚未完全制作完毕,遇到问题请在首页的tg联系我,谢谢!</p>
 </body></html>]]></content>
       <categories>
         <category>生活随想</category>
@@ -1589,22 +1590,9 @@
       </tags>
   </entry>
   <entry>
-    <title>本站建立一周年!</title>
-    <url>/posts/%E6%9C%AC%E7%AB%99%E5%BB%BA%E7%AB%8B%E4%B8%80%E5%91%A8%E5%B9%B4/</url>
-    <content><![CDATA[<html><head></head><body><p>不知不觉当中,blog已经陪我走完一年,而我在这一年当中也没有写过什么东西,觉得浪费了资源.虽然建站容易但是,维护确实相当的麻烦. 大概明年五月份的时候可能本站要从word press迁移至Typecho. 不过至于下一次更新可能要继续等到2021年暑假的时候.</p>
-</body></html>]]></content>
-      <categories>
-        <category>生活随想</category>
-      </categories>
-      <tags>
-        <tag>生活随想</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>博客转移备案</title>
-    <url>/posts/%E5%8D%9A%E5%AE%A2%E8%BD%AC%E7%A7%BB%E5%A4%87%E6%A1%88/</url>
-    <content><![CDATA[<html><head></head><body><p>本站已经从wordpress转到hexo，再加上转移服务器提供商需要接入备案原因,所以蒋本站暂时挂到GitHub上.</p>
-<p>本站尚未完全制作完毕,遇到问题请在首页的tg联系我,谢谢!</p>
+    <title>备案</title>
+    <url>/posts/%E5%A4%87%E6%A1%88/</url>
+    <content><![CDATA[<html><head></head><body><p>历尽千辛万苦终于备案了感谢 工信部的速度，本以为要等20天才可以，没有想到工信部工作效率如此之高仅用2天时间审核完毕，也感谢阿里云初审人员的速度审核。</p>
 </body></html>]]></content>
       <categories>
         <category>生活随想</category>
@@ -1623,6 +1611,18 @@
       <categories>
         <category>网络技术</category>
       </categories>
+  </entry>
+  <entry>
+    <title>本站建立一周年!</title>
+    <url>/posts/%E6%9C%AC%E7%AB%99%E5%BB%BA%E7%AB%8B%E4%B8%80%E5%91%A8%E5%B9%B4/</url>
+    <content><![CDATA[<html><head></head><body><p>不知不觉当中,blog已经陪我走完一年,而我在这一年当中也没有写过什么东西,觉得浪费了资源.虽然建站容易但是,维护确实相当的麻烦. 大概明年五月份的时候可能本站要从word press迁移至Typecho. 不过至于下一次更新可能要继续等到2021年暑假的时候.</p>
+</body></html>]]></content>
+      <categories>
+        <category>生活随想</category>
+      </categories>
+      <tags>
+        <tag>生活随想</tag>
+      </tags>
   </entry>
   <entry>
     <title>本站正式启动邮箱评论功能</title>
