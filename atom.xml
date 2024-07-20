@@ -6,7 +6,7 @@
   <link href="https://blog.ning.moe/atom.xml" rel="self"/>
   
   <link href="https://blog.ning.moe/"/>
-  <updated>2024-06-27T11:59:43.138Z</updated>
+  <updated>2024-07-20T16:27:25.337Z</updated>
   <id>https://blog.ning.moe/</id>
   
   <author>
@@ -15,6 +15,39 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>自建属于自己的递归DNS</title>
+    <link href="https://blog.ning.moe/posts/Create-Recursive-DNS/"/>
+    <id>https://blog.ning.moe/posts/Create-Recursive-DNS/</id>
+    <published>2024-07-20T14:10:09.000Z</published>
+    <updated>2024-07-20T16:27:25.337Z</updated>
+    
+    <content type="html"><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>截至发稿前阿里<code>DNS</code> 也宣布了对公共<code>DNS</code>进行限速了，其实在出这篇文章之前阿里<code>DNS</code>并没有限速，这里只是顺带提一嘴，想说的是，江苏地区使用阿里<code>DNS</code>解析会出现污染情况，先上两张图，来源<code>Adguard Home</code>日志和<code>itdog</code> 测试，<code>Adguard Home</code>使用的还是<code>dot</code>进行连接，也就是说不会在数据传输中被篡改。</p><table><thead><tr><th><img src="https://img.misaka.pics/ShellBlogImg/1/2024/07/20/669bc956e1a64.webp" alt="adguard-gome-dns-log.webp" title="adguard-gome-dns-log.webp"></th><th><img src="https://img.misaka.pics/ShellBlogImg/1/2024/07/20/669bc92cee346.webp" alt="itdog-dns-log.webp" title="itdog-dns-log.webp"></th></tr></thead></table><p>在看看其他的dns.</p><table><thead><tr><th><img src="https://img.misaka.pics/ShellBlogImg/1/2024/07/20/669bdc6578294.webp" alt="dns-119.29.29.29.webp" title="dns-119.29.29.29.webp"></th><th><img src="https://img.misaka.pics/ShellBlogImg/1/2024/07/20/669bdc646c07f.webp" alt="dns-114.114.114.webp" title="dns-114.114.114.webp"></th></tr></thead><tbody><tr><td><img src="https://img.misaka.pics/ShellBlogImg/1/2024/07/20/669bdc640dd71.webp" alt="dns-1.1.1.1.webp" title="dns-1.1.1.1.webp"></td><td></td></tr></tbody></table><p><code>Adgurad Home</code> 虽然很好用，但也是请求上游的递归<code>DNS</code>服务器，严格来说并不是一个递归<code>DNS</code>，现在上游也已经遭受污染，是时候只能选择自建递归<code>DNS</code>了，从根查起减少被污染的概率，同时使用<code>dnscrypt</code>来进行解析国外域名，<code>mosdns</code> 负责进行代理<code>DNS</code>规则，<code>unbound </code>负责进行递归<code>DNS</code>，感觉是不是已经脑袋抓狂了，需要配置这么多服务，别怕,感谢 <a href="https://github.com/kkkgo/PaoPaoDNS" rel="external nofollow noreferrer">kkkgo大佬打包好的项目PaoPaoDNS</a>。</p><p>这里会有人想，从根开始查起延迟不会很高吗？这里放上我<code>Adguard Home</code>指向我在本地自建的递归<code>dns</code>的日志。<br><img src="https://img.misaka.pics/ShellBlogImg/1/2024/07/20/669bcf912251b.webp" alt="adgurad-36ms.webp"></p><h1 id="PaoPaoDns工作流程"><a href="#PaoPaoDns工作流程" class="headerlink" title="PaoPaoDns工作流程"></a>PaoPaoDns工作流程</h1><p>可能这里又说的不对的地方，欢迎在评论指出。</p><p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/07/20/669bdd0462122.webp" alt="PaoPaoDNS-workflow.webp"></p><h1 id="搭建前的准备"><a href="#搭建前的准备" class="headerlink" title="搭建前的准备"></a>搭建前的准备</h1><p>需要准备一个<code>x86</code>小主机，能跑<code>docker </code>就好了，内存至少有<code>512mb</code> 可用的内存。</p><p>对于最近docker hub 连接不上的，可以试试 <a href="https://docker.lmirror.top/" rel="external nofollow noreferrer">栗子的docker hub 代理</a>。</p><h1 id="搭建开始"><a href="#搭建开始" class="headerlink" title="搭建开始"></a>搭建开始</h1><p>我这里放上我自己的docker-compose 配置。</p><figure class="highlight yaml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">version:</span> <span class="string">'3'</span></span><br><span class="line"><span class="attr">services:</span></span><br><span class="line">  <span class="attr">paopaodns:</span></span><br><span class="line">    <span class="attr">image:</span> <span class="string">sliamb/paopaodns:latest</span></span><br><span class="line">    <span class="attr">container_name:</span> <span class="string">paopaodns</span></span><br><span class="line">    <span class="attr">volumes:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">&lt;宿主机地址&gt;/mydata:/data</span>    <span class="comment"># 将数据挂载到容器内部的 /data 目录</span></span><br><span class="line">    <span class="attr">environment:</span></span><br><span class="line">      <span class="attr">CNAUTO:</span> <span class="string">"yes"</span>           <span class="comment"># 是否CN规则分流（可选值: yes, no）</span></span><br><span class="line">      <span class="attr">DNSPORT:</span> <span class="string">"53"</span>           <span class="comment"># DNS 服务端口号</span></span><br><span class="line">      <span class="attr">DNS_SERVERNAME:</span> <span class="string">"ShellDns.ning.moe"</span>  <span class="comment"># DNS 服务器名称（不含空格的英文字符串）</span></span><br><span class="line">      <span class="attr">TZ:</span> <span class="string">"Asia/Shanghai"</span>     <span class="comment"># 时区设置</span></span><br><span class="line">      <span class="attr">UPDATE:</span> <span class="string">"weekly"</span>        <span class="comment"># 更新IP、域名库的频率（可选值: no, daily, weekly, monthly）</span></span><br><span class="line">      <span class="attr">IPV6:</span> <span class="string">"raw"</span>              <span class="comment"># 是否启用 IPv6（可选值: no, yes, only6, yes_only6, raw）</span></span><br><span class="line">      <span class="attr">CNFALL:</span> <span class="string">"yes"</span>           <span class="comment"># 是否包含中国大陆列表（可选值: no, yes）</span></span><br><span class="line">      <span class="attr">EXPIRED_FLUSH:</span> <span class="string">"yes"</span>    <span class="comment"># 是否自动清理过期缓存（可选值: no, yes）</span></span><br><span class="line">      <span class="attr">CUSTOM_FORWARD_TTL:</span> <span class="string">"0"</span> <span class="comment"># 自定义转发 TTL</span></span><br><span class="line">      <span class="attr">ADDINFO:</span> <span class="string">"yes"</span>          <span class="comment"># 在DNS查询结果中增加ADDITIONAL SECTION的调试信息，如结果来源、查询延迟、失败原因等，使用dig命令就可以实时追踪域名结果来源</span></span><br><span class="line">      <span class="attr">USE_MARK_DATA:</span> <span class="string">"yes"</span>    <span class="comment"># 全球百万域名库，在判断大陆分流的时候优先使用该数据.</span></span><br><span class="line">    <span class="attr">restart:</span> <span class="string">always</span></span><br><span class="line">    <span class="attr">ports:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"5533:53/tcp"</span>           <span class="comment"># 对外开放 TCP 53 端口</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"5533:53/udp"</span>           <span class="comment"># 对外开放 UDP 53 端口</span></span><br><span class="line">    <span class="attr">deploy:</span></span><br><span class="line">      <span class="attr">resources:</span></span><br><span class="line">        <span class="attr">limits:</span></span><br><span class="line">          <span class="attr">memory:</span> <span class="number">1.</span><span class="string">5G</span><span class="comment">#限制容器内存</span></span><br></pre></td></tr></tbody></table></figure><p>需要了解其他配置信息看看GitHub的文档：<a href="https://github.com/kkkgo/PaoPaoDNS?tab=readme-ov-file#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E" rel="external nofollow noreferrer">https://github.com/kkkgo/PaoPaoDNS?tab=readme-ov-file#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E</a></p><p>验证你的递归DNS正常运行，执行以下命令：</p><figure class="highlight cmd"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nslookup -<span class="built_in">type</span>=TXT whoami.ds.akahelp.<span class="built_in">net</span> &lt;PaoPaoDnsIp&gt;</span><br></pre></td></tr></tbody></table></figure><figure class="highlight cmd"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">Server:  <span class="title">ShellDns.ning.moe</span></span></span><br><span class="line"><span class="function"><span class="title">Address</span>:  10.0.0.3</span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function"><span class="title">Non</span>-<span class="title">authoritative</span> <span class="title">answer</span>:</span></span><br><span class="line"><span class="function"><span class="title">whoami.ds.akahelp.net</span>   <span class="title">text</span> =</span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">        "<span class="title">ns</span>"</span></span><br><span class="line"><span class="function">        "1.1.1.1"  #如果这里是你的出口<span class="title">ip</span> 就代表<span class="title">paopaodns</span> 正常工作了</span></span><br></pre></td></tr></tbody></table></figure><blockquote><p>引用文档：</p></blockquote><p>验证你的递归DNS正常运行，可以执行以下命令：</p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 在容器内置执行 test.sh</span></span><br><span class="line">docker <span class="built_in">exec</span> paopaodns test.sh</span><br><span class="line"><span class="comment"># 如果执行后输出 ALL TEST PASS，则所有组件都工作正常。</span></span><br><span class="line"><span class="comment"># 如果显示 FAIL，可以执行 debug.sh 进一步分析原因。</span></span><br></pre></td></tr></tbody></table></figure><p>同时你可以查阅<a href="https://github.com/kkkgo/PaoPaoDNS/discussions/categories/%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97" rel="external nofollow noreferrer">更新日志</a>的最新版本公告时间，检查输出的镜像版本时间是否大于等于当前最新版本。<br>需要注意的是，如果你的网络有“自动分流<code>IP</code>”的功能，请把容器的IP加入不分流的名单，因为权威<code>DNS</code>需要准确的IP去判断，<code>IP</code>分流会影响权威<code>DNS</code>的判断。此外，一些软路由存在劫持<code>DNS</code>请求的情况，解决办法参见<a href="https://github.com/kkkgo/PaoPaoDNS/issues/2#issuecomment-1504708367" rel="external nofollow noreferrer">这个issue</a>。<br><em><strong>[DNS hijack]DNS劫持算是经常问的高频问题了，<a href="https://github.com/kkkgo/PaoPaoDNS/discussions/111#discussioncomment-8872824" rel="external nofollow noreferrer">请参考</a></strong></em></p><h1 id="引用："><a href="#引用：" class="headerlink" title="引用："></a>引用：</h1><p>PaoPaoDns项目&amp;文档：<a href="https://github.com/kkkgo/PaoPaoDNS" rel="external nofollow noreferrer">https://github.com/kkkgo/PaoPaoDNS</a></p><p>栗次元镜像世界-Docker加速源：<a href="https://www.lmirror.top/docker.html" rel="external nofollow noreferrer">https://www.lmirror.top/docker.html</a></p></body></html>]]></content>
+    
+    
+    <summary type="html">本文详细介绍了如何自建递归DNS，通过结合Adguard Home、unbound、dnscrypt和mosdns等工具，实现更安全、更高效的DNS解析，减少污染和限速问题，并提供了详细的配置步骤和示例。</summary>
+    
+    
+    
+    <category term="网络技术" scheme="https://blog.ning.moe/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="Root Servers" scheme="https://blog.ning.moe/tags/Root-Servers/"/>
+    
+    <category term="网络安全" scheme="https://blog.ning.moe/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
+    
+    <category term="unbound" scheme="https://blog.ning.moe/tags/unbound/"/>
+    
+    <category term="dnscrypt" scheme="https://blog.ning.moe/tags/dnscrypt/"/>
+    
+    <category term="mosdns" scheme="https://blog.ning.moe/tags/mosdns/"/>
+    
+    <category term="DNS" scheme="https://blog.ning.moe/tags/DNS/"/>
+    
+    <category term="Adguard Home" scheme="https://blog.ning.moe/tags/Adguard-Home/"/>
+    
+  </entry>
   
   <entry>
     <title>Umami空白页面</title>
@@ -335,8 +368,6 @@
     <category term="网络技术" scheme="https://blog.ning.moe/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="MySql" scheme="https://blog.ning.moe/tags/MySql/"/>
-    
     <category term="Umami" scheme="https://blog.ning.moe/tags/Umami/"/>
     
     <category term="PV" scheme="https://blog.ning.moe/tags/PV/"/>
@@ -344,6 +375,8 @@
     <category term="网站统计，UV" scheme="https://blog.ning.moe/tags/%E7%BD%91%E7%AB%99%E7%BB%9F%E8%AE%A1%EF%BC%8CUV/"/>
     
     <category term="Ip" scheme="https://blog.ning.moe/tags/Ip/"/>
+    
+    <category term="MySql" scheme="https://blog.ning.moe/tags/MySql/"/>
     
   </entry>
   
@@ -398,15 +431,15 @@
     <category term="网络技术" scheme="https://blog.ning.moe/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/"/>
     
     
+    <category term="butterfly" scheme="https://blog.ning.moe/tags/butterfly/"/>
+    
+    <category term="backblaze" scheme="https://blog.ning.moe/tags/backblaze/"/>
+    
     <category term="lskypro" scheme="https://blog.ning.moe/tags/lskypro/"/>
     
     <category term="蓝空图床" scheme="https://blog.ning.moe/tags/%E8%93%9D%E7%A9%BA%E5%9B%BE%E5%BA%8A/"/>
     
     <category term="兰空图床" scheme="https://blog.ning.moe/tags/%E5%85%B0%E7%A9%BA%E5%9B%BE%E5%BA%8A/"/>
-    
-    <category term="backblaze" scheme="https://blog.ning.moe/tags/backblaze/"/>
-    
-    <category term="butterfly" scheme="https://blog.ning.moe/tags/butterfly/"/>
     
   </entry>
   
@@ -568,37 +601,6 @@
     <category term="御坂美琴" scheme="https://blog.ning.moe/tags/%E5%BE%A1%E5%9D%82%E7%BE%8E%E7%90%B4/"/>
     
     <category term="某科学的" scheme="https://blog.ning.moe/tags/%E6%9F%90%E7%A7%91%E5%AD%A6%E7%9A%84/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo butterfly 优化</title>
-    <link href="https://blog.ning.moe/posts/butterfly/"/>
-    <id>https://blog.ning.moe/posts/butterfly/</id>
-    <published>2023-04-22T02:30:20.000Z</published>
-    <updated>2024-03-12T16:32:13.692Z</updated>
-    
-    <content type="html"><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote><p>我也来水一篇博文吧，最近我也不知道在忙什么（<del>明明就是懒得更新</del>），也感谢  @<a href="https://yujie.pro/network/52.html" rel="external nofollow noreferrer">夜灭</a>博主,让我可以水一篇博文以及再次优化hexo博客，如你所见我的博客在国内访问基本上都能在5秒以内完成这个所有加载。</p></blockquote><h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><h2 id="博客基本情况"><a href="#博客基本情况" class="headerlink" title="博客基本情况"></a>博客基本情况</h2><p>优化过的情况</p><ol><li>源站在GitHub Pages上</li><li>使用双解析模式（国内 腾讯云 国外Cloudflare）</li><li>把 hexo 需要的静态js 资源全部缓存到源站，不在走<code>jsdelivr</code></li><li>图床使用自建数据在<code>backblaze</code>存储桶上，详细的图床解决方案：<a href="https://blog.ning.moe/posts/lskypro-backblaze/">https://blog.ning.moe/posts/lskypro-backblaze/</a></li><li>图床使用cf的自定义域名进行双解析和第二点一样。</li></ol><p><img src="https://img.c-dreamer.top/i/1/2023/04/22/64439fea99b29.webp" alt="图.webp"></p><h2 id="butterfly-静态资源优化"><a href="#butterfly-静态资源优化" class="headerlink" title="butterfly 静态资源优化"></a>butterfly 静态资源优化</h2><p>在最新的 <code>butterfly </code>4.8.1 中加入了自定义cdn 功能，虽然以前也能改那就要一个一个配置文件上改了</p><figure class="highlight yaml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">CDN:</span></span><br><span class="line">  <span class="comment"># The CDN provider of internal scripts (主題內部 js 的 cdn 配置)</span></span><br><span class="line">  <span class="comment"># option: local/jsdelivr/unpkg/cdnjs/custom</span></span><br><span class="line">  <span class="comment"># Dev version can only choose. ( dev版的主題只能設置為 local )</span></span><br><span class="line">  <span class="attr">internal_provider:</span> <span class="string">local</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># The CDN provider of third party scripts (第三方 js 的 cdn 配置)</span></span><br><span class="line">  <span class="comment"># option: local/jsdelivr/unpkg/cdnjs/custom</span></span><br><span class="line">  <span class="comment"># when set it to local, you need to install hexo-butterfly-extjs</span></span><br><span class="line">  <span class="attr">third_party_provider:</span> <span class="string">local</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># Add version number to url, true or false</span></span><br><span class="line">  <span class="attr">version:</span> <span class="literal">false</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># Custom format</span></span><br><span class="line">  <span class="comment"># For example: https://cdn.staticfile.org/${cdnjs_name}/${version}/${min_cdnjs_file}</span></span><br><span class="line">  <span class="attr">custom_format:</span> </span><br><span class="line">  <span class="comment">#以下省略</span></span><br></pre></td></tr></tbody></table></figure><p>我这里使用了 <code>local</code>的CDN就是把所有资源封装在本地了，你需要执行<code>npm install hexo-butterfly-extjs</code>命令，hexo 三连命令即可<code>hexo cl &amp;&amp; hexo  generate &amp;&amp; hexo server</code>。</p><p>如果你不喜欢这样的话，<a href="https://butterfly.js.org/posts/ceeb73f/#CDN" rel="external nofollow noreferrer">可以参考主题官方提供的配置</a>,可以选择如 七牛云 BootCDN Elemecdn 等<br>但是这个配置其他cdn 我测试的时候偶尔也会丢失一部分静态资源。</p></body></html>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;我也来水一篇博文吧，最近我也不知道在忙什么（&lt;del&gt;明明就是懒</summary>
-      
-    
-    
-    
-    <category term="网络技术" scheme="https://blog.ning.moe/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/"/>
-    
-    
-    <category term="CDN" scheme="https://blog.ning.moe/tags/CDN/"/>
-    
-    <category term="hexo" scheme="https://blog.ning.moe/tags/hexo/"/>
-    
-    <category term="butterfly" scheme="https://blog.ning.moe/tags/butterfly/"/>
-    
-    <category term="jsdelivr" scheme="https://blog.ning.moe/tags/jsdelivr/"/>
     
   </entry>
   
