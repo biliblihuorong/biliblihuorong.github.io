@@ -6,7 +6,7 @@
   <link href="https://blog.ning.moe/atom.xml" rel="self"/>
   
   <link href="https://blog.ning.moe/"/>
-  <updated>2024-07-20T16:27:25.337Z</updated>
+  <updated>2024-08-04T02:13:40.808Z</updated>
   <id>https://blog.ning.moe/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Gitea SSO 登录优化与自动注册设置</title>
+    <link href="https://blog.ning.moe/posts/Authentik-Gitea-SSO/"/>
+    <id>https://blog.ning.moe/posts/Authentik-Gitea-SSO/</id>
+    <published>2024-08-04T00:50:37.000Z</published>
+    <updated>2024-08-04T02:13:40.808Z</updated>
+    
+    <content type="html"><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>gitea 的SSO登录逻辑，是通过OIDC 登录完毕和已经gitea自己的账户进行绑定，如果 没有账户gitea 会要求你注册一个再绑定，但是gitea 并没有能设置通过sso 进来的没有注册的用户开发注册，只有要么所有人都可以注册要么不可以注册。嗯。。。。感觉怪怪的。</p><p>并且更改配置文件还需要手动重启容器，不可能我认识人都创建好gitea吧，或者不能每次他们第一次要用gitea 我需要配置打开注册。</p><h1 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h1><p><strong>此教程默认情况下视为你已经配置好了gitea 的OIDC登录。</strong></p><p>如果您没有实现配置好，可以看 ecwuuuuu 的 <a href="https://www.bilibili.com/video/av1952943836/" rel="external nofollow noreferrer">你可以观看 将应用接入统一登陆 - OAuth 协议篇 - 以 Gitea 和 Grafana 为例</a></p><p>本文章配合 <a href="/posts/CloudFlare-Tunnel-Application-Access/">使用 Cloud Flare Tunnel 和 Acces Application 安全的暴露在公网</a> 进行使用，使用 CloudFlare 的Zero Trust进行<code>转发验证</code></p><p>如果你需要使用nginx配置转发验证，可以看 ecwuuuuu 的 <a href="https://ecwuuuuu.com/post/authentik-tutorial-4-setup-forwardauth/" rel="external nofollow noreferrer">通过反向代理和 ForwardAuth 接入任何应用</a>或者访问他的B站视频 <a href="https://www.bilibili.com/video/av1803923865/" rel="external nofollow noreferrer">配置 ForwardAuth 将任意应用加入统一登陆</a></p><h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><p>请确保你的gitea 配置文件和我下面提供的一样（配置文件一般在<code>&lt;宿主机容器映射&gt;/data/gitea/conf/app.ini</code></p><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">[openid]</span><br><span class="line">ENABLE_OPENID_SIGNIN = true</span><br><span class="line">ENABLE_OPENID_SIGNUP = true</span><br><span class="line"></span><br><span class="line">[service]</span><br><span class="line">DISABLE_REGISTRATION = false</span><br><span class="line">REQUIRE_SIGNIN_VIEW = true</span><br><span class="line">REGISTER_EMAIL_CONFIRM = false</span><br><span class="line">ENABLE_NOTIFY_MAIL = true</span><br><span class="line">ALLOW_ONLY_EXTERNAL_REGISTRATION = false</span><br><span class="line">ENABLE_CAPTCHA = false</span><br><span class="line">DEFAULT_KEEP_EMAIL_PRIVATE = true</span><br><span class="line">DEFAULT_ALLOW_CREATE_ORGANIZATION = true</span><br><span class="line">DEFAULT_ENABLE_TIMETRACKING = true</span><br><span class="line">NO_REPLY_ADDRESS = noreply.localhost</span><br></pre></td></tr></tbody></table></figure><p>屏蔽注册页面 <code>user/sign_up</code></p><p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/08/04/66aed81093245.webp" alt="CloudFlare-Zero Trust-Gitea-Sign_up.webp"></p><h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>将应用接入统一登陆 - OAuth 协议篇 - 以 Gitea 和 Grafana 为例:<a href="https://www.bilibili.com/video/av1952943836/" rel="external nofollow noreferrer">https://www.bilibili.com/video/av1952943836/</a></p><p>通过反向代理和 ForwardAuth 接入任何应用:<a href="https://ecwuuuuu.com/post/authentik-tutorial-4-setup-forwardauth/" rel="external nofollow noreferrer">https://ecwuuuuu.com/post/authentik-tutorial-4-setup-forwardauth/</a></p><p>使用 Cloud Flare Tunnel 和 Acces Application 安全的暴露在公网:<a href="https://blog.ning.moe/posts/CloudFlare-Tunnel-Application-Access/">https://blog.ning.moe/posts/CloudFlare-Tunnel-Application-Access/</a></p></body></html>]]></content>
+    
+    
+    <summary type="html">本文介绍了如何优化 Gitea 的 SSO 登录逻辑，解决注册和配置上的问题。通过配置 Gitea 的 OIDC 登录并结合 CloudFlare Zero Trust 进行转发验证，用户可以在确保安全的情况下使用 Gitea 的 SSO 功能。</summary>
+    
+    
+    
+    <category term="网络技术" scheme="https://blog.ning.moe/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="Authentik" scheme="https://blog.ning.moe/tags/Authentik/"/>
+    
+    <category term="Gitea" scheme="https://blog.ning.moe/tags/Gitea/"/>
+    
+    <category term="SSO" scheme="https://blog.ning.moe/tags/SSO/"/>
+    
+  </entry>
   
   <entry>
     <title>自建属于自己的递归DNS</title>
@@ -33,6 +58,10 @@
     <category term="网络技术" scheme="https://blog.ning.moe/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/"/>
     
     
+    <category term="DNS" scheme="https://blog.ning.moe/tags/DNS/"/>
+    
+    <category term="Adguard Home" scheme="https://blog.ning.moe/tags/Adguard-Home/"/>
+    
     <category term="Root Servers" scheme="https://blog.ning.moe/tags/Root-Servers/"/>
     
     <category term="网络安全" scheme="https://blog.ning.moe/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
@@ -42,10 +71,6 @@
     <category term="dnscrypt" scheme="https://blog.ning.moe/tags/dnscrypt/"/>
     
     <category term="mosdns" scheme="https://blog.ning.moe/tags/mosdns/"/>
-    
-    <category term="DNS" scheme="https://blog.ning.moe/tags/DNS/"/>
-    
-    <category term="Adguard Home" scheme="https://blog.ning.moe/tags/Adguard-Home/"/>
     
   </entry>
   
@@ -116,11 +141,11 @@
     <category term="网络技术" scheme="https://blog.ning.moe/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="Memos" scheme="https://blog.ning.moe/tags/Memos/"/>
-    
     <category term="Authentik" scheme="https://blog.ning.moe/tags/Authentik/"/>
     
     <category term="SSO" scheme="https://blog.ning.moe/tags/SSO/"/>
+    
+    <category term="Memos" scheme="https://blog.ning.moe/tags/Memos/"/>
     
     <category term="OAuth2" scheme="https://blog.ning.moe/tags/OAuth2/"/>
     
@@ -141,11 +166,11 @@
     
     
     
+    <category term="Ikuai" scheme="https://blog.ning.moe/tags/Ikuai/"/>
+    
     <category term="防火墙" scheme="https://blog.ning.moe/tags/%E9%98%B2%E7%81%AB%E5%A2%99/"/>
     
     <category term="firewall" scheme="https://blog.ning.moe/tags/firewall/"/>
-    
-    <category term="Ikuai" scheme="https://blog.ning.moe/tags/Ikuai/"/>
     
     <category term="IPv6" scheme="https://blog.ning.moe/tags/IPv6/"/>
     
@@ -559,48 +584,17 @@
     <category term="网络技术" scheme="https://blog.ning.moe/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/"/>
     
     
+    <category term="防火墙" scheme="https://blog.ning.moe/tags/%E9%98%B2%E7%81%AB%E5%A2%99/"/>
+    
+    <category term="IPtables" scheme="https://blog.ning.moe/tags/IPtables/"/>
+    
+    <category term="firewall" scheme="https://blog.ning.moe/tags/firewall/"/>
+    
     <category term="docker" scheme="https://blog.ning.moe/tags/docker/"/>
     
     <category term="安全" scheme="https://blog.ning.moe/tags/%E5%AE%89%E5%85%A8/"/>
     
     <category term="ufw" scheme="https://blog.ning.moe/tags/ufw/"/>
-    
-    <category term="IPtables" scheme="https://blog.ning.moe/tags/IPtables/"/>
-    
-    <category term="防火墙" scheme="https://blog.ning.moe/tags/%E9%98%B2%E7%81%AB%E5%A2%99/"/>
-    
-    <category term="firewall" scheme="https://blog.ning.moe/tags/firewall/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>御坂美琴生日快乐</title>
-    <link href="https://blog.ning.moe/posts/MisakaMikoto/"/>
-    <id>https://blog.ning.moe/posts/MisakaMikoto/</id>
-    <published>2023-05-01T16:00:00.000Z</published>
-    <updated>2024-03-12T16:32:13.691Z</updated>
-    
-    <content type="html"><![CDATA[<html><head></head><body><blockquote><p><strong>你指间闪烁的电光，是我此生不变的信仰唯有这超电磁炮将永世长存！！！</strong></p></blockquote><h1 id="首先-祝姐姐大人生日快乐，又一年生日到啦吗，真快呀。"><a href="#首先-祝姐姐大人生日快乐，又一年生日到啦吗，真快呀。" class="headerlink" title="首先,祝姐姐大人生日快乐，又一年生日到啦吗，真快呀。"></a>首先,祝姐姐大人生日快乐，又一年生日到啦吗，真快呀。</h1><img src="https://img.c-dreamer.top/i/1/2023/05/01/644f7e2e4fa62.webp" alt="d6e89b5.webp" style="zoom:50%;"><img src="https://img.c-dreamer.top/i/1/2023/05/01/644f7e24d2d9a.webp" alt="7606d4f59bf.webp" style="zoom:50%;"><h1 id="感想"><a href="#感想" class="headerlink" title="感想"></a>感想</h1><h2 id="对我个人："><a href="#对我个人：" class="headerlink" title="对我个人："></a>对我个人：</h2><p>我已经是一个入宅很晚很晚的人了，我的入宅番是 <code>约战</code> 我并不是完完全全的 某科学的 世界的粉丝，我也并没有看过魔法禁书目录，我仅对于 超电磁炮 御坂美琴的热爱。</p><blockquote><p>摘抄一部分萌娘百科的话。</p><p>天真活泼、爱唠叨的14岁元气少女。有着一头及肩的茶色发丝、同样是茶色的瞳孔、绝不服输的眼神、不需要化妆也很俏丽的面孔。因为外形秀丽加上成绩优秀，因此成为校内学生心目中的偶像，甚至会被学妹们尊称为“御坂大人”。平素都是穿着常盘台的制服，而裙底的安全裤则是美琴活泼的象征。性格好胜、正义感强，有着男孩子般的爽朗性格，但是尤其是在面对可爱的东西时，就显得缺乏耐心、非常不坦率。当喜欢的东西（呱太）或中意的东西被别人评价说“太儿童化”的时候，都会义正言辞地的否决，然后愉♂悦地享受。紧张时会蹦出“喵”的口癖，并且在担心他人慌乱时会自称“美琴姐姐”</p></blockquote><h2 id="对于B站："><a href="#对于B站：" class="headerlink" title="对于B站："></a>对于B站：</h2><p>虽然我入宅很晚，我接触B站也是比较晚了，但最近几年B站环境都是人尽皆知的事情了，对于 B站往年 不管是对 美琴的庆生 还是对其他知名的动漫人物，都是在发的，对于去年B站没有给美琴庆生以及其他人物，我表示非常是生气也表示非常的无奈，但对于今年B站的改变，对于庆生很早就开始宣传了，但并不是 哔哩哔哩弹幕网 这个账号进行宣传，而是 哔哩哔哩番剧组和哔哩哔哩会员购 进行宣传的。剩下的我就不想多说了，B站快要嗝屁的时候还想在收割一波自己以前最老以及起家的人，怎么说呢。从以前B站属于二次元的天地，到最后 二次元滚出B站。</p><p>可能以前 别人说我是二刺螈 我表示可能会有点开心，但对于近几年 <strong>滚，老子不是二次元</strong></p><h2 id="结束语"><a href="#结束语" class="headerlink" title="结束语"></a>结束语</h2><p>时间会磨损一切，那么我又能坚持多久呢？</p><h1 id="引用："><a href="#引用：" class="headerlink" title="引用："></a>引用：</h1><p> 萌娘百科：<a href="https://zh.moegirl.org.cn/%E5%BE%A1%E5%9D%82%E7%BE%8E%E7%90%B4" rel="external nofollow noreferrer">御坂美琴人物简介</a></p></body></html>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;你指间闪烁的电光，是我此生不变的信仰唯有这超电磁炮将永世长存！！！&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;首先-祝姐姐大人生日快乐，又一年生日到啦吗，</summary>
-      
-    
-    
-    
-    <category term="生活随想" scheme="https://blog.ning.moe/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E6%83%B3/"/>
-    
-    
-    <category term="Misaka" scheme="https://blog.ning.moe/tags/Misaka/"/>
-    
-    <category term="御坂美琴" scheme="https://blog.ning.moe/tags/%E5%BE%A1%E5%9D%82%E7%BE%8E%E7%90%B4/"/>
-    
-    <category term="某科学的" scheme="https://blog.ning.moe/tags/%E6%9F%90%E7%A7%91%E5%AD%A6%E7%9A%84/"/>
     
   </entry>
   
