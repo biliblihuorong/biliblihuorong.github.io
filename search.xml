@@ -143,7 +143,7 @@
       </tags>
   </entry>
   <entry>
-    <title>Authentik OAuth 哪吒面板</title>
+    <title>Authentik OIDC 哪吒面板</title>
     <url>/posts/Authentik-NezhaDashboard-OIDC/</url>
     <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>最开始我的<code>nezha面板</code> 使用的 <code>github</code> 的<code>OAuth 认证</code>的，我的哪吒面板是自动更新到最新版本，最新版本更新好之后我发现无法登录我的<code>nezha 面板</code>了,报错提示是 http: named cookie not present<a href="https://nezha.wiki/guide/loginq.html#http-named-cookie-not-present" rel="external nofollow noreferrer"></a>试了试还是不行，最后看了一下新版本更新日志是改了OIDC不知道是不是这个关系，现在可以自定义oidc提供商了我就改成我自己的<code>Authentik</code> 吧。</p>
 <h1 id="准备时间"><a href="#准备时间" class="headerlink" title="准备时间"></a>准备时间</h1><ul>
