@@ -143,6 +143,37 @@
       </tags>
   </entry>
   <entry>
+    <title>Gitea SSO 登录优化与自动注册设置</title>
+    <url>/posts/Authentik-Gitea-SSO/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>gitea 的SSO登录逻辑，是通过OIDC 登录完毕和已经gitea自己的账户进行绑定，如果 没有账户gitea 会要求你注册一个再绑定，但是gitea 并没有能设置通过sso 进来的没有注册的用户开发注册，只有要么所有人都可以注册要么不可以注册。嗯。。。。感觉怪怪的。</p>
+<p>并且更改配置文件还需要手动重启容器，不可能我认识人都创建好gitea吧，或者不能每次他们第一次要用gitea 我需要配置打开注册。</p>
+<h1 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h1><p><strong>此教程默认情况下视为你已经配置好了gitea 的OIDC登录。</strong></p>
+<p>如果您没有实现配置好，可以看 ecwuuuuu 的 <a href="https://www.bilibili.com/video/av1952943836/" rel="external nofollow noreferrer">你可以观看 将应用接入统一登陆 - OAuth 协议篇 - 以 Gitea 和 Grafana 为例</a></p>
+<p>本文章配合 <a href="/posts/CloudFlare-Tunnel-Application-Access/">使用 Cloud Flare Tunnel 和 Acces Application 安全的暴露在公网</a> 进行使用，使用 CloudFlare 的Zero Trust进行<code>转发验证</code></p>
+<p>如果你需要使用nginx配置转发验证，可以看 ecwuuuuu 的 <a href="https://ecwuuuuu.com/post/authentik-tutorial-4-setup-forwardauth/" rel="external nofollow noreferrer">通过反向代理和 ForwardAuth 接入任何应用</a>或者访问他的B站视频 <a href="https://www.bilibili.com/video/av1803923865/" rel="external nofollow noreferrer">配置 ForwardAuth 将任意应用加入统一登陆</a></p>
+<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><p>请确保你的gitea 配置文件和我下面提供的一样（配置文件一般在<code>&lt;宿主机容器映射&gt;/data/gitea/conf/app.ini</code></p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">[openid]</span><br><span class="line">ENABLE_OPENID_SIGNIN = true</span><br><span class="line">ENABLE_OPENID_SIGNUP = true</span><br><span class="line"></span><br><span class="line">[service]</span><br><span class="line">DISABLE_REGISTRATION = false</span><br><span class="line">REQUIRE_SIGNIN_VIEW = true</span><br><span class="line">REGISTER_EMAIL_CONFIRM = false</span><br><span class="line">ENABLE_NOTIFY_MAIL = true</span><br><span class="line">ALLOW_ONLY_EXTERNAL_REGISTRATION = false</span><br><span class="line">ENABLE_CAPTCHA = false</span><br><span class="line">DEFAULT_KEEP_EMAIL_PRIVATE = true</span><br><span class="line">DEFAULT_ALLOW_CREATE_ORGANIZATION = true</span><br><span class="line">DEFAULT_ENABLE_TIMETRACKING = true</span><br><span class="line">NO_REPLY_ADDRESS = noreply.localhost</span><br></pre></td></tr></tbody></table></figure>
+
+
+
+<p>屏蔽注册页面 <code>user/sign_up</code></p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/08/04/66aed81093245.webp" alt="CloudFlare-Zero Trust-Gitea-Sign_up.webp"></p>
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>将应用接入统一登陆 - OAuth 协议篇 - 以 Gitea 和 Grafana 为例:<a href="https://www.bilibili.com/video/av1952943836/" rel="external nofollow noreferrer">https://www.bilibili.com/video/av1952943836/</a></p>
+<p>通过反向代理和 ForwardAuth 接入任何应用:<a href="https://ecwuuuuu.com/post/authentik-tutorial-4-setup-forwardauth/" rel="external nofollow noreferrer">https://ecwuuuuu.com/post/authentik-tutorial-4-setup-forwardauth/</a></p>
+<p>使用 Cloud Flare Tunnel 和 Acces Application 安全的暴露在公网:<a href="https://blog.ning.moe/posts/CloudFlare-Tunnel-Application-Access/">https://blog.ning.moe/posts/CloudFlare-Tunnel-Application-Access/</a></p>
+</body></html>]]></content>
+      <categories>
+        <category>网络技术</category>
+      </categories>
+      <tags>
+        <tag>Authentik</tag>
+        <tag>Gitea</tag>
+        <tag>SSO</tag>
+        <tag>OIDC</tag>
+        <tag>OAuth2</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Authentik OIDC 哪吒面板</title>
     <url>/posts/Authentik-NezhaDashboard-OIDC/</url>
     <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>最开始我的<code>nezha面板</code> 使用的 <code>github</code> 的<code>OAuth 认证</code>的，我的哪吒面板是自动更新到最新版本，最新版本更新好之后我发现无法登录我的<code>nezha 面板</code>了,报错提示是 http: named cookie not present<a href="https://nezha.wiki/guide/loginq.html#http-named-cookie-not-present" rel="external nofollow noreferrer"></a>试了试还是不行，最后看了一下新版本更新日志是改了OIDC不知道是不是这个关系，现在可以自定义oidc提供商了我就改成我自己的<code>Authentik</code> 吧。</p>
@@ -178,70 +209,10 @@
 </body></html>]]></content>
       <tags>
         <tag>Authentik</tag>
+        <tag>SSO</tag>
+        <tag>OIDC</tag>
+        <tag>OAuth2</tag>
         <tag>nezha</tag>
-        <tag>SSO</tag>
-        <tag>OIDC</tag>
-        <tag>OAuth2</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>使用Cloud Flare Tunnel和 Acces Application安全的暴露在公网</title>
-    <url>/posts/CloudFlare-Tunnel-Application-Access/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h1><p>如果搞 Home Lab 始终绕不开的话题是，我们如何将自己的内网服务暴露到公网上，又如何保证我们的安全。<br>现在可以使用我们赛博菩萨 Cloudflare 提供的 Zero Trust 来保护我们的安全。</p>
-<p>演示的dome ： <a href="https://hp.ning.moe/" rel="external nofollow noreferrer">HomePage</a> 和 <a href="https://misakashell.cloudflareaccess.com/" rel="external nofollow noreferrer">Cloud Flare Zero Trust 主页</a></p>
-<h1 id="正文："><a href="#正文：" class="headerlink" title="正文："></a>正文：</h1><h2 id="使用-Tunnel-暴露服务"><a href="#使用-Tunnel-暴露服务" class="headerlink" title="使用 Tunnel 暴露服务"></a>使用 Tunnel 暴露服务</h2><p>我们需要先登录<a href="https://one.dash.cloudflare.com/" rel="external nofollow noreferrer">CF zero trust的管理平台</a>，添加新的隧道点击：<code>Networks/Tunnels</code> 我们需要添加一个隧道让我们本地和 <code>Cloudflare Zero Trust</code>服务器进行连接。简单的配置完隧道名字</p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/22/6626359570249.webp" alt="Cloud-Flare-Zero-Trust-Dash-Tunnels.webp"></p>
-<p>会自动跳转到tunnel 这个页面，没跳转的 Networks/Tunnels/你的隧道/config。我们需要安装一个cloudflared的程序，这个页面已经为我们提供好了常见的系统，如Linux MacOS Windows，复制命令直接在我们终端运行即可。</p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/22/66263669cc5c3.webp" alt="CloudFlared-Download.webp"></p>
-<p>然后 下一步 ，简单配置一下。保存即可。返回菜单会发现刚刚创建的 <code>Tunnel</code> 等待 <code>Status</code> 显示<code>HEALTHY</code> 访问你的 配置好的域名应该就可以访问了。</p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/22/6626371255c1f.webp" alt="Cloud-Flare-Tunnel-Config.webp"></p>
-<h2 id="使用-Access-Applications-认证"><a href="#使用-Access-Applications-认证" class="headerlink" title="使用 Access Applications 认证"></a>使用 Access Applications 认证</h2><p>首先你需要确保你有登录方式 <code>Settings</code> –&gt;<code>Authentication</code>–&gt;<code>Login methods</code> ,如果没有你需要自行创建。</p>
-<p>来到<code> Access</code> –&gt;<code> Applications</code> –&gt; <code> Add an application</code> 选择<code>Self-hosted</code>，填写你刚才的域名，然后下一步。</p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/22/66263cfec6386.webp" alt="CF-Access-Applications.webp"></p>
-<p><code>policy name</code> 可以随便填写 记得 <code>Action</code>是 <code>Allow</code>，这里的Session 是多久在进行登录验证，可以调节时间长一点。</p>
-<p><code>Create additional rules</code> 根据你刚才配置的 <code>Authentication</code> 来填写，我这里是填写CF自带的邮箱验证码进行登录的。</p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/22/66263cff40b37.webp" alt="CF-Add an application.webp"></p>
-<p>配置完毕之后，访问你配置的域名就会出现拦截了，例如我<a href="https://hp.ning.moe/" rel="external nofollow noreferrer">配置好的</a>这我设置了自动跳转所以会到我的<code>SSO.ning.moe</code></p>
-<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p><a href="https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/" rel="external nofollow noreferrer">Cloudflare Tunnel 配置文档</a></p>
-<p><a href="https://developers.cloudflare.com/cloudflare-one/applications/" rel="external nofollow noreferrer">Applications Access</a></p>
-</body></html>]]></content>
-      <categories>
-        <category>网络技术</category>
-      </categories>
-      <tags>
-        <tag>CloudFlare</tag>
-        <tag>Zero Trust</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Gitea SSO 登录优化与自动注册设置</title>
-    <url>/posts/Authentik-Gitea-SSO/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>gitea 的SSO登录逻辑，是通过OIDC 登录完毕和已经gitea自己的账户进行绑定，如果 没有账户gitea 会要求你注册一个再绑定，但是gitea 并没有能设置通过sso 进来的没有注册的用户开发注册，只有要么所有人都可以注册要么不可以注册。嗯。。。。感觉怪怪的。</p>
-<p>并且更改配置文件还需要手动重启容器，不可能我认识人都创建好gitea吧，或者不能每次他们第一次要用gitea 我需要配置打开注册。</p>
-<h1 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h1><p><strong>此教程默认情况下视为你已经配置好了gitea 的OIDC登录。</strong></p>
-<p>如果您没有实现配置好，可以看 ecwuuuuu 的 <a href="https://www.bilibili.com/video/av1952943836/" rel="external nofollow noreferrer">你可以观看 将应用接入统一登陆 - OAuth 协议篇 - 以 Gitea 和 Grafana 为例</a></p>
-<p>本文章配合 <a href="/posts/CloudFlare-Tunnel-Application-Access/">使用 Cloud Flare Tunnel 和 Acces Application 安全的暴露在公网</a> 进行使用，使用 CloudFlare 的Zero Trust进行<code>转发验证</code></p>
-<p>如果你需要使用nginx配置转发验证，可以看 ecwuuuuu 的 <a href="https://ecwuuuuu.com/post/authentik-tutorial-4-setup-forwardauth/" rel="external nofollow noreferrer">通过反向代理和 ForwardAuth 接入任何应用</a>或者访问他的B站视频 <a href="https://www.bilibili.com/video/av1803923865/" rel="external nofollow noreferrer">配置 ForwardAuth 将任意应用加入统一登陆</a></p>
-<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><p>请确保你的gitea 配置文件和我下面提供的一样（配置文件一般在<code>&lt;宿主机容器映射&gt;/data/gitea/conf/app.ini</code></p>
-<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">[openid]</span><br><span class="line">ENABLE_OPENID_SIGNIN = true</span><br><span class="line">ENABLE_OPENID_SIGNUP = true</span><br><span class="line"></span><br><span class="line">[service]</span><br><span class="line">DISABLE_REGISTRATION = false</span><br><span class="line">REQUIRE_SIGNIN_VIEW = true</span><br><span class="line">REGISTER_EMAIL_CONFIRM = false</span><br><span class="line">ENABLE_NOTIFY_MAIL = true</span><br><span class="line">ALLOW_ONLY_EXTERNAL_REGISTRATION = false</span><br><span class="line">ENABLE_CAPTCHA = false</span><br><span class="line">DEFAULT_KEEP_EMAIL_PRIVATE = true</span><br><span class="line">DEFAULT_ALLOW_CREATE_ORGANIZATION = true</span><br><span class="line">DEFAULT_ENABLE_TIMETRACKING = true</span><br><span class="line">NO_REPLY_ADDRESS = noreply.localhost</span><br></pre></td></tr></tbody></table></figure>
-
-
-
-<p>屏蔽注册页面 <code>user/sign_up</code></p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/08/04/66aed81093245.webp" alt="CloudFlare-Zero Trust-Gitea-Sign_up.webp"></p>
-<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>将应用接入统一登陆 - OAuth 协议篇 - 以 Gitea 和 Grafana 为例:<a href="https://www.bilibili.com/video/av1952943836/" rel="external nofollow noreferrer">https://www.bilibili.com/video/av1952943836/</a></p>
-<p>通过反向代理和 ForwardAuth 接入任何应用:<a href="https://ecwuuuuu.com/post/authentik-tutorial-4-setup-forwardauth/" rel="external nofollow noreferrer">https://ecwuuuuu.com/post/authentik-tutorial-4-setup-forwardauth/</a></p>
-<p>使用 Cloud Flare Tunnel 和 Acces Application 安全的暴露在公网:<a href="https://blog.ning.moe/posts/CloudFlare-Tunnel-Application-Access/">https://blog.ning.moe/posts/CloudFlare-Tunnel-Application-Access/</a></p>
-</body></html>]]></content>
-      <categories>
-        <category>网络技术</category>
-      </categories>
-      <tags>
-        <tag>Authentik</tag>
-        <tag>SSO</tag>
-        <tag>OIDC</tag>
-        <tag>OAuth2</tag>
-        <tag>Gitea</tag>
       </tags>
   </entry>
   <entry>
@@ -276,12 +247,12 @@
         <category>网络技术</category>
       </categories>
       <tags>
-        <tag>CloudFlare</tag>
         <tag>go</tag>
         <tag>Cachefly</tag>
         <tag>SSL</tag>
         <tag>宝塔面板</tag>
         <tag>网络技术</tag>
+        <tag>CloudFlare</tag>
         <tag>写bug的小能手</tag>
       </tags>
   </entry>
@@ -431,6 +402,68 @@
       <tags>
         <tag>Ikuai</tag>
         <tag>J4125</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>使用Cloud Flare Tunnel和 Acces Application安全的暴露在公网</title>
+    <url>/posts/CloudFlare-Tunnel-Application-Access/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h1><p>如果搞 Home Lab 始终绕不开的话题是，我们如何将自己的内网服务暴露到公网上，又如何保证我们的安全。<br>现在可以使用我们赛博菩萨 Cloudflare 提供的 Zero Trust 来保护我们的安全。</p>
+<p>演示的dome ： <a href="https://hp.ning.moe/" rel="external nofollow noreferrer">HomePage</a> 和 <a href="https://misakashell.cloudflareaccess.com/" rel="external nofollow noreferrer">Cloud Flare Zero Trust 主页</a></p>
+<h1 id="正文："><a href="#正文：" class="headerlink" title="正文："></a>正文：</h1><h2 id="使用-Tunnel-暴露服务"><a href="#使用-Tunnel-暴露服务" class="headerlink" title="使用 Tunnel 暴露服务"></a>使用 Tunnel 暴露服务</h2><p>我们需要先登录<a href="https://one.dash.cloudflare.com/" rel="external nofollow noreferrer">CF zero trust的管理平台</a>，添加新的隧道点击：<code>Networks/Tunnels</code> 我们需要添加一个隧道让我们本地和 <code>Cloudflare Zero Trust</code>服务器进行连接。简单的配置完隧道名字</p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/22/6626359570249.webp" alt="Cloud-Flare-Zero-Trust-Dash-Tunnels.webp"></p>
+<p>会自动跳转到tunnel 这个页面，没跳转的 Networks/Tunnels/你的隧道/config。我们需要安装一个cloudflared的程序，这个页面已经为我们提供好了常见的系统，如Linux MacOS Windows，复制命令直接在我们终端运行即可。</p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/22/66263669cc5c3.webp" alt="CloudFlared-Download.webp"></p>
+<p>然后 下一步 ，简单配置一下。保存即可。返回菜单会发现刚刚创建的 <code>Tunnel</code> 等待 <code>Status</code> 显示<code>HEALTHY</code> 访问你的 配置好的域名应该就可以访问了。</p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/22/6626371255c1f.webp" alt="Cloud-Flare-Tunnel-Config.webp"></p>
+<h2 id="使用-Access-Applications-认证"><a href="#使用-Access-Applications-认证" class="headerlink" title="使用 Access Applications 认证"></a>使用 Access Applications 认证</h2><p>首先你需要确保你有登录方式 <code>Settings</code> –&gt;<code>Authentication</code>–&gt;<code>Login methods</code> ,如果没有你需要自行创建。</p>
+<p>来到<code> Access</code> –&gt;<code> Applications</code> –&gt; <code> Add an application</code> 选择<code>Self-hosted</code>，填写你刚才的域名，然后下一步。</p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/22/66263cfec6386.webp" alt="CF-Access-Applications.webp"></p>
+<p><code>policy name</code> 可以随便填写 记得 <code>Action</code>是 <code>Allow</code>，这里的Session 是多久在进行登录验证，可以调节时间长一点。</p>
+<p><code>Create additional rules</code> 根据你刚才配置的 <code>Authentication</code> 来填写，我这里是填写CF自带的邮箱验证码进行登录的。</p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/22/66263cff40b37.webp" alt="CF-Add an application.webp"></p>
+<p>配置完毕之后，访问你配置的域名就会出现拦截了，例如我<a href="https://hp.ning.moe/" rel="external nofollow noreferrer">配置好的</a>这我设置了自动跳转所以会到我的<code>SSO.ning.moe</code></p>
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p><a href="https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/" rel="external nofollow noreferrer">Cloudflare Tunnel 配置文档</a></p>
+<p><a href="https://developers.cloudflare.com/cloudflare-one/applications/" rel="external nofollow noreferrer">Applications Access</a></p>
+</body></html>]]></content>
+      <categories>
+        <category>网络技术</category>
+      </categories>
+      <tags>
+        <tag>CloudFlare</tag>
+        <tag>Zero Trust</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>爱快IPv6防火墙配置</title>
+    <url>/posts/Ikuai-firewall-IPv6/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>爱快尽然默认没有开启<code>IPv6</code>对内网设备的阻断，我发现的时候十分震惊，而且已经在公网上暴露有一天以上了，最糟糕的事情，内网设备的密码全部是弱密码，吓得我先立刻断掉<code>IPv6</code>接入，仔细排查了一下内网设备还好没有人扫到并且进行爆破。</p>
+<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><p>请确保你的<code>ikuai </code>系统是最新版本并且登录<code>ikuai Web</code>后台，<code>安全设置</code> –&gt;<code>ACL规则</code></p>
+<h2 id="阻断所有IPv6链接"><a href="#阻断所有IPv6链接" class="headerlink" title="阻断所有IPv6链接"></a>阻断所有IPv6链接</h2><blockquote>
+<p>此操作不会阻断响应<code>IPv6</code>的流量</p>
+</blockquote>
+<p>由于 <code>ikuai </code>在 3.7.11 版本还不支持放行或阻断<code> ICMP</code> 协议，如果您想外网设备能ping通内网的话，需要需要创建两个配置，一个是阻断<code>TCP</code>还有一个阻断<code>UDP</code>，不想<code>ping</code>通的话，只需要创建一个配置选择任意协议即可。</p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/03/06/65e834d3a0bdd.webp" alt="ipv6防护墙介绍.webp"></p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/03/06/65e834d40ca02.webp" alt="ipv6阻断.webp"></p>
+<p>进接口一定是<code>wan</code>口由于笔者只有一个<code>wan</code>口，如果您有多个话请务必全部勾选，出接口是<code>lan</code>同样如果您有多个<code>lan</code>接口请全部勾上，这样我们内网设备就不会暴露外网了。</p>
+<h2 id="打开指定IPv6的连接"><a href="#打开指定IPv6的连接" class="headerlink" title="打开指定IPv6的连接"></a>打开指定IPv6的连接</h2><blockquote>
+<p>再说指定放行<code>IPv6</code>地址，如果您是静态<code>IPv6</code>，那你自己放行那个ip 即可，但是身为家庭宽带的话都是动态<code>IPv6</code>地址根本不可能知道ip会变成什么样子，还是说每次变化ip 的地址重新改吗？这里需要了解一下ipv6 的后缀生成是受MAC 地址影响的，通过EUI-64 编码进行处理，详情访问: <a href="https://ccie.lol/knowledge-base/ipv6-use-eui-64-convert-link-local-address/" rel="external nofollow noreferrer">【转】通过EUI-64自动生成IPv6地址和IPv6链路本地地址（Link-Local Address）</a></p>
+</blockquote>
+<p><strong>对于windows 获取ipv6地址使用 EUI-64 编码得到的理论值和实际值可能不一样</strong></p>
+<p>可以使用 <a href="https://eui64-calc.princelle.org/" rel="external nofollow noreferrer">EUI-64 计算器</a></p>
+<p>例如 <code>bc:34:11:c6:8a:19 </code>通过计算可以得到 <code>BE34:11FF:FEC6:8A19</code> 理论情况的<code>ipv6</code>，据我测试后四位基本上都是一样的，前面受到<code>IPv6</code>前缀影响。</p>
+<img src="https://img.misaka.pics/ShellBlogImg/1/2024/03/06/65e846c30a412.webp" alt="指定IPv6放行.webp" style="zoom:67%;">
+
+<p>在已经匹配的内容中<code>::8A19</code>改成你自己的后缀四位，<code>ikuai </code>的防火墙逻辑是先放行后阻断，所以不需要关系防火墙配置的顺序。</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">::8a1f/::ffff</span><br></pre></td></tr></tbody></table></figure>
+
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p><a href="https://ccie.lol/knowledge-base/ipv6-use-eui-64-convert-link-local-address/" rel="external nofollow noreferrer">【转】通过EUI-64自动生成IPv6地址和IPv6链路本地地址（Link-Local Address）</a></p>
+<p> <a href="https://eui64-calc.princelle.org/" rel="external nofollow noreferrer">EUI-64 计算器</a></p>
+</body></html>]]></content>
+      <tags>
+        <tag>防火墙</tag>
+        <tag>firewall</tag>
+        <tag>Ikuai</tag>
+        <tag>IPv6</tag>
       </tags>
   </entry>
   <entry>
@@ -659,36 +692,82 @@
       </tags>
   </entry>
   <entry>
-    <title>爱快IPv6防火墙配置</title>
-    <url>/posts/Ikuai-firewall-IPv6/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>爱快尽然默认没有开启<code>IPv6</code>对内网设备的阻断，我发现的时候十分震惊，而且已经在公网上暴露有一天以上了，最糟糕的事情，内网设备的密码全部是弱密码，吓得我先立刻断掉<code>IPv6</code>接入，仔细排查了一下内网设备还好没有人扫到并且进行爆破。</p>
-<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><p>请确保你的<code>ikuai </code>系统是最新版本并且登录<code>ikuai Web</code>后台，<code>安全设置</code> –&gt;<code>ACL规则</code></p>
-<h2 id="阻断所有IPv6链接"><a href="#阻断所有IPv6链接" class="headerlink" title="阻断所有IPv6链接"></a>阻断所有IPv6链接</h2><blockquote>
-<p>此操作不会阻断响应<code>IPv6</code>的流量</p>
+    <title>御坂美琴生日快乐</title>
+    <url>/posts/MisakaMikoto/</url>
+    <content><![CDATA[<html><head></head><body><blockquote>
+<p><strong>你指间闪烁的电光，是我此生不变的信仰唯有这超电磁炮将永世长存！！！</strong></p>
 </blockquote>
-<p>由于 <code>ikuai </code>在 3.7.11 版本还不支持放行或阻断<code> ICMP</code> 协议，如果您想外网设备能ping通内网的话，需要需要创建两个配置，一个是阻断<code>TCP</code>还有一个阻断<code>UDP</code>，不想<code>ping</code>通的话，只需要创建一个配置选择任意协议即可。</p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/03/06/65e834d3a0bdd.webp" alt="ipv6防护墙介绍.webp"></p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/03/06/65e834d40ca02.webp" alt="ipv6阻断.webp"></p>
-<p>进接口一定是<code>wan</code>口由于笔者只有一个<code>wan</code>口，如果您有多个话请务必全部勾选，出接口是<code>lan</code>同样如果您有多个<code>lan</code>接口请全部勾上，这样我们内网设备就不会暴露外网了。</p>
-<h2 id="打开指定IPv6的连接"><a href="#打开指定IPv6的连接" class="headerlink" title="打开指定IPv6的连接"></a>打开指定IPv6的连接</h2><blockquote>
-<p>再说指定放行<code>IPv6</code>地址，如果您是静态<code>IPv6</code>，那你自己放行那个ip 即可，但是身为家庭宽带的话都是动态<code>IPv6</code>地址根本不可能知道ip会变成什么样子，还是说每次变化ip 的地址重新改吗？这里需要了解一下ipv6 的后缀生成是受MAC 地址影响的，通过EUI-64 编码进行处理，详情访问: <a href="https://ccie.lol/knowledge-base/ipv6-use-eui-64-convert-link-local-address/" rel="external nofollow noreferrer">【转】通过EUI-64自动生成IPv6地址和IPv6链路本地地址（Link-Local Address）</a></p>
+<h1 id="首先-祝姐姐大人生日快乐，又一年生日到啦吗，真快呀。"><a href="#首先-祝姐姐大人生日快乐，又一年生日到啦吗，真快呀。" class="headerlink" title="首先,祝姐姐大人生日快乐，又一年生日到啦吗，真快呀。"></a>首先,祝姐姐大人生日快乐，又一年生日到啦吗，真快呀。</h1><img src="https://img.c-dreamer.top/i/1/2023/05/01/644f7e2e4fa62.webp" alt="d6e89b5.webp" style="zoom:50%;">
+
+<img src="https://img.c-dreamer.top/i/1/2023/05/01/644f7e24d2d9a.webp" alt="7606d4f59bf.webp" style="zoom:50%;">
+
+
+
+
+<h1 id="感想"><a href="#感想" class="headerlink" title="感想"></a>感想</h1><h2 id="对我个人："><a href="#对我个人：" class="headerlink" title="对我个人："></a>对我个人：</h2><p>我已经是一个入宅很晚很晚的人了，我的入宅番是 <code>约战</code> 我并不是完完全全的 某科学的 世界的粉丝，我也并没有看过魔法禁书目录，我仅对于 超电磁炮 御坂美琴的热爱。</p>
+<blockquote>
+<p>摘抄一部分萌娘百科的话。</p>
+<p>天真活泼、爱唠叨的14岁元气少女。有着一头及肩的茶色发丝、同样是茶色的瞳孔、绝不服输的眼神、不需要化妆也很俏丽的面孔。因为外形秀丽加上成绩优秀，因此成为校内学生心目中的偶像，甚至会被学妹们尊称为“御坂大人”。平素都是穿着常盘台的制服，而裙底的安全裤则是美琴活泼的象征。性格好胜、正义感强，有着男孩子般的爽朗性格，但是尤其是在面对可爱的东西时，就显得缺乏耐心、非常不坦率。当喜欢的东西（呱太）或中意的东西被别人评价说“太儿童化”的时候，都会义正言辞地的否决，然后愉♂悦地享受。紧张时会蹦出“喵”的口癖，并且在担心他人慌乱时会自称“美琴姐姐”</p>
 </blockquote>
-<p><strong>对于windows 获取ipv6地址使用 EUI-64 编码得到的理论值和实际值可能不一样</strong></p>
-<p>可以使用 <a href="https://eui64-calc.princelle.org/" rel="external nofollow noreferrer">EUI-64 计算器</a></p>
-<p>例如 <code>bc:34:11:c6:8a:19 </code>通过计算可以得到 <code>BE34:11FF:FEC6:8A19</code> 理论情况的<code>ipv6</code>，据我测试后四位基本上都是一样的，前面受到<code>IPv6</code>前缀影响。</p>
-<img src="https://img.misaka.pics/ShellBlogImg/1/2024/03/06/65e846c30a412.webp" alt="指定IPv6放行.webp" style="zoom:67%;">
-
-<p>在已经匹配的内容中<code>::8A19</code>改成你自己的后缀四位，<code>ikuai </code>的防火墙逻辑是先放行后阻断，所以不需要关系防火墙配置的顺序。</p>
-<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">::8a1f/::ffff</span><br></pre></td></tr></tbody></table></figure>
-
-<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p><a href="https://ccie.lol/knowledge-base/ipv6-use-eui-64-convert-link-local-address/" rel="external nofollow noreferrer">【转】通过EUI-64自动生成IPv6地址和IPv6链路本地地址（Link-Local Address）</a></p>
-<p> <a href="https://eui64-calc.princelle.org/" rel="external nofollow noreferrer">EUI-64 计算器</a></p>
+<h2 id="对于B站："><a href="#对于B站：" class="headerlink" title="对于B站："></a>对于B站：</h2><p>虽然我入宅很晚，我接触B站也是比较晚了，但最近几年B站环境都是人尽皆知的事情了，对于 B站往年 不管是对 美琴的庆生 还是对其他知名的动漫人物，都是在发的，对于去年B站没有给美琴庆生以及其他人物，我表示非常是生气也表示非常的无奈，但对于今年B站的改变，对于庆生很早就开始宣传了，但并不是 哔哩哔哩弹幕网 这个账号进行宣传，而是 哔哩哔哩番剧组和哔哩哔哩会员购 进行宣传的。剩下的我就不想多说了，B站快要嗝屁的时候还想在收割一波自己以前最老以及起家的人，怎么说呢。从以前B站属于二次元的天地，到最后 二次元滚出B站。</p>
+<p>可能以前 别人说我是二刺螈 我表示可能会有点开心，但对于近几年 <strong>滚，老子不是二次元</strong></p>
+<h2 id="结束语"><a href="#结束语" class="headerlink" title="结束语"></a>结束语</h2><p>时间会磨损一切，那么我又能坚持多久呢？</p>
+<h1 id="引用："><a href="#引用：" class="headerlink" title="引用："></a>引用：</h1><p> 萌娘百科：<a href="https://zh.moegirl.org.cn/%E5%BE%A1%E5%9D%82%E7%BE%8E%E7%90%B4" rel="external nofollow noreferrer">御坂美琴人物简介</a></p>
 </body></html>]]></content>
+      <categories>
+        <category>生活随想</category>
+      </categories>
       <tags>
-        <tag>防火墙</tag>
-        <tag>firewall</tag>
-        <tag>Ikuai</tag>
-        <tag>IPv6</tag>
+        <tag>Misaka</tag>
+        <tag>御坂美琴</tag>
+        <tag>某科学的</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2023年好耶！</title>
+    <url>/posts/New2023/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="博客补全计划"><a href="#博客补全计划" class="headerlink" title="博客补全计划"></a>博客补全计划</h1><p>对于突然诈尸的我，在这两年里面我也写了很多稿子（虽然都没有发出来），其实要么是不满意不太像水，要么就是写着写着发现，貌似有很多问题。</p>
+<blockquote>
+<p>如今看着我的博客日渐没有维护（上次小范围维护还是在6个月以前）我决定不能在这样怠惰下去了。</p>
+</blockquote>
+<h1 id="制定计划ing"><a href="#制定计划ing" class="headerlink" title="制定计划ing"></a>制定计划ing</h1><ol>
+<li><ul>
+<li><input checked="" disabled="" type="checkbox"> 修改<code>butterfly</code>主题</li>
+</ul>
+</li>
+<li><ul>
+<li><input checked="" disabled="" type="checkbox"> 重新整理图片的地址</li>
+</ul>
+</li>
+<li><ul>
+<li><input disabled="" type="checkbox"> 将以前废稿进行优化处理，达到可发布</li>
+</ul>
+</li>
+<li><ul>
+<li><input checked="" disabled="" type="checkbox"> 修复大陆评论时，评论插件响应慢的问题</li>
+</ul>
+</li>
+<li><ul>
+<li><input checked="" disabled="" type="checkbox"> 修改以前博文的地址链接，进行缩短处理</li>
+</ul>
+</li>
+</ol>
+<blockquote>
+<p>差不多先这样，让博客先复活，后续应该不会一年+一更了 哎<del>嘿</del></p>
+</blockquote>
+<hr>
+<p>23年1-29日</p>
+<p>现在基本上已经快修理 80%了，另外我好重写补写了一遍文章，好气刚搭建完，自己的访客分析系统就被adguard给ban了我在想想办法吧。</p>
+<p>至于评论（twikoo）的话我现在还没有看，因为我放在了vercel 大陆访问是真的很慢了，博客的图像也全部换成了webp，关键是首页的横幅是真的大大概5mb的图像。</p>
+<hr>
+<p>23年1-30</p>
+<p>现在已经吧 twikoo部署到私服上，速度会有明显的提升，现在就差几篇废稿了。</p>
+</body></html>]]></content>
+      <categories>
+        <category>生活随想</category>
+      </categories>
+      <tags>
+        <tag>TODO</tag>
       </tags>
   </entry>
   <entry>
@@ -797,85 +876,6 @@
       </tags>
   </entry>
   <entry>
-    <title>御坂美琴生日快乐</title>
-    <url>/posts/MisakaMikoto/</url>
-    <content><![CDATA[<html><head></head><body><blockquote>
-<p><strong>你指间闪烁的电光，是我此生不变的信仰唯有这超电磁炮将永世长存！！！</strong></p>
-</blockquote>
-<h1 id="首先-祝姐姐大人生日快乐，又一年生日到啦吗，真快呀。"><a href="#首先-祝姐姐大人生日快乐，又一年生日到啦吗，真快呀。" class="headerlink" title="首先,祝姐姐大人生日快乐，又一年生日到啦吗，真快呀。"></a>首先,祝姐姐大人生日快乐，又一年生日到啦吗，真快呀。</h1><img src="https://img.c-dreamer.top/i/1/2023/05/01/644f7e2e4fa62.webp" alt="d6e89b5.webp" style="zoom:50%;">
-
-<img src="https://img.c-dreamer.top/i/1/2023/05/01/644f7e24d2d9a.webp" alt="7606d4f59bf.webp" style="zoom:50%;">
-
-
-
-
-<h1 id="感想"><a href="#感想" class="headerlink" title="感想"></a>感想</h1><h2 id="对我个人："><a href="#对我个人：" class="headerlink" title="对我个人："></a>对我个人：</h2><p>我已经是一个入宅很晚很晚的人了，我的入宅番是 <code>约战</code> 我并不是完完全全的 某科学的 世界的粉丝，我也并没有看过魔法禁书目录，我仅对于 超电磁炮 御坂美琴的热爱。</p>
-<blockquote>
-<p>摘抄一部分萌娘百科的话。</p>
-<p>天真活泼、爱唠叨的14岁元气少女。有着一头及肩的茶色发丝、同样是茶色的瞳孔、绝不服输的眼神、不需要化妆也很俏丽的面孔。因为外形秀丽加上成绩优秀，因此成为校内学生心目中的偶像，甚至会被学妹们尊称为“御坂大人”。平素都是穿着常盘台的制服，而裙底的安全裤则是美琴活泼的象征。性格好胜、正义感强，有着男孩子般的爽朗性格，但是尤其是在面对可爱的东西时，就显得缺乏耐心、非常不坦率。当喜欢的东西（呱太）或中意的东西被别人评价说“太儿童化”的时候，都会义正言辞地的否决，然后愉♂悦地享受。紧张时会蹦出“喵”的口癖，并且在担心他人慌乱时会自称“美琴姐姐”</p>
-</blockquote>
-<h2 id="对于B站："><a href="#对于B站：" class="headerlink" title="对于B站："></a>对于B站：</h2><p>虽然我入宅很晚，我接触B站也是比较晚了，但最近几年B站环境都是人尽皆知的事情了，对于 B站往年 不管是对 美琴的庆生 还是对其他知名的动漫人物，都是在发的，对于去年B站没有给美琴庆生以及其他人物，我表示非常是生气也表示非常的无奈，但对于今年B站的改变，对于庆生很早就开始宣传了，但并不是 哔哩哔哩弹幕网 这个账号进行宣传，而是 哔哩哔哩番剧组和哔哩哔哩会员购 进行宣传的。剩下的我就不想多说了，B站快要嗝屁的时候还想在收割一波自己以前最老以及起家的人，怎么说呢。从以前B站属于二次元的天地，到最后 二次元滚出B站。</p>
-<p>可能以前 别人说我是二刺螈 我表示可能会有点开心，但对于近几年 <strong>滚，老子不是二次元</strong></p>
-<h2 id="结束语"><a href="#结束语" class="headerlink" title="结束语"></a>结束语</h2><p>时间会磨损一切，那么我又能坚持多久呢？</p>
-<h1 id="引用："><a href="#引用：" class="headerlink" title="引用："></a>引用：</h1><p> 萌娘百科：<a href="https://zh.moegirl.org.cn/%E5%BE%A1%E5%9D%82%E7%BE%8E%E7%90%B4" rel="external nofollow noreferrer">御坂美琴人物简介</a></p>
-</body></html>]]></content>
-      <categories>
-        <category>生活随想</category>
-      </categories>
-      <tags>
-        <tag>Misaka</tag>
-        <tag>御坂美琴</tag>
-        <tag>某科学的</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>2023年好耶！</title>
-    <url>/posts/New2023/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="博客补全计划"><a href="#博客补全计划" class="headerlink" title="博客补全计划"></a>博客补全计划</h1><p>对于突然诈尸的我，在这两年里面我也写了很多稿子（虽然都没有发出来），其实要么是不满意不太像水，要么就是写着写着发现，貌似有很多问题。</p>
-<blockquote>
-<p>如今看着我的博客日渐没有维护（上次小范围维护还是在6个月以前）我决定不能在这样怠惰下去了。</p>
-</blockquote>
-<h1 id="制定计划ing"><a href="#制定计划ing" class="headerlink" title="制定计划ing"></a>制定计划ing</h1><ol>
-<li><ul>
-<li><input checked="" disabled="" type="checkbox"> 修改<code>butterfly</code>主题</li>
-</ul>
-</li>
-<li><ul>
-<li><input checked="" disabled="" type="checkbox"> 重新整理图片的地址</li>
-</ul>
-</li>
-<li><ul>
-<li><input disabled="" type="checkbox"> 将以前废稿进行优化处理，达到可发布</li>
-</ul>
-</li>
-<li><ul>
-<li><input checked="" disabled="" type="checkbox"> 修复大陆评论时，评论插件响应慢的问题</li>
-</ul>
-</li>
-<li><ul>
-<li><input checked="" disabled="" type="checkbox"> 修改以前博文的地址链接，进行缩短处理</li>
-</ul>
-</li>
-</ol>
-<blockquote>
-<p>差不多先这样，让博客先复活，后续应该不会一年+一更了 哎<del>嘿</del></p>
-</blockquote>
-<hr>
-<p>23年1-29日</p>
-<p>现在基本上已经快修理 80%了，另外我好重写补写了一遍文章，好气刚搭建完，自己的访客分析系统就被adguard给ban了我在想想办法吧。</p>
-<p>至于评论（twikoo）的话我现在还没有看，因为我放在了vercel 大陆访问是真的很慢了，博客的图像也全部换成了webp，关键是首页的横幅是真的大大概5mb的图像。</p>
-<hr>
-<p>23年1-30</p>
-<p>现在已经吧 twikoo部署到私服上，速度会有明显的提升，现在就差几篇废稿了。</p>
-</body></html>]]></content>
-      <categories>
-        <category>生活随想</category>
-      </categories>
-      <tags>
-        <tag>TODO</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>新版本Spring-Security配置踩坑</title>
     <url>/posts/Spring-Security/</url>
     <content><![CDATA[<html><head></head><body><h1 id="引言："><a href="#引言：" class="headerlink" title="引言："></a>引言：</h1><blockquote>
@@ -908,6 +908,131 @@
         <tag>Java</tag>
         <tag>Security</tag>
         <tag>SpringSecuriy</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>解决Umami v2.3升级问题，Something went wrong.</title>
+    <url>/posts/Umami-fix/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>是的没错，发生这样的事情，应该很多<code>Umami</code>只要是v2.2版本应该都遇到了。 </p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2023/07/19/64b7cb785693f.webp" alt="Umami v2.2 Something went wrong."></p>
+<p>我浏览了部分 <code>issues</code> 只能升级到v2.3版本了。</p>
+<h1 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h1><p>我先说一下我自己的环境，我自己的使用：</p>
+<ol>
+<li>属于编译安装，没有放在docker</li>
+<li>Mysql 5.7</li>
+<li>nodjs 18.16.0</li>
+<li>npm 9.5.1</li>
+</ol>
+<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><p>解决办法有两种，第一种你可以直接尝试升级到<code>MySQL</code> 8.0，如果你想继续和我一样，小鸡的配置不行还想用5.7，请继续往下看。</p>
+<p>如果你是和我一样都是<code>Mysql</code> 5.7版本，你需要查看这篇 <a href="https://github.com/umami-software/umami/issues/2118" rel="external nofollow noreferrer">issues</a> 或者继续往下看。</p>
+<ol>
+<li>你需要从GitHub 拉去一份最新的<a href="https://github.com/umami-software/umami/releases" rel="external nofollow noreferrer">Umami</a> 的代码，你需要找到<code>db/mysql/migrations/02_report_schema_session_data</code>文件夹下的<code>migration.sql</code>这份sql文件，将下面的代码替换和保存。</li>
+</ol>
+<figure class="highlight sql"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> `event_data` CHANGE `event_data_type` `data_type` <span class="type">int</span> unsigned <span class="keyword">NOT</span> <span class="keyword">NULL</span>;</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> `event_data` CHANGE `event_date_value` `date_value` <span class="type">timestamp</span> <span class="keyword">NULL</span>;</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> `event_data` CHANGE `event_id` `event_data_id` <span class="type">varchar</span>(<span class="number">36</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span>;</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> `event_data` CHANGE `event_numeric_value` `number_value` <span class="type">decimal</span>(<span class="number">19</span>, <span class="number">4</span>) <span class="keyword">NULL</span>;</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> `event_data` CHANGE `event_string_value` `string_value`<span class="type">varchar</span>(<span class="number">500</span>) <span class="keyword">NULL</span>;</span><br></pre></td></tr></tbody></table></figure>
+
+<p>终于我遇到的问题，你需要备份原来的 <code>Umami</code> 数据库，然后创建一个新的数据库，讲数据源配置在<code>.env</code>里面，不然通过初始化数据库。</p>
+<ol start="2">
+<li><p>然后你需要在终端中运行这段命令<code>npx prisma migrate resolve --rolled-back "02_report_schema_session_data"</code></p>
+</li>
+<li><p>重新部署，请看 <a href="https://umami.is/docs/install" rel="external nofollow noreferrer">https://umami.is/docs/install</a></p>
+</li>
+</ol>
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>Umami 的GitHub issues ：<a href="https://github.com/umami-software/umami/issues/2118" rel="external nofollow noreferrer">https://github.com/umami-software/umami/issues/2118</a></p>
+</body></html>]]></content>
+      <categories>
+        <category>网络技术</category>
+      </categories>
+      <tags>
+        <tag>MySql</tag>
+        <tag>Umami</tag>
+        <tag>PV</tag>
+        <tag>网站统计，UV</tag>
+        <tag>Ip</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo butterfly 优化</title>
+    <url>/posts/butterfly/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
+<p>我也来水一篇博文吧，最近我也不知道在忙什么（<del>明明就是懒得更新</del>），也感谢  @<a href="https://yujie.pro/network/52.html" rel="external nofollow noreferrer">夜灭</a>博主,让我可以水一篇博文以及再次优化hexo博客，如你所见我的博客在国内访问基本上都能在5秒以内完成这个所有加载。</p>
+</blockquote>
+<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><h2 id="博客基本情况"><a href="#博客基本情况" class="headerlink" title="博客基本情况"></a>博客基本情况</h2><p>优化过的情况</p>
+<ol>
+<li>源站在GitHub Pages上</li>
+<li>使用双解析模式（国内 腾讯云 国外Cloudflare）</li>
+<li>把 hexo 需要的静态js 资源全部缓存到源站，不在走<code>jsdelivr</code></li>
+<li>图床使用自建数据在<code>backblaze</code>存储桶上，详细的图床解决方案：<a href="https://blog.ning.moe/posts/lskypro-backblaze/">https://blog.ning.moe/posts/lskypro-backblaze/</a></li>
+<li>图床使用cf的自定义域名进行双解析和第二点一样。</li>
+</ol>
+<p><img src="https://img.c-dreamer.top/i/1/2023/04/22/64439fea99b29.webp" alt="图.webp"></p>
+<h2 id="butterfly-静态资源优化"><a href="#butterfly-静态资源优化" class="headerlink" title="butterfly 静态资源优化"></a>butterfly 静态资源优化</h2><p>在最新的 <code>butterfly </code>4.8.1 中加入了自定义cdn 功能，虽然以前也能改那就要一个一个配置文件上改了</p>
+<figure class="highlight yaml"><table><tbody><tr><td class="code"><pre><span class="line"><span class="attr">CDN:</span></span><br><span class="line">  <span class="comment"># The CDN provider of internal scripts (主題內部 js 的 cdn 配置)</span></span><br><span class="line">  <span class="comment"># option: local/jsdelivr/unpkg/cdnjs/custom</span></span><br><span class="line">  <span class="comment"># Dev version can only choose. ( dev版的主題只能設置為 local )</span></span><br><span class="line">  <span class="attr">internal_provider:</span> <span class="string">local</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># The CDN provider of third party scripts (第三方 js 的 cdn 配置)</span></span><br><span class="line">  <span class="comment"># option: local/jsdelivr/unpkg/cdnjs/custom</span></span><br><span class="line">  <span class="comment"># when set it to local, you need to install hexo-butterfly-extjs</span></span><br><span class="line">  <span class="attr">third_party_provider:</span> <span class="string">local</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># Add version number to url, true or false</span></span><br><span class="line">  <span class="attr">version:</span> <span class="literal">false</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># Custom format</span></span><br><span class="line">  <span class="comment"># For example: https://cdn.staticfile.org/${cdnjs_name}/${version}/${min_cdnjs_file}</span></span><br><span class="line">  <span class="attr">custom_format:</span> </span><br><span class="line">  <span class="comment">#以下省略</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>我这里使用了 <code>local</code>的CDN就是把所有资源封装在本地了，你需要执行<code>npm install hexo-butterfly-extjs</code>命令，hexo 三连命令即可<code>hexo cl &amp;&amp; hexo  generate &amp;&amp; hexo server</code>。</p>
+<p>如果你不喜欢这样的话，<a href="https://butterfly.js.org/posts/ceeb73f/#CDN" rel="external nofollow noreferrer">可以参考主题官方提供的配置</a>,可以选择如 七牛云 BootCDN Elemecdn 等<br>但是这个配置其他cdn 我测试的时候偶尔也会丢失一部分静态资源。</p>
+</body></html>]]></content>
+      <categories>
+        <category>网络技术</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>butterfly</tag>
+        <tag>jsdelivr</tag>
+        <tag>CDN</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Memos 对接 Authentik</title>
+    <url>/posts/authentik-OAuth2-memos/</url>
+    <content><![CDATA[<html><head></head><body><blockquote>
+<p> 配置中：这是什么啊，这么麻烦还没过去啊。 配置后：真香好方便。</p>
+</blockquote>
+<p>使用本文前请自行在 <code>Authentik </code>配置好 Memos使用的<code>应用程序</code>和<code>提供程序</code></p>
+<h1 id="Authentik-配置"><a href="#Authentik-配置" class="headerlink" title="Authentik 配置"></a>Authentik 配置</h1><p>默认你已经创建好了，一个给Memos使用的<code>应用程序</code>和<code>提供程序</code>,我们需要更改<code>提供程序</code>(给Memos 的)我们点击编辑</p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/09/66155d6445bbc.webp" alt="Authentik 配置 Memos-1.webp"></p>
+<blockquote>
+<p>选择客户端可以使用哪些作用域。客户端仍然需要指定访问数据的范围。</p>
+<p>按住 <code>ctrl/command</code> 键可选择多个项目。</p>
+</blockquote>
+<p>我们选中<code>authentik default OAuth Mapping: OpenID email</code> 和 <code>authentik default OAuth Mapping: OpenID openid</code>将<code>Subject 模式</code>改成基于用户名，然后更新。</p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/09/6615597f90737.webp" alt="Authentik 配置 Memos.webp"></p>
+<h1 id="Memos配置"><a href="#Memos配置" class="headerlink" title="Memos配置"></a>Memos配置</h1><blockquote>
+<p>在截至发文时 <code>Memos</code> 的版本为<code>v0.20.1</code>版本，<code>Memos</code>通过用户名为主键，其实只需要给<code>username</code>字段即可。</p>
+</blockquote>
+<p>根据上文调整的，现在sub 是我们的用户名字段，按照文章截屏填写其他的自行替换。这样你的的<code>Memos</code>就可以使用<code>Authentik</code>进行登录了。</p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/09/66155e6ca6dc7.webp" alt="Memos-Oauth2-config.webp"></p>
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p><code>Memos</code>的文档：<a href="https://www.usememos.com/docs/advanced-settings/keycloak" rel="external nofollow noreferrer">https://www.usememos.com/docs/advanced-settings/keycloak</a></p>
+</body></html>]]></content>
+      <categories>
+        <category>网络技术</category>
+      </categories>
+      <tags>
+        <tag>Authentik</tag>
+        <tag>SSO</tag>
+        <tag>OIDC</tag>
+        <tag>OAuth2</tag>
+        <tag>Memos</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于启动CDN发生一些难受的小bug</title>
+    <url>/posts/cdn/</url>
+    <content><![CDATA[<html><head></head><body><p>好久没有更新了，如果你要问我这段鸽了半年干了什么，我只能说啥事情都没有干，还是没有想好写什么,但是我一定会在6月结束会高产的。 当然关于:部署多的CDN同时加速的网上教程也很少（也可能我没有找到太多）</p>
+<blockquote>
+<p><strong>在这个星期又又又白嫖了Tencent Cloud的CDN活动</strong>，上次白嫖了一百块无门槛优惠卷，貌似我的域名在Tencent cloud只是首年续费了9块剩下5年都没有花过其他的了。</p>
+</blockquote>
+<p>国内用腾讯的国外用的是CF，现在也是国内国外都使用的CDN(我是不会告诉你我原来没有使用CDN的)</p>
+<h2 id="bug总结"><a href="#bug总结" class="headerlink" title="bug总结:"></a>bug总结:</h2><ol>
+<li> https的问题: 使用腾讯CDN就麻烦不行，CF特别顺畅没有发生过https的问题.在腾讯云的CDN想开https你需要上传你的证书才可以。</li>
+<li> 开启CDN之后WordPress出现无法登陆后台的问题，腾讯需要**/wp-admin**变成不缓存即可。 3.指开启国内加速，可能导致国外的朋友出现无法访问的问题: 这个问题我还发过工单给腾讯云,简单总结一句话,你开国内的加速，跟国外有什么关系。 这个问题我只遇到过一次，有几率会抽风一下。 如果嫌麻烦的话你就顺便在腾讯也开启境外的，不麻烦的CF的好处就来了。 4.还有一个就是评论不会实时同步,其实这也不算是bug,毕竟CDN也不可能做到全访问实时的不过也不会特别慢。</li>
+</ol>
+<p>如果有错的地方欢迎指出,萌新下手麻烦轻一点.</p>
+</body></html>]]></content>
+      <categories>
+        <category>网络技术</category>
+      </categories>
+      <tags>
+        <tag>CDN</tag>
       </tags>
   </entry>
   <entry>
@@ -1010,131 +1135,6 @@
       </tags>
   </entry>
   <entry>
-    <title>解决Umami v2.3升级问题，Something went wrong.</title>
-    <url>/posts/Umami-fix/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>是的没错，发生这样的事情，应该很多<code>Umami</code>只要是v2.2版本应该都遇到了。 </p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2023/07/19/64b7cb785693f.webp" alt="Umami v2.2 Something went wrong."></p>
-<p>我浏览了部分 <code>issues</code> 只能升级到v2.3版本了。</p>
-<h1 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h1><p>我先说一下我自己的环境，我自己的使用：</p>
-<ol>
-<li>属于编译安装，没有放在docker</li>
-<li>Mysql 5.7</li>
-<li>nodjs 18.16.0</li>
-<li>npm 9.5.1</li>
-</ol>
-<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><p>解决办法有两种，第一种你可以直接尝试升级到<code>MySQL</code> 8.0，如果你想继续和我一样，小鸡的配置不行还想用5.7，请继续往下看。</p>
-<p>如果你是和我一样都是<code>Mysql</code> 5.7版本，你需要查看这篇 <a href="https://github.com/umami-software/umami/issues/2118" rel="external nofollow noreferrer">issues</a> 或者继续往下看。</p>
-<ol>
-<li>你需要从GitHub 拉去一份最新的<a href="https://github.com/umami-software/umami/releases" rel="external nofollow noreferrer">Umami</a> 的代码，你需要找到<code>db/mysql/migrations/02_report_schema_session_data</code>文件夹下的<code>migration.sql</code>这份sql文件，将下面的代码替换和保存。</li>
-</ol>
-<figure class="highlight sql"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> `event_data` CHANGE `event_data_type` `data_type` <span class="type">int</span> unsigned <span class="keyword">NOT</span> <span class="keyword">NULL</span>;</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> `event_data` CHANGE `event_date_value` `date_value` <span class="type">timestamp</span> <span class="keyword">NULL</span>;</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> `event_data` CHANGE `event_id` `event_data_id` <span class="type">varchar</span>(<span class="number">36</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span>;</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> `event_data` CHANGE `event_numeric_value` `number_value` <span class="type">decimal</span>(<span class="number">19</span>, <span class="number">4</span>) <span class="keyword">NULL</span>;</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> `event_data` CHANGE `event_string_value` `string_value`<span class="type">varchar</span>(<span class="number">500</span>) <span class="keyword">NULL</span>;</span><br></pre></td></tr></tbody></table></figure>
-
-<p>终于我遇到的问题，你需要备份原来的 <code>Umami</code> 数据库，然后创建一个新的数据库，讲数据源配置在<code>.env</code>里面，不然通过初始化数据库。</p>
-<ol start="2">
-<li><p>然后你需要在终端中运行这段命令<code>npx prisma migrate resolve --rolled-back "02_report_schema_session_data"</code></p>
-</li>
-<li><p>重新部署，请看 <a href="https://umami.is/docs/install" rel="external nofollow noreferrer">https://umami.is/docs/install</a></p>
-</li>
-</ol>
-<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>Umami 的GitHub issues ：<a href="https://github.com/umami-software/umami/issues/2118" rel="external nofollow noreferrer">https://github.com/umami-software/umami/issues/2118</a></p>
-</body></html>]]></content>
-      <categories>
-        <category>网络技术</category>
-      </categories>
-      <tags>
-        <tag>Umami</tag>
-        <tag>PV</tag>
-        <tag>网站统计，UV</tag>
-        <tag>Ip</tag>
-        <tag>MySql</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Memos 对接 Authentik</title>
-    <url>/posts/authentik-OAuth2-memos/</url>
-    <content><![CDATA[<html><head></head><body><blockquote>
-<p> 配置中：这是什么啊，这么麻烦还没过去啊。 配置后：真香好方便。</p>
-</blockquote>
-<p>使用本文前请自行在 <code>Authentik </code>配置好 Memos使用的<code>应用程序</code>和<code>提供程序</code></p>
-<h1 id="Authentik-配置"><a href="#Authentik-配置" class="headerlink" title="Authentik 配置"></a>Authentik 配置</h1><p>默认你已经创建好了，一个给Memos使用的<code>应用程序</code>和<code>提供程序</code>,我们需要更改<code>提供程序</code>(给Memos 的)我们点击编辑</p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/09/66155d6445bbc.webp" alt="Authentik 配置 Memos-1.webp"></p>
-<blockquote>
-<p>选择客户端可以使用哪些作用域。客户端仍然需要指定访问数据的范围。</p>
-<p>按住 <code>ctrl/command</code> 键可选择多个项目。</p>
-</blockquote>
-<p>我们选中<code>authentik default OAuth Mapping: OpenID email</code> 和 <code>authentik default OAuth Mapping: OpenID openid</code>将<code>Subject 模式</code>改成基于用户名，然后更新。</p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/09/6615597f90737.webp" alt="Authentik 配置 Memos.webp"></p>
-<h1 id="Memos配置"><a href="#Memos配置" class="headerlink" title="Memos配置"></a>Memos配置</h1><blockquote>
-<p>在截至发文时 <code>Memos</code> 的版本为<code>v0.20.1</code>版本，<code>Memos</code>通过用户名为主键，其实只需要给<code>username</code>字段即可。</p>
-</blockquote>
-<p>根据上文调整的，现在sub 是我们的用户名字段，按照文章截屏填写其他的自行替换。这样你的的<code>Memos</code>就可以使用<code>Authentik</code>进行登录了。</p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/09/66155e6ca6dc7.webp" alt="Memos-Oauth2-config.webp"></p>
-<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p><code>Memos</code>的文档：<a href="https://www.usememos.com/docs/advanced-settings/keycloak" rel="external nofollow noreferrer">https://www.usememos.com/docs/advanced-settings/keycloak</a></p>
-</body></html>]]></content>
-      <categories>
-        <category>网络技术</category>
-      </categories>
-      <tags>
-        <tag>Authentik</tag>
-        <tag>SSO</tag>
-        <tag>OIDC</tag>
-        <tag>OAuth2</tag>
-        <tag>Memos</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo butterfly 优化</title>
-    <url>/posts/butterfly/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
-<p>我也来水一篇博文吧，最近我也不知道在忙什么（<del>明明就是懒得更新</del>），也感谢  @<a href="https://yujie.pro/network/52.html" rel="external nofollow noreferrer">夜灭</a>博主,让我可以水一篇博文以及再次优化hexo博客，如你所见我的博客在国内访问基本上都能在5秒以内完成这个所有加载。</p>
-</blockquote>
-<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><h2 id="博客基本情况"><a href="#博客基本情况" class="headerlink" title="博客基本情况"></a>博客基本情况</h2><p>优化过的情况</p>
-<ol>
-<li>源站在GitHub Pages上</li>
-<li>使用双解析模式（国内 腾讯云 国外Cloudflare）</li>
-<li>把 hexo 需要的静态js 资源全部缓存到源站，不在走<code>jsdelivr</code></li>
-<li>图床使用自建数据在<code>backblaze</code>存储桶上，详细的图床解决方案：<a href="https://blog.ning.moe/posts/lskypro-backblaze/">https://blog.ning.moe/posts/lskypro-backblaze/</a></li>
-<li>图床使用cf的自定义域名进行双解析和第二点一样。</li>
-</ol>
-<p><img src="https://img.c-dreamer.top/i/1/2023/04/22/64439fea99b29.webp" alt="图.webp"></p>
-<h2 id="butterfly-静态资源优化"><a href="#butterfly-静态资源优化" class="headerlink" title="butterfly 静态资源优化"></a>butterfly 静态资源优化</h2><p>在最新的 <code>butterfly </code>4.8.1 中加入了自定义cdn 功能，虽然以前也能改那就要一个一个配置文件上改了</p>
-<figure class="highlight yaml"><table><tbody><tr><td class="code"><pre><span class="line"><span class="attr">CDN:</span></span><br><span class="line">  <span class="comment"># The CDN provider of internal scripts (主題內部 js 的 cdn 配置)</span></span><br><span class="line">  <span class="comment"># option: local/jsdelivr/unpkg/cdnjs/custom</span></span><br><span class="line">  <span class="comment"># Dev version can only choose. ( dev版的主題只能設置為 local )</span></span><br><span class="line">  <span class="attr">internal_provider:</span> <span class="string">local</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># The CDN provider of third party scripts (第三方 js 的 cdn 配置)</span></span><br><span class="line">  <span class="comment"># option: local/jsdelivr/unpkg/cdnjs/custom</span></span><br><span class="line">  <span class="comment"># when set it to local, you need to install hexo-butterfly-extjs</span></span><br><span class="line">  <span class="attr">third_party_provider:</span> <span class="string">local</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># Add version number to url, true or false</span></span><br><span class="line">  <span class="attr">version:</span> <span class="literal">false</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># Custom format</span></span><br><span class="line">  <span class="comment"># For example: https://cdn.staticfile.org/${cdnjs_name}/${version}/${min_cdnjs_file}</span></span><br><span class="line">  <span class="attr">custom_format:</span> </span><br><span class="line">  <span class="comment">#以下省略</span></span><br></pre></td></tr></tbody></table></figure>
-
-<p>我这里使用了 <code>local</code>的CDN就是把所有资源封装在本地了，你需要执行<code>npm install hexo-butterfly-extjs</code>命令，hexo 三连命令即可<code>hexo cl &amp;&amp; hexo  generate &amp;&amp; hexo server</code>。</p>
-<p>如果你不喜欢这样的话，<a href="https://butterfly.js.org/posts/ceeb73f/#CDN" rel="external nofollow noreferrer">可以参考主题官方提供的配置</a>,可以选择如 七牛云 BootCDN Elemecdn 等<br>但是这个配置其他cdn 我测试的时候偶尔也会丢失一部分静态资源。</p>
-</body></html>]]></content>
-      <categories>
-        <category>网络技术</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>butterfly</tag>
-        <tag>jsdelivr</tag>
-        <tag>CDN</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>关于启动CDN发生一些难受的小bug</title>
-    <url>/posts/cdn/</url>
-    <content><![CDATA[<html><head></head><body><p>好久没有更新了，如果你要问我这段鸽了半年干了什么，我只能说啥事情都没有干，还是没有想好写什么,但是我一定会在6月结束会高产的。 当然关于:部署多的CDN同时加速的网上教程也很少（也可能我没有找到太多）</p>
-<blockquote>
-<p><strong>在这个星期又又又白嫖了Tencent Cloud的CDN活动</strong>，上次白嫖了一百块无门槛优惠卷，貌似我的域名在Tencent cloud只是首年续费了9块剩下5年都没有花过其他的了。</p>
-</blockquote>
-<p>国内用腾讯的国外用的是CF，现在也是国内国外都使用的CDN(我是不会告诉你我原来没有使用CDN的)</p>
-<h2 id="bug总结"><a href="#bug总结" class="headerlink" title="bug总结:"></a>bug总结:</h2><ol>
-<li> https的问题: 使用腾讯CDN就麻烦不行，CF特别顺畅没有发生过https的问题.在腾讯云的CDN想开https你需要上传你的证书才可以。</li>
-<li> 开启CDN之后WordPress出现无法登陆后台的问题，腾讯需要**/wp-admin**变成不缓存即可。 3.指开启国内加速，可能导致国外的朋友出现无法访问的问题: 这个问题我还发过工单给腾讯云,简单总结一句话,你开国内的加速，跟国外有什么关系。 这个问题我只遇到过一次，有几率会抽风一下。 如果嫌麻烦的话你就顺便在腾讯也开启境外的，不麻烦的CF的好处就来了。 4.还有一个就是评论不会实时同步,其实这也不算是bug,毕竟CDN也不可能做到全访问实时的不过也不会特别慢。</li>
-</ol>
-<p>如果有错的地方欢迎指出,萌新下手麻烦轻一点.</p>
-</body></html>]]></content>
-      <categories>
-        <category>网络技术</category>
-      </categories>
-      <tags>
-        <tag>CDN</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>clash 使用</title>
     <url>/posts/clash/</url>
     <content><![CDATA[<html><head></head><body><p><strong><font color="red">请根据当地网络法律使用,本文章仅供学习使用,不负任何责任!</font></strong><br><strong><font color="red">请根据当地网络法律使用,本文章仅供学习使用,不负任何责任!</font></strong><br><strong><font color="red">请根据当地网络法律使用,本文章仅供学习使用,不负任何责任!</font></strong></p>
@@ -1213,62 +1213,6 @@
         <tag>PV</tag>
         <tag>网站统计，UV</tag>
         <tag>Ip</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>封印 Easyconnect</title>
-    <url>/posts/fuck-easyconnect/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="故事的起点"><a href="#故事的起点" class="headerlink" title="故事的起点"></a>故事的起点</h1><p>因为已经到了实习期，走<del>(滚)</del>出了学校,还要写这些烦人的周记属实难绷，还必须使用这个<code>Easyconnect</code>进行访问。</p>
-<p>如果你只是想搜索 <code>Easyconnect</code>却看到了这一篇文章，那么您可以仔细权衡一下有必要再去下载和使用<code>Easyconnect</code>了,如果问为什么不要使用<code>Easyconnect</code>。您可以去跳转到<a href="https://taoshu.in/easyconnect-in-docker.html" rel="external nofollow noreferrer">这一篇文章</a>或者可以看我使用<code>Chat GPT</code>进行总结这一篇文章的核心。</p>
-<blockquote>
-<p>当讨论深信服的 EasyConnect 客户端的安全隐患时，可以简化描述如下：</p>
-<ol>
-<li><p><strong>依赖问题：</strong> EasyConnect 客户端使用了一些旧的系统功能，这在最新版本的 macOS 上会导致它无法正常工作。这就好比用一个老式的车钥匙开启现代汽车一样，不再适配。</p>
-</li>
-<li><p><strong>根证书问题：</strong> EasyConnect 客户端在你的电脑上安装了一个特殊的证书，而这个证书的作用可能不仅限于官方所说的提供更好的浏览体验。这有点像你的家门锁被复制一把，而你不知道。</p>
-</li>
-<li><p><strong>自启动问题：</strong> EasyConnect 客户端还有一个进程，名为 EasyMonitor，它在你的电脑开机时就自动启动。这个进程有权监听你的一举一动，而你却不能简单地关闭它，否则你无法使用 VPN 服务。</p>
-</li>
-</ol>
-</blockquote>
-<p>而且这个东西还是全局代理的，所有流量都要经过转发，以及可能会对一些游戏例如CSGO 进行冲突。</p>
-<h1 id="需要准备的东西"><a href="#需要准备的东西" class="headerlink" title="需要准备的东西"></a>需要准备的东西</h1><ul>
-<li>一台运行了 Windows/MAC os /Linux 的电脑</li>
-<li>需要 docker 的使用</li>
-<li>需要 vnc 的连接</li>
-</ul>
-<h1 id="开始启动"><a href="#开始启动" class="headerlink" title="开始启动"></a>开始启动</h1><p>当然有这种烦人的东西也就有大佬挺身而出，<a href="https://github.com/docker-easyconnect/docker-easyconnect" rel="external nofollow noreferrer">docker-easyconnect</a>就是来解决这个问题，使用docker 进行封印。</p>
-<p>至于docker 和VNC的安装在这里就不进行赘述了，不是本篇文章的重点。使用以下命令运行docker 容器。</p>
-<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">docker run --<span class="built_in">rm</span> --device /dev/net/tun --cap-add NET_ADMIN -ti -e PASSWORD=xxxx -e URLWIN=1 -v ~/.ecdata:/root -p 5901:5901 -p 1080:1080 -p 8888:8888 hagb/docker-easyconnect:7.6.7</span><br></pre></td></tr></tbody></table></figure>
-
-<p>windows 版本的：</p>
-<figure class="highlight powershell"><table><tbody><tr><td class="code"><pre><span class="line">docker run <span class="literal">--rm</span> <span class="literal">--device</span> /dev/net/tun <span class="literal">--cap-add</span> NET_ADMIN <span class="literal">-ti</span> <span class="literal">-e</span> PASSWORD=xxxx <span class="literal">-e</span> URLWIN=<span class="number">1</span> <span class="literal">-v</span> C:\Users\&lt;你的用户名&gt;\.ecdata:/root <span class="literal">-p</span> <span class="number">5901</span>:<span class="number">5901</span> <span class="literal">-p</span> <span class="number">1080</span>:<span class="number">1080</span> <span class="literal">-p</span> <span class="number">8888</span>:<span class="number">8888</span> hagb/docker<span class="literal">-easyconnect</span>:<span class="number">7.6</span>.<span class="number">7</span></span><br></pre></td></tr></tbody></table></figure>
-
-<p>其中<code> -v ~/.ecdata:/root</code> 运行成功后会在你的用户目录下创建一个<code>.ecdata</code>文件夹里面保存了你的登陆信息，下一次运行的时候就可以不需要输入用户和密码以及连接地址了。</p>
-<p>使用 <code>VNC</code> 连接就会发现和你在电脑版安装的之后页面是一样的输入连接的服务器地址以及账号和密码，记得勾选自动登录，下次启动的时候回去读取，你用户目录下的 <code>ecdata</code> 的文件。</p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2023/10/22/65347edfb2da2.webp" alt="VNC-1.webp"></p>
-<h1 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h1><p>我们暴露的 <code>1080</code> 和 <code>8888</code> 的端口分别是 <code>socket5</code>代理和<code>http</code>代理。</p>
-<p>Firefox 的浏览器的用户可以直接使用 设置 配置有个代理配置。</p>
-<p>这里更推荐使用edge ，因为国内好下载插件 打开这个网址下载：<a href="https://microsoftedge.microsoft.com/addons/detail/proxy-switchyomega/fdbloeknjpnloaggplaobopplkdhnikc?hl=zh-CN" rel="external nofollow noreferrer">Proxy SwitchyOmega - Microsoft Edge Addons</a></p>
-<p>我们打开插件的配置选项，按照下方图片的填写。</p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2023/10/22/65347b7f9620e.webp" alt="SwitchyOmega.webp"></p>
-<p>然后选择 proxy 的代理组，访问完毕内网资源，记住调成 系统代理选项卡，不然这个安装这个浏览器的插件会无法上网。</p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2023/10/22/65347c0eac9b4.webp" alt="SwitchyOmega-1.webp"></p>
-<h1 id="意外情况？"><a href="#意外情况？" class="headerlink" title="意外情况？"></a>意外情况？</h1><p>如果你运行第一次是没问题的但第二次运行之后报错:</p>
-<figure class="highlight powershell"><table><tbody><tr><td class="code"><pre><span class="line">docker: Error response from daemon: Ports are not available: exposing port TCP <span class="number">0.0</span>.<span class="number">0.0</span>:<span class="number">1080</span> -&gt; <span class="number">0.0</span>.<span class="number">0.0</span>:<span class="number">0</span>: listen tcp <span class="number">0.0</span>.<span class="number">0.0</span>:<span class="number">1080</span>: bind: An attempt was made to access a socket <span class="keyword">in</span> a way forbidden by its access permissions. time=<span class="string">"2023-10-15T10:13:34+08:00"</span> level=error msg=<span class="string">"error waiting for container: "</span></span><br></pre></td></tr></tbody></table></figure>
-
-<p>是说明你的 1080 端口被占用了，你可以使用<code>netstat -aon | findstr :1080</code> 的命令进行查询如果发现没有程序出现问题的话。那就是其实这是Windows中的一个小问题，只需要重启NAT网络就可以解决了，执行如下两条命令：</p>
-<figure class="highlight powershell"><table><tbody><tr><td class="code"><pre><span class="line">net stop winnat</span><br><span class="line">net <span class="built_in">start</span> winnat</span><br></pre></td></tr></tbody></table></figure>
-
-<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>引用涛叔博客 使用 Docker 封印 EasyConnect 一篇文章：<a href="https://taoshu.in/easyconnect-in-docker.html" rel="external nofollow noreferrer">https://taoshu.in/easyconnect-in-docker.html</a></p>
-</body></html>]]></content>
-      <categories>
-        <category>网络技术</category>
-      </categories>
-      <tags>
-        <tag>easyconnect</tag>
-        <tag>深信服</tag>
-        <tag>vpn</tag>
       </tags>
   </entry>
   <entry>
@@ -1355,59 +1299,6 @@
       </categories>
   </entry>
   <entry>
-    <title>Hexo Butterfly的SEO优化</title>
-    <url>/posts/hexo-butterfly-seo/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>以前没有怎么优化过seo、站点地图、rss订阅链接、robots 文件，一个都没有写过，不过今年打算重启博客了，自然这些改加上的东西都需要加一下了。</p>
-<p>前前后后半年多吧，陆陆续续的，把这些玩意补齐了，但看了很多文章都写的补全，我就只好在来全部整理一下了。</p>
-<h1 id="一些插件"><a href="#一些插件" class="headerlink" title="一些插件"></a>一些插件</h1><ul>
-<li><a href="https://github.com/hexojs/hexo-generator-sitemap" rel="external nofollow noreferrer">hexo-generator-sitemap</a> 构建网站地图 </li>
-<li><a href="https://github.com/coneycode/hexo-generator-baidu-sitemap" rel="external nofollow noreferrer">hexo-generator-baidu-sitemap</a> 百度专用的（为什么百度这么有特权😔）</li>
-<li><a href="https://github.com/cjh0613/hexo-submit-urls-to-search-engine" rel="external nofollow noreferrer">hexo-submit-urls-to-search-engine</a> 自动化提交文章给爬虫</li>
-<li><a href="https://github.com/hexojs/hexo-generator-feed" rel="external nofollow noreferrer">hexo-generator-feed</a> 生成RSS订阅链接</li>
-<li><a href="https://github.com/hexojs/hexo-filter-nofollow" rel="external nofollow noreferrer">hexo-filter-nofollow</a> 为合适的外链打上 <code>external nofollow noreferrer noopener</code> <ul>
-<li>作用：<ul>
-<li>防止搜索引擎追踪该链接，不会直接影响站点的排名。</li>
-<li>阻止被链接的页面获取来源页面的信息，增加用户隐私保护。</li>
-<li>防止被链接的页面通过 <code>window.opener</code> 访问和操纵打开它的页面，增强安全性。</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><h2 id="添加robots-txt"><a href="#添加robots-txt" class="headerlink" title="添加robots.txt"></a>添加robots.txt</h2><p>可以直接在hexo 项目下的<code>source</code>添加<code>robots.txt</code></p>
-<p>比如说我的配置，让百度爬虫抓取百度专属的网站地图，其他搜索引擎直接抓取普通的网站地图。</p>
-<figure class="highlight tex"><table><tbody><tr><td class="code"><pre><span class="line">User-agent: Baiduspider</span><br><span class="line"></span><br><span class="line">Sitemap: https://blog.ning.moe/baidusitemap.xml</span><br><span class="line"></span><br><span class="line">User-agent: *</span><br><span class="line">Disallow:</span><br><span class="line"></span><br><span class="line">Sitemap: https://blog.ning.moe/sitemap.xml</span><br></pre></td></tr></tbody></table></figure>
-
-<h1 id="插件的使用和配置"><a href="#插件的使用和配置" class="headerlink" title="插件的使用和配置"></a>插件的使用和配置</h1><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>上述所有的插件的安装命令都类似 <code>npm install &lt;插件名字&gt; --save</code> 例如</p>
-<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">npm install hexo-generator-feed --save</span><br></pre></td></tr></tbody></table></figure>
-
-<p>但就百度地图的插件稍微特殊：</p>
-<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">npm install hexo-generator-baidu-sitemap@0.1.4 --save</span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p>至于配置可以访问GitHub的插件仓库地址，readme 会告诉你们这么配置，如果你很懒的话，我这边放上我的配置。</p>
-<figure class="highlight yaml"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment"># 配置网站地图</span></span><br><span class="line"><span class="attr">sitemap:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">sitemap.xml</span></span><br><span class="line">  <span class="comment"># 配置百度专属地图（真臭不要脸）</span></span><br><span class="line"><span class="attr">baidusitemap:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">baidusitemap.xml</span></span><br><span class="line"><span class="comment"># Extensions</span></span><br><span class="line"><span class="attr">plugins:</span></span><br><span class="line">  <span class="string">hexo-generator-feed</span></span><br><span class="line"><span class="comment">#Feed Atom</span></span><br><span class="line"><span class="attr">feed:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">atom</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">atom.xml</span></span><br><span class="line">  <span class="attr">limit:</span> <span class="number">20</span></span><br><span class="line"><span class="comment"># 为网站使用到的所有外链添加rel="noopener external nofollow noreferrer", 可以有效地加强网站SEO和防止权重流失</span></span><br><span class="line"><span class="comment"># field 是指定那些页面我指定的post 是所有文章全部启用，如果你想启动全站都屏蔽链接的话就是 site，如果你有友联的话慎用。</span></span><br><span class="line"><span class="comment">#exclude是放行这些域名下的。</span></span><br><span class="line"><span class="attr">nofollow:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">field:</span> <span class="string">post</span></span><br><span class="line">  <span class="attr">exclude:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">'*.misaka.pics'</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">'icp.gov.moe'</span></span><br></pre></td></tr></tbody></table></figure>
-
-<p>但 <code>hexo-submit-urls-to-search-engine</code> 稍微有些特殊(我更倾向于你先去看看原来的教程)，建议在操作之前备份一下  <code>_config.yaml</code> ，请确保你的推送分支为你自己的分支<code>deploy</code>,当然这边也有一个bug就是在推送的是我这边是选择了main 作为我的主分支，但是推送过去的时候还是<code>master</code> 如果你遇到和我一样的问题建议去提出<code>issues</code>，还有一个就是bing 的推送貌似是坏掉的状态，但百度正常。</p>
-<figure class="highlight yaml"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment"># hexo-submit-urls-to-search-engine 主动将 url 提交到 Google Bing Baidu 搜索</span></span><br><span class="line"><span class="attr">hexo_submit_urls_to_search_engine:</span></span><br><span class="line">  <span class="attr">submit_condition:</span> <span class="string">count</span> <span class="comment">#链接被提交的条件，可选值：count | period 现仅支持count</span></span><br><span class="line">  <span class="attr">count:</span> <span class="number">10</span> <span class="comment"># 提交最新的10个链接</span></span><br><span class="line">  <span class="attr">period:</span> <span class="number">900</span> <span class="comment"># 提交修改时间在 900 秒内的链接</span></span><br><span class="line">  <span class="attr">google:</span> <span class="number">0</span> <span class="comment"># 是否向Google提交，可选值：1 | 0（0：否；1：是）</span></span><br><span class="line">  <span class="attr">bing:</span> <span class="number">1</span> <span class="comment"># 是否向bing提交，可选值：1 | 0（0：否；1：是）</span></span><br><span class="line">  <span class="attr">baidu:</span> <span class="number">1</span> <span class="comment"># 是否向baidu提交，可选值：1 | 0（0：否；1：是）</span></span><br><span class="line">  <span class="attr">txt_path:</span> <span class="string">submit_urls.txt</span> <span class="comment">## 文本文档名， 需要推送的链接会保存在此文本文档里</span></span><br><span class="line">  <span class="attr">baidu_host:</span> <span class="string">https://blog.ning.moe</span> <span class="comment">## 在百度站长平台中注册的域名</span></span><br><span class="line">  <span class="attr">baidu_token:</span> <span class="string">&lt;Token&gt;</span> <span class="comment">## 请注意这是您的秘钥， 所以请不要把它直接发布在公众仓库里!</span></span><br><span class="line">  <span class="attr">bing_host:</span> <span class="string">https://blog.ning.moe</span> <span class="comment">## 在bing站长平台中注册的域名</span></span><br><span class="line">  <span class="attr">bing_token:</span> <span class="string">&lt;Token&gt;</span> <span class="comment">## 请注意这是您的秘钥， 所以请不要把它直接发布在公众仓库里!</span></span><br><span class="line">  <span class="attr">google_host:</span> <span class="string">https://blog.ning.moe</span> <span class="comment">## 在google站长平台中注册的域名</span></span><br><span class="line">  <span class="attr">google_key_file:</span> <span class="string">Project.json</span> <span class="comment">#存放google key的json文件，放于网站根目录（与hexo _config.yml文件位置相同），请不要把json文件内容直接发布在公众仓库里!</span></span><br><span class="line">  <span class="attr">google_proxy:</span> <span class="string">http://127.0.0.1:7890</span> <span class="comment"># 向谷歌提交网址所使用的系统 http 代理，填 0 不使用</span></span><br><span class="line">  <span class="attr">replace:</span> <span class="number">0</span>  <span class="comment"># 是否替换链接中的部分字符串，可选值：1 | 0（0：否；1：是）</span></span><br><span class="line">  <span class="comment"># find_what: http://cjh0613.github.io/blog</span></span><br><span class="line">  <span class="comment"># replace_with: https://cjh0613.com</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 推送git的配置</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="bullet">-</span> <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> </span><br><span class="line">    <span class="attr">coding:</span> <span class="string">https://github.com/biliblihuorong/biliblihuorong.github.io.git</span> <span class="comment"># 你的仓库地址</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">main</span> </span><br><span class="line">  </span><br><span class="line">  <span class="comment"># hexo-submit-urls-to-search-engine 添加本插件的配置项：</span></span><br><span class="line"><span class="bullet">-</span> <span class="attr">type:</span> <span class="string">cjh_google_url_submitter</span></span><br><span class="line"><span class="bullet">-</span> <span class="attr">type:</span> <span class="string">cjh_bing_url_submitter</span></span><br><span class="line"><span class="bullet">-</span> <span class="attr">type:</span> <span class="string">cjh_baidu_url_submitter</span></span><br></pre></td></tr></tbody></table></figure>
-
-
-
-<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>hexo-filter-nofollow：<a href="https://github.com/hexojs/hexo-filter-nofollow" rel="external nofollow noreferrer">https://github.com/hexojs/hexo-filter-nofollow</a></p>
-<p>hexo-generator-feed：<a href="https://github.com/hexojs/hexo-generator-feed" rel="external nofollow noreferrer">https://github.com/hexojs/hexo-generator-feed</a></p>
-<p>hexo-submit-urls-to-search-engine：<a href="https://github.com/cjh0613/hexo-submit-urls-to-search-engine" rel="external nofollow noreferrer">https://github.com/cjh0613/hexo-submit-urls-to-search-engine</a></p>
-<p>hexo-generator-baidu-sitemap：<a href="https://github.com/coneycode/hexo-generator-baidu-sitemap" rel="external nofollow noreferrer">https://github.com/coneycode/hexo-generator-baidu-sitemap</a></p>
-<p>hexo-generator-sitemap：<a href="https://github.com/hexojs/hexo-generator-sitemap" rel="external nofollow noreferrer">https://github.com/hexojs/hexo-generator-sitemap</a></p>
-</body></html>]]></content>
-      <categories>
-        <category>网络技术</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>butterfly</tag>
-        <tag>SEO</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>hexo博客搭建教程</title>
     <url>/posts/hexo-1/</url>
     <content><![CDATA[<html><head></head><body><h1 id="部署hexo需要用到的东西"><a href="#部署hexo需要用到的东西" class="headerlink" title="部署hexo需要用到的东西:"></a>部署hexo需要用到的东西:</h1><ol>
@@ -1490,6 +1381,115 @@
 </body></html>]]></content>
   </entry>
   <entry>
+    <title>Hexo Butterfly的SEO优化</title>
+    <url>/posts/hexo-butterfly-seo/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>以前没有怎么优化过seo、站点地图、rss订阅链接、robots 文件，一个都没有写过，不过今年打算重启博客了，自然这些改加上的东西都需要加一下了。</p>
+<p>前前后后半年多吧，陆陆续续的，把这些玩意补齐了，但看了很多文章都写的补全，我就只好在来全部整理一下了。</p>
+<h1 id="一些插件"><a href="#一些插件" class="headerlink" title="一些插件"></a>一些插件</h1><ul>
+<li><a href="https://github.com/hexojs/hexo-generator-sitemap" rel="external nofollow noreferrer">hexo-generator-sitemap</a> 构建网站地图 </li>
+<li><a href="https://github.com/coneycode/hexo-generator-baidu-sitemap" rel="external nofollow noreferrer">hexo-generator-baidu-sitemap</a> 百度专用的（为什么百度这么有特权😔）</li>
+<li><a href="https://github.com/cjh0613/hexo-submit-urls-to-search-engine" rel="external nofollow noreferrer">hexo-submit-urls-to-search-engine</a> 自动化提交文章给爬虫</li>
+<li><a href="https://github.com/hexojs/hexo-generator-feed" rel="external nofollow noreferrer">hexo-generator-feed</a> 生成RSS订阅链接</li>
+<li><a href="https://github.com/hexojs/hexo-filter-nofollow" rel="external nofollow noreferrer">hexo-filter-nofollow</a> 为合适的外链打上 <code>external nofollow noreferrer noopener</code> <ul>
+<li>作用：<ul>
+<li>防止搜索引擎追踪该链接，不会直接影响站点的排名。</li>
+<li>阻止被链接的页面获取来源页面的信息，增加用户隐私保护。</li>
+<li>防止被链接的页面通过 <code>window.opener</code> 访问和操纵打开它的页面，增强安全性。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><h2 id="添加robots-txt"><a href="#添加robots-txt" class="headerlink" title="添加robots.txt"></a>添加robots.txt</h2><p>可以直接在hexo 项目下的<code>source</code>添加<code>robots.txt</code></p>
+<p>比如说我的配置，让百度爬虫抓取百度专属的网站地图，其他搜索引擎直接抓取普通的网站地图。</p>
+<figure class="highlight tex"><table><tbody><tr><td class="code"><pre><span class="line">User-agent: Baiduspider</span><br><span class="line"></span><br><span class="line">Sitemap: https://blog.ning.moe/baidusitemap.xml</span><br><span class="line"></span><br><span class="line">User-agent: *</span><br><span class="line">Disallow:</span><br><span class="line"></span><br><span class="line">Sitemap: https://blog.ning.moe/sitemap.xml</span><br></pre></td></tr></tbody></table></figure>
+
+<h1 id="插件的使用和配置"><a href="#插件的使用和配置" class="headerlink" title="插件的使用和配置"></a>插件的使用和配置</h1><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>上述所有的插件的安装命令都类似 <code>npm install &lt;插件名字&gt; --save</code> 例如</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">npm install hexo-generator-feed --save</span><br></pre></td></tr></tbody></table></figure>
+
+<p>但就百度地图的插件稍微特殊：</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">npm install hexo-generator-baidu-sitemap@0.1.4 --save</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p>至于配置可以访问GitHub的插件仓库地址，readme 会告诉你们这么配置，如果你很懒的话，我这边放上我的配置。</p>
+<figure class="highlight yaml"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment"># 配置网站地图</span></span><br><span class="line"><span class="attr">sitemap:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">sitemap.xml</span></span><br><span class="line">  <span class="comment"># 配置百度专属地图（真臭不要脸）</span></span><br><span class="line"><span class="attr">baidusitemap:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">baidusitemap.xml</span></span><br><span class="line"><span class="comment"># Extensions</span></span><br><span class="line"><span class="attr">plugins:</span></span><br><span class="line">  <span class="string">hexo-generator-feed</span></span><br><span class="line"><span class="comment">#Feed Atom</span></span><br><span class="line"><span class="attr">feed:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">atom</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">atom.xml</span></span><br><span class="line">  <span class="attr">limit:</span> <span class="number">20</span></span><br><span class="line"><span class="comment"># 为网站使用到的所有外链添加rel="noopener external nofollow noreferrer", 可以有效地加强网站SEO和防止权重流失</span></span><br><span class="line"><span class="comment"># field 是指定那些页面我指定的post 是所有文章全部启用，如果你想启动全站都屏蔽链接的话就是 site，如果你有友联的话慎用。</span></span><br><span class="line"><span class="comment">#exclude是放行这些域名下的。</span></span><br><span class="line"><span class="attr">nofollow:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">field:</span> <span class="string">post</span></span><br><span class="line">  <span class="attr">exclude:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">'*.misaka.pics'</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">'icp.gov.moe'</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>但 <code>hexo-submit-urls-to-search-engine</code> 稍微有些特殊(我更倾向于你先去看看原来的教程)，建议在操作之前备份一下  <code>_config.yaml</code> ，请确保你的推送分支为你自己的分支<code>deploy</code>,当然这边也有一个bug就是在推送的是我这边是选择了main 作为我的主分支，但是推送过去的时候还是<code>master</code> 如果你遇到和我一样的问题建议去提出<code>issues</code>，还有一个就是bing 的推送貌似是坏掉的状态，但百度正常。</p>
+<figure class="highlight yaml"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment"># hexo-submit-urls-to-search-engine 主动将 url 提交到 Google Bing Baidu 搜索</span></span><br><span class="line"><span class="attr">hexo_submit_urls_to_search_engine:</span></span><br><span class="line">  <span class="attr">submit_condition:</span> <span class="string">count</span> <span class="comment">#链接被提交的条件，可选值：count | period 现仅支持count</span></span><br><span class="line">  <span class="attr">count:</span> <span class="number">10</span> <span class="comment"># 提交最新的10个链接</span></span><br><span class="line">  <span class="attr">period:</span> <span class="number">900</span> <span class="comment"># 提交修改时间在 900 秒内的链接</span></span><br><span class="line">  <span class="attr">google:</span> <span class="number">0</span> <span class="comment"># 是否向Google提交，可选值：1 | 0（0：否；1：是）</span></span><br><span class="line">  <span class="attr">bing:</span> <span class="number">1</span> <span class="comment"># 是否向bing提交，可选值：1 | 0（0：否；1：是）</span></span><br><span class="line">  <span class="attr">baidu:</span> <span class="number">1</span> <span class="comment"># 是否向baidu提交，可选值：1 | 0（0：否；1：是）</span></span><br><span class="line">  <span class="attr">txt_path:</span> <span class="string">submit_urls.txt</span> <span class="comment">## 文本文档名， 需要推送的链接会保存在此文本文档里</span></span><br><span class="line">  <span class="attr">baidu_host:</span> <span class="string">https://blog.ning.moe</span> <span class="comment">## 在百度站长平台中注册的域名</span></span><br><span class="line">  <span class="attr">baidu_token:</span> <span class="string">&lt;Token&gt;</span> <span class="comment">## 请注意这是您的秘钥， 所以请不要把它直接发布在公众仓库里!</span></span><br><span class="line">  <span class="attr">bing_host:</span> <span class="string">https://blog.ning.moe</span> <span class="comment">## 在bing站长平台中注册的域名</span></span><br><span class="line">  <span class="attr">bing_token:</span> <span class="string">&lt;Token&gt;</span> <span class="comment">## 请注意这是您的秘钥， 所以请不要把它直接发布在公众仓库里!</span></span><br><span class="line">  <span class="attr">google_host:</span> <span class="string">https://blog.ning.moe</span> <span class="comment">## 在google站长平台中注册的域名</span></span><br><span class="line">  <span class="attr">google_key_file:</span> <span class="string">Project.json</span> <span class="comment">#存放google key的json文件，放于网站根目录（与hexo _config.yml文件位置相同），请不要把json文件内容直接发布在公众仓库里!</span></span><br><span class="line">  <span class="attr">google_proxy:</span> <span class="string">http://127.0.0.1:7890</span> <span class="comment"># 向谷歌提交网址所使用的系统 http 代理，填 0 不使用</span></span><br><span class="line">  <span class="attr">replace:</span> <span class="number">0</span>  <span class="comment"># 是否替换链接中的部分字符串，可选值：1 | 0（0：否；1：是）</span></span><br><span class="line">  <span class="comment"># find_what: http://cjh0613.github.io/blog</span></span><br><span class="line">  <span class="comment"># replace_with: https://cjh0613.com</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 推送git的配置</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="bullet">-</span> <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> </span><br><span class="line">    <span class="attr">coding:</span> <span class="string">https://github.com/biliblihuorong/biliblihuorong.github.io.git</span> <span class="comment"># 你的仓库地址</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">main</span> </span><br><span class="line">  </span><br><span class="line">  <span class="comment"># hexo-submit-urls-to-search-engine 添加本插件的配置项：</span></span><br><span class="line"><span class="bullet">-</span> <span class="attr">type:</span> <span class="string">cjh_google_url_submitter</span></span><br><span class="line"><span class="bullet">-</span> <span class="attr">type:</span> <span class="string">cjh_bing_url_submitter</span></span><br><span class="line"><span class="bullet">-</span> <span class="attr">type:</span> <span class="string">cjh_baidu_url_submitter</span></span><br></pre></td></tr></tbody></table></figure>
+
+
+
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>hexo-filter-nofollow：<a href="https://github.com/hexojs/hexo-filter-nofollow" rel="external nofollow noreferrer">https://github.com/hexojs/hexo-filter-nofollow</a></p>
+<p>hexo-generator-feed：<a href="https://github.com/hexojs/hexo-generator-feed" rel="external nofollow noreferrer">https://github.com/hexojs/hexo-generator-feed</a></p>
+<p>hexo-submit-urls-to-search-engine：<a href="https://github.com/cjh0613/hexo-submit-urls-to-search-engine" rel="external nofollow noreferrer">https://github.com/cjh0613/hexo-submit-urls-to-search-engine</a></p>
+<p>hexo-generator-baidu-sitemap：<a href="https://github.com/coneycode/hexo-generator-baidu-sitemap" rel="external nofollow noreferrer">https://github.com/coneycode/hexo-generator-baidu-sitemap</a></p>
+<p>hexo-generator-sitemap：<a href="https://github.com/hexojs/hexo-generator-sitemap" rel="external nofollow noreferrer">https://github.com/hexojs/hexo-generator-sitemap</a></p>
+</body></html>]]></content>
+      <categories>
+        <category>网络技术</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>butterfly</tag>
+        <tag>SEO</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>封印 Easyconnect</title>
+    <url>/posts/fuck-easyconnect/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="故事的起点"><a href="#故事的起点" class="headerlink" title="故事的起点"></a>故事的起点</h1><p>因为已经到了实习期，走<del>(滚)</del>出了学校,还要写这些烦人的周记属实难绷，还必须使用这个<code>Easyconnect</code>进行访问。</p>
+<p>如果你只是想搜索 <code>Easyconnect</code>却看到了这一篇文章，那么您可以仔细权衡一下有必要再去下载和使用<code>Easyconnect</code>了,如果问为什么不要使用<code>Easyconnect</code>。您可以去跳转到<a href="https://taoshu.in/easyconnect-in-docker.html" rel="external nofollow noreferrer">这一篇文章</a>或者可以看我使用<code>Chat GPT</code>进行总结这一篇文章的核心。</p>
+<blockquote>
+<p>当讨论深信服的 EasyConnect 客户端的安全隐患时，可以简化描述如下：</p>
+<ol>
+<li><p><strong>依赖问题：</strong> EasyConnect 客户端使用了一些旧的系统功能，这在最新版本的 macOS 上会导致它无法正常工作。这就好比用一个老式的车钥匙开启现代汽车一样，不再适配。</p>
+</li>
+<li><p><strong>根证书问题：</strong> EasyConnect 客户端在你的电脑上安装了一个特殊的证书，而这个证书的作用可能不仅限于官方所说的提供更好的浏览体验。这有点像你的家门锁被复制一把，而你不知道。</p>
+</li>
+<li><p><strong>自启动问题：</strong> EasyConnect 客户端还有一个进程，名为 EasyMonitor，它在你的电脑开机时就自动启动。这个进程有权监听你的一举一动，而你却不能简单地关闭它，否则你无法使用 VPN 服务。</p>
+</li>
+</ol>
+</blockquote>
+<p>而且这个东西还是全局代理的，所有流量都要经过转发，以及可能会对一些游戏例如CSGO 进行冲突。</p>
+<h1 id="需要准备的东西"><a href="#需要准备的东西" class="headerlink" title="需要准备的东西"></a>需要准备的东西</h1><ul>
+<li>一台运行了 Windows/MAC os /Linux 的电脑</li>
+<li>需要 docker 的使用</li>
+<li>需要 vnc 的连接</li>
+</ul>
+<h1 id="开始启动"><a href="#开始启动" class="headerlink" title="开始启动"></a>开始启动</h1><p>当然有这种烦人的东西也就有大佬挺身而出，<a href="https://github.com/docker-easyconnect/docker-easyconnect" rel="external nofollow noreferrer">docker-easyconnect</a>就是来解决这个问题，使用docker 进行封印。</p>
+<p>至于docker 和VNC的安装在这里就不进行赘述了，不是本篇文章的重点。使用以下命令运行docker 容器。</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">docker run --<span class="built_in">rm</span> --device /dev/net/tun --cap-add NET_ADMIN -ti -e PASSWORD=xxxx -e URLWIN=1 -v ~/.ecdata:/root -p 5901:5901 -p 1080:1080 -p 8888:8888 hagb/docker-easyconnect:7.6.7</span><br></pre></td></tr></tbody></table></figure>
+
+<p>windows 版本的：</p>
+<figure class="highlight powershell"><table><tbody><tr><td class="code"><pre><span class="line">docker run <span class="literal">--rm</span> <span class="literal">--device</span> /dev/net/tun <span class="literal">--cap-add</span> NET_ADMIN <span class="literal">-ti</span> <span class="literal">-e</span> PASSWORD=xxxx <span class="literal">-e</span> URLWIN=<span class="number">1</span> <span class="literal">-v</span> C:\Users\&lt;你的用户名&gt;\.ecdata:/root <span class="literal">-p</span> <span class="number">5901</span>:<span class="number">5901</span> <span class="literal">-p</span> <span class="number">1080</span>:<span class="number">1080</span> <span class="literal">-p</span> <span class="number">8888</span>:<span class="number">8888</span> hagb/docker<span class="literal">-easyconnect</span>:<span class="number">7.6</span>.<span class="number">7</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>其中<code> -v ~/.ecdata:/root</code> 运行成功后会在你的用户目录下创建一个<code>.ecdata</code>文件夹里面保存了你的登陆信息，下一次运行的时候就可以不需要输入用户和密码以及连接地址了。</p>
+<p>使用 <code>VNC</code> 连接就会发现和你在电脑版安装的之后页面是一样的输入连接的服务器地址以及账号和密码，记得勾选自动登录，下次启动的时候回去读取，你用户目录下的 <code>ecdata</code> 的文件。</p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2023/10/22/65347edfb2da2.webp" alt="VNC-1.webp"></p>
+<h1 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h1><p>我们暴露的 <code>1080</code> 和 <code>8888</code> 的端口分别是 <code>socket5</code>代理和<code>http</code>代理。</p>
+<p>Firefox 的浏览器的用户可以直接使用 设置 配置有个代理配置。</p>
+<p>这里更推荐使用edge ，因为国内好下载插件 打开这个网址下载：<a href="https://microsoftedge.microsoft.com/addons/detail/proxy-switchyomega/fdbloeknjpnloaggplaobopplkdhnikc?hl=zh-CN" rel="external nofollow noreferrer">Proxy SwitchyOmega - Microsoft Edge Addons</a></p>
+<p>我们打开插件的配置选项，按照下方图片的填写。</p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2023/10/22/65347b7f9620e.webp" alt="SwitchyOmega.webp"></p>
+<p>然后选择 proxy 的代理组，访问完毕内网资源，记住调成 系统代理选项卡，不然这个安装这个浏览器的插件会无法上网。</p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2023/10/22/65347c0eac9b4.webp" alt="SwitchyOmega-1.webp"></p>
+<h1 id="意外情况？"><a href="#意外情况？" class="headerlink" title="意外情况？"></a>意外情况？</h1><p>如果你运行第一次是没问题的但第二次运行之后报错:</p>
+<figure class="highlight powershell"><table><tbody><tr><td class="code"><pre><span class="line">docker: Error response from daemon: Ports are not available: exposing port TCP <span class="number">0.0</span>.<span class="number">0.0</span>:<span class="number">1080</span> -&gt; <span class="number">0.0</span>.<span class="number">0.0</span>:<span class="number">0</span>: listen tcp <span class="number">0.0</span>.<span class="number">0.0</span>:<span class="number">1080</span>: bind: An attempt was made to access a socket <span class="keyword">in</span> a way forbidden by its access permissions. time=<span class="string">"2023-10-15T10:13:34+08:00"</span> level=error msg=<span class="string">"error waiting for container: "</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>是说明你的 1080 端口被占用了，你可以使用<code>netstat -aon | findstr :1080</code> 的命令进行查询如果发现没有程序出现问题的话。那就是其实这是Windows中的一个小问题，只需要重启NAT网络就可以解决了，执行如下两条命令：</p>
+<figure class="highlight powershell"><table><tbody><tr><td class="code"><pre><span class="line">net stop winnat</span><br><span class="line">net <span class="built_in">start</span> winnat</span><br></pre></td></tr></tbody></table></figure>
+
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>引用涛叔博客 使用 Docker 封印 EasyConnect 一篇文章：<a href="https://taoshu.in/easyconnect-in-docker.html" rel="external nofollow noreferrer">https://taoshu.in/easyconnect-in-docker.html</a></p>
+</body></html>]]></content>
+      <categories>
+        <category>网络技术</category>
+      </categories>
+      <tags>
+        <tag>easyconnect</tag>
+        <tag>深信服</tag>
+        <tag>vpn</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>兰空图床使用backblaze作为存储策略</title>
     <url>/posts/lskypro-backblaze/</url>
     <content><![CDATA[<html><head></head><body><h1 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h1><p>因为我很久之前就在使用兰空了，当时是直接默认存储扔到本地的，反正也没有啥问题，还很方便，但那台服务器快到期了。所以我就打算迁移，先来说说虽然为什么不用CF的R2存储，原因是我尝试了很多种办法，但这个兰空图床对于我自己而言就是链接不上，很烦人，所以找到了也是S3协议的<code>backblaze</code>作为我后面使用的存储策略。</p>
@@ -1548,11 +1548,11 @@
         <category>网络技术</category>
       </categories>
       <tags>
-        <tag>butterfly</tag>
-        <tag>backblaze</tag>
         <tag>lskypro</tag>
         <tag>蓝空图床</tag>
         <tag>兰空图床</tag>
+        <tag>backblaze</tag>
+        <tag>butterfly</tag>
       </tags>
   </entry>
   <entry>
@@ -1574,6 +1574,26 @@
         <tag>moe</tag>
         <tag>域名</tag>
         <tag>柠檬</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>TeamSpeak 已经运行一年</title>
+    <url>/posts/teamspeak-run-one-year/</url>
+    <content><![CDATA[<html><head></head><body><blockquote>
+<p> <a href="ts3server://voice.ning.moe" rel="external nofollow noreferrer">点击此处唤醒</a>team speak</p>
+</blockquote>
+<p>看来 21多天没有更新了，来水一下，先浅浅的放一下运行一年的截图吧。</p>
+<p> <img src="https://img.misaka.pics/ShellBlogImg/1/2023/11/06/6548eff53a156.webp" alt="TeamSpeak-one-year-1.webp"> </p>
+<p>emmm ，艰难的存活了一年，感觉蛮不容易的，期间服务器很想进行重启的，应该来说是<a href="https://blog.ning.moe/blog/">两年之久</a>，在这个软件里面承载了我们之间的欢乐时光。</p>
+<p> <img src="https://img.misaka.pics/ShellBlogImg/1/2023/11/06/6548f0c3abc56.webp" alt="TeamSpeak-one-year-2.webp"> </p>
+<p>这个 TeamSpeak 服务器是在腾讯云hk轻量服务器上运行，用来方便我和我的朋友们进行连麦和交流。为我们提供了一个愉快的交流平台，让我们能够更轻松地一起玩游戏、讨论话题和共享欢乐时光。</p>
+<p>我们主要的游戏是 彩虹六号，如果您也是彩虹六号玩家或者是对彩虹六号感兴趣，切没有人和你一起玩耍，我们非常欢迎你来加入我们，与我们一起畅谈、娱乐。</p>
+</body></html>]]></content>
+      <categories>
+        <category>生活随想</category>
+      </categories>
+      <tags>
+        <tag>TeamSpeak</tag>
       </tags>
   </entry>
   <entry>
@@ -1628,26 +1648,6 @@
       <tags>
         <tag>备案</tag>
         <tag>萌国</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>TeamSpeak 已经运行一年</title>
-    <url>/posts/teamspeak-run-one-year/</url>
-    <content><![CDATA[<html><head></head><body><blockquote>
-<p> <a href="ts3server://voice.ning.moe" rel="external nofollow noreferrer">点击此处唤醒</a>team speak</p>
-</blockquote>
-<p>看来 21多天没有更新了，来水一下，先浅浅的放一下运行一年的截图吧。</p>
-<p> <img src="https://img.misaka.pics/ShellBlogImg/1/2023/11/06/6548eff53a156.webp" alt="TeamSpeak-one-year-1.webp"> </p>
-<p>emmm ，艰难的存活了一年，感觉蛮不容易的，期间服务器很想进行重启的，应该来说是<a href="https://blog.ning.moe/blog/">两年之久</a>，在这个软件里面承载了我们之间的欢乐时光。</p>
-<p> <img src="https://img.misaka.pics/ShellBlogImg/1/2023/11/06/6548f0c3abc56.webp" alt="TeamSpeak-one-year-2.webp"> </p>
-<p>这个 TeamSpeak 服务器是在腾讯云hk轻量服务器上运行，用来方便我和我的朋友们进行连麦和交流。为我们提供了一个愉快的交流平台，让我们能够更轻松地一起玩游戏、讨论话题和共享欢乐时光。</p>
-<p>我们主要的游戏是 彩虹六号，如果您也是彩虹六号玩家或者是对彩虹六号感兴趣，切没有人和你一起玩耍，我们非常欢迎你来加入我们，与我们一起畅谈、娱乐。</p>
-</body></html>]]></content>
-      <categories>
-        <category>生活随想</category>
-      </categories>
-      <tags>
-        <tag>TeamSpeak</tag>
       </tags>
   </entry>
   <entry>
@@ -1745,11 +1745,6 @@
       </categories>
   </entry>
   <entry>
-    <title>博客评论系统还在测试阶段</title>
-    <url>/posts/%E5%8D%9A%E5%AE%A2%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E8%BF%98%E5%9C%A8%E6%B5%8B%E8%AF%95%E9%98%B6%E6%AE%B5/</url>
-    <content><![CDATA[<html><head></head><body></body></html>]]></content>
-  </entry>
-  <entry>
     <title>博客转移备案</title>
     <url>/posts/%E5%8D%9A%E5%AE%A2%E8%BD%AC%E7%A7%BB%E5%A4%87%E6%A1%88/</url>
     <content><![CDATA[<html><head></head><body><p>本站已经从wordpress转到hexo，再加上转移服务器提供商需要接入备案原因,所以蒋本站暂时挂到GitHub上.</p>
@@ -1786,6 +1781,27 @@
       </categories>
   </entry>
   <entry>
+    <title>博客评论系统还在测试阶段</title>
+    <url>/posts/%E5%8D%9A%E5%AE%A2%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E8%BF%98%E5%9C%A8%E6%B5%8B%E8%AF%95%E9%98%B6%E6%AE%B5/</url>
+    <content><![CDATA[<html><head></head><body></body></html>]]></content>
+  </entry>
+  <entry>
+    <title>用Java编写一个简易的计算器</title>
+    <url>/posts/%E7%94%A8java%E7%BC%96%E5%86%99%E4%B8%80%E4%B8%AA%E7%AE%80%E6%98%93%E7%9A%84%E8%AE%A1%E7%AE%97%E5%99%A8/</url>
+    <content><![CDATA[<html><head></head><body><p>思路： 利用Scanner建立一个扫描对象，在用switch语句进行判断。</p>
+<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Calculator</span> {</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> {</span><br><span class="line">        <span class="type">Scanner</span> <span class="variable">scanner</span> <span class="operator">=</span><span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">        System.out.println(<span class="string">"请输入计算的A值"</span>);</span><br><span class="line">        <span class="type">double</span> <span class="variable">a</span> <span class="operator">=</span>scanner.nextDouble();</span><br><span class="line">        System.out.println(<span class="string">"运算符"</span>);</span><br><span class="line">        <span class="type">String</span> <span class="variable">b</span> <span class="operator">=</span>scanner.next();</span><br><span class="line">        System.out.println(<span class="string">"请输入计算B值"</span>);</span><br><span class="line">        <span class="type">double</span> <span class="variable">c</span> <span class="operator">=</span>scanner.nextDouble();</span><br><span class="line">        <span class="keyword">switch</span> (b){</span><br><span class="line">            <span class="keyword">case</span> <span class="string">"+"</span> :</span><br><span class="line">                System.out.println(add(a,c));</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> <span class="string">"-"</span> :</span><br><span class="line">                System.out.println(sub(a,c));</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> <span class="string">"*"</span> :</span><br><span class="line">                System.out.println(multiply(a,c));</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> <span class="string">"/"</span> :</span><br><span class="line">                System.out.println(div(a,c));</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">        }</span><br><span class="line">        scanner.close();</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span>  <span class="type">double</span> <span class="title function_">add</span><span class="params">(<span class="type">double</span> a ,<span class="type">double</span> b)</span>{</span><br><span class="line">        <span class="type">double</span> c=a+b;</span><br><span class="line">        <span class="keyword">return</span> c;</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span>  <span class="type">double</span> <span class="title function_">sub</span><span class="params">(<span class="type">double</span> a ,<span class="type">double</span> b)</span>{</span><br><span class="line">        <span class="type">double</span> c=a-b;</span><br><span class="line">        <span class="keyword">return</span> c;</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span>  <span class="type">double</span> <span class="title function_">multiply</span><span class="params">(<span class="type">double</span> a ,<span class="type">double</span> b)</span>{</span><br><span class="line">        <span class="type">double</span> c=a*b;</span><br><span class="line">        <span class="keyword">return</span> c;</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span>  <span class="type">double</span> <span class="title function_">div</span><span class="params">(<span class="type">double</span> a ,<span class="type">double</span> b)</span>{</span><br><span class="line">        <span class="type">double</span> c=a/b;</span><br><span class="line">        <span class="keyword">return</span> c;</span><br><span class="line">    }</span><br></pre></td></tr></tbody></table></figure>
+
+<p>也可以把判断的内容从main里面分开来进行调用的。</p>
+</body></html>]]></content>
+      <categories>
+        <category>Bug生成者</category>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>本站建立一周年!</title>
     <url>/posts/%E6%9C%AC%E7%AB%99%E5%BB%BA%E7%AB%8B%E4%B8%80%E5%91%A8%E5%B9%B4/</url>
     <content><![CDATA[<html><head></head><body><p>不知不觉当中,blog已经陪我走完一年,而我在这一年当中也没有写过什么东西,觉得浪费了资源.虽然建站容易但是,维护确实相当的麻烦. 大概明年五月份的时候可能本站要从word press迁移至Typecho. 不过至于下一次更新可能要继续等到2021年暑假的时候.</p>
@@ -1808,22 +1824,6 @@
       <tags>
         <tag>Email</tag>
         <tag>SMTP</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>用Java编写一个简易的计算器</title>
-    <url>/posts/%E7%94%A8java%E7%BC%96%E5%86%99%E4%B8%80%E4%B8%AA%E7%AE%80%E6%98%93%E7%9A%84%E8%AE%A1%E7%AE%97%E5%99%A8/</url>
-    <content><![CDATA[<html><head></head><body><p>思路： 利用Scanner建立一个扫描对象，在用switch语句进行判断。</p>
-<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Calculator</span> {</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> {</span><br><span class="line">        <span class="type">Scanner</span> <span class="variable">scanner</span> <span class="operator">=</span><span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">        System.out.println(<span class="string">"请输入计算的A值"</span>);</span><br><span class="line">        <span class="type">double</span> <span class="variable">a</span> <span class="operator">=</span>scanner.nextDouble();</span><br><span class="line">        System.out.println(<span class="string">"运算符"</span>);</span><br><span class="line">        <span class="type">String</span> <span class="variable">b</span> <span class="operator">=</span>scanner.next();</span><br><span class="line">        System.out.println(<span class="string">"请输入计算B值"</span>);</span><br><span class="line">        <span class="type">double</span> <span class="variable">c</span> <span class="operator">=</span>scanner.nextDouble();</span><br><span class="line">        <span class="keyword">switch</span> (b){</span><br><span class="line">            <span class="keyword">case</span> <span class="string">"+"</span> :</span><br><span class="line">                System.out.println(add(a,c));</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> <span class="string">"-"</span> :</span><br><span class="line">                System.out.println(sub(a,c));</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> <span class="string">"*"</span> :</span><br><span class="line">                System.out.println(multiply(a,c));</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> <span class="string">"/"</span> :</span><br><span class="line">                System.out.println(div(a,c));</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">        }</span><br><span class="line">        scanner.close();</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span>  <span class="type">double</span> <span class="title function_">add</span><span class="params">(<span class="type">double</span> a ,<span class="type">double</span> b)</span>{</span><br><span class="line">        <span class="type">double</span> c=a+b;</span><br><span class="line">        <span class="keyword">return</span> c;</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span>  <span class="type">double</span> <span class="title function_">sub</span><span class="params">(<span class="type">double</span> a ,<span class="type">double</span> b)</span>{</span><br><span class="line">        <span class="type">double</span> c=a-b;</span><br><span class="line">        <span class="keyword">return</span> c;</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span>  <span class="type">double</span> <span class="title function_">multiply</span><span class="params">(<span class="type">double</span> a ,<span class="type">double</span> b)</span>{</span><br><span class="line">        <span class="type">double</span> c=a*b;</span><br><span class="line">        <span class="keyword">return</span> c;</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span>  <span class="type">double</span> <span class="title function_">div</span><span class="params">(<span class="type">double</span> a ,<span class="type">double</span> b)</span>{</span><br><span class="line">        <span class="type">double</span> c=a/b;</span><br><span class="line">        <span class="keyword">return</span> c;</span><br><span class="line">    }</span><br></pre></td></tr></tbody></table></figure>
-
-<p>也可以把判断的内容从main里面分开来进行调用的。</p>
-</body></html>]]></content>
-      <categories>
-        <category>Bug生成者</category>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
       </tags>
   </entry>
 </search>
