@@ -174,47 +174,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Cachefly自动证书上传</title>
-    <url>/posts/CacheflySSLUpDate/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>自从 <code>Cachefly</code> 推出了<a href="https://www.cachefly.com/pricing/" rel="external nofollow noreferrer">免费套餐</a>， 作为一个白嫖党，第一时间就去体验了一下，注册需要外币卡需要注意一下，所以注册门槛稍微相对较高吧。试了一下速度，很不错，回国速度非常好，北方基本上走的是ntt 和俄罗斯的线路，南方走的是 hk 的CN2 线路，至少分发的图片和静态资源不成问题。</p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2023/08/02/64ca088d41e00.webp" alt="Cachefly-ItDog.webp"></p>
-<p>但有个很烦人的问题，它不支持 免费的证书自动签发，需要我自己上传证书，好在他的ssl 证书是自动检测的，也就是说你上传了一个证书是在8月份到期了在7月份又上传了这个域名的证书是11月到期了，会自动在证书过期之前调整成11月的。而且最近学了学go，就用这三脚猫的功夫配合chatGPT 写了一个简单的小玩意。</p>
-<h1 id="自动证书上传程序"><a href="#自动证书上传程序" class="headerlink" title="自动证书上传程序"></a>自动证书上传程序</h1><p>我已经把这个项目开源并且放在了 <a href="https://github.com/biliblihuorong/CacheflySSLUpDate" rel="external nofollow noreferrer">我的GitHub仓库上</a> 。</p>
-<p>其实在仓库的README的文件上已经有写了使用方式，我就直接把README拿过来了。</p>
-<h2 id="使用方式"><a href="#使用方式" class="headerlink" title="使用方式"></a>使用方式</h2><ol>
-<li><p>首先，您需要在 <a href="https://github.com/biliblihuorong/CacheflySSLUpDate/releases" rel="external nofollow noreferrer">https://github.com/biliblihuorong/CacheflySSLUpDate/releases</a> 页面下载适用于您设备的可执行文件。</p>
-</li>
-<li><p>然后，在执行文件所在目录下创建一个名为 <code>config.json</code> 的文件，并按照以下示例填入相应的内容。您也可以直接下载本仓库中的 <code>config.json</code> 文件，填入您的配置信息。</p>
-</li>
-</ol>
-<figure class="highlight json"><table><tbody><tr><td class="code"><pre><span class="line"><span class="punctuation">{</span></span><br><span class="line">  <span class="attr">"token"</span><span class="punctuation">:</span> <span class="string">"您的 Cachefly Token，可在 https://portal.cachefly.com/app/tokens 获取"</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">"certificateFile"</span><span class="punctuation">:</span> <span class="string">"&lt;证书文件路径&gt;"</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">"certificateKeyFile"</span><span class="punctuation">:</span> <span class="string">"&lt;密钥文件路径&gt;"</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">"password"</span><span class="punctuation">:</span> <span class="string">"&lt;您的 Cachefly 密码&gt;"</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">"taskInterval"</span><span class="punctuation">:</span> <span class="number">7</span></span><br><span class="line"><span class="punctuation">}</span></span><br></pre></td></tr></tbody></table></figure>
-
-<ul>
-<li><code>token</code>：您需要前往 <a href="https://portal.cachefly.com/app/tokens" rel="external nofollow noreferrer">https://portal.cachefly.com/app/tokens</a> 获取 Cachefly Token，并将其填写在此处。</li>
-<li><code>certificateFile</code> 和 <code>certificateKeyFile</code>：这两个字段应填入您本地 SSL 证书和密钥的文件路径。如果您使用宝塔面板自动签发证书，则签发地址通常在 <code>/www/server/panel/vhost/ssl/&lt;您的域名&gt;/</code> 下，其中公钥为 <code>fullchain.pem</code>，私钥为 <code>privkey.pem</code>。</li>
-<li><code>password</code>：填入您的 Cachefly 密码，用于上传证书到 Cachefly。</li>
-<li><code>taskInterval</code>：此字段定义了执行任务的间隔天数。例如，设置为 7 表示每隔 7 天执行一次上传任务。</li>
-</ul>
-<p><strong>注意：</strong> 请确保 <code>config.json</code> 文件的格式正确，否则工具将无法正常运行。</p>
-<p>改好之后在项目文件夹下，运行</p>
-<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line"><span class="built_in">nohup</span> &lt;可执行文件&gt;</span><br></pre></td></tr></tbody></table></figure>
-
-<p>然后文件夹下会又一个 nohup.out 的文件，正常来说程序首次启动会运行一次ssl 证书上传。</p>
-</body></html>]]></content>
-      <categories>
-        <category>网络技术</category>
-      </categories>
-      <tags>
-        <tag>go</tag>
-        <tag>Cachefly</tag>
-        <tag>SSL</tag>
-        <tag>宝塔面板</tag>
-        <tag>网络技术</tag>
-        <tag>CloudFlare</tag>
-        <tag>写bug的小能手</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Authentik OIDC 哪吒面板</title>
     <url>/posts/Authentik-NezhaDashboard-OIDC/</url>
     <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>最开始我的<code>nezha面板</code> 使用的 <code>github</code> 的<code>OAuth 认证</code>的，我的哪吒面板是自动更新到最新版本，最新版本更新好之后我发现无法登录我的<code>nezha 面板</code>了,报错提示是 http: named cookie not present<a href="https://nezha.wiki/guide/loginq.html#http-named-cookie-not-present" rel="external nofollow noreferrer"></a>试了试还是不行，最后看了一下新版本更新日志是改了OIDC不知道是不是这个关系，现在可以自定义oidc提供商了我就改成我自己的<code>Authentik</code> 吧。</p>
@@ -254,6 +213,47 @@
         <tag>OIDC</tag>
         <tag>OAuth2</tag>
         <tag>nezha</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Cachefly自动证书上传</title>
+    <url>/posts/CacheflySSLUpDate/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>自从 <code>Cachefly</code> 推出了<a href="https://www.cachefly.com/pricing/" rel="external nofollow noreferrer">免费套餐</a>， 作为一个白嫖党，第一时间就去体验了一下，注册需要外币卡需要注意一下，所以注册门槛稍微相对较高吧。试了一下速度，很不错，回国速度非常好，北方基本上走的是ntt 和俄罗斯的线路，南方走的是 hk 的CN2 线路，至少分发的图片和静态资源不成问题。</p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2023/08/02/64ca088d41e00.webp" alt="Cachefly-ItDog.webp"></p>
+<p>但有个很烦人的问题，它不支持 免费的证书自动签发，需要我自己上传证书，好在他的ssl 证书是自动检测的，也就是说你上传了一个证书是在8月份到期了在7月份又上传了这个域名的证书是11月到期了，会自动在证书过期之前调整成11月的。而且最近学了学go，就用这三脚猫的功夫配合chatGPT 写了一个简单的小玩意。</p>
+<h1 id="自动证书上传程序"><a href="#自动证书上传程序" class="headerlink" title="自动证书上传程序"></a>自动证书上传程序</h1><p>我已经把这个项目开源并且放在了 <a href="https://github.com/biliblihuorong/CacheflySSLUpDate" rel="external nofollow noreferrer">我的GitHub仓库上</a> 。</p>
+<p>其实在仓库的README的文件上已经有写了使用方式，我就直接把README拿过来了。</p>
+<h2 id="使用方式"><a href="#使用方式" class="headerlink" title="使用方式"></a>使用方式</h2><ol>
+<li><p>首先，您需要在 <a href="https://github.com/biliblihuorong/CacheflySSLUpDate/releases" rel="external nofollow noreferrer">https://github.com/biliblihuorong/CacheflySSLUpDate/releases</a> 页面下载适用于您设备的可执行文件。</p>
+</li>
+<li><p>然后，在执行文件所在目录下创建一个名为 <code>config.json</code> 的文件，并按照以下示例填入相应的内容。您也可以直接下载本仓库中的 <code>config.json</code> 文件，填入您的配置信息。</p>
+</li>
+</ol>
+<figure class="highlight json"><table><tbody><tr><td class="code"><pre><span class="line"><span class="punctuation">{</span></span><br><span class="line">  <span class="attr">"token"</span><span class="punctuation">:</span> <span class="string">"您的 Cachefly Token，可在 https://portal.cachefly.com/app/tokens 获取"</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">"certificateFile"</span><span class="punctuation">:</span> <span class="string">"&lt;证书文件路径&gt;"</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">"certificateKeyFile"</span><span class="punctuation">:</span> <span class="string">"&lt;密钥文件路径&gt;"</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">"password"</span><span class="punctuation">:</span> <span class="string">"&lt;您的 Cachefly 密码&gt;"</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">"taskInterval"</span><span class="punctuation">:</span> <span class="number">7</span></span><br><span class="line"><span class="punctuation">}</span></span><br></pre></td></tr></tbody></table></figure>
+
+<ul>
+<li><code>token</code>：您需要前往 <a href="https://portal.cachefly.com/app/tokens" rel="external nofollow noreferrer">https://portal.cachefly.com/app/tokens</a> 获取 Cachefly Token，并将其填写在此处。</li>
+<li><code>certificateFile</code> 和 <code>certificateKeyFile</code>：这两个字段应填入您本地 SSL 证书和密钥的文件路径。如果您使用宝塔面板自动签发证书，则签发地址通常在 <code>/www/server/panel/vhost/ssl/&lt;您的域名&gt;/</code> 下，其中公钥为 <code>fullchain.pem</code>，私钥为 <code>privkey.pem</code>。</li>
+<li><code>password</code>：填入您的 Cachefly 密码，用于上传证书到 Cachefly。</li>
+<li><code>taskInterval</code>：此字段定义了执行任务的间隔天数。例如，设置为 7 表示每隔 7 天执行一次上传任务。</li>
+</ul>
+<p><strong>注意：</strong> 请确保 <code>config.json</code> 文件的格式正确，否则工具将无法正常运行。</p>
+<p>改好之后在项目文件夹下，运行</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line"><span class="built_in">nohup</span> &lt;可执行文件&gt;</span><br></pre></td></tr></tbody></table></figure>
+
+<p>然后文件夹下会又一个 nohup.out 的文件，正常来说程序首次启动会运行一次ssl 证书上传。</p>
+</body></html>]]></content>
+      <categories>
+        <category>网络技术</category>
+      </categories>
+      <tags>
+        <tag>go</tag>
+        <tag>Cachefly</tag>
+        <tag>SSL</tag>
+        <tag>宝塔面板</tag>
+        <tag>网络技术</tag>
+        <tag>CloudFlare</tag>
+        <tag>写bug的小能手</tag>
       </tags>
   </entry>
   <entry>
@@ -349,38 +349,6 @@
       </tags>
   </entry>
   <entry>
-    <title>改造家里网络</title>
-    <url>/posts/Home-NetWork/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
-<p>也好久没更新来水一波。</p>
-</blockquote>
-<p>寒假里面，打算在折腾一下家里面的网络，将家里21年买的<code>r2s</code>换成<code>J4125</code>这下就够我折腾的了。</p>
-<img src="https://img.misaka.pics/ShellBlogImg/1/2024/03/06/65e8108d61fe7.webp" alt="网络拓补图.webp" style="zoom:50%;">
-
-<p>这是我目前的家里主题结构 由<code>r2s</code>软路由担任<code>PPPOE</code>拨号，有两个<code>AP</code> 组成有线<code>mesh</code>。</p>
-<p>对于 <code>J4125 </code>我打算使用<code>PVE</code>+<code>Ikuai</code>+<code>Debian</code></p>
-<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><h2 id="折腾前的痛点"><a href="#折腾前的痛点" class="headerlink" title="折腾前的痛点"></a>折腾前的痛点</h2><ul>
-<li>稳定：对于<code>r2s</code>来说有时候不是特别问题定，需要定时重启，我尝试换了很多的固件，都无法解决此问题</li>
-<li>性能不足 ：<code>r2s</code>有人测试基本上稳定千兆是没有问题的了（在不使用科学上网的时候），但对于小包转发来说多少有些吃力。</li>
-<li>ARM 生态问题：我知道ARM 发展的很好，但很多老的程序还只能支持<code>X86</code>.</li>
-</ul>
-<h2 id="折腾解决之后的"><a href="#折腾解决之后的" class="headerlink" title="折腾解决之后的"></a>折腾解决之后的</h2><ul>
-<li>稳定：目前连续运行了20天没有发现异常</li>
-<li>性能：<code>J4125</code>妥妥够我300mbps 的带宽使用了（满载带宽，CPU占用15%~20%）</li>
-<li>软件：解决了ARM 部分软件问题。</li>
-</ul>
-<p><code>J4125</code>进行<code>PVE </code>虚拟化，由<code>Ikuai </code>作为主路由进行<code>PPPOE</code> 以及流控管理，<code>Debian`` docker</code> 化跑<code>Adguard Heome </code>家用<code>DNS </code>。</p>
-<img src="https://img.misaka.pics/ShellBlogImg/1/2024/03/06/65e82e1b241e5.webp" alt="网络拓补图-2.webp" style="zoom: 67%;">
-</body></html>]]></content>
-      <categories>
-        <category>网络技术</category>
-      </categories>
-      <tags>
-        <tag>Ikuai</tag>
-        <tag>J4125</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>你可能需要知道的docker 的端口问题。</title>
     <url>/posts/DockerSecurity/</url>
     <content><![CDATA[<html><head></head><body><h1 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h1><p>docker 这个东西呢，对于我来说又爱又恨吧，爱的事情是可以很快速的进行部署项目，解决一些复杂和繁琐的问题，这也是docker 设计的初衷。恨得呢，本身我对于docker 来说是是一个小白用户，我只会 docker run xxxx 来完成我在github 找到的有趣应用，但是出了问题的时候，我需要去使用搜索引擎查阅的知识。</p>
@@ -431,6 +399,38 @@
         <tag>IPtables</tag>
         <tag>防火墙</tag>
         <tag>firewall</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>改造家里网络</title>
+    <url>/posts/Home-NetWork/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
+<p>也好久没更新来水一波。</p>
+</blockquote>
+<p>寒假里面，打算在折腾一下家里面的网络，将家里21年买的<code>r2s</code>换成<code>J4125</code>这下就够我折腾的了。</p>
+<img src="https://img.misaka.pics/ShellBlogImg/1/2024/03/06/65e8108d61fe7.webp" alt="网络拓补图.webp" style="zoom:50%;">
+
+<p>这是我目前的家里主题结构 由<code>r2s</code>软路由担任<code>PPPOE</code>拨号，有两个<code>AP</code> 组成有线<code>mesh</code>。</p>
+<p>对于 <code>J4125 </code>我打算使用<code>PVE</code>+<code>Ikuai</code>+<code>Debian</code></p>
+<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><h2 id="折腾前的痛点"><a href="#折腾前的痛点" class="headerlink" title="折腾前的痛点"></a>折腾前的痛点</h2><ul>
+<li>稳定：对于<code>r2s</code>来说有时候不是特别问题定，需要定时重启，我尝试换了很多的固件，都无法解决此问题</li>
+<li>性能不足 ：<code>r2s</code>有人测试基本上稳定千兆是没有问题的了（在不使用科学上网的时候），但对于小包转发来说多少有些吃力。</li>
+<li>ARM 生态问题：我知道ARM 发展的很好，但很多老的程序还只能支持<code>X86</code>.</li>
+</ul>
+<h2 id="折腾解决之后的"><a href="#折腾解决之后的" class="headerlink" title="折腾解决之后的"></a>折腾解决之后的</h2><ul>
+<li>稳定：目前连续运行了20天没有发现异常</li>
+<li>性能：<code>J4125</code>妥妥够我300mbps 的带宽使用了（满载带宽，CPU占用15%~20%）</li>
+<li>软件：解决了ARM 部分软件问题。</li>
+</ul>
+<p><code>J4125</code>进行<code>PVE </code>虚拟化，由<code>Ikuai </code>作为主路由进行<code>PPPOE</code> 以及流控管理，<code>Debian`` docker</code> 化跑<code>Adguard Heome </code>家用<code>DNS </code>。</p>
+<img src="https://img.misaka.pics/ShellBlogImg/1/2024/03/06/65e82e1b241e5.webp" alt="网络拓补图-2.webp" style="zoom: 67%;">
+</body></html>]]></content>
+      <categories>
+        <category>网络技术</category>
+      </categories>
+      <tags>
+        <tag>Ikuai</tag>
+        <tag>J4125</tag>
       </tags>
   </entry>
   <entry>
@@ -685,9 +685,9 @@
 <p> <a href="https://eui64-calc.princelle.org/" rel="external nofollow noreferrer">EUI-64 计算器</a></p>
 </body></html>]]></content>
       <tags>
-        <tag>Ikuai</tag>
         <tag>防火墙</tag>
         <tag>firewall</tag>
+        <tag>Ikuai</tag>
         <tag>IPv6</tag>
       </tags>
   </entry>
@@ -876,46 +876,6 @@
       </tags>
   </entry>
   <entry>
-    <title>解决Umami v2.3升级问题，Something went wrong.</title>
-    <url>/posts/Umami-fix/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>是的没错，发生这样的事情，应该很多<code>Umami</code>只要是v2.2版本应该都遇到了。 </p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2023/07/19/64b7cb785693f.webp" alt="Umami v2.2 Something went wrong."></p>
-<p>我浏览了部分 <code>issues</code> 只能升级到v2.3版本了。</p>
-<h1 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h1><p>我先说一下我自己的环境，我自己的使用：</p>
-<ol>
-<li>属于编译安装，没有放在docker</li>
-<li>Mysql 5.7</li>
-<li>nodjs 18.16.0</li>
-<li>npm 9.5.1</li>
-</ol>
-<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><p>解决办法有两种，第一种你可以直接尝试升级到<code>MySQL</code> 8.0，如果你想继续和我一样，小鸡的配置不行还想用5.7，请继续往下看。</p>
-<p>如果你是和我一样都是<code>Mysql</code> 5.7版本，你需要查看这篇 <a href="https://github.com/umami-software/umami/issues/2118" rel="external nofollow noreferrer">issues</a> 或者继续往下看。</p>
-<ol>
-<li>你需要从GitHub 拉去一份最新的<a href="https://github.com/umami-software/umami/releases" rel="external nofollow noreferrer">Umami</a> 的代码，你需要找到<code>db/mysql/migrations/02_report_schema_session_data</code>文件夹下的<code>migration.sql</code>这份sql文件，将下面的代码替换和保存。</li>
-</ol>
-<figure class="highlight sql"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> `event_data` CHANGE `event_data_type` `data_type` <span class="type">int</span> unsigned <span class="keyword">NOT</span> <span class="keyword">NULL</span>;</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> `event_data` CHANGE `event_date_value` `date_value` <span class="type">timestamp</span> <span class="keyword">NULL</span>;</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> `event_data` CHANGE `event_id` `event_data_id` <span class="type">varchar</span>(<span class="number">36</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span>;</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> `event_data` CHANGE `event_numeric_value` `number_value` <span class="type">decimal</span>(<span class="number">19</span>, <span class="number">4</span>) <span class="keyword">NULL</span>;</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> `event_data` CHANGE `event_string_value` `string_value`<span class="type">varchar</span>(<span class="number">500</span>) <span class="keyword">NULL</span>;</span><br></pre></td></tr></tbody></table></figure>
-
-<p>终于我遇到的问题，你需要备份原来的 <code>Umami</code> 数据库，然后创建一个新的数据库，讲数据源配置在<code>.env</code>里面，不然通过初始化数据库。</p>
-<ol start="2">
-<li><p>然后你需要在终端中运行这段命令<code>npx prisma migrate resolve --rolled-back "02_report_schema_session_data"</code></p>
-</li>
-<li><p>重新部署，请看 <a href="https://umami.is/docs/install" rel="external nofollow noreferrer">https://umami.is/docs/install</a></p>
-</li>
-</ol>
-<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>Umami 的GitHub issues ：<a href="https://github.com/umami-software/umami/issues/2118" rel="external nofollow noreferrer">https://github.com/umami-software/umami/issues/2118</a></p>
-</body></html>]]></content>
-      <categories>
-        <category>网络技术</category>
-      </categories>
-      <tags>
-        <tag>Umami</tag>
-        <tag>PV</tag>
-        <tag>网站统计，UV</tag>
-        <tag>Ip</tag>
-        <tag>MySql</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>新版本Spring-Security配置踩坑</title>
     <url>/posts/Spring-Security/</url>
     <content><![CDATA[<html><head></head><body><h1 id="引言："><a href="#引言：" class="headerlink" title="引言："></a>引言：</h1><blockquote>
@@ -962,36 +922,43 @@
 </body></html>]]></content>
   </entry>
   <entry>
-    <title>Memos 对接 Authentik</title>
-    <url>/posts/authentik-OAuth2-memos/</url>
-    <content><![CDATA[<html><head></head><body><blockquote>
-<p> 配置中：这是什么啊，这么麻烦还没过去啊。 配置后：真香好方便。</p>
-</blockquote>
-<p>使用本文前请自行在 <code>Authentik </code>配置好 Memos使用的<code>应用程序</code>和<code>提供程序</code></p>
-<h1 id="Authentik-配置"><a href="#Authentik-配置" class="headerlink" title="Authentik 配置"></a>Authentik 配置</h1><p>默认你已经创建好了，一个给Memos使用的<code>应用程序</code>和<code>提供程序</code>,我们需要更改<code>提供程序</code>(给Memos 的)我们点击编辑</p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/09/66155d6445bbc.webp" alt="Authentik 配置 Memos-1.webp"></p>
-<blockquote>
-<p>选择客户端可以使用哪些作用域。客户端仍然需要指定访问数据的范围。</p>
-<p>按住 <code>ctrl/command</code> 键可选择多个项目。</p>
-</blockquote>
-<p>我们选中<code>authentik default OAuth Mapping: OpenID email</code> 和 <code>authentik default OAuth Mapping: OpenID openid</code>将<code>Subject 模式</code>改成基于用户名，然后更新。</p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/09/6615597f90737.webp" alt="Authentik 配置 Memos.webp"></p>
-<h1 id="Memos配置"><a href="#Memos配置" class="headerlink" title="Memos配置"></a>Memos配置</h1><blockquote>
-<p>在截至发文时 <code>Memos</code> 的版本为<code>v0.20.1</code>版本，<code>Memos</code>通过用户名为主键，其实只需要给<code>username</code>字段即可。</p>
-</blockquote>
-<p>根据上文调整的，现在sub 是我们的用户名字段，按照文章截屏填写其他的自行替换。这样你的的<code>Memos</code>就可以使用<code>Authentik</code>进行登录了。</p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/09/66155e6ca6dc7.webp" alt="Memos-Oauth2-config.webp"></p>
-<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p><code>Memos</code>的文档：<a href="https://www.usememos.com/docs/advanced-settings/keycloak" rel="external nofollow noreferrer">https://www.usememos.com/docs/advanced-settings/keycloak</a></p>
+    <title>解决Umami v2.3升级问题，Something went wrong.</title>
+    <url>/posts/Umami-fix/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>是的没错，发生这样的事情，应该很多<code>Umami</code>只要是v2.2版本应该都遇到了。 </p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2023/07/19/64b7cb785693f.webp" alt="Umami v2.2 Something went wrong."></p>
+<p>我浏览了部分 <code>issues</code> 只能升级到v2.3版本了。</p>
+<h1 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h1><p>我先说一下我自己的环境，我自己的使用：</p>
+<ol>
+<li>属于编译安装，没有放在docker</li>
+<li>Mysql 5.7</li>
+<li>nodjs 18.16.0</li>
+<li>npm 9.5.1</li>
+</ol>
+<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><p>解决办法有两种，第一种你可以直接尝试升级到<code>MySQL</code> 8.0，如果你想继续和我一样，小鸡的配置不行还想用5.7，请继续往下看。</p>
+<p>如果你是和我一样都是<code>Mysql</code> 5.7版本，你需要查看这篇 <a href="https://github.com/umami-software/umami/issues/2118" rel="external nofollow noreferrer">issues</a> 或者继续往下看。</p>
+<ol>
+<li>你需要从GitHub 拉去一份最新的<a href="https://github.com/umami-software/umami/releases" rel="external nofollow noreferrer">Umami</a> 的代码，你需要找到<code>db/mysql/migrations/02_report_schema_session_data</code>文件夹下的<code>migration.sql</code>这份sql文件，将下面的代码替换和保存。</li>
+</ol>
+<figure class="highlight sql"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> `event_data` CHANGE `event_data_type` `data_type` <span class="type">int</span> unsigned <span class="keyword">NOT</span> <span class="keyword">NULL</span>;</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> `event_data` CHANGE `event_date_value` `date_value` <span class="type">timestamp</span> <span class="keyword">NULL</span>;</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> `event_data` CHANGE `event_id` `event_data_id` <span class="type">varchar</span>(<span class="number">36</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span>;</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> `event_data` CHANGE `event_numeric_value` `number_value` <span class="type">decimal</span>(<span class="number">19</span>, <span class="number">4</span>) <span class="keyword">NULL</span>;</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> `event_data` CHANGE `event_string_value` `string_value`<span class="type">varchar</span>(<span class="number">500</span>) <span class="keyword">NULL</span>;</span><br></pre></td></tr></tbody></table></figure>
+
+<p>终于我遇到的问题，你需要备份原来的 <code>Umami</code> 数据库，然后创建一个新的数据库，讲数据源配置在<code>.env</code>里面，不然通过初始化数据库。</p>
+<ol start="2">
+<li><p>然后你需要在终端中运行这段命令<code>npx prisma migrate resolve --rolled-back "02_report_schema_session_data"</code></p>
+</li>
+<li><p>重新部署，请看 <a href="https://umami.is/docs/install" rel="external nofollow noreferrer">https://umami.is/docs/install</a></p>
+</li>
+</ol>
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>Umami 的GitHub issues ：<a href="https://github.com/umami-software/umami/issues/2118" rel="external nofollow noreferrer">https://github.com/umami-software/umami/issues/2118</a></p>
 </body></html>]]></content>
       <categories>
         <category>网络技术</category>
       </categories>
       <tags>
-        <tag>Authentik</tag>
-        <tag>SSO</tag>
-        <tag>OIDC</tag>
-        <tag>OAuth2</tag>
-        <tag>Memos</tag>
+        <tag>MySql</tag>
+        <tag>Umami</tag>
+        <tag>PV</tag>
+        <tag>网站统计，UV</tag>
+        <tag>Ip</tag>
       </tags>
   </entry>
   <entry>
@@ -1094,6 +1061,61 @@
       </tags>
   </entry>
   <entry>
+    <title>clash 使用</title>
+    <url>/posts/clash/</url>
+    <content><![CDATA[<html><head></head><body><p><strong><font color="red">请根据当地网络法律使用,本文章仅供学习使用,不负任何责任!</font></strong><br><strong><font color="red">请根据当地网络法律使用,本文章仅供学习使用,不负任何责任!</font></strong><br><strong><font color="red">请根据当地网络法律使用,本文章仅供学习使用,不负任何责任!</font></strong></p>
+<h1 id="clash-for-windows"><a href="#clash-for-windows" class="headerlink" title="clash for windows :"></a>clash for windows :</h1><p>此项目地址:<a href="https://github.com/Fndroid/clash_for_windows_pkg/releases" rel="external nofollow noreferrer">https://github.com/Fndroid/clash_for_windows_pkg/releases</a></p>
+<p>安装运行是这样的页面:<img src="https://cdn.jsdelivr.net/gh/biliblihuorong/Resources/Image/image-20210514120949169.png" alt="image-20210514120949169"></p>
+<h2 id="导入配置文件"><a href="#导入配置文件" class="headerlink" title="导入配置文件"></a>导入配置文件</h2><p>然后我们到<code>Proflies</code>.</p>
+<p>支持url和本地配置文件直接拖入的两种方式.</p>
+<p>URL导入:<img src="https://cdn.jsdelivr.net/gh/biliblihuorong/Resources/Image/image-20210514122121043.png" alt="image-20210514122121043"></p>
+<p>文件导入:<img src="https://docs.cfw.lbyczf.com/assets/img/quickstart3.b68e5259.gif" alt="img"></p>
+<p>记得回到<code>General</code>把<code>System Proxy</code>和<code>Start with windows</code>打开即可.</p>
+<h1 id="Clash-for-Android"><a href="#Clash-for-Android" class="headerlink" title="Clash for Android :"></a>Clash for Android :</h1><p>项目地址: <a href="https://github.com/Kr328/ClashForAndroid/releases" rel="external nofollow noreferrer">https://github.com/Kr328/ClashForAndroid/releases</a></p>
+<h2 id="导入配置文件-1"><a href="#导入配置文件-1" class="headerlink" title="导入配置文件:"></a>导入配置文件:</h2><p>导入和Windows基本一样,只不过<code>Android</code>app语言是中文了.</p>
+<p><img src="https://cdn.jsdelivr.net/gh/biliblihuorong/Resources/Image/clashAndroid1.png" alt="clashAndroid1"></p>
+</body></html>]]></content>
+      <categories>
+        <category>网络技术</category>
+      </categories>
+      <tags>
+        <tag>clash</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Memos 对接 Authentik</title>
+    <url>/posts/authentik-OAuth2-memos/</url>
+    <content><![CDATA[<html><head></head><body><blockquote>
+<p> 配置中：这是什么啊，这么麻烦还没过去啊。 配置后：真香好方便。</p>
+</blockquote>
+<p>使用本文前请自行在 <code>Authentik </code>配置好 Memos使用的<code>应用程序</code>和<code>提供程序</code></p>
+<h1 id="Authentik-配置"><a href="#Authentik-配置" class="headerlink" title="Authentik 配置"></a>Authentik 配置</h1><p>默认你已经创建好了，一个给Memos使用的<code>应用程序</code>和<code>提供程序</code>,我们需要更改<code>提供程序</code>(给Memos 的)我们点击编辑</p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/09/66155d6445bbc.webp" alt="Authentik 配置 Memos-1.webp"></p>
+<blockquote>
+<p>选择客户端可以使用哪些作用域。客户端仍然需要指定访问数据的范围。</p>
+<p>按住 <code>ctrl/command</code> 键可选择多个项目。</p>
+</blockquote>
+<p>我们选中<code>authentik default OAuth Mapping: OpenID email</code> 和 <code>authentik default OAuth Mapping: OpenID openid</code>将<code>Subject 模式</code>改成基于用户名，然后更新。</p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/09/6615597f90737.webp" alt="Authentik 配置 Memos.webp"></p>
+<h1 id="Memos配置"><a href="#Memos配置" class="headerlink" title="Memos配置"></a>Memos配置</h1><blockquote>
+<p>在截至发文时 <code>Memos</code> 的版本为<code>v0.20.1</code>版本，<code>Memos</code>通过用户名为主键，其实只需要给<code>username</code>字段即可。</p>
+</blockquote>
+<p>根据上文调整的，现在sub 是我们的用户名字段，按照文章截屏填写其他的自行替换。这样你的的<code>Memos</code>就可以使用<code>Authentik</code>进行登录了。</p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/09/66155e6ca6dc7.webp" alt="Memos-Oauth2-config.webp"></p>
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p><code>Memos</code>的文档：<a href="https://www.usememos.com/docs/advanced-settings/keycloak" rel="external nofollow noreferrer">https://www.usememos.com/docs/advanced-settings/keycloak</a></p>
+</body></html>]]></content>
+      <categories>
+        <category>网络技术</category>
+      </categories>
+      <tags>
+        <tag>Authentik</tag>
+        <tag>SSO</tag>
+        <tag>OIDC</tag>
+        <tag>OAuth2</tag>
+        <tag>Memos</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo butterfly 优化</title>
     <url>/posts/butterfly/</url>
     <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
@@ -1146,25 +1168,27 @@
       </tags>
   </entry>
   <entry>
-    <title>clash 使用</title>
-    <url>/posts/clash/</url>
-    <content><![CDATA[<html><head></head><body><p><strong><font color="red">请根据当地网络法律使用,本文章仅供学习使用,不负任何责任!</font></strong><br><strong><font color="red">请根据当地网络法律使用,本文章仅供学习使用,不负任何责任!</font></strong><br><strong><font color="red">请根据当地网络法律使用,本文章仅供学习使用,不负任何责任!</font></strong></p>
-<h1 id="clash-for-windows"><a href="#clash-for-windows" class="headerlink" title="clash for windows :"></a>clash for windows :</h1><p>此项目地址:<a href="https://github.com/Fndroid/clash_for_windows_pkg/releases" rel="external nofollow noreferrer">https://github.com/Fndroid/clash_for_windows_pkg/releases</a></p>
-<p>安装运行是这样的页面:<img src="https://cdn.jsdelivr.net/gh/biliblihuorong/Resources/Image/image-20210514120949169.png" alt="image-20210514120949169"></p>
-<h2 id="导入配置文件"><a href="#导入配置文件" class="headerlink" title="导入配置文件"></a>导入配置文件</h2><p>然后我们到<code>Proflies</code>.</p>
-<p>支持url和本地配置文件直接拖入的两种方式.</p>
-<p>URL导入:<img src="https://cdn.jsdelivr.net/gh/biliblihuorong/Resources/Image/image-20210514122121043.png" alt="image-20210514122121043"></p>
-<p>文件导入:<img src="https://docs.cfw.lbyczf.com/assets/img/quickstart3.b68e5259.gif" alt="img"></p>
-<p>记得回到<code>General</code>把<code>System Proxy</code>和<code>Start with windows</code>打开即可.</p>
-<h1 id="Clash-for-Android"><a href="#Clash-for-Android" class="headerlink" title="Clash for Android :"></a>Clash for Android :</h1><p>项目地址: <a href="https://github.com/Kr328/ClashForAndroid/releases" rel="external nofollow noreferrer">https://github.com/Kr328/ClashForAndroid/releases</a></p>
-<h2 id="导入配置文件-1"><a href="#导入配置文件-1" class="headerlink" title="导入配置文件:"></a>导入配置文件:</h2><p>导入和Windows基本一样,只不过<code>Android</code>app语言是中文了.</p>
-<p><img src="https://cdn.jsdelivr.net/gh/biliblihuorong/Resources/Image/clashAndroid1.png" alt="clashAndroid1"></p>
+    <title>Umami空白页面</title>
+    <url>/posts/fix-umami-blank-page/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>每天会去umami 后台看一下当天的访客以及访问量那些文章，然后就发现了打开website的时候是空白页面，我以为是umami 没有更新最新版导致的问题，等我更新完毕之后发现还是一样的，打开 f12 看了一下 <code>webpack-532820dc741ca459.js</code>文件一直404。顺手水一下吧。<br><img src="https://img.misaka.pics/ShellBlogImg/1/2024/06/27/667d517263cb3.webp" alt="umami-blank-page.webp"></p>
+<p>环境说明：</p>
+<ul>
+<li>docker-compose 部署的umami版本是 v2.12.1</li>
+<li>宝塔nginx 反代的</li>
+</ul>
+<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><p>请检查反代 是否为<code>proxy_pass http://127.0.0.1:&lt;端口&gt;;</code> 不能是<code>proxy_pass http://127.0.0.1:&lt;端口&gt;/;</code></p>
+<p>如果不行请尝试删除反代重新添加，以及清理cdn的缓存。</p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/06/27/667d52e17d423.webp" alt="umami-blank-page-2.webp"></p>
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>Umami 的GitHub issues ：<a href="https://github.com/umami-software/umami/issues/2269" rel="external nofollow noreferrer">https://github.com/umami-software/umami/issues/2269</a></p>
 </body></html>]]></content>
       <categories>
         <category>网络技术</category>
       </categories>
       <tags>
-        <tag>clash</tag>
+        <tag>Umami</tag>
+        <tag>PV</tag>
+        <tag>网站统计，UV</tag>
+        <tag>Ip</tag>
       </tags>
   </entry>
   <entry>
@@ -1200,30 +1224,6 @@
         <tag>butterfly</tag>
         <tag>twikoo</tag>
         <tag>评论</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Umami空白页面</title>
-    <url>/posts/fix-umami-blank-page/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>每天会去umami 后台看一下当天的访客以及访问量那些文章，然后就发现了打开website的时候是空白页面，我以为是umami 没有更新最新版导致的问题，等我更新完毕之后发现还是一样的，打开 f12 看了一下 <code>webpack-532820dc741ca459.js</code>文件一直404。顺手水一下吧。<br><img src="https://img.misaka.pics/ShellBlogImg/1/2024/06/27/667d517263cb3.webp" alt="umami-blank-page.webp"></p>
-<p>环境说明：</p>
-<ul>
-<li>docker-compose 部署的umami版本是 v2.12.1</li>
-<li>宝塔nginx 反代的</li>
-</ul>
-<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><p>请检查反代 是否为<code>proxy_pass http://127.0.0.1:&lt;端口&gt;;</code> 不能是<code>proxy_pass http://127.0.0.1:&lt;端口&gt;/;</code></p>
-<p>如果不行请尝试删除反代重新添加，以及清理cdn的缓存。</p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/06/27/667d52e17d423.webp" alt="umami-blank-page-2.webp"></p>
-<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>Umami 的GitHub issues ：<a href="https://github.com/umami-software/umami/issues/2269" rel="external nofollow noreferrer">https://github.com/umami-software/umami/issues/2269</a></p>
-</body></html>]]></content>
-      <categories>
-        <category>网络技术</category>
-      </categories>
-      <tags>
-        <tag>Umami</tag>
-        <tag>PV</tag>
-        <tag>网站统计，UV</tag>
-        <tag>Ip</tag>
       </tags>
   </entry>
   <entry>
@@ -1559,11 +1559,65 @@
         <category>网络技术</category>
       </categories>
       <tags>
-        <tag>butterfly</tag>
-        <tag>backblaze</tag>
         <tag>lskypro</tag>
         <tag>蓝空图床</tag>
         <tag>兰空图床</tag>
+        <tag>backblaze</tag>
+        <tag>butterfly</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>萌国ICP备案</title>
+    <url>/posts/moeICP/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="萌国ICP备案"><a href="#萌国ICP备案" class="headerlink" title="萌国ICP备案"></a>萌国ICP备案</h1><blockquote>
+<p>启元</p>
+</blockquote>
+<p>自从某萌主申请了 icp.gov.moe 域名以后</p>
+<p>萌童鞋在百忙中抽空写了个萌备系统</p>
+<p>然后大家看到萌国ICP备案查询系统就上线了</p>
+<blockquote>
+<p>萌国ICP备案</p>
+</blockquote>
+<p>嗯，你没看错，这是萌国的ICP备案。</p>
+<p>萌国在哪呢，听某萌主说，好像是个网络上虚拟的国度。</p>
+<p>反正别问博主了，本博主也是听来的。</p>
+<p>我们说的是萌国ICP备案，号称萌ICP备，简称萌备</p>
+<blockquote>
+<p>萌ICP备 纯属萌友网站联萌！<br>是一种次元中的爱好，文化的展现。</p>
+</blockquote>
+<p>若你在万千网站中遇到萌备<br>甚有缘分</p>
+<p>萌主：“欢迎各大热爱萌文化的站长加入</p>
+<p> 给自己的网站加上个萌萌的备案号”</p>
+<p>博主：能不能不打广告？……</p>
+<blockquote>
+<p>加入萌备</p>
+</blockquote>
+<p>申请地址： <a href="https://icp.gov.moe/join.php">https://icp.gov.moe/join.php</a></p>
+<p>萌备主页<br><a href="https://icp.gov.moe/">https://icp.gov.moe</a></p>
+<p>然后按提示在页脚加上萌备的链接，以便查询对接系统，最后自动就加入萌备了，好简单啊。</p>
+<blockquote>
+<p>后话</p>
+</blockquote>
+<p>感觉好简单的样子，本博客已经在用了，还PY了个好号码，是不是很好看呢。</p>
+<h1 id="异次元之旅"><a href="#异次元之旅" class="headerlink" title="异次元之旅"></a>异次元之旅</h1><blockquote>
+<p>这是什么？</p>
+</blockquote>
+<p>好像是萌站成员越来越壮大，让分散的<strong>小行星</strong>（此处指加入萌备的网站数量）进行联系的枢纽。</p>
+<blockquote>
+<p>每一颗小行星都蕴含着与众不同的绚丽彩虹一般的色彩，有些是生活的甜蜜，有些是科技的火花，有些则披着一层神秘而厚重的大气层，令人捉摸不透，你愿意开启这一场旅行吗？</p>
+</blockquote>
+<p>咳咳我当然愿意啦ヽ(✿ﾟ▽ﾟ)ノ</p>
+<blockquote>
+<p>这么加入呢？</p>
+</blockquote>
+<p>好像有一个专属的坐标 <a href="https://moe.one/thread-254.htm" rel="external nofollow noreferrer">萌ICP备异次元之旅</a>。</p>
+</body></html>]]></content>
+      <categories>
+        <category>生活随想</category>
+      </categories>
+      <tags>
+        <tag>备案</tag>
+        <tag>萌国</tag>
       </tags>
   </entry>
   <entry>
@@ -1639,60 +1693,6 @@
       </tags>
   </entry>
   <entry>
-    <title>萌国ICP备案</title>
-    <url>/posts/moeICP/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="萌国ICP备案"><a href="#萌国ICP备案" class="headerlink" title="萌国ICP备案"></a>萌国ICP备案</h1><blockquote>
-<p>启元</p>
-</blockquote>
-<p>自从某萌主申请了 icp.gov.moe 域名以后</p>
-<p>萌童鞋在百忙中抽空写了个萌备系统</p>
-<p>然后大家看到萌国ICP备案查询系统就上线了</p>
-<blockquote>
-<p>萌国ICP备案</p>
-</blockquote>
-<p>嗯，你没看错，这是萌国的ICP备案。</p>
-<p>萌国在哪呢，听某萌主说，好像是个网络上虚拟的国度。</p>
-<p>反正别问博主了，本博主也是听来的。</p>
-<p>我们说的是萌国ICP备案，号称萌ICP备，简称萌备</p>
-<blockquote>
-<p>萌ICP备 纯属萌友网站联萌！<br>是一种次元中的爱好，文化的展现。</p>
-</blockquote>
-<p>若你在万千网站中遇到萌备<br>甚有缘分</p>
-<p>萌主：“欢迎各大热爱萌文化的站长加入</p>
-<p> 给自己的网站加上个萌萌的备案号”</p>
-<p>博主：能不能不打广告？……</p>
-<blockquote>
-<p>加入萌备</p>
-</blockquote>
-<p>申请地址： <a href="https://icp.gov.moe/join.php">https://icp.gov.moe/join.php</a></p>
-<p>萌备主页<br><a href="https://icp.gov.moe/">https://icp.gov.moe</a></p>
-<p>然后按提示在页脚加上萌备的链接，以便查询对接系统，最后自动就加入萌备了，好简单啊。</p>
-<blockquote>
-<p>后话</p>
-</blockquote>
-<p>感觉好简单的样子，本博客已经在用了，还PY了个好号码，是不是很好看呢。</p>
-<h1 id="异次元之旅"><a href="#异次元之旅" class="headerlink" title="异次元之旅"></a>异次元之旅</h1><blockquote>
-<p>这是什么？</p>
-</blockquote>
-<p>好像是萌站成员越来越壮大，让分散的<strong>小行星</strong>（此处指加入萌备的网站数量）进行联系的枢纽。</p>
-<blockquote>
-<p>每一颗小行星都蕴含着与众不同的绚丽彩虹一般的色彩，有些是生活的甜蜜，有些是科技的火花，有些则披着一层神秘而厚重的大气层，令人捉摸不透，你愿意开启这一场旅行吗？</p>
-</blockquote>
-<p>咳咳我当然愿意啦ヽ(✿ﾟ▽ﾟ)ノ</p>
-<blockquote>
-<p>这么加入呢？</p>
-</blockquote>
-<p>好像有一个专属的坐标 <a href="https://moe.one/thread-254.htm" rel="external nofollow noreferrer">萌ICP备异次元之旅</a>。</p>
-</body></html>]]></content>
-      <categories>
-        <category>生活随想</category>
-      </categories>
-      <tags>
-        <tag>备案</tag>
-        <tag>萌国</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>使用QQ机器人来进行通知课程信息</title>
     <url>/posts/%E4%BD%BF%E7%94%A8QQ%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%9D%A5%E8%BF%9B%E8%A1%8C%E9%80%9A%E7%9F%A5%E8%AF%BE%E7%A8%8B%E4%BF%A1%E6%81%AF/</url>
     <content><![CDATA[<html><head></head><body><h1 id="使用QQ机器人来进行通知课程信息"><a href="#使用QQ机器人来进行通知课程信息" class="headerlink" title="使用QQ机器人来进行通知课程信息"></a>使用QQ机器人来进行通知课程信息</h1><p><strong>此机器人是使用<a href="https://github.com/mamoe/mirai/" rel="external nofollow noreferrer">mirai</a>框架加上<a href="https://github.com/KonnyakuCamp/SuperCourseTimetableBot" rel="external nofollow noreferrer">SuperCourseTimetableBot</a>课程表插件</strong></p>
@@ -1747,11 +1747,6 @@
       </tags>
   </entry>
   <entry>
-    <title>博客评论系统还在测试阶段</title>
-    <url>/posts/%E5%8D%9A%E5%AE%A2%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E8%BF%98%E5%9C%A8%E6%B5%8B%E8%AF%95%E9%98%B6%E6%AE%B5/</url>
-    <content><![CDATA[<html><head></head><body></body></html>]]></content>
-  </entry>
-  <entry>
     <title>博客数据库损坏，正在维护！</title>
     <url>/posts/%E5%8D%9A%E5%AE%A2%E6%95%B0%E6%8D%AE%E5%BA%93%E6%8D%9F%E5%9D%8F%EF%BC%8C%E6%AD%A3%E5%9C%A8%E7%BB%B4%E6%8A%A4%EF%BC%81/</url>
     <content><![CDATA[<html><head></head><body><p>因博主手残把动了数据库而且还没有恢复到最近的备份，本博客访问可能会存在一定问题，在博主紧急抢修下，恢复了部分基础功能，博文图片可能暂时无法加载，我相信很快恢复，我现在先睡觉了都12点了。</p>
@@ -1759,6 +1754,11 @@
       <categories>
         <category>网络技术</category>
       </categories>
+  </entry>
+  <entry>
+    <title>博客评论系统还在测试阶段</title>
+    <url>/posts/%E5%8D%9A%E5%AE%A2%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E8%BF%98%E5%9C%A8%E6%B5%8B%E8%AF%95%E9%98%B6%E6%AE%B5/</url>
+    <content><![CDATA[<html><head></head><body></body></html>]]></content>
   </entry>
   <entry>
     <title>博客转移备案</title>
@@ -1797,6 +1797,18 @@
       </categories>
   </entry>
   <entry>
+    <title>本站建立一周年!</title>
+    <url>/posts/%E6%9C%AC%E7%AB%99%E5%BB%BA%E7%AB%8B%E4%B8%80%E5%91%A8%E5%B9%B4/</url>
+    <content><![CDATA[<html><head></head><body><p>不知不觉当中,blog已经陪我走完一年,而我在这一年当中也没有写过什么东西,觉得浪费了资源.虽然建站容易但是,维护确实相当的麻烦. 大概明年五月份的时候可能本站要从word press迁移至Typecho. 不过至于下一次更新可能要继续等到2021年暑假的时候.</p>
+</body></html>]]></content>
+      <categories>
+        <category>生活随想</category>
+      </categories>
+      <tags>
+        <tag>生活随想</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>本站正式启动邮箱评论功能</title>
     <url>/posts/%E6%9C%AC%E7%AB%99%E6%AD%A3%E5%BC%8F%E5%90%AF%E5%8A%A8%E9%82%AE%E7%AE%B1%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/</url>
     <content><![CDATA[<html><head></head><body><p>邮箱评论功能欢迎大家测试如有bug,请联系我的QQ，谢谢！</p>
@@ -1807,18 +1819,6 @@
       <tags>
         <tag>Email</tag>
         <tag>SMTP</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>本站建立一周年!</title>
-    <url>/posts/%E6%9C%AC%E7%AB%99%E5%BB%BA%E7%AB%8B%E4%B8%80%E5%91%A8%E5%B9%B4/</url>
-    <content><![CDATA[<html><head></head><body><p>不知不觉当中,blog已经陪我走完一年,而我在这一年当中也没有写过什么东西,觉得浪费了资源.虽然建站容易但是,维护确实相当的麻烦. 大概明年五月份的时候可能本站要从word press迁移至Typecho. 不过至于下一次更新可能要继续等到2021年暑假的时候.</p>
-</body></html>]]></content>
-      <categories>
-        <category>生活随想</category>
-      </categories>
-      <tags>
-        <tag>生活随想</tag>
       </tags>
   </entry>
   <entry>
