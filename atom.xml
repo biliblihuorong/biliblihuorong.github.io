@@ -6,7 +6,7 @@
   <link href="https://blog.ning.moe/atom.xml" rel="self"/>
   
   <link href="https://blog.ning.moe/"/>
-  <updated>2024-08-07T11:40:55.214Z</updated>
+  <updated>2024-08-11T14:06:40.981Z</updated>
   <id>https://blog.ning.moe/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>我的网站被人镜像了</title>
+    <link href="https://blog.ning.moe/posts/Website-mirrored/"/>
+    <id>https://blog.ning.moe/posts/Website-mirrored/</id>
+    <published>2024-08-11T13:42:17.000Z</published>
+    <updated>2024-08-11T14:06:40.981Z</updated>
+    
+    <content type="html"><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>事情是这样的我昨天配置一些东西是错的，同步上去了今天才发现，随后回滚之后发现防战访问突然下降好多，我以为是Google 没有收录一些文章决定拿一些文章关键词搜一搜，发现了两个我。</p><p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/08/11/66b8c1d2bb798.webp" alt="vs.webp"></p><p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/08/11/66b8c42125db6.webp" alt="mangxb.webp"></p><p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/08/11/66b8c45dd04f6.webp" alt="Snipaste_2024-08-11_21-42-05.webp"></p><p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/08/11/66b8c496e4fa7.webp" alt="Snipaste_2024-08-11_21-42-28.webp"><br>我已经向 Google bing dnspod  cloudlfare 进行举报 数字千年版权法案(DMCA) ，请 域名所属人立即删除我所有文章，网站等一些列属于我的数据。</p><h1 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h1><p>本篇文章着急发出，可能会有问题，请大家见谅。</p></body></html>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;事情是这样的我昨天配置一些东西是错的，同步上去了今天才发现，随后回滚之后发现防战访问突然下</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Authentik OIDC 哪吒面板</title>
@@ -199,11 +219,11 @@
     
     
     
+    <category term="Ikuai" scheme="https://blog.ning.moe/tags/Ikuai/"/>
+    
     <category term="防火墙" scheme="https://blog.ning.moe/tags/%E9%98%B2%E7%81%AB%E5%A2%99/"/>
     
     <category term="firewall" scheme="https://blog.ning.moe/tags/firewall/"/>
-    
-    <category term="Ikuai" scheme="https://blog.ning.moe/tags/Ikuai/"/>
     
     <category term="IPv6" scheme="https://blog.ning.moe/tags/IPv6/"/>
     
@@ -365,8 +385,6 @@
     <category term="网络技术" scheme="https://blog.ning.moe/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="CloudFlare" scheme="https://blog.ning.moe/tags/CloudFlare/"/>
-    
     <category term="go" scheme="https://blog.ning.moe/tags/go/"/>
     
     <category term="Cachefly" scheme="https://blog.ning.moe/tags/Cachefly/"/>
@@ -376,6 +394,8 @@
     <category term="宝塔面板" scheme="https://blog.ning.moe/tags/%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF/"/>
     
     <category term="网络技术" scheme="https://blog.ning.moe/tags/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="CloudFlare" scheme="https://blog.ning.moe/tags/CloudFlare/"/>
     
     <category term="写bug的小能手" scheme="https://blog.ning.moe/tags/%E5%86%99bug%E7%9A%84%E5%B0%8F%E8%83%BD%E6%89%8B/"/>
     
@@ -426,8 +446,6 @@
     <category term="网络技术" scheme="https://blog.ning.moe/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="MySql" scheme="https://blog.ning.moe/tags/MySql/"/>
-    
     <category term="Umami" scheme="https://blog.ning.moe/tags/Umami/"/>
     
     <category term="PV" scheme="https://blog.ning.moe/tags/PV/"/>
@@ -435,6 +453,8 @@
     <category term="网站统计，UV" scheme="https://blog.ning.moe/tags/%E7%BD%91%E7%AB%99%E7%BB%9F%E8%AE%A1%EF%BC%8CUV/"/>
     
     <category term="Ip" scheme="https://blog.ning.moe/tags/Ip/"/>
+    
+    <category term="MySql" scheme="https://blog.ning.moe/tags/MySql/"/>
     
   </entry>
   
@@ -489,6 +509,8 @@
     <category term="网络技术" scheme="https://blog.ning.moe/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/"/>
     
     
+    <category term="butterfly" scheme="https://blog.ning.moe/tags/butterfly/"/>
+    
     <category term="backblaze" scheme="https://blog.ning.moe/tags/backblaze/"/>
     
     <category term="lskypro" scheme="https://blog.ning.moe/tags/lskypro/"/>
@@ -496,8 +518,6 @@
     <category term="蓝空图床" scheme="https://blog.ning.moe/tags/%E8%93%9D%E7%A9%BA%E5%9B%BE%E5%BA%8A/"/>
     
     <category term="兰空图床" scheme="https://blog.ning.moe/tags/%E5%85%B0%E7%A9%BA%E5%9B%BE%E5%BA%8A/"/>
-    
-    <category term="butterfly" scheme="https://blog.ning.moe/tags/butterfly/"/>
     
   </entry>
   
@@ -563,37 +583,6 @@
     <category term="java" scheme="https://blog.ning.moe/tags/java/"/>
     
     <category term="ci/cd" scheme="https://blog.ning.moe/tags/ci-cd/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何优雅的管理你的密码</title>
-    <link href="https://blog.ning.moe/posts/bitwarden/"/>
-    <id>https://blog.ning.moe/posts/bitwarden/</id>
-    <published>2023-05-09T01:55:31.000Z</published>
-    <updated>2024-03-12T16:32:13.692Z</updated>
-    
-    <content type="html"><![CDATA[<html><head></head><body><blockquote><p>本教程是搭建和使用一体的，如果您只是想看如何使用，请直接通过页面的大纲快速跳转。</p></blockquote><h1 id="过期提醒"><a href="#过期提醒" class="headerlink" title="过期提醒"></a>过期提醒</h1><p>本文章部分内容已经过期，在<a href="#%E5%90%AF%E5%8A%A8%E5%89%8D%E7%9A%84%E5%87%86%E5%A4%87">启动前的准备</a> 无需在设置websocket 的端口配置。</p><p>详情请跳转到 <a href="https://github.com/dani-garcia/vaultwarden/releases/tag/1.30.0" rel="external nofollow noreferrer">1.30.0 的 releases 介绍</a> 。</p><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><h3 id="统一密码？"><a href="#统一密码？" class="headerlink" title="统一密码？"></a>统一密码？</h3><p>可能你对于密码而言，是统一一个密码走天下，这不好也很不安全，虽然现在有点良心的互联网公司不会把你的密码进行md5加密，而是使用其他的加密算法，会生成不一样的密文，但还是不安全。</p><h3 id="密码杂乱无章"><a href="#密码杂乱无章" class="headerlink" title="密码杂乱无章"></a>密码杂乱无章</h3><p>我们在互联网上有很多的身份，需要很多账号，每一个网站想给你提供服务，基本上都需要一个账号也就是网站对你的唯一标识，这样才能给你提供服务。</p><h3 id="密码保存到浏览器？"><a href="#密码保存到浏览器？" class="headerlink" title="密码保存到浏览器？"></a>密码保存到浏览器？</h3><p>不这个其实也是不安全，而且所有设备只能在浏览器上，而且还必须统一浏览器例如chrome 或者 Firefox 等。</p><p>其次这个浏览器保存的密码，把用来的解密密钥保存在系统里面而且并没有保护，所有在你电脑上运行的软件都能读取这个文件。</p><p>如果你不相信的话<a href="https://github.com/moonD4rk/HackBrowserData" rel="external nofollow noreferrer">HackBrowserData</a>这个程序可以让你直接惊呆，他可以读取浏览器的历史 cookie 以及密码，当然属于安全测试，这个程序没有和我有任何关系。</p><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>综上所述，我们希望一个安全的，跨平台的，数据在我们自己所保管的、还有免费以及开源。也就只能是 <code>Vaultwarden</code>代替了。</p><p>注意为什么不叫<code>bitwarden</code> 而是叫 <code>Vaultwarden</code> 呢？因为<code>bitwarden</code>是收费的，但是他们家开源自己的api，就有大佬根据他的api 使用rust 进行编写出一个开源的 <code>Vaultwarden</code>。他们可以完美的适配。以下把 <code>Vaultwarden</code>称作为 <code>bitwarden</code></p><h1 id="你需要准备的"><a href="#你需要准备的" class="headerlink" title="你需要准备的"></a>你需要准备的</h1><ul><li>掌握搜索引擎技能（保证一直是最新的知识。）</li><li>一个大脑🧠</li><li>一台能开机的电脑或者是云服务器</li><li>电脑或者是服务器能安装docker，或者你使用Linux 的宝塔</li><li>掌握基本的docker基本知识</li><li>掌握<code>dns</code>解析，申请<code>ssl</code>证书</li></ul><h1 id="搭建开始"><a href="#搭建开始" class="headerlink" title="搭建开始"></a>搭建开始</h1><p>本篇为了，低成本高效部署，选择使用docker，来进行安装。</p><h2 id="起步"><a href="#起步" class="headerlink" title="起步"></a>起步</h2><p>首先本篇默认，你已经安装完毕docker或者<code>linux</code> 的宝塔面板并且安装了基本的<code>lnmp</code> 服务,如果你这些不会或者不知道的话，可以进行学习完或者也可以跟着本篇尝试跟着做，但是我想进行劝退你们，学习相关知识再来看本篇。</p><p>如果我没有特别指明，宝塔操作的话，都是可以通用的。</p><h3 id="拿到-bitwarden-docker-镜像"><a href="#拿到-bitwarden-docker-镜像" class="headerlink" title="拿到 bitwarden docker 镜像"></a>拿到 bitwarden docker 镜像</h3><p>你可以选择从 <a href="https://hub.docker.com/" rel="external nofollow noreferrer">docker Hub</a> 上进行搜索 vaultwarden/server ，然后进行按照网页上的文档进行克隆。</p><p>或者打开终端输入这段代码</p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo docker pull vaultwarden/server</span><br></pre></td></tr></tbody></table></figure><blockquote><p>可能有人说这部都一样的吗？我只是选择叫你们 docker hub 是一个镜像仓库，你需要什么可以去这里面搜</p></blockquote><p><img src="https://img.c-dreamer.top/i/1/2023/05/09/6459b00f1d5e1.webp" alt="docker-bitwarden-01"></p><p>我这里拿Windows的终端输出为例，linux上都是一样的大差不大。</p><h3 id="启动前的准备"><a href="#启动前的准备" class="headerlink" title="启动前的准备"></a>启动前的准备</h3><p>拿到镜像就可以准备让程序跑起来了，但是这里我补充一个docker 知识。</p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">docker run -d --name vaultwarden \</span><br><span class="line">  -e ADMIN_TOKEN=some_random_token_as_per_above_explanation \</span><br><span class="line">  -e WEBSOCKET_ENABLED=<span class="literal">true</span> \</span><br><span class="line">  -v /vw-data/:/data/ \</span><br><span class="line">  -p 8081:80 \</span><br><span class="line">  vaultwarden/server:latest</span><br></pre></td></tr></tbody></table></figure><p>上述命令我为了好观看进行格式化，但是扔到部分系统终端上无法进行运行，这段命令仅作为简述</p><ul><li>docker run 是启动一个容器</li><li>–name 是指定容器的名字</li><li>-e 是指定容器环境变量</li><li><code>ADMIN_TOKEN=</code>的环境变量是指定管理员页面的密码。</li><li><code>WEBSOCKET_ENABLED=true</code>启动websocket 让设备在跨平台设备进行实时同步，提高时效性。</li><li>-v 创建一个持久化存储。</li><li><code>vaultwarden/server:latest</code> 是docker 的镜像 lstest是最新的意思</li><li>-p 是映射端口 <strong>最左边的8081是本机端口</strong>，你可以随意更改在<code>0~65535</code>随你喜欢只要端口不被占用即可。</li></ul><p>重点来了：</p><ul><li><code>/vw-data/:/data/</code> 这个首先<code>/vw-data/</code>这个是你本机的文件地址，是用来存储容器产生的数据，例如保存的加密密码都在这个文件夹，这个你需要自己指定你本机的一个位置，一定要记住后面要加<code>/</code>。后面的/data/不需要动了</li></ul><h2 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h2><p>根据上面启动前的准备，你需要准备，存储持久化的本机一个文件夹地址，以及一个 admin 管理员密钥，推荐随意生成一个。</p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -d --name vaultwarden -e ADMIN_TOKEN=123456 -e WEBSOCKET_ENABLED=<span class="literal">true</span> -v /vw-data/:/data/ -p 8081:80 -p 3012:3012 vaultwarden/server:latest</span><br></pre></td></tr></tbody></table></figure><p>把上面的 <code>ADMIN_TOKEN</code>和<code>/vw-data/</code>替换成你的即可</p><p><img src="https://img.c-dreamer.top/i/1/2023/05/09/6459b565d21ad.webp" alt="docker-bitwarden-02.webp"></p><p>运行成功之后，可以访问你的 ip地址（域名）+端口号 即可访问成功，前提是你防火墙开放这个端口。</p><p><img src="https://img.c-dreamer.top/i/1/2023/05/09/6459b5d9da858.webp" alt="docker-bitdaren-03.webp"></p><p>访问可以看到上面的页面，以及你刚才指定的持久化文件夹下面会生成一堆文件</p><p><img src="https://img.c-dreamer.top/i/1/2023/05/09/6459b6240a742.webp" alt="docker-bitwarden-04.webp"></p><p>其中 <code>db.sqlite3</code>是最重要的，这里面存储的你的加密的账号密码数据，希望你妥善保管并且备份。</p><h2 id="反代"><a href="#反代" class="headerlink" title="反代"></a>反代</h2><p>如果你是服务器，切有域名，并且安装了nginx，你可以配置以下反向代理，以宝塔面板为例</p><p>在网站-你自己的网站-设置-反向代理</p><p><img src="https://img.c-dreamer.top/i/1/2023/05/12/645d8d5bc1b83.webp" alt="docker-bitwarden-07.webp"></p><p>端口号是你在运行<code>docker run -p</code>左半面指定的端口号，如果你是跟着教程直接复制的，那么这里端口号为8081，目标url应该写成<code>127.0.0.1:8081</code>。</p><p>然后我们到，<code>nginx</code>的配置文件中，插入以下配置，我这里插入的是第44行，由于每个版本不一样，你可以找到</p><p><code>#引用反向代理规则，注释后配置的反向代理将无效     include /www/server/panel/vhost/nginx/proxy/你的域名/*.conf;</code></p><p>其中 <code>  proxy_pass http:</code>需要根据你自己的环境而言进行配置。</p><p>插入这段话的下方即可然后单击保存。</p><figure class="highlight nginx"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">location</span> /notifications/hub/negotiate {</span><br><span class="line">      <span class="attribute">proxy_http_version</span> <span class="number">1</span>.<span class="number">1</span>;</span><br><span class="line">      <span class="attribute">proxy_set_header</span> <span class="string">"Connection"</span> <span class="string">""</span>;</span><br><span class="line"></span><br><span class="line">      <span class="attribute">proxy_set_header</span> Host <span class="variable">$host</span>;</span><br><span class="line">      <span class="attribute">proxy_set_header</span> X-Real-IP <span class="variable">$remote_addr</span>;</span><br><span class="line">      <span class="attribute">proxy_set_header</span> X-Forwarded-For <span class="variable">$proxy_add_x_forwarded_for</span>;</span><br><span class="line">      <span class="attribute">proxy_set_header</span> X-Forwarded-Proto <span class="variable">$scheme</span>;</span><br><span class="line"></span><br><span class="line">      <span class="attribute">proxy_pass</span> http://127.0.0.1;</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    <span class="section">location</span> /notifications/hub {</span><br><span class="line">      <span class="attribute">proxy_http_version</span> <span class="number">1</span>.<span class="number">1</span>;</span><br><span class="line">      <span class="attribute">proxy_set_header</span> Upgrade <span class="variable">$http_upgrade</span>;</span><br><span class="line">      <span class="attribute">proxy_set_header</span> Connection <span class="string">"upgrade"</span>;</span><br><span class="line"></span><br><span class="line">      <span class="attribute">proxy_set_header</span> Host <span class="variable">$host</span>;</span><br><span class="line">      <span class="attribute">proxy_set_header</span> X-Real-IP <span class="variable">$remote_addr</span>;</span><br><span class="line">      <span class="attribute">proxy_set_header</span> Forwarded <span class="variable">$remote_addr</span>;</span><br><span class="line">      <span class="attribute">proxy_set_header</span> X-Forwarded-For <span class="variable">$proxy_add_x_forwarded_for</span>;</span><br><span class="line">      <span class="attribute">proxy_set_header</span> X-Forwarded-Proto <span class="variable">$scheme</span>;</span><br><span class="line"></span><br><span class="line">      <span class="attribute">proxy_pass</span> http://127.0.0.1:3012;</span><br><span class="line">    }</span><br></pre></td></tr></tbody></table></figure><p>这段话是，配置反向代理的ws协议端口。</p><p>现在如果你正确的配置好了域名解析，理论上你只需要访问你的域名即可打开 <code>bitwarden</code> 的页面。</p><h1 id="优雅的使用"><a href="#优雅的使用" class="headerlink" title="优雅的使用"></a>优雅的使用</h1><p>根据上面的搭建你可以已经成功搭建完成并且启动成功，那么我恭喜你，克服了对你的艰难问题。相比你的成功不光全是我的文章，而是你善于思考以及会使用搜索引擎找出一些关键性的问题和报错。</p><h2 id="密码的转移"><a href="#密码的转移" class="headerlink" title="密码的转移"></a>密码的转移</h2><p>由于本篇实在是太长了，而且我太懒了不是很想在继续放图，以及互联网上已经有了轮子我就不在重复制造了。</p><p>如果你英文很好可以去访问：<a href="https://bitwarden.com/help/import-data/" rel="external nofollow noreferrer">Bitwarden</a>官网文档。</p><p>或者你英语不好，可以访问民间翻译的中文文档<a href="https://help.ppgg.in/password-manager/import-and-export/import-data-to-your-vault" rel="external nofollow noreferrer">Bitwarden中文文档</a>。</p><h2 id="客户端的安装"><a href="#客户端的安装" class="headerlink" title="客户端的安装"></a>客户端的安装</h2><p>你可以从官网进行下载：<a href="https://bitwarden.com/download/" rel="external nofollow noreferrer">https://bitwarden.com/download/</a></p><p>这里面有浏览器和客户端。</p><h2 id="客户端的连接"><a href="#客户端的连接" class="headerlink" title="客户端的连接"></a>客户端的连接</h2><p>所有客户端的连接都是一样的，我们需要去设置，更改登录的ur，如果不更改属于官网的。</p><p><img src="https://img.c-dreamer.top/i/1/2023/05/09/6459ba53750db.webp" alt="docker-bitwarden-05.webp"></p><p>在这里填写你的 域名或者是ip + 端口号</p><p><img src="https://img.c-dreamer.top/i/1/2023/05/09/6459ba93037d9.webp" alt="docker-bitwarden-06.webp"></p><p>保存登录即可没有账号的创建账户即可。</p><h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p><a href="https://github.com/dani-garcia/vaultwarden/wiki" rel="external nofollow noreferrer">VaultWarden Wiki</a></p><p><a href="https://help.ppgg.in/password-manager/import-and-export/import-data-to-your-vault" rel="external nofollow noreferrer">Bitwarden 帮助中心中文版</a></p><p><a href="https://bitwarden.com/help/import-data/" rel="external nofollow noreferrer">Bitwarden 官方文档</a></p></body></html>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;blockquote&gt;
-&lt;p&gt;本教程是搭建和使用一体的，如果您只是想看如何使用，请直接通过页面的大纲快速跳转。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;过期提醒&quot;&gt;&lt;a href=&quot;#过期提醒&quot; class=&quot;hea</summary>
-      
-    
-    
-    
-    <category term="网络技术" scheme="https://blog.ning.moe/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/"/>
-    
-    
-    <category term="docker" scheme="https://blog.ning.moe/tags/docker/"/>
-    
-    <category term="bitwarden" scheme="https://blog.ning.moe/tags/bitwarden/"/>
-    
-    <category term="Vaultwarden" scheme="https://blog.ning.moe/tags/Vaultwarden/"/>
     
   </entry>
   
