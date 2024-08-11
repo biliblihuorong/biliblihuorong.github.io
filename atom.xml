@@ -365,6 +365,8 @@
     <category term="网络技术" scheme="https://blog.ning.moe/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/"/>
     
     
+    <category term="CloudFlare" scheme="https://blog.ning.moe/tags/CloudFlare/"/>
+    
     <category term="go" scheme="https://blog.ning.moe/tags/go/"/>
     
     <category term="Cachefly" scheme="https://blog.ning.moe/tags/Cachefly/"/>
@@ -374,8 +376,6 @@
     <category term="宝塔面板" scheme="https://blog.ning.moe/tags/%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF/"/>
     
     <category term="网络技术" scheme="https://blog.ning.moe/tags/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/"/>
-    
-    <category term="CloudFlare" scheme="https://blog.ning.moe/tags/CloudFlare/"/>
     
     <category term="写bug的小能手" scheme="https://blog.ning.moe/tags/%E5%86%99bug%E7%9A%84%E5%B0%8F%E8%83%BD%E6%89%8B/"/>
     
@@ -489,13 +489,13 @@
     <category term="网络技术" scheme="https://blog.ning.moe/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/"/>
     
     
+    <category term="backblaze" scheme="https://blog.ning.moe/tags/backblaze/"/>
+    
     <category term="lskypro" scheme="https://blog.ning.moe/tags/lskypro/"/>
     
     <category term="蓝空图床" scheme="https://blog.ning.moe/tags/%E8%93%9D%E7%A9%BA%E5%9B%BE%E5%BA%8A/"/>
     
     <category term="兰空图床" scheme="https://blog.ning.moe/tags/%E5%85%B0%E7%A9%BA%E5%9B%BE%E5%BA%8A/"/>
-    
-    <category term="backblaze" scheme="https://blog.ning.moe/tags/backblaze/"/>
     
     <category term="butterfly" scheme="https://blog.ning.moe/tags/butterfly/"/>
     
