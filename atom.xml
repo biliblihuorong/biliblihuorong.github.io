@@ -53,13 +53,13 @@
     
     <category term="Authentik" scheme="https://blog.ning.moe/tags/Authentik/"/>
     
-    <category term="nezha" scheme="https://blog.ning.moe/tags/nezha/"/>
-    
     <category term="SSO" scheme="https://blog.ning.moe/tags/SSO/"/>
     
     <category term="OIDC" scheme="https://blog.ning.moe/tags/OIDC/"/>
     
     <category term="OAuth2" scheme="https://blog.ning.moe/tags/OAuth2/"/>
+    
+    <category term="nezha" scheme="https://blog.ning.moe/tags/nezha/"/>
     
   </entry>
   
@@ -82,13 +82,13 @@
     
     <category term="Authentik" scheme="https://blog.ning.moe/tags/Authentik/"/>
     
+    <category term="Gitea" scheme="https://blog.ning.moe/tags/Gitea/"/>
+    
     <category term="SSO" scheme="https://blog.ning.moe/tags/SSO/"/>
     
     <category term="OIDC" scheme="https://blog.ning.moe/tags/OIDC/"/>
     
     <category term="OAuth2" scheme="https://blog.ning.moe/tags/OAuth2/"/>
-    
-    <category term="Gitea" scheme="https://blog.ning.moe/tags/Gitea/"/>
     
   </entry>
   
