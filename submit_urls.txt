@@ -1,5 +1,5 @@
-https://blog.ning.moe/posts/Authentik-NezhaDashboard-OIDC/
 https://blog.ning.moe/posts/learn-traefik/
+https://blog.ning.moe/posts/Authentik-NezhaDashboard-OIDC/
 https://blog.ning.moe/posts/Website-mirrored/
 https://blog.ning.moe/posts/authentik-OAuth2-memos/
 https://blog.ning.moe/posts/Authentik-Gitea-SSO/
