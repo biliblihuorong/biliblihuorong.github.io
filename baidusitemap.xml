@@ -1,24 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://blog.ning.moe/posts/learn-traefik/</loc>
-    <lastmod>2024-10-05</lastmod>
+    <loc>https://blog.ning.moe/posts/Authentik-Gitea-SSO/</loc>
+    <lastmod>2024-10-07</lastmod>
   </url>
   <url>
     <loc>https://blog.ning.moe/posts/Authentik-NezhaDashboard-OIDC/</loc>
+    <lastmod>2024-10-07</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.ning.moe/posts/authentik-OAuth2-memos/</loc>
+    <lastmod>2024-10-07</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.ning.moe/posts/ArchLinux/</loc>
+    <lastmod>2024-10-07</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.ning.moe/posts/learn-traefik/</loc>
     <lastmod>2024-10-05</lastmod>
   </url>
   <url>
     <loc>https://blog.ning.moe/posts/Website-mirrored/</loc>
     <lastmod>2024-08-11</lastmod>
-  </url>
-  <url>
-    <loc>https://blog.ning.moe/posts/authentik-OAuth2-memos/</loc>
-    <lastmod>2024-08-07</lastmod>
-  </url>
-  <url>
-    <loc>https://blog.ning.moe/posts/Authentik-Gitea-SSO/</loc>
-    <lastmod>2024-08-07</lastmod>
   </url>
   <url>
     <loc>https://blog.ning.moe/posts/Create-Recursive-DNS/</loc>
@@ -170,10 +174,6 @@
   </url>
   <url>
     <loc>https://blog.ning.moe/posts/Home-NetWork/</loc>
-    <lastmod>2024-03-12</lastmod>
-  </url>
-  <url>
-    <loc>https://blog.ning.moe/posts/ArchLinux/</loc>
     <lastmod>2024-03-12</lastmod>
   </url>
   <url>
