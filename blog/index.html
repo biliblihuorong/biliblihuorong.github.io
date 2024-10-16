@@ -1,20 +1,129 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>关于本站 | 某科学的贝壳</title><meta name="author" content="shell"><meta name="copyright" content="shell"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="2019年：  本站建于2019年12月27号,原本是现在25号结束的.刚开始使用的Word Press主题使用的是樱花(Sankura)主题，这是那位大佬的博客。  2020年：  第一次备案日期拿到是1月10日。 1月1号,启动了评论系统等。 6月16号再服务器瞎搞,误碰到数据库,导致数据库资料"><link rel="shortcut icon" href="https://img.misaka.pics/i/1/23/01/30/63d755db9649a.ico"><link rel="canonical" href="https://blog.ning.moe/blog/"><link rel="preconnect"><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="/pluginsSrc/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="/pluginsSrc/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="/pluginsSrc/@fancyapps/ui/dist/fancybox/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>关于本站 | 某科学的贝壳</title><meta name="author" content="shell"><meta name="copyright" content="shell"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="2019年：  本站建于2019年12月27号,原本是现在25号结束的.刚开始使用的Word..."><link rel="shortcut icon" href="https://img.misaka.pics/i/1/23/01/30/63d755db9649a.ico"><link rel="canonical" href="https://blog.ning.moe/blog/"><link rel="preconnect"><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="/pluginsSrc/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="/pluginsSrc/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        if (name && globalFn[key][name]) return
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          const mediaQueryDark = window.matchMedia('(prefers-color-scheme: dark)')
+          const mediaQueryLight = window.matchMedia('(prefers-color-scheme: light)')
+          
+          if (theme === undefined) {
+            if (mediaQueryLight.matches) activateLightMode()
+            else if (mediaQueryDark.matches) activateDarkMode()
+            else {
+              const hour = new Date().getHours()
+              const isNight = hour <= 8 || hour >= 22
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            mediaQueryDark.addEventListener('change', () => {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else {
+            theme === 'light' ? activateLightMode() : activateDarkMode()
+          }
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
   root: '/',
   algolia: undefined,
-  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  localSearch: undefined,
   translate: undefined,
   noticeOutdate: {"limitDay":500,"position":"top","messagePrev":null,"messageNext":"自上次更新以来的天，文章的内容可能已过时。"},
-  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
   copy: {
     success: '复制成功',
-    error: '复制错误',
+    error: '复制失败',
     noSupport: '浏览器不支持'
   },
   relativeDate: {
     homepage: true,
     post: true
   },
-  runtime: '天',
+  runtime: '',
   dateSuffix: {
     just: '刚刚',
     min: '分钟前',
@@ -23,8 +132,8 @@
     month: '个月前'
   },
   copyright: undefined,
-  lightbox: 'fancybox',
-  Snackbar: {"chs_to_cht":"你已切换为繁体中文","cht_to_chs":"你已切换为简体中文","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#121212","position":"bottom-left"},
+  lightbox: 'null',
+  Snackbar: {"chs_to_cht":"已切换为繁体中文","cht_to_chs":"已切换为简体中文","day_to_night":"已切换为深色模式","night_to_day":"已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#121212","position":"bottom-left"},
   infinitegrid: {
     js: '/pluginsSrc/@egjs/infinitegrid/dist/infinitegrid.min.js',
     buttonText: '加载更多'
@@ -44,123 +153,8 @@
   isHighlightShrink: false,
   isToc: false,
   postUpdate: '2024-09-14 09:36:14'
-}</script><script>(win=>{
-      win.saveToLocal = {
-        set: (key, value, ttl) => {
-          if (ttl === 0) return
-          const now = Date.now()
-          const expiry = now + ttl * 86400000
-          const item = {
-            value,
-            expiry
-          }
-          localStorage.setItem(key, JSON.stringify(item))
-        },
-      
-        get: key => {
-          const itemStr = localStorage.getItem(key)
-      
-          if (!itemStr) {
-            return undefined
-          }
-          const item = JSON.parse(itemStr)
-          const now = Date.now()
-      
-          if (now > item.expiry) {
-            localStorage.removeItem(key)
-            return undefined
-          }
-          return item.value
-        }
-      }
-    
-      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
-        const script = document.createElement('script')
-        script.src = url
-        script.async = true
-        script.onerror = reject
-        script.onload = script.onreadystatechange = function() {
-          const loadState = this.readyState
-          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
-          script.onload = script.onreadystatechange = null
-          resolve()
-        }
-
-        Object.keys(attr).forEach(key => {
-          script.setAttribute(key, attr[key])
-        })
-
-        document.head.appendChild(script)
-      })
-    
-      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
-        const link = document.createElement('link')
-        link.rel = 'stylesheet'
-        link.href = url
-        if (id) link.id = id
-        link.onerror = reject
-        link.onload = link.onreadystatechange = function() {
-          const loadState = this.readyState
-          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
-          link.onload = link.onreadystatechange = null
-          resolve()
-        }
-        document.head.appendChild(link)
-      })
-    
-      win.activateDarkMode = () => {
-        document.documentElement.setAttribute('data-theme', 'dark')
-        if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
-        }
-      }
-      win.activateLightMode = () => {
-        document.documentElement.setAttribute('data-theme', 'light')
-        if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
-        }
-      }
-      const t = saveToLocal.get('theme')
-    
-          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
-          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
-          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
-          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
-
-          if (t === undefined) {
-            if (isLightMode) activateLightMode()
-            else if (isDarkMode) activateDarkMode()
-            else if (isNotSpecified || hasNoSupport) {
-              const now = new Date()
-              const hour = now.getHours()
-              const isNight = hour <= 8 || hour >= 22
-              isNight ? activateDarkMode() : activateLightMode()
-            }
-            window.matchMedia('(prefers-color-scheme: dark)').addListener(e => {
-              if (saveToLocal.get('theme') === undefined) {
-                e.matches ? activateDarkMode() : activateLightMode()
-              }
-            })
-          } else if (t === 'light') activateLightMode()
-          else activateDarkMode()
-        
-      const asideStatus = saveToLocal.get('aside-status')
-      if (asideStatus !== undefined) {
-        if (asideStatus === 'hide') {
-          document.documentElement.classList.add('hide-aside')
-        } else {
-          document.documentElement.classList.remove('hide-aside')
-        }
-      }
-    
-      const detectApple = () => {
-        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
-          document.documentElement.classList.add('apple')
-        }
-      }
-      detectApple()
-    })(window)</script><meta http-equiv="x-dns-prefetch-control" content="on"><link rel="dns-prefetch" href="blog.ning.moe"><link rel="dns-prefetch" href="www.ning.moe"><link rel="dns-prefetch" href="img.misaka.pics"><meta name="apple-mobile-web-app-capable" content="yes"><meta property="og:type" content="blog"><meta property="og:image" content="https://img.misaka.pics/i/1/23/01/30/63d7559a451ec.webp"><script async="" defer="" src="https://blog.ning.moe/static/js/script.js" data-website-id="9ff73ab5-a863-462d-8695-5db50d42cf66" data-host-url="https://umami.asshell.top/" data-domains="blog.ning.moe"></script><meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="某科学的贝壳" type="application/atom+xml">
-</head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://img.misaka.pics/i/1/23/01/30/63d7559a451ec.webp" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">47</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">91</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><hr class="custom-hr"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa-fw fas fa-filter"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa-fw fa fa-gamepad"></i><span> 娱乐</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/movies/"><i class="fa-fw fab fa-youtube"></i><span> 追番</span></a></li><li><a class="site-page child" href="/steamgames/"><i class="fa-fw fab fa-steam"></i><span> Steam库</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/atom.xml"><i class="fa-fw fa fa-rss"></i><span> Rss订阅</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://travel.moe/go.html"><i class="fa-fw iconfont icon-xingqiu"></i><span> 异次元之旅</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://www.travellings.cn/go.html"><i class="fa-fw fas fa-train"></i><span> 开往</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-heart"></i><span> 关于</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/privacy-policy/"><i class="fa-fw fa-solid fa-user-secret"></i><span> 隐私</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fa-solid fa-user"></i><span> 我?</span></a></li><li><a class="site-page child" href="/blog/"><i class="fa-fw fa-solid fa-blog"></i><span> 本站?</span></a></li></ul></div></div></div></div><div class="page" id="body-wrap"><header class="not-home-page" id="page-header" style="background-image: url('https://img.misaka.pics/ShellBlogImg/1/2024/06/08/666418d8e8592.webp')"><nav id="nav"><span id="blog-info"><a href="/" title="某科学的贝壳"><span class="site-name">某科学的贝壳</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa-fw fas fa-filter"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa-fw fa fa-gamepad"></i><span> 娱乐</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/movies/"><i class="fa-fw fab fa-youtube"></i><span> 追番</span></a></li><li><a class="site-page child" href="/steamgames/"><i class="fa-fw fab fa-steam"></i><span> Steam库</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/atom.xml"><i class="fa-fw fa fa-rss"></i><span> Rss订阅</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://travel.moe/go.html"><i class="fa-fw iconfont icon-xingqiu"></i><span> 异次元之旅</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://www.travellings.cn/go.html"><i class="fa-fw fas fa-train"></i><span> 开往</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-heart"></i><span> 关于</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/privacy-policy/"><i class="fa-fw fa-solid fa-user-secret"></i><span> 隐私</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fa-solid fa-user"></i><span> 我?</span></a></li><li><a class="site-page child" href="/blog/"><i class="fa-fw fa-solid fa-blog"></i><span> 本站?</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="page-site-info"><h1 id="site-title">关于本站</h1></div></header><main class="layout" id="content-inner"><div id="page"><div id="article-container"><p>2019年：</p>
+}</script><meta http-equiv="x-dns-prefetch-control" content="on"><link rel="dns-prefetch" href="blog.ning.moe"><link rel="dns-prefetch" href="www.ning.moe"><link rel="dns-prefetch" href="img.misaka.pics"><meta name="apple-mobile-web-app-capable" content="yes"><meta property="og:type" content="blog"><meta property="og:image" content="https://img.misaka.pics/i/1/23/01/30/63d7559a451ec.webp"><script async="" defer="" src="https://blog.ning.moe/static/js/script.js" data-website-id="9ff73ab5-a863-462d-8695-5db50d42cf66" data-host-url="https://umami.asshell.top/" data-domains="blog.ning.moe"></script><meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="某科学的贝壳" type="application/atom+xml">
+</head><body><div id="web_bg" style="background-color: #5BCEFA;"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://img.misaka.pics/i/1/23/01/30/63d7559a451ec.webp" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"></div><div class="site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">47</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">91</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa-fw fas fa-filter"></i><span> 清单</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa-fw fa fa-gamepad"></i><span> 娱乐</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/movies/"><i class="fa-fw fab fa-youtube"></i><span> 追番</span></a></li><li><a class="site-page child" href="/steamgames/"><i class="fa-fw fab fa-steam"></i><span> Steam库</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/atom.xml"><i class="fa-fw fa fa-rss"></i><span> Rss订阅</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://travel.moe/go.html"><i class="fa-fw iconfont icon-xingqiu"></i><span> 异次元之旅</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://www.travellings.cn/go.html"><i class="fa-fw fas fa-train"></i><span> 开往</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-heart"></i><span> 关于</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/privacy-policy/"><i class="fa-fw fa-solid fa-user-secret"></i><span> 隐私</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fa-solid fa-user"></i><span> 我?</span></a></li><li><a class="site-page child" href="/blog/"><i class="fa-fw fa-solid fa-blog"></i><span> 本站?</span></a></li></ul></div></div></div></div><div class="page" id="body-wrap"><header class="not-home-page" id="page-header" style="background-image: url(https://img.misaka.pics/ShellBlogImg/1/2024/06/08/666418d8e8592.webp);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">某科学的贝壳</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa-fw fas fa-filter"></i><span> 清单</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa-fw fa fa-gamepad"></i><span> 娱乐</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/movies/"><i class="fa-fw fab fa-youtube"></i><span> 追番</span></a></li><li><a class="site-page child" href="/steamgames/"><i class="fa-fw fab fa-steam"></i><span> Steam库</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/atom.xml"><i class="fa-fw fa fa-rss"></i><span> Rss订阅</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://travel.moe/go.html"><i class="fa-fw iconfont icon-xingqiu"></i><span> 异次元之旅</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://www.travellings.cn/go.html"><i class="fa-fw fas fa-train"></i><span> 开往</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-heart"></i><span> 关于</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/privacy-policy/"><i class="fa-fw fa-solid fa-user-secret"></i><span> 隐私</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fa-solid fa-user"></i><span> 我?</span></a></li><li><a class="site-page child" href="/blog/"><i class="fa-fw fa-solid fa-blog"></i><span> 本站?</span></a></li></ul></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="page-site-info"><h1 id="site-title">关于本站</h1></div></header><main class="layout" id="content-inner"><div id="page"><div id="article-container"><p>2019年：</p>
 <ul>
 <li>本站建于2019年12月27号,原本是现在25号结束的.刚开始使用的Word Press主题使用的是<a target="_blank" href="https://github.com/mashirozx/Sakura" rel="external nofollow noreferrer noopener">樱花(Sankura)主题</a>，<a target="_blank" href="https://2heng.xin/" rel="external nofollow noreferrer noopener">这是那位大佬的博客</a>。</li>
 </ul>
@@ -194,40 +188,105 @@
 <blockquote>
 <p>有删除线的是自建项目已经炸掉了无法再打开了。</p>
 </blockquote>
-</div><hr class="custom-hr"><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://img.misaka.pics/i/1/23/01/30/63d7559a451ec.webp" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"></div><div class="author-info__name">shell</div><div class="author-info__description">没错这是一个在学园都市的贝壳建立的博客!</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">47</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">91</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/biliblihuorong"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://t.me/shell_science" target="_blank" title="Telegram"><i class="fa-brands fa-telegram"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">欢迎访问本站,今天又是咕咕咕的一天!<br>
+</div><hr class="custom-hr"><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info is-center"><div class="avatar-img"><img src="https://img.misaka.pics/i/1/23/01/30/63d7559a451ec.webp" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"></div><div class="author-info-name">shell</div><div class="author-info-description">没错这是一个在学园都市的贝壳建立的博客!</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">47</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">91</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/biliblihuorong"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://t.me/shell_science" target="_blank" title="Telegram"><i class="fa-brands fa-telegram"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">欢迎访问本站,今天又是咕咕咕的一天!<br>
 <a href="https://blog.ning.moe/privacy-policy/" target="_blank">本站的隐私政策</a>
 </div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/learn-traefik/" title="在 Docker 环境中使用 Traefik进行反向代理"><img src="https://img.misaka.pics/ShellBlogImg/1/2024/10/05/6700b8baa35f6.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="在 Docker 环境中使用 Traefik进行反向代理"></a><div class="content"><a class="title" href="/posts/learn-traefik/" title="在 Docker 环境中使用 Traefik进行反向代理">在 Docker 环境中使用 Traefik进行反向代理</a><time datetime="2024-10-05T04:51:17.000Z" title="发表于 2024-10-05 12:51:17">2024-10-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/Website-mirrored/" title="我的网站被人镜像了"><img src="https://img.misaka.pics/i/1/23/01/30/63d759cdaccfe.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="我的网站被人镜像了"></a><div class="content"><a class="title" href="/posts/Website-mirrored/" title="我的网站被人镜像了">我的网站被人镜像了</a><time datetime="2024-08-11T13:42:17.000Z" title="发表于 2024-08-11 21:42:17">2024-08-11</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/Authentik-NezhaDashboard-OIDC/" title="Authentik OIDC 哪吒面板"><img src="https://img.misaka.pics/ShellBlogImg/1/2024/08/07/66b3031ed345e.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Authentik OIDC 哪吒面板"></a><div class="content"><a class="title" href="/posts/Authentik-NezhaDashboard-OIDC/" title="Authentik OIDC 哪吒面板">Authentik OIDC 哪吒面板</a><time datetime="2024-08-07T05:05:00.000Z" title="发表于 2024-08-07 13:05:00">2024-08-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/Authentik-Gitea-SSO/" title="Gitea SSO 登录优化与自动注册设置"><img src="https://img.misaka.pics/ShellBlogImg/1/2024/08/04/66aee3cdf3a61.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Gitea SSO 登录优化与自动注册设置"></a><div class="content"><a class="title" href="/posts/Authentik-Gitea-SSO/" title="Gitea SSO 登录优化与自动注册设置">Gitea SSO 登录优化与自动注册设置</a><time datetime="2024-08-04T00:50:37.000Z" title="发表于 2024-08-04 08:50:37">2024-08-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/Create-Recursive-DNS/" title="自建属于自己的递归DNS"><img src="https://img.misaka.pics/ShellBlogImg/1/2024/07/21/669be0a74e438.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="自建属于自己的递归DNS"></a><div class="content"><a class="title" href="/posts/Create-Recursive-DNS/" title="自建属于自己的递归DNS">自建属于自己的递归DNS</a><time datetime="2024-07-20T14:10:09.000Z" title="发表于 2024-07-20 22:10:09">2024-07-20</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
             <i class="fas fa-folder-open"></i>
             <span>分类</span>
             
-            </div>
-            <ul class="card-category-list" id="aside-cat-list">
+          </div>
+          <ul class="card-category-list" id="aside-cat-list">
             <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Bug%E7%94%9F%E6%88%90%E8%80%85/"><span class="card-category-list-name">Bug生成者</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Java/"><span class="card-category-list-name">Java</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E6%83%B3/"><span class="card-category-list-name">生活随想</span><span class="card-category-list-count">11</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/"><span class="card-category-list-name">网络技术</span><span class="card-category-list-count">29</span></a></li>
-            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/%E6%80%BB%E7%BB%93/" style="font-size: 1.15em; color: rgb(165, 52, 19)">总结</a><a href="/tags/2023/" style="font-size: 1.15em; color: rgb(75, 172, 147)">2023</a><a href="/tags/lskypro/" style="font-size: 1.15em; color: rgb(171, 150, 148)">lskypro</a><a href="/tags/%E8%93%9D%E7%A9%BA%E5%9B%BE%E5%BA%8A/" style="font-size: 1.15em; color: rgb(166, 148, 60)">蓝空图床</a><a href="/tags/%E5%85%B0%E7%A9%BA%E5%9B%BE%E5%BA%8A/" style="font-size: 1.15em; color: rgb(173, 49, 200)">兰空图床</a><a href="/tags/MySql/" style="font-size: 1.15em; color: rgb(85, 102, 55)">MySql</a><a href="/tags/backblaze/" style="font-size: 1.15em; color: rgb(140, 67, 39)">backblaze</a><a href="/tags/Docker/" style="font-size: 1.15em; color: rgb(32, 89, 101)">Docker</a><a href="/tags/Traefik/" style="font-size: 1.15em; color: rgb(193, 80, 157)">Traefik</a><a href="/tags/MarkDown/" style="font-size: 1.15em; color: rgb(33, 118, 13)">MarkDown</a><a href="/tags/%E5%AE%9D%E5%A1%94/" style="font-size: 1.15em; color: rgb(72, 115, 29)">宝塔</a><a href="/tags/Arch/" style="font-size: 1.15em; color: rgb(97, 170, 25)">Arch</a><a href="/tags/Linux/" style="font-size: 1.3em; color: rgb(159, 115, 112)">Linux</a><a href="/tags/Authentik/" style="font-size: 1.45em; color: rgb(183, 72, 153)">Authentik</a><a href="/tags/nezha/" style="font-size: 1.15em; color: rgb(97, 169, 139)">nezha</a><a href="/tags/SSO/" style="font-size: 1.45em; color: rgb(116, 186, 94)">SSO</a><a href="/tags/OIDC/" style="font-size: 1.45em; color: rgb(37, 70, 124)">OIDC</a><a href="/tags/OAuth2/" style="font-size: 1.45em; color: rgb(156, 1, 132)">OAuth2</a><a href="/tags/go/" style="font-size: 1.15em; color: rgb(46, 132, 53)">go</a><a href="/tags/Cachefly/" style="font-size: 1.15em; color: rgb(28, 168, 188)">Cachefly</a><a href="/tags/SSL/" style="font-size: 1.15em; color: rgb(13, 60, 51)">SSL</a><a href="/tags/%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF/" style="font-size: 1.15em; color: rgb(195, 107, 118)">宝塔面板</a><a href="/tags/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/" style="font-size: 1.15em; color: rgb(106, 72, 104)">网络技术</a><a href="/tags/CloudFlare/" style="font-size: 1.45em; color: rgb(64, 25, 89)">CloudFlare</a><a href="/tags/%E5%86%99bug%E7%9A%84%E5%B0%8F%E8%83%BD%E6%89%8B/" style="font-size: 1.15em; color: rgb(5, 142, 47)">写bug的小能手</a><a href="/tags/Gitea/" style="font-size: 1.15em; color: rgb(15, 105, 200)">Gitea</a><a href="/tags/Zero-Trust/" style="font-size: 1.15em; color: rgb(145, 42, 37)">Zero Trust</a><a href="/tags/Ikuai/" style="font-size: 1.3em; color: rgb(58, 38, 153)">Ikuai</a><a href="/tags/J4125/" style="font-size: 1.15em; color: rgb(181, 29, 173)">J4125</a><a href="/tags/DNS/" style="font-size: 1.15em; color: rgb(78, 58, 17)">DNS</a><a href="/tags/Adguard-Home/" style="font-size: 1.15em; color: rgb(3, 69, 149)">Adguard Home</a><a href="/tags/Root-Servers/" style="font-size: 1.15em; color: rgb(158, 152, 151)">Root Servers</a><a href="/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/" style="font-size: 1.3em; color: rgb(167, 183, 78)">网络安全</a><a href="/tags/unbound/" style="font-size: 1.15em; color: rgb(87, 7, 172)">unbound</a><a href="/tags/dnscrypt/" style="font-size: 1.15em; color: rgb(65, 36, 15)">dnscrypt</a><a href="/tags/mosdns/" style="font-size: 1.15em; color: rgb(108, 41, 112)">mosdns</a><a href="/tags/docker/" style="font-size: 1.3em; color: rgb(130, 155, 7)">docker</a><a href="/tags/%E5%AE%89%E5%85%A8/" style="font-size: 1.15em; color: rgb(42, 49, 97)">安全</a><a href="/tags/ufw/" style="font-size: 1.15em; color: rgb(108, 107, 21)">ufw</a><a href="/tags/IPtables/" style="font-size: 1.3em; color: rgb(16, 128, 120)">IPtables</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span><a class="card-more-btn" href="/archives/" title="查看更多">
-    <i class="fas fa-angle-right"></i></a></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/10/"><span class="card-archive-list-date">十月 2024</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/08/"><span class="card-archive-list-date">八月 2024</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/07/"><span class="card-archive-list-date">七月 2024</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/06/"><span class="card-archive-list-date">六月 2024</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/04/"><span class="card-archive-list-date">四月 2024</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/03/"><span class="card-archive-list-date">三月 2024</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/02/"><span class="card-archive-list-date">二月 2024</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/12/"><span class="card-archive-list-date">十二月 2023</span><span class="card-archive-list-count">1</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">47</div></div><div class="webinfo-item"><div class="item-name">已运行时间 :</div><div class="item-count" id="runtimeshow" data-publishdate="2019-12-26T16:00:00.000Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">28.5k</div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastpushdate="2024-10-16T13:37:27.692Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">©2019 - 2024 By shell</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text"><a href="https://icp.gov.moe/?keyword=2020021021" target="_blank"><img src="https://img.misaka.pics/i/1/23/01/30/63d75baf92f17.webp" width="20px" height="20px" alt="萌国ICP备案"> 萌ICP备 2020021021号</a> | 
+          </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/Security/" style="font-size: 1.3em; color: #99a1ac">Security</a> <a href="/tags/TeamSpeak/" style="font-size: 1.1em; color: #999">TeamSpeak</a> <a href="/tags/Nginx/" style="font-size: 1.1em; color: #999">Nginx</a> <a href="/tags/Java/" style="font-size: 1.5em; color: #99a9bf">Java</a> <a href="/tags/ci-cd/" style="font-size: 1.1em; color: #999">ci/cd</a> <a href="/tags/OIDC/" style="font-size: 1.5em; color: #99a9bf">OIDC</a> <a href="/tags/Arch/" style="font-size: 1.1em; color: #999">Arch</a> <a href="/tags/%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF/" style="font-size: 1.1em; color: #999">宝塔面板</a> <a href="/tags/J4125/" style="font-size: 1.1em; color: #999">J4125</a> <a href="/tags/Traefik/" style="font-size: 1.1em; color: #999">Traefik</a> <a href="/tags/%E7%BD%91%E7%AB%99%E7%BB%9F%E8%AE%A1%EF%BC%8CUV/" style="font-size: 1.3em; color: #99a1ac">网站统计，UV</a> <a href="/tags/%E5%AE%89%E5%85%A8/" style="font-size: 1.1em; color: #999">安全</a> <a href="/tags/%E7%94%9F%E6%B4%BB%E9%9A%8F%E6%83%B3/" style="font-size: 1.1em; color: #999">生活随想</a> <a href="/tags/%E6%9F%90%E7%A7%91%E5%AD%A6%E7%9A%84/" style="font-size: 1.1em; color: #999">某科学的</a> <a href="/tags/Docker/" style="font-size: 1.1em; color: #999">Docker</a> <a href="/tags/%E8%93%9D%E7%A9%BA%E5%9B%BE%E5%BA%8A/" style="font-size: 1.1em; color: #999">蓝空图床</a> <a href="/tags/nezha/" style="font-size: 1.1em; color: #999">nezha</a> <a href="/tags/Spring/" style="font-size: 1.5em; color: #99a9bf">Spring</a> <a href="/tags/firewall/" style="font-size: 1.5em; color: #99a9bf">firewall</a> <a href="/tags/DNS/" style="font-size: 1.1em; color: #999">DNS</a> <a href="/tags/SpringBoot/" style="font-size: 1.1em; color: #999">SpringBoot</a> <a href="/tags/Ip/" style="font-size: 1.3em; color: #99a1ac">Ip</a> <a href="/tags/IPtables/" style="font-size: 1.3em; color: #99a1ac">IPtables</a> <a href="/tags/SMTP/" style="font-size: 1.1em; color: #999">SMTP</a> <a href="/tags/lskypro/" style="font-size: 1.1em; color: #999">lskypro</a> <a href="/tags/Zero-Trust/" style="font-size: 1.1em; color: #999">Zero Trust</a> <a href="/tags/clash/" style="font-size: 1.1em; color: #999">clash</a> <a href="/tags/%E5%A4%87%E6%A1%88/" style="font-size: 1.5em; color: #99a9bf">备案</a> <a href="/tags/%E5%AE%9D%E5%A1%94/" style="font-size: 1.1em; color: #999">宝塔</a> <a href="/tags/Memos/" style="font-size: 1.1em; color: #999">Memos</a> <a href="/tags/SSL/" style="font-size: 1.1em; color: #999">SSL</a> <a href="/tags/%E8%AF%84%E8%AE%BA/" style="font-size: 1.1em; color: #999">评论</a> <a href="/tags/github/" style="font-size: 1.1em; color: #999">github</a> <a href="/tags/%E5%86%99bug%E7%9A%84%E5%B0%8F%E8%83%BD%E6%89%8B/" style="font-size: 1.1em; color: #999">写bug的小能手</a> <a href="/tags/docker/" style="font-size: 1.3em; color: #99a1ac">docker</a> <a href="/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/" style="font-size: 1.3em; color: #99a1ac">网络安全</a> <a href="/tags/Cachefly/" style="font-size: 1.1em; color: #999">Cachefly</a> <a href="/tags/Tencent/" style="font-size: 1.1em; color: #999">Tencent</a> <a href="/tags/mosdns/" style="font-size: 1.1em; color: #999">mosdns</a> <a href="/tags/MarkDown/" style="font-size: 1.1em; color: #999">MarkDown</a></div></div><div class="card-widget card-archives">
+    <div class="item-headline">
+      <i class="fas fa-archive"></i>
+      <span>归档</span>
+      <a class="card-more-btn" href="/archives/" title="查看更多"><i class="fas fa-angle-right"></i></a>
+    </div>
+    <ul class="card-archive-list">
+  
+      <li class="card-archive-list-item">
+        <a class="card-archive-list-link" href="/archives/2024/10/">
+          <span class="card-archive-list-date">十月 2024</span>
+          <span class="card-archive-list-count">1</span>
+        </a>
+      </li>
+    
+      <li class="card-archive-list-item">
+        <a class="card-archive-list-link" href="/archives/2024/08/">
+          <span class="card-archive-list-date">八月 2024</span>
+          <span class="card-archive-list-count">3</span>
+        </a>
+      </li>
+    
+      <li class="card-archive-list-item">
+        <a class="card-archive-list-link" href="/archives/2024/07/">
+          <span class="card-archive-list-date">七月 2024</span>
+          <span class="card-archive-list-count">1</span>
+        </a>
+      </li>
+    
+      <li class="card-archive-list-item">
+        <a class="card-archive-list-link" href="/archives/2024/06/">
+          <span class="card-archive-list-date">六月 2024</span>
+          <span class="card-archive-list-count">1</span>
+        </a>
+      </li>
+    
+      <li class="card-archive-list-item">
+        <a class="card-archive-list-link" href="/archives/2024/04/">
+          <span class="card-archive-list-date">四月 2024</span>
+          <span class="card-archive-list-count">2</span>
+        </a>
+      </li>
+    
+      <li class="card-archive-list-item">
+        <a class="card-archive-list-link" href="/archives/2024/03/">
+          <span class="card-archive-list-date">三月 2024</span>
+          <span class="card-archive-list-count">1</span>
+        </a>
+      </li>
+    
+      <li class="card-archive-list-item">
+        <a class="card-archive-list-link" href="/archives/2024/02/">
+          <span class="card-archive-list-date">二月 2024</span>
+          <span class="card-archive-list-count">1</span>
+        </a>
+      </li>
+    
+      <li class="card-archive-list-item">
+        <a class="card-archive-list-link" href="/archives/2023/12/">
+          <span class="card-archive-list-date">十二月 2023</span>
+          <span class="card-archive-list-count">1</span>
+        </a>
+      </li>
+    </ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站信息</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">47</div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">28.5k</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="umami-site-uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总浏览量 :</div><div class="item-count" id="umami-site-pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastpushdate="2024-10-16T14:59:33.526Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">©2019 - 2024 By shell</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text"><a href="https://icp.gov.moe/?keyword=2020021021" target="_blank"><img src="https://img.misaka.pics/i/1/23/01/30/63d75baf92f17.webp" width="20px" height="20px" alt="萌国ICP备案"> 萌ICP备 2020021021号</a> | 
 <a style="text-decoration:none;" href="https://travel.moe/go.html" title="异次元之旅-跃迁-我们一起去萌站成员的星球旅行吧！" target="_blank"><img src="https://travel.moe/images/icon/icon64.png" style="width:24px;height:24px" alt="travel.moe">异次元之旅</a> |
 <a href="https://umami.asshell.top/share/zv9wNlkWxWXKIkc9/ShellBlog" target="_blank" rel="external nofollow">Umami</a> |
 <a href="https://www.travellings.cn/go.html" target="_blank" rel="noopener" title="开往-友链接力"><img src="https://www.travellings.cn/assets/logo.gif" alt="开往-友链接力" width="120"></a><br>
 <a href="https://www.cloudflare.com/" target="_blank" rel="external nofollow"><img src="https://img.misaka.pics/i/1/23/01/30/63d75c34b7358.webp" width="80px" height="30px" alt="CloudFlare"></a><br>
-</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/pluginsSrc/@fancyapps/ui/dist/fancybox/fancybox.umd.js"></script><script src="/pluginsSrc/instant.page/instantpage.js" type="module"></script><script src="/pluginsSrc/node-snackbar/dist/snackbar.min.js"></script><script>function panguFn () {
-  if (typeof pangu === 'object') pangu.autoSpacingPage()
-  else {
-    getScript('/pluginsSrc/pangu/dist/browser/pangu.min.js')
-      .then(() => {
-        pangu.autoSpacingPage()
-      })
+</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><a id="to_comment" href="#post-comment" title="前往评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/pluginsSrc/instant.page/instantpage.js" type="module"></script><script src="/pluginsSrc/node-snackbar/dist/snackbar.min.js"></script><script>(() => {
+  const panguFn = () => {
+    if (typeof pangu === 'object') pangu.autoSpacingPage()
+    else {
+      btf.getScript('/pluginsSrc/pangu/dist/browser/pangu.min.js')
+        .then(() => {
+          pangu.autoSpacingPage()
+        })
+    }
   }
-}
 
-function panguInit () {
-  if (true){
-    GLOBAL_CONFIG_SITE.isPost && panguFn()
-  } else {
-    panguFn()
+  const panguInit = () => {
+    if (true){
+      GLOBAL_CONFIG_SITE.isPost && panguFn()
+    } else {
+      panguFn()
+    }
   }
-}
 
-document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-pjax"><script>(() => {
+  btf.addGlobalFn('pjaxComplete', panguInit, 'pangu')
+  document.addEventListener('DOMContentLoaded', panguInit)
+})()</script><div class="js-pjax"><script>(() => {
   const getCount = () => {
     const countELement = document.getElementById('twikoo-count')
     if(!countELement) return
@@ -267,9 +326,67 @@ document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-
   } else {
     window.loadOtherComment = loadTwikoo
   }
-})()</script></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"></div></div><hr><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div>
+})()</script></div><script>(() => {
+  const option = null
+  const config = {"site_uv":true,"site_pv":true,"page_pv":true,"token":"ikXJvRrQ6tyQVjxaKGMg6TuxjfHCVgwFsUIgrT8Pv76tMtIwPXfz6jtKwTu7hZANRjrEBD0jywlNgTwoPdhmupfxkBQeWl63HadU9rdPHfbRd4EmB2sOpYQmhdSsR2R2qxKFJmevJD+1tO7rsLfzqng2UHPDC5Io9tYfoX0YHB2DfCT1QdXqFidSnKhEqs5A3b9XFZEWG+5uBexyYDlRf0nTTXj5Vl8PPQ5aSTBN9xVLc38bNSZkWBUA5PjHhl+CQZaD4sBLFhSlr4irmKEX/JF330G9RuaWK+zdUl0cRs/53ADso9ojAdWCtIgmtw7lBAaSs0bTwdpbSwrOXM6RswSqwfBZUpGSUQ=="}
+
+  const runTrack = () => {
+    umami.track(props => ({ ...props, url: window.location.pathname, title: GLOBAL_CONFIG_SITE.title }))
+  }
+
+  const loadUmamiJS = () => {
+    btf.getScript('https://umami.asshell.top/script.js', {
+      'data-website-id': '9ff73ab5-a863-462d-8695-5db50d42cf66',
+      'data-auto-track': 'false',
+      ...option
+    }).then(runTrack)
+  }
+
+  const getData = async (isPost) => {
+    const now = Date.now()
+    const keyUrl = isPost ? `&url=${window.location.pathname}` : ''
+    const headerList = { 'Accept': 'application/json' }
+    if (true) headerList['Authorization'] = `Bearer ${config.token}`
+    else headerList['x-umami-api-key'] = config.token
+    const res = await fetch(`https://umami.asshell.top/api/websites/9ff73ab5-a863-462d-8695-5db50d42cf66/stats?startAt=0000000000&endAt=${now}${keyUrl}`, {
+      method: "GET",
+      headers: headerList
+    })
+    return await res.json()
+  }
+
+  const insertData = async () => {
+    try {
+      if (GLOBAL_CONFIG_SITE.isPost && config.page_pv) {
+        const pagePV = document.getElementById('umamiPV')
+        if (pagePV) {
+          const data = await getData(true)
+          pagePV.textContent = data.pageviews.value
+        }
+      } else {
+        const data = (config.site_uv || config.site_pv) && await getData()
+        if (config.site_uv) {
+          const siteUV = document.getElementById('umami-site-uv')
+          if (siteUV) siteUV.textContent = data.visitors.value
+        }
+        if (config.site_pv) {
+          const sitePV = document.getElementById('umami-site-pv')
+          if (sitePV) sitePV.textContent = data.pageviews.value
+        }
+      }
+    } catch (e) {
+      console.error('Failed to load Umami Analytics:', e)
+    }
+  }
+
+  btf.addGlobalFn('pjaxComplete', runTrack, 'umami_analytics_run_track')
+  btf.addGlobalFn('pjaxComplete', insertData, 'umami_analytics_insert')
+
+  loadUmamiJS()
+  insertData()
+})()</script></div>
       <div id="sakana" style="position:fixed;right:0;bottom:0px;"></div>
-      <script async="" onload="initSakanaWidget({&quot;character&quot;:&quot;takina&quot;,&quot;enable&quot;:true,&quot;enable_mobile&quot;:false,&quot;size&quot;:200,&quot;autoFit&quot;:false,&quot;bottom&quot;:&quot;0px&quot;,&quot;controls&quot;:true,&quot;stroke&quot;:{&quot;color&quot;:&quot;#b4b4b4&quot;,&quot;width&quot;:10},&quot;threshold&quot;:0.1,&quot;rotate&quot;:0,&quot;customCharacters&quot;:[]})" src="https://blog.ning.moe/static/js/sakana.min.js"></script>
+      <script async="" onload="initSakanaWidget({&quot;character&quot;:&quot;takina&quot;,&quot;enable&quot;:true,&quot;enable_mobile&quot;:false,&quot;size&quot;:200,&quot;autoFit&quot;:false,&quot;bottom&quot;:&quot;0px&quot;,&quot;controls&quot;:true,&quot;stroke&quot;:{&quot;color&quot;:&quot;#b4b4b4&quot;,&quot;width&quot;:10},&quot;threshold&quot;:0.1,&quot;rotate&quot;:0,&quot;customCharacters&quot;:[]})" src="https://cdn.jsdelivr.net/npm/sakana-widget@2.3.0/lib/sakana.min.js"></script>
       <script>
       function log(msg) {
         console.log("[hexo-sakana] " + msg);
