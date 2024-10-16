@@ -1,34 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>2023 总结</title>
-    <url>/posts/2023-Annual-Summary/</url>
-    <content><![CDATA[<html><head></head><body><blockquote>
-<p>应该这个文章会在 31/12/2024 发表</p>
-</blockquote>
-<p>转眼间 23年的就快过完了，回顾过往这一年的时间，貌似有些许的特殊，不至于和前几年一样是一个无聊又无趣。</p>
-<h1 id="博客"><a href="#博客" class="headerlink" title="博客"></a>博客</h1><p>两年的宁静，博客在23年重新绽放光彩。</p>
-<p>23年共计写了 19 篇 文章其中阅读最多的 <a href="https://blog.ning.moe/posts/Spring-Security/">新版本 Spring-Security 配置踩坑</a>  共阅读了 227次 从Google 来的最多，文章是其次是<br><a href="https://blog.ning.moe/posts/Java-CAPTCHA-cloudflare/">Java 使用 CloudFlare Turnstile 验证码</a> 共阅读了 205次。在重新开始写博客之后 本站从 23年6月记录截稿，共收获了  PV <strong>6.52k</strong>  UV <strong>2.16k</strong>。</p>
-<img src="https://img.misaka.pics/ShellBlogImg/1/2023/12/29/658ed5482b2d5.webp" alt="2023-Blog-PV&amp;UV-Date.webp" style="zoom: 80%;">
-
-<blockquote>
-<p>为什么只有6-12月的数据呢？</p>
-<p><del>因为我把1-5月的数据搞丢了。</del></p>
-</blockquote>
-<p>在截稿前收到Google 发来的Email 28天从Google 来了120 的</p>
-<img src="https://img.misaka.pics/ShellBlogImg/1/2023/12/31/65916362b2813.webp" alt="Google-search-PV.webp" style="zoom:50%;">
-
-<h1 id="赛项"><a href="#赛项" class="headerlink" title="赛项"></a>赛项</h1><p>我参加了<code>应用软件系统开发</code>  荣获一等奖。然而，对于这次比赛，我心中并未留下太多深刻的评价，因为涉及的内容大多是繁琐且重复的工作。</p>
-<img src="https://img.misaka.pics/ShellBlogImg/1/2023/12/31/65916654c7cc0.webp" alt="ChinaSkills.webp" style="zoom: 50%;">
-
-<h1 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h1><p>23年的故事就此落幕，还有23年所遇到的人们，也开启了我线下第一次面基之旅（不展开叙述）。24年的故事即将开启，这一年里展开新的冒险。我希望在24年，能够踏上旅途，探访不同的地方，因为美好的青春如此短暂，而旅行是拓展视野和经历的最佳方式。同时，我收集更多计算机知识的奥秘，为自己的技术之旅添上浓墨重彩的一笔。至于博客吗，我也会继续写下去的。</p>
-</body></html>]]></content>
-      <tags>
-        <tag>总结</tag>
-        <tag>2023</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>markdown使用方法</title>
     <url>/posts/17-1/</url>
     <content><![CDATA[<html><head></head><body><p>我身为一代神鸽,建立博客那么就了,更新几篇我原创的博文或者.（关键还是我不会正在学很多东西~逃</p>
@@ -81,6 +53,34 @@
       </tags>
   </entry>
   <entry>
+    <title>2023 总结</title>
+    <url>/posts/2023-Annual-Summary/</url>
+    <content><![CDATA[<html><head></head><body><blockquote>
+<p>应该这个文章会在 31/12/2024 发表</p>
+</blockquote>
+<p>转眼间 23年的就快过完了，回顾过往这一年的时间，貌似有些许的特殊，不至于和前几年一样是一个无聊又无趣。</p>
+<h1 id="博客"><a href="#博客" class="headerlink" title="博客"></a>博客</h1><p>两年的宁静，博客在23年重新绽放光彩。</p>
+<p>23年共计写了 19 篇 文章其中阅读最多的 <a href="https://blog.ning.moe/posts/Spring-Security/">新版本 Spring-Security 配置踩坑</a>  共阅读了 227次 从Google 来的最多，文章是其次是<br><a href="https://blog.ning.moe/posts/Java-CAPTCHA-cloudflare/">Java 使用 CloudFlare Turnstile 验证码</a> 共阅读了 205次。在重新开始写博客之后 本站从 23年6月记录截稿，共收获了  PV <strong>6.52k</strong>  UV <strong>2.16k</strong>。</p>
+<img src="https://img.misaka.pics/ShellBlogImg/1/2023/12/29/658ed5482b2d5.webp" alt="2023-Blog-PV&amp;UV-Date.webp" style="zoom: 80%;">
+
+<blockquote>
+<p>为什么只有6-12月的数据呢？</p>
+<p><del>因为我把1-5月的数据搞丢了。</del></p>
+</blockquote>
+<p>在截稿前收到Google 发来的Email 28天从Google 来了120 的</p>
+<img src="https://img.misaka.pics/ShellBlogImg/1/2023/12/31/65916362b2813.webp" alt="Google-search-PV.webp" style="zoom:50%;">
+
+<h1 id="赛项"><a href="#赛项" class="headerlink" title="赛项"></a>赛项</h1><p>我参加了<code>应用软件系统开发</code>  荣获一等奖。然而，对于这次比赛，我心中并未留下太多深刻的评价，因为涉及的内容大多是繁琐且重复的工作。</p>
+<img src="https://img.misaka.pics/ShellBlogImg/1/2023/12/31/65916654c7cc0.webp" alt="ChinaSkills.webp" style="zoom: 50%;">
+
+<h1 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h1><p>23年的故事就此落幕，还有23年所遇到的人们，也开启了我线下第一次面基之旅（不展开叙述）。24年的故事即将开启，这一年里展开新的冒险。我希望在24年，能够踏上旅途，探访不同的地方，因为美好的青春如此短暂，而旅行是拓展视野和经历的最佳方式。同时，我收集更多计算机知识的奥秘，为自己的技术之旅添上浓墨重彩的一笔。至于博客吗，我也会继续写下去的。</p>
+</body></html>]]></content>
+      <tags>
+        <tag>总结</tag>
+        <tag>2023</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Linux安装宝塔面板</title>
     <url>/posts/21-8-3/</url>
     <content><![CDATA[<html><head></head><body><blockquote>
@@ -120,6 +120,38 @@
       </categories>
       <tags>
         <tag>宝塔</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Gitea SSO 登录优化与自动注册设置</title>
+    <url>/posts/Authentik-Gitea-SSO/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>gitea 的SSO登录逻辑，是通过OIDC 登录完毕和已经gitea自己的账户进行绑定，如果 没有账户gitea 会要求你注册一个再绑定，但是gitea 并没有能设置通过sso 进来的没有注册的用户开发注册，只有要么所有人都可以注册要么不可以注册。嗯。。。。感觉怪怪的。</p>
+<p>并且更改配置文件还需要手动重启容器，不可能我认识人都创建好gitea吧，或者不能每次他们第一次要用gitea 我需要配置打开注册。</p>
+<p>关于我的更多 <a href="/tags/Authentik/"><code>Authentik </code>相关文章</a>  ，详细安装（中文版本）<code>Authentik </code>请访问 <a href="https://www.bilibili.com/video/av1902852247/" rel="external nofollow noreferrer"><strong>ecwuuu</strong>发布的B站视频</a>关于正向代理： <a href="https://roy.wang/authentik-open-source-sso/#%E6%AD%A3%E5%90%91%E4%BB%A3%E7%90%86" rel="external nofollow noreferrer">roywang的文章</a></p>
+<h1 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h1><p><strong>此教程默认情况下视为你已经配置好了gitea 的OIDC登录。</strong></p>
+<p>如果您没有实现配置好，可以看 ecwuuuuu 的 <a href="https://www.bilibili.com/video/av1952943836/" rel="external nofollow noreferrer">你可以观看 将应用接入统一登陆 - OAuth 协议篇 - 以 Gitea 和 Grafana 为例</a></p>
+<p>本文章配合 <a href="/posts/CloudFlare-Tunnel-Application-Access/">使用 Cloud Flare Tunnel 和 Acces Application 安全的暴露在公网</a> 进行使用，使用 CloudFlare 的Zero Trust进行<code>转发验证</code></p>
+<p>如果你需要使用nginx配置转发验证，可以看 ecwuuuuu 的 <a href="https://ecwuuuuu.com/post/authentik-tutorial-4-setup-forwardauth/" rel="external nofollow noreferrer">通过反向代理和 ForwardAuth 接入任何应用</a>或者访问他的B站视频 <a href="https://www.bilibili.com/video/av1803923865/" rel="external nofollow noreferrer">配置 ForwardAuth 将任意应用加入统一登陆</a></p>
+<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><p>请确保你的gitea 配置文件和我下面提供的一样（配置文件一般在<code>&lt;宿主机容器映射&gt;/data/gitea/conf/app.ini</code></p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">[openid]</span><br><span class="line">ENABLE_OPENID_SIGNIN = true</span><br><span class="line">ENABLE_OPENID_SIGNUP = true</span><br><span class="line"></span><br><span class="line">[service]</span><br><span class="line">DISABLE_REGISTRATION = false</span><br><span class="line">REQUIRE_SIGNIN_VIEW = true</span><br><span class="line">REGISTER_EMAIL_CONFIRM = false</span><br><span class="line">ENABLE_NOTIFY_MAIL = true</span><br><span class="line">ALLOW_ONLY_EXTERNAL_REGISTRATION = false</span><br><span class="line">ENABLE_CAPTCHA = false</span><br><span class="line">DEFAULT_KEEP_EMAIL_PRIVATE = true</span><br><span class="line">DEFAULT_ALLOW_CREATE_ORGANIZATION = true</span><br><span class="line">DEFAULT_ENABLE_TIMETRACKING = true</span><br><span class="line">NO_REPLY_ADDRESS = noreply.localhost</span><br></pre></td></tr></tbody></table></figure>
+
+
+
+<p>屏蔽注册页面 <code>user/sign_up</code></p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/08/04/66aed81093245.webp" alt="CloudFlare-Zero Trust-Gitea-Sign_up.webp"></p>
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>将应用接入统一登陆 - OAuth 协议篇 - 以 Gitea 和 Grafana 为例:<a href="https://www.bilibili.com/video/av1952943836/" rel="external nofollow noreferrer">https://www.bilibili.com/video/av1952943836/</a></p>
+<p>通过反向代理和 ForwardAuth 接入任何应用:<a href="https://ecwuuuuu.com/post/authentik-tutorial-4-setup-forwardauth/" rel="external nofollow noreferrer">https://ecwuuuuu.com/post/authentik-tutorial-4-setup-forwardauth/</a></p>
+<p>使用 Cloud Flare Tunnel 和 Acces Application 安全的暴露在公网:<a href="https://blog.ning.moe/posts/CloudFlare-Tunnel-Application-Access/">https://blog.ning.moe/posts/CloudFlare-Tunnel-Application-Access/</a></p>
+</body></html>]]></content>
+      <categories>
+        <category>网络技术</category>
+      </categories>
+      <tags>
+        <tag>Authentik</tag>
+        <tag>Gitea</tag>
+        <tag>SSO</tag>
+        <tag>OIDC</tag>
+        <tag>OAuth2</tag>
       </tags>
   </entry>
   <entry>
@@ -187,6 +219,35 @@
       </tags>
   </entry>
   <entry>
+    <title>使用Cloud Flare Tunnel和 Acces Application安全的暴露在公网</title>
+    <url>/posts/CloudFlare-Tunnel-Application-Access/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h1><p>如果搞 Home Lab 始终绕不开的话题是，我们如何将自己的内网服务暴露到公网上，又如何保证我们的安全。<br>现在可以使用我们赛博菩萨 Cloudflare 提供的 Zero Trust 来保护我们的安全。</p>
+<p>演示的dome ： <a href="https://hp.ning.moe/" rel="external nofollow noreferrer">HomePage</a> 和 <a href="https://misakashell.cloudflareaccess.com/" rel="external nofollow noreferrer">Cloud Flare Zero Trust 主页</a></p>
+<h1 id="正文："><a href="#正文：" class="headerlink" title="正文："></a>正文：</h1><h2 id="使用-Tunnel-暴露服务"><a href="#使用-Tunnel-暴露服务" class="headerlink" title="使用 Tunnel 暴露服务"></a>使用 Tunnel 暴露服务</h2><p>我们需要先登录<a href="https://one.dash.cloudflare.com/" rel="external nofollow noreferrer">CF zero trust的管理平台</a>，添加新的隧道点击：<code>Networks/Tunnels</code> 我们需要添加一个隧道让我们本地和 <code>Cloudflare Zero Trust</code>服务器进行连接。简单的配置完隧道名字</p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/22/6626359570249.webp" alt="Cloud-Flare-Zero-Trust-Dash-Tunnels.webp"></p>
+<p>会自动跳转到tunnel 这个页面，没跳转的 Networks/Tunnels/你的隧道/config。我们需要安装一个cloudflared的程序，这个页面已经为我们提供好了常见的系统，如Linux MacOS Windows，复制命令直接在我们终端运行即可。</p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/22/66263669cc5c3.webp" alt="CloudFlared-Download.webp"></p>
+<p>然后 下一步 ，简单配置一下。保存即可。返回菜单会发现刚刚创建的 <code>Tunnel</code> 等待 <code>Status</code> 显示<code>HEALTHY</code> 访问你的 配置好的域名应该就可以访问了。</p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/22/6626371255c1f.webp" alt="Cloud-Flare-Tunnel-Config.webp"></p>
+<h2 id="使用-Access-Applications-认证"><a href="#使用-Access-Applications-认证" class="headerlink" title="使用 Access Applications 认证"></a>使用 Access Applications 认证</h2><p>首先你需要确保你有登录方式 <code>Settings</code> –&gt;<code>Authentication</code>–&gt;<code>Login methods</code> ,如果没有你需要自行创建。</p>
+<p>来到<code> Access</code> –&gt;<code> Applications</code> –&gt; <code> Add an application</code> 选择<code>Self-hosted</code>，填写你刚才的域名，然后下一步。</p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/22/66263cfec6386.webp" alt="CF-Access-Applications.webp"></p>
+<p><code>policy name</code> 可以随便填写 记得 <code>Action</code>是 <code>Allow</code>，这里的Session 是多久在进行登录验证，可以调节时间长一点。</p>
+<p><code>Create additional rules</code> 根据你刚才配置的 <code>Authentication</code> 来填写，我这里是填写CF自带的邮箱验证码进行登录的。</p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/22/66263cff40b37.webp" alt="CF-Add an application.webp"></p>
+<p>配置完毕之后，访问你配置的域名就会出现拦截了，例如我<a href="https://hp.ning.moe/" rel="external nofollow noreferrer">配置好的</a>这我设置了自动跳转所以会到我的<code>SSO.ning.moe</code></p>
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p><a href="https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/" rel="external nofollow noreferrer">Cloudflare Tunnel 配置文档</a></p>
+<p><a href="https://developers.cloudflare.com/cloudflare-one/applications/" rel="external nofollow noreferrer">Applications Access</a></p>
+</body></html>]]></content>
+      <categories>
+        <category>网络技术</category>
+      </categories>
+      <tags>
+        <tag>CloudFlare</tag>
+        <tag>Zero Trust</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Authentik OIDC 哪吒面板</title>
     <url>/posts/Authentik-NezhaDashboard-OIDC/</url>
     <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>最开始我的<code>nezha面板</code> 使用的 <code>github</code> 的<code>OAuth 认证</code>的，我的哪吒面板是自动更新到最新版本，最新版本更新好之后我发现无法登录我的<code>nezha 面板</code>了,报错提示是 http: named cookie not present<a href="https://nezha.wiki/guide/loginq.html#http-named-cookie-not-present" rel="external nofollow noreferrer"></a>试了试还是不行，最后看了一下新版本更新日志是改了OIDC不知道是不是这个关系，现在可以自定义oidc提供商了我就改成我自己的<code>Authentik</code> 吧。</p>
@@ -226,42 +287,10 @@
       </categories>
       <tags>
         <tag>Authentik</tag>
+        <tag>SSO</tag>
+        <tag>OIDC</tag>
+        <tag>OAuth2</tag>
         <tag>nezha</tag>
-        <tag>SSO</tag>
-        <tag>OIDC</tag>
-        <tag>OAuth2</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Gitea SSO 登录优化与自动注册设置</title>
-    <url>/posts/Authentik-Gitea-SSO/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>gitea 的SSO登录逻辑，是通过OIDC 登录完毕和已经gitea自己的账户进行绑定，如果 没有账户gitea 会要求你注册一个再绑定，但是gitea 并没有能设置通过sso 进来的没有注册的用户开发注册，只有要么所有人都可以注册要么不可以注册。嗯。。。。感觉怪怪的。</p>
-<p>并且更改配置文件还需要手动重启容器，不可能我认识人都创建好gitea吧，或者不能每次他们第一次要用gitea 我需要配置打开注册。</p>
-<p>关于我的更多 <a href="/tags/Authentik/"><code>Authentik </code>相关文章</a>  ，详细安装（中文版本）<code>Authentik </code>请访问 <a href="https://www.bilibili.com/video/av1902852247/" rel="external nofollow noreferrer"><strong>ecwuuu</strong>发布的B站视频</a>关于正向代理： <a href="https://roy.wang/authentik-open-source-sso/#%E6%AD%A3%E5%90%91%E4%BB%A3%E7%90%86" rel="external nofollow noreferrer">roywang的文章</a></p>
-<h1 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h1><p><strong>此教程默认情况下视为你已经配置好了gitea 的OIDC登录。</strong></p>
-<p>如果您没有实现配置好，可以看 ecwuuuuu 的 <a href="https://www.bilibili.com/video/av1952943836/" rel="external nofollow noreferrer">你可以观看 将应用接入统一登陆 - OAuth 协议篇 - 以 Gitea 和 Grafana 为例</a></p>
-<p>本文章配合 <a href="/posts/CloudFlare-Tunnel-Application-Access/">使用 Cloud Flare Tunnel 和 Acces Application 安全的暴露在公网</a> 进行使用，使用 CloudFlare 的Zero Trust进行<code>转发验证</code></p>
-<p>如果你需要使用nginx配置转发验证，可以看 ecwuuuuu 的 <a href="https://ecwuuuuu.com/post/authentik-tutorial-4-setup-forwardauth/" rel="external nofollow noreferrer">通过反向代理和 ForwardAuth 接入任何应用</a>或者访问他的B站视频 <a href="https://www.bilibili.com/video/av1803923865/" rel="external nofollow noreferrer">配置 ForwardAuth 将任意应用加入统一登陆</a></p>
-<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><p>请确保你的gitea 配置文件和我下面提供的一样（配置文件一般在<code>&lt;宿主机容器映射&gt;/data/gitea/conf/app.ini</code></p>
-<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">[openid]</span><br><span class="line">ENABLE_OPENID_SIGNIN = true</span><br><span class="line">ENABLE_OPENID_SIGNUP = true</span><br><span class="line"></span><br><span class="line">[service]</span><br><span class="line">DISABLE_REGISTRATION = false</span><br><span class="line">REQUIRE_SIGNIN_VIEW = true</span><br><span class="line">REGISTER_EMAIL_CONFIRM = false</span><br><span class="line">ENABLE_NOTIFY_MAIL = true</span><br><span class="line">ALLOW_ONLY_EXTERNAL_REGISTRATION = false</span><br><span class="line">ENABLE_CAPTCHA = false</span><br><span class="line">DEFAULT_KEEP_EMAIL_PRIVATE = true</span><br><span class="line">DEFAULT_ALLOW_CREATE_ORGANIZATION = true</span><br><span class="line">DEFAULT_ENABLE_TIMETRACKING = true</span><br><span class="line">NO_REPLY_ADDRESS = noreply.localhost</span><br></pre></td></tr></tbody></table></figure>
-
-
-
-<p>屏蔽注册页面 <code>user/sign_up</code></p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/08/04/66aed81093245.webp" alt="CloudFlare-Zero Trust-Gitea-Sign_up.webp"></p>
-<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>将应用接入统一登陆 - OAuth 协议篇 - 以 Gitea 和 Grafana 为例:<a href="https://www.bilibili.com/video/av1952943836/" rel="external nofollow noreferrer">https://www.bilibili.com/video/av1952943836/</a></p>
-<p>通过反向代理和 ForwardAuth 接入任何应用:<a href="https://ecwuuuuu.com/post/authentik-tutorial-4-setup-forwardauth/" rel="external nofollow noreferrer">https://ecwuuuuu.com/post/authentik-tutorial-4-setup-forwardauth/</a></p>
-<p>使用 Cloud Flare Tunnel 和 Acces Application 安全的暴露在公网:<a href="https://blog.ning.moe/posts/CloudFlare-Tunnel-Application-Access/">https://blog.ning.moe/posts/CloudFlare-Tunnel-Application-Access/</a></p>
-</body></html>]]></content>
-      <categories>
-        <category>网络技术</category>
-      </categories>
-      <tags>
-        <tag>Authentik</tag>
-        <tag>SSO</tag>
-        <tag>OIDC</tag>
-        <tag>OAuth2</tag>
-        <tag>Gitea</tag>
       </tags>
   </entry>
   <entry>
@@ -328,67 +357,6 @@
       </tags>
   </entry>
   <entry>
-    <title>改造家里网络</title>
-    <url>/posts/Home-NetWork/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
-<p>也好久没更新来水一波。</p>
-</blockquote>
-<p>寒假里面，打算在折腾一下家里面的网络，将家里21年买的<code>r2s</code>换成<code>J4125</code>这下就够我折腾的了。</p>
-<img src="https://img.misaka.pics/ShellBlogImg/1/2024/03/06/65e8108d61fe7.webp" alt="网络拓补图.webp" style="zoom:50%;">
-
-<p>这是我目前的家里主题结构 由<code>r2s</code>软路由担任<code>PPPOE</code>拨号，有两个<code>AP</code> 组成有线<code>mesh</code>。</p>
-<p>对于 <code>J4125 </code>我打算使用<code>PVE</code>+<code>Ikuai</code>+<code>Debian</code></p>
-<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><h2 id="折腾前的痛点"><a href="#折腾前的痛点" class="headerlink" title="折腾前的痛点"></a>折腾前的痛点</h2><ul>
-<li>稳定：对于<code>r2s</code>来说有时候不是特别问题定，需要定时重启，我尝试换了很多的固件，都无法解决此问题</li>
-<li>性能不足 ：<code>r2s</code>有人测试基本上稳定千兆是没有问题的了（在不使用科学上网的时候），但对于小包转发来说多少有些吃力。</li>
-<li>ARM 生态问题：我知道ARM 发展的很好，但很多老的程序还只能支持<code>X86</code>.</li>
-</ul>
-<h2 id="折腾解决之后的"><a href="#折腾解决之后的" class="headerlink" title="折腾解决之后的"></a>折腾解决之后的</h2><ul>
-<li>稳定：目前连续运行了20天没有发现异常</li>
-<li>性能：<code>J4125</code>妥妥够我300mbps 的带宽使用了（满载带宽，CPU占用15%~20%）</li>
-<li>软件：解决了ARM 部分软件问题。</li>
-</ul>
-<p><code>J4125</code>进行<code>PVE </code>虚拟化，由<code>Ikuai </code>作为主路由进行<code>PPPOE</code> 以及流控管理，<code>Debian`` docker</code> 化跑<code>Adguard Heome </code>家用<code>DNS </code>。</p>
-<img src="https://img.misaka.pics/ShellBlogImg/1/2024/03/06/65e82e1b241e5.webp" alt="网络拓补图-2.webp" style="zoom: 67%;">
-</body></html>]]></content>
-      <categories>
-        <category>网络技术</category>
-      </categories>
-      <tags>
-        <tag>Ikuai</tag>
-        <tag>J4125</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>使用Cloud Flare Tunnel和 Acces Application安全的暴露在公网</title>
-    <url>/posts/CloudFlare-Tunnel-Application-Access/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h1><p>如果搞 Home Lab 始终绕不开的话题是，我们如何将自己的内网服务暴露到公网上，又如何保证我们的安全。<br>现在可以使用我们赛博菩萨 Cloudflare 提供的 Zero Trust 来保护我们的安全。</p>
-<p>演示的dome ： <a href="https://hp.ning.moe/" rel="external nofollow noreferrer">HomePage</a> 和 <a href="https://misakashell.cloudflareaccess.com/" rel="external nofollow noreferrer">Cloud Flare Zero Trust 主页</a></p>
-<h1 id="正文："><a href="#正文：" class="headerlink" title="正文："></a>正文：</h1><h2 id="使用-Tunnel-暴露服务"><a href="#使用-Tunnel-暴露服务" class="headerlink" title="使用 Tunnel 暴露服务"></a>使用 Tunnel 暴露服务</h2><p>我们需要先登录<a href="https://one.dash.cloudflare.com/" rel="external nofollow noreferrer">CF zero trust的管理平台</a>，添加新的隧道点击：<code>Networks/Tunnels</code> 我们需要添加一个隧道让我们本地和 <code>Cloudflare Zero Trust</code>服务器进行连接。简单的配置完隧道名字</p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/22/6626359570249.webp" alt="Cloud-Flare-Zero-Trust-Dash-Tunnels.webp"></p>
-<p>会自动跳转到tunnel 这个页面，没跳转的 Networks/Tunnels/你的隧道/config。我们需要安装一个cloudflared的程序，这个页面已经为我们提供好了常见的系统，如Linux MacOS Windows，复制命令直接在我们终端运行即可。</p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/22/66263669cc5c3.webp" alt="CloudFlared-Download.webp"></p>
-<p>然后 下一步 ，简单配置一下。保存即可。返回菜单会发现刚刚创建的 <code>Tunnel</code> 等待 <code>Status</code> 显示<code>HEALTHY</code> 访问你的 配置好的域名应该就可以访问了。</p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/22/6626371255c1f.webp" alt="Cloud-Flare-Tunnel-Config.webp"></p>
-<h2 id="使用-Access-Applications-认证"><a href="#使用-Access-Applications-认证" class="headerlink" title="使用 Access Applications 认证"></a>使用 Access Applications 认证</h2><p>首先你需要确保你有登录方式 <code>Settings</code> –&gt;<code>Authentication</code>–&gt;<code>Login methods</code> ,如果没有你需要自行创建。</p>
-<p>来到<code> Access</code> –&gt;<code> Applications</code> –&gt; <code> Add an application</code> 选择<code>Self-hosted</code>，填写你刚才的域名，然后下一步。</p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/22/66263cfec6386.webp" alt="CF-Access-Applications.webp"></p>
-<p><code>policy name</code> 可以随便填写 记得 <code>Action</code>是 <code>Allow</code>，这里的Session 是多久在进行登录验证，可以调节时间长一点。</p>
-<p><code>Create additional rules</code> 根据你刚才配置的 <code>Authentication</code> 来填写，我这里是填写CF自带的邮箱验证码进行登录的。</p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/22/66263cff40b37.webp" alt="CF-Add an application.webp"></p>
-<p>配置完毕之后，访问你配置的域名就会出现拦截了，例如我<a href="https://hp.ning.moe/" rel="external nofollow noreferrer">配置好的</a>这我设置了自动跳转所以会到我的<code>SSO.ning.moe</code></p>
-<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p><a href="https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/" rel="external nofollow noreferrer">Cloudflare Tunnel 配置文档</a></p>
-<p><a href="https://developers.cloudflare.com/cloudflare-one/applications/" rel="external nofollow noreferrer">Applications Access</a></p>
-</body></html>]]></content>
-      <categories>
-        <category>网络技术</category>
-      </categories>
-      <tags>
-        <tag>CloudFlare</tag>
-        <tag>Zero Trust</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>你可能需要知道的docker 的端口问题。</title>
     <url>/posts/DockerSecurity/</url>
     <content><![CDATA[<html><head></head><body><h1 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h1><p>docker 这个东西呢，对于我来说又爱又恨吧，爱的事情是可以很快速的进行部署项目，解决一些复杂和繁琐的问题，这也是docker 设计的初衷。恨得呢，本身我对于docker 来说是是一个小白用户，我只会 docker run xxxx 来完成我在github 找到的有趣应用，但是出了问题的时候，我需要去使用搜索引擎查阅的知识。</p>
@@ -439,6 +407,71 @@
         <tag>IPtables</tag>
         <tag>防火墙</tag>
         <tag>firewall</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>爱快IPv6防火墙配置</title>
+    <url>/posts/Ikuai-firewall-IPv6/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>爱快尽然默认没有开启<code>IPv6</code>对内网设备的阻断，我发现的时候十分震惊，而且已经在公网上暴露有一天以上了，最糟糕的事情，内网设备的密码全部是弱密码，吓得我先立刻断掉<code>IPv6</code>接入，仔细排查了一下内网设备还好没有人扫到并且进行爆破。</p>
+<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><p>请确保你的<code>ikuai </code>系统是最新版本并且登录<code>ikuai Web</code>后台，<code>安全设置</code> –&gt;<code>ACL规则</code></p>
+<h2 id="阻断所有IPv6链接"><a href="#阻断所有IPv6链接" class="headerlink" title="阻断所有IPv6链接"></a>阻断所有IPv6链接</h2><blockquote>
+<p>此操作不会阻断响应<code>IPv6</code>的流量</p>
+</blockquote>
+<p>由于 <code>ikuai </code>在 3.7.11 版本还不支持放行或阻断<code> ICMP</code> 协议，如果您想外网设备能ping通内网的话，需要需要创建两个配置，一个是阻断<code>TCP</code>还有一个阻断<code>UDP</code>，不想<code>ping</code>通的话，只需要创建一个配置选择任意协议即可。</p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/03/06/65e834d3a0bdd.webp" alt="ipv6防护墙介绍.webp"></p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/03/06/65e834d40ca02.webp" alt="ipv6阻断.webp"></p>
+<p>进接口一定是<code>wan</code>口由于笔者只有一个<code>wan</code>口，如果您有多个话请务必全部勾选，出接口是<code>lan</code>同样如果您有多个<code>lan</code>接口请全部勾上，这样我们内网设备就不会暴露外网了。</p>
+<h2 id="打开指定IPv6的连接"><a href="#打开指定IPv6的连接" class="headerlink" title="打开指定IPv6的连接"></a>打开指定IPv6的连接</h2><blockquote>
+<p>再说指定放行<code>IPv6</code>地址，如果您是静态<code>IPv6</code>，那你自己放行那个ip 即可，但是身为家庭宽带的话都是动态<code>IPv6</code>地址根本不可能知道ip会变成什么样子，还是说每次变化ip 的地址重新改吗？这里需要了解一下ipv6 的后缀生成是受MAC 地址影响的，通过EUI-64 编码进行处理，详情访问: <a href="https://ccie.lol/knowledge-base/ipv6-use-eui-64-convert-link-local-address/" rel="external nofollow noreferrer">【转】通过EUI-64自动生成IPv6地址和IPv6链路本地地址（Link-Local Address）</a></p>
+</blockquote>
+<p><strong>对于windows 获取ipv6地址使用 EUI-64 编码得到的理论值和实际值可能不一样</strong></p>
+<p>可以使用 <a href="https://eui64-calc.princelle.org/" rel="external nofollow noreferrer">EUI-64 计算器</a></p>
+<p>例如 <code>bc:34:11:c6:8a:19 </code>通过计算可以得到 <code>BE34:11FF:FEC6:8A19</code> 理论情况的<code>ipv6</code>，据我测试后四位基本上都是一样的，前面受到<code>IPv6</code>前缀影响。</p>
+<img src="https://img.misaka.pics/ShellBlogImg/1/2024/03/06/65e846c30a412.webp" alt="指定IPv6放行.webp" style="zoom:67%;">
+
+<p>在已经匹配的内容中<code>::8A19</code>改成你自己的后缀四位，<code>ikuai </code>的防火墙逻辑是先放行后阻断，所以不需要关系防火墙配置的顺序。</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">::8a1f/::ffff</span><br></pre></td></tr></tbody></table></figure>
+
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p><a href="https://ccie.lol/knowledge-base/ipv6-use-eui-64-convert-link-local-address/" rel="external nofollow noreferrer">【转】通过EUI-64自动生成IPv6地址和IPv6链路本地地址（Link-Local Address）</a></p>
+<p> <a href="https://eui64-calc.princelle.org/" rel="external nofollow noreferrer">EUI-64 计算器</a></p>
+</body></html>]]></content>
+      <tags>
+        <tag>防火墙</tag>
+        <tag>firewall</tag>
+        <tag>Ikuai</tag>
+        <tag>IPv6</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>改造家里网络</title>
+    <url>/posts/Home-NetWork/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
+<p>也好久没更新来水一波。</p>
+</blockquote>
+<p>寒假里面，打算在折腾一下家里面的网络，将家里21年买的<code>r2s</code>换成<code>J4125</code>这下就够我折腾的了。</p>
+<img src="https://img.misaka.pics/ShellBlogImg/1/2024/03/06/65e8108d61fe7.webp" alt="网络拓补图.webp" style="zoom:50%;">
+
+<p>这是我目前的家里主题结构 由<code>r2s</code>软路由担任<code>PPPOE</code>拨号，有两个<code>AP</code> 组成有线<code>mesh</code>。</p>
+<p>对于 <code>J4125 </code>我打算使用<code>PVE</code>+<code>Ikuai</code>+<code>Debian</code></p>
+<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><h2 id="折腾前的痛点"><a href="#折腾前的痛点" class="headerlink" title="折腾前的痛点"></a>折腾前的痛点</h2><ul>
+<li>稳定：对于<code>r2s</code>来说有时候不是特别问题定，需要定时重启，我尝试换了很多的固件，都无法解决此问题</li>
+<li>性能不足 ：<code>r2s</code>有人测试基本上稳定千兆是没有问题的了（在不使用科学上网的时候），但对于小包转发来说多少有些吃力。</li>
+<li>ARM 生态问题：我知道ARM 发展的很好，但很多老的程序还只能支持<code>X86</code>.</li>
+</ul>
+<h2 id="折腾解决之后的"><a href="#折腾解决之后的" class="headerlink" title="折腾解决之后的"></a>折腾解决之后的</h2><ul>
+<li>稳定：目前连续运行了20天没有发现异常</li>
+<li>性能：<code>J4125</code>妥妥够我300mbps 的带宽使用了（满载带宽，CPU占用15%~20%）</li>
+<li>软件：解决了ARM 部分软件问题。</li>
+</ul>
+<p><code>J4125</code>进行<code>PVE </code>虚拟化，由<code>Ikuai </code>作为主路由进行<code>PPPOE</code> 以及流控管理，<code>Debian`` docker</code> 化跑<code>Adguard Heome </code>家用<code>DNS </code>。</p>
+<img src="https://img.misaka.pics/ShellBlogImg/1/2024/03/06/65e82e1b241e5.webp" alt="网络拓补图-2.webp" style="zoom: 67%;">
+</body></html>]]></content>
+      <categories>
+        <category>网络技术</category>
+      </categories>
+      <tags>
+        <tag>Ikuai</tag>
+        <tag>J4125</tag>
       </tags>
   </entry>
   <entry>
@@ -667,36 +700,35 @@
       </tags>
   </entry>
   <entry>
-    <title>爱快IPv6防火墙配置</title>
-    <url>/posts/Ikuai-firewall-IPv6/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>爱快尽然默认没有开启<code>IPv6</code>对内网设备的阻断，我发现的时候十分震惊，而且已经在公网上暴露有一天以上了，最糟糕的事情，内网设备的密码全部是弱密码，吓得我先立刻断掉<code>IPv6</code>接入，仔细排查了一下内网设备还好没有人扫到并且进行爆破。</p>
-<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><p>请确保你的<code>ikuai </code>系统是最新版本并且登录<code>ikuai Web</code>后台，<code>安全设置</code> –&gt;<code>ACL规则</code></p>
-<h2 id="阻断所有IPv6链接"><a href="#阻断所有IPv6链接" class="headerlink" title="阻断所有IPv6链接"></a>阻断所有IPv6链接</h2><blockquote>
-<p>此操作不会阻断响应<code>IPv6</code>的流量</p>
+    <title>御坂美琴生日快乐</title>
+    <url>/posts/MisakaMikoto/</url>
+    <content><![CDATA[<html><head></head><body><blockquote>
+<p><strong>你指间闪烁的电光，是我此生不变的信仰唯有这超电磁炮将永世长存！！！</strong></p>
 </blockquote>
-<p>由于 <code>ikuai </code>在 3.7.11 版本还不支持放行或阻断<code> ICMP</code> 协议，如果您想外网设备能ping通内网的话，需要需要创建两个配置，一个是阻断<code>TCP</code>还有一个阻断<code>UDP</code>，不想<code>ping</code>通的话，只需要创建一个配置选择任意协议即可。</p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/03/06/65e834d3a0bdd.webp" alt="ipv6防护墙介绍.webp"></p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/03/06/65e834d40ca02.webp" alt="ipv6阻断.webp"></p>
-<p>进接口一定是<code>wan</code>口由于笔者只有一个<code>wan</code>口，如果您有多个话请务必全部勾选，出接口是<code>lan</code>同样如果您有多个<code>lan</code>接口请全部勾上，这样我们内网设备就不会暴露外网了。</p>
-<h2 id="打开指定IPv6的连接"><a href="#打开指定IPv6的连接" class="headerlink" title="打开指定IPv6的连接"></a>打开指定IPv6的连接</h2><blockquote>
-<p>再说指定放行<code>IPv6</code>地址，如果您是静态<code>IPv6</code>，那你自己放行那个ip 即可，但是身为家庭宽带的话都是动态<code>IPv6</code>地址根本不可能知道ip会变成什么样子，还是说每次变化ip 的地址重新改吗？这里需要了解一下ipv6 的后缀生成是受MAC 地址影响的，通过EUI-64 编码进行处理，详情访问: <a href="https://ccie.lol/knowledge-base/ipv6-use-eui-64-convert-link-local-address/" rel="external nofollow noreferrer">【转】通过EUI-64自动生成IPv6地址和IPv6链路本地地址（Link-Local Address）</a></p>
+<h1 id="首先-祝姐姐大人生日快乐，又一年生日到啦吗，真快呀。"><a href="#首先-祝姐姐大人生日快乐，又一年生日到啦吗，真快呀。" class="headerlink" title="首先,祝姐姐大人生日快乐，又一年生日到啦吗，真快呀。"></a>首先,祝姐姐大人生日快乐，又一年生日到啦吗，真快呀。</h1><img src="https://img.c-dreamer.top/i/1/2023/05/01/644f7e2e4fa62.webp" alt="d6e89b5.webp" style="zoom:50%;">
+
+<img src="https://img.c-dreamer.top/i/1/2023/05/01/644f7e24d2d9a.webp" alt="7606d4f59bf.webp" style="zoom:50%;">
+
+
+
+
+<h1 id="感想"><a href="#感想" class="headerlink" title="感想"></a>感想</h1><h2 id="对我个人："><a href="#对我个人：" class="headerlink" title="对我个人："></a>对我个人：</h2><p>我已经是一个入宅很晚很晚的人了，我的入宅番是 <code>约战</code> 我并不是完完全全的 某科学的 世界的粉丝，我也并没有看过魔法禁书目录，我仅对于 超电磁炮 御坂美琴的热爱。</p>
+<blockquote>
+<p>摘抄一部分萌娘百科的话。</p>
+<p>天真活泼、爱唠叨的14岁元气少女。有着一头及肩的茶色发丝、同样是茶色的瞳孔、绝不服输的眼神、不需要化妆也很俏丽的面孔。因为外形秀丽加上成绩优秀，因此成为校内学生心目中的偶像，甚至会被学妹们尊称为“御坂大人”。平素都是穿着常盘台的制服，而裙底的安全裤则是美琴活泼的象征。性格好胜、正义感强，有着男孩子般的爽朗性格，但是尤其是在面对可爱的东西时，就显得缺乏耐心、非常不坦率。当喜欢的东西（呱太）或中意的东西被别人评价说“太儿童化”的时候，都会义正言辞地的否决，然后愉♂悦地享受。紧张时会蹦出“喵”的口癖，并且在担心他人慌乱时会自称“美琴姐姐”</p>
 </blockquote>
-<p><strong>对于windows 获取ipv6地址使用 EUI-64 编码得到的理论值和实际值可能不一样</strong></p>
-<p>可以使用 <a href="https://eui64-calc.princelle.org/" rel="external nofollow noreferrer">EUI-64 计算器</a></p>
-<p>例如 <code>bc:34:11:c6:8a:19 </code>通过计算可以得到 <code>BE34:11FF:FEC6:8A19</code> 理论情况的<code>ipv6</code>，据我测试后四位基本上都是一样的，前面受到<code>IPv6</code>前缀影响。</p>
-<img src="https://img.misaka.pics/ShellBlogImg/1/2024/03/06/65e846c30a412.webp" alt="指定IPv6放行.webp" style="zoom:67%;">
-
-<p>在已经匹配的内容中<code>::8A19</code>改成你自己的后缀四位，<code>ikuai </code>的防火墙逻辑是先放行后阻断，所以不需要关系防火墙配置的顺序。</p>
-<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">::8a1f/::ffff</span><br></pre></td></tr></tbody></table></figure>
-
-<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p><a href="https://ccie.lol/knowledge-base/ipv6-use-eui-64-convert-link-local-address/" rel="external nofollow noreferrer">【转】通过EUI-64自动生成IPv6地址和IPv6链路本地地址（Link-Local Address）</a></p>
-<p> <a href="https://eui64-calc.princelle.org/" rel="external nofollow noreferrer">EUI-64 计算器</a></p>
+<h2 id="对于B站："><a href="#对于B站：" class="headerlink" title="对于B站："></a>对于B站：</h2><p>虽然我入宅很晚，我接触B站也是比较晚了，但最近几年B站环境都是人尽皆知的事情了，对于 B站往年 不管是对 美琴的庆生 还是对其他知名的动漫人物，都是在发的，对于去年B站没有给美琴庆生以及其他人物，我表示非常是生气也表示非常的无奈，但对于今年B站的改变，对于庆生很早就开始宣传了，但并不是 哔哩哔哩弹幕网 这个账号进行宣传，而是 哔哩哔哩番剧组和哔哩哔哩会员购 进行宣传的。剩下的我就不想多说了，B站快要嗝屁的时候还想在收割一波自己以前最老以及起家的人，怎么说呢。从以前B站属于二次元的天地，到最后 二次元滚出B站。</p>
+<p>可能以前 别人说我是二刺螈 我表示可能会有点开心，但对于近几年 <strong>滚，老子不是二次元</strong></p>
+<h2 id="结束语"><a href="#结束语" class="headerlink" title="结束语"></a>结束语</h2><p>时间会磨损一切，那么我又能坚持多久呢？</p>
+<h1 id="引用："><a href="#引用：" class="headerlink" title="引用："></a>引用：</h1><p> 萌娘百科：<a href="https://zh.moegirl.org.cn/%E5%BE%A1%E5%9D%82%E7%BE%8E%E7%90%B4" rel="external nofollow noreferrer">御坂美琴人物简介</a></p>
 </body></html>]]></content>
+      <categories>
+        <category>生活随想</category>
+      </categories>
       <tags>
-        <tag>Ikuai</tag>
-        <tag>防火墙</tag>
-        <tag>firewall</tag>
-        <tag>IPv6</tag>
+        <tag>Misaka</tag>
+        <tag>御坂美琴</tag>
+        <tag>某科学的</tag>
       </tags>
   </entry>
   <entry>
@@ -805,35 +837,38 @@
       </tags>
   </entry>
   <entry>
-    <title>御坂美琴生日快乐</title>
-    <url>/posts/MisakaMikoto/</url>
-    <content><![CDATA[<html><head></head><body><blockquote>
-<p><strong>你指间闪烁的电光，是我此生不变的信仰唯有这超电磁炮将永世长存！！！</strong></p>
+    <title>新版本Spring-Security配置踩坑</title>
+    <url>/posts/Spring-Security/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="引言："><a href="#引言：" class="headerlink" title="引言："></a>引言：</h1><blockquote>
+<p>事情是这样的，我最近打算学习了springSecurity的时候，跟着视频学习的时候发现配置类 <code>WebSecurityConfigurerAdapter</code> 过时了，这个问题本篇的文章会告诉你答案，以及我有不小心选择了spring boot3.0 的版本然后<code>authorizeRequests</code>也过时了。如果此文章有错欢迎大佬批评指教。</p>
 </blockquote>
-<h1 id="首先-祝姐姐大人生日快乐，又一年生日到啦吗，真快呀。"><a href="#首先-祝姐姐大人生日快乐，又一年生日到啦吗，真快呀。" class="headerlink" title="首先,祝姐姐大人生日快乐，又一年生日到啦吗，真快呀。"></a>首先,祝姐姐大人生日快乐，又一年生日到啦吗，真快呀。</h1><img src="https://img.c-dreamer.top/i/1/2023/05/01/644f7e2e4fa62.webp" alt="d6e89b5.webp" style="zoom:50%;">
+<h1 id="Spring-Security的版本"><a href="#Spring-Security的版本" class="headerlink" title="Spring-Security的版本"></a>Spring-Security的版本</h1><h2 id="Spring-Security5-7-版本"><a href="#Spring-Security5-7-版本" class="headerlink" title="Spring-Security5.7+版本"></a>Spring-Security5.7+版本</h2><p>这个版本差不多是spring-boot 2.7版本使用的，首先<code>WebSecurityConfigurerAdapter</code> 过时，但是在在过时的源码类中，会叫我们如何进行配置新版本的Spring-Security的配置，官方的我贴这里</p>
+<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">提供用于创建 WebSecurityConfigurer 实例的方便基类。该实现允许通过重写方法进行自定义。</span></span><br><span class="line"><span class="comment">将自动应用查找 AbstractHttpConfigurer 自 SpringFactoriesLoader 的结果，以允许开发人员扩展默认值。</span></span><br><span class="line"><span class="comment">为此，您必须创建一个扩展 AbstractHttpConfigurer 的类，</span></span><br><span class="line"><span class="comment">然后在“META-INF/spring.factory”的类路径中创建一个文件，如下所示：</span></span><br><span class="line"><span class="comment">org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer=</span></span><br><span class="line"><span class="comment">sample.MyClassThatExtendsAbstractHttpConfigurer</span></span><br><span class="line"><span class="comment">如果有多个应添加的类，则可以使用 “，”分隔值。例如：</span></span><br><span class="line"><span class="comment">  org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer=</span></span><br><span class="line"><span class="comment">  sample.MyClassThatExtendsAbstractHttpConfigurer, sample.OtherThatExtendsAbstractHttpConfigurer</span></span><br><span class="line"><span class="comment">已弃用</span></span><br><span class="line"><span class="comment">org.springframework.security.web.SecurityFilterChain使用</span></span><br><span class="line"><span class="comment">Bean 进行配置或WebSecurityCustomizer使用 Bean 进行配置 HttpSecurity WebSecurity。</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line">      <span class="meta">@Bean</span></span><br><span class="line">      <span class="keyword">public</span> SecurityFilterChain <span class="title function_">securityFilterChain</span><span class="params">(HttpSecurity http)</span> <span class="keyword">throws</span> Exception {</span><br><span class="line">          http</span><br><span class="line">              .authorizeHttpRequests((authz) -&gt;</span><br><span class="line">                  authz.anyRequest().authenticated()</span><br><span class="line">              );</span><br><span class="line">              <span class="comment">// ...</span></span><br><span class="line">          <span class="keyword">return</span> http.build();</span><br><span class="line">      }</span><br><span class="line"> </span><br><span class="line">     <span class="meta">@Bean</span></span><br><span class="line">     <span class="keyword">public</span> WebSecurityCustomizer <span class="title function_">webSecurityCustomizer</span><span class="params">(WebSecurity web)</span> {</span><br><span class="line">         <span class="keyword">return</span> (web) -&gt; web.ignoring().antMatchers(<span class="string">"/resources/**"</span>);</span><br><span class="line">     }</span><br><span class="line">  <span class="comment">/**</span></span><br><span class="line"><span class="comment">请参阅 Spring Security without WebSecurityConfigurerAdapter  以获取更多详细信息。</span></span><br><span class="line"><span class="comment">请参阅:</span></span><br><span class="line"><span class="comment">EnableWebSecurity</span></span><br><span class="line"><span class="comment">作者:</span></span><br><span class="line"><span class="comment">罗伯·温奇</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></tbody></table></figure>
 
-<img src="https://img.c-dreamer.top/i/1/2023/05/01/644f7e24d2d9a.webp" alt="7606d4f59bf.webp" style="zoom:50%;">
+<p>可以看到，新版本官方推荐使用@Bean 进行配置，这个感觉更加优雅了，和我们原来使用配置类进行配置的都是大同小异，但这里有个问题官方没有讲（或许我没有找到）。</p>
+<h3 id="关于-AuthenticationManager-认证类的问题"><a href="#关于-AuthenticationManager-认证类的问题" class="headerlink" title="关于 AuthenticationManager 认证类的问题"></a>关于 <code>AuthenticationManager</code> 认证类的问题</h3><p>因为，可能我们需要因为某种原因重写 过滤器的类，但最后我们在旧版本需要指定一个<code>AuthenticationManager</code> 类不管是工厂里的还是直接springboot启动时创建的。这个地方我查了好久网上的没有一个能一个找到的，全部都是重复。</p>
+<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">@Autowired</span></span><br><span class="line">AuthenticationConfiguration authenticationConfiguration;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> AuthenticationManager <span class="title function_">authenticationManager</span><span class="params">()</span> <span class="keyword">throws</span> Exception {</span><br><span class="line">    <span class="type">AuthenticationManager</span> <span class="variable">authenticationManager</span> <span class="operator">=</span> </span><br><span class="line">        authenticationConfiguration.getAuthenticationManager();</span><br><span class="line">    <span class="keyword">return</span> authenticationManager;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<p>我们只需要使用 <code>AuthenticationConfiguration</code> 创建一个``AuthenticationManager<code> </code> 类即可，推荐写在Security配置类中，这样可以直接方便调用即可。</p>
+<p>例如我重写了 <code>UsernamePasswordAuthenticationFilter</code>的过滤器 <code>KaptchaFilter</code> 是继承了<code>UsernamePasswordAuthenticationFilter</code> 和并且重写了里面的方法加入了验证码。</p>
+<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">@Bean</span></span><br><span class="line"><span class="keyword">public</span> KaptchaFilter <span class="title function_">kaptchaFilter</span><span class="params">()</span> <span class="keyword">throws</span> Exception {</span><br><span class="line">    <span class="type">KaptchaFilter</span> <span class="variable">kaptchaFilter</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">KaptchaFilter</span>();</span><br><span class="line">    kaptchaFilter.setFilterProcessesUrl(<span class="string">"/doLogin"</span>);</span><br><span class="line">    kaptchaFilter.setUsernameParameter(<span class="string">"uname"</span>);</span><br><span class="line">    kaptchaFilter.setPasswordParameter(<span class="string">"passwd"</span>);</span><br><span class="line">    kaptchaFilter.setKaptcha(<span class="string">"kaptcha"</span>);</span><br><span class="line">    <span class="comment">//指定认证管理器</span></span><br><span class="line">    kaptchaFilter.setAuthenticationManager(authenticationManager());</span><br><span class="line">    kaptchaFilter.setAuthenticationSuccessHandler((request, response, authentication) -&gt; {</span><br><span class="line">        response.sendRedirect(<span class="string">"/index.html"</span>);</span><br><span class="line">    });</span><br><span class="line">    kaptchaFilter.setAuthenticationFailureHandler((request, response, exception) -&gt; {</span><br><span class="line">        response.sendRedirect(<span class="string">"/login.html"</span>);</span><br><span class="line">    });</span><br><span class="line">    <span class="keyword">return</span> kaptchaFilter;</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="meta">@Bean</span></span><br><span class="line"><span class="keyword">public</span> SecurityFilterChain <span class="title function_">securityFilter</span><span class="params">(HttpSecurity http)</span><span class="keyword">throws</span> Exception{</span><br><span class="line">    <span class="keyword">return</span> http.authorizeRequests()</span><br><span class="line">            .mvcMatchers(<span class="string">"/login.html"</span>).permitAll()</span><br><span class="line">            .mvcMatchers(<span class="string">"/vc.jpg"</span>).permitAll()</span><br><span class="line">            .anyRequest().authenticated()</span><br><span class="line">            .and()</span><br><span class="line">            .formLogin()</span><br><span class="line">            .loginPage(<span class="string">"/login.html"</span>)</span><br><span class="line">            .loginProcessingUrl(<span class="string">"/doLogin"</span>)</span><br><span class="line">            .usernameParameter(<span class="string">"uname"</span>)</span><br><span class="line">            .passwordParameter(<span class="string">"passwd"</span>)</span><br><span class="line">            .defaultSuccessUrl(<span class="string">"/index.html"</span>,<span class="literal">true</span>)</span><br><span class="line">            .and()</span><br><span class="line">            .csrf().disable()</span><br><span class="line">            .addFilterAt(kaptchaFilter(), UsernamePasswordAuthenticationFilter.class)</span><br><span class="line">            .build();</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 
 
 
+<h2 id="关于SpringSecurity6-02-版本"><a href="#关于SpringSecurity6-02-版本" class="headerlink" title="关于SpringSecurity6.02+版本"></a>关于SpringSecurity6.02+版本</h2><p>这个版本差不多是spring boot 3.0+开始使用的，如果你按照上面新版本使用@Bean配置的话，会发现<code>HttpSecurity</code>中的<code>authorizeRequests</code> 方法标记为过时了，而且<code>mvcMatchers</code>也没有这个方法了，原因6.0的SpringSecurity推荐使用<code>authorizeHttpRequests</code>进行配置，对就是很烦人，不能一个版本改完，而且文档及其混乱。</p>
+<p>例如：</p>
+<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">@Bean</span></span><br><span class="line"><span class="keyword">public</span> SecurityFilterChain <span class="title function_">securityFilterChain</span><span class="params">(HttpSecurity http)</span> <span class="keyword">throws</span> Exception {</span><br><span class="line">    <span class="keyword">return</span> http.authorizeHttpRequests()</span><br><span class="line">            .requestMatchers(<span class="string">"/vc.jpg"</span>).permitAll()<span class="comment">//放行指定选项</span></span><br><span class="line">        	.anyRequest().authenticated()<span class="comment">//拦截所有请求都需要认证</span></span><br><span class="line">            .and()</span><br><span class="line">            .formLogin()</span><br><span class="line">            .and()</span><br><span class="line">            .logout()</span><br><span class="line">            .and()</span><br><span class="line">            .addFilterAt(loginKaptchaFilter(),UsernamePasswordAuthenticationFilter.class)</span><br><span class="line">            .csrf().disable()</span><br><span class="line">            .build();</span><br><span class="line"></span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 
-<h1 id="感想"><a href="#感想" class="headerlink" title="感想"></a>感想</h1><h2 id="对我个人："><a href="#对我个人：" class="headerlink" title="对我个人："></a>对我个人：</h2><p>我已经是一个入宅很晚很晚的人了，我的入宅番是 <code>约战</code> 我并不是完完全全的 某科学的 世界的粉丝，我也并没有看过魔法禁书目录，我仅对于 超电磁炮 御坂美琴的热爱。</p>
-<blockquote>
-<p>摘抄一部分萌娘百科的话。</p>
-<p>天真活泼、爱唠叨的14岁元气少女。有着一头及肩的茶色发丝、同样是茶色的瞳孔、绝不服输的眼神、不需要化妆也很俏丽的面孔。因为外形秀丽加上成绩优秀，因此成为校内学生心目中的偶像，甚至会被学妹们尊称为“御坂大人”。平素都是穿着常盘台的制服，而裙底的安全裤则是美琴活泼的象征。性格好胜、正义感强，有着男孩子般的爽朗性格，但是尤其是在面对可爱的东西时，就显得缺乏耐心、非常不坦率。当喜欢的东西（呱太）或中意的东西被别人评价说“太儿童化”的时候，都会义正言辞地的否决，然后愉♂悦地享受。紧张时会蹦出“喵”的口癖，并且在担心他人慌乱时会自称“美琴姐姐”</p>
-</blockquote>
-<h2 id="对于B站："><a href="#对于B站：" class="headerlink" title="对于B站："></a>对于B站：</h2><p>虽然我入宅很晚，我接触B站也是比较晚了，但最近几年B站环境都是人尽皆知的事情了，对于 B站往年 不管是对 美琴的庆生 还是对其他知名的动漫人物，都是在发的，对于去年B站没有给美琴庆生以及其他人物，我表示非常是生气也表示非常的无奈，但对于今年B站的改变，对于庆生很早就开始宣传了，但并不是 哔哩哔哩弹幕网 这个账号进行宣传，而是 哔哩哔哩番剧组和哔哩哔哩会员购 进行宣传的。剩下的我就不想多说了，B站快要嗝屁的时候还想在收割一波自己以前最老以及起家的人，怎么说呢。从以前B站属于二次元的天地，到最后 二次元滚出B站。</p>
-<p>可能以前 别人说我是二刺螈 我表示可能会有点开心，但对于近几年 <strong>滚，老子不是二次元</strong></p>
-<h2 id="结束语"><a href="#结束语" class="headerlink" title="结束语"></a>结束语</h2><p>时间会磨损一切，那么我又能坚持多久呢？</p>
-<h1 id="引用："><a href="#引用：" class="headerlink" title="引用："></a>引用：</h1><p> 萌娘百科：<a href="https://zh.moegirl.org.cn/%E5%BE%A1%E5%9D%82%E7%BE%8E%E7%90%B4" rel="external nofollow noreferrer">御坂美琴人物简介</a></p>
+<p>其他配置和SpringSecurity5.7+的配置一样。</p>
 </body></html>]]></content>
       <categories>
-        <category>生活随想</category>
+        <category>Bug生成者</category>
       </categories>
       <tags>
-        <tag>Misaka</tag>
-        <tag>御坂美琴</tag>
-        <tag>某科学的</tag>
+        <tag>Spring</tag>
+        <tag>Java</tag>
+        <tag>Security</tag>
+        <tag>SpringSecuriy</tag>
       </tags>
   </entry>
   <entry>
@@ -884,52 +919,6 @@
       </tags>
   </entry>
   <entry>
-    <title>我的网站被人镜像了</title>
-    <url>/posts/Website-mirrored/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>事情是这样的我昨天配置一些东西是错的，同步上去了今天才发现，随后回滚之后发现防战访问突然下降好多，我以为是Google 没有收录一些文章决定拿一些文章关键词搜一搜，发现了两个我。</p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/08/11/66b8c1d2bb798.webp" alt="vs.webp"></p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/08/11/66b8c42125db6.webp" alt="mangxb.webp"></p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/08/11/66b8c45dd04f6.webp" alt="Snipaste_2024-08-11_21-42-05.webp"></p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/08/11/66b8c496e4fa7.webp" alt="Snipaste_2024-08-11_21-42-28.webp"><br>我已经向 Google bing dnspod  cloudlfare 进行举报 数字千年版权法案(DMCA) ，请 域名所属人立即删除我所有文章，网站等一些列属于我的数据。</p>
-<h1 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h1><p>本篇文章着急发出，可能会有问题，请大家见谅。</p>
-</body></html>]]></content>
-  </entry>
-  <entry>
-    <title>新版本Spring-Security配置踩坑</title>
-    <url>/posts/Spring-Security/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="引言："><a href="#引言：" class="headerlink" title="引言："></a>引言：</h1><blockquote>
-<p>事情是这样的，我最近打算学习了springSecurity的时候，跟着视频学习的时候发现配置类 <code>WebSecurityConfigurerAdapter</code> 过时了，这个问题本篇的文章会告诉你答案，以及我有不小心选择了spring boot3.0 的版本然后<code>authorizeRequests</code>也过时了。如果此文章有错欢迎大佬批评指教。</p>
-</blockquote>
-<h1 id="Spring-Security的版本"><a href="#Spring-Security的版本" class="headerlink" title="Spring-Security的版本"></a>Spring-Security的版本</h1><h2 id="Spring-Security5-7-版本"><a href="#Spring-Security5-7-版本" class="headerlink" title="Spring-Security5.7+版本"></a>Spring-Security5.7+版本</h2><p>这个版本差不多是spring-boot 2.7版本使用的，首先<code>WebSecurityConfigurerAdapter</code> 过时，但是在在过时的源码类中，会叫我们如何进行配置新版本的Spring-Security的配置，官方的我贴这里</p>
-<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">提供用于创建 WebSecurityConfigurer 实例的方便基类。该实现允许通过重写方法进行自定义。</span></span><br><span class="line"><span class="comment">将自动应用查找 AbstractHttpConfigurer 自 SpringFactoriesLoader 的结果，以允许开发人员扩展默认值。</span></span><br><span class="line"><span class="comment">为此，您必须创建一个扩展 AbstractHttpConfigurer 的类，</span></span><br><span class="line"><span class="comment">然后在“META-INF/spring.factory”的类路径中创建一个文件，如下所示：</span></span><br><span class="line"><span class="comment">org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer=</span></span><br><span class="line"><span class="comment">sample.MyClassThatExtendsAbstractHttpConfigurer</span></span><br><span class="line"><span class="comment">如果有多个应添加的类，则可以使用 “，”分隔值。例如：</span></span><br><span class="line"><span class="comment">  org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer=</span></span><br><span class="line"><span class="comment">  sample.MyClassThatExtendsAbstractHttpConfigurer, sample.OtherThatExtendsAbstractHttpConfigurer</span></span><br><span class="line"><span class="comment">已弃用</span></span><br><span class="line"><span class="comment">org.springframework.security.web.SecurityFilterChain使用</span></span><br><span class="line"><span class="comment">Bean 进行配置或WebSecurityCustomizer使用 Bean 进行配置 HttpSecurity WebSecurity。</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line">      <span class="meta">@Bean</span></span><br><span class="line">      <span class="keyword">public</span> SecurityFilterChain <span class="title function_">securityFilterChain</span><span class="params">(HttpSecurity http)</span> <span class="keyword">throws</span> Exception {</span><br><span class="line">          http</span><br><span class="line">              .authorizeHttpRequests((authz) -&gt;</span><br><span class="line">                  authz.anyRequest().authenticated()</span><br><span class="line">              );</span><br><span class="line">              <span class="comment">// ...</span></span><br><span class="line">          <span class="keyword">return</span> http.build();</span><br><span class="line">      }</span><br><span class="line"> </span><br><span class="line">     <span class="meta">@Bean</span></span><br><span class="line">     <span class="keyword">public</span> WebSecurityCustomizer <span class="title function_">webSecurityCustomizer</span><span class="params">(WebSecurity web)</span> {</span><br><span class="line">         <span class="keyword">return</span> (web) -&gt; web.ignoring().antMatchers(<span class="string">"/resources/**"</span>);</span><br><span class="line">     }</span><br><span class="line">  <span class="comment">/**</span></span><br><span class="line"><span class="comment">请参阅 Spring Security without WebSecurityConfigurerAdapter  以获取更多详细信息。</span></span><br><span class="line"><span class="comment">请参阅:</span></span><br><span class="line"><span class="comment">EnableWebSecurity</span></span><br><span class="line"><span class="comment">作者:</span></span><br><span class="line"><span class="comment">罗伯·温奇</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></tbody></table></figure>
-
-<p>可以看到，新版本官方推荐使用@Bean 进行配置，这个感觉更加优雅了，和我们原来使用配置类进行配置的都是大同小异，但这里有个问题官方没有讲（或许我没有找到）。</p>
-<h3 id="关于-AuthenticationManager-认证类的问题"><a href="#关于-AuthenticationManager-认证类的问题" class="headerlink" title="关于 AuthenticationManager 认证类的问题"></a>关于 <code>AuthenticationManager</code> 认证类的问题</h3><p>因为，可能我们需要因为某种原因重写 过滤器的类，但最后我们在旧版本需要指定一个<code>AuthenticationManager</code> 类不管是工厂里的还是直接springboot启动时创建的。这个地方我查了好久网上的没有一个能一个找到的，全部都是重复。</p>
-<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">@Autowired</span></span><br><span class="line">AuthenticationConfiguration authenticationConfiguration;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> AuthenticationManager <span class="title function_">authenticationManager</span><span class="params">()</span> <span class="keyword">throws</span> Exception {</span><br><span class="line">    <span class="type">AuthenticationManager</span> <span class="variable">authenticationManager</span> <span class="operator">=</span> </span><br><span class="line">        authenticationConfiguration.getAuthenticationManager();</span><br><span class="line">    <span class="keyword">return</span> authenticationManager;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-
-<p>我们只需要使用 <code>AuthenticationConfiguration</code> 创建一个``AuthenticationManager<code> </code> 类即可，推荐写在Security配置类中，这样可以直接方便调用即可。</p>
-<p>例如我重写了 <code>UsernamePasswordAuthenticationFilter</code>的过滤器 <code>KaptchaFilter</code> 是继承了<code>UsernamePasswordAuthenticationFilter</code> 和并且重写了里面的方法加入了验证码。</p>
-<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">@Bean</span></span><br><span class="line"><span class="keyword">public</span> KaptchaFilter <span class="title function_">kaptchaFilter</span><span class="params">()</span> <span class="keyword">throws</span> Exception {</span><br><span class="line">    <span class="type">KaptchaFilter</span> <span class="variable">kaptchaFilter</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">KaptchaFilter</span>();</span><br><span class="line">    kaptchaFilter.setFilterProcessesUrl(<span class="string">"/doLogin"</span>);</span><br><span class="line">    kaptchaFilter.setUsernameParameter(<span class="string">"uname"</span>);</span><br><span class="line">    kaptchaFilter.setPasswordParameter(<span class="string">"passwd"</span>);</span><br><span class="line">    kaptchaFilter.setKaptcha(<span class="string">"kaptcha"</span>);</span><br><span class="line">    <span class="comment">//指定认证管理器</span></span><br><span class="line">    kaptchaFilter.setAuthenticationManager(authenticationManager());</span><br><span class="line">    kaptchaFilter.setAuthenticationSuccessHandler((request, response, authentication) -&gt; {</span><br><span class="line">        response.sendRedirect(<span class="string">"/index.html"</span>);</span><br><span class="line">    });</span><br><span class="line">    kaptchaFilter.setAuthenticationFailureHandler((request, response, exception) -&gt; {</span><br><span class="line">        response.sendRedirect(<span class="string">"/login.html"</span>);</span><br><span class="line">    });</span><br><span class="line">    <span class="keyword">return</span> kaptchaFilter;</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="meta">@Bean</span></span><br><span class="line"><span class="keyword">public</span> SecurityFilterChain <span class="title function_">securityFilter</span><span class="params">(HttpSecurity http)</span><span class="keyword">throws</span> Exception{</span><br><span class="line">    <span class="keyword">return</span> http.authorizeRequests()</span><br><span class="line">            .mvcMatchers(<span class="string">"/login.html"</span>).permitAll()</span><br><span class="line">            .mvcMatchers(<span class="string">"/vc.jpg"</span>).permitAll()</span><br><span class="line">            .anyRequest().authenticated()</span><br><span class="line">            .and()</span><br><span class="line">            .formLogin()</span><br><span class="line">            .loginPage(<span class="string">"/login.html"</span>)</span><br><span class="line">            .loginProcessingUrl(<span class="string">"/doLogin"</span>)</span><br><span class="line">            .usernameParameter(<span class="string">"uname"</span>)</span><br><span class="line">            .passwordParameter(<span class="string">"passwd"</span>)</span><br><span class="line">            .defaultSuccessUrl(<span class="string">"/index.html"</span>,<span class="literal">true</span>)</span><br><span class="line">            .and()</span><br><span class="line">            .csrf().disable()</span><br><span class="line">            .addFilterAt(kaptchaFilter(), UsernamePasswordAuthenticationFilter.class)</span><br><span class="line">            .build();</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-
-
-
-<h2 id="关于SpringSecurity6-02-版本"><a href="#关于SpringSecurity6-02-版本" class="headerlink" title="关于SpringSecurity6.02+版本"></a>关于SpringSecurity6.02+版本</h2><p>这个版本差不多是spring boot 3.0+开始使用的，如果你按照上面新版本使用@Bean配置的话，会发现<code>HttpSecurity</code>中的<code>authorizeRequests</code> 方法标记为过时了，而且<code>mvcMatchers</code>也没有这个方法了，原因6.0的SpringSecurity推荐使用<code>authorizeHttpRequests</code>进行配置，对就是很烦人，不能一个版本改完，而且文档及其混乱。</p>
-<p>例如：</p>
-<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">@Bean</span></span><br><span class="line"><span class="keyword">public</span> SecurityFilterChain <span class="title function_">securityFilterChain</span><span class="params">(HttpSecurity http)</span> <span class="keyword">throws</span> Exception {</span><br><span class="line">    <span class="keyword">return</span> http.authorizeHttpRequests()</span><br><span class="line">            .requestMatchers(<span class="string">"/vc.jpg"</span>).permitAll()<span class="comment">//放行指定选项</span></span><br><span class="line">        	.anyRequest().authenticated()<span class="comment">//拦截所有请求都需要认证</span></span><br><span class="line">            .and()</span><br><span class="line">            .formLogin()</span><br><span class="line">            .and()</span><br><span class="line">            .logout()</span><br><span class="line">            .and()</span><br><span class="line">            .addFilterAt(loginKaptchaFilter(),UsernamePasswordAuthenticationFilter.class)</span><br><span class="line">            .csrf().disable()</span><br><span class="line">            .build();</span><br><span class="line"></span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-
-<p>其他配置和SpringSecurity5.7+的配置一样。</p>
-</body></html>]]></content>
-      <categories>
-        <category>Bug生成者</category>
-      </categories>
-      <tags>
-        <tag>Spring</tag>
-        <tag>Java</tag>
-        <tag>Security</tag>
-        <tag>SpringSecuriy</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>解决Umami v2.3升级问题，Something went wrong.</title>
     <url>/posts/Umami-fix/</url>
     <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>是的没错，发生这样的事情，应该很多<code>Umami</code>只要是v2.2版本应该都遇到了。 </p>
@@ -970,55 +959,37 @@
       </tags>
   </entry>
   <entry>
-    <title>Hexo butterfly 优化</title>
-    <url>/posts/butterfly/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
-<p>我也来水一篇博文吧，最近我也不知道在忙什么（<del>明明就是懒得更新</del>），也感谢  @<a href="https://yujie.pro/network/52.html" rel="external nofollow noreferrer">夜灭</a>博主,让我可以水一篇博文以及再次优化hexo博客，如你所见我的博客在国内访问基本上都能在5秒以内完成这个所有加载。</p>
-</blockquote>
-<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><h2 id="博客基本情况"><a href="#博客基本情况" class="headerlink" title="博客基本情况"></a>博客基本情况</h2><p>优化过的情况</p>
-<ol>
-<li>源站在GitHub Pages上</li>
-<li>使用双解析模式（国内 腾讯云 国外Cloudflare）</li>
-<li>把 hexo 需要的静态js 资源全部缓存到源站，不在走<code>jsdelivr</code></li>
-<li>图床使用自建数据在<code>backblaze</code>存储桶上，详细的图床解决方案：<a href="https://blog.ning.moe/posts/lskypro-backblaze/">https://blog.ning.moe/posts/lskypro-backblaze/</a></li>
-<li>图床使用cf的自定义域名进行双解析和第二点一样。</li>
-</ol>
-<p><img src="https://img.c-dreamer.top/i/1/2023/04/22/64439fea99b29.webp" alt="图.webp"></p>
-<h2 id="butterfly-静态资源优化"><a href="#butterfly-静态资源优化" class="headerlink" title="butterfly 静态资源优化"></a>butterfly 静态资源优化</h2><p>在最新的 <code>butterfly </code>4.8.1 中加入了自定义cdn 功能，虽然以前也能改那就要一个一个配置文件上改了</p>
-<figure class="highlight yaml"><table><tbody><tr><td class="code"><pre><span class="line"><span class="attr">CDN:</span></span><br><span class="line">  <span class="comment"># The CDN provider of internal scripts (主題內部 js 的 cdn 配置)</span></span><br><span class="line">  <span class="comment"># option: local/jsdelivr/unpkg/cdnjs/custom</span></span><br><span class="line">  <span class="comment"># Dev version can only choose. ( dev版的主題只能設置為 local )</span></span><br><span class="line">  <span class="attr">internal_provider:</span> <span class="string">local</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># The CDN provider of third party scripts (第三方 js 的 cdn 配置)</span></span><br><span class="line">  <span class="comment"># option: local/jsdelivr/unpkg/cdnjs/custom</span></span><br><span class="line">  <span class="comment"># when set it to local, you need to install hexo-butterfly-extjs</span></span><br><span class="line">  <span class="attr">third_party_provider:</span> <span class="string">local</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># Add version number to url, true or false</span></span><br><span class="line">  <span class="attr">version:</span> <span class="literal">false</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># Custom format</span></span><br><span class="line">  <span class="comment"># For example: https://cdn.staticfile.org/${cdnjs_name}/${version}/${min_cdnjs_file}</span></span><br><span class="line">  <span class="attr">custom_format:</span> </span><br><span class="line">  <span class="comment">#以下省略</span></span><br></pre></td></tr></tbody></table></figure>
-
-<p>我这里使用了 <code>local</code>的CDN就是把所有资源封装在本地了，你需要执行<code>npm install hexo-butterfly-extjs</code>命令，hexo 三连命令即可<code>hexo cl &amp;&amp; hexo  generate &amp;&amp; hexo server</code>。</p>
-<p>如果你不喜欢这样的话，<a href="https://butterfly.js.org/posts/ceeb73f/#CDN" rel="external nofollow noreferrer">可以参考主题官方提供的配置</a>,可以选择如 七牛云 BootCDN Elemecdn 等<br>但是这个配置其他cdn 我测试的时候偶尔也会丢失一部分静态资源。</p>
-</body></html>]]></content>
-      <categories>
-        <category>网络技术</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>butterfly</tag>
-        <tag>jsdelivr</tag>
-        <tag>CDN</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>关于启动CDN发生一些难受的小bug</title>
-    <url>/posts/cdn/</url>
-    <content><![CDATA[<html><head></head><body><p>好久没有更新了，如果你要问我这段鸽了半年干了什么，我只能说啥事情都没有干，还是没有想好写什么,但是我一定会在6月结束会高产的。 当然关于:部署多的CDN同时加速的网上教程也很少（也可能我没有找到太多）</p>
+    <title>Memos 对接 Authentik</title>
+    <url>/posts/authentik-OAuth2-memos/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>关于我的更多 <a href="/tags/Authentik/"><code>Authentik </code>相关文章</a>  ，详细安装（中文版本）<code>Authentik </code>请访问 <a href="https://www.bilibili.com/video/av1902852247/" rel="external nofollow noreferrer"><strong>ecwuuu</strong>发布的B站视频</a>关于正向代理： <a href="https://roy.wang/authentik-open-source-sso/#%E6%AD%A3%E5%90%91%E4%BB%A3%E7%90%86" rel="external nofollow noreferrer">roywang的文章</a></p>
 <blockquote>
-<p><strong>在这个星期又又又白嫖了Tencent Cloud的CDN活动</strong>，上次白嫖了一百块无门槛优惠卷，貌似我的域名在Tencent cloud只是首年续费了9块剩下5年都没有花过其他的了。</p>
+<p> 配置中：这是什么啊，这么麻烦还没过去啊。 配置后：真香好方便。</p>
 </blockquote>
-<p>国内用腾讯的国外用的是CF，现在也是国内国外都使用的CDN(我是不会告诉你我原来没有使用CDN的)</p>
-<h2 id="bug总结"><a href="#bug总结" class="headerlink" title="bug总结:"></a>bug总结:</h2><ol>
-<li>https的问题: 使用腾讯CDN就麻烦不行，CF特别顺畅没有发生过https的问题.在腾讯云的CDN想开https你需要上传你的证书才可以。</li>
-<li>开启CDN之后WordPress出现无法登陆后台的问题，腾讯需要**/wp-admin**变成不缓存即可。 3.指开启国内加速，可能导致国外的朋友出现无法访问的问题: 这个问题我还发过工单给腾讯云,简单总结一句话,你开国内的加速，跟国外有什么关系。 这个问题我只遇到过一次，有几率会抽风一下。 如果嫌麻烦的话你就顺便在腾讯也开启境外的，不麻烦的CF的好处就来了。 4.还有一个就是评论不会实时同步,其实这也不算是bug,毕竟CDN也不可能做到全访问实时的不过也不会特别慢。</li>
-</ol>
-<p>如果有错的地方欢迎指出,萌新下手麻烦轻一点.</p>
+<p>使用本文前请自行在 <code>Authentik </code>配置好 Memos使用的<code>应用程序</code>和<code>提供程序</code></p>
+<h1 id="Authentik-配置"><a href="#Authentik-配置" class="headerlink" title="Authentik 配置"></a>Authentik 配置</h1><p>默认你已经创建好了，一个给Memos使用的<code>应用程序</code>和<code>提供程序</code>,我们需要更改<code>提供程序</code>(给Memos 的)我们点击编辑</p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/09/66155d6445bbc.webp" alt="Authentik 配置 Memos-1.webp"></p>
+<blockquote>
+<p>选择客户端可以使用哪些作用域。客户端仍然需要指定访问数据的范围。</p>
+<p>按住 <code>ctrl/command</code> 键可选择多个项目。</p>
+</blockquote>
+<p>我们选中<code>authentik default OAuth Mapping: OpenID email</code> 和 <code>authentik default OAuth Mapping: OpenID openid</code>将<code>Subject 模式</code>改成基于用户名，然后更新。</p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/09/6615597f90737.webp" alt="Authentik 配置 Memos.webp"></p>
+<h1 id="Memos配置"><a href="#Memos配置" class="headerlink" title="Memos配置"></a>Memos配置</h1><blockquote>
+<p>在截至发文时 <code>Memos</code> 的版本为<code>v0.20.1</code>版本，<code>Memos</code>通过用户名为主键，其实只需要给<code>username</code>字段即可。</p>
+</blockquote>
+<p>根据上文调整的，现在sub 是我们的用户名字段，按照文章截屏填写其他的自行替换。这样你的的<code>Memos</code>就可以使用<code>Authentik</code>进行登录了。</p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/09/66155e6ca6dc7.webp" alt="Memos-Oauth2-config.webp"></p>
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p><code>Memos</code>的文档：<a href="https://www.usememos.com/docs/advanced-settings/keycloak" rel="external nofollow noreferrer">https://www.usememos.com/docs/advanced-settings/keycloak</a></p>
 </body></html>]]></content>
       <categories>
         <category>网络技术</category>
       </categories>
       <tags>
-        <tag>CDN</tag>
+        <tag>Authentik</tag>
+        <tag>SSO</tag>
+        <tag>OIDC</tag>
+        <tag>OAuth2</tag>
+        <tag>Memos</tag>
       </tags>
   </entry>
   <entry>
@@ -1121,37 +1092,45 @@
       </tags>
   </entry>
   <entry>
-    <title>Memos 对接 Authentik</title>
-    <url>/posts/authentik-OAuth2-memos/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>关于我的更多 <a href="/tags/Authentik/"><code>Authentik </code>相关文章</a>  ，详细安装（中文版本）<code>Authentik </code>请访问 <a href="https://www.bilibili.com/video/av1902852247/" rel="external nofollow noreferrer"><strong>ecwuuu</strong>发布的B站视频</a>关于正向代理： <a href="https://roy.wang/authentik-open-source-sso/#%E6%AD%A3%E5%90%91%E4%BB%A3%E7%90%86" rel="external nofollow noreferrer">roywang的文章</a></p>
-<blockquote>
-<p> 配置中：这是什么啊，这么麻烦还没过去啊。 配置后：真香好方便。</p>
+    <title>我的网站被人镜像了</title>
+    <url>/posts/Website-mirrored/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>事情是这样的我昨天配置一些东西是错的，同步上去了今天才发现，随后回滚之后发现防战访问突然下降好多，我以为是Google 没有收录一些文章决定拿一些文章关键词搜一搜，发现了两个我。</p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/08/11/66b8c1d2bb798.webp" alt="vs.webp"></p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/08/11/66b8c42125db6.webp" alt="mangxb.webp"></p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/08/11/66b8c45dd04f6.webp" alt="Snipaste_2024-08-11_21-42-05.webp"></p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/08/11/66b8c496e4fa7.webp" alt="Snipaste_2024-08-11_21-42-28.webp"><br>我已经向 Google bing dnspod  cloudlfare 进行举报 数字千年版权法案(DMCA) ，请 域名所属人立即删除我所有文章，网站等一些列属于我的数据。</p>
+<h1 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h1><p>本篇文章着急发出，可能会有问题，请大家见谅。</p>
+</body></html>]]></content>
+  </entry>
+  <entry>
+    <title>Hexo butterfly 优化</title>
+    <url>/posts/butterfly/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
+<p>我也来水一篇博文吧，最近我也不知道在忙什么（<del>明明就是懒得更新</del>），也感谢  @<a href="https://yujie.pro/network/52.html" rel="external nofollow noreferrer">夜灭</a>博主,让我可以水一篇博文以及再次优化hexo博客，如你所见我的博客在国内访问基本上都能在5秒以内完成这个所有加载。</p>
 </blockquote>
-<p>使用本文前请自行在 <code>Authentik </code>配置好 Memos使用的<code>应用程序</code>和<code>提供程序</code></p>
-<h1 id="Authentik-配置"><a href="#Authentik-配置" class="headerlink" title="Authentik 配置"></a>Authentik 配置</h1><p>默认你已经创建好了，一个给Memos使用的<code>应用程序</code>和<code>提供程序</code>,我们需要更改<code>提供程序</code>(给Memos 的)我们点击编辑</p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/09/66155d6445bbc.webp" alt="Authentik 配置 Memos-1.webp"></p>
-<blockquote>
-<p>选择客户端可以使用哪些作用域。客户端仍然需要指定访问数据的范围。</p>
-<p>按住 <code>ctrl/command</code> 键可选择多个项目。</p>
-</blockquote>
-<p>我们选中<code>authentik default OAuth Mapping: OpenID email</code> 和 <code>authentik default OAuth Mapping: OpenID openid</code>将<code>Subject 模式</code>改成基于用户名，然后更新。</p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/09/6615597f90737.webp" alt="Authentik 配置 Memos.webp"></p>
-<h1 id="Memos配置"><a href="#Memos配置" class="headerlink" title="Memos配置"></a>Memos配置</h1><blockquote>
-<p>在截至发文时 <code>Memos</code> 的版本为<code>v0.20.1</code>版本，<code>Memos</code>通过用户名为主键，其实只需要给<code>username</code>字段即可。</p>
-</blockquote>
-<p>根据上文调整的，现在sub 是我们的用户名字段，按照文章截屏填写其他的自行替换。这样你的的<code>Memos</code>就可以使用<code>Authentik</code>进行登录了。</p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/09/66155e6ca6dc7.webp" alt="Memos-Oauth2-config.webp"></p>
-<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p><code>Memos</code>的文档：<a href="https://www.usememos.com/docs/advanced-settings/keycloak" rel="external nofollow noreferrer">https://www.usememos.com/docs/advanced-settings/keycloak</a></p>
+<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><h2 id="博客基本情况"><a href="#博客基本情况" class="headerlink" title="博客基本情况"></a>博客基本情况</h2><p>优化过的情况</p>
+<ol>
+<li>源站在GitHub Pages上</li>
+<li>使用双解析模式（国内 腾讯云 国外Cloudflare）</li>
+<li>把 hexo 需要的静态js 资源全部缓存到源站，不在走<code>jsdelivr</code></li>
+<li>图床使用自建数据在<code>backblaze</code>存储桶上，详细的图床解决方案：<a href="https://blog.ning.moe/posts/lskypro-backblaze/">https://blog.ning.moe/posts/lskypro-backblaze/</a></li>
+<li>图床使用cf的自定义域名进行双解析和第二点一样。</li>
+</ol>
+<p><img src="https://img.c-dreamer.top/i/1/2023/04/22/64439fea99b29.webp" alt="图.webp"></p>
+<h2 id="butterfly-静态资源优化"><a href="#butterfly-静态资源优化" class="headerlink" title="butterfly 静态资源优化"></a>butterfly 静态资源优化</h2><p>在最新的 <code>butterfly </code>4.8.1 中加入了自定义cdn 功能，虽然以前也能改那就要一个一个配置文件上改了</p>
+<figure class="highlight yaml"><table><tbody><tr><td class="code"><pre><span class="line"><span class="attr">CDN:</span></span><br><span class="line">  <span class="comment"># The CDN provider of internal scripts (主題內部 js 的 cdn 配置)</span></span><br><span class="line">  <span class="comment"># option: local/jsdelivr/unpkg/cdnjs/custom</span></span><br><span class="line">  <span class="comment"># Dev version can only choose. ( dev版的主題只能設置為 local )</span></span><br><span class="line">  <span class="attr">internal_provider:</span> <span class="string">local</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># The CDN provider of third party scripts (第三方 js 的 cdn 配置)</span></span><br><span class="line">  <span class="comment"># option: local/jsdelivr/unpkg/cdnjs/custom</span></span><br><span class="line">  <span class="comment"># when set it to local, you need to install hexo-butterfly-extjs</span></span><br><span class="line">  <span class="attr">third_party_provider:</span> <span class="string">local</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># Add version number to url, true or false</span></span><br><span class="line">  <span class="attr">version:</span> <span class="literal">false</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># Custom format</span></span><br><span class="line">  <span class="comment"># For example: https://cdn.staticfile.org/${cdnjs_name}/${version}/${min_cdnjs_file}</span></span><br><span class="line">  <span class="attr">custom_format:</span> </span><br><span class="line">  <span class="comment">#以下省略</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>我这里使用了 <code>local</code>的CDN就是把所有资源封装在本地了，你需要执行<code>npm install hexo-butterfly-extjs</code>命令，hexo 三连命令即可<code>hexo cl &amp;&amp; hexo  generate &amp;&amp; hexo server</code>。</p>
+<p>如果你不喜欢这样的话，<a href="https://butterfly.js.org/posts/ceeb73f/#CDN" rel="external nofollow noreferrer">可以参考主题官方提供的配置</a>,可以选择如 七牛云 BootCDN Elemecdn 等<br>但是这个配置其他cdn 我测试的时候偶尔也会丢失一部分静态资源。</p>
 </body></html>]]></content>
       <categories>
         <category>网络技术</category>
       </categories>
       <tags>
-        <tag>Authentik</tag>
-        <tag>SSO</tag>
-        <tag>OIDC</tag>
-        <tag>OAuth2</tag>
-        <tag>Memos</tag>
+        <tag>hexo</tag>
+        <tag>butterfly</tag>
+        <tag>jsdelivr</tag>
+        <tag>CDN</tag>
       </tags>
   </entry>
   <entry>
@@ -1209,6 +1188,27 @@
         <tag>butterfly</tag>
         <tag>twikoo</tag>
         <tag>评论</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于启动CDN发生一些难受的小bug</title>
+    <url>/posts/cdn/</url>
+    <content><![CDATA[<html><head></head><body><p>好久没有更新了，如果你要问我这段鸽了半年干了什么，我只能说啥事情都没有干，还是没有想好写什么,但是我一定会在6月结束会高产的。 当然关于:部署多的CDN同时加速的网上教程也很少（也可能我没有找到太多）</p>
+<blockquote>
+<p><strong>在这个星期又又又白嫖了Tencent Cloud的CDN活动</strong>，上次白嫖了一百块无门槛优惠卷，貌似我的域名在Tencent cloud只是首年续费了9块剩下5年都没有花过其他的了。</p>
+</blockquote>
+<p>国内用腾讯的国外用的是CF，现在也是国内国外都使用的CDN(我是不会告诉你我原来没有使用CDN的)</p>
+<h2 id="bug总结"><a href="#bug总结" class="headerlink" title="bug总结:"></a>bug总结:</h2><ol>
+<li>https的问题: 使用腾讯CDN就麻烦不行，CF特别顺畅没有发生过https的问题.在腾讯云的CDN想开https你需要上传你的证书才可以。</li>
+<li>开启CDN之后WordPress出现无法登陆后台的问题，腾讯需要**/wp-admin**变成不缓存即可。 3.指开启国内加速，可能导致国外的朋友出现无法访问的问题: 这个问题我还发过工单给腾讯云,简单总结一句话,你开国内的加速，跟国外有什么关系。 这个问题我只遇到过一次，有几率会抽风一下。 如果嫌麻烦的话你就顺便在腾讯也开启境外的，不麻烦的CF的好处就来了。 4.还有一个就是评论不会实时同步,其实这也不算是bug,毕竟CDN也不可能做到全访问实时的不过也不会特别慢。</li>
+</ol>
+<p>如果有错的地方欢迎指出,萌新下手麻烦轻一点.</p>
+</body></html>]]></content>
+      <categories>
+        <category>网络技术</category>
+      </categories>
+      <tags>
+        <tag>CDN</tag>
       </tags>
   </entry>
   <entry>
@@ -1289,6 +1289,89 @@
         <tag>easyconnect</tag>
         <tag>深信服</tag>
         <tag>vpn</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>世界，您好！</title>
+    <url>/posts/hello-world-2-2/</url>
+    <content><![CDATA[<html><head></head><body><p>欢迎使用WordPress。这是您的第一篇文章。编辑或删除它，然后开始写作吧！</p>
+<p><embed src="//music.163.com/style/swf/widget.swf?sid=5110133&amp;type=2&amp;auto=1&amp;width=320&amp;height=66" width="340" height="86" allownetworking="all"></p>
+</body></html>]]></content>
+      <categories>
+        <category>生活随想</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>使用GitHub Actions 自动构建部署发布Spring Boot应用</title>
+    <url>/posts/gitub-actions/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>最近这一周，我加入了奇奇怪怪的Team，我负责将编写的新接口打包并发布到服务器上。每次都需要手动执行打包、发布、关闭旧版本程序和启动新版本程序等繁琐的步骤，这让我感到非常不便，而且也非常重复。对于这种重复性的任务，我想到了可以利用机器来完成，于是决定尝试使用 GitHub 上的工作流。</p>
+<h1 id="需要准备的东西："><a href="#需要准备的东西：" class="headerlink" title="需要准备的东西："></a>需要准备的东西：</h1><ul>
+<li>掌握搜索引擎技能（保证一直是最新的知识。）</li>
+<li>一个大脑🧠</li>
+<li>一个GitHub的账号（）</li>
+<li>掌握基础的git 操作</li>
+<li>你需要掌握一门语言例如 Java nodejs等这样才可以使用工作流</li>
+</ul>
+<p>本篇就那我自己写的屎山 Spring Boot应用举例子吧</p>
+<h1 id="什么是Gitub-Actions？"><a href="#什么是Gitub-Actions？" class="headerlink" title="什么是Gitub-Actions？"></a>什么是Gitub-Actions？</h1><p>GitHub Actions是自动化工作流程工具，用于自动化构建、测试、部署和集成软件项目。它通过一系列事件、触发器和任务来执行各种操作，以实现持续集成和持续交付。</p>
+<p>GitHub允许你可以发布以及共享你自己的Actions，别人可以通过市场找到你的Actions从而不需要在重复造轮子了。</p>
+<h1 id="什么是CI-CD？"><a href="#什么是CI-CD？" class="headerlink" title="什么是CI/CD？"></a>什么是CI/CD？</h1><p>CI/CD是持续集成（Continuous Integration）与持续交付/持续部署（Continuous Delivery/Continuous Deployment）的缩写，是一种软件开发实践和方法论。</p>
+<p>持续集成（CI）是指开发人员将其代码频繁地集成到共享代码存储库中，并通过自动化构建和测试流程来验证代码的正确性。这样可以确保团队成员的代码变更能够快速地集成到主干代码中，并减少代码集成过程中的错误。</p>
+<p>持续交付（CD）是指将通过持续集成产生的软件交付给质量保证团队进行进一步的自动化测试、部署和发布。持续交付的目标是确保软件始终处于可部署状态，以便可以随时交付给用户。</p>
+<p>持续部署（CD）是持续交付的进一步延伸，指将通过持续交付阶段产生的可部署软件自动地部署到生产环境中，使软件能够快速地、可靠地投入使用。</p>
+<p>通过采用CI/CD实践，团队可以实现更快速、可靠、高质量的软件交付。自动化的构建、测试、部署和发布流程能够减少人为错误，提高开发团队的生产效率，并使软件交付过程更加可靠和可追踪。</p>
+<blockquote>
+<p>以上文本来自chatGPT。</p>
+</blockquote>
+<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><h2 id="Actions的概念："><a href="#Actions的概念：" class="headerlink" title="Actions的概念："></a>Actions的概念：</h2><ul>
+<li><strong><code>workflow</code> （工作流）：一个工作流程是一系列的任务（jobs）和步骤（steps），定义了自动化的过程。</strong></li>
+<li><strong>Job（任务）</strong>：一个工作流程可以包含一个或多个任务，每个任务运行在独立的环境中。每个任务可以包含一系列的步骤，可以并行或顺序执行。</li>
+<li><strong>Step（步骤）</strong>：每个任务包含一个或多个步骤，每个步骤代表一个操作，例如构建代码、运行测试、部署应用程序等。步骤是工作流程的最小单位。</li>
+<li><strong>Workflow file（工作流程文件）</strong>：工作流程文件是以YAML格式编写的文件，用于定义工作流程的结构、任务和步骤。通常存储在代码仓库的特定目录中（如**<code>.github/workflows</code>**）。</li>
+</ul>
+<p>差不多主要使用的也就这些了。</p>
+<h2 id="Workflow-file（工作流程文件）"><a href="#Workflow-file（工作流程文件）" class="headerlink" title="Workflow file（工作流程文件）"></a><strong>Workflow file（工作流程文件）</strong></h2><p>对于**<code>Workflow file</code>** 的，关键字非常多我这边放GitHub的<a href="https://docs.github.com/zh/actions/using-workflows/workflow-syntax-for-github-actions" rel="external nofollow noreferrer">文档地址</a>，有需要的可以自己看看吧，**<code>Workflow file</code>** 使用<code>yaml</code> 文件类型编写。</p>
+<p>一下是常见的关键字。</p>
+<ul>
+<li>name ：一般是和你的 <strong><code>Workflow file</code></strong> 文件字一样，改成其他的和省略也没啥事情。</li>
+</ul>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">name: Build and Publish Release</span><br></pre></td></tr></tbody></table></figure>
+
+<ul>
+<li>on :指定触发条件，例如 push frok等，例如我这里设置的是push 的检测分支中的 master 分支。</li>
+</ul>
+<p>`on: push: branches:</p>
+<ul>
+<li>master`</li>
+<li>jobs ：工作流运行由一个或多个 <code>jobs</code> 组成，默认情况下并行运行。 若要按顺序运行作业，可以使用 <code>jobs.&lt;job_id&gt;.needs</code> 关键字定义对其他作业的依赖关系。</li>
+</ul>
+<h2 id="例如我写的"><a href="#例如我写的" class="headerlink" title="例如我写的"></a>例如我写的</h2><p><a href="https://github.com/biliblihuorong/Bicarbon-MES" rel="external nofollow noreferrer">我的仓库</a></p>
+<figure class="highlight yaml"><table><tbody><tr><td class="code"><pre><span class="line"><span class="attr">name:</span> <span class="string">Build</span> <span class="string">and</span> <span class="string">Publish</span> <span class="string">Release</span>  <span class="comment"># 工作流名称</span></span><br><span class="line"></span><br><span class="line"><span class="attr">on:</span></span><br><span class="line">  <span class="attr">push:</span></span><br><span class="line">    <span class="attr">branches:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">master</span>  <span class="comment"># 当代码推送到master分支时触发工作流程</span></span><br><span class="line"></span><br><span class="line"><span class="attr">jobs:</span></span><br><span class="line">  <span class="attr">build-and-publish:</span></span><br><span class="line">    <span class="attr">runs-on:</span> <span class="string">ubuntu-latest</span>  <span class="comment"># 在最新的Ubuntu操作系统上运行任务</span></span><br><span class="line"></span><br><span class="line">    <span class="attr">steps:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">uses:</span> <span class="string">actions/checkout@v3</span>  <span class="comment"># 使用GitHub官方的checkout action，用于检出代码库</span></span><br><span class="line"></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Set</span> <span class="string">up</span> <span class="string">JDK</span>  <span class="comment"># 设置JDK</span></span><br><span class="line">        <span class="attr">uses:</span> <span class="string">actions/setup-java@master</span>  <span class="comment"># 使用GitHub官方的setup-java action，用于安装和配置Java环境</span></span><br><span class="line">        <span class="attr">with:</span></span><br><span class="line">          <span class="attr">java-version:</span> <span class="number">8</span></span><br><span class="line">          <span class="attr">distribution:</span> <span class="string">"adopt"</span></span><br><span class="line">          <span class="attr">cache:</span> <span class="string">maven</span></span><br><span class="line"></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Build</span> <span class="string">with</span> <span class="string">Maven</span>  <span class="comment"># 使用Maven构建项目</span></span><br><span class="line">        <span class="attr">run:</span> <span class="string">mvn</span> <span class="string">package</span> <span class="string">--batch-mode</span>  <span class="comment"># 执行mvn package命令进行项目构建</span></span><br><span class="line"></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Create</span> <span class="string">Release</span>  <span class="comment"># 创建GitHub Release</span></span><br><span class="line">        <span class="attr">id:</span> <span class="string">create_release</span></span><br><span class="line">        <span class="attr">uses:</span> <span class="string">actions/create-release@v1</span>  <span class="comment"># 使用GitHub官方的create-release action，用于创建GitHub Release</span></span><br><span class="line">        <span class="attr">env:</span></span><br><span class="line">          <span class="attr">GITHUB_TOKEN:</span> <span class="string">${{</span> <span class="string">secrets.TOKEN</span> <span class="string">}}</span>  <span class="comment"># 设置GitHub令牌作为环境变量</span></span><br><span class="line">        <span class="attr">with:</span></span><br><span class="line">          <span class="attr">tag_name:</span> <span class="string">Release-${{</span> <span class="string">github.run_number</span> <span class="string">}}</span>  <span class="comment"># 设置Release的标签名称</span></span><br><span class="line">          <span class="attr">release_name:</span> <span class="string">Release</span> <span class="string">${{</span> <span class="string">github.run_number</span> <span class="string">}}</span>  <span class="comment"># 设置Release的名称</span></span><br><span class="line">          <span class="attr">draft:</span> <span class="literal">false</span>  <span class="comment"># 是否是草稿状态</span></span><br><span class="line">          <span class="attr">prerelease:</span> <span class="literal">false</span>  <span class="comment"># 是否是预发布状态</span></span><br><span class="line"></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">List</span> <span class="string">files</span>  <span class="comment"># 列出文件</span></span><br><span class="line">        <span class="attr">run:</span> <span class="string">ls</span> <span class="string">-R</span>  <span class="comment"># 执行ls -R命令，列出工作目录下的文件和子目录</span></span><br><span class="line"></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Display</span> <span class="string">directory</span> <span class="string">tree</span>  <span class="comment"># 显示目录树</span></span><br><span class="line">        <span class="attr">run:</span> <span class="string">tree</span>  <span class="comment"># 执行tree命令，以树状结构显示工作目录的内容</span></span><br><span class="line"></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Release</span> <span class="string">JAR</span>  <span class="comment"># 发布JAR文件</span></span><br><span class="line">        <span class="attr">id:</span> <span class="string">upload_jar</span></span><br><span class="line">        <span class="attr">uses:</span> <span class="string">actions/upload-release-asset@v1</span>  <span class="comment"># 使用GitHub官方的upload-release-asset action，用于上传Release的附件</span></span><br><span class="line">        <span class="attr">env:</span></span><br><span class="line">          <span class="attr">GITHUB_TOKEN:</span> <span class="string">${{</span> <span class="string">secrets.TOKEN</span> <span class="string">}}</span>  <span class="comment"># 设置GitHub令牌作为环境变量</span></span><br><span class="line">        <span class="attr">with:</span></span><br><span class="line">          <span class="attr">upload_url:</span> <span class="string">${{</span> <span class="string">steps.create_release.outputs.upload_url</span> <span class="string">}}</span>  <span class="comment"># 设置上传URL</span></span><br><span class="line">          <span class="attr">asset_path:</span> <span class="string">./controller/target/controller-1.0.jar</span>  <span class="comment"># 设置要上传的JAR文件路径</span></span><br><span class="line">          <span class="attr">asset_name:</span> <span class="string">controller-jar</span>  <span class="comment"># 设置JAR文件的名称</span></span><br><span class="line">          <span class="attr">asset_content_type:</span> <span class="string">application/java-archive</span>  <span class="comment"># 设置JAR文件的内容类型</span></span><br><span class="line"></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">rm</span> <span class="string">Jar</span>  <span class="comment"># 删除JAR文件</span></span><br><span class="line">        <span class="attr">uses:</span> <span class="string">appleboy/ssh-action@master</span>  <span class="comment"># 使用appleboy的ssh-action，用于在服务器上执行SSH命令</span></span><br><span class="line">        <span class="attr">with:</span></span><br><span class="line">          <span class="attr">host:</span> <span class="string">${{</span> <span class="string">secrets.SERVER_HOST</span> <span class="string">}}</span>  <span class="comment"># 设置服务器主机</span></span><br><span class="line">          <span class="attr">username:</span> <span class="string">${{</span> <span class="string">secrets.SERVER_USERNAME</span> <span class="string">}}</span>  <span class="comment"># 设置服务器用户名</span></span><br><span class="line">          <span class="attr">key:</span> <span class="string">${{</span> <span class="string">secrets.SSH_KEY</span> <span class="string">}}</span>  <span class="comment"># 设置SSH密钥</span></span><br><span class="line">          <span class="attr">script:</span> <span class="string">|</span></span><br><span class="line"><span class="string">           bash ${{secrets.SERVER_SHFILE}}/SpringBootStart-guosai.sh</span></span><br><span class="line"><span class="string">           cd /${{secrets.SERVER_FILE}}/controller/target/</span></span><br><span class="line"><span class="string">           rm -rf controller-1.0.jar</span></span><br><span class="line"><span class="string"></span></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">upload</span> <span class="string">jar</span>  <span class="comment"># 上传JAR文件到服务器</span></span><br><span class="line">        <span class="attr">uses:</span> <span class="string">appleboy/scp-action@master</span>  <span class="comment"># 使用appleboy的scp-action，用于将文件复制到远程服务器</span></span><br><span class="line">        <span class="attr">with:</span></span><br><span class="line">          <span class="attr">host:</span> <span class="string">${{</span> <span class="string">secrets.SERVER_HOST</span> <span class="string">}}</span>  <span class="comment"># 设置服务器主机</span></span><br><span class="line">          <span class="attr">username:</span> <span class="string">${{</span> <span class="string">secrets.SERVER_USERNAME</span> <span class="string">}}</span>  <span class="comment"># 设置服务器用户名</span></span><br><span class="line">          <span class="attr">key:</span> <span class="string">${{</span> <span class="string">secrets.SSH_KEY</span> <span class="string">}}</span>  <span class="comment"># 设置SSH密钥</span></span><br><span class="line">          <span class="attr">source:</span> <span class="string">./controller/target/controller-1.0.jar</span>  <span class="comment"># 设置本地要上传的JAR文件路径</span></span><br><span class="line">          <span class="attr">target:</span> <span class="string">${{secrets.SERVER_FILE}}/</span>  <span class="comment"># 设置远程服务器上的目标路径</span></span><br><span class="line"></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Execute</span> <span class="string">shell</span> <span class="string">scripts</span> <span class="string">on</span> <span class="string">server</span>  <span class="comment"># 在服务器上执行shell脚本</span></span><br><span class="line">        <span class="attr">uses:</span> <span class="string">appleboy/ssh-action@master</span>  <span class="comment"># 使用appleboy的ssh-action，用于在服务器上执行SSH命令</span></span><br><span class="line">        <span class="attr">with:</span></span><br><span class="line">          <span class="attr">host:</span> <span class="string">${{</span> <span class="string">secrets.SERVER_HOST</span> <span class="string">}}</span>  <span class="comment"># 设置服务器主机</span></span><br><span class="line">          <span class="attr">username:</span> <span class="string">${{</span> <span class="string">secrets.SERVER_USERNAME</span> <span class="string">}}</span>  <span class="comment"># 设置服务器用户名</span></span><br><span class="line">          <span class="attr">key:</span> <span class="string">${{</span> <span class="string">secrets.SSH_KEY</span> <span class="string">}}</span>  <span class="comment"># 设置SSH密钥</span></span><br><span class="line">          <span class="attr">script:</span> <span class="string">|</span></span><br><span class="line"><span class="string">           cd /${{secrets.SERVER_FILE}}/controller/target/</span></span><br><span class="line"><span class="string">            ps -ef | grep controller-1.0.jar | grep -v grep | awk '{print $2}' | xargs kill -9 </span></span><br><span class="line"><span class="string">            nohup java -jar controller-1.0.jar &gt; nohup.out &amp;</span></span><br><span class="line"><span class="string">            exit</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>上面的</p>
+<ul>
+<li>SERVER_FILE</li>
+<li>SERVER_HOST</li>
+<li>SERVER_USERNAME</li>
+<li>SSH_KEY</li>
+<li>TOKEN</li>
+</ul>
+<p>其中 这些都在仓库设置的机密设置进行设置，你也可以自己按需修改名字。</p>
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>我自己的GitHub 仓库：<a href="https://github.com/biliblihuorong/Bicarbon-MES" rel="external nofollow noreferrer">https://github.com/biliblihuorong/Bicarbon-MES</a></p>
+<p>GitHub Actions官方文档：<a href="https://docs.github.com/zh/actions/using-workflows/workflow-syntax-for-github-actions" rel="external nofollow noreferrer">https://docs.github.com/zh/actions/using-workflows/workflow-syntax-for-github-actions</a></p>
+<p>阮一峰大佬的 GitHub Actions 博文：<a href="https://www.ruanyifeng.com/blog/2019/09/getting-started-with-github-actions.html" rel="external nofollow noreferrer">https://www.ruanyifeng.com/blog/2019/09/getting-started-with-github-actions.html</a></p>
+<p>以及Chat GPT的大力协助。</p>
+</body></html>]]></content>
+      <categories>
+        <category>网络技术</category>
+      </categories>
+      <tags>
+        <tag>github</tag>
+        <tag>devOps</tag>
+        <tag>Actions</tag>
+        <tag>SpringBoot</tag>
+        <tag>java</tag>
+        <tag>ci/cd</tag>
       </tags>
   </entry>
   <entry>
@@ -1427,89 +1510,6 @@
       </tags>
   </entry>
   <entry>
-    <title>世界，您好！</title>
-    <url>/posts/hello-world-2-2/</url>
-    <content><![CDATA[<html><head></head><body><p>欢迎使用WordPress。这是您的第一篇文章。编辑或删除它，然后开始写作吧！</p>
-<p><embed src="//music.163.com/style/swf/widget.swf?sid=5110133&amp;type=2&amp;auto=1&amp;width=320&amp;height=66" width="340" height="86" allownetworking="all"></p>
-</body></html>]]></content>
-      <categories>
-        <category>生活随想</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>使用GitHub Actions 自动构建部署发布Spring Boot应用</title>
-    <url>/posts/gitub-actions/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>最近这一周，我加入了奇奇怪怪的Team，我负责将编写的新接口打包并发布到服务器上。每次都需要手动执行打包、发布、关闭旧版本程序和启动新版本程序等繁琐的步骤，这让我感到非常不便，而且也非常重复。对于这种重复性的任务，我想到了可以利用机器来完成，于是决定尝试使用 GitHub 上的工作流。</p>
-<h1 id="需要准备的东西："><a href="#需要准备的东西：" class="headerlink" title="需要准备的东西："></a>需要准备的东西：</h1><ul>
-<li>掌握搜索引擎技能（保证一直是最新的知识。）</li>
-<li>一个大脑🧠</li>
-<li>一个GitHub的账号（）</li>
-<li>掌握基础的git 操作</li>
-<li>你需要掌握一门语言例如 Java nodejs等这样才可以使用工作流</li>
-</ul>
-<p>本篇就那我自己写的屎山 Spring Boot应用举例子吧</p>
-<h1 id="什么是Gitub-Actions？"><a href="#什么是Gitub-Actions？" class="headerlink" title="什么是Gitub-Actions？"></a>什么是Gitub-Actions？</h1><p>GitHub Actions是自动化工作流程工具，用于自动化构建、测试、部署和集成软件项目。它通过一系列事件、触发器和任务来执行各种操作，以实现持续集成和持续交付。</p>
-<p>GitHub允许你可以发布以及共享你自己的Actions，别人可以通过市场找到你的Actions从而不需要在重复造轮子了。</p>
-<h1 id="什么是CI-CD？"><a href="#什么是CI-CD？" class="headerlink" title="什么是CI/CD？"></a>什么是CI/CD？</h1><p>CI/CD是持续集成（Continuous Integration）与持续交付/持续部署（Continuous Delivery/Continuous Deployment）的缩写，是一种软件开发实践和方法论。</p>
-<p>持续集成（CI）是指开发人员将其代码频繁地集成到共享代码存储库中，并通过自动化构建和测试流程来验证代码的正确性。这样可以确保团队成员的代码变更能够快速地集成到主干代码中，并减少代码集成过程中的错误。</p>
-<p>持续交付（CD）是指将通过持续集成产生的软件交付给质量保证团队进行进一步的自动化测试、部署和发布。持续交付的目标是确保软件始终处于可部署状态，以便可以随时交付给用户。</p>
-<p>持续部署（CD）是持续交付的进一步延伸，指将通过持续交付阶段产生的可部署软件自动地部署到生产环境中，使软件能够快速地、可靠地投入使用。</p>
-<p>通过采用CI/CD实践，团队可以实现更快速、可靠、高质量的软件交付。自动化的构建、测试、部署和发布流程能够减少人为错误，提高开发团队的生产效率，并使软件交付过程更加可靠和可追踪。</p>
-<blockquote>
-<p>以上文本来自chatGPT。</p>
-</blockquote>
-<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><h2 id="Actions的概念："><a href="#Actions的概念：" class="headerlink" title="Actions的概念："></a>Actions的概念：</h2><ul>
-<li><strong><code>workflow</code> （工作流）：一个工作流程是一系列的任务（jobs）和步骤（steps），定义了自动化的过程。</strong></li>
-<li><strong>Job（任务）</strong>：一个工作流程可以包含一个或多个任务，每个任务运行在独立的环境中。每个任务可以包含一系列的步骤，可以并行或顺序执行。</li>
-<li><strong>Step（步骤）</strong>：每个任务包含一个或多个步骤，每个步骤代表一个操作，例如构建代码、运行测试、部署应用程序等。步骤是工作流程的最小单位。</li>
-<li><strong>Workflow file（工作流程文件）</strong>：工作流程文件是以YAML格式编写的文件，用于定义工作流程的结构、任务和步骤。通常存储在代码仓库的特定目录中（如**<code>.github/workflows</code>**）。</li>
-</ul>
-<p>差不多主要使用的也就这些了。</p>
-<h2 id="Workflow-file（工作流程文件）"><a href="#Workflow-file（工作流程文件）" class="headerlink" title="Workflow file（工作流程文件）"></a><strong>Workflow file（工作流程文件）</strong></h2><p>对于**<code>Workflow file</code>** 的，关键字非常多我这边放GitHub的<a href="https://docs.github.com/zh/actions/using-workflows/workflow-syntax-for-github-actions" rel="external nofollow noreferrer">文档地址</a>，有需要的可以自己看看吧，**<code>Workflow file</code>** 使用<code>yaml</code> 文件类型编写。</p>
-<p>一下是常见的关键字。</p>
-<ul>
-<li>name ：一般是和你的 <strong><code>Workflow file</code></strong> 文件字一样，改成其他的和省略也没啥事情。</li>
-</ul>
-<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">name: Build and Publish Release</span><br></pre></td></tr></tbody></table></figure>
-
-<ul>
-<li>on :指定触发条件，例如 push frok等，例如我这里设置的是push 的检测分支中的 master 分支。</li>
-</ul>
-<p>`on: push: branches:</p>
-<ul>
-<li>master`</li>
-<li>jobs ：工作流运行由一个或多个 <code>jobs</code> 组成，默认情况下并行运行。 若要按顺序运行作业，可以使用 <code>jobs.&lt;job_id&gt;.needs</code> 关键字定义对其他作业的依赖关系。</li>
-</ul>
-<h2 id="例如我写的"><a href="#例如我写的" class="headerlink" title="例如我写的"></a>例如我写的</h2><p><a href="https://github.com/biliblihuorong/Bicarbon-MES" rel="external nofollow noreferrer">我的仓库</a></p>
-<figure class="highlight yaml"><table><tbody><tr><td class="code"><pre><span class="line"><span class="attr">name:</span> <span class="string">Build</span> <span class="string">and</span> <span class="string">Publish</span> <span class="string">Release</span>  <span class="comment"># 工作流名称</span></span><br><span class="line"></span><br><span class="line"><span class="attr">on:</span></span><br><span class="line">  <span class="attr">push:</span></span><br><span class="line">    <span class="attr">branches:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">master</span>  <span class="comment"># 当代码推送到master分支时触发工作流程</span></span><br><span class="line"></span><br><span class="line"><span class="attr">jobs:</span></span><br><span class="line">  <span class="attr">build-and-publish:</span></span><br><span class="line">    <span class="attr">runs-on:</span> <span class="string">ubuntu-latest</span>  <span class="comment"># 在最新的Ubuntu操作系统上运行任务</span></span><br><span class="line"></span><br><span class="line">    <span class="attr">steps:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">uses:</span> <span class="string">actions/checkout@v3</span>  <span class="comment"># 使用GitHub官方的checkout action，用于检出代码库</span></span><br><span class="line"></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Set</span> <span class="string">up</span> <span class="string">JDK</span>  <span class="comment"># 设置JDK</span></span><br><span class="line">        <span class="attr">uses:</span> <span class="string">actions/setup-java@master</span>  <span class="comment"># 使用GitHub官方的setup-java action，用于安装和配置Java环境</span></span><br><span class="line">        <span class="attr">with:</span></span><br><span class="line">          <span class="attr">java-version:</span> <span class="number">8</span></span><br><span class="line">          <span class="attr">distribution:</span> <span class="string">"adopt"</span></span><br><span class="line">          <span class="attr">cache:</span> <span class="string">maven</span></span><br><span class="line"></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Build</span> <span class="string">with</span> <span class="string">Maven</span>  <span class="comment"># 使用Maven构建项目</span></span><br><span class="line">        <span class="attr">run:</span> <span class="string">mvn</span> <span class="string">package</span> <span class="string">--batch-mode</span>  <span class="comment"># 执行mvn package命令进行项目构建</span></span><br><span class="line"></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Create</span> <span class="string">Release</span>  <span class="comment"># 创建GitHub Release</span></span><br><span class="line">        <span class="attr">id:</span> <span class="string">create_release</span></span><br><span class="line">        <span class="attr">uses:</span> <span class="string">actions/create-release@v1</span>  <span class="comment"># 使用GitHub官方的create-release action，用于创建GitHub Release</span></span><br><span class="line">        <span class="attr">env:</span></span><br><span class="line">          <span class="attr">GITHUB_TOKEN:</span> <span class="string">${{</span> <span class="string">secrets.TOKEN</span> <span class="string">}}</span>  <span class="comment"># 设置GitHub令牌作为环境变量</span></span><br><span class="line">        <span class="attr">with:</span></span><br><span class="line">          <span class="attr">tag_name:</span> <span class="string">Release-${{</span> <span class="string">github.run_number</span> <span class="string">}}</span>  <span class="comment"># 设置Release的标签名称</span></span><br><span class="line">          <span class="attr">release_name:</span> <span class="string">Release</span> <span class="string">${{</span> <span class="string">github.run_number</span> <span class="string">}}</span>  <span class="comment"># 设置Release的名称</span></span><br><span class="line">          <span class="attr">draft:</span> <span class="literal">false</span>  <span class="comment"># 是否是草稿状态</span></span><br><span class="line">          <span class="attr">prerelease:</span> <span class="literal">false</span>  <span class="comment"># 是否是预发布状态</span></span><br><span class="line"></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">List</span> <span class="string">files</span>  <span class="comment"># 列出文件</span></span><br><span class="line">        <span class="attr">run:</span> <span class="string">ls</span> <span class="string">-R</span>  <span class="comment"># 执行ls -R命令，列出工作目录下的文件和子目录</span></span><br><span class="line"></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Display</span> <span class="string">directory</span> <span class="string">tree</span>  <span class="comment"># 显示目录树</span></span><br><span class="line">        <span class="attr">run:</span> <span class="string">tree</span>  <span class="comment"># 执行tree命令，以树状结构显示工作目录的内容</span></span><br><span class="line"></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Release</span> <span class="string">JAR</span>  <span class="comment"># 发布JAR文件</span></span><br><span class="line">        <span class="attr">id:</span> <span class="string">upload_jar</span></span><br><span class="line">        <span class="attr">uses:</span> <span class="string">actions/upload-release-asset@v1</span>  <span class="comment"># 使用GitHub官方的upload-release-asset action，用于上传Release的附件</span></span><br><span class="line">        <span class="attr">env:</span></span><br><span class="line">          <span class="attr">GITHUB_TOKEN:</span> <span class="string">${{</span> <span class="string">secrets.TOKEN</span> <span class="string">}}</span>  <span class="comment"># 设置GitHub令牌作为环境变量</span></span><br><span class="line">        <span class="attr">with:</span></span><br><span class="line">          <span class="attr">upload_url:</span> <span class="string">${{</span> <span class="string">steps.create_release.outputs.upload_url</span> <span class="string">}}</span>  <span class="comment"># 设置上传URL</span></span><br><span class="line">          <span class="attr">asset_path:</span> <span class="string">./controller/target/controller-1.0.jar</span>  <span class="comment"># 设置要上传的JAR文件路径</span></span><br><span class="line">          <span class="attr">asset_name:</span> <span class="string">controller-jar</span>  <span class="comment"># 设置JAR文件的名称</span></span><br><span class="line">          <span class="attr">asset_content_type:</span> <span class="string">application/java-archive</span>  <span class="comment"># 设置JAR文件的内容类型</span></span><br><span class="line"></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">rm</span> <span class="string">Jar</span>  <span class="comment"># 删除JAR文件</span></span><br><span class="line">        <span class="attr">uses:</span> <span class="string">appleboy/ssh-action@master</span>  <span class="comment"># 使用appleboy的ssh-action，用于在服务器上执行SSH命令</span></span><br><span class="line">        <span class="attr">with:</span></span><br><span class="line">          <span class="attr">host:</span> <span class="string">${{</span> <span class="string">secrets.SERVER_HOST</span> <span class="string">}}</span>  <span class="comment"># 设置服务器主机</span></span><br><span class="line">          <span class="attr">username:</span> <span class="string">${{</span> <span class="string">secrets.SERVER_USERNAME</span> <span class="string">}}</span>  <span class="comment"># 设置服务器用户名</span></span><br><span class="line">          <span class="attr">key:</span> <span class="string">${{</span> <span class="string">secrets.SSH_KEY</span> <span class="string">}}</span>  <span class="comment"># 设置SSH密钥</span></span><br><span class="line">          <span class="attr">script:</span> <span class="string">|</span></span><br><span class="line"><span class="string">           bash ${{secrets.SERVER_SHFILE}}/SpringBootStart-guosai.sh</span></span><br><span class="line"><span class="string">           cd /${{secrets.SERVER_FILE}}/controller/target/</span></span><br><span class="line"><span class="string">           rm -rf controller-1.0.jar</span></span><br><span class="line"><span class="string"></span></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">upload</span> <span class="string">jar</span>  <span class="comment"># 上传JAR文件到服务器</span></span><br><span class="line">        <span class="attr">uses:</span> <span class="string">appleboy/scp-action@master</span>  <span class="comment"># 使用appleboy的scp-action，用于将文件复制到远程服务器</span></span><br><span class="line">        <span class="attr">with:</span></span><br><span class="line">          <span class="attr">host:</span> <span class="string">${{</span> <span class="string">secrets.SERVER_HOST</span> <span class="string">}}</span>  <span class="comment"># 设置服务器主机</span></span><br><span class="line">          <span class="attr">username:</span> <span class="string">${{</span> <span class="string">secrets.SERVER_USERNAME</span> <span class="string">}}</span>  <span class="comment"># 设置服务器用户名</span></span><br><span class="line">          <span class="attr">key:</span> <span class="string">${{</span> <span class="string">secrets.SSH_KEY</span> <span class="string">}}</span>  <span class="comment"># 设置SSH密钥</span></span><br><span class="line">          <span class="attr">source:</span> <span class="string">./controller/target/controller-1.0.jar</span>  <span class="comment"># 设置本地要上传的JAR文件路径</span></span><br><span class="line">          <span class="attr">target:</span> <span class="string">${{secrets.SERVER_FILE}}/</span>  <span class="comment"># 设置远程服务器上的目标路径</span></span><br><span class="line"></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Execute</span> <span class="string">shell</span> <span class="string">scripts</span> <span class="string">on</span> <span class="string">server</span>  <span class="comment"># 在服务器上执行shell脚本</span></span><br><span class="line">        <span class="attr">uses:</span> <span class="string">appleboy/ssh-action@master</span>  <span class="comment"># 使用appleboy的ssh-action，用于在服务器上执行SSH命令</span></span><br><span class="line">        <span class="attr">with:</span></span><br><span class="line">          <span class="attr">host:</span> <span class="string">${{</span> <span class="string">secrets.SERVER_HOST</span> <span class="string">}}</span>  <span class="comment"># 设置服务器主机</span></span><br><span class="line">          <span class="attr">username:</span> <span class="string">${{</span> <span class="string">secrets.SERVER_USERNAME</span> <span class="string">}}</span>  <span class="comment"># 设置服务器用户名</span></span><br><span class="line">          <span class="attr">key:</span> <span class="string">${{</span> <span class="string">secrets.SSH_KEY</span> <span class="string">}}</span>  <span class="comment"># 设置SSH密钥</span></span><br><span class="line">          <span class="attr">script:</span> <span class="string">|</span></span><br><span class="line"><span class="string">           cd /${{secrets.SERVER_FILE}}/controller/target/</span></span><br><span class="line"><span class="string">            ps -ef | grep controller-1.0.jar | grep -v grep | awk '{print $2}' | xargs kill -9 </span></span><br><span class="line"><span class="string">            nohup java -jar controller-1.0.jar &gt; nohup.out &amp;</span></span><br><span class="line"><span class="string">            exit</span></span><br></pre></td></tr></tbody></table></figure>
-
-<p>上面的</p>
-<ul>
-<li>SERVER_FILE</li>
-<li>SERVER_HOST</li>
-<li>SERVER_USERNAME</li>
-<li>SSH_KEY</li>
-<li>TOKEN</li>
-</ul>
-<p>其中 这些都在仓库设置的机密设置进行设置，你也可以自己按需修改名字。</p>
-<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>我自己的GitHub 仓库：<a href="https://github.com/biliblihuorong/Bicarbon-MES" rel="external nofollow noreferrer">https://github.com/biliblihuorong/Bicarbon-MES</a></p>
-<p>GitHub Actions官方文档：<a href="https://docs.github.com/zh/actions/using-workflows/workflow-syntax-for-github-actions" rel="external nofollow noreferrer">https://docs.github.com/zh/actions/using-workflows/workflow-syntax-for-github-actions</a></p>
-<p>阮一峰大佬的 GitHub Actions 博文：<a href="https://www.ruanyifeng.com/blog/2019/09/getting-started-with-github-actions.html" rel="external nofollow noreferrer">https://www.ruanyifeng.com/blog/2019/09/getting-started-with-github-actions.html</a></p>
-<p>以及Chat GPT的大力协助。</p>
-</body></html>]]></content>
-      <categories>
-        <category>网络技术</category>
-      </categories>
-      <tags>
-        <tag>github</tag>
-        <tag>devOps</tag>
-        <tag>Actions</tag>
-        <tag>SpringBoot</tag>
-        <tag>java</tag>
-        <tag>ci/cd</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>在 Docker 环境中使用 Traefik进行反向代理</title>
     <url>/posts/learn-traefik/</url>
     <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>对于家里面要部署很多 <code>Docker</code> 服务，用 <code>Nginx</code> 反向代理属实麻烦，所以就有了本篇文章 <code>Traefik</code></p>
@@ -1553,91 +1553,6 @@
       <tags>
         <tag>Docker</tag>
         <tag>Traefik</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>WebSocket用SpringSecuirty认证和鉴权</title>
-    <url>/posts/springboot-websocket-springSecurity/</url>
-    <content><![CDATA[<html><head></head><body><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>刚开始想进行认证感觉还是蛮简单的，也只需要让websocket 的<code>Headers</code>上也带<code>authorization</code>在加上token 的值不就完事了吗。</p>
-<p>但websocket 不支持自定义<code>Headers</code>头所以不行，但ws 允许在<code>Sec-WebSocket-Protocol</code> 的请求头加入自定义的参数，也就是说只需要在spring security 中在加入一个对于<code>Sec-WebSocket-Protocol</code>的检测就行了。</p>
-<h1 id="添加对-Sec-WebSocket-Protocol-的判断"><a href="#添加对-Sec-WebSocket-Protocol-的判断" class="headerlink" title="添加对 Sec-WebSocket-Protocol 的判断"></a>添加对 Sec-WebSocket-Protocol 的判断</h1><p>这里的<code>WSHeader</code>其实就是<code>Sec-WebSocket-Protocol</code>。</p>
-<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">  * 获取请求token</span></span><br><span class="line"><span class="comment">  *</span></span><br><span class="line"><span class="comment">  * <span class="doctag">@param</span> request</span></span><br><span class="line"><span class="comment">  * <span class="doctag">@return</span> token</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line"> <span class="keyword">private</span> String <span class="title function_">getToken</span><span class="params">(HttpServletRequest request)</span> {</span><br><span class="line">     <span class="type">String</span> <span class="variable">token</span> <span class="operator">=</span> request.getHeader(header);</span><br><span class="line">     <span class="keyword">if</span> (StringUtils.isNotEmpty(token) &amp;&amp; token.startsWith(Constants.TOKEN_PREFIX)) {</span><br><span class="line">         token = token.replace(Constants.TOKEN_PREFIX, <span class="string">""</span>);</span><br><span class="line">     } <span class="keyword">else</span> {</span><br><span class="line">         <span class="comment">//如果未从请求头中获取到token,则尝试从Sec-WebSocket-Protocol中取出</span></span><br><span class="line">         token = request.getHeader(WSHeader);</span><br><span class="line">         <span class="comment">//如果有值，一定要在response的header中设置，否则还是会断开</span></span><br><span class="line">         <span class="keyword">if</span> (StringUtils.isNotEmpty(token)) {</span><br><span class="line">             <span class="type">HttpServletResponse</span> <span class="variable">response</span> <span class="operator">=</span> ServletUtils.getResponse();</span><br><span class="line">             response.setHeader(WSHeader, token);</span><br><span class="line">         }</span><br><span class="line">     }</span><br><span class="line">     <span class="keyword">return</span> token;</span><br><span class="line"> }</span><br></pre></td></tr></tbody></table></figure>
-
-<p>经过这样的配置我们的<code>Websocket </code>的连接端点是肯定可以通过认证了，但还要拿到<code>SpringSecuiry</code>中的已经登录的用户，判断它是谁？</p>
-<h1 id="添加获取用户信息"><a href="#添加获取用户信息" class="headerlink" title="添加获取用户信息"></a>添加获取用户信息</h1><p>首先配置好<code>Websocket </code>的配置</p>
-<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">@Configuration</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">WebSocketConfig</span> {</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 注入一个ServerEndpointExporter,该Bean会自动注册使用<span class="doctag">@ServerEndpoint</span>注解申明的websocket endpoint</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="meta">@Bean</span></span><br><span class="line">    <span class="keyword">public</span> ServerEndpointExporter <span class="title function_">serverEndpointExporter</span><span class="params">()</span> {</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">ServerEndpointExporter</span>();</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-
-<p>这里在配置一个<code>websocket </code>的连接接口</p>
-<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">@ServerEndpoint("/ws")</span></span><br><span class="line"><span class="meta">@Component</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">WebSocketController</span> {</span><br><span class="line">    <span class="keyword">private</span> Session session;</span><br><span class="line">    <span class="meta">@OnOpen</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">OnOpen</span><span class="params">(Session session)</span> <span class="keyword">throws</span> IOException {</span><br><span class="line">        <span class="built_in">this</span>.session = session;</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    <span class="meta">@OnMessage</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">OnMessage</span><span class="params">(String msg)</span> <span class="keyword">throws</span> IOException {</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    <span class="meta">@OnClose</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">OnClose</span><span class="params">(Session session)</span> <span class="keyword">throws</span> IOException {</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-
-<p>可以看到每一个用户连入<code>/ws</code> 的这个都会有他们自己唯一一个<code>session</code> 其实如果要是直接 <code>session.</code>或有一个叫做 ``getUserPrincipal()<code> 的方法继续点下去有一个getName的方法。如果继续追下去打开</code>debug<code>就会惊奇的发现，</code>getUserPrincipal()<code>的类型尽然是SpringSecurity的</code>UsernamePasswordAuthenticationToken`的类，那么这就好办了。我写了一方法。</p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2023/09/19/6509235059a87.webp" alt="Spring-Security-Config-3.webp"></p>
-<p>这里的<code>LoginUser</code>和<code>SysUser</code>是我已经重写好<code>SpringSecuriy</code>中的登录用户的类，请改成你自己的即可。</p>
-<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 获取当前登录用户信息</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> SysUser <span class="title function_">getSysUser</span><span class="params">()</span> {</span><br><span class="line">    <span class="type">UsernamePasswordAuthenticationToken</span> <span class="variable">userPrincipal</span> <span class="operator">=</span> (UsernamePasswordAuthenticationToken) <span class="built_in">this</span>.session.getUserPrincipal();</span><br><span class="line">    <span class="type">LoginUser</span> <span class="variable">principal</span> <span class="operator">=</span> (LoginUser) userPrincipal.getPrincipal();</span><br><span class="line">    <span class="keyword">return</span> principal.getUser();</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-</body></html>]]></content>
-      <categories>
-        <category>网络技术</category>
-      </categories>
-      <tags>
-        <tag>Spring</tag>
-        <tag>Java</tag>
-        <tag>Security</tag>
-        <tag>SpringSecuriy</tag>
-        <tag>WebSocket</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>萌国ICP备案</title>
-    <url>/posts/moeICP/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="萌国ICP备案"><a href="#萌国ICP备案" class="headerlink" title="萌国ICP备案"></a>萌国ICP备案</h1><blockquote>
-<p>启元</p>
-</blockquote>
-<p>自从某萌主申请了 icp.gov.moe 域名以后</p>
-<p>萌童鞋在百忙中抽空写了个萌备系统</p>
-<p>然后大家看到萌国ICP备案查询系统就上线了</p>
-<blockquote>
-<p>萌国ICP备案</p>
-</blockquote>
-<p>嗯，你没看错，这是萌国的ICP备案。</p>
-<p>萌国在哪呢，听某萌主说，好像是个网络上虚拟的国度。</p>
-<p>反正别问博主了，本博主也是听来的。</p>
-<p>我们说的是萌国ICP备案，号称萌ICP备，简称萌备</p>
-<blockquote>
-<p>萌ICP备 纯属萌友网站联萌！<br>是一种次元中的爱好，文化的展现。</p>
-</blockquote>
-<p>若你在万千网站中遇到萌备<br>甚有缘分</p>
-<p>萌主：“欢迎各大热爱萌文化的站长加入</p>
-<p> 给自己的网站加上个萌萌的备案号”</p>
-<p>博主：能不能不打广告？……</p>
-<blockquote>
-<p>加入萌备</p>
-</blockquote>
-<p>申请地址： <a href="https://icp.gov.moe/join.php">https://icp.gov.moe/join.php</a></p>
-<p>萌备主页<br><a href="https://icp.gov.moe/">https://icp.gov.moe</a></p>
-<p>然后按提示在页脚加上萌备的链接，以便查询对接系统，最后自动就加入萌备了，好简单啊。</p>
-<blockquote>
-<p>后话</p>
-</blockquote>
-<p>感觉好简单的样子，本博客已经在用了，还PY了个好号码，是不是很好看呢。</p>
-<h1 id="异次元之旅"><a href="#异次元之旅" class="headerlink" title="异次元之旅"></a>异次元之旅</h1><blockquote>
-<p>这是什么？</p>
-</blockquote>
-<p>好像是萌站成员越来越壮大，让分散的<strong>小行星</strong>（此处指加入萌备的网站数量）进行联系的枢纽。</p>
-<blockquote>
-<p>每一颗小行星都蕴含着与众不同的绚丽彩虹一般的色彩，有些是生活的甜蜜，有些是科技的火花，有些则披着一层神秘而厚重的大气层，令人捉摸不透，你愿意开启这一场旅行吗？</p>
-</blockquote>
-<p>咳咳我当然愿意啦ヽ(✿ﾟ▽ﾟ)ノ</p>
-<blockquote>
-<p>这么加入呢？</p>
-</blockquote>
-<p>好像有一个专属的坐标 <a href="https://moe.one/thread-254.htm" rel="external nofollow noreferrer">萌ICP备异次元之旅</a>。</p>
-</body></html>]]></content>
-      <categories>
-        <category>生活随想</category>
-      </categories>
-      <tags>
-        <tag>备案</tag>
-        <tag>萌国</tag>
       </tags>
   </entry>
   <entry>
@@ -1748,21 +1663,34 @@
       </tags>
   </entry>
   <entry>
-    <title>关于WordPress分类目录404问题</title>
-    <url>/posts/%E5%85%B3%E4%BA%8Ewordpress%E5%88%86%E7%B1%BB%E7%9B%AE%E5%BD%95404%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<html><head></head><body><h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>前两天把博客给玩脱了和，也没有备份，重新搞了之后我其实想隐藏博文中链接地址里面的index.php无意间隐藏了index.php还神奇的把分类目录的404解决了。</p>
-<h2 id="我遇到的问题，本人萌新，如果有什么不对的地方希望大佬手下留情ヾ-≧へ≦-〃"><a href="#我遇到的问题，本人萌新，如果有什么不对的地方希望大佬手下留情ヾ-≧へ≦-〃" class="headerlink" title="我遇到的问题，本人萌新，如果有什么不对的地方希望大佬手下留情ヾ(≧へ≦)〃"></a>我遇到的问题，本人萌新，如果有什么不对的地方希望大佬手下留情ヾ(≧へ≦)〃</h2><p>我的博客的问题是就算使用word press的 月份和名称型类型地址也会报错。 以及我的分类目录404，但是文章标签就可以正常打开，这对于我来说已经非常玄学了。</p>
-<h2 id="开始解决："><a href="#开始解决：" class="headerlink" title="开始解决："></a>开始解决：</h2><p>我是用的nginx。我抄的是nginx修改的代码是这个<a href="https://blog.csdn.net/weixin_41846803/article/details/80488726" rel="external nofollow noreferrer" title="博主写的">博主写的</a></p>
-<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">location / {</span><br><span class="line">       if (!-e $request_filename) {</span><br><span class="line">            #一级目录</span><br><span class="line">            rewrite ^/(.*)$ /index.php/$1 last;</span><br><span class="line">        } </span><br><span class="line">    }</span><br></pre></td></tr></tbody></table></figure>
+    <title>WebSocket用SpringSecuirty认证和鉴权</title>
+    <url>/posts/springboot-websocket-springSecurity/</url>
+    <content><![CDATA[<html><head></head><body><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>刚开始想进行认证感觉还是蛮简单的，也只需要让websocket 的<code>Headers</code>上也带<code>authorization</code>在加上token 的值不就完事了吗。</p>
+<p>但websocket 不支持自定义<code>Headers</code>头所以不行，但ws 允许在<code>Sec-WebSocket-Protocol</code> 的请求头加入自定义的参数，也就是说只需要在spring security 中在加入一个对于<code>Sec-WebSocket-Protocol</code>的检测就行了。</p>
+<h1 id="添加对-Sec-WebSocket-Protocol-的判断"><a href="#添加对-Sec-WebSocket-Protocol-的判断" class="headerlink" title="添加对 Sec-WebSocket-Protocol 的判断"></a>添加对 Sec-WebSocket-Protocol 的判断</h1><p>这里的<code>WSHeader</code>其实就是<code>Sec-WebSocket-Protocol</code>。</p>
+<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">  * 获取请求token</span></span><br><span class="line"><span class="comment">  *</span></span><br><span class="line"><span class="comment">  * <span class="doctag">@param</span> request</span></span><br><span class="line"><span class="comment">  * <span class="doctag">@return</span> token</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line"> <span class="keyword">private</span> String <span class="title function_">getToken</span><span class="params">(HttpServletRequest request)</span> {</span><br><span class="line">     <span class="type">String</span> <span class="variable">token</span> <span class="operator">=</span> request.getHeader(header);</span><br><span class="line">     <span class="keyword">if</span> (StringUtils.isNotEmpty(token) &amp;&amp; token.startsWith(Constants.TOKEN_PREFIX)) {</span><br><span class="line">         token = token.replace(Constants.TOKEN_PREFIX, <span class="string">""</span>);</span><br><span class="line">     } <span class="keyword">else</span> {</span><br><span class="line">         <span class="comment">//如果未从请求头中获取到token,则尝试从Sec-WebSocket-Protocol中取出</span></span><br><span class="line">         token = request.getHeader(WSHeader);</span><br><span class="line">         <span class="comment">//如果有值，一定要在response的header中设置，否则还是会断开</span></span><br><span class="line">         <span class="keyword">if</span> (StringUtils.isNotEmpty(token)) {</span><br><span class="line">             <span class="type">HttpServletResponse</span> <span class="variable">response</span> <span class="operator">=</span> ServletUtils.getResponse();</span><br><span class="line">             response.setHeader(WSHeader, token);</span><br><span class="line">         }</span><br><span class="line">     }</span><br><span class="line">     <span class="keyword">return</span> token;</span><br><span class="line"> }</span><br></pre></td></tr></tbody></table></figure>
 
-<p>然后进入你的宝塔面板，网站——选择你需要改的网站——设置——更改配置——拆入代码。我插入的是第50行 <img src="http://c-dreamer.top/wp-content/uploads/2020/06/word-press%E7%9A%84404.png"></p>
+<p>经过这样的配置我们的<code>Websocket </code>的连接端点是肯定可以通过认证了，但还要拿到<code>SpringSecuiry</code>中的已经登录的用户，判断它是谁？</p>
+<h1 id="添加获取用户信息"><a href="#添加获取用户信息" class="headerlink" title="添加获取用户信息"></a>添加获取用户信息</h1><p>首先配置好<code>Websocket </code>的配置</p>
+<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">@Configuration</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">WebSocketConfig</span> {</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 注入一个ServerEndpointExporter,该Bean会自动注册使用<span class="doctag">@ServerEndpoint</span>注解申明的websocket endpoint</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="meta">@Bean</span></span><br><span class="line">    <span class="keyword">public</span> ServerEndpointExporter <span class="title function_">serverEndpointExporter</span><span class="params">()</span> {</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">ServerEndpointExporter</span>();</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<p>这里在配置一个<code>websocket </code>的连接接口</p>
+<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">@ServerEndpoint("/ws")</span></span><br><span class="line"><span class="meta">@Component</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">WebSocketController</span> {</span><br><span class="line">    <span class="keyword">private</span> Session session;</span><br><span class="line">    <span class="meta">@OnOpen</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">OnOpen</span><span class="params">(Session session)</span> <span class="keyword">throws</span> IOException {</span><br><span class="line">        <span class="built_in">this</span>.session = session;</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    <span class="meta">@OnMessage</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">OnMessage</span><span class="params">(String msg)</span> <span class="keyword">throws</span> IOException {</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    <span class="meta">@OnClose</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">OnClose</span><span class="params">(Session session)</span> <span class="keyword">throws</span> IOException {</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<p>可以看到每一个用户连入<code>/ws</code> 的这个都会有他们自己唯一一个<code>session</code> 其实如果要是直接 <code>session.</code>或有一个叫做 ``getUserPrincipal()<code> 的方法继续点下去有一个getName的方法。如果继续追下去打开</code>debug<code>就会惊奇的发现，</code>getUserPrincipal()<code>的类型尽然是SpringSecurity的</code>UsernamePasswordAuthenticationToken`的类，那么这就好办了。我写了一方法。</p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2023/09/19/6509235059a87.webp" alt="Spring-Security-Config-3.webp"></p>
+<p>这里的<code>LoginUser</code>和<code>SysUser</code>是我已经重写好<code>SpringSecuriy</code>中的登录用户的类，请改成你自己的即可。</p>
+<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 获取当前登录用户信息</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> SysUser <span class="title function_">getSysUser</span><span class="params">()</span> {</span><br><span class="line">    <span class="type">UsernamePasswordAuthenticationToken</span> <span class="variable">userPrincipal</span> <span class="operator">=</span> (UsernamePasswordAuthenticationToken) <span class="built_in">this</span>.session.getUserPrincipal();</span><br><span class="line">    <span class="type">LoginUser</span> <span class="variable">principal</span> <span class="operator">=</span> (LoginUser) userPrincipal.getPrincipal();</span><br><span class="line">    <span class="keyword">return</span> principal.getUser();</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 </body></html>]]></content>
       <categories>
         <category>网络技术</category>
       </categories>
       <tags>
-        <tag>WordPress</tag>
-        <tag>Nginx</tag>
+        <tag>Spring</tag>
+        <tag>Java</tag>
+        <tag>Security</tag>
+        <tag>SpringSecuriy</tag>
+        <tag>WebSocket</tag>
       </tags>
   </entry>
   <entry>
@@ -1800,6 +1728,78 @@
         <tag>QQ</tag>
         <tag>Tencent</tag>
         <tag>Bot</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>萌国ICP备案</title>
+    <url>/posts/moeICP/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="萌国ICP备案"><a href="#萌国ICP备案" class="headerlink" title="萌国ICP备案"></a>萌国ICP备案</h1><blockquote>
+<p>启元</p>
+</blockquote>
+<p>自从某萌主申请了 icp.gov.moe 域名以后</p>
+<p>萌童鞋在百忙中抽空写了个萌备系统</p>
+<p>然后大家看到萌国ICP备案查询系统就上线了</p>
+<blockquote>
+<p>萌国ICP备案</p>
+</blockquote>
+<p>嗯，你没看错，这是萌国的ICP备案。</p>
+<p>萌国在哪呢，听某萌主说，好像是个网络上虚拟的国度。</p>
+<p>反正别问博主了，本博主也是听来的。</p>
+<p>我们说的是萌国ICP备案，号称萌ICP备，简称萌备</p>
+<blockquote>
+<p>萌ICP备 纯属萌友网站联萌！<br>是一种次元中的爱好，文化的展现。</p>
+</blockquote>
+<p>若你在万千网站中遇到萌备<br>甚有缘分</p>
+<p>萌主：“欢迎各大热爱萌文化的站长加入</p>
+<p> 给自己的网站加上个萌萌的备案号”</p>
+<p>博主：能不能不打广告？……</p>
+<blockquote>
+<p>加入萌备</p>
+</blockquote>
+<p>申请地址： <a href="https://icp.gov.moe/join.php">https://icp.gov.moe/join.php</a></p>
+<p>萌备主页<br><a href="https://icp.gov.moe/">https://icp.gov.moe</a></p>
+<p>然后按提示在页脚加上萌备的链接，以便查询对接系统，最后自动就加入萌备了，好简单啊。</p>
+<blockquote>
+<p>后话</p>
+</blockquote>
+<p>感觉好简单的样子，本博客已经在用了，还PY了个好号码，是不是很好看呢。</p>
+<h1 id="异次元之旅"><a href="#异次元之旅" class="headerlink" title="异次元之旅"></a>异次元之旅</h1><blockquote>
+<p>这是什么？</p>
+</blockquote>
+<p>好像是萌站成员越来越壮大，让分散的<strong>小行星</strong>（此处指加入萌备的网站数量）进行联系的枢纽。</p>
+<blockquote>
+<p>每一颗小行星都蕴含着与众不同的绚丽彩虹一般的色彩，有些是生活的甜蜜，有些是科技的火花，有些则披着一层神秘而厚重的大气层，令人捉摸不透，你愿意开启这一场旅行吗？</p>
+</blockquote>
+<p>咳咳我当然愿意啦ヽ(✿ﾟ▽ﾟ)ノ</p>
+<blockquote>
+<p>这么加入呢？</p>
+</blockquote>
+<p>好像有一个专属的坐标 <a href="https://moe.one/thread-254.htm" rel="external nofollow noreferrer">萌ICP备异次元之旅</a>。</p>
+</body></html>]]></content>
+      <categories>
+        <category>生活随想</category>
+      </categories>
+      <tags>
+        <tag>备案</tag>
+        <tag>萌国</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于WordPress分类目录404问题</title>
+    <url>/posts/%E5%85%B3%E4%BA%8Ewordpress%E5%88%86%E7%B1%BB%E7%9B%AE%E5%BD%95404%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<html><head></head><body><h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>前两天把博客给玩脱了和，也没有备份，重新搞了之后我其实想隐藏博文中链接地址里面的index.php无意间隐藏了index.php还神奇的把分类目录的404解决了。</p>
+<h2 id="我遇到的问题，本人萌新，如果有什么不对的地方希望大佬手下留情ヾ-≧へ≦-〃"><a href="#我遇到的问题，本人萌新，如果有什么不对的地方希望大佬手下留情ヾ-≧へ≦-〃" class="headerlink" title="我遇到的问题，本人萌新，如果有什么不对的地方希望大佬手下留情ヾ(≧へ≦)〃"></a>我遇到的问题，本人萌新，如果有什么不对的地方希望大佬手下留情ヾ(≧へ≦)〃</h2><p>我的博客的问题是就算使用word press的 月份和名称型类型地址也会报错。 以及我的分类目录404，但是文章标签就可以正常打开，这对于我来说已经非常玄学了。</p>
+<h2 id="开始解决："><a href="#开始解决：" class="headerlink" title="开始解决："></a>开始解决：</h2><p>我是用的nginx。我抄的是nginx修改的代码是这个<a href="https://blog.csdn.net/weixin_41846803/article/details/80488726" rel="external nofollow noreferrer" title="博主写的">博主写的</a></p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">location / {</span><br><span class="line">       if (!-e $request_filename) {</span><br><span class="line">            #一级目录</span><br><span class="line">            rewrite ^/(.*)$ /index.php/$1 last;</span><br><span class="line">        } </span><br><span class="line">    }</span><br></pre></td></tr></tbody></table></figure>
+
+<p>然后进入你的宝塔面板，网站——选择你需要改的网站——设置——更改配置——拆入代码。我插入的是第50行 <img src="http://c-dreamer.top/wp-content/uploads/2020/06/word-press%E7%9A%84404.png"></p>
+</body></html>]]></content>
+      <categories>
+        <category>网络技术</category>
+      </categories>
+      <tags>
+        <tag>WordPress</tag>
+        <tag>Nginx</tag>
       </tags>
   </entry>
   <entry>
@@ -1854,6 +1854,19 @@
       </categories>
   </entry>
   <entry>
+    <title>本站正式启动邮箱评论功能</title>
+    <url>/posts/%E6%9C%AC%E7%AB%99%E6%AD%A3%E5%BC%8F%E5%90%AF%E5%8A%A8%E9%82%AE%E7%AE%B1%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/</url>
+    <content><![CDATA[<html><head></head><body><p>邮箱评论功能欢迎大家测试如有bug,请联系我的QQ，谢谢！</p>
+</body></html>]]></content>
+      <categories>
+        <category>网络技术</category>
+      </categories>
+      <tags>
+        <tag>Email</tag>
+        <tag>SMTP</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>本站建立一周年!</title>
     <url>/posts/%E6%9C%AC%E7%AB%99%E5%BB%BA%E7%AB%8B%E4%B8%80%E5%91%A8%E5%B9%B4/</url>
     <content><![CDATA[<html><head></head><body><p>不知不觉当中,blog已经陪我走完一年,而我在这一年当中也没有写过什么东西,觉得浪费了资源.虽然建站容易但是,维护确实相当的麻烦. 大概明年五月份的时候可能本站要从word press迁移至Typecho. 不过至于下一次更新可能要继续等到2021年暑假的时候.</p>
@@ -1879,19 +1892,6 @@
       </categories>
       <tags>
         <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>本站正式启动邮箱评论功能</title>
-    <url>/posts/%E6%9C%AC%E7%AB%99%E6%AD%A3%E5%BC%8F%E5%90%AF%E5%8A%A8%E9%82%AE%E7%AE%B1%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/</url>
-    <content><![CDATA[<html><head></head><body><p>邮箱评论功能欢迎大家测试如有bug,请联系我的QQ，谢谢！</p>
-</body></html>]]></content>
-      <categories>
-        <category>网络技术</category>
-      </categories>
-      <tags>
-        <tag>Email</tag>
-        <tag>SMTP</tag>
       </tags>
   </entry>
 </search>
