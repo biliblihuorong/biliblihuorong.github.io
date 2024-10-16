@@ -81,6 +81,61 @@
       </tags>
   </entry>
   <entry>
+    <title>ArchLinux 使用体验</title>
+    <url>/posts/ArchLinux/</url>
+    <content><![CDATA[<html><head></head><body><img src="https://img.misaka.pics/i/1/2023/02/09/63e4c0b786de8.webp" alt="archlinux-logo-dark-1200dpi.webp" style="zoom: 25%;">
+
+<h1 id="关于-ArchLinux"><a href="#关于-ArchLinux" class="headerlink" title="关于 ArchLinux"></a>关于 ArchLinux</h1><p>Arch 是Linux发行版的一个分支，arch的理念是完全自定义，没有所谓的系统版本，全部是滚动升级（长时间不滚，会滚炸，当然我每天开机第一件事就是滚一下）</p>
+<h1 id="正片开始"><a href="#正片开始" class="headerlink" title="正片开始"></a>正片开始</h1><h2 id="为什么非要选择Arch？"><a href="#为什么非要选择Arch？" class="headerlink" title="为什么非要选择Arch？"></a>为什么非要选择Arch？</h2><p>其实如果你要是在非中国大陆的话，我觉得你使用Ubuntu 或者其他的发行版大同小异，因为我看中了 Arch的万能的AUR软件仓库源，这里面有各位大佬自封装的软件，庞大的软件仓库，例如微信 需要wine 以及烦琐的配置 AUR 可以直接解决这些问题。</p>
+<h2 id="听说安装Arch很难？"><a href="#听说安装Arch很难？" class="headerlink" title="听说安装Arch很难？"></a>听说安装Arch很难？</h2><p>是的 Arch 的安装异常的烦琐切复杂 ，不过如果你擅用<code>Search</code>和<a href="https://wiki.archlinuxcn.org/wiki/%E9%A6%96%E9%A1%B5" rel="external nofollow noreferrer" title="ArchWiKi">ArchWiki</a> 和时间耐心的研究，其实很简单，我是一个纯Linux小白，在查阅ArchWiki花费大量的时间研究之后也安装成功。</p>
+<h2 id="我现在的状态？"><a href="#我现在的状态？" class="headerlink" title="我现在的状态？"></a>我现在的状态？</h2><p>我现在给电脑装载了双系统（怕arch崩了就无了） win11+arch</p>
+<p><img src="https://img.c-dreamer.top/i/1/2023/02/09/63e4bbfff1e9c.webp" alt="ArchLinux 配置.webp"></p>
+<h2 id="使用体验"><a href="#使用体验" class="headerlink" title="使用体验"></a>使用体验</h2><p>我用Arch差不多3个月了，除了刚开始的不适逐渐慢慢适应之后逐渐习惯，但我偶尔也很想换回windows，因为我现在还没有适应在linux只用一个根的感念，而不像windows的区概念（而且我分区还很多）。</p>
+<h1 id="你要现在立刻安装Arch？"><a href="#你要现在立刻安装Arch？" class="headerlink" title="你要现在立刻安装Arch？"></a>你要现在立刻安装Arch？</h1><h3 id="你会首先面临的问题"><a href="#你会首先面临的问题" class="headerlink" title="你会首先面临的问题"></a>你会首先面临的问题</h3><h4 id="游戏生态"><a href="#游戏生态" class="headerlink" title="游戏生态"></a>游戏生态</h4><p>首先Linux上虽然有steam 的Steam Play的加持，游戏生态逐步扩大，但还是有诸多游戏不能游玩，详情可以看这个<a href="https://www.protondb.com/" rel="external nofollow noreferrer" title="protondb">protondb</a>上搜索🔍，还有原神属于能玩的级别但是配置很烦琐。</p>
+<h4 id="软件的生态"><a href="#软件的生态" class="headerlink" title="软件的生态"></a>软件的生态</h4><p>虽然有AUR 的加持但仍然有很多软件只有windows平台还用<code>wine</code>调教不好它例如<code>office</code> ，但这不是说你不能使用这些功能，Linux有很多平替软件可以选择例如 <code>libreoffice</code> or <code>WPS</code>。</p>
+<h4 id="使用习惯"><a href="#使用习惯" class="headerlink" title="使用习惯"></a>使用习惯</h4><p>就像我前面提到的 Linux和Windows对于磁盘区的概念来说，以及你要面临一个新的桌面使用环境。</p>
+</body></html>]]></content>
+      <categories>
+        <category>生活随想</category>
+      </categories>
+      <tags>
+        <tag>Arch</tag>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Gitea SSO 登录优化与自动注册设置</title>
+    <url>/posts/Authentik-Gitea-SSO/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>gitea 的SSO登录逻辑，是通过OIDC 登录完毕和已经gitea自己的账户进行绑定，如果 没有账户gitea 会要求你注册一个再绑定，但是gitea 并没有能设置通过sso 进来的没有注册的用户开发注册，只有要么所有人都可以注册要么不可以注册。嗯。。。。感觉怪怪的。</p>
+<p>并且更改配置文件还需要手动重启容器，不可能我认识人都创建好gitea吧，或者不能每次他们第一次要用gitea 我需要配置打开注册。</p>
+<p>关于我的更多 <a href="/tags/Authentik/"><code>Authentik </code>相关文章</a>  ，详细安装（中文版本）<code>Authentik </code>请访问 <a href="https://www.bilibili.com/video/av1902852247/" rel="external nofollow noreferrer"><strong>ecwuuu</strong>发布的B站视频</a>关于正向代理： <a href="https://roy.wang/authentik-open-source-sso/#%E6%AD%A3%E5%90%91%E4%BB%A3%E7%90%86" rel="external nofollow noreferrer">roywang的文章</a></p>
+<h1 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h1><p><strong>此教程默认情况下视为你已经配置好了gitea 的OIDC登录。</strong></p>
+<p>如果您没有实现配置好，可以看 ecwuuuuu 的 <a href="https://www.bilibili.com/video/av1952943836/" rel="external nofollow noreferrer">你可以观看 将应用接入统一登陆 - OAuth 协议篇 - 以 Gitea 和 Grafana 为例</a></p>
+<p>本文章配合 <a href="/posts/CloudFlare-Tunnel-Application-Access/">使用 Cloud Flare Tunnel 和 Acces Application 安全的暴露在公网</a> 进行使用，使用 CloudFlare 的Zero Trust进行<code>转发验证</code></p>
+<p>如果你需要使用nginx配置转发验证，可以看 ecwuuuuu 的 <a href="https://ecwuuuuu.com/post/authentik-tutorial-4-setup-forwardauth/" rel="external nofollow noreferrer">通过反向代理和 ForwardAuth 接入任何应用</a>或者访问他的B站视频 <a href="https://www.bilibili.com/video/av1803923865/" rel="external nofollow noreferrer">配置 ForwardAuth 将任意应用加入统一登陆</a></p>
+<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><p>请确保你的gitea 配置文件和我下面提供的一样（配置文件一般在<code>&lt;宿主机容器映射&gt;/data/gitea/conf/app.ini</code></p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">[openid]</span><br><span class="line">ENABLE_OPENID_SIGNIN = true</span><br><span class="line">ENABLE_OPENID_SIGNUP = true</span><br><span class="line"></span><br><span class="line">[service]</span><br><span class="line">DISABLE_REGISTRATION = false</span><br><span class="line">REQUIRE_SIGNIN_VIEW = true</span><br><span class="line">REGISTER_EMAIL_CONFIRM = false</span><br><span class="line">ENABLE_NOTIFY_MAIL = true</span><br><span class="line">ALLOW_ONLY_EXTERNAL_REGISTRATION = false</span><br><span class="line">ENABLE_CAPTCHA = false</span><br><span class="line">DEFAULT_KEEP_EMAIL_PRIVATE = true</span><br><span class="line">DEFAULT_ALLOW_CREATE_ORGANIZATION = true</span><br><span class="line">DEFAULT_ENABLE_TIMETRACKING = true</span><br><span class="line">NO_REPLY_ADDRESS = noreply.localhost</span><br></pre></td></tr></tbody></table></figure>
+
+
+
+<p>屏蔽注册页面 <code>user/sign_up</code></p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/08/04/66aed81093245.webp" alt="CloudFlare-Zero Trust-Gitea-Sign_up.webp"></p>
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>将应用接入统一登陆 - OAuth 协议篇 - 以 Gitea 和 Grafana 为例:<a href="https://www.bilibili.com/video/av1952943836/" rel="external nofollow noreferrer">https://www.bilibili.com/video/av1952943836/</a></p>
+<p>通过反向代理和 ForwardAuth 接入任何应用:<a href="https://ecwuuuuu.com/post/authentik-tutorial-4-setup-forwardauth/" rel="external nofollow noreferrer">https://ecwuuuuu.com/post/authentik-tutorial-4-setup-forwardauth/</a></p>
+<p>使用 Cloud Flare Tunnel 和 Acces Application 安全的暴露在公网:<a href="https://blog.ning.moe/posts/CloudFlare-Tunnel-Application-Access/">https://blog.ning.moe/posts/CloudFlare-Tunnel-Application-Access/</a></p>
+</body></html>]]></content>
+      <categories>
+        <category>网络技术</category>
+      </categories>
+      <tags>
+        <tag>Authentik</tag>
+        <tag>Gitea</tag>
+        <tag>SSO</tag>
+        <tag>OIDC</tag>
+        <tag>OAuth2</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Linux安装宝塔面板</title>
     <url>/posts/21-8-3/</url>
     <content><![CDATA[<html><head></head><body><blockquote>
@@ -120,131 +175,6 @@
       </categories>
       <tags>
         <tag>宝塔</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Gitea SSO 登录优化与自动注册设置</title>
-    <url>/posts/Authentik-Gitea-SSO/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>gitea 的SSO登录逻辑，是通过OIDC 登录完毕和已经gitea自己的账户进行绑定，如果 没有账户gitea 会要求你注册一个再绑定，但是gitea 并没有能设置通过sso 进来的没有注册的用户开发注册，只有要么所有人都可以注册要么不可以注册。嗯。。。。感觉怪怪的。</p>
-<p>并且更改配置文件还需要手动重启容器，不可能我认识人都创建好gitea吧，或者不能每次他们第一次要用gitea 我需要配置打开注册。</p>
-<p>关于我的更多 <a href="/tags/Authentik/"><code>Authentik </code>相关文章</a>  ，详细安装（中文版本）<code>Authentik </code>请访问 <a href="https://www.bilibili.com/video/av1902852247/" rel="external nofollow noreferrer"><strong>ecwuuu</strong>发布的B站视频</a>关于正向代理： <a href="https://roy.wang/authentik-open-source-sso/#%E6%AD%A3%E5%90%91%E4%BB%A3%E7%90%86" rel="external nofollow noreferrer">roywang的文章</a></p>
-<h1 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h1><p><strong>此教程默认情况下视为你已经配置好了gitea 的OIDC登录。</strong></p>
-<p>如果您没有实现配置好，可以看 ecwuuuuu 的 <a href="https://www.bilibili.com/video/av1952943836/" rel="external nofollow noreferrer">你可以观看 将应用接入统一登陆 - OAuth 协议篇 - 以 Gitea 和 Grafana 为例</a></p>
-<p>本文章配合 <a href="/posts/CloudFlare-Tunnel-Application-Access/">使用 Cloud Flare Tunnel 和 Acces Application 安全的暴露在公网</a> 进行使用，使用 CloudFlare 的Zero Trust进行<code>转发验证</code></p>
-<p>如果你需要使用nginx配置转发验证，可以看 ecwuuuuu 的 <a href="https://ecwuuuuu.com/post/authentik-tutorial-4-setup-forwardauth/" rel="external nofollow noreferrer">通过反向代理和 ForwardAuth 接入任何应用</a>或者访问他的B站视频 <a href="https://www.bilibili.com/video/av1803923865/" rel="external nofollow noreferrer">配置 ForwardAuth 将任意应用加入统一登陆</a></p>
-<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><p>请确保你的gitea 配置文件和我下面提供的一样（配置文件一般在<code>&lt;宿主机容器映射&gt;/data/gitea/conf/app.ini</code></p>
-<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">[openid]</span><br><span class="line">ENABLE_OPENID_SIGNIN = true</span><br><span class="line">ENABLE_OPENID_SIGNUP = true</span><br><span class="line"></span><br><span class="line">[service]</span><br><span class="line">DISABLE_REGISTRATION = false</span><br><span class="line">REQUIRE_SIGNIN_VIEW = true</span><br><span class="line">REGISTER_EMAIL_CONFIRM = false</span><br><span class="line">ENABLE_NOTIFY_MAIL = true</span><br><span class="line">ALLOW_ONLY_EXTERNAL_REGISTRATION = false</span><br><span class="line">ENABLE_CAPTCHA = false</span><br><span class="line">DEFAULT_KEEP_EMAIL_PRIVATE = true</span><br><span class="line">DEFAULT_ALLOW_CREATE_ORGANIZATION = true</span><br><span class="line">DEFAULT_ENABLE_TIMETRACKING = true</span><br><span class="line">NO_REPLY_ADDRESS = noreply.localhost</span><br></pre></td></tr></tbody></table></figure>
-
-
-
-<p>屏蔽注册页面 <code>user/sign_up</code></p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/08/04/66aed81093245.webp" alt="CloudFlare-Zero Trust-Gitea-Sign_up.webp"></p>
-<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>将应用接入统一登陆 - OAuth 协议篇 - 以 Gitea 和 Grafana 为例:<a href="https://www.bilibili.com/video/av1952943836/" rel="external nofollow noreferrer">https://www.bilibili.com/video/av1952943836/</a></p>
-<p>通过反向代理和 ForwardAuth 接入任何应用:<a href="https://ecwuuuuu.com/post/authentik-tutorial-4-setup-forwardauth/" rel="external nofollow noreferrer">https://ecwuuuuu.com/post/authentik-tutorial-4-setup-forwardauth/</a></p>
-<p>使用 Cloud Flare Tunnel 和 Acces Application 安全的暴露在公网:<a href="https://blog.ning.moe/posts/CloudFlare-Tunnel-Application-Access/">https://blog.ning.moe/posts/CloudFlare-Tunnel-Application-Access/</a></p>
-</body></html>]]></content>
-      <categories>
-        <category>网络技术</category>
-      </categories>
-      <tags>
-        <tag>Authentik</tag>
-        <tag>Gitea</tag>
-        <tag>SSO</tag>
-        <tag>OIDC</tag>
-        <tag>OAuth2</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>ArchLinux 使用体验</title>
-    <url>/posts/ArchLinux/</url>
-    <content><![CDATA[<html><head></head><body><img src="https://img.misaka.pics/i/1/2023/02/09/63e4c0b786de8.webp" alt="archlinux-logo-dark-1200dpi.webp" style="zoom: 25%;">
-
-<h1 id="关于-ArchLinux"><a href="#关于-ArchLinux" class="headerlink" title="关于 ArchLinux"></a>关于 ArchLinux</h1><p>Arch 是Linux发行版的一个分支，arch的理念是完全自定义，没有所谓的系统版本，全部是滚动升级（长时间不滚，会滚炸，当然我每天开机第一件事就是滚一下）</p>
-<h1 id="正片开始"><a href="#正片开始" class="headerlink" title="正片开始"></a>正片开始</h1><h2 id="为什么非要选择Arch？"><a href="#为什么非要选择Arch？" class="headerlink" title="为什么非要选择Arch？"></a>为什么非要选择Arch？</h2><p>其实如果你要是在非中国大陆的话，我觉得你使用Ubuntu 或者其他的发行版大同小异，因为我看中了 Arch的万能的AUR软件仓库源，这里面有各位大佬自封装的软件，庞大的软件仓库，例如微信 需要wine 以及烦琐的配置 AUR 可以直接解决这些问题。</p>
-<h2 id="听说安装Arch很难？"><a href="#听说安装Arch很难？" class="headerlink" title="听说安装Arch很难？"></a>听说安装Arch很难？</h2><p>是的 Arch 的安装异常的烦琐切复杂 ，不过如果你擅用<code>Search</code>和<a href="https://wiki.archlinuxcn.org/wiki/%E9%A6%96%E9%A1%B5" rel="external nofollow noreferrer" title="ArchWiKi">ArchWiki</a> 和时间耐心的研究，其实很简单，我是一个纯Linux小白，在查阅ArchWiki花费大量的时间研究之后也安装成功。</p>
-<h2 id="我现在的状态？"><a href="#我现在的状态？" class="headerlink" title="我现在的状态？"></a>我现在的状态？</h2><p>我现在给电脑装载了双系统（怕arch崩了就无了） win11+arch</p>
-<p><img src="https://img.c-dreamer.top/i/1/2023/02/09/63e4bbfff1e9c.webp" alt="ArchLinux 配置.webp"></p>
-<h2 id="使用体验"><a href="#使用体验" class="headerlink" title="使用体验"></a>使用体验</h2><p>我用Arch差不多3个月了，除了刚开始的不适逐渐慢慢适应之后逐渐习惯，但我偶尔也很想换回windows，因为我现在还没有适应在linux只用一个根的感念，而不像windows的区概念（而且我分区还很多）。</p>
-<h1 id="你要现在立刻安装Arch？"><a href="#你要现在立刻安装Arch？" class="headerlink" title="你要现在立刻安装Arch？"></a>你要现在立刻安装Arch？</h1><h3 id="你会首先面临的问题"><a href="#你会首先面临的问题" class="headerlink" title="你会首先面临的问题"></a>你会首先面临的问题</h3><h4 id="游戏生态"><a href="#游戏生态" class="headerlink" title="游戏生态"></a>游戏生态</h4><p>首先Linux上虽然有steam 的Steam Play的加持，游戏生态逐步扩大，但还是有诸多游戏不能游玩，详情可以看这个<a href="https://www.protondb.com/" rel="external nofollow noreferrer" title="protondb">protondb</a>上搜索🔍，还有原神属于能玩的级别但是配置很烦琐。</p>
-<h4 id="软件的生态"><a href="#软件的生态" class="headerlink" title="软件的生态"></a>软件的生态</h4><p>虽然有AUR 的加持但仍然有很多软件只有windows平台还用<code>wine</code>调教不好它例如<code>office</code> ，但这不是说你不能使用这些功能，Linux有很多平替软件可以选择例如 <code>libreoffice</code> or <code>WPS</code>。</p>
-<h4 id="使用习惯"><a href="#使用习惯" class="headerlink" title="使用习惯"></a>使用习惯</h4><p>就像我前面提到的 Linux和Windows对于磁盘区的概念来说，以及你要面临一个新的桌面使用环境。</p>
-</body></html>]]></content>
-      <categories>
-        <category>生活随想</category>
-      </categories>
-      <tags>
-        <tag>Arch</tag>
-        <tag>Linux</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Cachefly自动证书上传</title>
-    <url>/posts/CacheflySSLUpDate/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>自从 <code>Cachefly</code> 推出了<a href="https://www.cachefly.com/pricing/" rel="external nofollow noreferrer">免费套餐</a>， 作为一个白嫖党，第一时间就去体验了一下，注册需要外币卡需要注意一下，所以注册门槛稍微相对较高吧。试了一下速度，很不错，回国速度非常好，北方基本上走的是ntt 和俄罗斯的线路，南方走的是 hk 的CN2 线路，至少分发的图片和静态资源不成问题。</p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2023/08/02/64ca088d41e00.webp" alt="Cachefly-ItDog.webp"></p>
-<p>但有个很烦人的问题，它不支持 免费的证书自动签发，需要我自己上传证书，好在他的ssl 证书是自动检测的，也就是说你上传了一个证书是在8月份到期了在7月份又上传了这个域名的证书是11月到期了，会自动在证书过期之前调整成11月的。而且最近学了学go，就用这三脚猫的功夫配合chatGPT 写了一个简单的小玩意。</p>
-<h1 id="自动证书上传程序"><a href="#自动证书上传程序" class="headerlink" title="自动证书上传程序"></a>自动证书上传程序</h1><p>我已经把这个项目开源并且放在了 <a href="https://github.com/biliblihuorong/CacheflySSLUpDate" rel="external nofollow noreferrer">我的GitHub仓库上</a> 。</p>
-<p>其实在仓库的README的文件上已经有写了使用方式，我就直接把README拿过来了。</p>
-<h2 id="使用方式"><a href="#使用方式" class="headerlink" title="使用方式"></a>使用方式</h2><ol>
-<li><p>首先，您需要在 <a href="https://github.com/biliblihuorong/CacheflySSLUpDate/releases" rel="external nofollow noreferrer">https://github.com/biliblihuorong/CacheflySSLUpDate/releases</a> 页面下载适用于您设备的可执行文件。</p>
-</li>
-<li><p>然后，在执行文件所在目录下创建一个名为 <code>config.json</code> 的文件，并按照以下示例填入相应的内容。您也可以直接下载本仓库中的 <code>config.json</code> 文件，填入您的配置信息。</p>
-</li>
-</ol>
-<figure class="highlight json"><table><tbody><tr><td class="code"><pre><span class="line"><span class="punctuation">{</span></span><br><span class="line">  <span class="attr">"token"</span><span class="punctuation">:</span> <span class="string">"您的 Cachefly Token，可在 https://portal.cachefly.com/app/tokens 获取"</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">"certificateFile"</span><span class="punctuation">:</span> <span class="string">"&lt;证书文件路径&gt;"</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">"certificateKeyFile"</span><span class="punctuation">:</span> <span class="string">"&lt;密钥文件路径&gt;"</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">"password"</span><span class="punctuation">:</span> <span class="string">"&lt;您的 Cachefly 密码&gt;"</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">"taskInterval"</span><span class="punctuation">:</span> <span class="number">7</span></span><br><span class="line"><span class="punctuation">}</span></span><br></pre></td></tr></tbody></table></figure>
-
-<ul>
-<li><code>token</code>：您需要前往 <a href="https://portal.cachefly.com/app/tokens" rel="external nofollow noreferrer">https://portal.cachefly.com/app/tokens</a> 获取 Cachefly Token，并将其填写在此处。</li>
-<li><code>certificateFile</code> 和 <code>certificateKeyFile</code>：这两个字段应填入您本地 SSL 证书和密钥的文件路径。如果您使用宝塔面板自动签发证书，则签发地址通常在 <code>/www/server/panel/vhost/ssl/&lt;您的域名&gt;/</code> 下，其中公钥为 <code>fullchain.pem</code>，私钥为 <code>privkey.pem</code>。</li>
-<li><code>password</code>：填入您的 Cachefly 密码，用于上传证书到 Cachefly。</li>
-<li><code>taskInterval</code>：此字段定义了执行任务的间隔天数。例如，设置为 7 表示每隔 7 天执行一次上传任务。</li>
-</ul>
-<p><strong>注意：</strong> 请确保 <code>config.json</code> 文件的格式正确，否则工具将无法正常运行。</p>
-<p>改好之后在项目文件夹下，运行</p>
-<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line"><span class="built_in">nohup</span> &lt;可执行文件&gt;</span><br></pre></td></tr></tbody></table></figure>
-
-<p>然后文件夹下会又一个 nohup.out 的文件，正常来说程序首次启动会运行一次ssl 证书上传。</p>
-</body></html>]]></content>
-      <categories>
-        <category>网络技术</category>
-      </categories>
-      <tags>
-        <tag>go</tag>
-        <tag>Cachefly</tag>
-        <tag>SSL</tag>
-        <tag>宝塔面板</tag>
-        <tag>网络技术</tag>
-        <tag>CloudFlare</tag>
-        <tag>写bug的小能手</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>使用Cloud Flare Tunnel和 Acces Application安全的暴露在公网</title>
-    <url>/posts/CloudFlare-Tunnel-Application-Access/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h1><p>如果搞 Home Lab 始终绕不开的话题是，我们如何将自己的内网服务暴露到公网上，又如何保证我们的安全。<br>现在可以使用我们赛博菩萨 Cloudflare 提供的 Zero Trust 来保护我们的安全。</p>
-<p>演示的dome ： <a href="https://hp.ning.moe/" rel="external nofollow noreferrer">HomePage</a> 和 <a href="https://misakashell.cloudflareaccess.com/" rel="external nofollow noreferrer">Cloud Flare Zero Trust 主页</a></p>
-<h1 id="正文："><a href="#正文：" class="headerlink" title="正文："></a>正文：</h1><h2 id="使用-Tunnel-暴露服务"><a href="#使用-Tunnel-暴露服务" class="headerlink" title="使用 Tunnel 暴露服务"></a>使用 Tunnel 暴露服务</h2><p>我们需要先登录<a href="https://one.dash.cloudflare.com/" rel="external nofollow noreferrer">CF zero trust的管理平台</a>，添加新的隧道点击：<code>Networks/Tunnels</code> 我们需要添加一个隧道让我们本地和 <code>Cloudflare Zero Trust</code>服务器进行连接。简单的配置完隧道名字</p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/22/6626359570249.webp" alt="Cloud-Flare-Zero-Trust-Dash-Tunnels.webp"></p>
-<p>会自动跳转到tunnel 这个页面，没跳转的 Networks/Tunnels/你的隧道/config。我们需要安装一个cloudflared的程序，这个页面已经为我们提供好了常见的系统，如Linux MacOS Windows，复制命令直接在我们终端运行即可。</p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/22/66263669cc5c3.webp" alt="CloudFlared-Download.webp"></p>
-<p>然后 下一步 ，简单配置一下。保存即可。返回菜单会发现刚刚创建的 <code>Tunnel</code> 等待 <code>Status</code> 显示<code>HEALTHY</code> 访问你的 配置好的域名应该就可以访问了。</p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/22/6626371255c1f.webp" alt="Cloud-Flare-Tunnel-Config.webp"></p>
-<h2 id="使用-Access-Applications-认证"><a href="#使用-Access-Applications-认证" class="headerlink" title="使用 Access Applications 认证"></a>使用 Access Applications 认证</h2><p>首先你需要确保你有登录方式 <code>Settings</code> –&gt;<code>Authentication</code>–&gt;<code>Login methods</code> ,如果没有你需要自行创建。</p>
-<p>来到<code> Access</code> –&gt;<code> Applications</code> –&gt; <code> Add an application</code> 选择<code>Self-hosted</code>，填写你刚才的域名，然后下一步。</p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/22/66263cfec6386.webp" alt="CF-Access-Applications.webp"></p>
-<p><code>policy name</code> 可以随便填写 记得 <code>Action</code>是 <code>Allow</code>，这里的Session 是多久在进行登录验证，可以调节时间长一点。</p>
-<p><code>Create additional rules</code> 根据你刚才配置的 <code>Authentication</code> 来填写，我这里是填写CF自带的邮箱验证码进行登录的。</p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/22/66263cff40b37.webp" alt="CF-Add an application.webp"></p>
-<p>配置完毕之后，访问你配置的域名就会出现拦截了，例如我<a href="https://hp.ning.moe/" rel="external nofollow noreferrer">配置好的</a>这我设置了自动跳转所以会到我的<code>SSO.ning.moe</code></p>
-<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p><a href="https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/" rel="external nofollow noreferrer">Cloudflare Tunnel 配置文档</a></p>
-<p><a href="https://developers.cloudflare.com/cloudflare-one/applications/" rel="external nofollow noreferrer">Applications Access</a></p>
-</body></html>]]></content>
-      <categories>
-        <category>网络技术</category>
-      </categories>
-      <tags>
-        <tag>CloudFlare</tag>
-        <tag>Zero Trust</tag>
       </tags>
   </entry>
   <entry>
@@ -291,6 +221,35 @@
         <tag>OIDC</tag>
         <tag>OAuth2</tag>
         <tag>nezha</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>使用Cloud Flare Tunnel和 Acces Application安全的暴露在公网</title>
+    <url>/posts/CloudFlare-Tunnel-Application-Access/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h1><p>如果搞 Home Lab 始终绕不开的话题是，我们如何将自己的内网服务暴露到公网上，又如何保证我们的安全。<br>现在可以使用我们赛博菩萨 Cloudflare 提供的 Zero Trust 来保护我们的安全。</p>
+<p>演示的dome ： <a href="https://hp.ning.moe/" rel="external nofollow noreferrer">HomePage</a> 和 <a href="https://misakashell.cloudflareaccess.com/" rel="external nofollow noreferrer">Cloud Flare Zero Trust 主页</a></p>
+<h1 id="正文："><a href="#正文：" class="headerlink" title="正文："></a>正文：</h1><h2 id="使用-Tunnel-暴露服务"><a href="#使用-Tunnel-暴露服务" class="headerlink" title="使用 Tunnel 暴露服务"></a>使用 Tunnel 暴露服务</h2><p>我们需要先登录<a href="https://one.dash.cloudflare.com/" rel="external nofollow noreferrer">CF zero trust的管理平台</a>，添加新的隧道点击：<code>Networks/Tunnels</code> 我们需要添加一个隧道让我们本地和 <code>Cloudflare Zero Trust</code>服务器进行连接。简单的配置完隧道名字</p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/22/6626359570249.webp" alt="Cloud-Flare-Zero-Trust-Dash-Tunnels.webp"></p>
+<p>会自动跳转到tunnel 这个页面，没跳转的 Networks/Tunnels/你的隧道/config。我们需要安装一个cloudflared的程序，这个页面已经为我们提供好了常见的系统，如Linux MacOS Windows，复制命令直接在我们终端运行即可。</p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/22/66263669cc5c3.webp" alt="CloudFlared-Download.webp"></p>
+<p>然后 下一步 ，简单配置一下。保存即可。返回菜单会发现刚刚创建的 <code>Tunnel</code> 等待 <code>Status</code> 显示<code>HEALTHY</code> 访问你的 配置好的域名应该就可以访问了。</p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/22/6626371255c1f.webp" alt="Cloud-Flare-Tunnel-Config.webp"></p>
+<h2 id="使用-Access-Applications-认证"><a href="#使用-Access-Applications-认证" class="headerlink" title="使用 Access Applications 认证"></a>使用 Access Applications 认证</h2><p>首先你需要确保你有登录方式 <code>Settings</code> –&gt;<code>Authentication</code>–&gt;<code>Login methods</code> ,如果没有你需要自行创建。</p>
+<p>来到<code> Access</code> –&gt;<code> Applications</code> –&gt; <code> Add an application</code> 选择<code>Self-hosted</code>，填写你刚才的域名，然后下一步。</p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/22/66263cfec6386.webp" alt="CF-Access-Applications.webp"></p>
+<p><code>policy name</code> 可以随便填写 记得 <code>Action</code>是 <code>Allow</code>，这里的Session 是多久在进行登录验证，可以调节时间长一点。</p>
+<p><code>Create additional rules</code> 根据你刚才配置的 <code>Authentication</code> 来填写，我这里是填写CF自带的邮箱验证码进行登录的。</p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/22/66263cff40b37.webp" alt="CF-Add an application.webp"></p>
+<p>配置完毕之后，访问你配置的域名就会出现拦截了，例如我<a href="https://hp.ning.moe/" rel="external nofollow noreferrer">配置好的</a>这我设置了自动跳转所以会到我的<code>SSO.ning.moe</code></p>
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p><a href="https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/" rel="external nofollow noreferrer">Cloudflare Tunnel 配置文档</a></p>
+<p><a href="https://developers.cloudflare.com/cloudflare-one/applications/" rel="external nofollow noreferrer">Applications Access</a></p>
+</body></html>]]></content>
+      <categories>
+        <category>网络技术</category>
+      </categories>
+      <tags>
+        <tag>CloudFlare</tag>
+        <tag>Zero Trust</tag>
       </tags>
   </entry>
   <entry>
@@ -357,6 +316,47 @@
       </tags>
   </entry>
   <entry>
+    <title>Cachefly自动证书上传</title>
+    <url>/posts/CacheflySSLUpDate/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>自从 <code>Cachefly</code> 推出了<a href="https://www.cachefly.com/pricing/" rel="external nofollow noreferrer">免费套餐</a>， 作为一个白嫖党，第一时间就去体验了一下，注册需要外币卡需要注意一下，所以注册门槛稍微相对较高吧。试了一下速度，很不错，回国速度非常好，北方基本上走的是ntt 和俄罗斯的线路，南方走的是 hk 的CN2 线路，至少分发的图片和静态资源不成问题。</p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2023/08/02/64ca088d41e00.webp" alt="Cachefly-ItDog.webp"></p>
+<p>但有个很烦人的问题，它不支持 免费的证书自动签发，需要我自己上传证书，好在他的ssl 证书是自动检测的，也就是说你上传了一个证书是在8月份到期了在7月份又上传了这个域名的证书是11月到期了，会自动在证书过期之前调整成11月的。而且最近学了学go，就用这三脚猫的功夫配合chatGPT 写了一个简单的小玩意。</p>
+<h1 id="自动证书上传程序"><a href="#自动证书上传程序" class="headerlink" title="自动证书上传程序"></a>自动证书上传程序</h1><p>我已经把这个项目开源并且放在了 <a href="https://github.com/biliblihuorong/CacheflySSLUpDate" rel="external nofollow noreferrer">我的GitHub仓库上</a> 。</p>
+<p>其实在仓库的README的文件上已经有写了使用方式，我就直接把README拿过来了。</p>
+<h2 id="使用方式"><a href="#使用方式" class="headerlink" title="使用方式"></a>使用方式</h2><ol>
+<li><p>首先，您需要在 <a href="https://github.com/biliblihuorong/CacheflySSLUpDate/releases" rel="external nofollow noreferrer">https://github.com/biliblihuorong/CacheflySSLUpDate/releases</a> 页面下载适用于您设备的可执行文件。</p>
+</li>
+<li><p>然后，在执行文件所在目录下创建一个名为 <code>config.json</code> 的文件，并按照以下示例填入相应的内容。您也可以直接下载本仓库中的 <code>config.json</code> 文件，填入您的配置信息。</p>
+</li>
+</ol>
+<figure class="highlight json"><table><tbody><tr><td class="code"><pre><span class="line"><span class="punctuation">{</span></span><br><span class="line">  <span class="attr">"token"</span><span class="punctuation">:</span> <span class="string">"您的 Cachefly Token，可在 https://portal.cachefly.com/app/tokens 获取"</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">"certificateFile"</span><span class="punctuation">:</span> <span class="string">"&lt;证书文件路径&gt;"</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">"certificateKeyFile"</span><span class="punctuation">:</span> <span class="string">"&lt;密钥文件路径&gt;"</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">"password"</span><span class="punctuation">:</span> <span class="string">"&lt;您的 Cachefly 密码&gt;"</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">"taskInterval"</span><span class="punctuation">:</span> <span class="number">7</span></span><br><span class="line"><span class="punctuation">}</span></span><br></pre></td></tr></tbody></table></figure>
+
+<ul>
+<li><code>token</code>：您需要前往 <a href="https://portal.cachefly.com/app/tokens" rel="external nofollow noreferrer">https://portal.cachefly.com/app/tokens</a> 获取 Cachefly Token，并将其填写在此处。</li>
+<li><code>certificateFile</code> 和 <code>certificateKeyFile</code>：这两个字段应填入您本地 SSL 证书和密钥的文件路径。如果您使用宝塔面板自动签发证书，则签发地址通常在 <code>/www/server/panel/vhost/ssl/&lt;您的域名&gt;/</code> 下，其中公钥为 <code>fullchain.pem</code>，私钥为 <code>privkey.pem</code>。</li>
+<li><code>password</code>：填入您的 Cachefly 密码，用于上传证书到 Cachefly。</li>
+<li><code>taskInterval</code>：此字段定义了执行任务的间隔天数。例如，设置为 7 表示每隔 7 天执行一次上传任务。</li>
+</ul>
+<p><strong>注意：</strong> 请确保 <code>config.json</code> 文件的格式正确，否则工具将无法正常运行。</p>
+<p>改好之后在项目文件夹下，运行</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line"><span class="built_in">nohup</span> &lt;可执行文件&gt;</span><br></pre></td></tr></tbody></table></figure>
+
+<p>然后文件夹下会又一个 nohup.out 的文件，正常来说程序首次启动会运行一次ssl 证书上传。</p>
+</body></html>]]></content>
+      <categories>
+        <category>网络技术</category>
+      </categories>
+      <tags>
+        <tag>CloudFlare</tag>
+        <tag>go</tag>
+        <tag>Cachefly</tag>
+        <tag>SSL</tag>
+        <tag>宝塔面板</tag>
+        <tag>网络技术</tag>
+        <tag>写bug的小能手</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>你可能需要知道的docker 的端口问题。</title>
     <url>/posts/DockerSecurity/</url>
     <content><![CDATA[<html><head></head><body><h1 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h1><p>docker 这个东西呢，对于我来说又爱又恨吧，爱的事情是可以很快速的进行部署项目，解决一些复杂和繁琐的问题，这也是docker 设计的初衷。恨得呢，本身我对于docker 来说是是一个小白用户，我只会 docker run xxxx 来完成我在github 找到的有趣应用，但是出了问题的时候，我需要去使用搜索引擎查阅的知识。</p>
@@ -407,39 +407,6 @@
         <tag>IPtables</tag>
         <tag>防火墙</tag>
         <tag>firewall</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>爱快IPv6防火墙配置</title>
-    <url>/posts/Ikuai-firewall-IPv6/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>爱快尽然默认没有开启<code>IPv6</code>对内网设备的阻断，我发现的时候十分震惊，而且已经在公网上暴露有一天以上了，最糟糕的事情，内网设备的密码全部是弱密码，吓得我先立刻断掉<code>IPv6</code>接入，仔细排查了一下内网设备还好没有人扫到并且进行爆破。</p>
-<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><p>请确保你的<code>ikuai </code>系统是最新版本并且登录<code>ikuai Web</code>后台，<code>安全设置</code> –&gt;<code>ACL规则</code></p>
-<h2 id="阻断所有IPv6链接"><a href="#阻断所有IPv6链接" class="headerlink" title="阻断所有IPv6链接"></a>阻断所有IPv6链接</h2><blockquote>
-<p>此操作不会阻断响应<code>IPv6</code>的流量</p>
-</blockquote>
-<p>由于 <code>ikuai </code>在 3.7.11 版本还不支持放行或阻断<code> ICMP</code> 协议，如果您想外网设备能ping通内网的话，需要需要创建两个配置，一个是阻断<code>TCP</code>还有一个阻断<code>UDP</code>，不想<code>ping</code>通的话，只需要创建一个配置选择任意协议即可。</p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/03/06/65e834d3a0bdd.webp" alt="ipv6防护墙介绍.webp"></p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/03/06/65e834d40ca02.webp" alt="ipv6阻断.webp"></p>
-<p>进接口一定是<code>wan</code>口由于笔者只有一个<code>wan</code>口，如果您有多个话请务必全部勾选，出接口是<code>lan</code>同样如果您有多个<code>lan</code>接口请全部勾上，这样我们内网设备就不会暴露外网了。</p>
-<h2 id="打开指定IPv6的连接"><a href="#打开指定IPv6的连接" class="headerlink" title="打开指定IPv6的连接"></a>打开指定IPv6的连接</h2><blockquote>
-<p>再说指定放行<code>IPv6</code>地址，如果您是静态<code>IPv6</code>，那你自己放行那个ip 即可，但是身为家庭宽带的话都是动态<code>IPv6</code>地址根本不可能知道ip会变成什么样子，还是说每次变化ip 的地址重新改吗？这里需要了解一下ipv6 的后缀生成是受MAC 地址影响的，通过EUI-64 编码进行处理，详情访问: <a href="https://ccie.lol/knowledge-base/ipv6-use-eui-64-convert-link-local-address/" rel="external nofollow noreferrer">【转】通过EUI-64自动生成IPv6地址和IPv6链路本地地址（Link-Local Address）</a></p>
-</blockquote>
-<p><strong>对于windows 获取ipv6地址使用 EUI-64 编码得到的理论值和实际值可能不一样</strong></p>
-<p>可以使用 <a href="https://eui64-calc.princelle.org/" rel="external nofollow noreferrer">EUI-64 计算器</a></p>
-<p>例如 <code>bc:34:11:c6:8a:19 </code>通过计算可以得到 <code>BE34:11FF:FEC6:8A19</code> 理论情况的<code>ipv6</code>，据我测试后四位基本上都是一样的，前面受到<code>IPv6</code>前缀影响。</p>
-<img src="https://img.misaka.pics/ShellBlogImg/1/2024/03/06/65e846c30a412.webp" alt="指定IPv6放行.webp" style="zoom:67%;">
-
-<p>在已经匹配的内容中<code>::8A19</code>改成你自己的后缀四位，<code>ikuai </code>的防火墙逻辑是先放行后阻断，所以不需要关系防火墙配置的顺序。</p>
-<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">::8a1f/::ffff</span><br></pre></td></tr></tbody></table></figure>
-
-<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p><a href="https://ccie.lol/knowledge-base/ipv6-use-eui-64-convert-link-local-address/" rel="external nofollow noreferrer">【转】通过EUI-64自动生成IPv6地址和IPv6链路本地地址（Link-Local Address）</a></p>
-<p> <a href="https://eui64-calc.princelle.org/" rel="external nofollow noreferrer">EUI-64 计算器</a></p>
-</body></html>]]></content>
-      <tags>
-        <tag>防火墙</tag>
-        <tag>firewall</tag>
-        <tag>Ikuai</tag>
-        <tag>IPv6</tag>
       </tags>
   </entry>
   <entry>
@@ -700,6 +667,39 @@
       </tags>
   </entry>
   <entry>
+    <title>爱快IPv6防火墙配置</title>
+    <url>/posts/Ikuai-firewall-IPv6/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>爱快尽然默认没有开启<code>IPv6</code>对内网设备的阻断，我发现的时候十分震惊，而且已经在公网上暴露有一天以上了，最糟糕的事情，内网设备的密码全部是弱密码，吓得我先立刻断掉<code>IPv6</code>接入，仔细排查了一下内网设备还好没有人扫到并且进行爆破。</p>
+<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><p>请确保你的<code>ikuai </code>系统是最新版本并且登录<code>ikuai Web</code>后台，<code>安全设置</code> –&gt;<code>ACL规则</code></p>
+<h2 id="阻断所有IPv6链接"><a href="#阻断所有IPv6链接" class="headerlink" title="阻断所有IPv6链接"></a>阻断所有IPv6链接</h2><blockquote>
+<p>此操作不会阻断响应<code>IPv6</code>的流量</p>
+</blockquote>
+<p>由于 <code>ikuai </code>在 3.7.11 版本还不支持放行或阻断<code> ICMP</code> 协议，如果您想外网设备能ping通内网的话，需要需要创建两个配置，一个是阻断<code>TCP</code>还有一个阻断<code>UDP</code>，不想<code>ping</code>通的话，只需要创建一个配置选择任意协议即可。</p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/03/06/65e834d3a0bdd.webp" alt="ipv6防护墙介绍.webp"></p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/03/06/65e834d40ca02.webp" alt="ipv6阻断.webp"></p>
+<p>进接口一定是<code>wan</code>口由于笔者只有一个<code>wan</code>口，如果您有多个话请务必全部勾选，出接口是<code>lan</code>同样如果您有多个<code>lan</code>接口请全部勾上，这样我们内网设备就不会暴露外网了。</p>
+<h2 id="打开指定IPv6的连接"><a href="#打开指定IPv6的连接" class="headerlink" title="打开指定IPv6的连接"></a>打开指定IPv6的连接</h2><blockquote>
+<p>再说指定放行<code>IPv6</code>地址，如果您是静态<code>IPv6</code>，那你自己放行那个ip 即可，但是身为家庭宽带的话都是动态<code>IPv6</code>地址根本不可能知道ip会变成什么样子，还是说每次变化ip 的地址重新改吗？这里需要了解一下ipv6 的后缀生成是受MAC 地址影响的，通过EUI-64 编码进行处理，详情访问: <a href="https://ccie.lol/knowledge-base/ipv6-use-eui-64-convert-link-local-address/" rel="external nofollow noreferrer">【转】通过EUI-64自动生成IPv6地址和IPv6链路本地地址（Link-Local Address）</a></p>
+</blockquote>
+<p><strong>对于windows 获取ipv6地址使用 EUI-64 编码得到的理论值和实际值可能不一样</strong></p>
+<p>可以使用 <a href="https://eui64-calc.princelle.org/" rel="external nofollow noreferrer">EUI-64 计算器</a></p>
+<p>例如 <code>bc:34:11:c6:8a:19 </code>通过计算可以得到 <code>BE34:11FF:FEC6:8A19</code> 理论情况的<code>ipv6</code>，据我测试后四位基本上都是一样的，前面受到<code>IPv6</code>前缀影响。</p>
+<img src="https://img.misaka.pics/ShellBlogImg/1/2024/03/06/65e846c30a412.webp" alt="指定IPv6放行.webp" style="zoom:67%;">
+
+<p>在已经匹配的内容中<code>::8A19</code>改成你自己的后缀四位，<code>ikuai </code>的防火墙逻辑是先放行后阻断，所以不需要关系防火墙配置的顺序。</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">::8a1f/::ffff</span><br></pre></td></tr></tbody></table></figure>
+
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p><a href="https://ccie.lol/knowledge-base/ipv6-use-eui-64-convert-link-local-address/" rel="external nofollow noreferrer">【转】通过EUI-64自动生成IPv6地址和IPv6链路本地地址（Link-Local Address）</a></p>
+<p> <a href="https://eui64-calc.princelle.org/" rel="external nofollow noreferrer">EUI-64 计算器</a></p>
+</body></html>]]></content>
+      <tags>
+        <tag>防火墙</tag>
+        <tag>firewall</tag>
+        <tag>Ikuai</tag>
+        <tag>IPv6</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>御坂美琴生日快乐</title>
     <url>/posts/MisakaMikoto/</url>
     <content><![CDATA[<html><head></head><body><blockquote>
@@ -837,41 +837,6 @@
       </tags>
   </entry>
   <entry>
-    <title>新版本Spring-Security配置踩坑</title>
-    <url>/posts/Spring-Security/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="引言："><a href="#引言：" class="headerlink" title="引言："></a>引言：</h1><blockquote>
-<p>事情是这样的，我最近打算学习了springSecurity的时候，跟着视频学习的时候发现配置类 <code>WebSecurityConfigurerAdapter</code> 过时了，这个问题本篇的文章会告诉你答案，以及我有不小心选择了spring boot3.0 的版本然后<code>authorizeRequests</code>也过时了。如果此文章有错欢迎大佬批评指教。</p>
-</blockquote>
-<h1 id="Spring-Security的版本"><a href="#Spring-Security的版本" class="headerlink" title="Spring-Security的版本"></a>Spring-Security的版本</h1><h2 id="Spring-Security5-7-版本"><a href="#Spring-Security5-7-版本" class="headerlink" title="Spring-Security5.7+版本"></a>Spring-Security5.7+版本</h2><p>这个版本差不多是spring-boot 2.7版本使用的，首先<code>WebSecurityConfigurerAdapter</code> 过时，但是在在过时的源码类中，会叫我们如何进行配置新版本的Spring-Security的配置，官方的我贴这里</p>
-<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">提供用于创建 WebSecurityConfigurer 实例的方便基类。该实现允许通过重写方法进行自定义。</span></span><br><span class="line"><span class="comment">将自动应用查找 AbstractHttpConfigurer 自 SpringFactoriesLoader 的结果，以允许开发人员扩展默认值。</span></span><br><span class="line"><span class="comment">为此，您必须创建一个扩展 AbstractHttpConfigurer 的类，</span></span><br><span class="line"><span class="comment">然后在“META-INF/spring.factory”的类路径中创建一个文件，如下所示：</span></span><br><span class="line"><span class="comment">org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer=</span></span><br><span class="line"><span class="comment">sample.MyClassThatExtendsAbstractHttpConfigurer</span></span><br><span class="line"><span class="comment">如果有多个应添加的类，则可以使用 “，”分隔值。例如：</span></span><br><span class="line"><span class="comment">  org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer=</span></span><br><span class="line"><span class="comment">  sample.MyClassThatExtendsAbstractHttpConfigurer, sample.OtherThatExtendsAbstractHttpConfigurer</span></span><br><span class="line"><span class="comment">已弃用</span></span><br><span class="line"><span class="comment">org.springframework.security.web.SecurityFilterChain使用</span></span><br><span class="line"><span class="comment">Bean 进行配置或WebSecurityCustomizer使用 Bean 进行配置 HttpSecurity WebSecurity。</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line">      <span class="meta">@Bean</span></span><br><span class="line">      <span class="keyword">public</span> SecurityFilterChain <span class="title function_">securityFilterChain</span><span class="params">(HttpSecurity http)</span> <span class="keyword">throws</span> Exception {</span><br><span class="line">          http</span><br><span class="line">              .authorizeHttpRequests((authz) -&gt;</span><br><span class="line">                  authz.anyRequest().authenticated()</span><br><span class="line">              );</span><br><span class="line">              <span class="comment">// ...</span></span><br><span class="line">          <span class="keyword">return</span> http.build();</span><br><span class="line">      }</span><br><span class="line"> </span><br><span class="line">     <span class="meta">@Bean</span></span><br><span class="line">     <span class="keyword">public</span> WebSecurityCustomizer <span class="title function_">webSecurityCustomizer</span><span class="params">(WebSecurity web)</span> {</span><br><span class="line">         <span class="keyword">return</span> (web) -&gt; web.ignoring().antMatchers(<span class="string">"/resources/**"</span>);</span><br><span class="line">     }</span><br><span class="line">  <span class="comment">/**</span></span><br><span class="line"><span class="comment">请参阅 Spring Security without WebSecurityConfigurerAdapter  以获取更多详细信息。</span></span><br><span class="line"><span class="comment">请参阅:</span></span><br><span class="line"><span class="comment">EnableWebSecurity</span></span><br><span class="line"><span class="comment">作者:</span></span><br><span class="line"><span class="comment">罗伯·温奇</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></tbody></table></figure>
-
-<p>可以看到，新版本官方推荐使用@Bean 进行配置，这个感觉更加优雅了，和我们原来使用配置类进行配置的都是大同小异，但这里有个问题官方没有讲（或许我没有找到）。</p>
-<h3 id="关于-AuthenticationManager-认证类的问题"><a href="#关于-AuthenticationManager-认证类的问题" class="headerlink" title="关于 AuthenticationManager 认证类的问题"></a>关于 <code>AuthenticationManager</code> 认证类的问题</h3><p>因为，可能我们需要因为某种原因重写 过滤器的类，但最后我们在旧版本需要指定一个<code>AuthenticationManager</code> 类不管是工厂里的还是直接springboot启动时创建的。这个地方我查了好久网上的没有一个能一个找到的，全部都是重复。</p>
-<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">@Autowired</span></span><br><span class="line">AuthenticationConfiguration authenticationConfiguration;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> AuthenticationManager <span class="title function_">authenticationManager</span><span class="params">()</span> <span class="keyword">throws</span> Exception {</span><br><span class="line">    <span class="type">AuthenticationManager</span> <span class="variable">authenticationManager</span> <span class="operator">=</span> </span><br><span class="line">        authenticationConfiguration.getAuthenticationManager();</span><br><span class="line">    <span class="keyword">return</span> authenticationManager;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-
-<p>我们只需要使用 <code>AuthenticationConfiguration</code> 创建一个``AuthenticationManager<code> </code> 类即可，推荐写在Security配置类中，这样可以直接方便调用即可。</p>
-<p>例如我重写了 <code>UsernamePasswordAuthenticationFilter</code>的过滤器 <code>KaptchaFilter</code> 是继承了<code>UsernamePasswordAuthenticationFilter</code> 和并且重写了里面的方法加入了验证码。</p>
-<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">@Bean</span></span><br><span class="line"><span class="keyword">public</span> KaptchaFilter <span class="title function_">kaptchaFilter</span><span class="params">()</span> <span class="keyword">throws</span> Exception {</span><br><span class="line">    <span class="type">KaptchaFilter</span> <span class="variable">kaptchaFilter</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">KaptchaFilter</span>();</span><br><span class="line">    kaptchaFilter.setFilterProcessesUrl(<span class="string">"/doLogin"</span>);</span><br><span class="line">    kaptchaFilter.setUsernameParameter(<span class="string">"uname"</span>);</span><br><span class="line">    kaptchaFilter.setPasswordParameter(<span class="string">"passwd"</span>);</span><br><span class="line">    kaptchaFilter.setKaptcha(<span class="string">"kaptcha"</span>);</span><br><span class="line">    <span class="comment">//指定认证管理器</span></span><br><span class="line">    kaptchaFilter.setAuthenticationManager(authenticationManager());</span><br><span class="line">    kaptchaFilter.setAuthenticationSuccessHandler((request, response, authentication) -&gt; {</span><br><span class="line">        response.sendRedirect(<span class="string">"/index.html"</span>);</span><br><span class="line">    });</span><br><span class="line">    kaptchaFilter.setAuthenticationFailureHandler((request, response, exception) -&gt; {</span><br><span class="line">        response.sendRedirect(<span class="string">"/login.html"</span>);</span><br><span class="line">    });</span><br><span class="line">    <span class="keyword">return</span> kaptchaFilter;</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="meta">@Bean</span></span><br><span class="line"><span class="keyword">public</span> SecurityFilterChain <span class="title function_">securityFilter</span><span class="params">(HttpSecurity http)</span><span class="keyword">throws</span> Exception{</span><br><span class="line">    <span class="keyword">return</span> http.authorizeRequests()</span><br><span class="line">            .mvcMatchers(<span class="string">"/login.html"</span>).permitAll()</span><br><span class="line">            .mvcMatchers(<span class="string">"/vc.jpg"</span>).permitAll()</span><br><span class="line">            .anyRequest().authenticated()</span><br><span class="line">            .and()</span><br><span class="line">            .formLogin()</span><br><span class="line">            .loginPage(<span class="string">"/login.html"</span>)</span><br><span class="line">            .loginProcessingUrl(<span class="string">"/doLogin"</span>)</span><br><span class="line">            .usernameParameter(<span class="string">"uname"</span>)</span><br><span class="line">            .passwordParameter(<span class="string">"passwd"</span>)</span><br><span class="line">            .defaultSuccessUrl(<span class="string">"/index.html"</span>,<span class="literal">true</span>)</span><br><span class="line">            .and()</span><br><span class="line">            .csrf().disable()</span><br><span class="line">            .addFilterAt(kaptchaFilter(), UsernamePasswordAuthenticationFilter.class)</span><br><span class="line">            .build();</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-
-
-
-<h2 id="关于SpringSecurity6-02-版本"><a href="#关于SpringSecurity6-02-版本" class="headerlink" title="关于SpringSecurity6.02+版本"></a>关于SpringSecurity6.02+版本</h2><p>这个版本差不多是spring boot 3.0+开始使用的，如果你按照上面新版本使用@Bean配置的话，会发现<code>HttpSecurity</code>中的<code>authorizeRequests</code> 方法标记为过时了，而且<code>mvcMatchers</code>也没有这个方法了，原因6.0的SpringSecurity推荐使用<code>authorizeHttpRequests</code>进行配置，对就是很烦人，不能一个版本改完，而且文档及其混乱。</p>
-<p>例如：</p>
-<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">@Bean</span></span><br><span class="line"><span class="keyword">public</span> SecurityFilterChain <span class="title function_">securityFilterChain</span><span class="params">(HttpSecurity http)</span> <span class="keyword">throws</span> Exception {</span><br><span class="line">    <span class="keyword">return</span> http.authorizeHttpRequests()</span><br><span class="line">            .requestMatchers(<span class="string">"/vc.jpg"</span>).permitAll()<span class="comment">//放行指定选项</span></span><br><span class="line">        	.anyRequest().authenticated()<span class="comment">//拦截所有请求都需要认证</span></span><br><span class="line">            .and()</span><br><span class="line">            .formLogin()</span><br><span class="line">            .and()</span><br><span class="line">            .logout()</span><br><span class="line">            .and()</span><br><span class="line">            .addFilterAt(loginKaptchaFilter(),UsernamePasswordAuthenticationFilter.class)</span><br><span class="line">            .csrf().disable()</span><br><span class="line">            .build();</span><br><span class="line"></span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-
-<p>其他配置和SpringSecurity5.7+的配置一样。</p>
-</body></html>]]></content>
-      <categories>
-        <category>Bug生成者</category>
-      </categories>
-      <tags>
-        <tag>Spring</tag>
-        <tag>Java</tag>
-        <tag>Security</tag>
-        <tag>SpringSecuriy</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>2023年好耶！</title>
     <url>/posts/New2023/</url>
     <content><![CDATA[<html><head></head><body><h1 id="博客补全计划"><a href="#博客补全计划" class="headerlink" title="博客补全计划"></a>博客补全计划</h1><p>对于突然诈尸的我，在这两年里面我也写了很多稿子（虽然都没有发出来），其实要么是不满意不太像水，要么就是写着写着发现，貌似有很多问题。</p>
@@ -959,6 +924,41 @@
       </tags>
   </entry>
   <entry>
+    <title>新版本Spring-Security配置踩坑</title>
+    <url>/posts/Spring-Security/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="引言："><a href="#引言：" class="headerlink" title="引言："></a>引言：</h1><blockquote>
+<p>事情是这样的，我最近打算学习了springSecurity的时候，跟着视频学习的时候发现配置类 <code>WebSecurityConfigurerAdapter</code> 过时了，这个问题本篇的文章会告诉你答案，以及我有不小心选择了spring boot3.0 的版本然后<code>authorizeRequests</code>也过时了。如果此文章有错欢迎大佬批评指教。</p>
+</blockquote>
+<h1 id="Spring-Security的版本"><a href="#Spring-Security的版本" class="headerlink" title="Spring-Security的版本"></a>Spring-Security的版本</h1><h2 id="Spring-Security5-7-版本"><a href="#Spring-Security5-7-版本" class="headerlink" title="Spring-Security5.7+版本"></a>Spring-Security5.7+版本</h2><p>这个版本差不多是spring-boot 2.7版本使用的，首先<code>WebSecurityConfigurerAdapter</code> 过时，但是在在过时的源码类中，会叫我们如何进行配置新版本的Spring-Security的配置，官方的我贴这里</p>
+<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">提供用于创建 WebSecurityConfigurer 实例的方便基类。该实现允许通过重写方法进行自定义。</span></span><br><span class="line"><span class="comment">将自动应用查找 AbstractHttpConfigurer 自 SpringFactoriesLoader 的结果，以允许开发人员扩展默认值。</span></span><br><span class="line"><span class="comment">为此，您必须创建一个扩展 AbstractHttpConfigurer 的类，</span></span><br><span class="line"><span class="comment">然后在“META-INF/spring.factory”的类路径中创建一个文件，如下所示：</span></span><br><span class="line"><span class="comment">org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer=</span></span><br><span class="line"><span class="comment">sample.MyClassThatExtendsAbstractHttpConfigurer</span></span><br><span class="line"><span class="comment">如果有多个应添加的类，则可以使用 “，”分隔值。例如：</span></span><br><span class="line"><span class="comment">  org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer=</span></span><br><span class="line"><span class="comment">  sample.MyClassThatExtendsAbstractHttpConfigurer, sample.OtherThatExtendsAbstractHttpConfigurer</span></span><br><span class="line"><span class="comment">已弃用</span></span><br><span class="line"><span class="comment">org.springframework.security.web.SecurityFilterChain使用</span></span><br><span class="line"><span class="comment">Bean 进行配置或WebSecurityCustomizer使用 Bean 进行配置 HttpSecurity WebSecurity。</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line">      <span class="meta">@Bean</span></span><br><span class="line">      <span class="keyword">public</span> SecurityFilterChain <span class="title function_">securityFilterChain</span><span class="params">(HttpSecurity http)</span> <span class="keyword">throws</span> Exception {</span><br><span class="line">          http</span><br><span class="line">              .authorizeHttpRequests((authz) -&gt;</span><br><span class="line">                  authz.anyRequest().authenticated()</span><br><span class="line">              );</span><br><span class="line">              <span class="comment">// ...</span></span><br><span class="line">          <span class="keyword">return</span> http.build();</span><br><span class="line">      }</span><br><span class="line"> </span><br><span class="line">     <span class="meta">@Bean</span></span><br><span class="line">     <span class="keyword">public</span> WebSecurityCustomizer <span class="title function_">webSecurityCustomizer</span><span class="params">(WebSecurity web)</span> {</span><br><span class="line">         <span class="keyword">return</span> (web) -&gt; web.ignoring().antMatchers(<span class="string">"/resources/**"</span>);</span><br><span class="line">     }</span><br><span class="line">  <span class="comment">/**</span></span><br><span class="line"><span class="comment">请参阅 Spring Security without WebSecurityConfigurerAdapter  以获取更多详细信息。</span></span><br><span class="line"><span class="comment">请参阅:</span></span><br><span class="line"><span class="comment">EnableWebSecurity</span></span><br><span class="line"><span class="comment">作者:</span></span><br><span class="line"><span class="comment">罗伯·温奇</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>可以看到，新版本官方推荐使用@Bean 进行配置，这个感觉更加优雅了，和我们原来使用配置类进行配置的都是大同小异，但这里有个问题官方没有讲（或许我没有找到）。</p>
+<h3 id="关于-AuthenticationManager-认证类的问题"><a href="#关于-AuthenticationManager-认证类的问题" class="headerlink" title="关于 AuthenticationManager 认证类的问题"></a>关于 <code>AuthenticationManager</code> 认证类的问题</h3><p>因为，可能我们需要因为某种原因重写 过滤器的类，但最后我们在旧版本需要指定一个<code>AuthenticationManager</code> 类不管是工厂里的还是直接springboot启动时创建的。这个地方我查了好久网上的没有一个能一个找到的，全部都是重复。</p>
+<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">@Autowired</span></span><br><span class="line">AuthenticationConfiguration authenticationConfiguration;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> AuthenticationManager <span class="title function_">authenticationManager</span><span class="params">()</span> <span class="keyword">throws</span> Exception {</span><br><span class="line">    <span class="type">AuthenticationManager</span> <span class="variable">authenticationManager</span> <span class="operator">=</span> </span><br><span class="line">        authenticationConfiguration.getAuthenticationManager();</span><br><span class="line">    <span class="keyword">return</span> authenticationManager;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<p>我们只需要使用 <code>AuthenticationConfiguration</code> 创建一个``AuthenticationManager<code> </code> 类即可，推荐写在Security配置类中，这样可以直接方便调用即可。</p>
+<p>例如我重写了 <code>UsernamePasswordAuthenticationFilter</code>的过滤器 <code>KaptchaFilter</code> 是继承了<code>UsernamePasswordAuthenticationFilter</code> 和并且重写了里面的方法加入了验证码。</p>
+<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">@Bean</span></span><br><span class="line"><span class="keyword">public</span> KaptchaFilter <span class="title function_">kaptchaFilter</span><span class="params">()</span> <span class="keyword">throws</span> Exception {</span><br><span class="line">    <span class="type">KaptchaFilter</span> <span class="variable">kaptchaFilter</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">KaptchaFilter</span>();</span><br><span class="line">    kaptchaFilter.setFilterProcessesUrl(<span class="string">"/doLogin"</span>);</span><br><span class="line">    kaptchaFilter.setUsernameParameter(<span class="string">"uname"</span>);</span><br><span class="line">    kaptchaFilter.setPasswordParameter(<span class="string">"passwd"</span>);</span><br><span class="line">    kaptchaFilter.setKaptcha(<span class="string">"kaptcha"</span>);</span><br><span class="line">    <span class="comment">//指定认证管理器</span></span><br><span class="line">    kaptchaFilter.setAuthenticationManager(authenticationManager());</span><br><span class="line">    kaptchaFilter.setAuthenticationSuccessHandler((request, response, authentication) -&gt; {</span><br><span class="line">        response.sendRedirect(<span class="string">"/index.html"</span>);</span><br><span class="line">    });</span><br><span class="line">    kaptchaFilter.setAuthenticationFailureHandler((request, response, exception) -&gt; {</span><br><span class="line">        response.sendRedirect(<span class="string">"/login.html"</span>);</span><br><span class="line">    });</span><br><span class="line">    <span class="keyword">return</span> kaptchaFilter;</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="meta">@Bean</span></span><br><span class="line"><span class="keyword">public</span> SecurityFilterChain <span class="title function_">securityFilter</span><span class="params">(HttpSecurity http)</span><span class="keyword">throws</span> Exception{</span><br><span class="line">    <span class="keyword">return</span> http.authorizeRequests()</span><br><span class="line">            .mvcMatchers(<span class="string">"/login.html"</span>).permitAll()</span><br><span class="line">            .mvcMatchers(<span class="string">"/vc.jpg"</span>).permitAll()</span><br><span class="line">            .anyRequest().authenticated()</span><br><span class="line">            .and()</span><br><span class="line">            .formLogin()</span><br><span class="line">            .loginPage(<span class="string">"/login.html"</span>)</span><br><span class="line">            .loginProcessingUrl(<span class="string">"/doLogin"</span>)</span><br><span class="line">            .usernameParameter(<span class="string">"uname"</span>)</span><br><span class="line">            .passwordParameter(<span class="string">"passwd"</span>)</span><br><span class="line">            .defaultSuccessUrl(<span class="string">"/index.html"</span>,<span class="literal">true</span>)</span><br><span class="line">            .and()</span><br><span class="line">            .csrf().disable()</span><br><span class="line">            .addFilterAt(kaptchaFilter(), UsernamePasswordAuthenticationFilter.class)</span><br><span class="line">            .build();</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+
+
+<h2 id="关于SpringSecurity6-02-版本"><a href="#关于SpringSecurity6-02-版本" class="headerlink" title="关于SpringSecurity6.02+版本"></a>关于SpringSecurity6.02+版本</h2><p>这个版本差不多是spring boot 3.0+开始使用的，如果你按照上面新版本使用@Bean配置的话，会发现<code>HttpSecurity</code>中的<code>authorizeRequests</code> 方法标记为过时了，而且<code>mvcMatchers</code>也没有这个方法了，原因6.0的SpringSecurity推荐使用<code>authorizeHttpRequests</code>进行配置，对就是很烦人，不能一个版本改完，而且文档及其混乱。</p>
+<p>例如：</p>
+<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">@Bean</span></span><br><span class="line"><span class="keyword">public</span> SecurityFilterChain <span class="title function_">securityFilterChain</span><span class="params">(HttpSecurity http)</span> <span class="keyword">throws</span> Exception {</span><br><span class="line">    <span class="keyword">return</span> http.authorizeHttpRequests()</span><br><span class="line">            .requestMatchers(<span class="string">"/vc.jpg"</span>).permitAll()<span class="comment">//放行指定选项</span></span><br><span class="line">        	.anyRequest().authenticated()<span class="comment">//拦截所有请求都需要认证</span></span><br><span class="line">            .and()</span><br><span class="line">            .formLogin()</span><br><span class="line">            .and()</span><br><span class="line">            .logout()</span><br><span class="line">            .and()</span><br><span class="line">            .addFilterAt(loginKaptchaFilter(),UsernamePasswordAuthenticationFilter.class)</span><br><span class="line">            .csrf().disable()</span><br><span class="line">            .build();</span><br><span class="line"></span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<p>其他配置和SpringSecurity5.7+的配置一样。</p>
+</body></html>]]></content>
+      <categories>
+        <category>Bug生成者</category>
+      </categories>
+      <tags>
+        <tag>Spring</tag>
+        <tag>Java</tag>
+        <tag>Security</tag>
+        <tag>SpringSecuriy</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Memos 对接 Authentik</title>
     <url>/posts/authentik-OAuth2-memos/</url>
     <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>关于我的更多 <a href="/tags/Authentik/"><code>Authentik </code>相关文章</a>  ，详细安装（中文版本）<code>Authentik </code>请访问 <a href="https://www.bilibili.com/video/av1902852247/" rel="external nofollow noreferrer"><strong>ecwuuu</strong>发布的B站视频</a>关于正向代理： <a href="https://roy.wang/authentik-open-source-sso/#%E6%AD%A3%E5%90%91%E4%BB%A3%E7%90%86" rel="external nofollow noreferrer">roywang的文章</a></p>
@@ -991,6 +991,17 @@
         <tag>OAuth2</tag>
         <tag>Memos</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>我的网站被人镜像了</title>
+    <url>/posts/Website-mirrored/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>事情是这样的我昨天配置一些东西是错的，同步上去了今天才发现，随后回滚之后发现防战访问突然下降好多，我以为是Google 没有收录一些文章决定拿一些文章关键词搜一搜，发现了两个我。</p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/08/11/66b8c1d2bb798.webp" alt="vs.webp"></p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/08/11/66b8c42125db6.webp" alt="mangxb.webp"></p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/08/11/66b8c45dd04f6.webp" alt="Snipaste_2024-08-11_21-42-05.webp"></p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/08/11/66b8c496e4fa7.webp" alt="Snipaste_2024-08-11_21-42-28.webp"><br>我已经向 Google bing dnspod  cloudlfare 进行举报 数字千年版权法案(DMCA) ，请 域名所属人立即删除我所有文章，网站等一些列属于我的数据。</p>
+<h1 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h1><p>本篇文章着急发出，可能会有问题，请大家见谅。</p>
+</body></html>]]></content>
   </entry>
   <entry>
     <title>如何优雅的管理你的密码</title>
@@ -1090,17 +1101,6 @@
         <tag>bitwarden</tag>
         <tag>Vaultwarden</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>我的网站被人镜像了</title>
-    <url>/posts/Website-mirrored/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>事情是这样的我昨天配置一些东西是错的，同步上去了今天才发现，随后回滚之后发现防战访问突然下降好多，我以为是Google 没有收录一些文章决定拿一些文章关键词搜一搜，发现了两个我。</p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/08/11/66b8c1d2bb798.webp" alt="vs.webp"></p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/08/11/66b8c42125db6.webp" alt="mangxb.webp"></p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/08/11/66b8c45dd04f6.webp" alt="Snipaste_2024-08-11_21-42-05.webp"></p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/08/11/66b8c496e4fa7.webp" alt="Snipaste_2024-08-11_21-42-28.webp"><br>我已经向 Google bing dnspod  cloudlfare 进行举报 数字千年版权法案(DMCA) ，请 域名所属人立即删除我所有文章，网站等一些列属于我的数据。</p>
-<h1 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h1><p>本篇文章着急发出，可能会有问题，请大家见谅。</p>
-</body></html>]]></content>
   </entry>
   <entry>
     <title>Hexo butterfly 优化</title>
@@ -1292,16 +1292,6 @@
       </tags>
   </entry>
   <entry>
-    <title>世界，您好！</title>
-    <url>/posts/hello-world-2-2/</url>
-    <content><![CDATA[<html><head></head><body><p>欢迎使用WordPress。这是您的第一篇文章。编辑或删除它，然后开始写作吧！</p>
-<p><embed src="//music.163.com/style/swf/widget.swf?sid=5110133&amp;type=2&amp;auto=1&amp;width=320&amp;height=66" width="340" height="86" allownetworking="all"></p>
-</body></html>]]></content>
-      <categories>
-        <category>生活随想</category>
-      </categories>
-  </entry>
-  <entry>
     <title>使用GitHub Actions 自动构建部署发布Spring Boot应用</title>
     <url>/posts/gitub-actions/</url>
     <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>最近这一周，我加入了奇奇怪怪的Team，我负责将编写的新接口打包并发布到服务器上。每次都需要手动执行打包、发布、关闭旧版本程序和启动新版本程序等繁琐的步骤，这让我感到非常不便，而且也非常重复。对于这种重复性的任务，我想到了可以利用机器来完成，于是决定尝试使用 GitHub 上的工作流。</p>
@@ -1372,6 +1362,59 @@
         <tag>SpringBoot</tag>
         <tag>java</tag>
         <tag>ci/cd</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo Butterfly的SEO优化</title>
+    <url>/posts/hexo-butterfly-seo/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>以前没有怎么优化过seo、站点地图、rss订阅链接、robots 文件，一个都没有写过，不过今年打算重启博客了，自然这些改加上的东西都需要加一下了。</p>
+<p>前前后后半年多吧，陆陆续续的，把这些玩意补齐了，但看了很多文章都写的补全，我就只好在来全部整理一下了。</p>
+<h1 id="一些插件"><a href="#一些插件" class="headerlink" title="一些插件"></a>一些插件</h1><ul>
+<li><a href="https://github.com/hexojs/hexo-generator-sitemap" rel="external nofollow noreferrer">hexo-generator-sitemap</a> 构建网站地图 </li>
+<li><a href="https://github.com/coneycode/hexo-generator-baidu-sitemap" rel="external nofollow noreferrer">hexo-generator-baidu-sitemap</a> 百度专用的（为什么百度这么有特权😔）</li>
+<li><a href="https://github.com/cjh0613/hexo-submit-urls-to-search-engine" rel="external nofollow noreferrer">hexo-submit-urls-to-search-engine</a> 自动化提交文章给爬虫</li>
+<li><a href="https://github.com/hexojs/hexo-generator-feed" rel="external nofollow noreferrer">hexo-generator-feed</a> 生成RSS订阅链接</li>
+<li><a href="https://github.com/hexojs/hexo-filter-nofollow" rel="external nofollow noreferrer">hexo-filter-nofollow</a> 为合适的外链打上 <code>external nofollow noreferrer noopener</code> <ul>
+<li>作用：<ul>
+<li>防止搜索引擎追踪该链接，不会直接影响站点的排名。</li>
+<li>阻止被链接的页面获取来源页面的信息，增加用户隐私保护。</li>
+<li>防止被链接的页面通过 <code>window.opener</code> 访问和操纵打开它的页面，增强安全性。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><h2 id="添加robots-txt"><a href="#添加robots-txt" class="headerlink" title="添加robots.txt"></a>添加robots.txt</h2><p>可以直接在hexo 项目下的<code>source</code>添加<code>robots.txt</code></p>
+<p>比如说我的配置，让百度爬虫抓取百度专属的网站地图，其他搜索引擎直接抓取普通的网站地图。</p>
+<figure class="highlight tex"><table><tbody><tr><td class="code"><pre><span class="line">User-agent: Baiduspider</span><br><span class="line"></span><br><span class="line">Sitemap: https://blog.ning.moe/baidusitemap.xml</span><br><span class="line"></span><br><span class="line">User-agent: *</span><br><span class="line">Disallow:</span><br><span class="line"></span><br><span class="line">Sitemap: https://blog.ning.moe/sitemap.xml</span><br></pre></td></tr></tbody></table></figure>
+
+<h1 id="插件的使用和配置"><a href="#插件的使用和配置" class="headerlink" title="插件的使用和配置"></a>插件的使用和配置</h1><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>上述所有的插件的安装命令都类似 <code>npm install &lt;插件名字&gt; --save</code> 例如</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">npm install hexo-generator-feed --save</span><br></pre></td></tr></tbody></table></figure>
+
+<p>但就百度地图的插件稍微特殊：</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">npm install hexo-generator-baidu-sitemap@0.1.4 --save</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p>至于配置可以访问GitHub的插件仓库地址，readme 会告诉你们这么配置，如果你很懒的话，我这边放上我的配置。</p>
+<figure class="highlight yaml"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment"># 配置网站地图</span></span><br><span class="line"><span class="attr">sitemap:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">sitemap.xml</span></span><br><span class="line">  <span class="comment"># 配置百度专属地图（真臭不要脸）</span></span><br><span class="line"><span class="attr">baidusitemap:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">baidusitemap.xml</span></span><br><span class="line"><span class="comment"># Extensions</span></span><br><span class="line"><span class="attr">plugins:</span></span><br><span class="line">  <span class="string">hexo-generator-feed</span></span><br><span class="line"><span class="comment">#Feed Atom</span></span><br><span class="line"><span class="attr">feed:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">atom</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">atom.xml</span></span><br><span class="line">  <span class="attr">limit:</span> <span class="number">20</span></span><br><span class="line"><span class="comment"># 为网站使用到的所有外链添加rel="noopener external nofollow noreferrer", 可以有效地加强网站SEO和防止权重流失</span></span><br><span class="line"><span class="comment"># field 是指定那些页面我指定的post 是所有文章全部启用，如果你想启动全站都屏蔽链接的话就是 site，如果你有友联的话慎用。</span></span><br><span class="line"><span class="comment">#exclude是放行这些域名下的。</span></span><br><span class="line"><span class="attr">nofollow:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">field:</span> <span class="string">post</span></span><br><span class="line">  <span class="attr">exclude:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">'*.misaka.pics'</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">'icp.gov.moe'</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>但 <code>hexo-submit-urls-to-search-engine</code> 稍微有些特殊(我更倾向于你先去看看原来的教程)，建议在操作之前备份一下  <code>_config.yaml</code> ，请确保你的推送分支为你自己的分支<code>deploy</code>,当然这边也有一个bug就是在推送的是我这边是选择了main 作为我的主分支，但是推送过去的时候还是<code>master</code> 如果你遇到和我一样的问题建议去提出<code>issues</code>，还有一个就是bing 的推送貌似是坏掉的状态，但百度正常。</p>
+<figure class="highlight yaml"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment"># hexo-submit-urls-to-search-engine 主动将 url 提交到 Google Bing Baidu 搜索</span></span><br><span class="line"><span class="attr">hexo_submit_urls_to_search_engine:</span></span><br><span class="line">  <span class="attr">submit_condition:</span> <span class="string">count</span> <span class="comment">#链接被提交的条件，可选值：count | period 现仅支持count</span></span><br><span class="line">  <span class="attr">count:</span> <span class="number">10</span> <span class="comment"># 提交最新的10个链接</span></span><br><span class="line">  <span class="attr">period:</span> <span class="number">900</span> <span class="comment"># 提交修改时间在 900 秒内的链接</span></span><br><span class="line">  <span class="attr">google:</span> <span class="number">0</span> <span class="comment"># 是否向Google提交，可选值：1 | 0（0：否；1：是）</span></span><br><span class="line">  <span class="attr">bing:</span> <span class="number">1</span> <span class="comment"># 是否向bing提交，可选值：1 | 0（0：否；1：是）</span></span><br><span class="line">  <span class="attr">baidu:</span> <span class="number">1</span> <span class="comment"># 是否向baidu提交，可选值：1 | 0（0：否；1：是）</span></span><br><span class="line">  <span class="attr">txt_path:</span> <span class="string">submit_urls.txt</span> <span class="comment">## 文本文档名， 需要推送的链接会保存在此文本文档里</span></span><br><span class="line">  <span class="attr">baidu_host:</span> <span class="string">https://blog.ning.moe</span> <span class="comment">## 在百度站长平台中注册的域名</span></span><br><span class="line">  <span class="attr">baidu_token:</span> <span class="string">&lt;Token&gt;</span> <span class="comment">## 请注意这是您的秘钥， 所以请不要把它直接发布在公众仓库里!</span></span><br><span class="line">  <span class="attr">bing_host:</span> <span class="string">https://blog.ning.moe</span> <span class="comment">## 在bing站长平台中注册的域名</span></span><br><span class="line">  <span class="attr">bing_token:</span> <span class="string">&lt;Token&gt;</span> <span class="comment">## 请注意这是您的秘钥， 所以请不要把它直接发布在公众仓库里!</span></span><br><span class="line">  <span class="attr">google_host:</span> <span class="string">https://blog.ning.moe</span> <span class="comment">## 在google站长平台中注册的域名</span></span><br><span class="line">  <span class="attr">google_key_file:</span> <span class="string">Project.json</span> <span class="comment">#存放google key的json文件，放于网站根目录（与hexo _config.yml文件位置相同），请不要把json文件内容直接发布在公众仓库里!</span></span><br><span class="line">  <span class="attr">google_proxy:</span> <span class="string">http://127.0.0.1:7890</span> <span class="comment"># 向谷歌提交网址所使用的系统 http 代理，填 0 不使用</span></span><br><span class="line">  <span class="attr">replace:</span> <span class="number">0</span>  <span class="comment"># 是否替换链接中的部分字符串，可选值：1 | 0（0：否；1：是）</span></span><br><span class="line">  <span class="comment"># find_what: http://cjh0613.github.io/blog</span></span><br><span class="line">  <span class="comment"># replace_with: https://cjh0613.com</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 推送git的配置</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="bullet">-</span> <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> </span><br><span class="line">    <span class="attr">coding:</span> <span class="string">https://github.com/biliblihuorong/biliblihuorong.github.io.git</span> <span class="comment"># 你的仓库地址</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">main</span> </span><br><span class="line">  </span><br><span class="line">  <span class="comment"># hexo-submit-urls-to-search-engine 添加本插件的配置项：</span></span><br><span class="line"><span class="bullet">-</span> <span class="attr">type:</span> <span class="string">cjh_google_url_submitter</span></span><br><span class="line"><span class="bullet">-</span> <span class="attr">type:</span> <span class="string">cjh_bing_url_submitter</span></span><br><span class="line"><span class="bullet">-</span> <span class="attr">type:</span> <span class="string">cjh_baidu_url_submitter</span></span><br></pre></td></tr></tbody></table></figure>
+
+
+
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>hexo-filter-nofollow：<a href="https://github.com/hexojs/hexo-filter-nofollow" rel="external nofollow noreferrer">https://github.com/hexojs/hexo-filter-nofollow</a></p>
+<p>hexo-generator-feed：<a href="https://github.com/hexojs/hexo-generator-feed" rel="external nofollow noreferrer">https://github.com/hexojs/hexo-generator-feed</a></p>
+<p>hexo-submit-urls-to-search-engine：<a href="https://github.com/cjh0613/hexo-submit-urls-to-search-engine" rel="external nofollow noreferrer">https://github.com/cjh0613/hexo-submit-urls-to-search-engine</a></p>
+<p>hexo-generator-baidu-sitemap：<a href="https://github.com/coneycode/hexo-generator-baidu-sitemap" rel="external nofollow noreferrer">https://github.com/coneycode/hexo-generator-baidu-sitemap</a></p>
+<p>hexo-generator-sitemap：<a href="https://github.com/hexojs/hexo-generator-sitemap" rel="external nofollow noreferrer">https://github.com/hexojs/hexo-generator-sitemap</a></p>
+</body></html>]]></content>
+      <categories>
+        <category>网络技术</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>butterfly</tag>
+        <tag>SEO</tag>
       </tags>
   </entry>
   <entry>
@@ -1457,102 +1500,34 @@
 </body></html>]]></content>
   </entry>
   <entry>
-    <title>Hexo Butterfly的SEO优化</title>
-    <url>/posts/hexo-butterfly-seo/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>以前没有怎么优化过seo、站点地图、rss订阅链接、robots 文件，一个都没有写过，不过今年打算重启博客了，自然这些改加上的东西都需要加一下了。</p>
-<p>前前后后半年多吧，陆陆续续的，把这些玩意补齐了，但看了很多文章都写的补全，我就只好在来全部整理一下了。</p>
-<h1 id="一些插件"><a href="#一些插件" class="headerlink" title="一些插件"></a>一些插件</h1><ul>
-<li><a href="https://github.com/hexojs/hexo-generator-sitemap" rel="external nofollow noreferrer">hexo-generator-sitemap</a> 构建网站地图 </li>
-<li><a href="https://github.com/coneycode/hexo-generator-baidu-sitemap" rel="external nofollow noreferrer">hexo-generator-baidu-sitemap</a> 百度专用的（为什么百度这么有特权😔）</li>
-<li><a href="https://github.com/cjh0613/hexo-submit-urls-to-search-engine" rel="external nofollow noreferrer">hexo-submit-urls-to-search-engine</a> 自动化提交文章给爬虫</li>
-<li><a href="https://github.com/hexojs/hexo-generator-feed" rel="external nofollow noreferrer">hexo-generator-feed</a> 生成RSS订阅链接</li>
-<li><a href="https://github.com/hexojs/hexo-filter-nofollow" rel="external nofollow noreferrer">hexo-filter-nofollow</a> 为合适的外链打上 <code>external nofollow noreferrer noopener</code> <ul>
-<li>作用：<ul>
-<li>防止搜索引擎追踪该链接，不会直接影响站点的排名。</li>
-<li>阻止被链接的页面获取来源页面的信息，增加用户隐私保护。</li>
-<li>防止被链接的页面通过 <code>window.opener</code> 访问和操纵打开它的页面，增强安全性。</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><h2 id="添加robots-txt"><a href="#添加robots-txt" class="headerlink" title="添加robots.txt"></a>添加robots.txt</h2><p>可以直接在hexo 项目下的<code>source</code>添加<code>robots.txt</code></p>
-<p>比如说我的配置，让百度爬虫抓取百度专属的网站地图，其他搜索引擎直接抓取普通的网站地图。</p>
-<figure class="highlight tex"><table><tbody><tr><td class="code"><pre><span class="line">User-agent: Baiduspider</span><br><span class="line"></span><br><span class="line">Sitemap: https://blog.ning.moe/baidusitemap.xml</span><br><span class="line"></span><br><span class="line">User-agent: *</span><br><span class="line">Disallow:</span><br><span class="line"></span><br><span class="line">Sitemap: https://blog.ning.moe/sitemap.xml</span><br></pre></td></tr></tbody></table></figure>
-
-<h1 id="插件的使用和配置"><a href="#插件的使用和配置" class="headerlink" title="插件的使用和配置"></a>插件的使用和配置</h1><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>上述所有的插件的安装命令都类似 <code>npm install &lt;插件名字&gt; --save</code> 例如</p>
-<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">npm install hexo-generator-feed --save</span><br></pre></td></tr></tbody></table></figure>
-
-<p>但就百度地图的插件稍微特殊：</p>
-<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">npm install hexo-generator-baidu-sitemap@0.1.4 --save</span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p>至于配置可以访问GitHub的插件仓库地址，readme 会告诉你们这么配置，如果你很懒的话，我这边放上我的配置。</p>
-<figure class="highlight yaml"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment"># 配置网站地图</span></span><br><span class="line"><span class="attr">sitemap:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">sitemap.xml</span></span><br><span class="line">  <span class="comment"># 配置百度专属地图（真臭不要脸）</span></span><br><span class="line"><span class="attr">baidusitemap:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">baidusitemap.xml</span></span><br><span class="line"><span class="comment"># Extensions</span></span><br><span class="line"><span class="attr">plugins:</span></span><br><span class="line">  <span class="string">hexo-generator-feed</span></span><br><span class="line"><span class="comment">#Feed Atom</span></span><br><span class="line"><span class="attr">feed:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">atom</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">atom.xml</span></span><br><span class="line">  <span class="attr">limit:</span> <span class="number">20</span></span><br><span class="line"><span class="comment"># 为网站使用到的所有外链添加rel="noopener external nofollow noreferrer", 可以有效地加强网站SEO和防止权重流失</span></span><br><span class="line"><span class="comment"># field 是指定那些页面我指定的post 是所有文章全部启用，如果你想启动全站都屏蔽链接的话就是 site，如果你有友联的话慎用。</span></span><br><span class="line"><span class="comment">#exclude是放行这些域名下的。</span></span><br><span class="line"><span class="attr">nofollow:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">field:</span> <span class="string">post</span></span><br><span class="line">  <span class="attr">exclude:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">'*.misaka.pics'</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">'icp.gov.moe'</span></span><br></pre></td></tr></tbody></table></figure>
-
-<p>但 <code>hexo-submit-urls-to-search-engine</code> 稍微有些特殊(我更倾向于你先去看看原来的教程)，建议在操作之前备份一下  <code>_config.yaml</code> ，请确保你的推送分支为你自己的分支<code>deploy</code>,当然这边也有一个bug就是在推送的是我这边是选择了main 作为我的主分支，但是推送过去的时候还是<code>master</code> 如果你遇到和我一样的问题建议去提出<code>issues</code>，还有一个就是bing 的推送貌似是坏掉的状态，但百度正常。</p>
-<figure class="highlight yaml"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment"># hexo-submit-urls-to-search-engine 主动将 url 提交到 Google Bing Baidu 搜索</span></span><br><span class="line"><span class="attr">hexo_submit_urls_to_search_engine:</span></span><br><span class="line">  <span class="attr">submit_condition:</span> <span class="string">count</span> <span class="comment">#链接被提交的条件，可选值：count | period 现仅支持count</span></span><br><span class="line">  <span class="attr">count:</span> <span class="number">10</span> <span class="comment"># 提交最新的10个链接</span></span><br><span class="line">  <span class="attr">period:</span> <span class="number">900</span> <span class="comment"># 提交修改时间在 900 秒内的链接</span></span><br><span class="line">  <span class="attr">google:</span> <span class="number">0</span> <span class="comment"># 是否向Google提交，可选值：1 | 0（0：否；1：是）</span></span><br><span class="line">  <span class="attr">bing:</span> <span class="number">1</span> <span class="comment"># 是否向bing提交，可选值：1 | 0（0：否；1：是）</span></span><br><span class="line">  <span class="attr">baidu:</span> <span class="number">1</span> <span class="comment"># 是否向baidu提交，可选值：1 | 0（0：否；1：是）</span></span><br><span class="line">  <span class="attr">txt_path:</span> <span class="string">submit_urls.txt</span> <span class="comment">## 文本文档名， 需要推送的链接会保存在此文本文档里</span></span><br><span class="line">  <span class="attr">baidu_host:</span> <span class="string">https://blog.ning.moe</span> <span class="comment">## 在百度站长平台中注册的域名</span></span><br><span class="line">  <span class="attr">baidu_token:</span> <span class="string">&lt;Token&gt;</span> <span class="comment">## 请注意这是您的秘钥， 所以请不要把它直接发布在公众仓库里!</span></span><br><span class="line">  <span class="attr">bing_host:</span> <span class="string">https://blog.ning.moe</span> <span class="comment">## 在bing站长平台中注册的域名</span></span><br><span class="line">  <span class="attr">bing_token:</span> <span class="string">&lt;Token&gt;</span> <span class="comment">## 请注意这是您的秘钥， 所以请不要把它直接发布在公众仓库里!</span></span><br><span class="line">  <span class="attr">google_host:</span> <span class="string">https://blog.ning.moe</span> <span class="comment">## 在google站长平台中注册的域名</span></span><br><span class="line">  <span class="attr">google_key_file:</span> <span class="string">Project.json</span> <span class="comment">#存放google key的json文件，放于网站根目录（与hexo _config.yml文件位置相同），请不要把json文件内容直接发布在公众仓库里!</span></span><br><span class="line">  <span class="attr">google_proxy:</span> <span class="string">http://127.0.0.1:7890</span> <span class="comment"># 向谷歌提交网址所使用的系统 http 代理，填 0 不使用</span></span><br><span class="line">  <span class="attr">replace:</span> <span class="number">0</span>  <span class="comment"># 是否替换链接中的部分字符串，可选值：1 | 0（0：否；1：是）</span></span><br><span class="line">  <span class="comment"># find_what: http://cjh0613.github.io/blog</span></span><br><span class="line">  <span class="comment"># replace_with: https://cjh0613.com</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 推送git的配置</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="bullet">-</span> <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> </span><br><span class="line">    <span class="attr">coding:</span> <span class="string">https://github.com/biliblihuorong/biliblihuorong.github.io.git</span> <span class="comment"># 你的仓库地址</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">main</span> </span><br><span class="line">  </span><br><span class="line">  <span class="comment"># hexo-submit-urls-to-search-engine 添加本插件的配置项：</span></span><br><span class="line"><span class="bullet">-</span> <span class="attr">type:</span> <span class="string">cjh_google_url_submitter</span></span><br><span class="line"><span class="bullet">-</span> <span class="attr">type:</span> <span class="string">cjh_bing_url_submitter</span></span><br><span class="line"><span class="bullet">-</span> <span class="attr">type:</span> <span class="string">cjh_baidu_url_submitter</span></span><br></pre></td></tr></tbody></table></figure>
-
-
-
-<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>hexo-filter-nofollow：<a href="https://github.com/hexojs/hexo-filter-nofollow" rel="external nofollow noreferrer">https://github.com/hexojs/hexo-filter-nofollow</a></p>
-<p>hexo-generator-feed：<a href="https://github.com/hexojs/hexo-generator-feed" rel="external nofollow noreferrer">https://github.com/hexojs/hexo-generator-feed</a></p>
-<p>hexo-submit-urls-to-search-engine：<a href="https://github.com/cjh0613/hexo-submit-urls-to-search-engine" rel="external nofollow noreferrer">https://github.com/cjh0613/hexo-submit-urls-to-search-engine</a></p>
-<p>hexo-generator-baidu-sitemap：<a href="https://github.com/coneycode/hexo-generator-baidu-sitemap" rel="external nofollow noreferrer">https://github.com/coneycode/hexo-generator-baidu-sitemap</a></p>
-<p>hexo-generator-sitemap：<a href="https://github.com/hexojs/hexo-generator-sitemap" rel="external nofollow noreferrer">https://github.com/hexojs/hexo-generator-sitemap</a></p>
+    <title>世界，您好！</title>
+    <url>/posts/hello-world-2-2/</url>
+    <content><![CDATA[<html><head></head><body><p>欢迎使用WordPress。这是您的第一篇文章。编辑或删除它，然后开始写作吧！</p>
+<p><embed src="//music.163.com/style/swf/widget.swf?sid=5110133&amp;type=2&amp;auto=1&amp;width=320&amp;height=66" width="340" height="86" allownetworking="all"></p>
 </body></html>]]></content>
       <categories>
-        <category>网络技术</category>
+        <category>生活随想</category>
       </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>butterfly</tag>
-        <tag>SEO</tag>
-      </tags>
   </entry>
   <entry>
-    <title>在 Docker 环境中使用 Traefik进行反向代理</title>
-    <url>/posts/learn-traefik/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>对于家里面要部署很多 <code>Docker</code> 服务，用 <code>Nginx</code> 反向代理属实麻烦，所以就有了本篇文章 <code>Traefik</code></p>
-<img src="https://img.misaka.pics/ShellBlogImg/1/2024/09/02/66d58750e396f.webp" alt="traefik-1.webp" style="zoom:33%;">
-
-<p><code>Traefik</code> 的logo 是一个<code>go</code>吉祥物进行指挥交通（流量）。</p>
-<p>所以 <code>Traefik</code>的好处是自动发现服务，自动配置反向代理，以及自动续签SSL，以及不在需要对外暴露额外的端口了，宿主机自始至终之暴露 80 443 端口。但也有诸多问题例如它并不能像<code>Nginx</code> 一样可以灵活的配置反代一些程序，例如配置不在<code>Docker</code> 部署的程序，会有点麻烦，如果想我一样只是作为本地部署项目<code>Traefik</code> 仍然是一个不错的选择。</p>
-<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><p>在快速启动前，有必要说明一下，本教程是使用<code>CloudFlare</code> 作为域名ns进行申请泛域名证书，如果你想使用其他提供商，可以在 <a href="https://doc.traefik.io/traefik/https/acme/#providers" rel="external nofollow noreferrer">Traefik 的文档</a> 更改 <code>Provider Code</code>和 <code>Environment Variables</code> 这两个值，当然我会在本篇配置文件有注释提醒。</p>
-<p>另外如果没有额外配置反代的需求（指不跑在docker的服务），需要建立<code>config.yml</code> 文件，当然还需要在<code>traefik.yml</code> 关闭注释。</p>
-<h2 id="快速启动-Traefik"><a href="#快速启动-Traefik" class="headerlink" title="快速启动 Traefik"></a>快速启动 Traefik</h2><p>请按照一下文件目录创建文件，其中<code>acme.json</code>只需要创建文件即可（注意必须要交建立哦，config文件根据自己需求建立即可）</p>
-<p>文件目录：</p>
-<figure class="highlight txt"><table><tbody><tr><td class="code"><pre><span class="line">|   .env	#文件配置</span><br><span class="line">|   docker-compose.yaml		# docker-compose 文件</span><br><span class="line">|</span><br><span class="line">\---data</span><br><span class="line">        acme.json	# SSL 文件</span><br><span class="line">        config.yml	# 额外配置文件（配置额外反代例如宿主机的）</span><br><span class="line">        traefik.yml # Traefik 配置文件</span><br></pre></td></tr></tbody></table></figure>
-
-<p><code>docker-compose.yaml</code> 文件：</p>
-<figure class="highlight yaml"><table><tbody><tr><td class="code"><pre><span class="line"><span class="attr">services:</span></span><br><span class="line">  <span class="attr">traefik:</span>  <span class="comment"># 定义名为 traefik 的服务</span></span><br><span class="line">    <span class="attr">image:</span> <span class="string">traefik:v3.0</span>  <span class="comment"># 使用 Traefik 的 v3.0 版本镜像</span></span><br><span class="line">    <span class="attr">container_name:</span> <span class="string">traefik</span>  <span class="comment"># 容器名称为 traefik</span></span><br><span class="line">    <span class="attr">restart:</span> <span class="string">unless-stopped</span>  <span class="comment"># 容器自动重启，除非手动停止</span></span><br><span class="line">    <span class="attr">security_opt:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="literal">no</span><span class="string">-new-privileges:true</span>  <span class="comment"># 增加安全性，防止提权</span></span><br><span class="line">    <span class="attr">networks:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">traefik-net</span>  <span class="comment"># 连接到名为 proxy 的外部网络</span></span><br><span class="line">    <span class="attr">ports:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="number">80</span><span class="string">:80</span>  <span class="comment"># 映射主机的 80 端口到容器的 80 端口 (HTTP)</span></span><br><span class="line">      <span class="bullet">-</span> <span class="number">443</span><span class="string">:443</span>  <span class="comment"># 映射主机的 443 端口到容器的 443 端口 (HTTPS)</span></span><br><span class="line">      <span class="bullet">-</span> <span class="number">443</span><span class="string">:443/tcp</span>  <span class="comment"># 映射主机的 443 TCP 端口到容器的 443 端口 (TCP 协议)</span></span><br><span class="line">      <span class="bullet">-</span> <span class="number">443</span><span class="string">:443/udp</span>  <span class="comment"># 映射主机的 443 UDP 端口到容器的 443 端口 (UDP 协议)</span></span><br><span class="line">    <span class="attr">environment:</span></span><br><span class="line">      <span class="attr">CF_DNS_API_TOKEN_FILE:</span> <span class="string">${CF_DNS_API_TOKEN}</span>  <span class="comment"># 设置环境变量，使用 Cloudflare API 令牌，根据Traefik文档 选择你的服务提供商的token</span></span><br><span class="line">      <span class="attr">TRAEFIK_DASHBOARD_CREDENTIALS:</span> <span class="string">${TRAEFIK_DASHBOARD_CREDENTIALS}</span>  <span class="comment"># 设置环境变量，定义 Traefik 仪表板的凭据</span></span><br><span class="line">    <span class="attr">env_file:</span> <span class="string">.env</span>  <span class="comment"># 从 .env 文件中加载环境变量</span></span><br><span class="line">    <span class="attr">volumes:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">/etc/localtime:/etc/localtime:ro</span>  <span class="comment"># 挂载主机的时间设置到容器，确保时间同步，且只读</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">/var/run/docker.sock:/var/run/docker.sock:ro</span>  <span class="comment"># 挂载 Docker 的 socket 文件，允许 Traefik 访问 Docker API，只读</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">./data/traefik.yml:/traefik.yml:ro</span>  <span class="comment"># 挂载本地的 traefik.yml 配置文件到容器内，只读</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">./data/acme.json:/acme.json</span>  <span class="comment"># 挂载本地的 acme.json 文件，存储 SSL 证书信息</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">./data/config.yml:/config.yml:ro</span>  <span class="comment"># 可选的配置文件挂载路径，若需要可取消注释</span></span><br><span class="line">    <span class="attr">labels:</span>  <span class="comment"># 设置 Traefik 的相关标签，用于路由和中间件配置</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.enable=true"</span>  <span class="comment"># 启用 Traefik 服务</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.http.routers.traefik.entrypoints=http"</span>  <span class="comment"># 配置 HTTP 入口点</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.http.routers.traefik.rule=Host(`${TRAEFIK_DASHBOARD_HOST}`)"</span> <span class="comment"># 定义 Traefik 仪表板的访问规则</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.http.middlewares.traefik-auth.basicauth.users=${TRAEFIK_DASHBOARD_CREDENTIALS}"</span>  <span class="comment"># 为仪表板配置基本身份验证</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.http.middlewares.traefik-https-redirect.redirectscheme.scheme=https"</span>  <span class="comment"># 配置 HTTP 到 HTTPS 的重定向</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.http.middlewares.sslheader.headers.customrequestheaders.X-Forwarded-Proto=https"</span>  <span class="comment"># 添加自定义请求头</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.http.routers.traefik.middlewares=traefik-https-redirect"</span>  <span class="comment"># 将重定向中间件应用到 HTTP 路由</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.http.routers.traefik-secure.entrypoints=https"</span>  <span class="comment"># 配置 HTTPS 入口点</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.http.routers.traefik-secure.rule=Host(`${TRAEFIK_DASHBOARD_HOST}`)"</span> <span class="comment"># 定义 HTTPS 路由的访问规则</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.http.routers.traefik-secure.middlewares=traefik-auth"</span>  <span class="comment"># 为 HTTPS 路由应用基本身份验证中间件</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.http.routers.traefik-secure.tls=true"</span>  <span class="comment"># 启用 TLS (HTTPS)</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.http.routers.traefik-secure.tls.certresolver=${NS_Domain}"</span>  <span class="comment"># 使用 DNS服务提供商 code 根据Traefik文档 选择你的服务提供商code</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.http.routers.traefik-secure.tls.domains[0].main=${TLS_MAIN_DOMAIN}"</span>  <span class="comment"># 定义主域名</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.http.routers.traefik-secure.tls.domains[0].sans=${TLS_SANS_DOMAIN}"</span>  <span class="comment"># 定义子域名通配符</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.http.routers.traefik-secure.service=api@internal"</span>  <span class="comment"># 使用 Traefik 内部 API 服务</span></span><br><span class="line"></span><br><span class="line"><span class="attr">networks:</span></span><br><span class="line">  <span class="attr">traefik-net:</span></span><br><span class="line">    <span class="attr">external:</span> <span class="literal">false</span>  <span class="comment"># 使用外部定义的名为 proxy 的网络</span></span><br></pre></td></tr></tbody></table></figure>
-
-<p><code>.env</code> 文件:</p>
-<figure class="highlight toml"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment"># .env 文件</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># CF API</span></span><br><span class="line"><span class="attr">CF_DNS_API_TOKEN</span>=</span><br><span class="line"></span><br><span class="line"><span class="attr">NS_Domain</span>=cloudflare <span class="comment">#根据你使用的DNS服务提供商 code 根据Traefik文档 选择你的服务提供商code</span></span><br><span class="line"><span class="comment"># 设置环境变量，定义 Traefik 仪表板的凭据 ，默认账户名密码：admin</span></span><br><span class="line"><span class="attr">TRAEFIK_DASHBOARD_CREDENTIALS</span>=admin:$<span class="variable">$2y</span>$<span class="variable">$05</span>$<span class="variable">$aOXINGgHfnZ</span>//t.kUs7o9ej3faUbj2yNxc8k3WVrBybFOxxaTsLTe</span><br><span class="line"></span><br><span class="line"><span class="comment"># Traefik Dashboard 域名</span></span><br><span class="line"><span class="attr">TRAEFIK_DASHBOARD_HOST</span>=dash.docker.localhost</span><br><span class="line"></span><br><span class="line"><span class="comment"># TLS 主域名和子域名</span></span><br><span class="line"><span class="attr">TLS_MAIN_DOMAIN</span>=docker.localhost</span><br><span class="line"><span class="attr">TLS_SANS_DOMAIN</span>=*.docker.localhost</span><br></pre></td></tr></tbody></table></figure>
-
-<p><code>traefik.yml</code> 文件：</p>
-<figure class="highlight yaml"><table><tbody><tr><td class="code"><pre><span class="line"><span class="attr">api:</span></span><br><span class="line">  <span class="attr">dashboard:</span> <span class="literal">true</span>  <span class="comment"># 启用 Traefik 的仪表板，可以通过指定的路由访问</span></span><br><span class="line">  <span class="attr">debug:</span> <span class="literal">true</span>  <span class="comment"># 启用调试模式，输出更多的日志信息</span></span><br><span class="line"></span><br><span class="line"><span class="attr">entryPoints:</span></span><br><span class="line">  <span class="attr">http:</span></span><br><span class="line">    <span class="attr">address:</span> <span class="string">":80"</span>  <span class="comment"># 定义 HTTP 入口点，监听 80 端口</span></span><br><span class="line">    <span class="attr">http:</span></span><br><span class="line">      <span class="attr">redirections:</span></span><br><span class="line">        <span class="attr">entryPoint:</span></span><br><span class="line">          <span class="attr">to:</span> <span class="string">https</span>  <span class="comment"># 重定向 HTTP 请求到 HTTPS</span></span><br><span class="line">          <span class="attr">scheme:</span> <span class="string">https</span>  <span class="comment"># 使用 HTTPS 作为重定向的目标协议</span></span><br><span class="line"></span><br><span class="line">  <span class="attr">https:</span></span><br><span class="line">    <span class="attr">address:</span> <span class="string">":443"</span>  <span class="comment"># 定义 HTTPS 入口点，监听 443 端口</span></span><br><span class="line"></span><br><span class="line"><span class="attr">serversTransport:</span></span><br><span class="line">  <span class="attr">insecureSkipVerify:</span> <span class="literal">true</span>  <span class="comment"># 在与后端服务器通信时，跳过 TLS 证书验证（不推荐在生产环境中使用）</span></span><br><span class="line"></span><br><span class="line"><span class="attr">providers:</span></span><br><span class="line">  <span class="attr">docker:</span></span><br><span class="line">    <span class="attr">endpoint:</span> <span class="string">"unix:///var/run/docker.sock"</span>  <span class="comment"># 指定 Docker API 的 socket 文件路径，Traefik 使用它来检测和管理 Docker 容器</span></span><br><span class="line">    <span class="attr">exposedByDefault:</span> <span class="literal">false</span>  <span class="comment"># 默认情况下，Docker 容器不会自动暴露给 Traefik，必须显式指定</span></span><br><span class="line">    <span class="attr">watch:</span> <span class="literal">true</span></span><br><span class="line"></span><br><span class="line">  <span class="attr">file:</span></span><br><span class="line">    <span class="attr">filename:</span> <span class="string">/config.yml</span>  <span class="comment"># (已注释) 可选的文件提供者配置，用于从外部文件加载配置</span></span><br><span class="line">    <span class="attr">watch:</span> <span class="literal">true</span>  <span class="comment"># 允许 Traefik 自动监控和加载配置文件变化</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="attr">certificatesResolvers:</span></span><br><span class="line">  <span class="attr">cloudflare:</span> <span class="comment"># 使用 DNS服务提供商 code 根据Traefik文档 选择你的服务提供商code</span></span><br><span class="line">    <span class="attr">acme:</span></span><br><span class="line">      <span class="attr">email:</span> <span class="string">youremail@email.com</span>  <span class="comment"># 申请 ACME 证书时使用的电子邮件地址</span></span><br><span class="line">      <span class="attr">storage:</span> <span class="string">acme.json</span>  <span class="comment"># 存储证书信息的文件路径</span></span><br><span class="line">      <span class="comment"># caServer: https://acme-v02.api.letsencrypt.org/directory # 正式环境的 Let's Encrypt 服务器 (默认)</span></span><br><span class="line">      <span class="attr">caServer:</span> <span class="string">https://acme-staging-v02.api.letsencrypt.org/directory</span> <span class="comment"># 测试环境的 Let's Encrypt 服务器 (用于调试)</span></span><br><span class="line"></span><br><span class="line">      <span class="attr">dnsChallenge:</span></span><br><span class="line">        <span class="attr">provider:</span> <span class="string">cloudflare</span>  <span class="comment"># 使用 DNS服务提供商 code 根据Traefik文档 选择你的服务提供商code 进行 DNS 验证以获取证书</span></span><br><span class="line">        <span class="comment">#disablePropagationCheck: true # (已注释) 如果通过 Cloudflare 获取证书有问题，可以取消注释此行以禁用传播检查</span></span><br><span class="line">        <span class="comment">#delayBeforeCheck: 60s # (已注释) 如果需要确保 TXT 记录准备就绪，可以取消注释此行并设置检查延迟</span></span><br><span class="line">        <span class="attr">resolvers:</span></span><br><span class="line">          <span class="bullet">-</span> <span class="string">"223.5.5.5:53"</span>  <span class="comment"># AliDNS 解析器</span></span><br><span class="line">          <span class="bullet">-</span> <span class="string">"119.29.29.29:53"</span>  <span class="comment"># 备用 DNS 解析器</span></span><br><span class="line">          <span class="bullet">-</span> <span class="string">"1.1.1.1"</span> <span class="comment"># 备用 DNS 解析器</span></span><br></pre></td></tr></tbody></table></figure>
-
-<p><code>config.yml</code> 文件，可以选择配置，如果你宿主机有ng反代服务，你使用taerfik 的话会端口冲突，可以配置，但不过要把 <code>docker-compose</code> 和 <code>Traefik</code>的配置文件注释去掉即可：</p>
-<figure class="highlight yaml"><table><tbody><tr><td class="code"><pre><span class="line"><span class="attr">http:</span></span><br><span class="line">  <span class="comment">#region routers </span></span><br><span class="line">  <span class="attr">routers:</span></span><br><span class="line">    <span class="attr">hexo:</span></span><br><span class="line">      <span class="attr">entryPoints:</span></span><br><span class="line">        <span class="bullet">-</span> <span class="string">"https"</span>  <span class="comment"># 指定使用 HTTPS 入口点</span></span><br><span class="line">      <span class="attr">rule:</span> <span class="string">"Host(`hexo.docker.localhost`)"</span>  <span class="comment"># 当访问的主机名为 hexo.local.shellscience.top 时，触发此路由</span></span><br><span class="line">      <span class="attr">middlewares:</span></span><br><span class="line">        <span class="bullet">-</span> <span class="string">default-headers</span>  <span class="comment"># 应用默认的安全头中间件</span></span><br><span class="line">        <span class="bullet">-</span> <span class="string">https-redirectscheme</span>  <span class="comment"># 应用 HTTPS 重定向中间件</span></span><br><span class="line">      <span class="attr">tls:</span> {}  <span class="comment"># 启用 TLS 加密</span></span><br><span class="line">      <span class="attr">service:</span> <span class="string">hexo</span>  <span class="comment"># 指定将请求转发到名为 hexo 的服务</span></span><br><span class="line"></span><br><span class="line">  <span class="comment">#region services</span></span><br><span class="line">  <span class="attr">services:</span></span><br><span class="line">    <span class="attr">hexo:</span></span><br><span class="line">      <span class="attr">loadBalancer:</span></span><br><span class="line">        <span class="attr">servers:</span></span><br><span class="line">          <span class="bullet">-</span> <span class="attr">url:</span> <span class="string">"http://127.0.0.1:5000"</span>  <span class="comment"># 指定 Hexo 服务的后端服务器 URL</span></span><br><span class="line">        <span class="attr">passHostHeader:</span> <span class="literal">true</span>  <span class="comment"># 传递原始的 Host 头信息到后端服务</span></span><br><span class="line">  <span class="comment">#endregion</span></span><br><span class="line"></span><br><span class="line">  <span class="attr">middlewares:</span></span><br><span class="line">    <span class="attr">https-redirectscheme:</span></span><br><span class="line">      <span class="attr">redirectScheme:</span></span><br><span class="line">        <span class="attr">scheme:</span> <span class="string">https</span>  <span class="comment"># 将 HTTP 请求重定向为 HTTPS</span></span><br><span class="line">        <span class="attr">permanent:</span> <span class="literal">true</span>  <span class="comment"># 使用永久重定向（HTTP 301）</span></span><br><span class="line"></span><br><span class="line">    <span class="attr">default-headers:</span></span><br><span class="line">      <span class="attr">headers:</span></span><br><span class="line">        <span class="attr">frameDeny:</span> <span class="literal">true</span>  <span class="comment"># 禁止网页被嵌入到框架中，防止点击劫持攻击</span></span><br><span class="line">        <span class="attr">browserXssFilter:</span> <span class="literal">true</span>  <span class="comment"># 启用浏览器的 XSS 过滤器，增强安全性</span></span><br><span class="line">        <span class="attr">contentTypeNosniff:</span> <span class="literal">true</span>  <span class="comment"># 防止浏览器 MIME 类型嗅探</span></span><br><span class="line">        <span class="attr">forceSTSHeader:</span> <span class="literal">true</span>  <span class="comment"># 强制启用 HSTS（HTTP 严格传输安全）</span></span><br><span class="line">        <span class="attr">stsIncludeSubdomains:</span> <span class="literal">true</span>  <span class="comment"># HSTS 规则应用于所有子域</span></span><br><span class="line">        <span class="attr">stsPreload:</span> <span class="literal">true</span>  <span class="comment"># 允许将域名加入 HSTS 预加载列表</span></span><br><span class="line">        <span class="attr">stsSeconds:</span> <span class="number">15552000</span>  <span class="comment"># HSTS 头的有效期（秒），这里是 180 天</span></span><br><span class="line">        <span class="attr">customFrameOptionsValue:</span> <span class="string">SAMEORIGIN</span>  <span class="comment"># 允许内容在同源的 iframe 中加载</span></span><br><span class="line">        <span class="attr">customRequestHeaders:</span></span><br><span class="line">          <span class="attr">X-Forwarded-Proto:</span> <span class="string">https</span>  <span class="comment"># 设置 X-Forwarded-Proto 头为 https，用于指示原始请求协议</span></span><br><span class="line"></span><br><span class="line">    <span class="attr">default-whitelist:</span></span><br><span class="line">      <span class="attr">ipAllowList:</span></span><br><span class="line">        <span class="attr">sourceRange:</span></span><br><span class="line">        <span class="bullet">-</span> <span class="string">"10.0.0.0/8"</span>  <span class="comment"># 允许来自 10.0.0.0/8 网段的 IP 地址</span></span><br><span class="line">        <span class="bullet">-</span> <span class="string">"192.168.0.0/16"</span>  <span class="comment"># 允许来自 192.168.0.0/16 网段的 IP 地址</span></span><br><span class="line">        <span class="bullet">-</span> <span class="string">"172.16.0.0/12"</span>  <span class="comment"># 允许来自 172.16.0.0/12 网段的 IP 地址</span></span><br><span class="line"></span><br><span class="line">    <span class="attr">secured:</span></span><br><span class="line">      <span class="attr">chain:</span></span><br><span class="line">        <span class="attr">middlewares:</span></span><br><span class="line">        <span class="bullet">-</span> <span class="string">default-whitelist</span>  <span class="comment"># 应用默认的 IP 白名单中间件</span></span><br><span class="line">        <span class="bullet">-</span> <span class="string">default-headers</span>  <span class="comment"># 应用默认的安全头中间件</span></span><br></pre></td></tr></tbody></table></figure>
-
-<p>配置完毕我们<code>docker-compose up -d</code>如果配置没有问题你就可以通过你配置的域名成功访问<code>Traefik</code>的面板。</p>
-<h1 id="反代代理Dcoekr应用"><a href="#反代代理Dcoekr应用" class="headerlink" title="反代代理Dcoekr应用"></a>反代代理Dcoekr应用</h1><p>这里拿<code>Memos</code>的程序来举例子:</p>
-<p>下面是我的<code>Memos</code>的<code>docker-compose.yaml</code> 文件，我们只需要把暴露的端口删除，添加<code>labels</code>标签以及下面几个配置（你想访问的域名、容器的端口、开启https、使用tls证书）以及让我们的程序接入<code>Traefik</code>的网络就好了。</p>
-<figure class="highlight yaml"><table><tbody><tr><td class="code"><pre><span class="line"><span class="attr">version:</span> <span class="string">"3.0"</span></span><br><span class="line"><span class="attr">services:</span></span><br><span class="line">  <span class="attr">memos:</span></span><br><span class="line">    <span class="attr">image:</span> <span class="string">ghcr.io/usememos/memos:latest</span></span><br><span class="line">    <span class="attr">container_name:</span> <span class="string">memos</span></span><br><span class="line">    <span class="attr">volumes:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">./data/:/var/opt/memos</span></span><br><span class="line">    <span class="attr">environment:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">driver=sqlite</span></span><br><span class="line">    <span class="attr">labels:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.enable=true"</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.http.routers.memos.rule=Host(`memos.local.com`)"</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.http.services.memos.loadbalancer.server.port=&lt;程序的端口&gt;"</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.http.routers.memos.entrypoints=https"</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.http.routers.memos.tls=true"</span></span><br><span class="line">    <span class="attr">networks:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">traefik-net</span></span><br><span class="line"></span><br><span class="line"><span class="attr">networks:</span></span><br><span class="line">  <span class="attr">traefik-net:</span></span><br><span class="line">    <span class="attr">external:</span> <span class="literal">true</span></span><br></pre></td></tr></tbody></table></figure>
-
-
-
-<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p><code>Traefik</code>DNS服务提供文档：<a href="https://doc.traefik.io/traefik/https/acme/#providers" rel="external nofollow noreferrer">https://doc.traefik.io/traefik/https/acme/#providers</a></p>
-<p><code>Traefik</code>Docker配置文档：<a href="https://doc.traefik.io/traefik/routing/providers/docker/" rel="external nofollow noreferrer">https://doc.traefik.io/traefik/routing/providers/docker/</a></p>
-<h1 id="最后结尾的彩蛋"><a href="#最后结尾的彩蛋" class="headerlink" title="最后结尾的彩蛋"></a>最后结尾的彩蛋</h1><p>找<code>DALL·E</code>生成了两张cover不过总感觉怪怪的，另外一张也放出来吧，有一种土拔鼠变成黄鼠狼的错觉。</p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/10/05/67011bad7c6dc.webp" alt="DALL·E 2024-10-05 18.57.18 - A professional cover featuring the Traefik logo, which is a Go language gopher mascot directing traffic with a traffic sign. The background shows a gr.webp"></p>
+    <title>换域名了！！</title>
+    <url>/posts/moe/</url>
+    <content><![CDATA[<html><head></head><body><blockquote>
+<p>换域名了正好可以来水一篇文章了。</p>
+</blockquote>
+<p>对于域名对于网站来说，很是重要的一部分了，但是我创建博客的时候，对于域名而言起什么，一直很苦恼，然后就给自己起了一个c-dreamer 的域，但是后来慢慢用下来，域名太长了而且也不方便记忆，就四处寻找这域名。</p>
+<p><code>ning.moe</code> 这个域名其实我想给我的朋友的，他的网名就是 <code>lemon</code> 但他自己也不会建站 ，对建站没有任何想法，所以这个个域名就纳入我的手里吧。</p>
+<h1 id="moe-的意义？"><a href="#moe-的意义？" class="headerlink" title="moe 的意义？"></a>moe 的意义？</h1><p>对于我而言正好可以组成 拼音的 <code>柠檬</code> 对于域名本身？ </p>
+<p>看看wiki？：<a href="https://zh.moegirl.org.cn/.moe" rel="external nofollow noreferrer">https://zh.moegirl.org.cn/.moe</a></p>
+<p>当然悄悄告诉你，貌似有一个虚拟的国度叫做 <code>gov.moe</code></p>
 </body></html>]]></content>
       <categories>
-        <category>网络技术</category>
+        <category>生活随想</category>
       </categories>
       <tags>
-        <tag>Docker</tag>
-        <tag>Traefik</tag>
+        <tag>moe</tag>
+        <tag>域名</tag>
+        <tag>柠檬</tag>
       </tags>
   </entry>
   <entry>
@@ -1622,115 +1597,6 @@
       </tags>
   </entry>
   <entry>
-    <title>换域名了！！</title>
-    <url>/posts/moe/</url>
-    <content><![CDATA[<html><head></head><body><blockquote>
-<p>换域名了正好可以来水一篇文章了。</p>
-</blockquote>
-<p>对于域名对于网站来说，很是重要的一部分了，但是我创建博客的时候，对于域名而言起什么，一直很苦恼，然后就给自己起了一个c-dreamer 的域，但是后来慢慢用下来，域名太长了而且也不方便记忆，就四处寻找这域名。</p>
-<p><code>ning.moe</code> 这个域名其实我想给我的朋友的，他的网名就是 <code>lemon</code> 但他自己也不会建站 ，对建站没有任何想法，所以这个个域名就纳入我的手里吧。</p>
-<h1 id="moe-的意义？"><a href="#moe-的意义？" class="headerlink" title="moe 的意义？"></a>moe 的意义？</h1><p>对于我而言正好可以组成 拼音的 <code>柠檬</code> 对于域名本身？ </p>
-<p>看看wiki？：<a href="https://zh.moegirl.org.cn/.moe" rel="external nofollow noreferrer">https://zh.moegirl.org.cn/.moe</a></p>
-<p>当然悄悄告诉你，貌似有一个虚拟的国度叫做 <code>gov.moe</code></p>
-</body></html>]]></content>
-      <categories>
-        <category>生活随想</category>
-      </categories>
-      <tags>
-        <tag>moe</tag>
-        <tag>域名</tag>
-        <tag>柠檬</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>TeamSpeak 已经运行一年</title>
-    <url>/posts/teamspeak-run-one-year/</url>
-    <content><![CDATA[<html><head></head><body><blockquote>
-<p> <a href="ts3server://voice.ning.moe" rel="external nofollow noreferrer">点击此处唤醒</a>team speak</p>
-</blockquote>
-<p>看来 21多天没有更新了，来水一下，先浅浅的放一下运行一年的截图吧。</p>
-<p> <img src="https://img.misaka.pics/ShellBlogImg/1/2023/11/06/6548eff53a156.webp" alt="TeamSpeak-one-year-1.webp"> </p>
-<p>emmm ，艰难的存活了一年，感觉蛮不容易的，期间服务器很想进行重启的，应该来说是<a href="https://blog.ning.moe/blog/">两年之久</a>，在这个软件里面承载了我们之间的欢乐时光。</p>
-<p> <img src="https://img.misaka.pics/ShellBlogImg/1/2023/11/06/6548f0c3abc56.webp" alt="TeamSpeak-one-year-2.webp"> </p>
-<p>这个 TeamSpeak 服务器是在腾讯云hk轻量服务器上运行，用来方便我和我的朋友们进行连麦和交流。为我们提供了一个愉快的交流平台，让我们能够更轻松地一起玩游戏、讨论话题和共享欢乐时光。</p>
-<p>我们主要的游戏是 彩虹六号，如果您也是彩虹六号玩家或者是对彩虹六号感兴趣，切没有人和你一起玩耍，我们非常欢迎你来加入我们，与我们一起畅谈、娱乐。</p>
-</body></html>]]></content>
-      <categories>
-        <category>生活随想</category>
-      </categories>
-      <tags>
-        <tag>TeamSpeak</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>WebSocket用SpringSecuirty认证和鉴权</title>
-    <url>/posts/springboot-websocket-springSecurity/</url>
-    <content><![CDATA[<html><head></head><body><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>刚开始想进行认证感觉还是蛮简单的，也只需要让websocket 的<code>Headers</code>上也带<code>authorization</code>在加上token 的值不就完事了吗。</p>
-<p>但websocket 不支持自定义<code>Headers</code>头所以不行，但ws 允许在<code>Sec-WebSocket-Protocol</code> 的请求头加入自定义的参数，也就是说只需要在spring security 中在加入一个对于<code>Sec-WebSocket-Protocol</code>的检测就行了。</p>
-<h1 id="添加对-Sec-WebSocket-Protocol-的判断"><a href="#添加对-Sec-WebSocket-Protocol-的判断" class="headerlink" title="添加对 Sec-WebSocket-Protocol 的判断"></a>添加对 Sec-WebSocket-Protocol 的判断</h1><p>这里的<code>WSHeader</code>其实就是<code>Sec-WebSocket-Protocol</code>。</p>
-<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">  * 获取请求token</span></span><br><span class="line"><span class="comment">  *</span></span><br><span class="line"><span class="comment">  * <span class="doctag">@param</span> request</span></span><br><span class="line"><span class="comment">  * <span class="doctag">@return</span> token</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line"> <span class="keyword">private</span> String <span class="title function_">getToken</span><span class="params">(HttpServletRequest request)</span> {</span><br><span class="line">     <span class="type">String</span> <span class="variable">token</span> <span class="operator">=</span> request.getHeader(header);</span><br><span class="line">     <span class="keyword">if</span> (StringUtils.isNotEmpty(token) &amp;&amp; token.startsWith(Constants.TOKEN_PREFIX)) {</span><br><span class="line">         token = token.replace(Constants.TOKEN_PREFIX, <span class="string">""</span>);</span><br><span class="line">     } <span class="keyword">else</span> {</span><br><span class="line">         <span class="comment">//如果未从请求头中获取到token,则尝试从Sec-WebSocket-Protocol中取出</span></span><br><span class="line">         token = request.getHeader(WSHeader);</span><br><span class="line">         <span class="comment">//如果有值，一定要在response的header中设置，否则还是会断开</span></span><br><span class="line">         <span class="keyword">if</span> (StringUtils.isNotEmpty(token)) {</span><br><span class="line">             <span class="type">HttpServletResponse</span> <span class="variable">response</span> <span class="operator">=</span> ServletUtils.getResponse();</span><br><span class="line">             response.setHeader(WSHeader, token);</span><br><span class="line">         }</span><br><span class="line">     }</span><br><span class="line">     <span class="keyword">return</span> token;</span><br><span class="line"> }</span><br></pre></td></tr></tbody></table></figure>
-
-<p>经过这样的配置我们的<code>Websocket </code>的连接端点是肯定可以通过认证了，但还要拿到<code>SpringSecuiry</code>中的已经登录的用户，判断它是谁？</p>
-<h1 id="添加获取用户信息"><a href="#添加获取用户信息" class="headerlink" title="添加获取用户信息"></a>添加获取用户信息</h1><p>首先配置好<code>Websocket </code>的配置</p>
-<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">@Configuration</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">WebSocketConfig</span> {</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 注入一个ServerEndpointExporter,该Bean会自动注册使用<span class="doctag">@ServerEndpoint</span>注解申明的websocket endpoint</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="meta">@Bean</span></span><br><span class="line">    <span class="keyword">public</span> ServerEndpointExporter <span class="title function_">serverEndpointExporter</span><span class="params">()</span> {</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">ServerEndpointExporter</span>();</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-
-<p>这里在配置一个<code>websocket </code>的连接接口</p>
-<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">@ServerEndpoint("/ws")</span></span><br><span class="line"><span class="meta">@Component</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">WebSocketController</span> {</span><br><span class="line">    <span class="keyword">private</span> Session session;</span><br><span class="line">    <span class="meta">@OnOpen</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">OnOpen</span><span class="params">(Session session)</span> <span class="keyword">throws</span> IOException {</span><br><span class="line">        <span class="built_in">this</span>.session = session;</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    <span class="meta">@OnMessage</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">OnMessage</span><span class="params">(String msg)</span> <span class="keyword">throws</span> IOException {</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    <span class="meta">@OnClose</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">OnClose</span><span class="params">(Session session)</span> <span class="keyword">throws</span> IOException {</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-
-<p>可以看到每一个用户连入<code>/ws</code> 的这个都会有他们自己唯一一个<code>session</code> 其实如果要是直接 <code>session.</code>或有一个叫做 ``getUserPrincipal()<code> 的方法继续点下去有一个getName的方法。如果继续追下去打开</code>debug<code>就会惊奇的发现，</code>getUserPrincipal()<code>的类型尽然是SpringSecurity的</code>UsernamePasswordAuthenticationToken`的类，那么这就好办了。我写了一方法。</p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2023/09/19/6509235059a87.webp" alt="Spring-Security-Config-3.webp"></p>
-<p>这里的<code>LoginUser</code>和<code>SysUser</code>是我已经重写好<code>SpringSecuriy</code>中的登录用户的类，请改成你自己的即可。</p>
-<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 获取当前登录用户信息</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> SysUser <span class="title function_">getSysUser</span><span class="params">()</span> {</span><br><span class="line">    <span class="type">UsernamePasswordAuthenticationToken</span> <span class="variable">userPrincipal</span> <span class="operator">=</span> (UsernamePasswordAuthenticationToken) <span class="built_in">this</span>.session.getUserPrincipal();</span><br><span class="line">    <span class="type">LoginUser</span> <span class="variable">principal</span> <span class="operator">=</span> (LoginUser) userPrincipal.getPrincipal();</span><br><span class="line">    <span class="keyword">return</span> principal.getUser();</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-</body></html>]]></content>
-      <categories>
-        <category>网络技术</category>
-      </categories>
-      <tags>
-        <tag>Spring</tag>
-        <tag>Java</tag>
-        <tag>Security</tag>
-        <tag>SpringSecuriy</tag>
-        <tag>WebSocket</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>使用QQ机器人来进行通知课程信息</title>
-    <url>/posts/%E4%BD%BF%E7%94%A8QQ%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%9D%A5%E8%BF%9B%E8%A1%8C%E9%80%9A%E7%9F%A5%E8%AF%BE%E7%A8%8B%E4%BF%A1%E6%81%AF/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="使用QQ机器人来进行通知课程信息"><a href="#使用QQ机器人来进行通知课程信息" class="headerlink" title="使用QQ机器人来进行通知课程信息"></a>使用QQ机器人来进行通知课程信息</h1><p><strong>此机器人是使用<a href="https://github.com/mamoe/mirai/" rel="external nofollow noreferrer">mirai</a>框架加上<a href="https://github.com/KonnyakuCamp/SuperCourseTimetableBot" rel="external nofollow noreferrer">SuperCourseTimetableBot</a>课程表插件</strong></p>
-<h2 id="机器人使用"><a href="#机器人使用" class="headerlink" title="机器人使用"></a>机器人使用</h2><ul>
-<li>首先你需要下载超级课程表app,查看你所上的高校是否被超级课程收录</li>
-<li>注册超级课程表的账户,我强烈推荐你使用手机号＋密码的方式登录等会机器人需要这个</li>
-<li>满足第一点开始从教务系统导入.tips:如果教务系统无法打开,可能需要进入学校内网</li>
-<li>添加<strong>1504128036</strong> QQ号码</li>
-<li>发送关键字帮助</li>
-</ul>
-<figure class="highlight txt"><table><tbody><tr><td class="code"><pre><span class="line">欢迎使用 超级课表课程提醒QQ机器人。</span><br><span class="line">它可以在你下一节课上课前提醒你这节课的信息，避免你错过课程。</span><br><span class="line">指令：</span><br><span class="line">  "登录超级课表" - 使用密码登录你的超课表账户</span><br><span class="line">  "查看时间表" - 查看本校的作息时间表</span><br><span class="line">  "修改时间表" - 修改本校的作息时间表</span><br><span class="line">  "同步课程" - 手动从超级课表同步你的课程</span><br><span class="line">  "今(明)日课程" - 查看你今(明)天的所有课程信息</span><br><span class="line">  "周X课程" - 查看你周X的所有课程信息</span><br><span class="line">  "怎么用/帮助" - 显示这条信息</span><br><span class="line">  "修改密码" - 修改记录在机器人数据库中的密码</span><br><span class="line">  "删除用户" - 删除你的记录在机器人数据库中的信息，并停止课程提醒服务。</span><br><span class="line">  "修改提前提醒时间" - 修改上课提前多长时间提醒</span><br><span class="line">  "状态" - 查看超级课表课程提醒QQ机器人的运行情况</span><br><span class="line"></span><br><span class="line">注意：当前处于初代测试阶段。</span><br></pre></td></tr></tbody></table></figure>
-
-<ul>
-<li>会收到一下信息,我们需要发送关键字”登录超级课程表”</li>
-</ul>
-<figure class="highlight txt"><table><tbody><tr><td class="code"><pre><span class="line">请输入超级课表账号</span><br></pre></td></tr></tbody></table></figure>
-
-<ul>
-<li><p>输入完成账户发送</p>
-<figure class="highlight txt"><table><tbody><tr><td class="code"><pre><span class="line">请输入超级课表密码</span><br><span class="line">注意：若用手机验证码登录的超级课表，请先在超级课表app设置账号密码</span><br></pre></td></tr></tbody></table></figure>
-</li>
-<li><p>输入完成密码即将开始导入,此时即可使用</p>
-</li>
-<li><p>导入成功需要修改一下对应的周数才能显示正常,调好之后你可以发送”今天课程”或者”明天课程”查看是否正确.</p>
-</li>
-</ul>
-</body></html>]]></content>
-      <categories>
-        <category>网络技术</category>
-      </categories>
-      <tags>
-        <tag>QQ</tag>
-        <tag>Tencent</tag>
-        <tag>Bot</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>萌国ICP备案</title>
     <url>/posts/moeICP/</url>
     <content><![CDATA[<html><head></head><body><h1 id="萌国ICP备案"><a href="#萌国ICP备案" class="headerlink" title="萌国ICP备案"></a>萌国ICP备案</h1><blockquote>
@@ -1785,6 +1651,103 @@
       </tags>
   </entry>
   <entry>
+    <title>在 Docker 环境中使用 Traefik进行反向代理</title>
+    <url>/posts/learn-traefik/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>对于家里面要部署很多 <code>Docker</code> 服务，用 <code>Nginx</code> 反向代理属实麻烦，所以就有了本篇文章 <code>Traefik</code></p>
+<img src="https://img.misaka.pics/ShellBlogImg/1/2024/09/02/66d58750e396f.webp" alt="traefik-1.webp" style="zoom:33%;">
+
+<p><code>Traefik</code> 的logo 是一个<code>go</code>吉祥物进行指挥交通（流量）。</p>
+<p>所以 <code>Traefik</code>的好处是自动发现服务，自动配置反向代理，以及自动续签SSL，以及不在需要对外暴露额外的端口了，宿主机自始至终之暴露 80 443 端口。但也有诸多问题例如它并不能像<code>Nginx</code> 一样可以灵活的配置反代一些程序，例如配置不在<code>Docker</code> 部署的程序，会有点麻烦，如果想我一样只是作为本地部署项目<code>Traefik</code> 仍然是一个不错的选择。</p>
+<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><p>在快速启动前，有必要说明一下，本教程是使用<code>CloudFlare</code> 作为域名ns进行申请泛域名证书，如果你想使用其他提供商，可以在 <a href="https://doc.traefik.io/traefik/https/acme/#providers" rel="external nofollow noreferrer">Traefik 的文档</a> 更改 <code>Provider Code</code>和 <code>Environment Variables</code> 这两个值，当然我会在本篇配置文件有注释提醒。</p>
+<p>另外如果没有额外配置反代的需求（指不跑在docker的服务），需要建立<code>config.yml</code> 文件，当然还需要在<code>traefik.yml</code> 关闭注释。</p>
+<h2 id="快速启动-Traefik"><a href="#快速启动-Traefik" class="headerlink" title="快速启动 Traefik"></a>快速启动 Traefik</h2><p>请按照一下文件目录创建文件，其中<code>acme.json</code>只需要创建文件即可（注意必须要交建立哦，config文件根据自己需求建立即可）</p>
+<p>文件目录：</p>
+<figure class="highlight txt"><table><tbody><tr><td class="code"><pre><span class="line">|   .env	#文件配置</span><br><span class="line">|   docker-compose.yaml		# docker-compose 文件</span><br><span class="line">|</span><br><span class="line">\---data</span><br><span class="line">        acme.json	# SSL 文件</span><br><span class="line">        config.yml	# 额外配置文件（配置额外反代例如宿主机的）</span><br><span class="line">        traefik.yml # Traefik 配置文件</span><br></pre></td></tr></tbody></table></figure>
+
+<p><code>docker-compose.yaml</code> 文件：</p>
+<figure class="highlight yaml"><table><tbody><tr><td class="code"><pre><span class="line"><span class="attr">services:</span></span><br><span class="line">  <span class="attr">traefik:</span>  <span class="comment"># 定义名为 traefik 的服务</span></span><br><span class="line">    <span class="attr">image:</span> <span class="string">traefik:v3.0</span>  <span class="comment"># 使用 Traefik 的 v3.0 版本镜像</span></span><br><span class="line">    <span class="attr">container_name:</span> <span class="string">traefik</span>  <span class="comment"># 容器名称为 traefik</span></span><br><span class="line">    <span class="attr">restart:</span> <span class="string">unless-stopped</span>  <span class="comment"># 容器自动重启，除非手动停止</span></span><br><span class="line">    <span class="attr">security_opt:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="literal">no</span><span class="string">-new-privileges:true</span>  <span class="comment"># 增加安全性，防止提权</span></span><br><span class="line">    <span class="attr">networks:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">traefik-net</span>  <span class="comment"># 连接到名为 proxy 的外部网络</span></span><br><span class="line">    <span class="attr">ports:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="number">80</span><span class="string">:80</span>  <span class="comment"># 映射主机的 80 端口到容器的 80 端口 (HTTP)</span></span><br><span class="line">      <span class="bullet">-</span> <span class="number">443</span><span class="string">:443</span>  <span class="comment"># 映射主机的 443 端口到容器的 443 端口 (HTTPS)</span></span><br><span class="line">      <span class="bullet">-</span> <span class="number">443</span><span class="string">:443/tcp</span>  <span class="comment"># 映射主机的 443 TCP 端口到容器的 443 端口 (TCP 协议)</span></span><br><span class="line">      <span class="bullet">-</span> <span class="number">443</span><span class="string">:443/udp</span>  <span class="comment"># 映射主机的 443 UDP 端口到容器的 443 端口 (UDP 协议)</span></span><br><span class="line">    <span class="attr">environment:</span></span><br><span class="line">      <span class="attr">CF_DNS_API_TOKEN_FILE:</span> <span class="string">${CF_DNS_API_TOKEN}</span>  <span class="comment"># 设置环境变量，使用 Cloudflare API 令牌，根据Traefik文档 选择你的服务提供商的token</span></span><br><span class="line">      <span class="attr">TRAEFIK_DASHBOARD_CREDENTIALS:</span> <span class="string">${TRAEFIK_DASHBOARD_CREDENTIALS}</span>  <span class="comment"># 设置环境变量，定义 Traefik 仪表板的凭据</span></span><br><span class="line">    <span class="attr">env_file:</span> <span class="string">.env</span>  <span class="comment"># 从 .env 文件中加载环境变量</span></span><br><span class="line">    <span class="attr">volumes:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">/etc/localtime:/etc/localtime:ro</span>  <span class="comment"># 挂载主机的时间设置到容器，确保时间同步，且只读</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">/var/run/docker.sock:/var/run/docker.sock:ro</span>  <span class="comment"># 挂载 Docker 的 socket 文件，允许 Traefik 访问 Docker API，只读</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">./data/traefik.yml:/traefik.yml:ro</span>  <span class="comment"># 挂载本地的 traefik.yml 配置文件到容器内，只读</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">./data/acme.json:/acme.json</span>  <span class="comment"># 挂载本地的 acme.json 文件，存储 SSL 证书信息</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">./data/config.yml:/config.yml:ro</span>  <span class="comment"># 可选的配置文件挂载路径，若需要可取消注释</span></span><br><span class="line">    <span class="attr">labels:</span>  <span class="comment"># 设置 Traefik 的相关标签，用于路由和中间件配置</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.enable=true"</span>  <span class="comment"># 启用 Traefik 服务</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.http.routers.traefik.entrypoints=http"</span>  <span class="comment"># 配置 HTTP 入口点</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.http.routers.traefik.rule=Host(`${TRAEFIK_DASHBOARD_HOST}`)"</span> <span class="comment"># 定义 Traefik 仪表板的访问规则</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.http.middlewares.traefik-auth.basicauth.users=${TRAEFIK_DASHBOARD_CREDENTIALS}"</span>  <span class="comment"># 为仪表板配置基本身份验证</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.http.middlewares.traefik-https-redirect.redirectscheme.scheme=https"</span>  <span class="comment"># 配置 HTTP 到 HTTPS 的重定向</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.http.middlewares.sslheader.headers.customrequestheaders.X-Forwarded-Proto=https"</span>  <span class="comment"># 添加自定义请求头</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.http.routers.traefik.middlewares=traefik-https-redirect"</span>  <span class="comment"># 将重定向中间件应用到 HTTP 路由</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.http.routers.traefik-secure.entrypoints=https"</span>  <span class="comment"># 配置 HTTPS 入口点</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.http.routers.traefik-secure.rule=Host(`${TRAEFIK_DASHBOARD_HOST}`)"</span> <span class="comment"># 定义 HTTPS 路由的访问规则</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.http.routers.traefik-secure.middlewares=traefik-auth"</span>  <span class="comment"># 为 HTTPS 路由应用基本身份验证中间件</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.http.routers.traefik-secure.tls=true"</span>  <span class="comment"># 启用 TLS (HTTPS)</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.http.routers.traefik-secure.tls.certresolver=${NS_Domain}"</span>  <span class="comment"># 使用 DNS服务提供商 code 根据Traefik文档 选择你的服务提供商code</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.http.routers.traefik-secure.tls.domains[0].main=${TLS_MAIN_DOMAIN}"</span>  <span class="comment"># 定义主域名</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.http.routers.traefik-secure.tls.domains[0].sans=${TLS_SANS_DOMAIN}"</span>  <span class="comment"># 定义子域名通配符</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.http.routers.traefik-secure.service=api@internal"</span>  <span class="comment"># 使用 Traefik 内部 API 服务</span></span><br><span class="line"></span><br><span class="line"><span class="attr">networks:</span></span><br><span class="line">  <span class="attr">traefik-net:</span></span><br><span class="line">    <span class="attr">external:</span> <span class="literal">false</span>  <span class="comment"># 使用外部定义的名为 proxy 的网络</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p><code>.env</code> 文件:</p>
+<figure class="highlight toml"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment"># .env 文件</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># CF API</span></span><br><span class="line"><span class="attr">CF_DNS_API_TOKEN</span>=</span><br><span class="line"></span><br><span class="line"><span class="attr">NS_Domain</span>=cloudflare <span class="comment">#根据你使用的DNS服务提供商 code 根据Traefik文档 选择你的服务提供商code</span></span><br><span class="line"><span class="comment"># 设置环境变量，定义 Traefik 仪表板的凭据 ，默认账户名密码：admin</span></span><br><span class="line"><span class="attr">TRAEFIK_DASHBOARD_CREDENTIALS</span>=admin:$<span class="variable">$2y</span>$<span class="variable">$05</span>$<span class="variable">$aOXINGgHfnZ</span>//t.kUs7o9ej3faUbj2yNxc8k3WVrBybFOxxaTsLTe</span><br><span class="line"></span><br><span class="line"><span class="comment"># Traefik Dashboard 域名</span></span><br><span class="line"><span class="attr">TRAEFIK_DASHBOARD_HOST</span>=dash.docker.localhost</span><br><span class="line"></span><br><span class="line"><span class="comment"># TLS 主域名和子域名</span></span><br><span class="line"><span class="attr">TLS_MAIN_DOMAIN</span>=docker.localhost</span><br><span class="line"><span class="attr">TLS_SANS_DOMAIN</span>=*.docker.localhost</span><br></pre></td></tr></tbody></table></figure>
+
+<p><code>traefik.yml</code> 文件：</p>
+<figure class="highlight yaml"><table><tbody><tr><td class="code"><pre><span class="line"><span class="attr">api:</span></span><br><span class="line">  <span class="attr">dashboard:</span> <span class="literal">true</span>  <span class="comment"># 启用 Traefik 的仪表板，可以通过指定的路由访问</span></span><br><span class="line">  <span class="attr">debug:</span> <span class="literal">true</span>  <span class="comment"># 启用调试模式，输出更多的日志信息</span></span><br><span class="line"></span><br><span class="line"><span class="attr">entryPoints:</span></span><br><span class="line">  <span class="attr">http:</span></span><br><span class="line">    <span class="attr">address:</span> <span class="string">":80"</span>  <span class="comment"># 定义 HTTP 入口点，监听 80 端口</span></span><br><span class="line">    <span class="attr">http:</span></span><br><span class="line">      <span class="attr">redirections:</span></span><br><span class="line">        <span class="attr">entryPoint:</span></span><br><span class="line">          <span class="attr">to:</span> <span class="string">https</span>  <span class="comment"># 重定向 HTTP 请求到 HTTPS</span></span><br><span class="line">          <span class="attr">scheme:</span> <span class="string">https</span>  <span class="comment"># 使用 HTTPS 作为重定向的目标协议</span></span><br><span class="line"></span><br><span class="line">  <span class="attr">https:</span></span><br><span class="line">    <span class="attr">address:</span> <span class="string">":443"</span>  <span class="comment"># 定义 HTTPS 入口点，监听 443 端口</span></span><br><span class="line"></span><br><span class="line"><span class="attr">serversTransport:</span></span><br><span class="line">  <span class="attr">insecureSkipVerify:</span> <span class="literal">true</span>  <span class="comment"># 在与后端服务器通信时，跳过 TLS 证书验证（不推荐在生产环境中使用）</span></span><br><span class="line"></span><br><span class="line"><span class="attr">providers:</span></span><br><span class="line">  <span class="attr">docker:</span></span><br><span class="line">    <span class="attr">endpoint:</span> <span class="string">"unix:///var/run/docker.sock"</span>  <span class="comment"># 指定 Docker API 的 socket 文件路径，Traefik 使用它来检测和管理 Docker 容器</span></span><br><span class="line">    <span class="attr">exposedByDefault:</span> <span class="literal">false</span>  <span class="comment"># 默认情况下，Docker 容器不会自动暴露给 Traefik，必须显式指定</span></span><br><span class="line">    <span class="attr">watch:</span> <span class="literal">true</span></span><br><span class="line"></span><br><span class="line">  <span class="attr">file:</span></span><br><span class="line">    <span class="attr">filename:</span> <span class="string">/config.yml</span>  <span class="comment"># (已注释) 可选的文件提供者配置，用于从外部文件加载配置</span></span><br><span class="line">    <span class="attr">watch:</span> <span class="literal">true</span>  <span class="comment"># 允许 Traefik 自动监控和加载配置文件变化</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="attr">certificatesResolvers:</span></span><br><span class="line">  <span class="attr">cloudflare:</span> <span class="comment"># 使用 DNS服务提供商 code 根据Traefik文档 选择你的服务提供商code</span></span><br><span class="line">    <span class="attr">acme:</span></span><br><span class="line">      <span class="attr">email:</span> <span class="string">youremail@email.com</span>  <span class="comment"># 申请 ACME 证书时使用的电子邮件地址</span></span><br><span class="line">      <span class="attr">storage:</span> <span class="string">acme.json</span>  <span class="comment"># 存储证书信息的文件路径</span></span><br><span class="line">      <span class="comment"># caServer: https://acme-v02.api.letsencrypt.org/directory # 正式环境的 Let's Encrypt 服务器 (默认)</span></span><br><span class="line">      <span class="attr">caServer:</span> <span class="string">https://acme-staging-v02.api.letsencrypt.org/directory</span> <span class="comment"># 测试环境的 Let's Encrypt 服务器 (用于调试)</span></span><br><span class="line"></span><br><span class="line">      <span class="attr">dnsChallenge:</span></span><br><span class="line">        <span class="attr">provider:</span> <span class="string">cloudflare</span>  <span class="comment"># 使用 DNS服务提供商 code 根据Traefik文档 选择你的服务提供商code 进行 DNS 验证以获取证书</span></span><br><span class="line">        <span class="comment">#disablePropagationCheck: true # (已注释) 如果通过 Cloudflare 获取证书有问题，可以取消注释此行以禁用传播检查</span></span><br><span class="line">        <span class="comment">#delayBeforeCheck: 60s # (已注释) 如果需要确保 TXT 记录准备就绪，可以取消注释此行并设置检查延迟</span></span><br><span class="line">        <span class="attr">resolvers:</span></span><br><span class="line">          <span class="bullet">-</span> <span class="string">"223.5.5.5:53"</span>  <span class="comment"># AliDNS 解析器</span></span><br><span class="line">          <span class="bullet">-</span> <span class="string">"119.29.29.29:53"</span>  <span class="comment"># 备用 DNS 解析器</span></span><br><span class="line">          <span class="bullet">-</span> <span class="string">"1.1.1.1"</span> <span class="comment"># 备用 DNS 解析器</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p><code>config.yml</code> 文件，可以选择配置，如果你宿主机有ng反代服务，你使用taerfik 的话会端口冲突，可以配置，但不过要把 <code>docker-compose</code> 和 <code>Traefik</code>的配置文件注释去掉即可：</p>
+<figure class="highlight yaml"><table><tbody><tr><td class="code"><pre><span class="line"><span class="attr">http:</span></span><br><span class="line">  <span class="comment">#region routers </span></span><br><span class="line">  <span class="attr">routers:</span></span><br><span class="line">    <span class="attr">hexo:</span></span><br><span class="line">      <span class="attr">entryPoints:</span></span><br><span class="line">        <span class="bullet">-</span> <span class="string">"https"</span>  <span class="comment"># 指定使用 HTTPS 入口点</span></span><br><span class="line">      <span class="attr">rule:</span> <span class="string">"Host(`hexo.docker.localhost`)"</span>  <span class="comment"># 当访问的主机名为 hexo.local.shellscience.top 时，触发此路由</span></span><br><span class="line">      <span class="attr">middlewares:</span></span><br><span class="line">        <span class="bullet">-</span> <span class="string">default-headers</span>  <span class="comment"># 应用默认的安全头中间件</span></span><br><span class="line">        <span class="bullet">-</span> <span class="string">https-redirectscheme</span>  <span class="comment"># 应用 HTTPS 重定向中间件</span></span><br><span class="line">      <span class="attr">tls:</span> {}  <span class="comment"># 启用 TLS 加密</span></span><br><span class="line">      <span class="attr">service:</span> <span class="string">hexo</span>  <span class="comment"># 指定将请求转发到名为 hexo 的服务</span></span><br><span class="line"></span><br><span class="line">  <span class="comment">#region services</span></span><br><span class="line">  <span class="attr">services:</span></span><br><span class="line">    <span class="attr">hexo:</span></span><br><span class="line">      <span class="attr">loadBalancer:</span></span><br><span class="line">        <span class="attr">servers:</span></span><br><span class="line">          <span class="bullet">-</span> <span class="attr">url:</span> <span class="string">"http://127.0.0.1:5000"</span>  <span class="comment"># 指定 Hexo 服务的后端服务器 URL</span></span><br><span class="line">        <span class="attr">passHostHeader:</span> <span class="literal">true</span>  <span class="comment"># 传递原始的 Host 头信息到后端服务</span></span><br><span class="line">  <span class="comment">#endregion</span></span><br><span class="line"></span><br><span class="line">  <span class="attr">middlewares:</span></span><br><span class="line">    <span class="attr">https-redirectscheme:</span></span><br><span class="line">      <span class="attr">redirectScheme:</span></span><br><span class="line">        <span class="attr">scheme:</span> <span class="string">https</span>  <span class="comment"># 将 HTTP 请求重定向为 HTTPS</span></span><br><span class="line">        <span class="attr">permanent:</span> <span class="literal">true</span>  <span class="comment"># 使用永久重定向（HTTP 301）</span></span><br><span class="line"></span><br><span class="line">    <span class="attr">default-headers:</span></span><br><span class="line">      <span class="attr">headers:</span></span><br><span class="line">        <span class="attr">frameDeny:</span> <span class="literal">true</span>  <span class="comment"># 禁止网页被嵌入到框架中，防止点击劫持攻击</span></span><br><span class="line">        <span class="attr">browserXssFilter:</span> <span class="literal">true</span>  <span class="comment"># 启用浏览器的 XSS 过滤器，增强安全性</span></span><br><span class="line">        <span class="attr">contentTypeNosniff:</span> <span class="literal">true</span>  <span class="comment"># 防止浏览器 MIME 类型嗅探</span></span><br><span class="line">        <span class="attr">forceSTSHeader:</span> <span class="literal">true</span>  <span class="comment"># 强制启用 HSTS（HTTP 严格传输安全）</span></span><br><span class="line">        <span class="attr">stsIncludeSubdomains:</span> <span class="literal">true</span>  <span class="comment"># HSTS 规则应用于所有子域</span></span><br><span class="line">        <span class="attr">stsPreload:</span> <span class="literal">true</span>  <span class="comment"># 允许将域名加入 HSTS 预加载列表</span></span><br><span class="line">        <span class="attr">stsSeconds:</span> <span class="number">15552000</span>  <span class="comment"># HSTS 头的有效期（秒），这里是 180 天</span></span><br><span class="line">        <span class="attr">customFrameOptionsValue:</span> <span class="string">SAMEORIGIN</span>  <span class="comment"># 允许内容在同源的 iframe 中加载</span></span><br><span class="line">        <span class="attr">customRequestHeaders:</span></span><br><span class="line">          <span class="attr">X-Forwarded-Proto:</span> <span class="string">https</span>  <span class="comment"># 设置 X-Forwarded-Proto 头为 https，用于指示原始请求协议</span></span><br><span class="line"></span><br><span class="line">    <span class="attr">default-whitelist:</span></span><br><span class="line">      <span class="attr">ipAllowList:</span></span><br><span class="line">        <span class="attr">sourceRange:</span></span><br><span class="line">        <span class="bullet">-</span> <span class="string">"10.0.0.0/8"</span>  <span class="comment"># 允许来自 10.0.0.0/8 网段的 IP 地址</span></span><br><span class="line">        <span class="bullet">-</span> <span class="string">"192.168.0.0/16"</span>  <span class="comment"># 允许来自 192.168.0.0/16 网段的 IP 地址</span></span><br><span class="line">        <span class="bullet">-</span> <span class="string">"172.16.0.0/12"</span>  <span class="comment"># 允许来自 172.16.0.0/12 网段的 IP 地址</span></span><br><span class="line"></span><br><span class="line">    <span class="attr">secured:</span></span><br><span class="line">      <span class="attr">chain:</span></span><br><span class="line">        <span class="attr">middlewares:</span></span><br><span class="line">        <span class="bullet">-</span> <span class="string">default-whitelist</span>  <span class="comment"># 应用默认的 IP 白名单中间件</span></span><br><span class="line">        <span class="bullet">-</span> <span class="string">default-headers</span>  <span class="comment"># 应用默认的安全头中间件</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>配置完毕我们<code>docker-compose up -d</code>如果配置没有问题你就可以通过你配置的域名成功访问<code>Traefik</code>的面板。</p>
+<h1 id="反代代理Dcoekr应用"><a href="#反代代理Dcoekr应用" class="headerlink" title="反代代理Dcoekr应用"></a>反代代理Dcoekr应用</h1><p>这里拿<code>Memos</code>的程序来举例子:</p>
+<p>下面是我的<code>Memos</code>的<code>docker-compose.yaml</code> 文件，我们只需要把暴露的端口删除，添加<code>labels</code>标签以及下面几个配置（你想访问的域名、容器的端口、开启https、使用tls证书）以及让我们的程序接入<code>Traefik</code>的网络就好了。</p>
+<figure class="highlight yaml"><table><tbody><tr><td class="code"><pre><span class="line"><span class="attr">version:</span> <span class="string">"3.0"</span></span><br><span class="line"><span class="attr">services:</span></span><br><span class="line">  <span class="attr">memos:</span></span><br><span class="line">    <span class="attr">image:</span> <span class="string">ghcr.io/usememos/memos:latest</span></span><br><span class="line">    <span class="attr">container_name:</span> <span class="string">memos</span></span><br><span class="line">    <span class="attr">volumes:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">./data/:/var/opt/memos</span></span><br><span class="line">    <span class="attr">environment:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">driver=sqlite</span></span><br><span class="line">    <span class="attr">labels:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.enable=true"</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.http.routers.memos.rule=Host(`memos.local.com`)"</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.http.services.memos.loadbalancer.server.port=&lt;程序的端口&gt;"</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.http.routers.memos.entrypoints=https"</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.http.routers.memos.tls=true"</span></span><br><span class="line">    <span class="attr">networks:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">traefik-net</span></span><br><span class="line"></span><br><span class="line"><span class="attr">networks:</span></span><br><span class="line">  <span class="attr">traefik-net:</span></span><br><span class="line">    <span class="attr">external:</span> <span class="literal">true</span></span><br></pre></td></tr></tbody></table></figure>
+
+
+
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p><code>Traefik</code>DNS服务提供文档：<a href="https://doc.traefik.io/traefik/https/acme/#providers" rel="external nofollow noreferrer">https://doc.traefik.io/traefik/https/acme/#providers</a></p>
+<p><code>Traefik</code>Docker配置文档：<a href="https://doc.traefik.io/traefik/routing/providers/docker/" rel="external nofollow noreferrer">https://doc.traefik.io/traefik/routing/providers/docker/</a></p>
+<h1 id="最后结尾的彩蛋"><a href="#最后结尾的彩蛋" class="headerlink" title="最后结尾的彩蛋"></a>最后结尾的彩蛋</h1><p>找<code>DALL·E</code>生成了两张cover不过总感觉怪怪的，另外一张也放出来吧，有一种土拔鼠变成黄鼠狼的错觉。</p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/10/05/67011bad7c6dc.webp" alt="DALL·E 2024-10-05 18.57.18 - A professional cover featuring the Traefik logo, which is a Go language gopher mascot directing traffic with a traffic sign. The background shows a gr.webp"></p>
+</body></html>]]></content>
+      <categories>
+        <category>网络技术</category>
+      </categories>
+      <tags>
+        <tag>Docker</tag>
+        <tag>Traefik</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>WebSocket用SpringSecuirty认证和鉴权</title>
+    <url>/posts/springboot-websocket-springSecurity/</url>
+    <content><![CDATA[<html><head></head><body><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>刚开始想进行认证感觉还是蛮简单的，也只需要让websocket 的<code>Headers</code>上也带<code>authorization</code>在加上token 的值不就完事了吗。</p>
+<p>但websocket 不支持自定义<code>Headers</code>头所以不行，但ws 允许在<code>Sec-WebSocket-Protocol</code> 的请求头加入自定义的参数，也就是说只需要在spring security 中在加入一个对于<code>Sec-WebSocket-Protocol</code>的检测就行了。</p>
+<h1 id="添加对-Sec-WebSocket-Protocol-的判断"><a href="#添加对-Sec-WebSocket-Protocol-的判断" class="headerlink" title="添加对 Sec-WebSocket-Protocol 的判断"></a>添加对 Sec-WebSocket-Protocol 的判断</h1><p>这里的<code>WSHeader</code>其实就是<code>Sec-WebSocket-Protocol</code>。</p>
+<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">  * 获取请求token</span></span><br><span class="line"><span class="comment">  *</span></span><br><span class="line"><span class="comment">  * <span class="doctag">@param</span> request</span></span><br><span class="line"><span class="comment">  * <span class="doctag">@return</span> token</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line"> <span class="keyword">private</span> String <span class="title function_">getToken</span><span class="params">(HttpServletRequest request)</span> {</span><br><span class="line">     <span class="type">String</span> <span class="variable">token</span> <span class="operator">=</span> request.getHeader(header);</span><br><span class="line">     <span class="keyword">if</span> (StringUtils.isNotEmpty(token) &amp;&amp; token.startsWith(Constants.TOKEN_PREFIX)) {</span><br><span class="line">         token = token.replace(Constants.TOKEN_PREFIX, <span class="string">""</span>);</span><br><span class="line">     } <span class="keyword">else</span> {</span><br><span class="line">         <span class="comment">//如果未从请求头中获取到token,则尝试从Sec-WebSocket-Protocol中取出</span></span><br><span class="line">         token = request.getHeader(WSHeader);</span><br><span class="line">         <span class="comment">//如果有值，一定要在response的header中设置，否则还是会断开</span></span><br><span class="line">         <span class="keyword">if</span> (StringUtils.isNotEmpty(token)) {</span><br><span class="line">             <span class="type">HttpServletResponse</span> <span class="variable">response</span> <span class="operator">=</span> ServletUtils.getResponse();</span><br><span class="line">             response.setHeader(WSHeader, token);</span><br><span class="line">         }</span><br><span class="line">     }</span><br><span class="line">     <span class="keyword">return</span> token;</span><br><span class="line"> }</span><br></pre></td></tr></tbody></table></figure>
+
+<p>经过这样的配置我们的<code>Websocket </code>的连接端点是肯定可以通过认证了，但还要拿到<code>SpringSecuiry</code>中的已经登录的用户，判断它是谁？</p>
+<h1 id="添加获取用户信息"><a href="#添加获取用户信息" class="headerlink" title="添加获取用户信息"></a>添加获取用户信息</h1><p>首先配置好<code>Websocket </code>的配置</p>
+<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">@Configuration</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">WebSocketConfig</span> {</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 注入一个ServerEndpointExporter,该Bean会自动注册使用<span class="doctag">@ServerEndpoint</span>注解申明的websocket endpoint</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="meta">@Bean</span></span><br><span class="line">    <span class="keyword">public</span> ServerEndpointExporter <span class="title function_">serverEndpointExporter</span><span class="params">()</span> {</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">ServerEndpointExporter</span>();</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<p>这里在配置一个<code>websocket </code>的连接接口</p>
+<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">@ServerEndpoint("/ws")</span></span><br><span class="line"><span class="meta">@Component</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">WebSocketController</span> {</span><br><span class="line">    <span class="keyword">private</span> Session session;</span><br><span class="line">    <span class="meta">@OnOpen</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">OnOpen</span><span class="params">(Session session)</span> <span class="keyword">throws</span> IOException {</span><br><span class="line">        <span class="built_in">this</span>.session = session;</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    <span class="meta">@OnMessage</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">OnMessage</span><span class="params">(String msg)</span> <span class="keyword">throws</span> IOException {</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    <span class="meta">@OnClose</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">OnClose</span><span class="params">(Session session)</span> <span class="keyword">throws</span> IOException {</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<p>可以看到每一个用户连入<code>/ws</code> 的这个都会有他们自己唯一一个<code>session</code> 其实如果要是直接 <code>session.</code>或有一个叫做 ``getUserPrincipal()<code> 的方法继续点下去有一个getName的方法。如果继续追下去打开</code>debug<code>就会惊奇的发现，</code>getUserPrincipal()<code>的类型尽然是SpringSecurity的</code>UsernamePasswordAuthenticationToken`的类，那么这就好办了。我写了一方法。</p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2023/09/19/6509235059a87.webp" alt="Spring-Security-Config-3.webp"></p>
+<p>这里的<code>LoginUser</code>和<code>SysUser</code>是我已经重写好<code>SpringSecuriy</code>中的登录用户的类，请改成你自己的即可。</p>
+<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 获取当前登录用户信息</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> SysUser <span class="title function_">getSysUser</span><span class="params">()</span> {</span><br><span class="line">    <span class="type">UsernamePasswordAuthenticationToken</span> <span class="variable">userPrincipal</span> <span class="operator">=</span> (UsernamePasswordAuthenticationToken) <span class="built_in">this</span>.session.getUserPrincipal();</span><br><span class="line">    <span class="type">LoginUser</span> <span class="variable">principal</span> <span class="operator">=</span> (LoginUser) userPrincipal.getPrincipal();</span><br><span class="line">    <span class="keyword">return</span> principal.getUser();</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+</body></html>]]></content>
+      <categories>
+        <category>网络技术</category>
+      </categories>
+      <tags>
+        <tag>Spring</tag>
+        <tag>Java</tag>
+        <tag>Security</tag>
+        <tag>SpringSecuriy</tag>
+        <tag>WebSocket</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>TeamSpeak 已经运行一年</title>
+    <url>/posts/teamspeak-run-one-year/</url>
+    <content><![CDATA[<html><head></head><body><blockquote>
+<p> <a href="ts3server://voice.ning.moe" rel="external nofollow noreferrer">点击此处唤醒</a>team speak</p>
+</blockquote>
+<p>看来 21多天没有更新了，来水一下，先浅浅的放一下运行一年的截图吧。</p>
+<p> <img src="https://img.misaka.pics/ShellBlogImg/1/2023/11/06/6548eff53a156.webp" alt="TeamSpeak-one-year-1.webp"> </p>
+<p>emmm ，艰难的存活了一年，感觉蛮不容易的，期间服务器很想进行重启的，应该来说是<a href="https://blog.ning.moe/blog/">两年之久</a>，在这个软件里面承载了我们之间的欢乐时光。</p>
+<p> <img src="https://img.misaka.pics/ShellBlogImg/1/2023/11/06/6548f0c3abc56.webp" alt="TeamSpeak-one-year-2.webp"> </p>
+<p>这个 TeamSpeak 服务器是在腾讯云hk轻量服务器上运行，用来方便我和我的朋友们进行连麦和交流。为我们提供了一个愉快的交流平台，让我们能够更轻松地一起玩游戏、讨论话题和共享欢乐时光。</p>
+<p>我们主要的游戏是 彩虹六号，如果您也是彩虹六号玩家或者是对彩虹六号感兴趣，切没有人和你一起玩耍，我们非常欢迎你来加入我们，与我们一起畅谈、娱乐。</p>
+</body></html>]]></content>
+      <categories>
+        <category>生活随想</category>
+      </categories>
+      <tags>
+        <tag>TeamSpeak</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>关于WordPress分类目录404问题</title>
     <url>/posts/%E5%85%B3%E4%BA%8Ewordpress%E5%88%86%E7%B1%BB%E7%9B%AE%E5%BD%95404%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<html><head></head><body><h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>前两天把博客给玩脱了和，也没有备份，重新搞了之后我其实想隐藏博文中链接地址里面的index.php无意间隐藏了index.php还神奇的把分类目录的404解决了。</p>
@@ -1803,6 +1766,43 @@
       </tags>
   </entry>
   <entry>
+    <title>使用QQ机器人来进行通知课程信息</title>
+    <url>/posts/%E4%BD%BF%E7%94%A8QQ%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%9D%A5%E8%BF%9B%E8%A1%8C%E9%80%9A%E7%9F%A5%E8%AF%BE%E7%A8%8B%E4%BF%A1%E6%81%AF/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="使用QQ机器人来进行通知课程信息"><a href="#使用QQ机器人来进行通知课程信息" class="headerlink" title="使用QQ机器人来进行通知课程信息"></a>使用QQ机器人来进行通知课程信息</h1><p><strong>此机器人是使用<a href="https://github.com/mamoe/mirai/" rel="external nofollow noreferrer">mirai</a>框架加上<a href="https://github.com/KonnyakuCamp/SuperCourseTimetableBot" rel="external nofollow noreferrer">SuperCourseTimetableBot</a>课程表插件</strong></p>
+<h2 id="机器人使用"><a href="#机器人使用" class="headerlink" title="机器人使用"></a>机器人使用</h2><ul>
+<li>首先你需要下载超级课程表app,查看你所上的高校是否被超级课程收录</li>
+<li>注册超级课程表的账户,我强烈推荐你使用手机号＋密码的方式登录等会机器人需要这个</li>
+<li>满足第一点开始从教务系统导入.tips:如果教务系统无法打开,可能需要进入学校内网</li>
+<li>添加<strong>1504128036</strong> QQ号码</li>
+<li>发送关键字帮助</li>
+</ul>
+<figure class="highlight txt"><table><tbody><tr><td class="code"><pre><span class="line">欢迎使用 超级课表课程提醒QQ机器人。</span><br><span class="line">它可以在你下一节课上课前提醒你这节课的信息，避免你错过课程。</span><br><span class="line">指令：</span><br><span class="line">  "登录超级课表" - 使用密码登录你的超课表账户</span><br><span class="line">  "查看时间表" - 查看本校的作息时间表</span><br><span class="line">  "修改时间表" - 修改本校的作息时间表</span><br><span class="line">  "同步课程" - 手动从超级课表同步你的课程</span><br><span class="line">  "今(明)日课程" - 查看你今(明)天的所有课程信息</span><br><span class="line">  "周X课程" - 查看你周X的所有课程信息</span><br><span class="line">  "怎么用/帮助" - 显示这条信息</span><br><span class="line">  "修改密码" - 修改记录在机器人数据库中的密码</span><br><span class="line">  "删除用户" - 删除你的记录在机器人数据库中的信息，并停止课程提醒服务。</span><br><span class="line">  "修改提前提醒时间" - 修改上课提前多长时间提醒</span><br><span class="line">  "状态" - 查看超级课表课程提醒QQ机器人的运行情况</span><br><span class="line"></span><br><span class="line">注意：当前处于初代测试阶段。</span><br></pre></td></tr></tbody></table></figure>
+
+<ul>
+<li>会收到一下信息,我们需要发送关键字”登录超级课程表”</li>
+</ul>
+<figure class="highlight txt"><table><tbody><tr><td class="code"><pre><span class="line">请输入超级课表账号</span><br></pre></td></tr></tbody></table></figure>
+
+<ul>
+<li><p>输入完成账户发送</p>
+<figure class="highlight txt"><table><tbody><tr><td class="code"><pre><span class="line">请输入超级课表密码</span><br><span class="line">注意：若用手机验证码登录的超级课表，请先在超级课表app设置账号密码</span><br></pre></td></tr></tbody></table></figure>
+</li>
+<li><p>输入完成密码即将开始导入,此时即可使用</p>
+</li>
+<li><p>导入成功需要修改一下对应的周数才能显示正常,调好之后你可以发送”今天课程”或者”明天课程”查看是否正确.</p>
+</li>
+</ul>
+</body></html>]]></content>
+      <categories>
+        <category>网络技术</category>
+      </categories>
+      <tags>
+        <tag>QQ</tag>
+        <tag>Tencent</tag>
+        <tag>Bot</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>博客数据库损坏，正在维护！</title>
     <url>/posts/%E5%8D%9A%E5%AE%A2%E6%95%B0%E6%8D%AE%E5%BA%93%E6%8D%9F%E5%9D%8F%EF%BC%8C%E6%AD%A3%E5%9C%A8%E7%BB%B4%E6%8A%A4%EF%BC%81/</url>
     <content><![CDATA[<html><head></head><body><p>因博主手残把动了数据库而且还没有恢复到最近的备份，本博客访问可能会存在一定问题，在博主紧急抢修下，恢复了部分基础功能，博文图片可能暂时无法加载，我相信很快恢复，我现在先睡觉了都12点了。</p>
@@ -1815,6 +1815,18 @@
     <title>博客评论系统还在测试阶段</title>
     <url>/posts/%E5%8D%9A%E5%AE%A2%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E8%BF%98%E5%9C%A8%E6%B5%8B%E8%AF%95%E9%98%B6%E6%AE%B5/</url>
     <content><![CDATA[<html><head></head><body></body></html>]]></content>
+  </entry>
+  <entry>
+    <title>搭建镜像网站</title>
+    <url>/posts/%E6%90%AD%E5%BB%BA%E9%95%9C%E5%83%8F%E7%BD%91%E7%AB%99/</url>
+    <content><![CDATA[<html><head></head><body><ol>
+<li><p>不过多介绍知道就好，使用Cloudflare Worker来建造镜像网站。 2. 为什么选择Cloudflare Worker因为他免费而且个人进步够用还能访问全球。 - 开始操练起来！ 1. 你需要首先用一个Cloudflare账号<a href="https://dash.cloudflare.com/sign-up" rel="external nofollow noreferrer">打开注册链接</a><img src="https://c-dreamer.top/wp-content/uploads/2020/01/%E5%AE%9E%E4%BE%8B0-1024x430.png" alt="width=640height">搭建<a href="https://workers.cloudflare.com/" rel="external nofollow noreferrer">Cloudflare Workerd</a> <img src="https://c-dreamer.top/wp-content/uploads/2020/01/2-1024x551.png"><img src="https://c-dreamer.top/wp-content/uploads/2020/01/3-1024x483.png"><img src="https://c-dreamer.top/wp-content/uploads/2020/01/4-1024x453.png"><img src="https://c-dreamer.top/wp-content/uploads/2020/01/4-1024x453.png"><img src="https://c-dreamer.top/wp-content/uploads/2020/01/5-1024x551.png"><img src="https://c-dreamer.top/wp-content/uploads/2020/01/6-1024x458.png"><img src="https://c-dreamer.top/wp-content/uploads/2020/01/7-1024x504.png"><img src="https://c-dreamer.top/wp-content/uploads/2020/01/8-1024x509.png"><img src="https://c-dreamer.top/wp-content/uploads/2020/01/9-1024x559.png"></p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">// 替换成你想镜像的站点</span><br><span class="line">const upstream = 'www.google.com'</span><br><span class="line">// 如果那个站点有专门的移动适配站点，否则保持和上面一致</span><br><span class="line">const upstream_mobile = 'www.google.com'</span><br><span class="line">// 你希望禁止哪些国家访问</span><br><span class="line">const blocked_region = ['KP', 'SY', 'PK', 'CU']</span><br><span class="line">// 禁止自访问</span><br><span class="line">const blocked_ip_address = ['0.0.0.0', '127.0.0.1']</span><br><span class="line">// 替换成你想镜像的站点</span><br><span class="line">const replace_dict = {</span><br><span class="line">'$upstream': '$custom_domain',</span><br><span class="line">'//google.com': ''</span><br><span class="line">}</span><br><span class="line">//以下内容都不用动</span><br><span class="line">addEventListener('fetch', event =&gt; {</span><br><span class="line">event.respondWith(fetchAndApply(event.request));</span><br><span class="line">})</span><br><span class="line">async function fetchAndApply(request) {</span><br><span class="line">const region = request.headers.get('cf-ipcountry').toUpperCase();</span><br><span class="line">const ip_address = request.headers.get('cf-connecting-ip');</span><br><span class="line">const user_agent = request.headers.get('user-agent');</span><br><span class="line">let response = null;</span><br><span class="line">let url = new URL(request.url);</span><br><span class="line">let url_host = url.host;</span><br><span class="line">if (url.protocol == 'http:') {</span><br><span class="line">url.protocol = 'https:'</span><br><span class="line">response = Response.redirect(url.href);</span><br><span class="line">return response;</span><br><span class="line">}</span><br><span class="line">if (await device_status(user_agent)) {</span><br><span class="line">upstream_domain = upstream</span><br><span class="line">} else {</span><br><span class="line">upstream_domain = upstream_mobile</span><br><span class="line">}</span><br><span class="line">url.host = upstream_domain;</span><br><span class="line">if (blocked_region.includes(region)) {</span><br><span class="line">response = new Response('Access denied: WorkersProxy is not available in your region yet.', {</span><br><span class="line">status: 403</span><br><span class="line">});</span><br><span class="line">} else if(blocked_ip_address.includes(ip_address)){</span><br><span class="line">response = new Response('Access denied: Your IP address is blocked by WorkersProxy.', {</span><br><span class="line">status: 403</span><br><span class="line">});</span><br><span class="line">} else{</span><br><span class="line">let method = request.method;</span><br><span class="line">let request_headers = request.headers;</span><br><span class="line">let new_request_headers = new Headers(request_headers);</span><br><span class="line">new_request_headers.set('Host', upstream_domain);</span><br><span class="line">new_request_headers.set('Referer', url.href);</span><br><span class="line">let original_response = await fetch(url.href, {</span><br><span class="line">method: method,</span><br><span class="line">headers: new_request_headers</span><br><span class="line">})</span><br><span class="line">let original_response_clone = original_response.clone();</span><br><span class="line">let original_text = null;</span><br><span class="line">let response_headers = original_response.headers;</span><br><span class="line">let new_response_headers = new Headers(response_headers);</span><br><span class="line">let status = original_response.status;</span><br><span class="line">new_response_headers.set('access-control-allow-origin', '*');</span><br><span class="line">new_response_headers.set('access-control-allow-credentials', true);</span><br><span class="line">new_response_headers.delete('content-security-policy');</span><br><span class="line">new_response_headers.delete('content-security-policy-report-only');</span><br><span class="line">new_response_headers.delete('clear-site-data');</span><br><span class="line">const content_type = new_response_headers.get('content-type');</span><br><span class="line">if (content_type.includes('text/html') &amp;&amp; content_type.includes('UTF-8')) {</span><br><span class="line">original_text = await replace_response_text(original_response_clone, upstream_domain, url_host);</span><br><span class="line">} else {</span><br><span class="line">original_text = original_response_clone.body</span><br><span class="line">}</span><br><span class="line">response = new Response(original_text, {</span><br><span class="line">status,</span><br><span class="line">headers: new_response_headers</span><br><span class="line">})</span><br><span class="line">}</span><br><span class="line">return response;</span><br><span class="line">}</span><br><span class="line">async function replace_response_text(response, upstream_domain, host_name) {</span><br><span class="line">let text = await response.text()</span><br><span class="line">var i, j;</span><br><span class="line">for (i in replace_dict) {</span><br><span class="line">j = replace_dict[i]</span><br><span class="line">if (i == '$upstream') {</span><br><span class="line">i = upstream_domain</span><br><span class="line">} else if (i == '$custom_domain') {</span><br><span class="line">i = host_name</span><br><span class="line">}</span><br><span class="line">if (j == '$upstream') {</span><br><span class="line">j = upstream_domain</span><br><span class="line">} else if (j == '$custom_domain') {</span><br><span class="line">j = host_name</span><br><span class="line">}</span><br><span class="line">let re = new RegExp(i, 'g')</span><br><span class="line">text = text.replace(re, j);</span><br><span class="line">}</span><br><span class="line">return text;</span><br><span class="line">}</span><br><span class="line">async function device_status (user_agent_info) {</span><br><span class="line">var agents = ["Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod"];</span><br><span class="line">var flag = true;</span><br><span class="line">for (var v = 0; v &lt; agents.length; v++) {</span><br><span class="line">if (user_agent_info.indexOf(agents[v]) &gt; 0) {</span><br><span class="line">flag = false;</span><br><span class="line">break;</span><br><span class="line">}</span><br><span class="line">}</span><br><span class="line">return flag;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure></li>
+</ol>
+</body></html>]]></content>
+      <categories>
+        <category>网络技术</category>
+      </categories>
   </entry>
   <entry>
     <title>博客转移备案</title>
@@ -1840,18 +1852,6 @@
       <tags>
         <tag>备案</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>搭建镜像网站</title>
-    <url>/posts/%E6%90%AD%E5%BB%BA%E9%95%9C%E5%83%8F%E7%BD%91%E7%AB%99/</url>
-    <content><![CDATA[<html><head></head><body><ol>
-<li><p>不过多介绍知道就好，使用Cloudflare Worker来建造镜像网站。 2. 为什么选择Cloudflare Worker因为他免费而且个人进步够用还能访问全球。 - 开始操练起来！ 1. 你需要首先用一个Cloudflare账号<a href="https://dash.cloudflare.com/sign-up" rel="external nofollow noreferrer">打开注册链接</a><img src="https://c-dreamer.top/wp-content/uploads/2020/01/%E5%AE%9E%E4%BE%8B0-1024x430.png" alt="width=640height">搭建<a href="https://workers.cloudflare.com/" rel="external nofollow noreferrer">Cloudflare Workerd</a> <img src="https://c-dreamer.top/wp-content/uploads/2020/01/2-1024x551.png"><img src="https://c-dreamer.top/wp-content/uploads/2020/01/3-1024x483.png"><img src="https://c-dreamer.top/wp-content/uploads/2020/01/4-1024x453.png"><img src="https://c-dreamer.top/wp-content/uploads/2020/01/4-1024x453.png"><img src="https://c-dreamer.top/wp-content/uploads/2020/01/5-1024x551.png"><img src="https://c-dreamer.top/wp-content/uploads/2020/01/6-1024x458.png"><img src="https://c-dreamer.top/wp-content/uploads/2020/01/7-1024x504.png"><img src="https://c-dreamer.top/wp-content/uploads/2020/01/8-1024x509.png"><img src="https://c-dreamer.top/wp-content/uploads/2020/01/9-1024x559.png"></p>
-<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">// 替换成你想镜像的站点</span><br><span class="line">const upstream = 'www.google.com'</span><br><span class="line">// 如果那个站点有专门的移动适配站点，否则保持和上面一致</span><br><span class="line">const upstream_mobile = 'www.google.com'</span><br><span class="line">// 你希望禁止哪些国家访问</span><br><span class="line">const blocked_region = ['KP', 'SY', 'PK', 'CU']</span><br><span class="line">// 禁止自访问</span><br><span class="line">const blocked_ip_address = ['0.0.0.0', '127.0.0.1']</span><br><span class="line">// 替换成你想镜像的站点</span><br><span class="line">const replace_dict = {</span><br><span class="line">'$upstream': '$custom_domain',</span><br><span class="line">'//google.com': ''</span><br><span class="line">}</span><br><span class="line">//以下内容都不用动</span><br><span class="line">addEventListener('fetch', event =&gt; {</span><br><span class="line">event.respondWith(fetchAndApply(event.request));</span><br><span class="line">})</span><br><span class="line">async function fetchAndApply(request) {</span><br><span class="line">const region = request.headers.get('cf-ipcountry').toUpperCase();</span><br><span class="line">const ip_address = request.headers.get('cf-connecting-ip');</span><br><span class="line">const user_agent = request.headers.get('user-agent');</span><br><span class="line">let response = null;</span><br><span class="line">let url = new URL(request.url);</span><br><span class="line">let url_host = url.host;</span><br><span class="line">if (url.protocol == 'http:') {</span><br><span class="line">url.protocol = 'https:'</span><br><span class="line">response = Response.redirect(url.href);</span><br><span class="line">return response;</span><br><span class="line">}</span><br><span class="line">if (await device_status(user_agent)) {</span><br><span class="line">upstream_domain = upstream</span><br><span class="line">} else {</span><br><span class="line">upstream_domain = upstream_mobile</span><br><span class="line">}</span><br><span class="line">url.host = upstream_domain;</span><br><span class="line">if (blocked_region.includes(region)) {</span><br><span class="line">response = new Response('Access denied: WorkersProxy is not available in your region yet.', {</span><br><span class="line">status: 403</span><br><span class="line">});</span><br><span class="line">} else if(blocked_ip_address.includes(ip_address)){</span><br><span class="line">response = new Response('Access denied: Your IP address is blocked by WorkersProxy.', {</span><br><span class="line">status: 403</span><br><span class="line">});</span><br><span class="line">} else{</span><br><span class="line">let method = request.method;</span><br><span class="line">let request_headers = request.headers;</span><br><span class="line">let new_request_headers = new Headers(request_headers);</span><br><span class="line">new_request_headers.set('Host', upstream_domain);</span><br><span class="line">new_request_headers.set('Referer', url.href);</span><br><span class="line">let original_response = await fetch(url.href, {</span><br><span class="line">method: method,</span><br><span class="line">headers: new_request_headers</span><br><span class="line">})</span><br><span class="line">let original_response_clone = original_response.clone();</span><br><span class="line">let original_text = null;</span><br><span class="line">let response_headers = original_response.headers;</span><br><span class="line">let new_response_headers = new Headers(response_headers);</span><br><span class="line">let status = original_response.status;</span><br><span class="line">new_response_headers.set('access-control-allow-origin', '*');</span><br><span class="line">new_response_headers.set('access-control-allow-credentials', true);</span><br><span class="line">new_response_headers.delete('content-security-policy');</span><br><span class="line">new_response_headers.delete('content-security-policy-report-only');</span><br><span class="line">new_response_headers.delete('clear-site-data');</span><br><span class="line">const content_type = new_response_headers.get('content-type');</span><br><span class="line">if (content_type.includes('text/html') &amp;&amp; content_type.includes('UTF-8')) {</span><br><span class="line">original_text = await replace_response_text(original_response_clone, upstream_domain, url_host);</span><br><span class="line">} else {</span><br><span class="line">original_text = original_response_clone.body</span><br><span class="line">}</span><br><span class="line">response = new Response(original_text, {</span><br><span class="line">status,</span><br><span class="line">headers: new_response_headers</span><br><span class="line">})</span><br><span class="line">}</span><br><span class="line">return response;</span><br><span class="line">}</span><br><span class="line">async function replace_response_text(response, upstream_domain, host_name) {</span><br><span class="line">let text = await response.text()</span><br><span class="line">var i, j;</span><br><span class="line">for (i in replace_dict) {</span><br><span class="line">j = replace_dict[i]</span><br><span class="line">if (i == '$upstream') {</span><br><span class="line">i = upstream_domain</span><br><span class="line">} else if (i == '$custom_domain') {</span><br><span class="line">i = host_name</span><br><span class="line">}</span><br><span class="line">if (j == '$upstream') {</span><br><span class="line">j = upstream_domain</span><br><span class="line">} else if (j == '$custom_domain') {</span><br><span class="line">j = host_name</span><br><span class="line">}</span><br><span class="line">let re = new RegExp(i, 'g')</span><br><span class="line">text = text.replace(re, j);</span><br><span class="line">}</span><br><span class="line">return text;</span><br><span class="line">}</span><br><span class="line">async function device_status (user_agent_info) {</span><br><span class="line">var agents = ["Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod"];</span><br><span class="line">var flag = true;</span><br><span class="line">for (var v = 0; v &lt; agents.length; v++) {</span><br><span class="line">if (user_agent_info.indexOf(agents[v]) &gt; 0) {</span><br><span class="line">flag = false;</span><br><span class="line">break;</span><br><span class="line">}</span><br><span class="line">}</span><br><span class="line">return flag;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure></li>
-</ol>
-</body></html>]]></content>
-      <categories>
-        <category>网络技术</category>
-      </categories>
   </entry>
   <entry>
     <title>本站正式启动邮箱评论功能</title>
