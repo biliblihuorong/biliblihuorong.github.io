@@ -10,6 +10,11 @@
     <priority>0.6</priority>
   </url>
   
+  <follow_challenge>
+    <feedId>68965035020753920</feedId>
+    <userId>42914411864788992</userId>
+  </follow_challenge>
+  
   <url>
     <loc>https://blog.ning.moe/posts/Authentik-NezhaDashboard-OIDC/</loc>
     
