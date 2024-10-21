@@ -13,6 +13,11 @@
     <name>shell</name>
     
   </author>
+
+  <follow_challenge>
+    <feedId>68965035020753920</feedId>
+    <userId>42914411864788992</userId>
+  </follow_challenge>
   
   <generator uri="https://hexo.io/">Hexo</generator>
   
