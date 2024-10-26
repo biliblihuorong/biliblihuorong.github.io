@@ -1,3 +1,4 @@
+https://blog.ning.moe/posts/Modification-of-dormitory-network/
 https://blog.ning.moe/posts/Authentik-Gitea-SSO/
 https://blog.ning.moe/posts/Authentik-NezhaDashboard-OIDC/
 https://blog.ning.moe/posts/authentik-OAuth2-memos/
@@ -7,4 +8,3 @@ https://blog.ning.moe/posts/Website-mirrored/
 https://blog.ning.moe/posts/Create-Recursive-DNS/
 https://blog.ning.moe/posts/fix-umami-blank-page/
 https://blog.ning.moe/posts/Ikuai-firewall-IPv6/
-https://blog.ning.moe/posts/moeICP/

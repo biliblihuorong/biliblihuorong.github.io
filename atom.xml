@@ -6,20 +6,36 @@
   <link href="https://blog.ning.moe/atom.xml" rel="self"/>
   
   <link href="https://blog.ning.moe/"/>
-  <updated>2024-10-05T10:58:09.780Z</updated>
+  <updated>2024-10-26T04:31:34.351Z</updated>
   <id>https://blog.ning.moe/</id>
   
   <author>
     <name>shell</name>
     
   </author>
-
-  <follow_challenge>
-    <feedId>68965035020753920</feedId>
-    <userId>42914411864788992</userId>
-  </follow_challenge>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>改造宿舍网络</title>
+    <link href="https://blog.ning.moe/posts/Modification-of-dormitory-network/"/>
+    <id>https://blog.ning.moe/posts/Modification-of-dormitory-network/</id>
+    <published>2024-10-26T02:31:29.000Z</published>
+    <updated>2024-10-26T04:31:34.351Z</updated>
+    
+    <content type="html"><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>到了新学校了，最担心的还是宿舍的校园网，嗯非常的坑（校园网络是被一个平台垄断了，然后出口是三大运营商，需要办理对应的卡解锁网络出口），在用完我一个月的流量之后打算还是办理一张卡吧，其实在没办理看的时候我就收集了一下信息，学校使用的是<a href="https://www.ruijie.com.cn/cp/yyxt-yygl/samx/" rel="external nofollow noreferrer">锐捷认证的</a>，emmm 又是锐捷漏洞真多的，我尝试试了一下已知漏洞，好吧果然没用，再加上博主并不是安全的专业只会点皮毛而已。</p><p>既然后面办理完毕的校园网，折腾一下自动认证也不是不行。</p><p>后续介绍了一下自动认证的思路以及放上<a href="https://github.com/biliblihuorong/ZiJinCollege-AutoNetwork" rel="external nofollow noreferrer">源码</a>，还有增加了舒适度搞了一个路由器让室友也爽爽。</p><h1 id="校园网自动认证"><a href="#校园网自动认证" class="headerlink" title="校园网自动认证"></a>校园网自动认证</h1><p>这边先放上我写好的程序: <a href="https://github.com/biliblihuorong/ZiJinCollege-AutoNetwork" rel="external nofollow noreferrer">ZiJinCollege-AutoNetwork</a></p><p>连接校园网（网线和wifi），学校的认证页面IP是<code>172.21.2.10</code>通过浏览器抓包看到，先302到 <code>123.123.123.123</code>然后又200但是很明显url是跳转到了到<code>172.21.2.10</code>，但是这次访问uri多了很多参数，最后发现携带一个js的跳转。</p><table><thead><tr><th><img src="https://img.misaka.pics/ShellBlogImg/1/2024/10/26/671c5e07c345c.webp" alt="schoolnetwork-1.webp"></th><th><img src="https://img.misaka.pics/ShellBlogImg/1/2024/10/26/671c5e08e10ff.webp" alt="schoolnetwork-2.webp"></th></tr></thead></table><p>尝试登录发现就是一个很正常的表单，<code>queryString</code>的参数也就是刚刚跳转的，也是要必须携带的。</p><table><thead><tr><th><img src="https://img.misaka.pics/ShellBlogImg/1/2024/10/26/671c5e08448d4.webp" alt="schoolnetwork-3.webp"></th><th><img src="https://img.misaka.pics/ShellBlogImg/1/2024/10/26/671c5e09464b9.webp" alt="schoolnetwork-4.webp"></th></tr></thead></table><p>模拟一下<code>uri</code>的编码即可.</p><h1 id="路由器"><a href="#路由器" class="headerlink" title="路由器"></a>路由器</h1><p>其实很后悔，把家里面r2s的小开发板出了，毕竟需要要给op系统就行了到时候直接写一个bash 脚本，找了很久发现 <code>gl-mt3000</code> 的路由器，是满足我的需求的，出场是魔改的op系统运行ssh 并且保留原版op的luci 的web 页面，里面还带一个小风扇，可惜就是内存太小了。</p><p>简单配置了一下，放上我 Linux bash 脚本 。</p><table><thead><tr><th><img src="https://img.misaka.pics/ShellBlogImg/1/2024/10/26/671c5e0994959.webp" alt="schoolnetwork-5.webp"></th><th><img src="https://img.misaka.pics/ShellBlogImg/1/2024/10/26/671c5e0a2f380.webp" alt="schoolnetwork-6.webp"></th></tr></thead></table><p>还有内置的<code>adguadhome</code> <code>dns</code> 走一下加密doh。</p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/10/26/671c661e806ff.webp" alt="schoolnetwork-7.webp" style="zoom: 80%;"><p>目前这个这个小路由器带着14台设备进行上网温度70°（官方默认小风扇启动是75°</p><h1 id="小尾巴"><a href="#小尾巴" class="headerlink" title="小尾巴"></a>小尾巴</h1><p><del>什么时候校园网有v6啊啊啊啊啊。</del></p></body></html>]]></content>
+    
+    
+    <summary type="html">我分享了如何改造大学宿舍的校园网络，通过自动认证和配置路由器，提升网络体验。文章详细介绍了校园网的认证流程、相关脚本，以及推荐的路由器配置，帮助同学们更好地应对校园网络的挑战。</summary>
+    
+    
+    
+    <category term="网络技术" scheme="https://blog.ning.moe/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="OpenWrt" scheme="https://blog.ning.moe/tags/OpenWrt/"/>
+    
+  </entry>
   
   <entry>
     <title>在 Docker 环境中使用 Traefik进行反向代理</title>
@@ -548,37 +564,6 @@
     <category term="蓝空图床" scheme="https://blog.ning.moe/tags/%E8%93%9D%E7%A9%BA%E5%9B%BE%E5%BA%8A/"/>
     
     <category term="兰空图床" scheme="https://blog.ning.moe/tags/%E5%85%B0%E7%A9%BA%E5%9B%BE%E5%BA%8A/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>解决Hexo博客框架中Twikoo评论框架路径不一致的问题</title>
-    <link href="https://blog.ning.moe/posts/fix-hexo-twikoocomment-path-inconsistency/"/>
-    <id>https://blog.ning.moe/posts/fix-hexo-twikoocomment-path-inconsistency/</id>
-    <published>2023-06-10T11:37:29.000Z</published>
-    <updated>2024-03-12T16:32:13.693Z</updated>
-    
-    <content type="html"><![CDATA[<html><head></head><body><p>引言：</p><p>在我继续修理博客的过程中，没错，你没有看错，我陆续从今年1月开始维护博客至今。主要原因是我很忙，维护工作也需要时间，而且在修复之后还需要处理一些细节问题，这是我之前没有注意到的。由于当时静态资源几乎全部丢失，现在我已经基本上优化了访问速度，这使得我的Hexo博客框架名副其实。随着我对网站的打理以及撰写一些有用的内容，网站的访问量逐渐提升。然而，我注意到了一些之前未曾注意到的问题。在Hexo博客生成过程中存在一个问题，你可以访问这篇文章的链接<code>https://blog.ning.moe/post/fix-hexo-twikoocomment-path-inconsistency/</code>，也可以在该链接后面添加<code>index.html</code>，但对于Twikoo评论框架而言，这两个链接并不相同。</p><p>阅读须知：</p><p>本文的操作是在使用”butterfly”主题的情况下进行的，其他主题也可以模仿这个操作，但需要注意先查找自己的主题是否可以直接在配置文件中进行更改。更多细节请参考这个”issues”链接：<a href="https://github.com/imaegoo/twikoo/issues/138%E3%80%82" rel="external nofollow noreferrer">https://github.com/imaegoo/twikoo/issues/138。</a></p><p>正文：</p><blockquote><p>下面我将直接进入正文。</p></blockquote><h2 id="Butterfly的问题"><a href="#Butterfly的问题" class="headerlink" title="Butterfly的问题"></a>Butterfly的问题</h2><p>我的博客主题是<a href="https://github.com/jerryc127/hexo-theme-butterfly" rel="external nofollow noreferrer">butterfly</a>，本身已经对Twikoo进行了适配。但我不好意思提出”issues”来更改它，因为我通过搜索找到了Twikoo官方的一个”issues”：<a href="https://github.com/imaegoo/twikoo/issues/138" rel="external nofollow noreferrer">里面作者已经回复了</a>。</p><figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">twikoo.<span class="title function_">init</span>({</span><br><span class="line">  <span class="comment">// ......,</span></span><br><span class="line">  <span class="attr">path</span>: <span class="string">'window.location.pathname.replace(\'index.html\',\'\')'</span></span><br><span class="line">})</span><br></pre></td></tr></tbody></table></figure><p>但问题是，Butterfly主题本身没有额外的选项来配置Twikoo，所以我决定直接修改主题的源码。</p><h2 id="更改主题模板"><a href="#更改主题模板" class="headerlink" title="更改主题模板"></a>更改主题模板</h2><p>首先，确保你找到了Butterfly主题的文件夹，它的目录结构应该是这样的：</p><figure class="highlight powershell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">├─.github</span><br><span class="line">├─languages</span><br><span class="line">├─layout</span><br><span class="line">├─scripts</span><br><span class="line">└─source</span><br></pre></td></tr></tbody></table></figure><p>然后，找到<code>/layout/includes/third-party/comments/twikoo.pug</code>这个文件。</p><p>在大约第11行的位置添加以下代码：<code>path: window.location.pathname.replace('index.html','')</code>，下面是我已经添加好的代码：</p><figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">script.</span><br><span class="line">  (<span class="function">()=&gt;</span>{</span><br><span class="line">    <span class="keyword">const</span> <span class="title function_">init</span> = (<span class="params"></span>) =&gt; {</span><br><span class="line">      twikoo.<span class="title function_">init</span>(<span class="title class_">Object</span>.<span class="title function_">assign</span>({</span><br><span class="line">        <span class="attr">el</span>: <span class="string">'#twikoo-wrap'</span>,</span><br><span class="line">        <span class="attr">envId</span>: <span class="string">'!{envId}'</span>,</span><br><span class="line">        <span class="attr">region</span>: <span class="string">'!{region}'</span>,</span><br><span class="line">        <span class="attr">path</span>: <span class="variable language_">window</span>.<span class="property">location</span>.<span class="property">pathname</span>.<span class="title function_">replace</span>(<span class="string">'index.html'</span>,<span class="string">''</span>),</span><br><span class="line">        <span class="attr">onCommentLoaded</span>: <span class="keyword">function</span> (<span class="params"></span>) {</span><br><span class="line">          btf.<span class="title function_">loadLightbox</span>(<span class="variable language_">document</span>.<span class="title function_">querySelectorAll</span>(<span class="string">'#twikoo .tk-content img:not(.tk-owo-emotion)'</span>))</span><br><span class="line">        }</span><br><span class="line">      }, !{<span class="title class_">JSON</span>.<span class="title function_">stringify</span>(option)}))</span><br><span class="line">    }</span><br></pre></td></tr></tbody></table></figure><p>引用：</p><p>Twikoo的”issues”链接：<a href="https://github.com/imaegoo/twikoo/issues/138" rel="external nofollow noreferrer">https://github.com/imaegoo/twikoo/issues/138</a></p></body></html>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;引言：&lt;/p&gt;
-&lt;p&gt;在我继续修理博客的过程中，没错，你没有看错，我陆续从今年1月开始维护博客至今。主要原因是我很忙，维护工作也需要时间，而且在修复之后还需要处理一些细节问题，这是我之前没有注意到的。由于当时静态资源几乎全部</summary>
-      
-    
-    
-    
-    <category term="网络技术" scheme="https://blog.ning.moe/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/"/>
-    
-    
-    <category term="hexo" scheme="https://blog.ning.moe/tags/hexo/"/>
-    
-    <category term="butterfly" scheme="https://blog.ning.moe/tags/butterfly/"/>
-    
-    <category term="twikoo" scheme="https://blog.ning.moe/tags/twikoo/"/>
-    
-    <category term="评论" scheme="https://blog.ning.moe/tags/%E8%AF%84%E8%AE%BA/"/>
     
   </entry>
   
