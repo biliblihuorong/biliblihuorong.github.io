@@ -265,11 +265,11 @@
     
     
     
+    <category term="Ikuai" scheme="https://blog.ning.moe/tags/Ikuai/"/>
+    
     <category term="防火墙" scheme="https://blog.ning.moe/tags/%E9%98%B2%E7%81%AB%E5%A2%99/"/>
     
     <category term="firewall" scheme="https://blog.ning.moe/tags/firewall/"/>
-    
-    <category term="Ikuai" scheme="https://blog.ning.moe/tags/Ikuai/"/>
     
     <category term="IPv6" scheme="https://blog.ning.moe/tags/IPv6/"/>
     
@@ -309,7 +309,7 @@
     <link href="https://blog.ning.moe/posts/2023-Annual-Summary/"/>
     <id>https://blog.ning.moe/posts/2023-Annual-Summary/</id>
     <published>2023-12-31T15:59:59.000Z</published>
-    <updated>2024-03-12T16:32:13.688Z</updated>
+    <updated>2024-11-02T08:26:03.593Z</updated>
     
     <content type="html"><![CDATA[<html><head></head><body><blockquote><p>应该这个文章会在 31/12/2024 发表</p></blockquote><p>转眼间 23年的就快过完了，回顾过往这一年的时间，貌似有些许的特殊，不至于和前几年一样是一个无聊又无趣。</p><h1 id="博客"><a href="#博客" class="headerlink" title="博客"></a>博客</h1><p>两年的宁静，博客在23年重新绽放光彩。</p><p>23年共计写了 19 篇 文章其中阅读最多的 <a href="https://blog.ning.moe/posts/Spring-Security/">新版本 Spring-Security 配置踩坑</a>  共阅读了 227次 从Google 来的最多，文章是其次是<br><a href="https://blog.ning.moe/posts/Java-CAPTCHA-cloudflare/">Java 使用 CloudFlare Turnstile 验证码</a> 共阅读了 205次。在重新开始写博客之后 本站从 23年6月记录截稿，共收获了  PV <strong>6.52k</strong>  UV <strong>2.16k</strong>。</p><img src="https://img.misaka.pics/ShellBlogImg/1/2023/12/29/658ed5482b2d5.webp" alt="2023-Blog-PV&amp;UV-Date.webp" style="zoom: 80%;"><blockquote><p>为什么只有6-12月的数据呢？</p><p><del>因为我把1-5月的数据搞丢了。</del></p></blockquote><p>在截稿前收到Google 发来的Email 28天从Google 来了120 的</p><img src="https://img.misaka.pics/ShellBlogImg/1/2023/12/31/65916362b2813.webp" alt="Google-search-PV.webp" style="zoom:50%;"><h1 id="赛项"><a href="#赛项" class="headerlink" title="赛项"></a>赛项</h1><p>我参加了<code>应用软件系统开发</code>  荣获一等奖。然而，对于这次比赛，我心中并未留下太多深刻的评价，因为涉及的内容大多是繁琐且重复的工作。</p><img src="https://img.misaka.pics/ShellBlogImg/1/2023/12/31/65916654c7cc0.webp" alt="ChinaSkills.webp" style="zoom: 50%;"><h1 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h1><p>23年的故事就此落幕，还有23年所遇到的人们，也开启了我线下第一次面基之旅（不展开叙述）。24年的故事即将开启，这一年里展开新的冒险。我希望在24年，能够踏上旅途，探访不同的地方，因为美好的青春如此短暂，而旅行是拓展视野和经历的最佳方式。同时，我收集更多计算机知识的奥秘，为自己的技术之旅添上浓墨重彩的一笔。至于博客吗，我也会继续写下去的。</p></body></html>]]></content>
     
@@ -323,6 +323,8 @@
       
     
     
+    
+    <category term="生活随想" scheme="https://blog.ning.moe/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E6%83%B3/"/>
     
     
     <category term="总结" scheme="https://blog.ning.moe/tags/%E6%80%BB%E7%BB%93/"/>
