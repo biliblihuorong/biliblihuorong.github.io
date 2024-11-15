@@ -1,3 +1,4 @@
+https://blog.ning.moe/posts/Management-Commentary/
 https://blog.ning.moe/posts/2023-Annual-Summary/
 https://blog.ning.moe/posts/Modification-of-dormitory-network/
 https://blog.ning.moe/posts/Authentik-Gitea-SSO/
@@ -7,4 +8,3 @@ https://blog.ning.moe/posts/ArchLinux/
 https://blog.ning.moe/posts/learn-traefik/
 https://blog.ning.moe/posts/Website-mirrored/
 https://blog.ning.moe/posts/Create-Recursive-DNS/
-https://blog.ning.moe/posts/fix-umami-blank-page/
