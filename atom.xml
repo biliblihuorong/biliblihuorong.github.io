@@ -6,7 +6,7 @@
   <link href="https://blog.ning.moe/atom.xml" rel="self"/>
   
   <link href="https://blog.ning.moe/"/>
-  <updated>2024-12-21T11:38:46.092Z</updated>
+  <updated>2024-12-31T03:31:51.293Z</updated>
   <id>https://blog.ning.moe/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2024总结</title>
+    <link href="https://blog.ning.moe/posts/2024-Annual-Summary/"/>
+    <id>https://blog.ning.moe/posts/2024-Annual-Summary/</id>
+    <published>2024-12-31T04:00:00.000Z</published>
+    <updated>2024-12-31T03:31:51.293Z</updated>
+    
+    <content type="html"><![CDATA[<html><head></head><body><p>转眼间 2024 年就这样结束了，回顾过去这一年，似乎比往年多了一些亮点，也多了一些挑战。</p><h1 id="博客"><a href="#博客" class="headerlink" title="博客"></a>博客</h1><p>经历了一年的耕耘，博客在 2024 年迎来了飞跃式的增长。</p><p>2024 年共计写了 12 篇文章其中阅读量最高的是 IkuaI 防火墙配置 IPv6 ，总阅读量达到了 1.5k，其中 Google 是最大的流量来源。其次是 创建递归 DNS 服务，总阅读量为 1.32k。</p><p>全年本站从 2024 年的完整数据统计来看，共计收获了 PV 26.5k，UV 11k。相比往年，流量实现了惊人的增长，访客数量增长了  405 %，PV 增长了  307%，这离不开每位读者的支持和热爱。</p><p>以下是全年 PV 和 UV 数据的柱状图：</p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/12/31/67735da18f9d8.webp" alt="2024-Blog-PV&amp;UV-Date.webp" style="zoom:50%;">  <blockquote><p>为什么数据增长幅度如此之大？<br><del>因为今年认真写了好多技术文章</del></p></blockquote><p>在内容优化和搜索引擎的加持下，流量主要来源于 Google（占比 32%）和 Bing（占比 12%）。同时，社区平台如 V2EX、各类博客推荐站点也贡献了不少流量，再次感谢大家。</p><h1 id="技术"><a href="#技术" class="headerlink" title="技术"></a>技术</h1><p>2024 年，我在博客内容上更加聚焦于网络、开发工具和技术教程，包括：</p><ul><li><strong>IkuaI 防火墙配置</strong></li><li><strong>Cloudflare 验证码整合实践</strong></li><li><strong>DNS 服务</strong></li></ul><p>虽然只是一些个人的尝试和探索，但希望这些文章能够对有相似需求的朋友有所帮助，也算是记录自己学习过程的一部分。</p><h1 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h1><p>2024 年的故事就此落幕，这一年里，我不仅在博客上投入了更多精力，也见证了它从沉寂到焕发新生的过程。同时，也遇到了更多有趣的人和事，在线下和线上都感受到更多连接的意义。</p><p>2025 年的故事即将开启，新的一年里，我希望能继续探索和尝试不同的事物。或许是去到未曾踏足的地方，感受不同的风土人情；或许是深入钻研更多技术领域，为自己的学习旅程增添新的色彩。而博客，依然是记录我这些成长和感悟的地方，虽然只是业余分享，但希望能继续与大家一起学习、交流、成长。</p><p>感谢每一位读者的陪伴，新的一年，让我们一起迎接新的冒险！</p></body></html>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;转眼间 2024 年就这样结束了，回顾过去这一年，似乎比往年多了一些亮点，也多了一些挑战。&lt;/p&gt;
+&lt;h1 id=&quot;博客&quot;&gt;&lt;a href=&quot;#博客&quot; class=&quot;headerlink&quot; title=&quot;博客&quot;&gt;&lt;/a&gt;博客</summary>
+      
+    
+    
+    
+    <category term="生活随想" scheme="https://blog.ning.moe/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E6%83%B3/"/>
+    
+    
+    <category term="总结" scheme="https://blog.ning.moe/tags/%E6%80%BB%E7%BB%93/"/>
+    
+    <category term="2024" scheme="https://blog.ning.moe/tags/2024/"/>
+    
+  </entry>
   
   <entry>
     <title>Docker使用pg_restore 出现Segmentation fault (core dumped)</title>
@@ -145,13 +172,13 @@
     
     <category term="Authentik" scheme="https://blog.ning.moe/tags/Authentik/"/>
     
-    <category term="nezha" scheme="https://blog.ning.moe/tags/nezha/"/>
-    
     <category term="SSO" scheme="https://blog.ning.moe/tags/SSO/"/>
     
     <category term="OIDC" scheme="https://blog.ning.moe/tags/OIDC/"/>
     
     <category term="OAuth2" scheme="https://blog.ning.moe/tags/OAuth2/"/>
+    
+    <category term="nezha" scheme="https://blog.ning.moe/tags/nezha/"/>
     
   </entry>
   
@@ -174,13 +201,13 @@
     
     <category term="Authentik" scheme="https://blog.ning.moe/tags/Authentik/"/>
     
+    <category term="Gitea" scheme="https://blog.ning.moe/tags/Gitea/"/>
+    
     <category term="SSO" scheme="https://blog.ning.moe/tags/SSO/"/>
     
     <category term="OIDC" scheme="https://blog.ning.moe/tags/OIDC/"/>
     
     <category term="OAuth2" scheme="https://blog.ning.moe/tags/OAuth2/"/>
-    
-    <category term="Gitea" scheme="https://blog.ning.moe/tags/Gitea/"/>
     
   </entry>
   
@@ -520,35 +547,6 @@
     <category term="butterfly" scheme="https://blog.ning.moe/tags/butterfly/"/>
     
     <category term="SEO" scheme="https://blog.ning.moe/tags/SEO/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>解决Umami v2.3升级问题，Something went wrong.</title>
-    <link href="https://blog.ning.moe/posts/Umami-fix/"/>
-    <id>https://blog.ning.moe/posts/Umami-fix/</id>
-    <published>2023-07-19T11:13:18.000Z</published>
-    <updated>2024-04-09T15:47:45.837Z</updated>
-    
-    <content type="html"><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>是的没错，发生这样的事情，应该很多<code>Umami</code>只要是v2.2版本应该都遇到了。 </p><p><img src="https://img.misaka.pics/ShellBlogImg/1/2023/07/19/64b7cb785693f.webp" alt="Umami v2.2 Something went wrong."></p><p>我浏览了部分 <code>issues</code> 只能升级到v2.3版本了。</p><h1 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h1><p>我先说一下我自己的环境，我自己的使用：</p><ol><li>属于编译安装，没有放在docker</li><li>Mysql 5.7</li><li>nodjs 18.16.0</li><li>npm 9.5.1</li></ol><h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><p>解决办法有两种，第一种你可以直接尝试升级到<code>MySQL</code> 8.0，如果你想继续和我一样，小鸡的配置不行还想用5.7，请继续往下看。</p><p>如果你是和我一样都是<code>Mysql</code> 5.7版本，你需要查看这篇 <a href="https://github.com/umami-software/umami/issues/2118" rel="external nofollow noreferrer">issues</a> 或者继续往下看。</p><ol><li>你需要从GitHub 拉去一份最新的<a href="https://github.com/umami-software/umami/releases" rel="external nofollow noreferrer">Umami</a> 的代码，你需要找到<code>db/mysql/migrations/02_report_schema_session_data</code>文件夹下的<code>migration.sql</code>这份sql文件，将下面的代码替换和保存。</li></ol><figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> `event_data` CHANGE `event_data_type` `data_type` <span class="type">int</span> unsigned <span class="keyword">NOT</span> <span class="keyword">NULL</span>;</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> `event_data` CHANGE `event_date_value` `date_value` <span class="type">timestamp</span> <span class="keyword">NULL</span>;</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> `event_data` CHANGE `event_id` `event_data_id` <span class="type">varchar</span>(<span class="number">36</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span>;</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> `event_data` CHANGE `event_numeric_value` `number_value` <span class="type">decimal</span>(<span class="number">19</span>, <span class="number">4</span>) <span class="keyword">NULL</span>;</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> `event_data` CHANGE `event_string_value` `string_value`<span class="type">varchar</span>(<span class="number">500</span>) <span class="keyword">NULL</span>;</span><br></pre></td></tr></tbody></table></figure><p>终于我遇到的问题，你需要备份原来的 <code>Umami</code> 数据库，然后创建一个新的数据库，讲数据源配置在<code>.env</code>里面，不然通过初始化数据库。</p><ol start="2"><li><p>然后你需要在终端中运行这段命令<code>npx prisma migrate resolve --rolled-back "02_report_schema_session_data"</code></p></li><li><p>重新部署，请看 <a href="https://umami.is/docs/install" rel="external nofollow noreferrer">https://umami.is/docs/install</a></p></li></ol><h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>Umami 的GitHub issues ：<a href="https://github.com/umami-software/umami/issues/2118" rel="external nofollow noreferrer">https://github.com/umami-software/umami/issues/2118</a></p></body></html>]]></content>
-    
-    
-    <summary type="html">这篇文章介绍了解决升级Umami v2.3版本时可能遇到的问题：“Something went wrong.”作者指出，这个问题在Umami v2.2版本中很常见，但通过升级到v2.3版本可以解决。文章列出了作者的环境和解决办法：升级到MySQL 8.0或者对于MySQL 5.7版本，需要手动修改数据库迁移文件，并执行数据库迁移操作。最后，作者提供了Umami的GitHub issues链接作为参考。这篇文章适合Umami用户遇到类似问题的解决参考。</summary>
-    
-    
-    
-    <category term="网络技术" scheme="https://blog.ning.moe/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/"/>
-    
-    
-    <category term="Umami" scheme="https://blog.ning.moe/tags/Umami/"/>
-    
-    <category term="PV" scheme="https://blog.ning.moe/tags/PV/"/>
-    
-    <category term="网站统计，UV" scheme="https://blog.ning.moe/tags/%E7%BD%91%E7%AB%99%E7%BB%9F%E8%AE%A1%EF%BC%8CUV/"/>
-    
-    <category term="Ip" scheme="https://blog.ning.moe/tags/Ip/"/>
-    
-    <category term="MySql" scheme="https://blog.ning.moe/tags/MySql/"/>
     
   </entry>
   
