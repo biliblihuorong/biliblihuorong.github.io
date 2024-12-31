@@ -113,6 +113,7 @@
         <tag>SSO</tag>
         <tag>OIDC</tag>
         <tag>OAuth2</tag>
+        <tag>2024</tag>
       </tags>
   </entry>
   <entry>
@@ -134,6 +135,7 @@
         <category>生活随想</category>
       </categories>
       <tags>
+        <tag>2023</tag>
         <tag>Arch</tag>
         <tag>Linux</tag>
       </tags>
@@ -182,6 +184,7 @@
         <tag>OIDC</tag>
         <tag>OAuth2</tag>
         <tag>nezha</tag>
+        <tag>2024</tag>
       </tags>
   </entry>
   <entry>
@@ -216,6 +219,7 @@
         <category>网络技术</category>
       </categories>
       <tags>
+        <tag>2023</tag>
         <tag>go</tag>
         <tag>Cachefly</tag>
         <tag>SSL</tag>
@@ -286,6 +290,7 @@
         <tag>unbound</tag>
         <tag>dnscrypt</tag>
         <tag>mosdns</tag>
+        <tag>2024</tag>
       </tags>
   </entry>
   <entry>
@@ -315,6 +320,7 @@
       <tags>
         <tag>CloudFlare</tag>
         <tag>Zero Trust</tag>
+        <tag>2024</tag>
       </tags>
   </entry>
   <entry>
@@ -729,6 +735,7 @@
         <category>网络技术</category>
       </categories>
       <tags>
+        <tag>2024</tag>
         <tag>twikoo</tag>
         <tag>Artalk</tag>
       </tags>
@@ -867,6 +874,7 @@
       <tags>
         <tag>防火墙</tag>
         <tag>firewall</tag>
+        <tag>2024</tag>
         <tag>Ikuai</tag>
         <tag>IPv6</tag>
       </tags>
@@ -998,6 +1006,7 @@
         <category>网络技术</category>
       </categories>
       <tags>
+        <tag>2024</tag>
         <tag>OpenWrt</tag>
       </tags>
   </entry>
@@ -1032,6 +1041,7 @@
         <tag>SSO</tag>
         <tag>OIDC</tag>
         <tag>OAuth2</tag>
+        <tag>2024</tag>
         <tag>Memos</tag>
       </tags>
   </entry>
@@ -1064,6 +1074,7 @@
         <category>Bug生成者</category>
       </categories>
       <tags>
+        <tag>2023</tag>
         <tag>Spring</tag>
         <tag>Java</tag>
         <tag>Security</tag>
@@ -1103,6 +1114,7 @@
         <category>网络技术</category>
       </categories>
       <tags>
+        <tag>2023</tag>
         <tag>Umami</tag>
         <tag>PV</tag>
         <tag>网站统计，UV</tag>
@@ -1304,6 +1316,7 @@
         <category>网络技术</category>
       </categories>
       <tags>
+        <tag>2024</tag>
         <tag>Umami</tag>
         <tag>PV</tag>
         <tag>网站统计，UV</tag>
@@ -1404,6 +1417,7 @@
         <category>网络技术</category>
       </categories>
       <tags>
+        <tag>2023</tag>
         <tag>easyconnect</tag>
         <tag>深信服</tag>
         <tag>vpn</tag>
@@ -1454,6 +1468,7 @@
         <category>网络技术</category>
       </categories>
       <tags>
+        <tag>2024</tag>
         <tag>PostgreSQL</tag>
         <tag>Docker</tag>
       </tags>
@@ -1665,6 +1680,7 @@
         <category>网络技术</category>
       </categories>
       <tags>
+        <tag>2024</tag>
         <tag>Docker</tag>
         <tag>Traefik</tag>
       </tags>
@@ -1728,6 +1744,7 @@
         <category>网络技术</category>
       </categories>
       <tags>
+        <tag>2023</tag>
         <tag>butterfly</tag>
         <tag>backblaze</tag>
         <tag>lskypro</tag>
@@ -1812,6 +1829,7 @@
         <category>网络技术</category>
       </categories>
       <tags>
+        <tag>2023</tag>
         <tag>Spring</tag>
         <tag>Java</tag>
         <tag>Security</tag>

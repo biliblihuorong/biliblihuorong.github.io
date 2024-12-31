@@ -2,7 +2,151 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://blog.ning.moe/posts/2024-Annual-Summary/</loc>
+    <loc>https://blog.ning.moe/posts/springboot-websocket-springSecurity/</loc>
+    
+    <lastmod>2024-12-31</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.ning.moe/posts/Spring-Security/</loc>
+    
+    <lastmod>2024-12-31</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.ning.moe/posts/Umami-fix/</loc>
+    
+    <lastmod>2024-12-31</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.ning.moe/posts/fuck-easyconnect/</loc>
+    
+    <lastmod>2024-12-31</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.ning.moe/posts/lskypro-backblaze/</loc>
+    
+    <lastmod>2024-12-31</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.ning.moe/posts/CloudFlare-Tunnel-Application-Access/</loc>
+    
+    <lastmod>2024-12-31</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.ning.moe/posts/CacheflySSLUpDate/</loc>
+    
+    <lastmod>2024-12-31</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.ning.moe/posts/Ikuai-firewall-IPv6/</loc>
+    
+    <lastmod>2024-12-31</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.ning.moe/posts/fix-umami-blank-page/</loc>
+    
+    <lastmod>2024-12-31</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.ning.moe/posts/Create-Recursive-DNS/</loc>
+    
+    <lastmod>2024-12-31</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.ning.moe/posts/learn-traefik/</loc>
+    
+    <lastmod>2024-12-31</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.ning.moe/posts/ArchLinux/</loc>
+    
+    <lastmod>2024-12-31</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.ning.moe/posts/authentik-OAuth2-memos/</loc>
+    
+    <lastmod>2024-12-31</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.ning.moe/posts/Authentik-NezhaDashboard-OIDC/</loc>
+    
+    <lastmod>2024-12-31</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.ning.moe/posts/Authentik-Gitea-SSO/</loc>
+    
+    <lastmod>2024-12-31</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.ning.moe/posts/Modification-of-dormitory-network/</loc>
+    
+    <lastmod>2024-12-31</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.ning.moe/posts/Management-Commentary/</loc>
     
     <lastmod>2024-12-31</lastmod>
     
@@ -13,7 +157,16 @@
   <url>
     <loc>https://blog.ning.moe/posts/docker-postgresql-Segmentation-fault/</loc>
     
-    <lastmod>2024-12-21</lastmod>
+    <lastmod>2024-12-31</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.ning.moe/posts/2024-Annual-Summary/</loc>
+    
+    <lastmod>2024-12-31</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -23,15 +176,6 @@
     <loc>https://blog.ning.moe/talking/</loc>
     
     <lastmod>2024-12-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.ning.moe/posts/Management-Commentary/</loc>
-    
-    <lastmod>2024-11-15</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -50,60 +194,6 @@
     <loc>https://blog.ning.moe/link/</loc>
     
     <lastmod>2024-10-26</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.ning.moe/posts/Modification-of-dormitory-network/</loc>
-    
-    <lastmod>2024-10-26</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.ning.moe/posts/Authentik-Gitea-SSO/</loc>
-    
-    <lastmod>2024-10-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.ning.moe/posts/Authentik-NezhaDashboard-OIDC/</loc>
-    
-    <lastmod>2024-10-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.ning.moe/posts/authentik-OAuth2-memos/</loc>
-    
-    <lastmod>2024-10-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.ning.moe/posts/ArchLinux/</loc>
-    
-    <lastmod>2024-10-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.ning.moe/posts/learn-traefik/</loc>
-    
-    <lastmod>2024-10-05</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -137,99 +227,9 @@
   </url>
   
   <url>
-    <loc>https://blog.ning.moe/posts/Create-Recursive-DNS/</loc>
-    
-    <lastmod>2024-07-20</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.ning.moe/posts/fix-umami-blank-page/</loc>
-    
-    <lastmod>2024-06-27</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.ning.moe/posts/Ikuai-firewall-IPv6/</loc>
-    
-    <lastmod>2024-06-16</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.ning.moe/posts/moeICP/</loc>
     
     <lastmod>2024-06-12</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.ning.moe/posts/CacheflySSLUpDate/</loc>
-    
-    <lastmod>2024-05-05</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.ning.moe/posts/CloudFlare-Tunnel-Application-Access/</loc>
-    
-    <lastmod>2024-04-24</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.ning.moe/posts/lskypro-backblaze/</loc>
-    
-    <lastmod>2024-04-14</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.ning.moe/posts/fuck-easyconnect/</loc>
-    
-    <lastmod>2024-04-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.ning.moe/posts/Umami-fix/</loc>
-    
-    <lastmod>2024-04-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.ning.moe/posts/Spring-Security/</loc>
-    
-    <lastmod>2024-04-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.ning.moe/posts/springboot-websocket-springSecurity/</loc>
-    
-    <lastmod>2024-04-09</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
