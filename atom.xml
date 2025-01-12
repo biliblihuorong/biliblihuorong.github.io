@@ -146,7 +146,7 @@
     <link href="https://blog.ning.moe/posts/Website-mirrored/"/>
     <id>https://blog.ning.moe/posts/Website-mirrored/</id>
     <published>2024-08-11T13:42:17.000Z</published>
-    <updated>2024-08-11T14:06:40.981Z</updated>
+    <updated>2025-01-03T08:41:18.993Z</updated>
     
     <content type="html"><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>事情是这样的我昨天配置一些东西是错的，同步上去了今天才发现，随后回滚之后发现防战访问突然下降好多，我以为是Google 没有收录一些文章决定拿一些文章关键词搜一搜，发现了两个我。</p><p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/08/11/66b8c1d2bb798.webp" alt="vs.webp"></p><p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/08/11/66b8c42125db6.webp" alt="mangxb.webp"></p><p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/08/11/66b8c45dd04f6.webp" alt="Snipaste_2024-08-11_21-42-05.webp"></p><p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/08/11/66b8c496e4fa7.webp" alt="Snipaste_2024-08-11_21-42-28.webp"><br>我已经向 Google bing dnspod  cloudlfare 进行举报 数字千年版权法案(DMCA) ，请 域名所属人立即删除我所有文章，网站等一些列属于我的数据。</p><h1 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h1><p>本篇文章着急发出，可能会有问题，请大家见谅。</p></body></html>]]></content>
     
@@ -158,6 +158,8 @@
     
     
     
+    
+    <category term="2024" scheme="https://blog.ning.moe/tags/2024/"/>
     
   </entry>
   
@@ -186,9 +188,9 @@
     
     <category term="OAuth2" scheme="https://blog.ning.moe/tags/OAuth2/"/>
     
-    <category term="nezha" scheme="https://blog.ning.moe/tags/nezha/"/>
-    
     <category term="2024" scheme="https://blog.ning.moe/tags/2024/"/>
+    
+    <category term="nezha" scheme="https://blog.ning.moe/tags/nezha/"/>
     
   </entry>
   
@@ -240,6 +242,8 @@
     <category term="网络技术" scheme="https://blog.ning.moe/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/"/>
     
     
+    <category term="2024" scheme="https://blog.ning.moe/tags/2024/"/>
+    
     <category term="DNS" scheme="https://blog.ning.moe/tags/DNS/"/>
     
     <category term="Adguard Home" scheme="https://blog.ning.moe/tags/Adguard-Home/"/>
@@ -253,8 +257,6 @@
     <category term="dnscrypt" scheme="https://blog.ning.moe/tags/dnscrypt/"/>
     
     <category term="mosdns" scheme="https://blog.ning.moe/tags/mosdns/"/>
-    
-    <category term="2024" scheme="https://blog.ning.moe/tags/2024/"/>
     
   </entry>
   
@@ -304,11 +306,11 @@
     <category term="网络技术" scheme="https://blog.ning.moe/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/"/>
     
     
+    <category term="2024" scheme="https://blog.ning.moe/tags/2024/"/>
+    
     <category term="CloudFlare" scheme="https://blog.ning.moe/tags/CloudFlare/"/>
     
     <category term="Zero Trust" scheme="https://blog.ning.moe/tags/Zero-Trust/"/>
-    
-    <category term="2024" scheme="https://blog.ning.moe/tags/2024/"/>
     
   </entry>
   
@@ -358,11 +360,11 @@
     
     
     
+    <category term="2024" scheme="https://blog.ning.moe/tags/2024/"/>
+    
     <category term="防火墙" scheme="https://blog.ning.moe/tags/%E9%98%B2%E7%81%AB%E5%A2%99/"/>
     
     <category term="firewall" scheme="https://blog.ning.moe/tags/firewall/"/>
-    
-    <category term="2024" scheme="https://blog.ning.moe/tags/2024/"/>
     
     <category term="Ikuai" scheme="https://blog.ning.moe/tags/Ikuai/"/>
     
