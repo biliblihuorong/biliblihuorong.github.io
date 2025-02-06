@@ -1,6 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>2023 总结</title>
+    <url>/posts/2023-Annual-Summary/</url>
+    <content><![CDATA[<html><head></head><body><blockquote>
+<p>应该这个文章会在 31/12/2024 发表</p>
+</blockquote>
+<p>转眼间 23年的就快过完了，回顾过往这一年的时间，貌似有些许的特殊，不至于和前几年一样是一个无聊又无趣。</p>
+<h1 id="博客"><a href="#博客" class="headerlink" title="博客"></a>博客</h1><p>两年的宁静，博客在23年重新绽放光彩。</p>
+<p>23年共计写了 19 篇 文章其中阅读最多的 <a href="https://blog.ning.moe/posts/Spring-Security/">新版本 Spring-Security 配置踩坑</a>  共阅读了 227次 从Google 来的最多，文章是其次是<br><a href="https://blog.ning.moe/posts/Java-CAPTCHA-cloudflare/">Java 使用 CloudFlare Turnstile 验证码</a> 共阅读了 205次。在重新开始写博客之后 本站从 23年6月记录截稿，共收获了  PV <strong>6.52k</strong>  UV <strong>2.16k</strong>。</p>
+<img src="https://img.misaka.pics/ShellBlogImg/1/2023/12/29/658ed5482b2d5.webp" alt="2023-Blog-PV&amp;UV-Date.webp" style="zoom: 80%;">
+
+<blockquote>
+<p>为什么只有6-12月的数据呢？</p>
+<p><del>因为我把1-5月的数据搞丢了。</del></p>
+</blockquote>
+<p>在截稿前收到Google 发来的Email 28天从Google 来了120 的</p>
+<img src="https://img.misaka.pics/ShellBlogImg/1/2023/12/31/65916362b2813.webp" alt="Google-search-PV.webp" style="zoom:50%;">
+
+<h1 id="赛项"><a href="#赛项" class="headerlink" title="赛项"></a>赛项</h1><p>我参加了<code>应用软件系统开发</code>  荣获一等奖。然而，对于这次比赛，我心中并未留下太多深刻的评价，因为涉及的内容大多是繁琐且重复的工作。</p>
+<img src="https://img.misaka.pics/ShellBlogImg/1/2023/12/31/65916654c7cc0.webp" alt="ChinaSkills.webp" style="zoom: 50%;">
+
+<h1 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h1><p>23年的故事就此落幕，还有23年所遇到的人们，也开启了我线下第一次面基之旅（不展开叙述）。24年的故事即将开启，这一年里展开新的冒险。我希望在24年，能够踏上旅途，探访不同的地方，因为美好的青春如此短暂，而旅行是拓展视野和经历的最佳方式。同时，我收集更多计算机知识的奥秘，为自己的技术之旅添上浓墨重彩的一笔。至于博客吗，我也会继续写下去的。</p>
+</body></html>]]></content>
+      <categories>
+        <category>生活随想</category>
+      </categories>
+      <tags>
+        <tag>总结</tag>
+        <tag>2023</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>markdown使用方法</title>
     <url>/posts/17-1/</url>
     <content><![CDATA[<html><head></head><body><p>我身为一代神鸽,建立博客那么就了,更新几篇我原创的博文或者.（关键还是我不会正在学很多东西~逃</p>
@@ -53,79 +84,6 @@
       </tags>
   </entry>
   <entry>
-    <title>2023 总结</title>
-    <url>/posts/2023-Annual-Summary/</url>
-    <content><![CDATA[<html><head></head><body><blockquote>
-<p>应该这个文章会在 31/12/2024 发表</p>
-</blockquote>
-<p>转眼间 23年的就快过完了，回顾过往这一年的时间，貌似有些许的特殊，不至于和前几年一样是一个无聊又无趣。</p>
-<h1 id="博客"><a href="#博客" class="headerlink" title="博客"></a>博客</h1><p>两年的宁静，博客在23年重新绽放光彩。</p>
-<p>23年共计写了 19 篇 文章其中阅读最多的 <a href="https://blog.ning.moe/posts/Spring-Security/">新版本 Spring-Security 配置踩坑</a>  共阅读了 227次 从Google 来的最多，文章是其次是<br><a href="https://blog.ning.moe/posts/Java-CAPTCHA-cloudflare/">Java 使用 CloudFlare Turnstile 验证码</a> 共阅读了 205次。在重新开始写博客之后 本站从 23年6月记录截稿，共收获了  PV <strong>6.52k</strong>  UV <strong>2.16k</strong>。</p>
-<img src="https://img.misaka.pics/ShellBlogImg/1/2023/12/29/658ed5482b2d5.webp" alt="2023-Blog-PV&amp;UV-Date.webp" style="zoom: 80%;">
-
-<blockquote>
-<p>为什么只有6-12月的数据呢？</p>
-<p><del>因为我把1-5月的数据搞丢了。</del></p>
-</blockquote>
-<p>在截稿前收到Google 发来的Email 28天从Google 来了120 的</p>
-<img src="https://img.misaka.pics/ShellBlogImg/1/2023/12/31/65916362b2813.webp" alt="Google-search-PV.webp" style="zoom:50%;">
-
-<h1 id="赛项"><a href="#赛项" class="headerlink" title="赛项"></a>赛项</h1><p>我参加了<code>应用软件系统开发</code>  荣获一等奖。然而，对于这次比赛，我心中并未留下太多深刻的评价，因为涉及的内容大多是繁琐且重复的工作。</p>
-<img src="https://img.misaka.pics/ShellBlogImg/1/2023/12/31/65916654c7cc0.webp" alt="ChinaSkills.webp" style="zoom: 50%;">
-
-<h1 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h1><p>23年的故事就此落幕，还有23年所遇到的人们，也开启了我线下第一次面基之旅（不展开叙述）。24年的故事即将开启，这一年里展开新的冒险。我希望在24年，能够踏上旅途，探访不同的地方，因为美好的青春如此短暂，而旅行是拓展视野和经历的最佳方式。同时，我收集更多计算机知识的奥秘，为自己的技术之旅添上浓墨重彩的一笔。至于博客吗，我也会继续写下去的。</p>
-</body></html>]]></content>
-      <categories>
-        <category>生活随想</category>
-      </categories>
-      <tags>
-        <tag>总结</tag>
-        <tag>2023</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Linux安装宝塔面板</title>
-    <url>/posts/21-8-3/</url>
-    <content><![CDATA[<html><head></head><body><blockquote>
-<p>本篇，是未其他博文服务，帮助小白更容易接触，还能节省博文写作时间</p>
-</blockquote>
-<h1 id="连接服务器"><a href="#连接服务器" class="headerlink" title="连接服务器"></a>连接服务器</h1><p>你可以购买腾讯云，阿里云等云服务厂商。</p>
-<p>你也可以在虚拟机或者已经退役的电脑上安装完Linux继续安装宝塔面板。</p>
-<h2 id="云服务厂商连接"><a href="#云服务厂商连接" class="headerlink" title="云服务厂商连接"></a>云服务厂商连接</h2><p><code>这里以腾讯云为例</code></p>
-<ol>
-<li>进入控制台一般是整个web端的右上角。</li>
-</ol>
-<p><img src="https://cdn.jsdelivr.net/gh/biliblihuorong/Resources@master/Image/20210804122647.png" alt="image-20210804122645077"></p>
-<ol start="2">
-<li>进入这个页面首先我们需要提一下权限，在里面输入<code>sudo su</code>即可</li>
-</ol>
-<p><img src="https://cdn.jsdelivr.net/gh/biliblihuorong/Resources@master/Image/20210804122851.png" alt="image-20210804122848569"></p>
-<h2 id="使用ssh连接"><a href="#使用ssh连接" class="headerlink" title="使用ssh连接"></a>使用ssh连接</h2><p>ssh连接的话你可以使用Xshell或其他的ssh连接工具,如果你是Windows10或者是MAC的话可以直接在终端连接</p>
-<p>以Windows10为例,打开<code>cmd</code>输入用户名@主机地址</p>
-<p>tips:一般用户名就是root</p>
-<p>弹出这些东西:</p>
-<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">C:\Users\shell&gt;ssh root@10.10.10.194</span><br><span class="line">The authenticity of host <span class="string">'10.10.10.194 (10.10.10.194)'</span> can<span class="string">'t be established.</span></span><br><span class="line"><span class="string">ECDSA key fingerprint is SHA256:wTW6E3eH1uT9NXqPIYJdfBFWSv9LyAenGMIKKAJD1TA.</span></span><br><span class="line"><span class="string">Are you sure you want to continue connecting (yes/no/[fingerprint])?</span></span><br><span class="line"><span class="string"></span></span><br></pre></td></tr></tbody></table></figure>
-
-<p>输入<code>yes</code>回车</p>
-<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">C:\Users\shell&gt;ssh root@10.10.10.194</span><br><span class="line">The authenticity of host <span class="string">'10.10.10.194 (10.10.10.194)'</span> can<span class="string">'t be established.</span></span><br><span class="line"><span class="string">ECDSA key fingerprint is SHA256:wTW6E3eH1uT9NXqPIYJdfBFWSv9LyAenGMIKKAJD1TA.</span></span><br><span class="line"><span class="string">Are you sure you want to continue connecting (yes/no/[fingerprint])? yes</span></span><br><span class="line"><span class="string">Warning: Permanently added '</span>10.10.10.194<span class="string">' (ECDSA) to the list of known hosts.</span></span><br><span class="line"><span class="string">root@10.10.10.194'</span>s password:</span><br></pre></td></tr></tbody></table></figure>
-
-<p>现在输入你的密码,密码输入时不会显示密码.</p>
-<h1 id="安装宝塔"><a href="#安装宝塔" class="headerlink" title="安装宝塔"></a>安装宝塔</h1><p>[点击这个连接跳转到宝塔官网安装界面.][<a href="https://www.bt.cn/download/linux.html]" rel="external nofollow noreferrer">https://www.bt.cn/download/linux.html]</a></p>
-<p><img src="https://cdn.jsdelivr.net/gh/biliblihuorong/Resources@master/Image/20210806125447.png" alt="image-20210806125445624"></p>
-<p>根据你用的Linux的发行商来复制哪一个指令,执行.</p>
-<p><img src="https://cdn.jsdelivr.net/gh/biliblihuorong/Resources@master/Image/20210806125859.png" alt="image-20210806125629698"></p>
-<p>输入<code>y</code>回车.</p>
-<p>出现这样的记得保存一下账号和密码,如果你是云服务商的服务器请到防火墙放行8888端口才可以.</p>
-<p><img src="https://cdn.jsdelivr.net/gh/biliblihuorong/Resources@master/Image/20210806125902.png" alt="image-20210806125855734"></p>
-</body></html>]]></content>
-      <categories>
-        <category>网络技术</category>
-      </categories>
-      <tags>
-        <tag>宝塔</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>2024总结</title>
     <url>/posts/2024-Annual-Summary/</url>
     <content><![CDATA[<html><head></head><body><p>转眼间 2024 年就这样结束了，回顾过去这一年，似乎比往年多了一些亮点，也多了一些挑战。</p>
@@ -159,36 +117,27 @@
       </tags>
   </entry>
   <entry>
-    <title>Gitea SSO 登录优化与自动注册设置</title>
-    <url>/posts/Authentik-Gitea-SSO/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>gitea 的SSO登录逻辑，是通过OIDC 登录完毕和已经gitea自己的账户进行绑定，如果 没有账户gitea 会要求你注册一个再绑定，但是gitea 并没有能设置通过sso 进来的没有注册的用户开发注册，只有要么所有人都可以注册要么不可以注册。嗯。。。。感觉怪怪的。</p>
-<p>并且更改配置文件还需要手动重启容器，不可能我认识人都创建好gitea吧，或者不能每次他们第一次要用gitea 我需要配置打开注册。</p>
-<p>关于我的更多 <a href="/tags/Authentik/"><code>Authentik </code>相关文章</a>  ，详细安装（中文版本）<code>Authentik </code>请访问 <a href="https://www.bilibili.com/video/av1902852247/" rel="external nofollow noreferrer"><strong>ecwuuu</strong>发布的B站视频</a>关于正向代理： <a href="https://roy.wang/authentik-open-source-sso/#%E6%AD%A3%E5%90%91%E4%BB%A3%E7%90%86" rel="external nofollow noreferrer">roywang的文章</a></p>
-<h1 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h1><p><strong>此教程默认情况下视为你已经配置好了gitea 的OIDC登录。</strong></p>
-<p>如果您没有实现配置好，可以看 ecwuuuuu 的 <a href="https://www.bilibili.com/video/av1952943836/" rel="external nofollow noreferrer">你可以观看 将应用接入统一登陆 - OAuth 协议篇 - 以 Gitea 和 Grafana 为例</a></p>
-<p>本文章配合 <a href="/posts/CloudFlare-Tunnel-Application-Access/">使用 Cloud Flare Tunnel 和 Acces Application 安全的暴露在公网</a> 进行使用，使用 CloudFlare 的Zero Trust进行<code>转发验证</code></p>
-<p>如果你需要使用nginx配置转发验证，可以看 ecwuuuuu 的 <a href="https://ecwuuuuu.com/post/authentik-tutorial-4-setup-forwardauth/" rel="external nofollow noreferrer">通过反向代理和 ForwardAuth 接入任何应用</a>或者访问他的B站视频 <a href="https://www.bilibili.com/video/av1803923865/" rel="external nofollow noreferrer">配置 ForwardAuth 将任意应用加入统一登陆</a></p>
-<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><p>请确保你的gitea 配置文件和我下面提供的一样（配置文件一般在<code>&lt;宿主机容器映射&gt;/data/gitea/conf/app.ini</code></p>
-<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">[openid]</span><br><span class="line">ENABLE_OPENID_SIGNIN = true</span><br><span class="line">ENABLE_OPENID_SIGNUP = true</span><br><span class="line"></span><br><span class="line">[service]</span><br><span class="line">DISABLE_REGISTRATION = false</span><br><span class="line">REQUIRE_SIGNIN_VIEW = true</span><br><span class="line">REGISTER_EMAIL_CONFIRM = false</span><br><span class="line">ENABLE_NOTIFY_MAIL = true</span><br><span class="line">ALLOW_ONLY_EXTERNAL_REGISTRATION = false</span><br><span class="line">ENABLE_CAPTCHA = false</span><br><span class="line">DEFAULT_KEEP_EMAIL_PRIVATE = true</span><br><span class="line">DEFAULT_ALLOW_CREATE_ORGANIZATION = true</span><br><span class="line">DEFAULT_ENABLE_TIMETRACKING = true</span><br><span class="line">NO_REPLY_ADDRESS = noreply.localhost</span><br></pre></td></tr></tbody></table></figure>
+    <title>ArchLinux 使用体验</title>
+    <url>/posts/ArchLinux/</url>
+    <content><![CDATA[<html><head></head><body><img src="https://img.misaka.pics/i/1/2023/02/09/63e4c0b786de8.webp" alt="archlinux-logo-dark-1200dpi.webp" style="zoom: 25%;">
 
-
-
-<p>屏蔽注册页面 <code>user/sign_up</code></p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/08/04/66aed81093245.webp" alt="CloudFlare-Zero Trust-Gitea-Sign_up.webp"></p>
-<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>将应用接入统一登陆 - OAuth 协议篇 - 以 Gitea 和 Grafana 为例:<a href="https://www.bilibili.com/video/av1952943836/" rel="external nofollow noreferrer">https://www.bilibili.com/video/av1952943836/</a></p>
-<p>通过反向代理和 ForwardAuth 接入任何应用:<a href="https://ecwuuuuu.com/post/authentik-tutorial-4-setup-forwardauth/" rel="external nofollow noreferrer">https://ecwuuuuu.com/post/authentik-tutorial-4-setup-forwardauth/</a></p>
-<p>使用 Cloud Flare Tunnel 和 Acces Application 安全的暴露在公网:<a href="https://blog.ning.moe/posts/CloudFlare-Tunnel-Application-Access/">https://blog.ning.moe/posts/CloudFlare-Tunnel-Application-Access/</a></p>
+<h1 id="关于-ArchLinux"><a href="#关于-ArchLinux" class="headerlink" title="关于 ArchLinux"></a>关于 ArchLinux</h1><p>Arch 是Linux发行版的一个分支，arch的理念是完全自定义，没有所谓的系统版本，全部是滚动升级（长时间不滚，会滚炸，当然我每天开机第一件事就是滚一下）</p>
+<h1 id="正片开始"><a href="#正片开始" class="headerlink" title="正片开始"></a>正片开始</h1><h2 id="为什么非要选择Arch？"><a href="#为什么非要选择Arch？" class="headerlink" title="为什么非要选择Arch？"></a>为什么非要选择Arch？</h2><p>其实如果你要是在非中国大陆的话，我觉得你使用Ubuntu 或者其他的发行版大同小异，因为我看中了 Arch的万能的AUR软件仓库源，这里面有各位大佬自封装的软件，庞大的软件仓库，例如微信 需要wine 以及烦琐的配置 AUR 可以直接解决这些问题。</p>
+<h2 id="听说安装Arch很难？"><a href="#听说安装Arch很难？" class="headerlink" title="听说安装Arch很难？"></a>听说安装Arch很难？</h2><p>是的 Arch 的安装异常的烦琐切复杂 ，不过如果你擅用<code>Search</code>和<a href="https://wiki.archlinuxcn.org/wiki/%E9%A6%96%E9%A1%B5" rel="external nofollow noreferrer" title="ArchWiKi">ArchWiki</a> 和时间耐心的研究，其实很简单，我是一个纯Linux小白，在查阅ArchWiki花费大量的时间研究之后也安装成功。</p>
+<h2 id="我现在的状态？"><a href="#我现在的状态？" class="headerlink" title="我现在的状态？"></a>我现在的状态？</h2><p>我现在给电脑装载了双系统（怕arch崩了就无了） win11+arch</p>
+<p><img src="https://img.c-dreamer.top/i/1/2023/02/09/63e4bbfff1e9c.webp" alt="ArchLinux 配置.webp"></p>
+<h2 id="使用体验"><a href="#使用体验" class="headerlink" title="使用体验"></a>使用体验</h2><p>我用Arch差不多3个月了，除了刚开始的不适逐渐慢慢适应之后逐渐习惯，但我偶尔也很想换回windows，因为我现在还没有适应在linux只用一个根的感念，而不像windows的区概念（而且我分区还很多）。</p>
+<h1 id="你要现在立刻安装Arch？"><a href="#你要现在立刻安装Arch？" class="headerlink" title="你要现在立刻安装Arch？"></a>你要现在立刻安装Arch？</h1><h3 id="你会首先面临的问题"><a href="#你会首先面临的问题" class="headerlink" title="你会首先面临的问题"></a>你会首先面临的问题</h3><h4 id="游戏生态"><a href="#游戏生态" class="headerlink" title="游戏生态"></a>游戏生态</h4><p>首先Linux上虽然有steam 的Steam Play的加持，游戏生态逐步扩大，但还是有诸多游戏不能游玩，详情可以看这个<a href="https://www.protondb.com/" rel="external nofollow noreferrer" title="protondb">protondb</a>上搜索🔍，还有原神属于能玩的级别但是配置很烦琐。</p>
+<h4 id="软件的生态"><a href="#软件的生态" class="headerlink" title="软件的生态"></a>软件的生态</h4><p>虽然有AUR 的加持但仍然有很多软件只有windows平台还用<code>wine</code>调教不好它例如<code>office</code> ，但这不是说你不能使用这些功能，Linux有很多平替软件可以选择例如 <code>libreoffice</code> or <code>WPS</code>。</p>
+<h4 id="使用习惯"><a href="#使用习惯" class="headerlink" title="使用习惯"></a>使用习惯</h4><p>就像我前面提到的 Linux和Windows对于磁盘区的概念来说，以及你要面临一个新的桌面使用环境。</p>
 </body></html>]]></content>
       <categories>
-        <category>网络技术</category>
+        <category>生活随想</category>
       </categories>
       <tags>
-        <tag>2024</tag>
-        <tag>Authentik</tag>
-        <tag>Gitea</tag>
-        <tag>SSO</tag>
-        <tag>OIDC</tag>
-        <tag>OAuth2</tag>
+        <tag>2023</tag>
+        <tag>Arch</tag>
+        <tag>Linux</tag>
       </tags>
   </entry>
   <entry>
@@ -231,6 +180,39 @@
         <tag>网络技术</tag>
         <tag>CloudFlare</tag>
         <tag>写bug的小能手</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Gitea SSO 登录优化与自动注册设置</title>
+    <url>/posts/Authentik-Gitea-SSO/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>gitea 的SSO登录逻辑，是通过OIDC 登录完毕和已经gitea自己的账户进行绑定，如果 没有账户gitea 会要求你注册一个再绑定，但是gitea 并没有能设置通过sso 进来的没有注册的用户开发注册，只有要么所有人都可以注册要么不可以注册。嗯。。。。感觉怪怪的。</p>
+<p>并且更改配置文件还需要手动重启容器，不可能我认识人都创建好gitea吧，或者不能每次他们第一次要用gitea 我需要配置打开注册。</p>
+<p>关于我的更多 <a href="/tags/Authentik/"><code>Authentik </code>相关文章</a>  ，详细安装（中文版本）<code>Authentik </code>请访问 <a href="https://www.bilibili.com/video/av1902852247/" rel="external nofollow noreferrer"><strong>ecwuuu</strong>发布的B站视频</a>关于正向代理： <a href="https://roy.wang/authentik-open-source-sso/#%E6%AD%A3%E5%90%91%E4%BB%A3%E7%90%86" rel="external nofollow noreferrer">roywang的文章</a></p>
+<h1 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h1><p><strong>此教程默认情况下视为你已经配置好了gitea 的OIDC登录。</strong></p>
+<p>如果您没有实现配置好，可以看 ecwuuuuu 的 <a href="https://www.bilibili.com/video/av1952943836/" rel="external nofollow noreferrer">你可以观看 将应用接入统一登陆 - OAuth 协议篇 - 以 Gitea 和 Grafana 为例</a></p>
+<p>本文章配合 <a href="/posts/CloudFlare-Tunnel-Application-Access/">使用 Cloud Flare Tunnel 和 Acces Application 安全的暴露在公网</a> 进行使用，使用 CloudFlare 的Zero Trust进行<code>转发验证</code></p>
+<p>如果你需要使用nginx配置转发验证，可以看 ecwuuuuu 的 <a href="https://ecwuuuuu.com/post/authentik-tutorial-4-setup-forwardauth/" rel="external nofollow noreferrer">通过反向代理和 ForwardAuth 接入任何应用</a>或者访问他的B站视频 <a href="https://www.bilibili.com/video/av1803923865/" rel="external nofollow noreferrer">配置 ForwardAuth 将任意应用加入统一登陆</a></p>
+<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><p>请确保你的gitea 配置文件和我下面提供的一样（配置文件一般在<code>&lt;宿主机容器映射&gt;/data/gitea/conf/app.ini</code></p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">[openid]</span><br><span class="line">ENABLE_OPENID_SIGNIN = true</span><br><span class="line">ENABLE_OPENID_SIGNUP = true</span><br><span class="line"></span><br><span class="line">[service]</span><br><span class="line">DISABLE_REGISTRATION = false</span><br><span class="line">REQUIRE_SIGNIN_VIEW = true</span><br><span class="line">REGISTER_EMAIL_CONFIRM = false</span><br><span class="line">ENABLE_NOTIFY_MAIL = true</span><br><span class="line">ALLOW_ONLY_EXTERNAL_REGISTRATION = false</span><br><span class="line">ENABLE_CAPTCHA = false</span><br><span class="line">DEFAULT_KEEP_EMAIL_PRIVATE = true</span><br><span class="line">DEFAULT_ALLOW_CREATE_ORGANIZATION = true</span><br><span class="line">DEFAULT_ENABLE_TIMETRACKING = true</span><br><span class="line">NO_REPLY_ADDRESS = noreply.localhost</span><br></pre></td></tr></tbody></table></figure>
+
+
+
+<p>屏蔽注册页面 <code>user/sign_up</code></p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/08/04/66aed81093245.webp" alt="CloudFlare-Zero Trust-Gitea-Sign_up.webp"></p>
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>将应用接入统一登陆 - OAuth 协议篇 - 以 Gitea 和 Grafana 为例:<a href="https://www.bilibili.com/video/av1952943836/" rel="external nofollow noreferrer">https://www.bilibili.com/video/av1952943836/</a></p>
+<p>通过反向代理和 ForwardAuth 接入任何应用:<a href="https://ecwuuuuu.com/post/authentik-tutorial-4-setup-forwardauth/" rel="external nofollow noreferrer">https://ecwuuuuu.com/post/authentik-tutorial-4-setup-forwardauth/</a></p>
+<p>使用 Cloud Flare Tunnel 和 Acces Application 安全的暴露在公网:<a href="https://blog.ning.moe/posts/CloudFlare-Tunnel-Application-Access/">https://blog.ning.moe/posts/CloudFlare-Tunnel-Application-Access/</a></p>
+</body></html>]]></content>
+      <categories>
+        <category>网络技术</category>
+      </categories>
+      <tags>
+        <tag>2024</tag>
+        <tag>Authentik</tag>
+        <tag>Gitea</tag>
+        <tag>SSO</tag>
+        <tag>OIDC</tag>
+        <tag>OAuth2</tag>
       </tags>
   </entry>
   <entry>
@@ -311,6 +293,80 @@
       </tags>
   </entry>
   <entry>
+    <title>改造家里网络</title>
+    <url>/posts/Home-NetWork/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
+<p>也好久没更新来水一波。</p>
+</blockquote>
+<p>寒假里面，打算在折腾一下家里面的网络，将家里21年买的<code>r2s</code>换成<code>J4125</code>这下就够我折腾的了。</p>
+<img src="https://img.misaka.pics/ShellBlogImg/1/2024/03/06/65e8108d61fe7.webp" alt="网络拓补图.webp" style="zoom:50%;">
+
+<p>这是我目前的家里主题结构 由<code>r2s</code>软路由担任<code>PPPOE</code>拨号，有两个<code>AP</code> 组成有线<code>mesh</code>。</p>
+<p>对于 <code>J4125 </code>我打算使用<code>PVE</code>+<code>Ikuai</code>+<code>Debian</code></p>
+<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><h2 id="折腾前的痛点"><a href="#折腾前的痛点" class="headerlink" title="折腾前的痛点"></a>折腾前的痛点</h2><ul>
+<li>稳定：对于<code>r2s</code>来说有时候不是特别问题定，需要定时重启，我尝试换了很多的固件，都无法解决此问题</li>
+<li>性能不足 ：<code>r2s</code>有人测试基本上稳定千兆是没有问题的了（在不使用科学上网的时候），但对于小包转发来说多少有些吃力。</li>
+<li>ARM 生态问题：我知道ARM 发展的很好，但很多老的程序还只能支持<code>X86</code>.</li>
+</ul>
+<h2 id="折腾解决之后的"><a href="#折腾解决之后的" class="headerlink" title="折腾解决之后的"></a>折腾解决之后的</h2><ul>
+<li>稳定：目前连续运行了20天没有发现异常</li>
+<li>性能：<code>J4125</code>妥妥够我300mbps 的带宽使用了（满载带宽，CPU占用15%~20%）</li>
+<li>软件：解决了ARM 部分软件问题。</li>
+</ul>
+<p><code>J4125</code>进行<code>PVE </code>虚拟化，由<code>Ikuai </code>作为主路由进行<code>PPPOE</code> 以及流控管理，<code>Debian`` docker</code> 化跑<code>Adguard Heome </code>家用<code>DNS </code>。</p>
+<img src="https://img.misaka.pics/ShellBlogImg/1/2024/03/06/65e82e1b241e5.webp" alt="网络拓补图-2.webp" style="zoom: 67%;">
+</body></html>]]></content>
+      <categories>
+        <category>网络技术</category>
+      </categories>
+      <tags>
+        <tag>Ikuai</tag>
+        <tag>J4125</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Linux安装宝塔面板</title>
+    <url>/posts/21-8-3/</url>
+    <content><![CDATA[<html><head></head><body><blockquote>
+<p>本篇，是未其他博文服务，帮助小白更容易接触，还能节省博文写作时间</p>
+</blockquote>
+<h1 id="连接服务器"><a href="#连接服务器" class="headerlink" title="连接服务器"></a>连接服务器</h1><p>你可以购买腾讯云，阿里云等云服务厂商。</p>
+<p>你也可以在虚拟机或者已经退役的电脑上安装完Linux继续安装宝塔面板。</p>
+<h2 id="云服务厂商连接"><a href="#云服务厂商连接" class="headerlink" title="云服务厂商连接"></a>云服务厂商连接</h2><p><code>这里以腾讯云为例</code></p>
+<ol>
+<li>进入控制台一般是整个web端的右上角。</li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/biliblihuorong/Resources@master/Image/20210804122647.png" alt="image-20210804122645077"></p>
+<ol start="2">
+<li>进入这个页面首先我们需要提一下权限，在里面输入<code>sudo su</code>即可</li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/biliblihuorong/Resources@master/Image/20210804122851.png" alt="image-20210804122848569"></p>
+<h2 id="使用ssh连接"><a href="#使用ssh连接" class="headerlink" title="使用ssh连接"></a>使用ssh连接</h2><p>ssh连接的话你可以使用Xshell或其他的ssh连接工具,如果你是Windows10或者是MAC的话可以直接在终端连接</p>
+<p>以Windows10为例,打开<code>cmd</code>输入用户名@主机地址</p>
+<p>tips:一般用户名就是root</p>
+<p>弹出这些东西:</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">C:\Users\shell&gt;ssh root@10.10.10.194</span><br><span class="line">The authenticity of host <span class="string">'10.10.10.194 (10.10.10.194)'</span> can<span class="string">'t be established.</span></span><br><span class="line"><span class="string">ECDSA key fingerprint is SHA256:wTW6E3eH1uT9NXqPIYJdfBFWSv9LyAenGMIKKAJD1TA.</span></span><br><span class="line"><span class="string">Are you sure you want to continue connecting (yes/no/[fingerprint])?</span></span><br><span class="line"><span class="string"></span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>输入<code>yes</code>回车</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">C:\Users\shell&gt;ssh root@10.10.10.194</span><br><span class="line">The authenticity of host <span class="string">'10.10.10.194 (10.10.10.194)'</span> can<span class="string">'t be established.</span></span><br><span class="line"><span class="string">ECDSA key fingerprint is SHA256:wTW6E3eH1uT9NXqPIYJdfBFWSv9LyAenGMIKKAJD1TA.</span></span><br><span class="line"><span class="string">Are you sure you want to continue connecting (yes/no/[fingerprint])? yes</span></span><br><span class="line"><span class="string">Warning: Permanently added '</span>10.10.10.194<span class="string">' (ECDSA) to the list of known hosts.</span></span><br><span class="line"><span class="string">root@10.10.10.194'</span>s password:</span><br></pre></td></tr></tbody></table></figure>
+
+<p>现在输入你的密码,密码输入时不会显示密码.</p>
+<h1 id="安装宝塔"><a href="#安装宝塔" class="headerlink" title="安装宝塔"></a>安装宝塔</h1><p>[点击这个连接跳转到宝塔官网安装界面.][<a href="https://www.bt.cn/download/linux.html]" rel="external nofollow noreferrer">https://www.bt.cn/download/linux.html]</a></p>
+<p><img src="https://cdn.jsdelivr.net/gh/biliblihuorong/Resources@master/Image/20210806125447.png" alt="image-20210806125445624"></p>
+<p>根据你用的Linux的发行商来复制哪一个指令,执行.</p>
+<p><img src="https://cdn.jsdelivr.net/gh/biliblihuorong/Resources@master/Image/20210806125859.png" alt="image-20210806125629698"></p>
+<p>输入<code>y</code>回车.</p>
+<p>出现这样的记得保存一下账号和密码,如果你是云服务商的服务器请到防火墙放行8888端口才可以.</p>
+<p><img src="https://cdn.jsdelivr.net/gh/biliblihuorong/Resources@master/Image/20210806125902.png" alt="image-20210806125855734"></p>
+</body></html>]]></content>
+      <categories>
+        <category>网络技术</category>
+      </categories>
+      <tags>
+        <tag>宝塔</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>你可能需要知道的docker 的端口问题。</title>
     <url>/posts/DockerSecurity/</url>
     <content><![CDATA[<html><head></head><body><h1 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h1><p>docker 这个东西呢，对于我来说又爱又恨吧，爱的事情是可以很快速的进行部署项目，解决一些复杂和繁琐的问题，这也是docker 设计的初衷。恨得呢，本身我对于docker 来说是是一个小白用户，我只会 docker run xxxx 来完成我在github 找到的有趣应用，但是出了问题的时候，我需要去使用搜索引擎查阅的知识。</p>
@@ -364,35 +420,37 @@
       </tags>
   </entry>
   <entry>
-    <title>改造家里网络</title>
-    <url>/posts/Home-NetWork/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
-<p>也好久没更新来水一波。</p>
+    <title>爱快IPv6防火墙配置</title>
+    <url>/posts/Ikuai-firewall-IPv6/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>爱快尽然默认没有开启<code>IPv6</code>对内网设备的阻断，我发现的时候十分震惊，而且已经在公网上暴露有一天以上了，最糟糕的事情，内网设备的密码全部是弱密码，吓得我先立刻断掉<code>IPv6</code>接入，仔细排查了一下内网设备还好没有人扫到并且进行爆破。</p>
+<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><p>请确保你的<code>ikuai </code>系统是最新版本并且登录<code>ikuai Web</code>后台，<code>安全设置</code> –&gt;<code>ACL规则</code></p>
+<h2 id="阻断所有IPv6链接"><a href="#阻断所有IPv6链接" class="headerlink" title="阻断所有IPv6链接"></a>阻断所有IPv6链接</h2><blockquote>
+<p>此操作不会阻断响应<code>IPv6</code>的流量</p>
 </blockquote>
-<p>寒假里面，打算在折腾一下家里面的网络，将家里21年买的<code>r2s</code>换成<code>J4125</code>这下就够我折腾的了。</p>
-<img src="https://img.misaka.pics/ShellBlogImg/1/2024/03/06/65e8108d61fe7.webp" alt="网络拓补图.webp" style="zoom:50%;">
+<p>由于 <code>ikuai </code>在 3.7.11 版本还不支持放行或阻断<code> ICMP</code> 协议，如果您想外网设备能ping通内网的话，需要需要创建两个配置，一个是阻断<code>TCP</code>还有一个阻断<code>UDP</code>，不想<code>ping</code>通的话，只需要创建一个配置选择任意协议即可。</p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/03/06/65e834d3a0bdd.webp" alt="ipv6防护墙介绍.webp"></p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/03/06/65e834d40ca02.webp" alt="ipv6阻断.webp"></p>
+<p>进接口一定是<code>wan</code>口由于笔者只有一个<code>wan</code>口，如果您有多个话请务必全部勾选，出接口是<code>lan</code>同样如果您有多个<code>lan</code>接口请全部勾上，这样我们内网设备就不会暴露外网了。</p>
+<h2 id="打开指定IPv6的连接"><a href="#打开指定IPv6的连接" class="headerlink" title="打开指定IPv6的连接"></a>打开指定IPv6的连接</h2><blockquote>
+<p>再说指定放行<code>IPv6</code>地址，如果您是静态<code>IPv6</code>，那你自己放行那个ip 即可，但是身为家庭宽带的话都是动态<code>IPv6</code>地址根本不可能知道ip会变成什么样子，还是说每次变化ip 的地址重新改吗？这里需要了解一下ipv6 的后缀生成是受MAC 地址影响的，通过EUI-64 编码进行处理，详情访问: <a href="https://ccie.lol/knowledge-base/ipv6-use-eui-64-convert-link-local-address/" rel="external nofollow noreferrer">【转】通过EUI-64自动生成IPv6地址和IPv6链路本地地址（Link-Local Address）</a></p>
+</blockquote>
+<p><strong>对于windows 获取ipv6地址使用 EUI-64 编码得到的理论值和实际值可能不一样</strong></p>
+<p>可以使用 <a href="https://eui64-calc.princelle.org/" rel="external nofollow noreferrer">EUI-64 计算器</a></p>
+<p>例如 <code>bc:34:11:c6:8a:19 </code>通过计算可以得到 <code>BE34:11FF:FEC6:8A19</code> 理论情况的<code>ipv6</code>，据我测试后四位基本上都是一样的，前面受到<code>IPv6</code>前缀影响。</p>
+<img src="https://img.misaka.pics/ShellBlogImg/1/2024/03/06/65e846c30a412.webp" alt="指定IPv6放行.webp" style="zoom:67%;">
 
-<p>这是我目前的家里主题结构 由<code>r2s</code>软路由担任<code>PPPOE</code>拨号，有两个<code>AP</code> 组成有线<code>mesh</code>。</p>
-<p>对于 <code>J4125 </code>我打算使用<code>PVE</code>+<code>Ikuai</code>+<code>Debian</code></p>
-<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><h2 id="折腾前的痛点"><a href="#折腾前的痛点" class="headerlink" title="折腾前的痛点"></a>折腾前的痛点</h2><ul>
-<li>稳定：对于<code>r2s</code>来说有时候不是特别问题定，需要定时重启，我尝试换了很多的固件，都无法解决此问题</li>
-<li>性能不足 ：<code>r2s</code>有人测试基本上稳定千兆是没有问题的了（在不使用科学上网的时候），但对于小包转发来说多少有些吃力。</li>
-<li>ARM 生态问题：我知道ARM 发展的很好，但很多老的程序还只能支持<code>X86</code>.</li>
-</ul>
-<h2 id="折腾解决之后的"><a href="#折腾解决之后的" class="headerlink" title="折腾解决之后的"></a>折腾解决之后的</h2><ul>
-<li>稳定：目前连续运行了20天没有发现异常</li>
-<li>性能：<code>J4125</code>妥妥够我300mbps 的带宽使用了（满载带宽，CPU占用15%~20%）</li>
-<li>软件：解决了ARM 部分软件问题。</li>
-</ul>
-<p><code>J4125</code>进行<code>PVE </code>虚拟化，由<code>Ikuai </code>作为主路由进行<code>PPPOE</code> 以及流控管理，<code>Debian`` docker</code> 化跑<code>Adguard Heome </code>家用<code>DNS </code>。</p>
-<img src="https://img.misaka.pics/ShellBlogImg/1/2024/03/06/65e82e1b241e5.webp" alt="网络拓补图-2.webp" style="zoom: 67%;">
+<p>在已经匹配的内容中<code>::8A19</code>改成你自己的后缀四位，<code>ikuai </code>的防火墙逻辑是先放行后阻断，所以不需要关系防火墙配置的顺序。</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">::8a1f/::ffff</span><br></pre></td></tr></tbody></table></figure>
+
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p><a href="https://ccie.lol/knowledge-base/ipv6-use-eui-64-convert-link-local-address/" rel="external nofollow noreferrer">【转】通过EUI-64自动生成IPv6地址和IPv6链路本地地址（Link-Local Address）</a></p>
+<p> <a href="https://eui64-calc.princelle.org/" rel="external nofollow noreferrer">EUI-64 计算器</a></p>
 </body></html>]]></content>
-      <categories>
-        <category>网络技术</category>
-      </categories>
       <tags>
+        <tag>2024</tag>
         <tag>Ikuai</tag>
-        <tag>J4125</tag>
+        <tag>防火墙</tag>
+        <tag>firewall</tag>
+        <tag>IPv6</tag>
       </tags>
   </entry>
   <entry>
@@ -457,40 +515,6 @@
         <tag>unbound</tag>
         <tag>dnscrypt</tag>
         <tag>mosdns</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>爱快IPv6防火墙配置</title>
-    <url>/posts/Ikuai-firewall-IPv6/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>爱快尽然默认没有开启<code>IPv6</code>对内网设备的阻断，我发现的时候十分震惊，而且已经在公网上暴露有一天以上了，最糟糕的事情，内网设备的密码全部是弱密码，吓得我先立刻断掉<code>IPv6</code>接入，仔细排查了一下内网设备还好没有人扫到并且进行爆破。</p>
-<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><p>请确保你的<code>ikuai </code>系统是最新版本并且登录<code>ikuai Web</code>后台，<code>安全设置</code> –&gt;<code>ACL规则</code></p>
-<h2 id="阻断所有IPv6链接"><a href="#阻断所有IPv6链接" class="headerlink" title="阻断所有IPv6链接"></a>阻断所有IPv6链接</h2><blockquote>
-<p>此操作不会阻断响应<code>IPv6</code>的流量</p>
-</blockquote>
-<p>由于 <code>ikuai </code>在 3.7.11 版本还不支持放行或阻断<code> ICMP</code> 协议，如果您想外网设备能ping通内网的话，需要需要创建两个配置，一个是阻断<code>TCP</code>还有一个阻断<code>UDP</code>，不想<code>ping</code>通的话，只需要创建一个配置选择任意协议即可。</p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/03/06/65e834d3a0bdd.webp" alt="ipv6防护墙介绍.webp"></p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/03/06/65e834d40ca02.webp" alt="ipv6阻断.webp"></p>
-<p>进接口一定是<code>wan</code>口由于笔者只有一个<code>wan</code>口，如果您有多个话请务必全部勾选，出接口是<code>lan</code>同样如果您有多个<code>lan</code>接口请全部勾上，这样我们内网设备就不会暴露外网了。</p>
-<h2 id="打开指定IPv6的连接"><a href="#打开指定IPv6的连接" class="headerlink" title="打开指定IPv6的连接"></a>打开指定IPv6的连接</h2><blockquote>
-<p>再说指定放行<code>IPv6</code>地址，如果您是静态<code>IPv6</code>，那你自己放行那个ip 即可，但是身为家庭宽带的话都是动态<code>IPv6</code>地址根本不可能知道ip会变成什么样子，还是说每次变化ip 的地址重新改吗？这里需要了解一下ipv6 的后缀生成是受MAC 地址影响的，通过EUI-64 编码进行处理，详情访问: <a href="https://ccie.lol/knowledge-base/ipv6-use-eui-64-convert-link-local-address/" rel="external nofollow noreferrer">【转】通过EUI-64自动生成IPv6地址和IPv6链路本地地址（Link-Local Address）</a></p>
-</blockquote>
-<p><strong>对于windows 获取ipv6地址使用 EUI-64 编码得到的理论值和实际值可能不一样</strong></p>
-<p>可以使用 <a href="https://eui64-calc.princelle.org/" rel="external nofollow noreferrer">EUI-64 计算器</a></p>
-<p>例如 <code>bc:34:11:c6:8a:19 </code>通过计算可以得到 <code>BE34:11FF:FEC6:8A19</code> 理论情况的<code>ipv6</code>，据我测试后四位基本上都是一样的，前面受到<code>IPv6</code>前缀影响。</p>
-<img src="https://img.misaka.pics/ShellBlogImg/1/2024/03/06/65e846c30a412.webp" alt="指定IPv6放行.webp" style="zoom:67%;">
-
-<p>在已经匹配的内容中<code>::8A19</code>改成你自己的后缀四位，<code>ikuai </code>的防火墙逻辑是先放行后阻断，所以不需要关系防火墙配置的顺序。</p>
-<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">::8a1f/::ffff</span><br></pre></td></tr></tbody></table></figure>
-
-<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p><a href="https://ccie.lol/knowledge-base/ipv6-use-eui-64-convert-link-local-address/" rel="external nofollow noreferrer">【转】通过EUI-64自动生成IPv6地址和IPv6链路本地地址（Link-Local Address）</a></p>
-<p> <a href="https://eui64-calc.princelle.org/" rel="external nofollow noreferrer">EUI-64 计算器</a></p>
-</body></html>]]></content>
-      <tags>
-        <tag>2024</tag>
-        <tag>防火墙</tag>
-        <tag>firewall</tag>
-        <tag>Ikuai</tag>
-        <tag>IPv6</tag>
       </tags>
   </entry>
   <entry>
@@ -711,11 +735,43 @@
         <category>网络技术</category>
       </categories>
       <tags>
+        <tag>Linux</tag>
         <tag>IPtables</tag>
         <tag>防火墙</tag>
         <tag>firewall</tag>
         <tag>网络安全</tag>
-        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>应对恶意评论：从 Twikoo 到 Artalk 的防护之路</title>
+    <url>/posts/Management-Commentary/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>起初，博客使用的评论系统是 <code>twikoo</code>，它小巧实用，功能虽然简洁，但已包含主要的评论功能、邮箱通知以及反垃圾评论机制，评论数据以 <code>json</code> 文件存储。这对我这样的小站来说，本已绰绰有余。然而，近一个月以来，某人莫名开始恶意评论，甚至模仿其他人的留言反复发送（起初我还以为是 <code>twikoo</code> 的问题）。本以为只是几天的恶作剧，没想到持续了整整一个月。在此，我真心佩服这位恶意评论者，竟然愿意在他的人生中耗费如此多的时间和精力，专注于折腾我这个小破站。</p>
+<table>
+<thead>
+<tr>
+<th><img src="https://img.misaka.pics/ShellBlogImg/1/2024/11/15/67370eb853aa7.webp" alt="恶意评论-1.webp"></th>
+<th><img src="https://img.misaka.pics/ShellBlogImg/1/2024/11/15/67370eb85a43b.webp" alt="恶意评论-2.webp"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://img.misaka.pics/ShellBlogImg/1/2024/11/15/67370eb877da9.webp" alt="恶意评论-3.webp"></td>
+<td><img src="https://img.misaka.pics/ShellBlogImg/1/2024/11/15/67370eb8d753a.webp" alt="恶意评论-4.webp"></td>
+</tr>
+</tbody></table>
+<h1 id="整治"><a href="#整治" class="headerlink" title="整治"></a>整治</h1><p>我首先将评论系统从 <code>twikoo</code> 更换为 <code>artalk</code>，因为 <code>twikoo</code> 使用 <code>POST</code> 方法获取评论，而我的初衷是阻止恶意评论的同时尽量不影响正常用户。更换为 <code>artalk</code> 后，评论获取改为使用 <code>GET</code> 方法，同时我还设置了 <code>artalk</code> 的首次评论需经过审核。  </p>
+<p>接着，我在 <code>Cloudflare</code> 中配置了 <code>WAF</code>（Web 应用防火墙），并添加了以下规则：  </p>
+<figure class="highlight js"><table><tbody><tr><td class="code"><pre><span class="line">(http.<span class="property">host</span> eq <span class="string">"artalk.ning.moe"</span> and http.<span class="property">request</span>.<span class="property">uri</span>.<span class="property">path</span> eq <span class="string">"/api/v2/comments"</span> and ip.<span class="property">geoip</span>.<span class="property">asnum</span> eq <span class="number">13335</span> and http.<span class="property">request</span>.<span class="property">method</span> eq <span class="string">"POST"</span>)</span><br></pre></td></tr></tbody></table></figure>
+
+<p>判断主机名，判断请求路径、判断 ASN 段 判断POST请求，如果全中，就无法进行评论。后续我会收录一些常见的免费代理的 <code>ASN</code> 段</p>
+<h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1><p>如果上述防护措施无意中影响了正常用户的评论体验，我深表歉意。作为一个小站，最初只是希望能有更多人来这里留言互动，因此并未做过多的防护设置。没想到遇到恶意刷评论的情况，不得不采取一定的措施来保护站点。感谢每一位支持和理解的小伙伴，你们的留言是这个小站继续前行的动力！</p>
+</body></html>]]></content>
+      <categories>
+        <category>网络技术</category>
+      </categories>
+      <tags>
+        <tag>2024</tag>
+        <tag>twikoo</tag>
+        <tag>Artalk</tag>
       </tags>
   </entry>
   <entry>
@@ -824,147 +880,6 @@
       </tags>
   </entry>
   <entry>
-    <title>应对恶意评论：从 Twikoo 到 Artalk 的防护之路</title>
-    <url>/posts/Management-Commentary/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>起初，博客使用的评论系统是 <code>twikoo</code>，它小巧实用，功能虽然简洁，但已包含主要的评论功能、邮箱通知以及反垃圾评论机制，评论数据以 <code>json</code> 文件存储。这对我这样的小站来说，本已绰绰有余。然而，近一个月以来，某人莫名开始恶意评论，甚至模仿其他人的留言反复发送（起初我还以为是 <code>twikoo</code> 的问题）。本以为只是几天的恶作剧，没想到持续了整整一个月。在此，我真心佩服这位恶意评论者，竟然愿意在他的人生中耗费如此多的时间和精力，专注于折腾我这个小破站。</p>
-<table>
-<thead>
-<tr>
-<th><img src="https://img.misaka.pics/ShellBlogImg/1/2024/11/15/67370eb853aa7.webp" alt="恶意评论-1.webp"></th>
-<th><img src="https://img.misaka.pics/ShellBlogImg/1/2024/11/15/67370eb85a43b.webp" alt="恶意评论-2.webp"></th>
-</tr>
-</thead>
-<tbody><tr>
-<td><img src="https://img.misaka.pics/ShellBlogImg/1/2024/11/15/67370eb877da9.webp" alt="恶意评论-3.webp"></td>
-<td><img src="https://img.misaka.pics/ShellBlogImg/1/2024/11/15/67370eb8d753a.webp" alt="恶意评论-4.webp"></td>
-</tr>
-</tbody></table>
-<h1 id="整治"><a href="#整治" class="headerlink" title="整治"></a>整治</h1><p>我首先将评论系统从 <code>twikoo</code> 更换为 <code>artalk</code>，因为 <code>twikoo</code> 使用 <code>POST</code> 方法获取评论，而我的初衷是阻止恶意评论的同时尽量不影响正常用户。更换为 <code>artalk</code> 后，评论获取改为使用 <code>GET</code> 方法，同时我还设置了 <code>artalk</code> 的首次评论需经过审核。  </p>
-<p>接着，我在 <code>Cloudflare</code> 中配置了 <code>WAF</code>（Web 应用防火墙），并添加了以下规则：  </p>
-<figure class="highlight js"><table><tbody><tr><td class="code"><pre><span class="line">(http.<span class="property">host</span> eq <span class="string">"artalk.ning.moe"</span> and http.<span class="property">request</span>.<span class="property">uri</span>.<span class="property">path</span> eq <span class="string">"/api/v2/comments"</span> and ip.<span class="property">geoip</span>.<span class="property">asnum</span> eq <span class="number">13335</span> and http.<span class="property">request</span>.<span class="property">method</span> eq <span class="string">"POST"</span>)</span><br></pre></td></tr></tbody></table></figure>
-
-<p>判断主机名，判断请求路径、判断 ASN 段 判断POST请求，如果全中，就无法进行评论。后续我会收录一些常见的免费代理的 <code>ASN</code> 段</p>
-<h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1><p>如果上述防护措施无意中影响了正常用户的评论体验，我深表歉意。作为一个小站，最初只是希望能有更多人来这里留言互动，因此并未做过多的防护设置。没想到遇到恶意刷评论的情况，不得不采取一定的措施来保护站点。感谢每一位支持和理解的小伙伴，你们的留言是这个小站继续前行的动力！</p>
-</body></html>]]></content>
-      <categories>
-        <category>网络技术</category>
-      </categories>
-      <tags>
-        <tag>2024</tag>
-        <tag>twikoo</tag>
-        <tag>Artalk</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>ArchLinux 使用体验</title>
-    <url>/posts/ArchLinux/</url>
-    <content><![CDATA[<html><head></head><body><img src="https://img.misaka.pics/i/1/2023/02/09/63e4c0b786de8.webp" alt="archlinux-logo-dark-1200dpi.webp" style="zoom: 25%;">
-
-<h1 id="关于-ArchLinux"><a href="#关于-ArchLinux" class="headerlink" title="关于 ArchLinux"></a>关于 ArchLinux</h1><p>Arch 是Linux发行版的一个分支，arch的理念是完全自定义，没有所谓的系统版本，全部是滚动升级（长时间不滚，会滚炸，当然我每天开机第一件事就是滚一下）</p>
-<h1 id="正片开始"><a href="#正片开始" class="headerlink" title="正片开始"></a>正片开始</h1><h2 id="为什么非要选择Arch？"><a href="#为什么非要选择Arch？" class="headerlink" title="为什么非要选择Arch？"></a>为什么非要选择Arch？</h2><p>其实如果你要是在非中国大陆的话，我觉得你使用Ubuntu 或者其他的发行版大同小异，因为我看中了 Arch的万能的AUR软件仓库源，这里面有各位大佬自封装的软件，庞大的软件仓库，例如微信 需要wine 以及烦琐的配置 AUR 可以直接解决这些问题。</p>
-<h2 id="听说安装Arch很难？"><a href="#听说安装Arch很难？" class="headerlink" title="听说安装Arch很难？"></a>听说安装Arch很难？</h2><p>是的 Arch 的安装异常的烦琐切复杂 ，不过如果你擅用<code>Search</code>和<a href="https://wiki.archlinuxcn.org/wiki/%E9%A6%96%E9%A1%B5" rel="external nofollow noreferrer" title="ArchWiKi">ArchWiki</a> 和时间耐心的研究，其实很简单，我是一个纯Linux小白，在查阅ArchWiki花费大量的时间研究之后也安装成功。</p>
-<h2 id="我现在的状态？"><a href="#我现在的状态？" class="headerlink" title="我现在的状态？"></a>我现在的状态？</h2><p>我现在给电脑装载了双系统（怕arch崩了就无了） win11+arch</p>
-<p><img src="https://img.c-dreamer.top/i/1/2023/02/09/63e4bbfff1e9c.webp" alt="ArchLinux 配置.webp"></p>
-<h2 id="使用体验"><a href="#使用体验" class="headerlink" title="使用体验"></a>使用体验</h2><p>我用Arch差不多3个月了，除了刚开始的不适逐渐慢慢适应之后逐渐习惯，但我偶尔也很想换回windows，因为我现在还没有适应在linux只用一个根的感念，而不像windows的区概念（而且我分区还很多）。</p>
-<h1 id="你要现在立刻安装Arch？"><a href="#你要现在立刻安装Arch？" class="headerlink" title="你要现在立刻安装Arch？"></a>你要现在立刻安装Arch？</h1><h3 id="你会首先面临的问题"><a href="#你会首先面临的问题" class="headerlink" title="你会首先面临的问题"></a>你会首先面临的问题</h3><h4 id="游戏生态"><a href="#游戏生态" class="headerlink" title="游戏生态"></a>游戏生态</h4><p>首先Linux上虽然有steam 的Steam Play的加持，游戏生态逐步扩大，但还是有诸多游戏不能游玩，详情可以看这个<a href="https://www.protondb.com/" rel="external nofollow noreferrer" title="protondb">protondb</a>上搜索🔍，还有原神属于能玩的级别但是配置很烦琐。</p>
-<h4 id="软件的生态"><a href="#软件的生态" class="headerlink" title="软件的生态"></a>软件的生态</h4><p>虽然有AUR 的加持但仍然有很多软件只有windows平台还用<code>wine</code>调教不好它例如<code>office</code> ，但这不是说你不能使用这些功能，Linux有很多平替软件可以选择例如 <code>libreoffice</code> or <code>WPS</code>。</p>
-<h4 id="使用习惯"><a href="#使用习惯" class="headerlink" title="使用习惯"></a>使用习惯</h4><p>就像我前面提到的 Linux和Windows对于磁盘区的概念来说，以及你要面临一个新的桌面使用环境。</p>
-</body></html>]]></content>
-      <categories>
-        <category>生活随想</category>
-      </categories>
-      <tags>
-        <tag>2023</tag>
-        <tag>Linux</tag>
-        <tag>Arch</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>御坂美琴生日快乐</title>
-    <url>/posts/MisakaMikoto/</url>
-    <content><![CDATA[<html><head></head><body><blockquote>
-<p><strong>你指间闪烁的电光，是我此生不变的信仰唯有这超电磁炮将永世长存！！！</strong></p>
-</blockquote>
-<h1 id="首先-祝姐姐大人生日快乐，又一年生日到啦吗，真快呀。"><a href="#首先-祝姐姐大人生日快乐，又一年生日到啦吗，真快呀。" class="headerlink" title="首先,祝姐姐大人生日快乐，又一年生日到啦吗，真快呀。"></a>首先,祝姐姐大人生日快乐，又一年生日到啦吗，真快呀。</h1><img src="https://img.misaka.pics/i/1/2023/05/01/644f7e2e4fa62.webp" alt="d6e89b5.webp" style="zoom:50%;">
-
-<img src="https://img.misaka.pics/i/1/2023/05/01/644f7e24d2d9a.webp" alt="7606d4f59bf.webp" style="zoom:50%;">
-
-
-
-
-<h1 id="感想"><a href="#感想" class="headerlink" title="感想"></a>感想</h1><h2 id="对我个人："><a href="#对我个人：" class="headerlink" title="对我个人："></a>对我个人：</h2><p>我已经是一个入宅很晚很晚的人了，我的入宅番是 <code>约战</code> 我并不是完完全全的 某科学的 世界的粉丝，我也并没有看过魔法禁书目录，我仅对于 超电磁炮 御坂美琴的热爱。</p>
-<blockquote>
-<p>摘抄一部分萌娘百科的话。</p>
-<p>天真活泼、爱唠叨的14岁元气少女。有着一头及肩的茶色发丝、同样是茶色的瞳孔、绝不服输的眼神、不需要化妆也很俏丽的面孔。因为外形秀丽加上成绩优秀，因此成为校内学生心目中的偶像，甚至会被学妹们尊称为“御坂大人”。平素都是穿着常盘台的制服，而裙底的安全裤则是美琴活泼的象征。性格好胜、正义感强，有着男孩子般的爽朗性格，但是尤其是在面对可爱的东西时，就显得缺乏耐心、非常不坦率。当喜欢的东西（呱太）或中意的东西被别人评价说“太儿童化”的时候，都会义正言辞地的否决，然后愉♂悦地享受。紧张时会蹦出“喵”的口癖，并且在担心他人慌乱时会自称“美琴姐姐”</p>
-</blockquote>
-<h2 id="对于B站："><a href="#对于B站：" class="headerlink" title="对于B站："></a>对于B站：</h2><p>虽然我入宅很晚，我接触B站也是比较晚了，但最近几年B站环境都是人尽皆知的事情了，对于 B站往年 不管是对 美琴的庆生 还是对其他知名的动漫人物，都是在发的，对于去年B站没有给美琴庆生以及其他人物，我表示非常是生气也表示非常的无奈，但对于今年B站的改变，对于庆生很早就开始宣传了，但并不是 哔哩哔哩弹幕网 这个账号进行宣传，而是 哔哩哔哩番剧组和哔哩哔哩会员购 进行宣传的。剩下的我就不想多说了，B站快要嗝屁的时候还想在收割一波自己以前最老以及起家的人，怎么说呢。从以前B站属于二次元的天地，到最后 二次元滚出B站。</p>
-<p>可能以前 别人说我是二刺螈 我表示可能会有点开心，但对于近几年 <strong>滚，老子不是二次元</strong></p>
-<h2 id="结束语"><a href="#结束语" class="headerlink" title="结束语"></a>结束语</h2><p>时间会磨损一切，那么我又能坚持多久呢？</p>
-<h1 id="引用："><a href="#引用：" class="headerlink" title="引用："></a>引用：</h1><p> 萌娘百科：<a href="https://zh.moegirl.org.cn/%E5%BE%A1%E5%9D%82%E7%BE%8E%E7%90%B4" rel="external nofollow noreferrer">御坂美琴人物简介</a></p>
-</body></html>]]></content>
-      <categories>
-        <category>生活随想</category>
-      </categories>
-      <tags>
-        <tag>Misaka</tag>
-        <tag>御坂美琴</tag>
-        <tag>某科学的</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【记】中国移动携号转网至中国电信</title>
-    <url>/posts/Mobile-Number-Portability/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>博主家曾全是中国移动，最长的一个号码已使用超过6000天。虽然一开始对于携号转网心存疑虑，但随着时间推移，尤其是19年将宽带迁移至电信后，我逐渐决定放弃中国移动。经过多次骚扰电话和长辈账户的额外费用，携号转网的想法再度提上日程。随着2025年携号转网政策实施五周年，流程已理论成熟，但实际操作过程中仍存在许多繁琐和问题。以下是我的转网经历与总结。</p>
-<h1 id="携号准备"><a href="#携号准备" class="headerlink" title="携号准备"></a>携号准备</h1><p>在携号转网之前，首先需要确认自己的号码是否符合转网条件。你可以通过发送个人信息查询是否有资格办理。短信内容格式为：</p>
-<blockquote>
-<p>CXXZ#用户名#证件号码</p>
-</blockquote>
-<p>把上面的按照你的个人信息填好，发送至你现在的运营商(移动:10086、电信:10001、联通:10010)，基本上会有以下情况，如果同意那么准备阶段就已经结束了，如果没有就先打对应的运营商电话(移动:10086、电信:10001、联通:10010)，询问携号转网有影响的业务虽然一般业务取消是次月生效，但是如果解除了你可以再试试能否有资格写好转网，一般都是取消业务直接就可以了。</p>
-<table>
-<thead>
-<tr>
-<th>【携号转网告知提醒】尊敬的客户，您好！您的号码满足携转条件，如需办理携号转网服务，请携带有效身份证件前往拟携入运营企业当地营业厅办理。受欠费、在网协议等因素影响，携转资格可能发生变化，建议办理前再次查询。详询10086。【中国移动心级服务，让爱连接】</th>
-<th>【携号转网告知提醒】尊敬的客户，您好！您的号码满足携转条件，如需办理携号转网服务，请携带有效身份证件前往拟携入运营企业当地营业厅办理。受欠费、在网协议等因素影响，携转资格可能发生变化，建议办理前再次查询。详询10086。【中国移动心级服务，让爱连接】</th>
-</tr>
-</thead>
-</table>
-<h1 id="携入准备"><a href="#携入准备" class="headerlink" title="携入准备"></a>携入准备</h1><p>这个问题就开始比较棘手了，因为各地区的规定可能并不一样，一般情况下按照工信部发布的携号转网是可以直接去线下的营业厅进行办理的，但博主遇到的确实以各种理由延长或拒绝受理携号入网的。按照 <a href="https://www.gov.cn/xinwen/2019-11/11/content_5450928.htm" rel="external nofollow noreferrer">工业和信息化部关于印发《携号转网服务管理规定》的通知</a> 第九条第一小项：无正当理由拒绝、阻止、拖延向用户提供携号转网服务。</p>
-<p>博主被告知的是没有名额需要预约，并且需要到下个月的8号，博主是2月4号去带长辈过去办理的，相当于等一月，而且预约并不能线上或者给营业厅打电话，必须本人携带身份证进行预约，经与工作人员沟通确认相关服务细则，并告知并没有，随后带着长辈先去逛逛商业街，给电信进行申请工单，到2月6号才被告知才可以进行携号转网，但是还只能先转入两个7号再转入一个，经过一系列的撕扯，最终他们同意6号当天进行转入3个。</p>
-<p>所以这种东西建议还是去实地考察以下，毕竟就算一个省，不同地区都不一样，例如博主江苏省南京市携号转网，就没有预约和名额这个问题，但是博主家的市就有这个问题。</p>
-<h1 id="进行携入"><a href="#进行携入" class="headerlink" title="进行携入"></a>进行携入</h1><p>随后6号去到营业厅，申请转移码,根据下面的个人信息填好，发送至你现在的运营商(移动:10086、电信:10001、联通:10010)。</p>
-<blockquote>
-<p>SQXZ#用户名#证件号码</p>
-</blockquote>
-<p>差不多是下面这种格式，转移码有效期一个小时</p>
-<blockquote>
-<p>【携号转网告知提醒】尊敬的客户，您好！您申请的携出授权码为464036，有效期到2025-02-06 12:03。您需在有效期内携带有效身份证件前往拟携入运营企业当地营业厅办理，逾期办理需重新申请授权码。详询10086。【中国移动心级服务，让爱连接】</p>
-</blockquote>
-<p>以及漫长的等待差不多一个号码转入需要花费20分钟，以及一个小时只能转移一个号码，什么意思呢？举个例子:</p>
-<blockquote>
-<p>例如 ：张三先生手里面有2个号码转入XXX运营商，例如他是9点<del>10点区间内转移的第一个号码，那么下次转移最快需要在10</del>11点区间进行转移，像博主转移三个号码但是A先生是有两个号码B女士是一个号码，那么实际上A先生需要花费两个小时进行转移，而B女士只需要不受等待期印象，因为系统只认你证件。</p>
-</blockquote>
-<p>所以假设有很多的号码尽量转移给不通的亲属名下，会加速转移的进程。</p>
-<p>此外运营商同步信息是1个小时同步一次，例如 10~11点区间写好转移成功，那么新的sim卡会在12点之后才可以进行使用，再次之前您的旧卡仍然可以正常使用。</p>
-<p>以及测试以下新卡启动服务之后拨打电话是否正常，以博主的举例：移动转电信，那么去找朋友或者亲戚有移动的手机号以及电信的手机号进行拨打是否正常，防止会出现这个新闻：<a href="https://news.qq.com/rain/a/20240528A071H300" rel="external nofollow noreferrer">同一号码竟有两家运营商用户同时在用？江苏省通信管理局现场回应</a></p>
-<h1 id="旧运营商花费取出"><a href="#旧运营商花费取出" class="headerlink" title="旧运营商花费取出"></a>旧运营商花费取出</h1><p>在 <a href="#%E8%BF%9B%E8%A1%8C%E6%90%BA%E5%85%A5">进行携入</a> 章节有说过信息同步是1个小时，也就是说在你号码正式生效之后你就可以去老的运营商营业厅，携带有效证件进行退花费，博主这边移动退给你花费是工作人员直接微信扫码给你。但博主也搜索到案例说是次月6号之后，才可以办理，博主打算只是去碰碰运气，后面就详细询问了移动的工作人员，表示需要至少1个整点左右，不然系统不太能同步数据，基本上你这边转网成功一个整点后是可以退的。</p>
-<h1 id="总结以下"><a href="#总结以下" class="headerlink" title="总结以下"></a>总结以下</h1><p>虽然携号转网政策已经实行五年之久了，本想着处理流程可能会进行优化，但是实际进行转网之后遇到各种问题，例如博主所在的城市的电信有着自己的小规定，但是网上也只有一篇搜狐的文章： <a href="https://www.sohu.com/a/782558519_121282114" rel="external nofollow noreferrer">记者调查：携号转网，不是想转就能转？</a> 以及线上貌似可以随便办理，但是没有办法进行复杂的选择例如电信只能 35元或者更贵的套餐，并没有办法进行复杂操作，以及携号转网受理时间之久，3个号不算等待期，只算工作人员进行受理，平均一个手机号需要20~30分钟的处理时间，说一比较坏的如果客服全部提交内容但正好已经到了下一个整点，就要在等一个整点了。只能说携号转网确实是好的，但是实际执行还是很歪歪扭扭的，以及网上并没有这种坑的存在，甚至这种等待期的整点生效也很少文章会提到，大多数的还是转发，多么简答的复制粘贴，只告诉你只需要发送两个短信就可以了。emmmm</p>
-<p>好吧最后希望我的文章帮助更多的想进行携号转网，另外既然你看到这里了，我就说一个小秘密，其实我电信工单建立并没有处理我的诉求，后通过工信部用户申诉渠道推动问题解决(<a href="https://yhssglxt.miit.gov.cn/web/" rel="external nofollow noreferrer">工业和信息化部电信用户申诉受理中心</a>)，感谢主管部门的协调处理。</p>
-<h1 id="免责声明"><a href="#免责声明" class="headerlink" title="免责声明"></a>免责声明</h1><p>本篇文章仅为博主个人在携号转网过程中的经历与分享。文章中的所有操作流程、规则及细节仅代表博主所在地区的实际情况，可能会因地区、运营商、时间等因素有所不同，具体流程请根据个人所在地区及运营商的规定进行咨询和确认。</p>
-<p>博主并未接受任何公司或第三方的赞助，文章内容完全基于个人经验及公开可获取的信息。请读者在办理携号转网时，遵循官方运营商和相关部门的最新政策与指导，谨慎处理个人信息，并确保所提供的操作符合当地的法律法规。</p>
-<p>如有任何关于携号转网的疑问，建议直接联系各运营商或相关主管部门，以获取更加准确和及时的帮助。</p>
-<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>工业和信息化部关于印发《携号转网服务管理规定》的通知：<a href="https://www.gov.cn/xinwen/2019-11/11/content_5450928.htm" rel="external nofollow noreferrer">https://www.gov.cn/xinwen/2019-11/11/content_5450928.htm</a><br>记者调查：携号转网，不是想转就能转？：<a href="https://www.sohu.com/a/782558519_121282114" rel="external nofollow noreferrer">https://www.sohu.com/a/782558519_121282114</a><br>同一号码竟有两家运营商用户同时在用？江苏省通信管理局现场回应：<a href="https://news.qq.com/rain/a/20240528A071H300" rel="external nofollow noreferrer">https://news.qq.com/rain/a/20240528A071H300</a><br>工业和信息化部电信用户申诉受理中心：<a href="https://yhssglxt.miit.gov.cn/web/" rel="external nofollow noreferrer">https://yhssglxt.miit.gov.cn/web/</a></p>
-<p>封面图来自中国电信官网：<a href="https://www.189.cn/" rel="external nofollow noreferrer">https://www.189.cn/</a></p>
-</body></html>]]></content>
-      <categories>
-        <category>生活随想</category>
-      </categories>
-      <tags>
-        <tag>携号转网</tag>
-        <tag>中国电信</tag>
-        <tag>中国移动</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>改造宿舍网络</title>
     <url>/posts/Modification-of-dormitory-network/</url>
     <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>到了新学校了，最担心的还是宿舍的校园网，嗯非常的坑（校园网络是被一个平台垄断了，然后出口是三大运营商，需要办理对应的卡解锁网络出口），在用完我一个月的流量之后打算还是办理一张卡吧，其实在没办理看的时候我就收集了一下信息，学校使用的是<a href="https://www.ruijie.com.cn/cp/yyxt-yygl/samx/" rel="external nofollow noreferrer">锐捷认证的</a>，emmm 又是锐捷漏洞真多的，我尝试试了一下已知漏洞，好吧果然没用，再加上博主并不是安全的专业只会点皮毛而已。</p>
@@ -1014,6 +929,38 @@
       <tags>
         <tag>2024</tag>
         <tag>OpenWrt</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>御坂美琴生日快乐</title>
+    <url>/posts/MisakaMikoto/</url>
+    <content><![CDATA[<html><head></head><body><blockquote>
+<p><strong>你指间闪烁的电光，是我此生不变的信仰唯有这超电磁炮将永世长存！！！</strong></p>
+</blockquote>
+<h1 id="首先-祝姐姐大人生日快乐，又一年生日到啦吗，真快呀。"><a href="#首先-祝姐姐大人生日快乐，又一年生日到啦吗，真快呀。" class="headerlink" title="首先,祝姐姐大人生日快乐，又一年生日到啦吗，真快呀。"></a>首先,祝姐姐大人生日快乐，又一年生日到啦吗，真快呀。</h1><img src="https://img.misaka.pics/i/1/2023/05/01/644f7e2e4fa62.webp" alt="d6e89b5.webp" style="zoom:50%;">
+
+<img src="https://img.misaka.pics/i/1/2023/05/01/644f7e24d2d9a.webp" alt="7606d4f59bf.webp" style="zoom:50%;">
+
+
+
+
+<h1 id="感想"><a href="#感想" class="headerlink" title="感想"></a>感想</h1><h2 id="对我个人："><a href="#对我个人：" class="headerlink" title="对我个人："></a>对我个人：</h2><p>我已经是一个入宅很晚很晚的人了，我的入宅番是 <code>约战</code> 我并不是完完全全的 某科学的 世界的粉丝，我也并没有看过魔法禁书目录，我仅对于 超电磁炮 御坂美琴的热爱。</p>
+<blockquote>
+<p>摘抄一部分萌娘百科的话。</p>
+<p>天真活泼、爱唠叨的14岁元气少女。有着一头及肩的茶色发丝、同样是茶色的瞳孔、绝不服输的眼神、不需要化妆也很俏丽的面孔。因为外形秀丽加上成绩优秀，因此成为校内学生心目中的偶像，甚至会被学妹们尊称为“御坂大人”。平素都是穿着常盘台的制服，而裙底的安全裤则是美琴活泼的象征。性格好胜、正义感强，有着男孩子般的爽朗性格，但是尤其是在面对可爱的东西时，就显得缺乏耐心、非常不坦率。当喜欢的东西（呱太）或中意的东西被别人评价说“太儿童化”的时候，都会义正言辞地的否决，然后愉♂悦地享受。紧张时会蹦出“喵”的口癖，并且在担心他人慌乱时会自称“美琴姐姐”</p>
+</blockquote>
+<h2 id="对于B站："><a href="#对于B站：" class="headerlink" title="对于B站："></a>对于B站：</h2><p>虽然我入宅很晚，我接触B站也是比较晚了，但最近几年B站环境都是人尽皆知的事情了，对于 B站往年 不管是对 美琴的庆生 还是对其他知名的动漫人物，都是在发的，对于去年B站没有给美琴庆生以及其他人物，我表示非常是生气也表示非常的无奈，但对于今年B站的改变，对于庆生很早就开始宣传了，但并不是 哔哩哔哩弹幕网 这个账号进行宣传，而是 哔哩哔哩番剧组和哔哩哔哩会员购 进行宣传的。剩下的我就不想多说了，B站快要嗝屁的时候还想在收割一波自己以前最老以及起家的人，怎么说呢。从以前B站属于二次元的天地，到最后 二次元滚出B站。</p>
+<p>可能以前 别人说我是二刺螈 我表示可能会有点开心，但对于近几年 <strong>滚，老子不是二次元</strong></p>
+<h2 id="结束语"><a href="#结束语" class="headerlink" title="结束语"></a>结束语</h2><p>时间会磨损一切，那么我又能坚持多久呢？</p>
+<h1 id="引用："><a href="#引用：" class="headerlink" title="引用："></a>引用：</h1><p> 萌娘百科：<a href="https://zh.moegirl.org.cn/%E5%BE%A1%E5%9D%82%E7%BE%8E%E7%90%B4" rel="external nofollow noreferrer">御坂美琴人物简介</a></p>
+</body></html>]]></content>
+      <categories>
+        <category>生活随想</category>
+      </categories>
+      <tags>
+        <tag>Misaka</tag>
+        <tag>御坂美琴</tag>
+        <tag>某科学的</tag>
       </tags>
   </entry>
   <entry>
@@ -1100,6 +1047,108 @@
       </tags>
   </entry>
   <entry>
+    <title>【记】中国移动携号转网至中国电信</title>
+    <url>/posts/Mobile-Number-Portability/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>博主家曾全是中国移动，最长的一个号码已使用超过6000天。虽然一开始对于携号转网心存疑虑，但随着时间推移，尤其是19年将宽带迁移至电信后，我逐渐决定放弃中国移动。经过多次骚扰电话和长辈账户的额外费用，携号转网的想法再度提上日程。随着2025年携号转网政策实施五周年，流程已理论成熟，但实际操作过程中仍存在许多繁琐和问题。以下是我的转网经历与总结。</p>
+<h1 id="携号准备"><a href="#携号准备" class="headerlink" title="携号准备"></a>携号准备</h1><p>在携号转网之前，首先需要确认自己的号码是否符合转网条件。你可以通过发送个人信息查询是否有资格办理。短信内容格式为：</p>
+<blockquote>
+<p>CXXZ#用户名#证件号码</p>
+</blockquote>
+<p>把上面的按照你的个人信息填好，发送至你现在的运营商(移动:10086、电信:10001、联通:10010)，基本上会有以下情况，如果同意那么准备阶段就已经结束了，如果没有就先打对应的运营商电话(移动:10086、电信:10001、联通:10010)，询问携号转网有影响的业务虽然一般业务取消是次月生效，但是如果解除了你可以再试试能否有资格携号转网，一般都是取消业务直接就可以了。</p>
+<table>
+<thead>
+<tr>
+<th>【携号转网告知提醒】尊敬的客户，您好！您的号码有在网协议“XXX活动（1年）”影响携号转网办理。详询10086。【中国移动】</th>
+<th>【携号转网告知提醒】尊敬的客户，您好！您的号码满足携转条件，如需办理携号转网服务，请携带有效身份证件前往拟携入运营企业当地营业厅办理。受欠费、在网协议等因素影响，携转资格可能发生变化，建议办理前再次查询。详询10086。【中国移动心级服务，让爱连接】</th>
+</tr>
+</thead>
+</table>
+<h1 id="携入准备"><a href="#携入准备" class="headerlink" title="携入准备"></a>携入准备</h1><p>这个问题就开始比较棘手了，因为各地区的规定可能并不一样，一般情况下按照工信部发布的携号转网是可以直接去线下的营业厅进行办理的，但博主遇到的确实以各种理由延长或拒绝受理携号入网的。按照 <a href="https://www.gov.cn/xinwen/2019-11/11/content_5450928.htm" rel="external nofollow noreferrer">工业和信息化部关于印发《携号转网服务管理规定》的通知</a> 第九条第一小项：无正当理由拒绝、阻止、拖延向用户提供携号转网服务。</p>
+<p>博主被告知的是没有名额需要预约，并且需要到下个月的8号，博主是2月4号去带长辈过去办理的，相当于等一月，而且预约并不能线上或者给营业厅打电话，必须本人携带身份证进行预约，经与工作人员沟通确认相关服务细则，并告知并没有，随后带着长辈先去逛逛商业街，给电信进行申请工单，到2月6号才被告知才可以进行携号转网，但是还只能先转入两个7号再转入一个，经过一系列的撕扯，最终他们同意6号当天进行转入3个。</p>
+<p>所以这种东西建议还是去实地考察以下，毕竟就算一个省，不同地区都不一样，例如博主江苏省南京市携号转网，就没有预约和名额这个问题，但是博主家的市就有这个问题。</p>
+<h1 id="进行携入"><a href="#进行携入" class="headerlink" title="进行携入"></a>进行携入</h1><p>随后6号去到营业厅，申请转移码,根据下面的个人信息填好，发送至你现在的运营商(移动:10086、电信:10001、联通:10010)。</p>
+<blockquote>
+<p>SQXZ#用户名#证件号码</p>
+</blockquote>
+<p>差不多是下面这种格式，转移码有效期一个小时</p>
+<blockquote>
+<p>【携号转网告知提醒】尊敬的客户，您好！您申请的携出授权码为464036，有效期到2025-02-06 12:03。您需在有效期内携带有效身份证件前往拟携入运营企业当地营业厅办理，逾期办理需重新申请授权码。详询10086。【中国移动心级服务，让爱连接】</p>
+</blockquote>
+<p>以及漫长的等待差不多一个号码转入需要花费20分钟，以及一个小时只能转移一个号码，什么意思呢？举个例子:</p>
+<blockquote>
+<p>例如 ：张三先生手里面有2个号码转入XXX运营商，例如他是9点<del>10点区间内转移的第一个号码，那么下次转移最快需要在10</del>11点区间进行转移，像博主转移三个号码但是A先生是有两个号码B女士是一个号码，那么实际上A先生需要花费两个小时进行转移，而B女士只需要不受等待期印象，因为系统只认你证件。</p>
+</blockquote>
+<p>所以假设有很多的号码尽量转移给不同的亲属名下，会加速转移的进程。</p>
+<p>此外运营商同步信息是1个小时同步一次，例如 10~11点区间写好转移成功，那么新的sim卡会在12点之后才可以进行使用，再次之前您的旧卡仍然可以正常使用。</p>
+<p>以及测试以下新卡启动服务之后拨打电话是否正常，以博主的举例：移动转电信，那么去找朋友或者亲戚有移动的手机号以及电信的手机号进行拨打是否正常，防止会出现这个新闻：<a href="https://news.qq.com/rain/a/20240528A071H300" rel="external nofollow noreferrer">同一号码竟有两家运营商用户同时在用？江苏省通信管理局现场回应</a></p>
+<h1 id="旧运营商花费取出"><a href="#旧运营商花费取出" class="headerlink" title="旧运营商花费取出"></a>旧运营商花费取出</h1><p>在 <a href="#%E8%BF%9B%E8%A1%8C%E6%90%BA%E5%85%A5">进行携入</a> 章节有说过信息同步是1个小时，也就是说在你号码正式生效之后你就可以去老的运营商营业厅，携带有效证件进行退花费，博主这边移动退给你花费是工作人员直接微信扫码给你。但博主也搜索到案例说是次月6号之后，才可以办理，博主打算只是去碰碰运气，后面就详细询问了移动的工作人员，表示需要至少1个整点左右，不然系统不太能同步数据，基本上你这边转网成功一个整点后是可以退的。</p>
+<h1 id="总结以下"><a href="#总结以下" class="headerlink" title="总结以下"></a>总结以下</h1><p>虽然携号转网政策已经实行五年之久了，本想着处理流程可能会进行优化，但是实际进行转网之后遇到各种问题，例如博主所在的城市的电信有着自己的小规定，但是网上也只有一篇搜狐的文章： <a href="https://www.sohu.com/a/782558519_121282114" rel="external nofollow noreferrer">记者调查：携号转网，不是想转就能转？</a> 以及线上貌似可以随便办理，但是没有办法进行复杂的选择例如电信只能 35元或者更贵的套餐，并没有办法进行复杂操作，以及携号转网受理时间之久，3个号不算等待期，只算工作人员进行受理，平均一个手机号需要20~30分钟的处理时间，说一比较坏的如果客服全部提交内容但正好已经到了下一个整点，就要在等一个整点了。只能说携号转网确实是好的，但是实际执行还是很歪歪扭扭的，以及网上并没有这种坑的存在，甚至这种等待期的整点生效也很少文章会提到，大多数的还是转发，多么简答的复制粘贴，只告诉你只需要发送两个短信就可以了。emmmm</p>
+<p>好吧最后希望我的文章帮助更多的想进行携号转网，另外既然你看到这里了，我就说一个小秘密，其实我电信工单建立并没有处理我的诉求，后通过工信部用户申诉渠道推动问题解决(<a href="https://yhssglxt.miit.gov.cn/web/" rel="external nofollow noreferrer">工业和信息化部电信用户申诉受理中心</a>)，感谢主管部门的协调处理。</p>
+<h1 id="免责声明"><a href="#免责声明" class="headerlink" title="免责声明"></a>免责声明</h1><p>本篇文章仅为博主个人在携号转网过程中的经历与分享。文章中的所有操作流程、规则及细节仅代表博主所在地区的实际情况，可能会因地区、运营商、时间等因素有所不同，具体流程请根据个人所在地区及运营商的规定进行咨询和确认。</p>
+<p>博主并未接受任何公司或第三方的赞助，文章内容完全基于个人经验及公开可获取的信息。请读者在办理携号转网时，遵循官方运营商和相关部门的最新政策与指导，谨慎处理个人信息，并确保所提供的操作符合当地的法律法规。</p>
+<p>如有任何关于携号转网的疑问，建议直接联系各运营商或相关主管部门，以获取更加准确和及时的帮助。</p>
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>工业和信息化部关于印发《携号转网服务管理规定》的通知：<a href="https://www.gov.cn/xinwen/2019-11/11/content_5450928.htm" rel="external nofollow noreferrer">https://www.gov.cn/xinwen/2019-11/11/content_5450928.htm</a><br>记者调查：携号转网，不是想转就能转？：<a href="https://www.sohu.com/a/782558519_121282114" rel="external nofollow noreferrer">https://www.sohu.com/a/782558519_121282114</a><br>同一号码竟有两家运营商用户同时在用？江苏省通信管理局现场回应：<a href="https://news.qq.com/rain/a/20240528A071H300" rel="external nofollow noreferrer">https://news.qq.com/rain/a/20240528A071H300</a><br>工业和信息化部电信用户申诉受理中心：<a href="https://yhssglxt.miit.gov.cn/web/" rel="external nofollow noreferrer">https://yhssglxt.miit.gov.cn/web/</a></p>
+<p>封面图来自中国电信官网：<a href="https://www.189.cn/" rel="external nofollow noreferrer">https://www.189.cn/</a></p>
+</body></html>]]></content>
+      <categories>
+        <category>生活随想</category>
+      </categories>
+      <tags>
+        <tag>携号转网</tag>
+        <tag>中国电信</tag>
+        <tag>中国移动</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>我的网站被人镜像了</title>
+    <url>/posts/Website-mirrored/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>事情是这样的我昨天配置一些东西是错的，同步上去了今天才发现，随后回滚之后发现防战访问突然下降好多，我以为是Google 没有收录一些文章决定拿一些文章关键词搜一搜，发现了两个我。</p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/08/11/66b8c1d2bb798.webp" alt="vs.webp"></p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/08/11/66b8c42125db6.webp" alt="mangxb.webp"></p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/08/11/66b8c45dd04f6.webp" alt="Snipaste_2024-08-11_21-42-05.webp"></p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/08/11/66b8c496e4fa7.webp" alt="Snipaste_2024-08-11_21-42-28.webp"><br>我已经向 Google bing dnspod  cloudlfare 进行举报 数字千年版权法案(DMCA) ，请 域名所属人立即删除我所有文章，网站等一些列属于我的数据。</p>
+<h1 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h1><p>本篇文章着急发出，可能会有问题，请大家见谅。</p>
+</body></html>]]></content>
+      <tags>
+        <tag>2024</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Memos 对接 Authentik</title>
+    <url>/posts/authentik-OAuth2-memos/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>关于我的更多 <a href="/tags/Authentik/"><code>Authentik </code>相关文章</a>  ，详细安装（中文版本）<code>Authentik </code>请访问 <a href="https://www.bilibili.com/video/av1902852247/" rel="external nofollow noreferrer"><strong>ecwuuu</strong>发布的B站视频</a>关于正向代理： <a href="https://roy.wang/authentik-open-source-sso/#%E6%AD%A3%E5%90%91%E4%BB%A3%E7%90%86" rel="external nofollow noreferrer">roywang的文章</a></p>
+<blockquote>
+<p> 配置中：这是什么啊，这么麻烦还没过去啊。 配置后：真香好方便。</p>
+</blockquote>
+<p>使用本文前请自行在 <code>Authentik </code>配置好 Memos使用的<code>应用程序</code>和<code>提供程序</code></p>
+<h1 id="Authentik-配置"><a href="#Authentik-配置" class="headerlink" title="Authentik 配置"></a>Authentik 配置</h1><p>默认你已经创建好了，一个给Memos使用的<code>应用程序</code>和<code>提供程序</code>,我们需要更改<code>提供程序</code>(给Memos 的)我们点击编辑</p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/09/66155d6445bbc.webp" alt="Authentik 配置 Memos-1.webp"></p>
+<blockquote>
+<p>选择客户端可以使用哪些作用域。客户端仍然需要指定访问数据的范围。</p>
+<p>按住 <code>ctrl/command</code> 键可选择多个项目。</p>
+</blockquote>
+<p>我们选中<code>authentik default OAuth Mapping: OpenID email</code> 和 <code>authentik default OAuth Mapping: OpenID openid</code>将<code>Subject 模式</code>改成基于用户名，然后更新。</p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/09/6615597f90737.webp" alt="Authentik 配置 Memos.webp"></p>
+<h1 id="Memos配置"><a href="#Memos配置" class="headerlink" title="Memos配置"></a>Memos配置</h1><blockquote>
+<p>在截至发文时 <code>Memos</code> 的版本为<code>v0.20.1</code>版本，<code>Memos</code>通过用户名为主键，其实只需要给<code>username</code>字段即可。</p>
+</blockquote>
+<p>根据上文调整的，现在sub 是我们的用户名字段，按照文章截屏填写其他的自行替换。这样你的的<code>Memos</code>就可以使用<code>Authentik</code>进行登录了。</p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/09/66155e6ca6dc7.webp" alt="Memos-Oauth2-config.webp"></p>
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p><code>Memos</code>的文档：<a href="https://www.usememos.com/docs/advanced-settings/keycloak" rel="external nofollow noreferrer">https://www.usememos.com/docs/advanced-settings/keycloak</a></p>
+</body></html>]]></content>
+      <categories>
+        <category>网络技术</category>
+      </categories>
+      <tags>
+        <tag>2024</tag>
+        <tag>Authentik</tag>
+        <tag>SSO</tag>
+        <tag>OIDC</tag>
+        <tag>OAuth2</tag>
+        <tag>Memos</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>解决Umami v2.3升级问题，Something went wrong.</title>
     <url>/posts/Umami-fix/</url>
     <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>是的没错，发生这样的事情，应该很多<code>Umami</code>只要是v2.2版本应该都遇到了。 </p>
@@ -1141,17 +1190,34 @@
       </tags>
   </entry>
   <entry>
-    <title>我的网站被人镜像了</title>
-    <url>/posts/Website-mirrored/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>事情是这样的我昨天配置一些东西是错的，同步上去了今天才发现，随后回滚之后发现防战访问突然下降好多，我以为是Google 没有收录一些文章决定拿一些文章关键词搜一搜，发现了两个我。</p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/08/11/66b8c1d2bb798.webp" alt="vs.webp"></p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/08/11/66b8c42125db6.webp" alt="mangxb.webp"></p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/08/11/66b8c45dd04f6.webp" alt="Snipaste_2024-08-11_21-42-05.webp"></p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/08/11/66b8c496e4fa7.webp" alt="Snipaste_2024-08-11_21-42-28.webp"><br>我已经向 Google bing dnspod  cloudlfare 进行举报 数字千年版权法案(DMCA) ，请 域名所属人立即删除我所有文章，网站等一些列属于我的数据。</p>
-<h1 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h1><p>本篇文章着急发出，可能会有问题，请大家见谅。</p>
+    <title>Hexo butterfly 优化</title>
+    <url>/posts/butterfly/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
+<p>我也来水一篇博文吧，最近我也不知道在忙什么（<del>明明就是懒得更新</del>），也感谢  @<a href="https://yujie.pro/network/52.html" rel="external nofollow noreferrer">夜灭</a>博主,让我可以水一篇博文以及再次优化hexo博客，如你所见我的博客在国内访问基本上都能在5秒以内完成这个所有加载。</p>
+</blockquote>
+<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><h2 id="博客基本情况"><a href="#博客基本情况" class="headerlink" title="博客基本情况"></a>博客基本情况</h2><p>优化过的情况</p>
+<ol>
+<li>源站在GitHub Pages上</li>
+<li>使用双解析模式（国内 腾讯云 国外Cloudflare）</li>
+<li>把 hexo 需要的静态js 资源全部缓存到源站，不在走<code>jsdelivr</code></li>
+<li>图床使用自建数据在<code>backblaze</code>存储桶上，详细的图床解决方案：<a href="https://blog.ning.moe/posts/lskypro-backblaze/">https://blog.ning.moe/posts/lskypro-backblaze/</a></li>
+<li>图床使用cf的自定义域名进行双解析和第二点一样。</li>
+</ol>
+<p><img src="https://img.c-dreamer.top/i/1/2023/04/22/64439fea99b29.webp" alt="图.webp"></p>
+<h2 id="butterfly-静态资源优化"><a href="#butterfly-静态资源优化" class="headerlink" title="butterfly 静态资源优化"></a>butterfly 静态资源优化</h2><p>在最新的 <code>butterfly </code>4.8.1 中加入了自定义cdn 功能，虽然以前也能改那就要一个一个配置文件上改了</p>
+<figure class="highlight yaml"><table><tbody><tr><td class="code"><pre><span class="line"><span class="attr">CDN:</span></span><br><span class="line">  <span class="comment"># The CDN provider of internal scripts (主題內部 js 的 cdn 配置)</span></span><br><span class="line">  <span class="comment"># option: local/jsdelivr/unpkg/cdnjs/custom</span></span><br><span class="line">  <span class="comment"># Dev version can only choose. ( dev版的主題只能設置為 local )</span></span><br><span class="line">  <span class="attr">internal_provider:</span> <span class="string">local</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># The CDN provider of third party scripts (第三方 js 的 cdn 配置)</span></span><br><span class="line">  <span class="comment"># option: local/jsdelivr/unpkg/cdnjs/custom</span></span><br><span class="line">  <span class="comment"># when set it to local, you need to install hexo-butterfly-extjs</span></span><br><span class="line">  <span class="attr">third_party_provider:</span> <span class="string">local</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># Add version number to url, true or false</span></span><br><span class="line">  <span class="attr">version:</span> <span class="literal">false</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># Custom format</span></span><br><span class="line">  <span class="comment"># For example: https://cdn.staticfile.org/${cdnjs_name}/${version}/${min_cdnjs_file}</span></span><br><span class="line">  <span class="attr">custom_format:</span> </span><br><span class="line">  <span class="comment">#以下省略</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>我这里使用了 <code>local</code>的CDN就是把所有资源封装在本地了，你需要执行<code>npm install hexo-butterfly-extjs</code>命令，hexo 三连命令即可<code>hexo cl &amp;&amp; hexo  generate &amp;&amp; hexo server</code>。</p>
+<p>如果你不喜欢这样的话，<a href="https://butterfly.js.org/posts/ceeb73f/#CDN" rel="external nofollow noreferrer">可以参考主题官方提供的配置</a>,可以选择如 七牛云 BootCDN Elemecdn 等<br>但是这个配置其他cdn 我测试的时候偶尔也会丢失一部分静态资源。</p>
 </body></html>]]></content>
+      <categories>
+        <category>网络技术</category>
+      </categories>
       <tags>
-        <tag>2024</tag>
+        <tag>hexo</tag>
+        <tag>butterfly</tag>
+        <tag>jsdelivr</tag>
+        <tag>CDN</tag>
       </tags>
   </entry>
   <entry>
@@ -1254,41 +1320,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Memos 对接 Authentik</title>
-    <url>/posts/authentik-OAuth2-memos/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>关于我的更多 <a href="/tags/Authentik/"><code>Authentik </code>相关文章</a>  ，详细安装（中文版本）<code>Authentik </code>请访问 <a href="https://www.bilibili.com/video/av1902852247/" rel="external nofollow noreferrer"><strong>ecwuuu</strong>发布的B站视频</a>关于正向代理： <a href="https://roy.wang/authentik-open-source-sso/#%E6%AD%A3%E5%90%91%E4%BB%A3%E7%90%86" rel="external nofollow noreferrer">roywang的文章</a></p>
-<blockquote>
-<p> 配置中：这是什么啊，这么麻烦还没过去啊。 配置后：真香好方便。</p>
-</blockquote>
-<p>使用本文前请自行在 <code>Authentik </code>配置好 Memos使用的<code>应用程序</code>和<code>提供程序</code></p>
-<h1 id="Authentik-配置"><a href="#Authentik-配置" class="headerlink" title="Authentik 配置"></a>Authentik 配置</h1><p>默认你已经创建好了，一个给Memos使用的<code>应用程序</code>和<code>提供程序</code>,我们需要更改<code>提供程序</code>(给Memos 的)我们点击编辑</p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/09/66155d6445bbc.webp" alt="Authentik 配置 Memos-1.webp"></p>
-<blockquote>
-<p>选择客户端可以使用哪些作用域。客户端仍然需要指定访问数据的范围。</p>
-<p>按住 <code>ctrl/command</code> 键可选择多个项目。</p>
-</blockquote>
-<p>我们选中<code>authentik default OAuth Mapping: OpenID email</code> 和 <code>authentik default OAuth Mapping: OpenID openid</code>将<code>Subject 模式</code>改成基于用户名，然后更新。</p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/09/6615597f90737.webp" alt="Authentik 配置 Memos.webp"></p>
-<h1 id="Memos配置"><a href="#Memos配置" class="headerlink" title="Memos配置"></a>Memos配置</h1><blockquote>
-<p>在截至发文时 <code>Memos</code> 的版本为<code>v0.20.1</code>版本，<code>Memos</code>通过用户名为主键，其实只需要给<code>username</code>字段即可。</p>
-</blockquote>
-<p>根据上文调整的，现在sub 是我们的用户名字段，按照文章截屏填写其他的自行替换。这样你的的<code>Memos</code>就可以使用<code>Authentik</code>进行登录了。</p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/04/09/66155e6ca6dc7.webp" alt="Memos-Oauth2-config.webp"></p>
-<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p><code>Memos</code>的文档：<a href="https://www.usememos.com/docs/advanced-settings/keycloak" rel="external nofollow noreferrer">https://www.usememos.com/docs/advanced-settings/keycloak</a></p>
-</body></html>]]></content>
-      <categories>
-        <category>网络技术</category>
-      </categories>
-      <tags>
-        <tag>2024</tag>
-        <tag>Authentik</tag>
-        <tag>SSO</tag>
-        <tag>OIDC</tag>
-        <tag>OAuth2</tag>
-        <tag>Memos</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>关于启动CDN发生一些难受的小bug</title>
     <url>/posts/cdn/</url>
     <content><![CDATA[<html><head></head><body><p>好久没有更新了，如果你要问我这段鸽了半年干了什么，我只能说啥事情都没有干，还是没有想好写什么,但是我一定会在6月结束会高产的。 当然关于:部署多的CDN同时加速的网上教程也很少（也可能我没有找到太多）</p>
@@ -1360,84 +1391,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Hexo butterfly 优化</title>
-    <url>/posts/butterfly/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
-<p>我也来水一篇博文吧，最近我也不知道在忙什么（<del>明明就是懒得更新</del>），也感谢  @<a href="https://yujie.pro/network/52.html" rel="external nofollow noreferrer">夜灭</a>博主,让我可以水一篇博文以及再次优化hexo博客，如你所见我的博客在国内访问基本上都能在5秒以内完成这个所有加载。</p>
-</blockquote>
-<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><h2 id="博客基本情况"><a href="#博客基本情况" class="headerlink" title="博客基本情况"></a>博客基本情况</h2><p>优化过的情况</p>
-<ol>
-<li>源站在GitHub Pages上</li>
-<li>使用双解析模式（国内 腾讯云 国外Cloudflare）</li>
-<li>把 hexo 需要的静态js 资源全部缓存到源站，不在走<code>jsdelivr</code></li>
-<li>图床使用自建数据在<code>backblaze</code>存储桶上，详细的图床解决方案：<a href="https://blog.ning.moe/posts/lskypro-backblaze/">https://blog.ning.moe/posts/lskypro-backblaze/</a></li>
-<li>图床使用cf的自定义域名进行双解析和第二点一样。</li>
-</ol>
-<p><img src="https://img.c-dreamer.top/i/1/2023/04/22/64439fea99b29.webp" alt="图.webp"></p>
-<h2 id="butterfly-静态资源优化"><a href="#butterfly-静态资源优化" class="headerlink" title="butterfly 静态资源优化"></a>butterfly 静态资源优化</h2><p>在最新的 <code>butterfly </code>4.8.1 中加入了自定义cdn 功能，虽然以前也能改那就要一个一个配置文件上改了</p>
-<figure class="highlight yaml"><table><tbody><tr><td class="code"><pre><span class="line"><span class="attr">CDN:</span></span><br><span class="line">  <span class="comment"># The CDN provider of internal scripts (主題內部 js 的 cdn 配置)</span></span><br><span class="line">  <span class="comment"># option: local/jsdelivr/unpkg/cdnjs/custom</span></span><br><span class="line">  <span class="comment"># Dev version can only choose. ( dev版的主題只能設置為 local )</span></span><br><span class="line">  <span class="attr">internal_provider:</span> <span class="string">local</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># The CDN provider of third party scripts (第三方 js 的 cdn 配置)</span></span><br><span class="line">  <span class="comment"># option: local/jsdelivr/unpkg/cdnjs/custom</span></span><br><span class="line">  <span class="comment"># when set it to local, you need to install hexo-butterfly-extjs</span></span><br><span class="line">  <span class="attr">third_party_provider:</span> <span class="string">local</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># Add version number to url, true or false</span></span><br><span class="line">  <span class="attr">version:</span> <span class="literal">false</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># Custom format</span></span><br><span class="line">  <span class="comment"># For example: https://cdn.staticfile.org/${cdnjs_name}/${version}/${min_cdnjs_file}</span></span><br><span class="line">  <span class="attr">custom_format:</span> </span><br><span class="line">  <span class="comment">#以下省略</span></span><br></pre></td></tr></tbody></table></figure>
-
-<p>我这里使用了 <code>local</code>的CDN就是把所有资源封装在本地了，你需要执行<code>npm install hexo-butterfly-extjs</code>命令，hexo 三连命令即可<code>hexo cl &amp;&amp; hexo  generate &amp;&amp; hexo server</code>。</p>
-<p>如果你不喜欢这样的话，<a href="https://butterfly.js.org/posts/ceeb73f/#CDN" rel="external nofollow noreferrer">可以参考主题官方提供的配置</a>,可以选择如 七牛云 BootCDN Elemecdn 等<br>但是这个配置其他cdn 我测试的时候偶尔也会丢失一部分静态资源。</p>
-</body></html>]]></content>
-      <categories>
-        <category>网络技术</category>
-      </categories>
-      <tags>
-        <tag>CDN</tag>
-        <tag>hexo</tag>
-        <tag>butterfly</tag>
-        <tag>jsdelivr</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>clash 使用</title>
-    <url>/posts/clash/</url>
-    <content><![CDATA[<html><head></head><body><p><strong><font color="red">请根据当地网络法律使用,本文章仅供学习使用,不负任何责任!</font></strong><br><strong><font color="red">请根据当地网络法律使用,本文章仅供学习使用,不负任何责任!</font></strong><br><strong><font color="red">请根据当地网络法律使用,本文章仅供学习使用,不负任何责任!</font></strong></p>
-<h1 id="clash-for-windows"><a href="#clash-for-windows" class="headerlink" title="clash for windows :"></a>clash for windows :</h1><p>此项目地址:<a href="https://github.com/Fndroid/clash_for_windows_pkg/releases" rel="external nofollow noreferrer">https://github.com/Fndroid/clash_for_windows_pkg/releases</a></p>
-<p>安装运行是这样的页面:<img src="https://cdn.jsdelivr.net/gh/biliblihuorong/Resources/Image/image-20210514120949169.png" alt="image-20210514120949169"></p>
-<h2 id="导入配置文件"><a href="#导入配置文件" class="headerlink" title="导入配置文件"></a>导入配置文件</h2><p>然后我们到<code>Proflies</code>.</p>
-<p>支持url和本地配置文件直接拖入的两种方式.</p>
-<p>URL导入:<img src="https://cdn.jsdelivr.net/gh/biliblihuorong/Resources/Image/image-20210514122121043.png" alt="image-20210514122121043"></p>
-<p>文件导入:<img src="https://docs.cfw.lbyczf.com/assets/img/quickstart3.b68e5259.gif" alt="img"></p>
-<p>记得回到<code>General</code>把<code>System Proxy</code>和<code>Start with windows</code>打开即可.</p>
-<h1 id="Clash-for-Android"><a href="#Clash-for-Android" class="headerlink" title="Clash for Android :"></a>Clash for Android :</h1><p>项目地址: <a href="https://github.com/Kr328/ClashForAndroid/releases" rel="external nofollow noreferrer">https://github.com/Kr328/ClashForAndroid/releases</a></p>
-<h2 id="导入配置文件-1"><a href="#导入配置文件-1" class="headerlink" title="导入配置文件:"></a>导入配置文件:</h2><p>导入和Windows基本一样,只不过<code>Android</code>app语言是中文了.</p>
-<p><img src="https://cdn.jsdelivr.net/gh/biliblihuorong/Resources/Image/clashAndroid1.png" alt="clashAndroid1"></p>
-</body></html>]]></content>
-      <categories>
-        <category>网络技术</category>
-      </categories>
-      <tags>
-        <tag>clash</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Umami空白页面</title>
-    <url>/posts/fix-umami-blank-page/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>每天会去umami 后台看一下当天的访客以及访问量那些文章，然后就发现了打开website的时候是空白页面，我以为是umami 没有更新最新版导致的问题，等我更新完毕之后发现还是一样的，打开 f12 看了一下 <code>webpack-532820dc741ca459.js</code>文件一直404。顺手水一下吧。<br><img src="https://img.misaka.pics/ShellBlogImg/1/2024/06/27/667d517263cb3.webp" alt="umami-blank-page.webp"></p>
-<p>环境说明：</p>
-<ul>
-<li>docker-compose 部署的umami版本是 v2.12.1</li>
-<li>宝塔nginx 反代的</li>
-</ul>
-<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><p>请检查反代 是否为<code>proxy_pass http://127.0.0.1:&lt;端口&gt;;</code> 不能是<code>proxy_pass http://127.0.0.1:&lt;端口&gt;/;</code></p>
-<p>如果不行请尝试删除反代重新添加，以及清理cdn的缓存。</p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/06/27/667d52e17d423.webp" alt="umami-blank-page-2.webp"></p>
-<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>Umami 的GitHub issues ：<a href="https://github.com/umami-software/umami/issues/2269" rel="external nofollow noreferrer">https://github.com/umami-software/umami/issues/2269</a></p>
-</body></html>]]></content>
-      <categories>
-        <category>网络技术</category>
-      </categories>
-      <tags>
-        <tag>2024</tag>
-        <tag>Umami</tag>
-        <tag>PV</tag>
-        <tag>网站统计，UV</tag>
-        <tag>Ip</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>解决Hexo博客框架中Twikoo评论框架路径不一致的问题</title>
     <url>/posts/fix-hexo-twikoocomment-path-inconsistency/</url>
     <content><![CDATA[<html><head></head><body><p>引言：</p>
@@ -1473,14 +1426,61 @@
       </tags>
   </entry>
   <entry>
-    <title>世界，您好！</title>
-    <url>/posts/hello-world-2-2/</url>
-    <content><![CDATA[<html><head></head><body><p>欢迎使用WordPress。这是您的第一篇文章。编辑或删除它，然后开始写作吧！</p>
-<p><embed src="//music.163.com/style/swf/widget.swf?sid=5110133&amp;type=2&amp;auto=1&amp;width=320&amp;height=66" width="340" height="86" allownetworking="all"></p>
+    <title>封印 Easyconnect</title>
+    <url>/posts/fuck-easyconnect/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="故事的起点"><a href="#故事的起点" class="headerlink" title="故事的起点"></a>故事的起点</h1><p>因为已经到了实习期，走<del>(滚)</del>出了学校,还要写这些烦人的周记属实难绷，还必须使用这个<code>Easyconnect</code>进行访问。</p>
+<p>如果你只是想搜索 <code>Easyconnect</code>却看到了这一篇文章，那么您可以仔细权衡一下有必要再去下载和使用<code>Easyconnect</code>了,如果问为什么不要使用<code>Easyconnect</code>。您可以去跳转到<a href="https://taoshu.in/easyconnect-in-docker.html" rel="external nofollow noreferrer">这一篇文章</a>或者可以看我使用<code>Chat GPT</code>进行总结这一篇文章的核心。</p>
+<blockquote>
+<p>当讨论深信服的 EasyConnect 客户端的安全隐患时，可以简化描述如下：</p>
+<ol>
+<li><p><strong>依赖问题：</strong> EasyConnect 客户端使用了一些旧的系统功能，这在最新版本的 macOS 上会导致它无法正常工作。这就好比用一个老式的车钥匙开启现代汽车一样，不再适配。</p>
+</li>
+<li><p><strong>根证书问题：</strong> EasyConnect 客户端在你的电脑上安装了一个特殊的证书，而这个证书的作用可能不仅限于官方所说的提供更好的浏览体验。这有点像你的家门锁被复制一把，而你不知道。</p>
+</li>
+<li><p><strong>自启动问题：</strong> EasyConnect 客户端还有一个进程，名为 EasyMonitor，它在你的电脑开机时就自动启动。这个进程有权监听你的一举一动，而你却不能简单地关闭它，否则你无法使用 VPN 服务。</p>
+</li>
+</ol>
+</blockquote>
+<p>而且这个东西还是全局代理的，所有流量都要经过转发，以及可能会对一些游戏例如CSGO 进行冲突。</p>
+<h1 id="需要准备的东西"><a href="#需要准备的东西" class="headerlink" title="需要准备的东西"></a>需要准备的东西</h1><ul>
+<li>一台运行了 Windows/MAC os /Linux 的电脑</li>
+<li>需要 docker 的使用</li>
+<li>需要 vnc 的连接</li>
+</ul>
+<h1 id="开始启动"><a href="#开始启动" class="headerlink" title="开始启动"></a>开始启动</h1><p>当然有这种烦人的东西也就有大佬挺身而出，<a href="https://github.com/docker-easyconnect/docker-easyconnect" rel="external nofollow noreferrer">docker-easyconnect</a>就是来解决这个问题，使用docker 进行封印。</p>
+<p>至于docker 和VNC的安装在这里就不进行赘述了，不是本篇文章的重点。使用以下命令运行docker 容器。</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">docker run --<span class="built_in">rm</span> --device /dev/net/tun --cap-add NET_ADMIN -ti -e PASSWORD=xxxx -e URLWIN=1 -v ~/.ecdata:/root -p 5901:5901 -p 1080:1080 -p 8888:8888 hagb/docker-easyconnect:7.6.7</span><br></pre></td></tr></tbody></table></figure>
+
+<p>windows 版本的：</p>
+<figure class="highlight powershell"><table><tbody><tr><td class="code"><pre><span class="line">docker run <span class="literal">--rm</span> <span class="literal">--device</span> /dev/net/tun <span class="literal">--cap-add</span> NET_ADMIN <span class="literal">-ti</span> <span class="literal">-e</span> PASSWORD=xxxx <span class="literal">-e</span> URLWIN=<span class="number">1</span> <span class="literal">-v</span> C:\Users\&lt;你的用户名&gt;\.ecdata:/root <span class="literal">-p</span> <span class="number">5901</span>:<span class="number">5901</span> <span class="literal">-p</span> <span class="number">1080</span>:<span class="number">1080</span> <span class="literal">-p</span> <span class="number">8888</span>:<span class="number">8888</span> hagb/docker<span class="literal">-easyconnect</span>:<span class="number">7.6</span>.<span class="number">7</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>其中<code> -v ~/.ecdata:/root</code> 运行成功后会在你的用户目录下创建一个<code>.ecdata</code>文件夹里面保存了你的登陆信息，下一次运行的时候就可以不需要输入用户和密码以及连接地址了。</p>
+<p>使用 <code>VNC</code> 连接就会发现和你在电脑版安装的之后页面是一样的输入连接的服务器地址以及账号和密码，记得勾选自动登录，下次启动的时候回去读取，你用户目录下的 <code>ecdata</code> 的文件。</p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2023/10/22/65347edfb2da2.webp" alt="VNC-1.webp"></p>
+<h1 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h1><p>我们暴露的 <code>1080</code> 和 <code>8888</code> 的端口分别是 <code>socket5</code>代理和<code>http</code>代理。</p>
+<p>Firefox 的浏览器的用户可以直接使用 设置 配置有个代理配置。</p>
+<p>这里更推荐使用edge ，因为国内好下载插件 打开这个网址下载：<a href="https://microsoftedge.microsoft.com/addons/detail/proxy-switchyomega/fdbloeknjpnloaggplaobopplkdhnikc?hl=zh-CN" rel="external nofollow noreferrer">Proxy SwitchyOmega - Microsoft Edge Addons</a></p>
+<p>我们打开插件的配置选项，按照下方图片的填写。</p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2023/10/22/65347b7f9620e.webp" alt="SwitchyOmega.webp"></p>
+<p>然后选择 proxy 的代理组，访问完毕内网资源，记住调成 系统代理选项卡，不然这个安装这个浏览器的插件会无法上网。</p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2023/10/22/65347c0eac9b4.webp" alt="SwitchyOmega-1.webp"></p>
+<h1 id="意外情况？"><a href="#意外情况？" class="headerlink" title="意外情况？"></a>意外情况？</h1><p>如果你运行第一次是没问题的但第二次运行之后报错:</p>
+<figure class="highlight powershell"><table><tbody><tr><td class="code"><pre><span class="line">docker: Error response from daemon: Ports are not available: exposing port TCP <span class="number">0.0</span>.<span class="number">0.0</span>:<span class="number">1080</span> -&gt; <span class="number">0.0</span>.<span class="number">0.0</span>:<span class="number">0</span>: listen tcp <span class="number">0.0</span>.<span class="number">0.0</span>:<span class="number">1080</span>: bind: An attempt was made to access a socket <span class="keyword">in</span> a way forbidden by its access permissions. time=<span class="string">"2023-10-15T10:13:34+08:00"</span> level=error msg=<span class="string">"error waiting for container: "</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>是说明你的 1080 端口被占用了，你可以使用<code>netstat -aon | findstr :1080</code> 的命令进行查询如果发现没有程序出现问题的话。那就是其实这是Windows中的一个小问题，只需要重启NAT网络就可以解决了，执行如下两条命令：</p>
+<figure class="highlight powershell"><table><tbody><tr><td class="code"><pre><span class="line">net stop winnat</span><br><span class="line">net <span class="built_in">start</span> winnat</span><br></pre></td></tr></tbody></table></figure>
+
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>引用涛叔博客 使用 Docker 封印 EasyConnect 一篇文章：<a href="https://taoshu.in/easyconnect-in-docker.html" rel="external nofollow noreferrer">https://taoshu.in/easyconnect-in-docker.html</a></p>
 </body></html>]]></content>
       <categories>
-        <category>生活随想</category>
+        <category>网络技术</category>
       </categories>
+      <tags>
+        <tag>2023</tag>
+        <tag>easyconnect</tag>
+        <tag>深信服</tag>
+        <tag>vpn</tag>
+      </tags>
   </entry>
   <entry>
     <title>使用GitHub Actions 自动构建部署发布Spring Boot应用</title>
@@ -1553,6 +1553,63 @@
         <tag>SpringBoot</tag>
         <tag>java</tag>
         <tag>ci/cd</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>世界，您好！</title>
+    <url>/posts/hello-world-2-2/</url>
+    <content><![CDATA[<html><head></head><body><p>欢迎使用WordPress。这是您的第一篇文章。编辑或删除它，然后开始写作吧！</p>
+<p><embed src="//music.163.com/style/swf/widget.swf?sid=5110133&amp;type=2&amp;auto=1&amp;width=320&amp;height=66" width="340" height="86" allownetworking="all"></p>
+</body></html>]]></content>
+      <categories>
+        <category>生活随想</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>clash 使用</title>
+    <url>/posts/clash/</url>
+    <content><![CDATA[<html><head></head><body><p><strong><font color="red">请根据当地网络法律使用,本文章仅供学习使用,不负任何责任!</font></strong><br><strong><font color="red">请根据当地网络法律使用,本文章仅供学习使用,不负任何责任!</font></strong><br><strong><font color="red">请根据当地网络法律使用,本文章仅供学习使用,不负任何责任!</font></strong></p>
+<h1 id="clash-for-windows"><a href="#clash-for-windows" class="headerlink" title="clash for windows :"></a>clash for windows :</h1><p>此项目地址:<a href="https://github.com/Fndroid/clash_for_windows_pkg/releases" rel="external nofollow noreferrer">https://github.com/Fndroid/clash_for_windows_pkg/releases</a></p>
+<p>安装运行是这样的页面:<img src="https://cdn.jsdelivr.net/gh/biliblihuorong/Resources/Image/image-20210514120949169.png" alt="image-20210514120949169"></p>
+<h2 id="导入配置文件"><a href="#导入配置文件" class="headerlink" title="导入配置文件"></a>导入配置文件</h2><p>然后我们到<code>Proflies</code>.</p>
+<p>支持url和本地配置文件直接拖入的两种方式.</p>
+<p>URL导入:<img src="https://cdn.jsdelivr.net/gh/biliblihuorong/Resources/Image/image-20210514122121043.png" alt="image-20210514122121043"></p>
+<p>文件导入:<img src="https://docs.cfw.lbyczf.com/assets/img/quickstart3.b68e5259.gif" alt="img"></p>
+<p>记得回到<code>General</code>把<code>System Proxy</code>和<code>Start with windows</code>打开即可.</p>
+<h1 id="Clash-for-Android"><a href="#Clash-for-Android" class="headerlink" title="Clash for Android :"></a>Clash for Android :</h1><p>项目地址: <a href="https://github.com/Kr328/ClashForAndroid/releases" rel="external nofollow noreferrer">https://github.com/Kr328/ClashForAndroid/releases</a></p>
+<h2 id="导入配置文件-1"><a href="#导入配置文件-1" class="headerlink" title="导入配置文件:"></a>导入配置文件:</h2><p>导入和Windows基本一样,只不过<code>Android</code>app语言是中文了.</p>
+<p><img src="https://cdn.jsdelivr.net/gh/biliblihuorong/Resources/Image/clashAndroid1.png" alt="clashAndroid1"></p>
+</body></html>]]></content>
+      <categories>
+        <category>网络技术</category>
+      </categories>
+      <tags>
+        <tag>clash</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Umami空白页面</title>
+    <url>/posts/fix-umami-blank-page/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>每天会去umami 后台看一下当天的访客以及访问量那些文章，然后就发现了打开website的时候是空白页面，我以为是umami 没有更新最新版导致的问题，等我更新完毕之后发现还是一样的，打开 f12 看了一下 <code>webpack-532820dc741ca459.js</code>文件一直404。顺手水一下吧。<br><img src="https://img.misaka.pics/ShellBlogImg/1/2024/06/27/667d517263cb3.webp" alt="umami-blank-page.webp"></p>
+<p>环境说明：</p>
+<ul>
+<li>docker-compose 部署的umami版本是 v2.12.1</li>
+<li>宝塔nginx 反代的</li>
+</ul>
+<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><p>请检查反代 是否为<code>proxy_pass http://127.0.0.1:&lt;端口&gt;;</code> 不能是<code>proxy_pass http://127.0.0.1:&lt;端口&gt;/;</code></p>
+<p>如果不行请尝试删除反代重新添加，以及清理cdn的缓存。</p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/06/27/667d52e17d423.webp" alt="umami-blank-page-2.webp"></p>
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>Umami 的GitHub issues ：<a href="https://github.com/umami-software/umami/issues/2269" rel="external nofollow noreferrer">https://github.com/umami-software/umami/issues/2269</a></p>
+</body></html>]]></content>
+      <categories>
+        <category>网络技术</category>
+      </categories>
+      <tags>
+        <tag>2024</tag>
+        <tag>Umami</tag>
+        <tag>PV</tag>
+        <tag>网站统计，UV</tag>
+        <tag>Ip</tag>
       </tags>
   </entry>
   <entry>
@@ -1691,53 +1748,6 @@
       </tags>
   </entry>
   <entry>
-    <title>在 Docker 环境中使用 Traefik进行反向代理</title>
-    <url>/posts/learn-traefik/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>对于家里面要部署很多 <code>Docker</code> 服务，用 <code>Nginx</code> 反向代理属实麻烦，所以就有了本篇文章 <code>Traefik</code></p>
-<img src="https://img.misaka.pics/ShellBlogImg/1/2024/09/02/66d58750e396f.webp" alt="traefik-1.webp" style="zoom:33%;">
-
-<p><code>Traefik</code> 的logo 是一个<code>go</code>吉祥物进行指挥交通（流量）。</p>
-<p>所以 <code>Traefik</code>的好处是自动发现服务，自动配置反向代理，以及自动续签SSL，以及不在需要对外暴露额外的端口了，宿主机自始至终之暴露 80 443 端口。但也有诸多问题例如它并不能像<code>Nginx</code> 一样可以灵活的配置反代一些程序，例如配置不在<code>Docker</code> 部署的程序，会有点麻烦，如果想我一样只是作为本地部署项目<code>Traefik</code> 仍然是一个不错的选择。</p>
-<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><p>在快速启动前，有必要说明一下，本教程是使用<code>CloudFlare</code> 作为域名ns进行申请泛域名证书，如果你想使用其他提供商，可以在 <a href="https://doc.traefik.io/traefik/https/acme/#providers" rel="external nofollow noreferrer">Traefik 的文档</a> 更改 <code>Provider Code</code>和 <code>Environment Variables</code> 这两个值，当然我会在本篇配置文件有注释提醒。</p>
-<p>另外如果没有额外配置反代的需求（指不跑在docker的服务），需要建立<code>config.yml</code> 文件，当然还需要在<code>traefik.yml</code> 关闭注释。</p>
-<h2 id="快速启动-Traefik"><a href="#快速启动-Traefik" class="headerlink" title="快速启动 Traefik"></a>快速启动 Traefik</h2><p>请按照一下文件目录创建文件，其中<code>acme.json</code>只需要创建文件即可（注意必须要交建立哦，config文件根据自己需求建立即可）</p>
-<p>文件目录：</p>
-<figure class="highlight txt"><table><tbody><tr><td class="code"><pre><span class="line">|   .env	#文件配置</span><br><span class="line">|   docker-compose.yaml		# docker-compose 文件</span><br><span class="line">|</span><br><span class="line">\---data</span><br><span class="line">        acme.json	# SSL 文件</span><br><span class="line">        config.yml	# 额外配置文件（配置额外反代例如宿主机的）</span><br><span class="line">        traefik.yml # Traefik 配置文件</span><br></pre></td></tr></tbody></table></figure>
-
-<p><code>docker-compose.yaml</code> 文件：</p>
-<figure class="highlight yaml"><table><tbody><tr><td class="code"><pre><span class="line"><span class="attr">services:</span></span><br><span class="line">  <span class="attr">traefik:</span>  <span class="comment"># 定义名为 traefik 的服务</span></span><br><span class="line">    <span class="attr">image:</span> <span class="string">traefik:v3.0</span>  <span class="comment"># 使用 Traefik 的 v3.0 版本镜像</span></span><br><span class="line">    <span class="attr">container_name:</span> <span class="string">traefik</span>  <span class="comment"># 容器名称为 traefik</span></span><br><span class="line">    <span class="attr">restart:</span> <span class="string">unless-stopped</span>  <span class="comment"># 容器自动重启，除非手动停止</span></span><br><span class="line">    <span class="attr">security_opt:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="literal">no</span><span class="string">-new-privileges:true</span>  <span class="comment"># 增加安全性，防止提权</span></span><br><span class="line">    <span class="attr">networks:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">traefik-net</span>  <span class="comment"># 连接到名为 proxy 的外部网络</span></span><br><span class="line">    <span class="attr">ports:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="number">80</span><span class="string">:80</span>  <span class="comment"># 映射主机的 80 端口到容器的 80 端口 (HTTP)</span></span><br><span class="line">      <span class="bullet">-</span> <span class="number">443</span><span class="string">:443</span>  <span class="comment"># 映射主机的 443 端口到容器的 443 端口 (HTTPS)</span></span><br><span class="line">      <span class="bullet">-</span> <span class="number">443</span><span class="string">:443/tcp</span>  <span class="comment"># 映射主机的 443 TCP 端口到容器的 443 端口 (TCP 协议)</span></span><br><span class="line">      <span class="bullet">-</span> <span class="number">443</span><span class="string">:443/udp</span>  <span class="comment"># 映射主机的 443 UDP 端口到容器的 443 端口 (UDP 协议)</span></span><br><span class="line">    <span class="attr">environment:</span></span><br><span class="line">      <span class="attr">CF_DNS_API_TOKEN_FILE:</span> <span class="string">${CF_DNS_API_TOKEN}</span>  <span class="comment"># 设置环境变量，使用 Cloudflare API 令牌，根据Traefik文档 选择你的服务提供商的token</span></span><br><span class="line">      <span class="attr">TRAEFIK_DASHBOARD_CREDENTIALS:</span> <span class="string">${TRAEFIK_DASHBOARD_CREDENTIALS}</span>  <span class="comment"># 设置环境变量，定义 Traefik 仪表板的凭据</span></span><br><span class="line">    <span class="attr">env_file:</span> <span class="string">.env</span>  <span class="comment"># 从 .env 文件中加载环境变量</span></span><br><span class="line">    <span class="attr">volumes:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">/etc/localtime:/etc/localtime:ro</span>  <span class="comment"># 挂载主机的时间设置到容器，确保时间同步，且只读</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">/var/run/docker.sock:/var/run/docker.sock:ro</span>  <span class="comment"># 挂载 Docker 的 socket 文件，允许 Traefik 访问 Docker API，只读</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">./data/traefik.yml:/traefik.yml:ro</span>  <span class="comment"># 挂载本地的 traefik.yml 配置文件到容器内，只读</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">./data/acme.json:/acme.json</span>  <span class="comment"># 挂载本地的 acme.json 文件，存储 SSL 证书信息</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">./data/config.yml:/config.yml:ro</span>  <span class="comment"># 可选的配置文件挂载路径，若需要可取消注释</span></span><br><span class="line">    <span class="attr">labels:</span>  <span class="comment"># 设置 Traefik 的相关标签，用于路由和中间件配置</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.enable=true"</span>  <span class="comment"># 启用 Traefik 服务</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.http.routers.traefik.entrypoints=http"</span>  <span class="comment"># 配置 HTTP 入口点</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.http.routers.traefik.rule=Host(`${TRAEFIK_DASHBOARD_HOST}`)"</span> <span class="comment"># 定义 Traefik 仪表板的访问规则</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.http.middlewares.traefik-auth.basicauth.users=${TRAEFIK_DASHBOARD_CREDENTIALS}"</span>  <span class="comment"># 为仪表板配置基本身份验证</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.http.middlewares.traefik-https-redirect.redirectscheme.scheme=https"</span>  <span class="comment"># 配置 HTTP 到 HTTPS 的重定向</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.http.middlewares.sslheader.headers.customrequestheaders.X-Forwarded-Proto=https"</span>  <span class="comment"># 添加自定义请求头</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.http.routers.traefik.middlewares=traefik-https-redirect"</span>  <span class="comment"># 将重定向中间件应用到 HTTP 路由</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.http.routers.traefik-secure.entrypoints=https"</span>  <span class="comment"># 配置 HTTPS 入口点</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.http.routers.traefik-secure.rule=Host(`${TRAEFIK_DASHBOARD_HOST}`)"</span> <span class="comment"># 定义 HTTPS 路由的访问规则</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.http.routers.traefik-secure.middlewares=traefik-auth"</span>  <span class="comment"># 为 HTTPS 路由应用基本身份验证中间件</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.http.routers.traefik-secure.tls=true"</span>  <span class="comment"># 启用 TLS (HTTPS)</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.http.routers.traefik-secure.tls.certresolver=${NS_Domain}"</span>  <span class="comment"># 使用 DNS服务提供商 code 根据Traefik文档 选择你的服务提供商code</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.http.routers.traefik-secure.tls.domains[0].main=${TLS_MAIN_DOMAIN}"</span>  <span class="comment"># 定义主域名</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.http.routers.traefik-secure.tls.domains[0].sans=${TLS_SANS_DOMAIN}"</span>  <span class="comment"># 定义子域名通配符</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.http.routers.traefik-secure.service=api@internal"</span>  <span class="comment"># 使用 Traefik 内部 API 服务</span></span><br><span class="line"></span><br><span class="line"><span class="attr">networks:</span></span><br><span class="line">  <span class="attr">traefik-net:</span></span><br><span class="line">    <span class="attr">external:</span> <span class="literal">false</span>  <span class="comment"># 使用外部定义的名为 proxy 的网络</span></span><br></pre></td></tr></tbody></table></figure>
-
-<p><code>.env</code> 文件:</p>
-<figure class="highlight toml"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment"># .env 文件</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># CF API</span></span><br><span class="line"><span class="attr">CF_DNS_API_TOKEN</span>=</span><br><span class="line"></span><br><span class="line"><span class="attr">NS_Domain</span>=cloudflare <span class="comment">#根据你使用的DNS服务提供商 code 根据Traefik文档 选择你的服务提供商code</span></span><br><span class="line"><span class="comment"># 设置环境变量，定义 Traefik 仪表板的凭据 ，默认账户名密码：admin</span></span><br><span class="line"><span class="attr">TRAEFIK_DASHBOARD_CREDENTIALS</span>=admin:$<span class="variable">$2y</span>$<span class="variable">$05</span>$<span class="variable">$aOXINGgHfnZ</span>//t.kUs7o9ej3faUbj2yNxc8k3WVrBybFOxxaTsLTe</span><br><span class="line"></span><br><span class="line"><span class="comment"># Traefik Dashboard 域名</span></span><br><span class="line"><span class="attr">TRAEFIK_DASHBOARD_HOST</span>=dash.docker.localhost</span><br><span class="line"></span><br><span class="line"><span class="comment"># TLS 主域名和子域名</span></span><br><span class="line"><span class="attr">TLS_MAIN_DOMAIN</span>=docker.localhost</span><br><span class="line"><span class="attr">TLS_SANS_DOMAIN</span>=*.docker.localhost</span><br></pre></td></tr></tbody></table></figure>
-
-<p><code>traefik.yml</code> 文件：</p>
-<figure class="highlight yaml"><table><tbody><tr><td class="code"><pre><span class="line"><span class="attr">api:</span></span><br><span class="line">  <span class="attr">dashboard:</span> <span class="literal">true</span>  <span class="comment"># 启用 Traefik 的仪表板，可以通过指定的路由访问</span></span><br><span class="line">  <span class="attr">debug:</span> <span class="literal">true</span>  <span class="comment"># 启用调试模式，输出更多的日志信息</span></span><br><span class="line"></span><br><span class="line"><span class="attr">entryPoints:</span></span><br><span class="line">  <span class="attr">http:</span></span><br><span class="line">    <span class="attr">address:</span> <span class="string">":80"</span>  <span class="comment"># 定义 HTTP 入口点，监听 80 端口</span></span><br><span class="line">    <span class="attr">http:</span></span><br><span class="line">      <span class="attr">redirections:</span></span><br><span class="line">        <span class="attr">entryPoint:</span></span><br><span class="line">          <span class="attr">to:</span> <span class="string">https</span>  <span class="comment"># 重定向 HTTP 请求到 HTTPS</span></span><br><span class="line">          <span class="attr">scheme:</span> <span class="string">https</span>  <span class="comment"># 使用 HTTPS 作为重定向的目标协议</span></span><br><span class="line"></span><br><span class="line">  <span class="attr">https:</span></span><br><span class="line">    <span class="attr">address:</span> <span class="string">":443"</span>  <span class="comment"># 定义 HTTPS 入口点，监听 443 端口</span></span><br><span class="line"></span><br><span class="line"><span class="attr">serversTransport:</span></span><br><span class="line">  <span class="attr">insecureSkipVerify:</span> <span class="literal">true</span>  <span class="comment"># 在与后端服务器通信时，跳过 TLS 证书验证（不推荐在生产环境中使用）</span></span><br><span class="line"></span><br><span class="line"><span class="attr">providers:</span></span><br><span class="line">  <span class="attr">docker:</span></span><br><span class="line">    <span class="attr">endpoint:</span> <span class="string">"unix:///var/run/docker.sock"</span>  <span class="comment"># 指定 Docker API 的 socket 文件路径，Traefik 使用它来检测和管理 Docker 容器</span></span><br><span class="line">    <span class="attr">exposedByDefault:</span> <span class="literal">false</span>  <span class="comment"># 默认情况下，Docker 容器不会自动暴露给 Traefik，必须显式指定</span></span><br><span class="line">    <span class="attr">watch:</span> <span class="literal">true</span></span><br><span class="line"></span><br><span class="line">  <span class="attr">file:</span></span><br><span class="line">    <span class="attr">filename:</span> <span class="string">/config.yml</span>  <span class="comment"># (已注释) 可选的文件提供者配置，用于从外部文件加载配置</span></span><br><span class="line">    <span class="attr">watch:</span> <span class="literal">true</span>  <span class="comment"># 允许 Traefik 自动监控和加载配置文件变化</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="attr">certificatesResolvers:</span></span><br><span class="line">  <span class="attr">cloudflare:</span> <span class="comment"># 使用 DNS服务提供商 code 根据Traefik文档 选择你的服务提供商code</span></span><br><span class="line">    <span class="attr">acme:</span></span><br><span class="line">      <span class="attr">email:</span> <span class="string">youremail@email.com</span>  <span class="comment"># 申请 ACME 证书时使用的电子邮件地址</span></span><br><span class="line">      <span class="attr">storage:</span> <span class="string">acme.json</span>  <span class="comment"># 存储证书信息的文件路径</span></span><br><span class="line">      <span class="comment"># caServer: https://acme-v02.api.letsencrypt.org/directory # 正式环境的 Let's Encrypt 服务器 (默认)</span></span><br><span class="line">      <span class="attr">caServer:</span> <span class="string">https://acme-staging-v02.api.letsencrypt.org/directory</span> <span class="comment"># 测试环境的 Let's Encrypt 服务器 (用于调试)</span></span><br><span class="line"></span><br><span class="line">      <span class="attr">dnsChallenge:</span></span><br><span class="line">        <span class="attr">provider:</span> <span class="string">cloudflare</span>  <span class="comment"># 使用 DNS服务提供商 code 根据Traefik文档 选择你的服务提供商code 进行 DNS 验证以获取证书</span></span><br><span class="line">        <span class="comment">#disablePropagationCheck: true # (已注释) 如果通过 Cloudflare 获取证书有问题，可以取消注释此行以禁用传播检查</span></span><br><span class="line">        <span class="comment">#delayBeforeCheck: 60s # (已注释) 如果需要确保 TXT 记录准备就绪，可以取消注释此行并设置检查延迟</span></span><br><span class="line">        <span class="attr">resolvers:</span></span><br><span class="line">          <span class="bullet">-</span> <span class="string">"223.5.5.5:53"</span>  <span class="comment"># AliDNS 解析器</span></span><br><span class="line">          <span class="bullet">-</span> <span class="string">"119.29.29.29:53"</span>  <span class="comment"># 备用 DNS 解析器</span></span><br><span class="line">          <span class="bullet">-</span> <span class="string">"1.1.1.1"</span> <span class="comment"># 备用 DNS 解析器</span></span><br></pre></td></tr></tbody></table></figure>
-
-<p><code>config.yml</code> 文件，可以选择配置，如果你宿主机有ng反代服务，你使用taerfik 的话会端口冲突，可以配置，但不过要把 <code>docker-compose</code> 和 <code>Traefik</code>的配置文件注释去掉即可：</p>
-<figure class="highlight yaml"><table><tbody><tr><td class="code"><pre><span class="line"><span class="attr">http:</span></span><br><span class="line">  <span class="comment">#region routers </span></span><br><span class="line">  <span class="attr">routers:</span></span><br><span class="line">    <span class="attr">hexo:</span></span><br><span class="line">      <span class="attr">entryPoints:</span></span><br><span class="line">        <span class="bullet">-</span> <span class="string">"https"</span>  <span class="comment"># 指定使用 HTTPS 入口点</span></span><br><span class="line">      <span class="attr">rule:</span> <span class="string">"Host(`hexo.docker.localhost`)"</span>  <span class="comment"># 当访问的主机名为 hexo.local.shellscience.top 时，触发此路由</span></span><br><span class="line">      <span class="attr">middlewares:</span></span><br><span class="line">        <span class="bullet">-</span> <span class="string">default-headers</span>  <span class="comment"># 应用默认的安全头中间件</span></span><br><span class="line">        <span class="bullet">-</span> <span class="string">https-redirectscheme</span>  <span class="comment"># 应用 HTTPS 重定向中间件</span></span><br><span class="line">      <span class="attr">tls:</span> {}  <span class="comment"># 启用 TLS 加密</span></span><br><span class="line">      <span class="attr">service:</span> <span class="string">hexo</span>  <span class="comment"># 指定将请求转发到名为 hexo 的服务</span></span><br><span class="line"></span><br><span class="line">  <span class="comment">#region services</span></span><br><span class="line">  <span class="attr">services:</span></span><br><span class="line">    <span class="attr">hexo:</span></span><br><span class="line">      <span class="attr">loadBalancer:</span></span><br><span class="line">        <span class="attr">servers:</span></span><br><span class="line">          <span class="bullet">-</span> <span class="attr">url:</span> <span class="string">"http://127.0.0.1:5000"</span>  <span class="comment"># 指定 Hexo 服务的后端服务器 URL</span></span><br><span class="line">        <span class="attr">passHostHeader:</span> <span class="literal">true</span>  <span class="comment"># 传递原始的 Host 头信息到后端服务</span></span><br><span class="line">  <span class="comment">#endregion</span></span><br><span class="line"></span><br><span class="line">  <span class="attr">middlewares:</span></span><br><span class="line">    <span class="attr">https-redirectscheme:</span></span><br><span class="line">      <span class="attr">redirectScheme:</span></span><br><span class="line">        <span class="attr">scheme:</span> <span class="string">https</span>  <span class="comment"># 将 HTTP 请求重定向为 HTTPS</span></span><br><span class="line">        <span class="attr">permanent:</span> <span class="literal">true</span>  <span class="comment"># 使用永久重定向（HTTP 301）</span></span><br><span class="line"></span><br><span class="line">    <span class="attr">default-headers:</span></span><br><span class="line">      <span class="attr">headers:</span></span><br><span class="line">        <span class="attr">frameDeny:</span> <span class="literal">true</span>  <span class="comment"># 禁止网页被嵌入到框架中，防止点击劫持攻击</span></span><br><span class="line">        <span class="attr">browserXssFilter:</span> <span class="literal">true</span>  <span class="comment"># 启用浏览器的 XSS 过滤器，增强安全性</span></span><br><span class="line">        <span class="attr">contentTypeNosniff:</span> <span class="literal">true</span>  <span class="comment"># 防止浏览器 MIME 类型嗅探</span></span><br><span class="line">        <span class="attr">forceSTSHeader:</span> <span class="literal">true</span>  <span class="comment"># 强制启用 HSTS（HTTP 严格传输安全）</span></span><br><span class="line">        <span class="attr">stsIncludeSubdomains:</span> <span class="literal">true</span>  <span class="comment"># HSTS 规则应用于所有子域</span></span><br><span class="line">        <span class="attr">stsPreload:</span> <span class="literal">true</span>  <span class="comment"># 允许将域名加入 HSTS 预加载列表</span></span><br><span class="line">        <span class="attr">stsSeconds:</span> <span class="number">15552000</span>  <span class="comment"># HSTS 头的有效期（秒），这里是 180 天</span></span><br><span class="line">        <span class="attr">customFrameOptionsValue:</span> <span class="string">SAMEORIGIN</span>  <span class="comment"># 允许内容在同源的 iframe 中加载</span></span><br><span class="line">        <span class="attr">customRequestHeaders:</span></span><br><span class="line">          <span class="attr">X-Forwarded-Proto:</span> <span class="string">https</span>  <span class="comment"># 设置 X-Forwarded-Proto 头为 https，用于指示原始请求协议</span></span><br><span class="line"></span><br><span class="line">    <span class="attr">default-whitelist:</span></span><br><span class="line">      <span class="attr">ipAllowList:</span></span><br><span class="line">        <span class="attr">sourceRange:</span></span><br><span class="line">        <span class="bullet">-</span> <span class="string">"10.0.0.0/8"</span>  <span class="comment"># 允许来自 10.0.0.0/8 网段的 IP 地址</span></span><br><span class="line">        <span class="bullet">-</span> <span class="string">"192.168.0.0/16"</span>  <span class="comment"># 允许来自 192.168.0.0/16 网段的 IP 地址</span></span><br><span class="line">        <span class="bullet">-</span> <span class="string">"172.16.0.0/12"</span>  <span class="comment"># 允许来自 172.16.0.0/12 网段的 IP 地址</span></span><br><span class="line"></span><br><span class="line">    <span class="attr">secured:</span></span><br><span class="line">      <span class="attr">chain:</span></span><br><span class="line">        <span class="attr">middlewares:</span></span><br><span class="line">        <span class="bullet">-</span> <span class="string">default-whitelist</span>  <span class="comment"># 应用默认的 IP 白名单中间件</span></span><br><span class="line">        <span class="bullet">-</span> <span class="string">default-headers</span>  <span class="comment"># 应用默认的安全头中间件</span></span><br></pre></td></tr></tbody></table></figure>
-
-<p>配置完毕我们<code>docker-compose up -d</code>如果配置没有问题你就可以通过你配置的域名成功访问<code>Traefik</code>的面板。</p>
-<h1 id="反代代理Dcoekr应用"><a href="#反代代理Dcoekr应用" class="headerlink" title="反代代理Dcoekr应用"></a>反代代理Dcoekr应用</h1><p>这里拿<code>Memos</code>的程序来举例子:</p>
-<p>下面是我的<code>Memos</code>的<code>docker-compose.yaml</code> 文件，我们只需要把暴露的端口删除，添加<code>labels</code>标签以及下面几个配置（你想访问的域名、容器的端口、开启https、使用tls证书）以及让我们的程序接入<code>Traefik</code>的网络就好了。</p>
-<figure class="highlight yaml"><table><tbody><tr><td class="code"><pre><span class="line"><span class="attr">version:</span> <span class="string">"3.0"</span></span><br><span class="line"><span class="attr">services:</span></span><br><span class="line">  <span class="attr">memos:</span></span><br><span class="line">    <span class="attr">image:</span> <span class="string">ghcr.io/usememos/memos:latest</span></span><br><span class="line">    <span class="attr">container_name:</span> <span class="string">memos</span></span><br><span class="line">    <span class="attr">volumes:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">./data/:/var/opt/memos</span></span><br><span class="line">    <span class="attr">environment:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">driver=sqlite</span></span><br><span class="line">    <span class="attr">labels:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.enable=true"</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.http.routers.memos.rule=Host(`memos.local.com`)"</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.http.services.memos.loadbalancer.server.port=&lt;程序的端口&gt;"</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.http.routers.memos.entrypoints=https"</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.http.routers.memos.tls=true"</span></span><br><span class="line">    <span class="attr">networks:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">traefik-net</span></span><br><span class="line"></span><br><span class="line"><span class="attr">networks:</span></span><br><span class="line">  <span class="attr">traefik-net:</span></span><br><span class="line">    <span class="attr">external:</span> <span class="literal">true</span></span><br></pre></td></tr></tbody></table></figure>
-
-
-
-<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p><code>Traefik</code>DNS服务提供文档：<a href="https://doc.traefik.io/traefik/https/acme/#providers" rel="external nofollow noreferrer">https://doc.traefik.io/traefik/https/acme/#providers</a></p>
-<p><code>Traefik</code>Docker配置文档：<a href="https://doc.traefik.io/traefik/routing/providers/docker/" rel="external nofollow noreferrer">https://doc.traefik.io/traefik/routing/providers/docker/</a></p>
-<h1 id="最后结尾的彩蛋"><a href="#最后结尾的彩蛋" class="headerlink" title="最后结尾的彩蛋"></a>最后结尾的彩蛋</h1><p>找<code>DALL·E</code>生成了两张cover不过总感觉怪怪的，另外一张也放出来吧，有一种土拔鼠变成黄鼠狼的错觉。</p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/10/05/67011bad7c6dc.webp" alt="DALL·E 2024-10-05 18.57.18 - A professional cover featuring the Traefik logo, which is a Go language gopher mascot directing traffic with a traffic sign. The background shows a gr.webp"></p>
-</body></html>]]></content>
-      <categories>
-        <category>网络技术</category>
-      </categories>
-      <tags>
-        <tag>2024</tag>
-        <tag>Docker</tag>
-        <tag>Traefik</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>兰空图床使用backblaze作为存储策略</title>
     <url>/posts/lskypro-backblaze/</url>
     <content><![CDATA[<html><head></head><body><h1 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h1><p>因为我很久之前就在使用兰空了，当时是直接默认存储扔到本地的，反正也没有啥问题，还很方便，但那台服务器快到期了。所以我就打算迁移，先来说说虽然为什么不用CF的R2存储，原因是我尝试了很多种办法，但这个兰空图床对于我自己而言就是链接不上，很烦人，所以找到了也是S3协议的<code>backblaze</code>作为我后面使用的存储策略。</p>
@@ -1826,63 +1836,6 @@
       </tags>
   </entry>
   <entry>
-    <title>封印 Easyconnect</title>
-    <url>/posts/fuck-easyconnect/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="故事的起点"><a href="#故事的起点" class="headerlink" title="故事的起点"></a>故事的起点</h1><p>因为已经到了实习期，走<del>(滚)</del>出了学校,还要写这些烦人的周记属实难绷，还必须使用这个<code>Easyconnect</code>进行访问。</p>
-<p>如果你只是想搜索 <code>Easyconnect</code>却看到了这一篇文章，那么您可以仔细权衡一下有必要再去下载和使用<code>Easyconnect</code>了,如果问为什么不要使用<code>Easyconnect</code>。您可以去跳转到<a href="https://taoshu.in/easyconnect-in-docker.html" rel="external nofollow noreferrer">这一篇文章</a>或者可以看我使用<code>Chat GPT</code>进行总结这一篇文章的核心。</p>
-<blockquote>
-<p>当讨论深信服的 EasyConnect 客户端的安全隐患时，可以简化描述如下：</p>
-<ol>
-<li><p><strong>依赖问题：</strong> EasyConnect 客户端使用了一些旧的系统功能，这在最新版本的 macOS 上会导致它无法正常工作。这就好比用一个老式的车钥匙开启现代汽车一样，不再适配。</p>
-</li>
-<li><p><strong>根证书问题：</strong> EasyConnect 客户端在你的电脑上安装了一个特殊的证书，而这个证书的作用可能不仅限于官方所说的提供更好的浏览体验。这有点像你的家门锁被复制一把，而你不知道。</p>
-</li>
-<li><p><strong>自启动问题：</strong> EasyConnect 客户端还有一个进程，名为 EasyMonitor，它在你的电脑开机时就自动启动。这个进程有权监听你的一举一动，而你却不能简单地关闭它，否则你无法使用 VPN 服务。</p>
-</li>
-</ol>
-</blockquote>
-<p>而且这个东西还是全局代理的，所有流量都要经过转发，以及可能会对一些游戏例如CSGO 进行冲突。</p>
-<h1 id="需要准备的东西"><a href="#需要准备的东西" class="headerlink" title="需要准备的东西"></a>需要准备的东西</h1><ul>
-<li>一台运行了 Windows/MAC os /Linux 的电脑</li>
-<li>需要 docker 的使用</li>
-<li>需要 vnc 的连接</li>
-</ul>
-<h1 id="开始启动"><a href="#开始启动" class="headerlink" title="开始启动"></a>开始启动</h1><p>当然有这种烦人的东西也就有大佬挺身而出，<a href="https://github.com/docker-easyconnect/docker-easyconnect" rel="external nofollow noreferrer">docker-easyconnect</a>就是来解决这个问题，使用docker 进行封印。</p>
-<p>至于docker 和VNC的安装在这里就不进行赘述了，不是本篇文章的重点。使用以下命令运行docker 容器。</p>
-<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">docker run --<span class="built_in">rm</span> --device /dev/net/tun --cap-add NET_ADMIN -ti -e PASSWORD=xxxx -e URLWIN=1 -v ~/.ecdata:/root -p 5901:5901 -p 1080:1080 -p 8888:8888 hagb/docker-easyconnect:7.6.7</span><br></pre></td></tr></tbody></table></figure>
-
-<p>windows 版本的：</p>
-<figure class="highlight powershell"><table><tbody><tr><td class="code"><pre><span class="line">docker run <span class="literal">--rm</span> <span class="literal">--device</span> /dev/net/tun <span class="literal">--cap-add</span> NET_ADMIN <span class="literal">-ti</span> <span class="literal">-e</span> PASSWORD=xxxx <span class="literal">-e</span> URLWIN=<span class="number">1</span> <span class="literal">-v</span> C:\Users\&lt;你的用户名&gt;\.ecdata:/root <span class="literal">-p</span> <span class="number">5901</span>:<span class="number">5901</span> <span class="literal">-p</span> <span class="number">1080</span>:<span class="number">1080</span> <span class="literal">-p</span> <span class="number">8888</span>:<span class="number">8888</span> hagb/docker<span class="literal">-easyconnect</span>:<span class="number">7.6</span>.<span class="number">7</span></span><br></pre></td></tr></tbody></table></figure>
-
-<p>其中<code> -v ~/.ecdata:/root</code> 运行成功后会在你的用户目录下创建一个<code>.ecdata</code>文件夹里面保存了你的登陆信息，下一次运行的时候就可以不需要输入用户和密码以及连接地址了。</p>
-<p>使用 <code>VNC</code> 连接就会发现和你在电脑版安装的之后页面是一样的输入连接的服务器地址以及账号和密码，记得勾选自动登录，下次启动的时候回去读取，你用户目录下的 <code>ecdata</code> 的文件。</p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2023/10/22/65347edfb2da2.webp" alt="VNC-1.webp"></p>
-<h1 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h1><p>我们暴露的 <code>1080</code> 和 <code>8888</code> 的端口分别是 <code>socket5</code>代理和<code>http</code>代理。</p>
-<p>Firefox 的浏览器的用户可以直接使用 设置 配置有个代理配置。</p>
-<p>这里更推荐使用edge ，因为国内好下载插件 打开这个网址下载：<a href="https://microsoftedge.microsoft.com/addons/detail/proxy-switchyomega/fdbloeknjpnloaggplaobopplkdhnikc?hl=zh-CN" rel="external nofollow noreferrer">Proxy SwitchyOmega - Microsoft Edge Addons</a></p>
-<p>我们打开插件的配置选项，按照下方图片的填写。</p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2023/10/22/65347b7f9620e.webp" alt="SwitchyOmega.webp"></p>
-<p>然后选择 proxy 的代理组，访问完毕内网资源，记住调成 系统代理选项卡，不然这个安装这个浏览器的插件会无法上网。</p>
-<p><img src="https://img.misaka.pics/ShellBlogImg/1/2023/10/22/65347c0eac9b4.webp" alt="SwitchyOmega-1.webp"></p>
-<h1 id="意外情况？"><a href="#意外情况？" class="headerlink" title="意外情况？"></a>意外情况？</h1><p>如果你运行第一次是没问题的但第二次运行之后报错:</p>
-<figure class="highlight powershell"><table><tbody><tr><td class="code"><pre><span class="line">docker: Error response from daemon: Ports are not available: exposing port TCP <span class="number">0.0</span>.<span class="number">0.0</span>:<span class="number">1080</span> -&gt; <span class="number">0.0</span>.<span class="number">0.0</span>:<span class="number">0</span>: listen tcp <span class="number">0.0</span>.<span class="number">0.0</span>:<span class="number">1080</span>: bind: An attempt was made to access a socket <span class="keyword">in</span> a way forbidden by its access permissions. time=<span class="string">"2023-10-15T10:13:34+08:00"</span> level=error msg=<span class="string">"error waiting for container: "</span></span><br></pre></td></tr></tbody></table></figure>
-
-<p>是说明你的 1080 端口被占用了，你可以使用<code>netstat -aon | findstr :1080</code> 的命令进行查询如果发现没有程序出现问题的话。那就是其实这是Windows中的一个小问题，只需要重启NAT网络就可以解决了，执行如下两条命令：</p>
-<figure class="highlight powershell"><table><tbody><tr><td class="code"><pre><span class="line">net stop winnat</span><br><span class="line">net <span class="built_in">start</span> winnat</span><br></pre></td></tr></tbody></table></figure>
-
-<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>引用涛叔博客 使用 Docker 封印 EasyConnect 一篇文章：<a href="https://taoshu.in/easyconnect-in-docker.html" rel="external nofollow noreferrer">https://taoshu.in/easyconnect-in-docker.html</a></p>
-</body></html>]]></content>
-      <categories>
-        <category>网络技术</category>
-      </categories>
-      <tags>
-        <tag>2023</tag>
-        <tag>easyconnect</tag>
-        <tag>深信服</tag>
-        <tag>vpn</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>萌国ICP备案</title>
     <url>/posts/moeICP/</url>
     <content><![CDATA[<html><head></head><body><h1 id="萌国ICP备案"><a href="#萌国ICP备案" class="headerlink" title="萌国ICP备案"></a>萌国ICP备案</h1><blockquote>
@@ -1937,6 +1890,53 @@
       </tags>
   </entry>
   <entry>
+    <title>在 Docker 环境中使用 Traefik进行反向代理</title>
+    <url>/posts/learn-traefik/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>对于家里面要部署很多 <code>Docker</code> 服务，用 <code>Nginx</code> 反向代理属实麻烦，所以就有了本篇文章 <code>Traefik</code></p>
+<img src="https://img.misaka.pics/ShellBlogImg/1/2024/09/02/66d58750e396f.webp" alt="traefik-1.webp" style="zoom:33%;">
+
+<p><code>Traefik</code> 的logo 是一个<code>go</code>吉祥物进行指挥交通（流量）。</p>
+<p>所以 <code>Traefik</code>的好处是自动发现服务，自动配置反向代理，以及自动续签SSL，以及不在需要对外暴露额外的端口了，宿主机自始至终之暴露 80 443 端口。但也有诸多问题例如它并不能像<code>Nginx</code> 一样可以灵活的配置反代一些程序，例如配置不在<code>Docker</code> 部署的程序，会有点麻烦，如果想我一样只是作为本地部署项目<code>Traefik</code> 仍然是一个不错的选择。</p>
+<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><p>在快速启动前，有必要说明一下，本教程是使用<code>CloudFlare</code> 作为域名ns进行申请泛域名证书，如果你想使用其他提供商，可以在 <a href="https://doc.traefik.io/traefik/https/acme/#providers" rel="external nofollow noreferrer">Traefik 的文档</a> 更改 <code>Provider Code</code>和 <code>Environment Variables</code> 这两个值，当然我会在本篇配置文件有注释提醒。</p>
+<p>另外如果没有额外配置反代的需求（指不跑在docker的服务），需要建立<code>config.yml</code> 文件，当然还需要在<code>traefik.yml</code> 关闭注释。</p>
+<h2 id="快速启动-Traefik"><a href="#快速启动-Traefik" class="headerlink" title="快速启动 Traefik"></a>快速启动 Traefik</h2><p>请按照一下文件目录创建文件，其中<code>acme.json</code>只需要创建文件即可（注意必须要交建立哦，config文件根据自己需求建立即可）</p>
+<p>文件目录：</p>
+<figure class="highlight txt"><table><tbody><tr><td class="code"><pre><span class="line">|   .env	#文件配置</span><br><span class="line">|   docker-compose.yaml		# docker-compose 文件</span><br><span class="line">|</span><br><span class="line">\---data</span><br><span class="line">        acme.json	# SSL 文件</span><br><span class="line">        config.yml	# 额外配置文件（配置额外反代例如宿主机的）</span><br><span class="line">        traefik.yml # Traefik 配置文件</span><br></pre></td></tr></tbody></table></figure>
+
+<p><code>docker-compose.yaml</code> 文件：</p>
+<figure class="highlight yaml"><table><tbody><tr><td class="code"><pre><span class="line"><span class="attr">services:</span></span><br><span class="line">  <span class="attr">traefik:</span>  <span class="comment"># 定义名为 traefik 的服务</span></span><br><span class="line">    <span class="attr">image:</span> <span class="string">traefik:v3.0</span>  <span class="comment"># 使用 Traefik 的 v3.0 版本镜像</span></span><br><span class="line">    <span class="attr">container_name:</span> <span class="string">traefik</span>  <span class="comment"># 容器名称为 traefik</span></span><br><span class="line">    <span class="attr">restart:</span> <span class="string">unless-stopped</span>  <span class="comment"># 容器自动重启，除非手动停止</span></span><br><span class="line">    <span class="attr">security_opt:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="literal">no</span><span class="string">-new-privileges:true</span>  <span class="comment"># 增加安全性，防止提权</span></span><br><span class="line">    <span class="attr">networks:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">traefik-net</span>  <span class="comment"># 连接到名为 proxy 的外部网络</span></span><br><span class="line">    <span class="attr">ports:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="number">80</span><span class="string">:80</span>  <span class="comment"># 映射主机的 80 端口到容器的 80 端口 (HTTP)</span></span><br><span class="line">      <span class="bullet">-</span> <span class="number">443</span><span class="string">:443</span>  <span class="comment"># 映射主机的 443 端口到容器的 443 端口 (HTTPS)</span></span><br><span class="line">      <span class="bullet">-</span> <span class="number">443</span><span class="string">:443/tcp</span>  <span class="comment"># 映射主机的 443 TCP 端口到容器的 443 端口 (TCP 协议)</span></span><br><span class="line">      <span class="bullet">-</span> <span class="number">443</span><span class="string">:443/udp</span>  <span class="comment"># 映射主机的 443 UDP 端口到容器的 443 端口 (UDP 协议)</span></span><br><span class="line">    <span class="attr">environment:</span></span><br><span class="line">      <span class="attr">CF_DNS_API_TOKEN_FILE:</span> <span class="string">${CF_DNS_API_TOKEN}</span>  <span class="comment"># 设置环境变量，使用 Cloudflare API 令牌，根据Traefik文档 选择你的服务提供商的token</span></span><br><span class="line">      <span class="attr">TRAEFIK_DASHBOARD_CREDENTIALS:</span> <span class="string">${TRAEFIK_DASHBOARD_CREDENTIALS}</span>  <span class="comment"># 设置环境变量，定义 Traefik 仪表板的凭据</span></span><br><span class="line">    <span class="attr">env_file:</span> <span class="string">.env</span>  <span class="comment"># 从 .env 文件中加载环境变量</span></span><br><span class="line">    <span class="attr">volumes:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">/etc/localtime:/etc/localtime:ro</span>  <span class="comment"># 挂载主机的时间设置到容器，确保时间同步，且只读</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">/var/run/docker.sock:/var/run/docker.sock:ro</span>  <span class="comment"># 挂载 Docker 的 socket 文件，允许 Traefik 访问 Docker API，只读</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">./data/traefik.yml:/traefik.yml:ro</span>  <span class="comment"># 挂载本地的 traefik.yml 配置文件到容器内，只读</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">./data/acme.json:/acme.json</span>  <span class="comment"># 挂载本地的 acme.json 文件，存储 SSL 证书信息</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">./data/config.yml:/config.yml:ro</span>  <span class="comment"># 可选的配置文件挂载路径，若需要可取消注释</span></span><br><span class="line">    <span class="attr">labels:</span>  <span class="comment"># 设置 Traefik 的相关标签，用于路由和中间件配置</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.enable=true"</span>  <span class="comment"># 启用 Traefik 服务</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.http.routers.traefik.entrypoints=http"</span>  <span class="comment"># 配置 HTTP 入口点</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.http.routers.traefik.rule=Host(`${TRAEFIK_DASHBOARD_HOST}`)"</span> <span class="comment"># 定义 Traefik 仪表板的访问规则</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.http.middlewares.traefik-auth.basicauth.users=${TRAEFIK_DASHBOARD_CREDENTIALS}"</span>  <span class="comment"># 为仪表板配置基本身份验证</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.http.middlewares.traefik-https-redirect.redirectscheme.scheme=https"</span>  <span class="comment"># 配置 HTTP 到 HTTPS 的重定向</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.http.middlewares.sslheader.headers.customrequestheaders.X-Forwarded-Proto=https"</span>  <span class="comment"># 添加自定义请求头</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.http.routers.traefik.middlewares=traefik-https-redirect"</span>  <span class="comment"># 将重定向中间件应用到 HTTP 路由</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.http.routers.traefik-secure.entrypoints=https"</span>  <span class="comment"># 配置 HTTPS 入口点</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.http.routers.traefik-secure.rule=Host(`${TRAEFIK_DASHBOARD_HOST}`)"</span> <span class="comment"># 定义 HTTPS 路由的访问规则</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.http.routers.traefik-secure.middlewares=traefik-auth"</span>  <span class="comment"># 为 HTTPS 路由应用基本身份验证中间件</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.http.routers.traefik-secure.tls=true"</span>  <span class="comment"># 启用 TLS (HTTPS)</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.http.routers.traefik-secure.tls.certresolver=${NS_Domain}"</span>  <span class="comment"># 使用 DNS服务提供商 code 根据Traefik文档 选择你的服务提供商code</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.http.routers.traefik-secure.tls.domains[0].main=${TLS_MAIN_DOMAIN}"</span>  <span class="comment"># 定义主域名</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.http.routers.traefik-secure.tls.domains[0].sans=${TLS_SANS_DOMAIN}"</span>  <span class="comment"># 定义子域名通配符</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.http.routers.traefik-secure.service=api@internal"</span>  <span class="comment"># 使用 Traefik 内部 API 服务</span></span><br><span class="line"></span><br><span class="line"><span class="attr">networks:</span></span><br><span class="line">  <span class="attr">traefik-net:</span></span><br><span class="line">    <span class="attr">external:</span> <span class="literal">false</span>  <span class="comment"># 使用外部定义的名为 proxy 的网络</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p><code>.env</code> 文件:</p>
+<figure class="highlight toml"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment"># .env 文件</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># CF API</span></span><br><span class="line"><span class="attr">CF_DNS_API_TOKEN</span>=</span><br><span class="line"></span><br><span class="line"><span class="attr">NS_Domain</span>=cloudflare <span class="comment">#根据你使用的DNS服务提供商 code 根据Traefik文档 选择你的服务提供商code</span></span><br><span class="line"><span class="comment"># 设置环境变量，定义 Traefik 仪表板的凭据 ，默认账户名密码：admin</span></span><br><span class="line"><span class="attr">TRAEFIK_DASHBOARD_CREDENTIALS</span>=admin:$<span class="variable">$2y</span>$<span class="variable">$05</span>$<span class="variable">$aOXINGgHfnZ</span>//t.kUs7o9ej3faUbj2yNxc8k3WVrBybFOxxaTsLTe</span><br><span class="line"></span><br><span class="line"><span class="comment"># Traefik Dashboard 域名</span></span><br><span class="line"><span class="attr">TRAEFIK_DASHBOARD_HOST</span>=dash.docker.localhost</span><br><span class="line"></span><br><span class="line"><span class="comment"># TLS 主域名和子域名</span></span><br><span class="line"><span class="attr">TLS_MAIN_DOMAIN</span>=docker.localhost</span><br><span class="line"><span class="attr">TLS_SANS_DOMAIN</span>=*.docker.localhost</span><br></pre></td></tr></tbody></table></figure>
+
+<p><code>traefik.yml</code> 文件：</p>
+<figure class="highlight yaml"><table><tbody><tr><td class="code"><pre><span class="line"><span class="attr">api:</span></span><br><span class="line">  <span class="attr">dashboard:</span> <span class="literal">true</span>  <span class="comment"># 启用 Traefik 的仪表板，可以通过指定的路由访问</span></span><br><span class="line">  <span class="attr">debug:</span> <span class="literal">true</span>  <span class="comment"># 启用调试模式，输出更多的日志信息</span></span><br><span class="line"></span><br><span class="line"><span class="attr">entryPoints:</span></span><br><span class="line">  <span class="attr">http:</span></span><br><span class="line">    <span class="attr">address:</span> <span class="string">":80"</span>  <span class="comment"># 定义 HTTP 入口点，监听 80 端口</span></span><br><span class="line">    <span class="attr">http:</span></span><br><span class="line">      <span class="attr">redirections:</span></span><br><span class="line">        <span class="attr">entryPoint:</span></span><br><span class="line">          <span class="attr">to:</span> <span class="string">https</span>  <span class="comment"># 重定向 HTTP 请求到 HTTPS</span></span><br><span class="line">          <span class="attr">scheme:</span> <span class="string">https</span>  <span class="comment"># 使用 HTTPS 作为重定向的目标协议</span></span><br><span class="line"></span><br><span class="line">  <span class="attr">https:</span></span><br><span class="line">    <span class="attr">address:</span> <span class="string">":443"</span>  <span class="comment"># 定义 HTTPS 入口点，监听 443 端口</span></span><br><span class="line"></span><br><span class="line"><span class="attr">serversTransport:</span></span><br><span class="line">  <span class="attr">insecureSkipVerify:</span> <span class="literal">true</span>  <span class="comment"># 在与后端服务器通信时，跳过 TLS 证书验证（不推荐在生产环境中使用）</span></span><br><span class="line"></span><br><span class="line"><span class="attr">providers:</span></span><br><span class="line">  <span class="attr">docker:</span></span><br><span class="line">    <span class="attr">endpoint:</span> <span class="string">"unix:///var/run/docker.sock"</span>  <span class="comment"># 指定 Docker API 的 socket 文件路径，Traefik 使用它来检测和管理 Docker 容器</span></span><br><span class="line">    <span class="attr">exposedByDefault:</span> <span class="literal">false</span>  <span class="comment"># 默认情况下，Docker 容器不会自动暴露给 Traefik，必须显式指定</span></span><br><span class="line">    <span class="attr">watch:</span> <span class="literal">true</span></span><br><span class="line"></span><br><span class="line">  <span class="attr">file:</span></span><br><span class="line">    <span class="attr">filename:</span> <span class="string">/config.yml</span>  <span class="comment"># (已注释) 可选的文件提供者配置，用于从外部文件加载配置</span></span><br><span class="line">    <span class="attr">watch:</span> <span class="literal">true</span>  <span class="comment"># 允许 Traefik 自动监控和加载配置文件变化</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="attr">certificatesResolvers:</span></span><br><span class="line">  <span class="attr">cloudflare:</span> <span class="comment"># 使用 DNS服务提供商 code 根据Traefik文档 选择你的服务提供商code</span></span><br><span class="line">    <span class="attr">acme:</span></span><br><span class="line">      <span class="attr">email:</span> <span class="string">youremail@email.com</span>  <span class="comment"># 申请 ACME 证书时使用的电子邮件地址</span></span><br><span class="line">      <span class="attr">storage:</span> <span class="string">acme.json</span>  <span class="comment"># 存储证书信息的文件路径</span></span><br><span class="line">      <span class="comment"># caServer: https://acme-v02.api.letsencrypt.org/directory # 正式环境的 Let's Encrypt 服务器 (默认)</span></span><br><span class="line">      <span class="attr">caServer:</span> <span class="string">https://acme-staging-v02.api.letsencrypt.org/directory</span> <span class="comment"># 测试环境的 Let's Encrypt 服务器 (用于调试)</span></span><br><span class="line"></span><br><span class="line">      <span class="attr">dnsChallenge:</span></span><br><span class="line">        <span class="attr">provider:</span> <span class="string">cloudflare</span>  <span class="comment"># 使用 DNS服务提供商 code 根据Traefik文档 选择你的服务提供商code 进行 DNS 验证以获取证书</span></span><br><span class="line">        <span class="comment">#disablePropagationCheck: true # (已注释) 如果通过 Cloudflare 获取证书有问题，可以取消注释此行以禁用传播检查</span></span><br><span class="line">        <span class="comment">#delayBeforeCheck: 60s # (已注释) 如果需要确保 TXT 记录准备就绪，可以取消注释此行并设置检查延迟</span></span><br><span class="line">        <span class="attr">resolvers:</span></span><br><span class="line">          <span class="bullet">-</span> <span class="string">"223.5.5.5:53"</span>  <span class="comment"># AliDNS 解析器</span></span><br><span class="line">          <span class="bullet">-</span> <span class="string">"119.29.29.29:53"</span>  <span class="comment"># 备用 DNS 解析器</span></span><br><span class="line">          <span class="bullet">-</span> <span class="string">"1.1.1.1"</span> <span class="comment"># 备用 DNS 解析器</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p><code>config.yml</code> 文件，可以选择配置，如果你宿主机有ng反代服务，你使用taerfik 的话会端口冲突，可以配置，但不过要把 <code>docker-compose</code> 和 <code>Traefik</code>的配置文件注释去掉即可：</p>
+<figure class="highlight yaml"><table><tbody><tr><td class="code"><pre><span class="line"><span class="attr">http:</span></span><br><span class="line">  <span class="comment">#region routers </span></span><br><span class="line">  <span class="attr">routers:</span></span><br><span class="line">    <span class="attr">hexo:</span></span><br><span class="line">      <span class="attr">entryPoints:</span></span><br><span class="line">        <span class="bullet">-</span> <span class="string">"https"</span>  <span class="comment"># 指定使用 HTTPS 入口点</span></span><br><span class="line">      <span class="attr">rule:</span> <span class="string">"Host(`hexo.docker.localhost`)"</span>  <span class="comment"># 当访问的主机名为 hexo.local.shellscience.top 时，触发此路由</span></span><br><span class="line">      <span class="attr">middlewares:</span></span><br><span class="line">        <span class="bullet">-</span> <span class="string">default-headers</span>  <span class="comment"># 应用默认的安全头中间件</span></span><br><span class="line">        <span class="bullet">-</span> <span class="string">https-redirectscheme</span>  <span class="comment"># 应用 HTTPS 重定向中间件</span></span><br><span class="line">      <span class="attr">tls:</span> {}  <span class="comment"># 启用 TLS 加密</span></span><br><span class="line">      <span class="attr">service:</span> <span class="string">hexo</span>  <span class="comment"># 指定将请求转发到名为 hexo 的服务</span></span><br><span class="line"></span><br><span class="line">  <span class="comment">#region services</span></span><br><span class="line">  <span class="attr">services:</span></span><br><span class="line">    <span class="attr">hexo:</span></span><br><span class="line">      <span class="attr">loadBalancer:</span></span><br><span class="line">        <span class="attr">servers:</span></span><br><span class="line">          <span class="bullet">-</span> <span class="attr">url:</span> <span class="string">"http://127.0.0.1:5000"</span>  <span class="comment"># 指定 Hexo 服务的后端服务器 URL</span></span><br><span class="line">        <span class="attr">passHostHeader:</span> <span class="literal">true</span>  <span class="comment"># 传递原始的 Host 头信息到后端服务</span></span><br><span class="line">  <span class="comment">#endregion</span></span><br><span class="line"></span><br><span class="line">  <span class="attr">middlewares:</span></span><br><span class="line">    <span class="attr">https-redirectscheme:</span></span><br><span class="line">      <span class="attr">redirectScheme:</span></span><br><span class="line">        <span class="attr">scheme:</span> <span class="string">https</span>  <span class="comment"># 将 HTTP 请求重定向为 HTTPS</span></span><br><span class="line">        <span class="attr">permanent:</span> <span class="literal">true</span>  <span class="comment"># 使用永久重定向（HTTP 301）</span></span><br><span class="line"></span><br><span class="line">    <span class="attr">default-headers:</span></span><br><span class="line">      <span class="attr">headers:</span></span><br><span class="line">        <span class="attr">frameDeny:</span> <span class="literal">true</span>  <span class="comment"># 禁止网页被嵌入到框架中，防止点击劫持攻击</span></span><br><span class="line">        <span class="attr">browserXssFilter:</span> <span class="literal">true</span>  <span class="comment"># 启用浏览器的 XSS 过滤器，增强安全性</span></span><br><span class="line">        <span class="attr">contentTypeNosniff:</span> <span class="literal">true</span>  <span class="comment"># 防止浏览器 MIME 类型嗅探</span></span><br><span class="line">        <span class="attr">forceSTSHeader:</span> <span class="literal">true</span>  <span class="comment"># 强制启用 HSTS（HTTP 严格传输安全）</span></span><br><span class="line">        <span class="attr">stsIncludeSubdomains:</span> <span class="literal">true</span>  <span class="comment"># HSTS 规则应用于所有子域</span></span><br><span class="line">        <span class="attr">stsPreload:</span> <span class="literal">true</span>  <span class="comment"># 允许将域名加入 HSTS 预加载列表</span></span><br><span class="line">        <span class="attr">stsSeconds:</span> <span class="number">15552000</span>  <span class="comment"># HSTS 头的有效期（秒），这里是 180 天</span></span><br><span class="line">        <span class="attr">customFrameOptionsValue:</span> <span class="string">SAMEORIGIN</span>  <span class="comment"># 允许内容在同源的 iframe 中加载</span></span><br><span class="line">        <span class="attr">customRequestHeaders:</span></span><br><span class="line">          <span class="attr">X-Forwarded-Proto:</span> <span class="string">https</span>  <span class="comment"># 设置 X-Forwarded-Proto 头为 https，用于指示原始请求协议</span></span><br><span class="line"></span><br><span class="line">    <span class="attr">default-whitelist:</span></span><br><span class="line">      <span class="attr">ipAllowList:</span></span><br><span class="line">        <span class="attr">sourceRange:</span></span><br><span class="line">        <span class="bullet">-</span> <span class="string">"10.0.0.0/8"</span>  <span class="comment"># 允许来自 10.0.0.0/8 网段的 IP 地址</span></span><br><span class="line">        <span class="bullet">-</span> <span class="string">"192.168.0.0/16"</span>  <span class="comment"># 允许来自 192.168.0.0/16 网段的 IP 地址</span></span><br><span class="line">        <span class="bullet">-</span> <span class="string">"172.16.0.0/12"</span>  <span class="comment"># 允许来自 172.16.0.0/12 网段的 IP 地址</span></span><br><span class="line"></span><br><span class="line">    <span class="attr">secured:</span></span><br><span class="line">      <span class="attr">chain:</span></span><br><span class="line">        <span class="attr">middlewares:</span></span><br><span class="line">        <span class="bullet">-</span> <span class="string">default-whitelist</span>  <span class="comment"># 应用默认的 IP 白名单中间件</span></span><br><span class="line">        <span class="bullet">-</span> <span class="string">default-headers</span>  <span class="comment"># 应用默认的安全头中间件</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>配置完毕我们<code>docker-compose up -d</code>如果配置没有问题你就可以通过你配置的域名成功访问<code>Traefik</code>的面板。</p>
+<h1 id="反代代理Dcoekr应用"><a href="#反代代理Dcoekr应用" class="headerlink" title="反代代理Dcoekr应用"></a>反代代理Dcoekr应用</h1><p>这里拿<code>Memos</code>的程序来举例子:</p>
+<p>下面是我的<code>Memos</code>的<code>docker-compose.yaml</code> 文件，我们只需要把暴露的端口删除，添加<code>labels</code>标签以及下面几个配置（你想访问的域名、容器的端口、开启https、使用tls证书）以及让我们的程序接入<code>Traefik</code>的网络就好了。</p>
+<figure class="highlight yaml"><table><tbody><tr><td class="code"><pre><span class="line"><span class="attr">version:</span> <span class="string">"3.0"</span></span><br><span class="line"><span class="attr">services:</span></span><br><span class="line">  <span class="attr">memos:</span></span><br><span class="line">    <span class="attr">image:</span> <span class="string">ghcr.io/usememos/memos:latest</span></span><br><span class="line">    <span class="attr">container_name:</span> <span class="string">memos</span></span><br><span class="line">    <span class="attr">volumes:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">./data/:/var/opt/memos</span></span><br><span class="line">    <span class="attr">environment:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">driver=sqlite</span></span><br><span class="line">    <span class="attr">labels:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.enable=true"</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.http.routers.memos.rule=Host(`memos.local.com`)"</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.http.services.memos.loadbalancer.server.port=&lt;程序的端口&gt;"</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.http.routers.memos.entrypoints=https"</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"traefik.http.routers.memos.tls=true"</span></span><br><span class="line">    <span class="attr">networks:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">traefik-net</span></span><br><span class="line"></span><br><span class="line"><span class="attr">networks:</span></span><br><span class="line">  <span class="attr">traefik-net:</span></span><br><span class="line">    <span class="attr">external:</span> <span class="literal">true</span></span><br></pre></td></tr></tbody></table></figure>
+
+
+
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p><code>Traefik</code>DNS服务提供文档：<a href="https://doc.traefik.io/traefik/https/acme/#providers" rel="external nofollow noreferrer">https://doc.traefik.io/traefik/https/acme/#providers</a></p>
+<p><code>Traefik</code>Docker配置文档：<a href="https://doc.traefik.io/traefik/routing/providers/docker/" rel="external nofollow noreferrer">https://doc.traefik.io/traefik/routing/providers/docker/</a></p>
+<h1 id="最后结尾的彩蛋"><a href="#最后结尾的彩蛋" class="headerlink" title="最后结尾的彩蛋"></a>最后结尾的彩蛋</h1><p>找<code>DALL·E</code>生成了两张cover不过总感觉怪怪的，另外一张也放出来吧，有一种土拔鼠变成黄鼠狼的错觉。</p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2024/10/05/67011bad7c6dc.webp" alt="DALL·E 2024-10-05 18.57.18 - A professional cover featuring the Traefik logo, which is a Go language gopher mascot directing traffic with a traffic sign. The background shows a gr.webp"></p>
+</body></html>]]></content>
+      <categories>
+        <category>网络技术</category>
+      </categories>
+      <tags>
+        <tag>2024</tag>
+        <tag>Docker</tag>
+        <tag>Traefik</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>WebSocket用SpringSecuirty认证和鉴权</title>
     <url>/posts/springboot-websocket-springSecurity/</url>
     <content><![CDATA[<html><head></head><body><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>刚开始想进行认证感觉还是蛮简单的，也只需要让websocket 的<code>Headers</code>上也带<code>authorization</code>在加上token 的值不就完事了吗。</p>
@@ -1966,6 +1966,44 @@
         <tag>Security</tag>
         <tag>SpringSecuriy</tag>
         <tag>WebSocket</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于WordPress分类目录404问题</title>
+    <url>/posts/%E5%85%B3%E4%BA%8Ewordpress%E5%88%86%E7%B1%BB%E7%9B%AE%E5%BD%95404%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<html><head></head><body><h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>前两天把博客给玩脱了和，也没有备份，重新搞了之后我其实想隐藏博文中链接地址里面的index.php无意间隐藏了index.php还神奇的把分类目录的404解决了。</p>
+<h2 id="我遇到的问题，本人萌新，如果有什么不对的地方希望大佬手下留情ヾ-≧へ≦-〃"><a href="#我遇到的问题，本人萌新，如果有什么不对的地方希望大佬手下留情ヾ-≧へ≦-〃" class="headerlink" title="我遇到的问题，本人萌新，如果有什么不对的地方希望大佬手下留情ヾ(≧へ≦)〃"></a>我遇到的问题，本人萌新，如果有什么不对的地方希望大佬手下留情ヾ(≧へ≦)〃</h2><p>我的博客的问题是就算使用word press的 月份和名称型类型地址也会报错。 以及我的分类目录404，但是文章标签就可以正常打开，这对于我来说已经非常玄学了。</p>
+<h2 id="开始解决："><a href="#开始解决：" class="headerlink" title="开始解决："></a>开始解决：</h2><p>我是用的nginx。我抄的是nginx修改的代码是这个<a href="https://blog.csdn.net/weixin_41846803/article/details/80488726" rel="external nofollow noreferrer" title="博主写的">博主写的</a></p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">location / {</span><br><span class="line">       if (!-e $request_filename) {</span><br><span class="line">            #一级目录</span><br><span class="line">            rewrite ^/(.*)$ /index.php/$1 last;</span><br><span class="line">        } </span><br><span class="line">    }</span><br></pre></td></tr></tbody></table></figure>
+
+<p>然后进入你的宝塔面板，网站——选择你需要改的网站——设置——更改配置——拆入代码。我插入的是第50行 <img src="http://c-dreamer.top/wp-content/uploads/2020/06/word-press%E7%9A%84404.png"></p>
+</body></html>]]></content>
+      <categories>
+        <category>网络技术</category>
+      </categories>
+      <tags>
+        <tag>WordPress</tag>
+        <tag>Nginx</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>TeamSpeak 已经运行一年</title>
+    <url>/posts/teamspeak-run-one-year/</url>
+    <content><![CDATA[<html><head></head><body><blockquote>
+<p> <a href="ts3server://voice.ning.moe" rel="external nofollow noreferrer">点击此处唤醒</a>team speak</p>
+</blockquote>
+<p>看来 21多天没有更新了，来水一下，先浅浅的放一下运行一年的截图吧。</p>
+<p> <img src="https://img.misaka.pics/ShellBlogImg/1/2023/11/06/6548eff53a156.webp" alt="TeamSpeak-one-year-1.webp"> </p>
+<p>emmm ，艰难的存活了一年，感觉蛮不容易的，期间服务器很想进行重启的，应该来说是<a href="https://blog.ning.moe/blog/">两年之久</a>，在这个软件里面承载了我们之间的欢乐时光。</p>
+<p> <img src="https://img.misaka.pics/ShellBlogImg/1/2023/11/06/6548f0c3abc56.webp" alt="TeamSpeak-one-year-2.webp"> </p>
+<p>这个 TeamSpeak 服务器是在腾讯云hk轻量服务器上运行，用来方便我和我的朋友们进行连麦和交流。为我们提供了一个愉快的交流平台，让我们能够更轻松地一起玩游戏、讨论话题和共享欢乐时光。</p>
+<p>我们主要的游戏是 彩虹六号，如果您也是彩虹六号玩家或者是对彩虹六号感兴趣，切没有人和你一起玩耍，我们非常欢迎你来加入我们，与我们一起畅谈、娱乐。</p>
+</body></html>]]></content>
+      <categories>
+        <category>生活随想</category>
+      </categories>
+      <tags>
+        <tag>TeamSpeak</tag>
       </tags>
   </entry>
   <entry>
@@ -2006,26 +2044,6 @@
       </tags>
   </entry>
   <entry>
-    <title>TeamSpeak 已经运行一年</title>
-    <url>/posts/teamspeak-run-one-year/</url>
-    <content><![CDATA[<html><head></head><body><blockquote>
-<p> <a href="ts3server://voice.ning.moe" rel="external nofollow noreferrer">点击此处唤醒</a>team speak</p>
-</blockquote>
-<p>看来 21多天没有更新了，来水一下，先浅浅的放一下运行一年的截图吧。</p>
-<p> <img src="https://img.misaka.pics/ShellBlogImg/1/2023/11/06/6548eff53a156.webp" alt="TeamSpeak-one-year-1.webp"> </p>
-<p>emmm ，艰难的存活了一年，感觉蛮不容易的，期间服务器很想进行重启的，应该来说是<a href="https://blog.ning.moe/blog/">两年之久</a>，在这个软件里面承载了我们之间的欢乐时光。</p>
-<p> <img src="https://img.misaka.pics/ShellBlogImg/1/2023/11/06/6548f0c3abc56.webp" alt="TeamSpeak-one-year-2.webp"> </p>
-<p>这个 TeamSpeak 服务器是在腾讯云hk轻量服务器上运行，用来方便我和我的朋友们进行连麦和交流。为我们提供了一个愉快的交流平台，让我们能够更轻松地一起玩游戏、讨论话题和共享欢乐时光。</p>
-<p>我们主要的游戏是 彩虹六号，如果您也是彩虹六号玩家或者是对彩虹六号感兴趣，切没有人和你一起玩耍，我们非常欢迎你来加入我们，与我们一起畅谈、娱乐。</p>
-</body></html>]]></content>
-      <categories>
-        <category>生活随想</category>
-      </categories>
-      <tags>
-        <tag>TeamSpeak</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>博客数据库损坏，正在维护！</title>
     <url>/posts/%E5%8D%9A%E5%AE%A2%E6%95%B0%E6%8D%AE%E5%BA%93%E6%8D%9F%E5%9D%8F%EF%BC%8C%E6%AD%A3%E5%9C%A8%E7%BB%B4%E6%8A%A4%EF%BC%81/</url>
     <content><![CDATA[<html><head></head><body><p>因博主手残把动了数据库而且还没有恢复到最近的备份，本博客访问可能会存在一定问题，在博主紧急抢修下，恢复了部分基础功能，博文图片可能暂时无法加载，我相信很快恢复，我现在先睡觉了都12点了。</p>
@@ -2033,24 +2051,6 @@
       <categories>
         <category>网络技术</category>
       </categories>
-  </entry>
-  <entry>
-    <title>关于WordPress分类目录404问题</title>
-    <url>/posts/%E5%85%B3%E4%BA%8Ewordpress%E5%88%86%E7%B1%BB%E7%9B%AE%E5%BD%95404%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<html><head></head><body><h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>前两天把博客给玩脱了和，也没有备份，重新搞了之后我其实想隐藏博文中链接地址里面的index.php无意间隐藏了index.php还神奇的把分类目录的404解决了。</p>
-<h2 id="我遇到的问题，本人萌新，如果有什么不对的地方希望大佬手下留情ヾ-≧へ≦-〃"><a href="#我遇到的问题，本人萌新，如果有什么不对的地方希望大佬手下留情ヾ-≧へ≦-〃" class="headerlink" title="我遇到的问题，本人萌新，如果有什么不对的地方希望大佬手下留情ヾ(≧へ≦)〃"></a>我遇到的问题，本人萌新，如果有什么不对的地方希望大佬手下留情ヾ(≧へ≦)〃</h2><p>我的博客的问题是就算使用word press的 月份和名称型类型地址也会报错。 以及我的分类目录404，但是文章标签就可以正常打开，这对于我来说已经非常玄学了。</p>
-<h2 id="开始解决："><a href="#开始解决：" class="headerlink" title="开始解决："></a>开始解决：</h2><p>我是用的nginx。我抄的是nginx修改的代码是这个<a href="https://blog.csdn.net/weixin_41846803/article/details/80488726" rel="external nofollow noreferrer" title="博主写的">博主写的</a></p>
-<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">location / {</span><br><span class="line">       if (!-e $request_filename) {</span><br><span class="line">            #一级目录</span><br><span class="line">            rewrite ^/(.*)$ /index.php/$1 last;</span><br><span class="line">        } </span><br><span class="line">    }</span><br></pre></td></tr></tbody></table></figure>
-
-<p>然后进入你的宝塔面板，网站——选择你需要改的网站——设置——更改配置——拆入代码。我插入的是第50行 <img src="http://c-dreamer.top/wp-content/uploads/2020/06/word-press%E7%9A%84404.png"></p>
-</body></html>]]></content>
-      <categories>
-        <category>网络技术</category>
-      </categories>
-      <tags>
-        <tag>WordPress</tag>
-        <tag>Nginx</tag>
-      </tags>
   </entry>
   <entry>
     <title>博客评论系统还在测试阶段</title>
@@ -2067,18 +2067,6 @@
       </categories>
       <tags>
         <tag>备案</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>本站建立一周年!</title>
-    <url>/posts/%E6%9C%AC%E7%AB%99%E5%BB%BA%E7%AB%8B%E4%B8%80%E5%91%A8%E5%B9%B4/</url>
-    <content><![CDATA[<html><head></head><body><p>不知不觉当中,blog已经陪我走完一年,而我在这一年当中也没有写过什么东西,觉得浪费了资源.虽然建站容易但是,维护确实相当的麻烦. 大概明年五月份的时候可能本站要从word press迁移至Typecho. 不过至于下一次更新可能要继续等到2021年暑假的时候.</p>
-</body></html>]]></content>
-      <categories>
-        <category>生活随想</category>
-      </categories>
-      <tags>
-        <tag>生活随想</tag>
       </tags>
   </entry>
   <entry>
@@ -2107,19 +2095,6 @@
       </categories>
   </entry>
   <entry>
-    <title>本站正式启动邮箱评论功能</title>
-    <url>/posts/%E6%9C%AC%E7%AB%99%E6%AD%A3%E5%BC%8F%E5%90%AF%E5%8A%A8%E9%82%AE%E7%AE%B1%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/</url>
-    <content><![CDATA[<html><head></head><body><p>邮箱评论功能欢迎大家测试如有bug,请联系我的QQ，谢谢！</p>
-</body></html>]]></content>
-      <categories>
-        <category>网络技术</category>
-      </categories>
-      <tags>
-        <tag>Email</tag>
-        <tag>SMTP</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>用Java编写一个简易的计算器</title>
     <url>/posts/%E7%94%A8java%E7%BC%96%E5%86%99%E4%B8%80%E4%B8%AA%E7%AE%80%E6%98%93%E7%9A%84%E8%AE%A1%E7%AE%97%E5%99%A8/</url>
     <content><![CDATA[<html><head></head><body><p>思路： 利用Scanner建立一个扫描对象，在用switch语句进行判断。</p>
@@ -2133,6 +2108,31 @@
       </categories>
       <tags>
         <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>本站正式启动邮箱评论功能</title>
+    <url>/posts/%E6%9C%AC%E7%AB%99%E6%AD%A3%E5%BC%8F%E5%90%AF%E5%8A%A8%E9%82%AE%E7%AE%B1%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/</url>
+    <content><![CDATA[<html><head></head><body><p>邮箱评论功能欢迎大家测试如有bug,请联系我的QQ，谢谢！</p>
+</body></html>]]></content>
+      <categories>
+        <category>网络技术</category>
+      </categories>
+      <tags>
+        <tag>Email</tag>
+        <tag>SMTP</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>本站建立一周年!</title>
+    <url>/posts/%E6%9C%AC%E7%AB%99%E5%BB%BA%E7%AB%8B%E4%B8%80%E5%91%A8%E5%B9%B4/</url>
+    <content><![CDATA[<html><head></head><body><p>不知不觉当中,blog已经陪我走完一年,而我在这一年当中也没有写过什么东西,觉得浪费了资源.虽然建站容易但是,维护确实相当的麻烦. 大概明年五月份的时候可能本站要从word press迁移至Typecho. 不过至于下一次更新可能要继续等到2021年暑假的时候.</p>
+</body></html>]]></content>
+      <categories>
+        <category>生活随想</category>
+      </categories>
+      <tags>
+        <tag>生活随想</tag>
       </tags>
   </entry>
 </search>
