@@ -6,7 +6,7 @@
   <link href="https://blog.ning.moe/atom.xml" rel="self"/>
   
   <link href="https://blog.ning.moe/"/>
-  <updated>2024-12-31T03:31:51.293Z</updated>
+  <updated>2025-02-06T11:50:27.973Z</updated>
   <id>https://blog.ning.moe/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【记】中国移动携号转网至中国电信</title>
+    <link href="https://blog.ning.moe/posts/Mobile-Number-Portability/"/>
+    <id>https://blog.ning.moe/posts/Mobile-Number-Portability/</id>
+    <published>2025-02-06T09:57:01.000Z</published>
+    <updated>2025-02-06T11:50:27.973Z</updated>
+    
+    <content type="html"><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>博主家曾全是中国移动，最长的一个号码已使用超过6000天。虽然一开始对于携号转网心存疑虑，但随着时间推移，尤其是19年将宽带迁移至电信后，我逐渐决定放弃中国移动。经过多次骚扰电话和长辈账户的额外费用，携号转网的想法再度提上日程。随着2025年携号转网政策实施五周年，流程已理论成熟，但实际操作过程中仍存在许多繁琐和问题。以下是我的转网经历与总结。</p><h1 id="携号准备"><a href="#携号准备" class="headerlink" title="携号准备"></a>携号准备</h1><p>在携号转网之前，首先需要确认自己的号码是否符合转网条件。你可以通过发送个人信息查询是否有资格办理。短信内容格式为：</p><blockquote><p>CXXZ#用户名#证件号码</p></blockquote><p>把上面的按照你的个人信息填好，发送至你现在的运营商(移动:10086、电信:10001、联通:10010)，基本上会有以下情况，如果同意那么准备阶段就已经结束了，如果没有就先打对应的运营商电话(移动:10086、电信:10001、联通:10010)，询问携号转网有影响的业务虽然一般业务取消是次月生效，但是如果解除了你可以再试试能否有资格写好转网，一般都是取消业务直接就可以了。</p><table><thead><tr><th>【携号转网告知提醒】尊敬的客户，您好！您的号码满足携转条件，如需办理携号转网服务，请携带有效身份证件前往拟携入运营企业当地营业厅办理。受欠费、在网协议等因素影响，携转资格可能发生变化，建议办理前再次查询。详询10086。【中国移动心级服务，让爱连接】</th><th>【携号转网告知提醒】尊敬的客户，您好！您的号码满足携转条件，如需办理携号转网服务，请携带有效身份证件前往拟携入运营企业当地营业厅办理。受欠费、在网协议等因素影响，携转资格可能发生变化，建议办理前再次查询。详询10086。【中国移动心级服务，让爱连接】</th></tr></thead></table><h1 id="携入准备"><a href="#携入准备" class="headerlink" title="携入准备"></a>携入准备</h1><p>这个问题就开始比较棘手了，因为各地区的规定可能并不一样，一般情况下按照工信部发布的携号转网是可以直接去线下的营业厅进行办理的，但博主遇到的确实以各种理由延长或拒绝受理携号入网的。按照 <a href="https://www.gov.cn/xinwen/2019-11/11/content_5450928.htm" rel="external nofollow noreferrer">工业和信息化部关于印发《携号转网服务管理规定》的通知</a> 第九条第一小项：无正当理由拒绝、阻止、拖延向用户提供携号转网服务。</p><p>博主被告知的是没有名额需要预约，并且需要到下个月的8号，博主是2月4号去带长辈过去办理的，相当于等一月，而且预约并不能线上或者给营业厅打电话，必须本人携带身份证进行预约，经与工作人员沟通确认相关服务细则，并告知并没有，随后带着长辈先去逛逛商业街，给电信进行申请工单，到2月6号才被告知才可以进行携号转网，但是还只能先转入两个7号再转入一个，经过一系列的撕扯，最终他们同意6号当天进行转入3个。</p><p>所以这种东西建议还是去实地考察以下，毕竟就算一个省，不同地区都不一样，例如博主江苏省南京市携号转网，就没有预约和名额这个问题，但是博主家的市就有这个问题。</p><h1 id="进行携入"><a href="#进行携入" class="headerlink" title="进行携入"></a>进行携入</h1><p>随后6号去到营业厅，申请转移码,根据下面的个人信息填好，发送至你现在的运营商(移动:10086、电信:10001、联通:10010)。</p><blockquote><p>SQXZ#用户名#证件号码</p></blockquote><p>差不多是下面这种格式，转移码有效期一个小时</p><blockquote><p>【携号转网告知提醒】尊敬的客户，您好！您申请的携出授权码为464036，有效期到2025-02-06 12:03。您需在有效期内携带有效身份证件前往拟携入运营企业当地营业厅办理，逾期办理需重新申请授权码。详询10086。【中国移动心级服务，让爱连接】</p></blockquote><p>以及漫长的等待差不多一个号码转入需要花费20分钟，以及一个小时只能转移一个号码，什么意思呢？举个例子:</p><blockquote><p>例如 ：张三先生手里面有2个号码转入XXX运营商，例如他是9点<del>10点区间内转移的第一个号码，那么下次转移最快需要在10</del>11点区间进行转移，像博主转移三个号码但是A先生是有两个号码B女士是一个号码，那么实际上A先生需要花费两个小时进行转移，而B女士只需要不受等待期印象，因为系统只认你证件。</p></blockquote><p>所以假设有很多的号码尽量转移给不通的亲属名下，会加速转移的进程。</p><p>此外运营商同步信息是1个小时同步一次，例如 10~11点区间写好转移成功，那么新的sim卡会在12点之后才可以进行使用，再次之前您的旧卡仍然可以正常使用。</p><p>以及测试以下新卡启动服务之后拨打电话是否正常，以博主的举例：移动转电信，那么去找朋友或者亲戚有移动的手机号以及电信的手机号进行拨打是否正常，防止会出现这个新闻：<a href="https://news.qq.com/rain/a/20240528A071H300" rel="external nofollow noreferrer">同一号码竟有两家运营商用户同时在用？江苏省通信管理局现场回应</a></p><h1 id="旧运营商花费取出"><a href="#旧运营商花费取出" class="headerlink" title="旧运营商花费取出"></a>旧运营商花费取出</h1><p>在 <a href="#%E8%BF%9B%E8%A1%8C%E6%90%BA%E5%85%A5">进行携入</a> 章节有说过信息同步是1个小时，也就是说在你号码正式生效之后你就可以去老的运营商营业厅，携带有效证件进行退花费，博主这边移动退给你花费是工作人员直接微信扫码给你。但博主也搜索到案例说是次月6号之后，才可以办理，博主打算只是去碰碰运气，后面就详细询问了移动的工作人员，表示需要至少1个整点左右，不然系统不太能同步数据，基本上你这边转网成功一个整点后是可以退的。</p><h1 id="总结以下"><a href="#总结以下" class="headerlink" title="总结以下"></a>总结以下</h1><p>虽然携号转网政策已经实行五年之久了，本想着处理流程可能会进行优化，但是实际进行转网之后遇到各种问题，例如博主所在的城市的电信有着自己的小规定，但是网上也只有一篇搜狐的文章： <a href="https://www.sohu.com/a/782558519_121282114" rel="external nofollow noreferrer">记者调查：携号转网，不是想转就能转？</a> 以及线上貌似可以随便办理，但是没有办法进行复杂的选择例如电信只能 35元或者更贵的套餐，并没有办法进行复杂操作，以及携号转网受理时间之久，3个号不算等待期，只算工作人员进行受理，平均一个手机号需要20~30分钟的处理时间，说一比较坏的如果客服全部提交内容但正好已经到了下一个整点，就要在等一个整点了。只能说携号转网确实是好的，但是实际执行还是很歪歪扭扭的，以及网上并没有这种坑的存在，甚至这种等待期的整点生效也很少文章会提到，大多数的还是转发，多么简答的复制粘贴，只告诉你只需要发送两个短信就可以了。emmmm</p><p>好吧最后希望我的文章帮助更多的想进行携号转网，另外既然你看到这里了，我就说一个小秘密，其实我电信工单建立并没有处理我的诉求，后通过工信部用户申诉渠道推动问题解决(<a href="https://yhssglxt.miit.gov.cn/web/" rel="external nofollow noreferrer">工业和信息化部电信用户申诉受理中心</a>)，感谢主管部门的协调处理。</p><h1 id="免责声明"><a href="#免责声明" class="headerlink" title="免责声明"></a>免责声明</h1><p>本篇文章仅为博主个人在携号转网过程中的经历与分享。文章中的所有操作流程、规则及细节仅代表博主所在地区的实际情况，可能会因地区、运营商、时间等因素有所不同，具体流程请根据个人所在地区及运营商的规定进行咨询和确认。</p><p>博主并未接受任何公司或第三方的赞助，文章内容完全基于个人经验及公开可获取的信息。请读者在办理携号转网时，遵循官方运营商和相关部门的最新政策与指导，谨慎处理个人信息，并确保所提供的操作符合当地的法律法规。</p><p>如有任何关于携号转网的疑问，建议直接联系各运营商或相关主管部门，以获取更加准确和及时的帮助。</p><h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>工业和信息化部关于印发《携号转网服务管理规定》的通知：<a href="https://www.gov.cn/xinwen/2019-11/11/content_5450928.htm" rel="external nofollow noreferrer">https://www.gov.cn/xinwen/2019-11/11/content_5450928.htm</a><br>记者调查：携号转网，不是想转就能转？：<a href="https://www.sohu.com/a/782558519_121282114" rel="external nofollow noreferrer">https://www.sohu.com/a/782558519_121282114</a><br>同一号码竟有两家运营商用户同时在用？江苏省通信管理局现场回应：<a href="https://news.qq.com/rain/a/20240528A071H300" rel="external nofollow noreferrer">https://news.qq.com/rain/a/20240528A071H300</a><br>工业和信息化部电信用户申诉受理中心：<a href="https://yhssglxt.miit.gov.cn/web/" rel="external nofollow noreferrer">https://yhssglxt.miit.gov.cn/web/</a></p><p>封面图来自中国电信官网：<a href="https://www.189.cn/" rel="external nofollow noreferrer">https://www.189.cn/</a></p></body></html>]]></content>
+    
+    
+    <summary type="html">在这篇文章中，博主分享了个人在中国移动携号转网至中国电信的亲身经历，从准备步骤到遇到的各种问题与解决方法。虽然携号转网政策已经实施多年，但实际操作仍充满挑战。通过这篇文章，你将了解如何顺利完成携号转网、避开常见陷阱，并掌握一些实用的小技巧。如果你正在考虑转网，这篇文章一定能为你提供宝贵的参考！</summary>
+    
+    
+    
+    <category term="生活随想" scheme="https://blog.ning.moe/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E6%83%B3/"/>
+    
+    
+    <category term="携号转网" scheme="https://blog.ning.moe/tags/%E6%90%BA%E5%8F%B7%E8%BD%AC%E7%BD%91/"/>
+    
+    <category term="中国电信" scheme="https://blog.ning.moe/tags/%E4%B8%AD%E5%9B%BD%E7%94%B5%E4%BF%A1/"/>
+    
+    <category term="中国移动" scheme="https://blog.ning.moe/tags/%E4%B8%AD%E5%9B%BD%E7%A7%BB%E5%8A%A8/"/>
+    
+  </entry>
   
   <entry>
     <title>2024总结</title>
@@ -184,13 +209,13 @@
     
     <category term="Authentik" scheme="https://blog.ning.moe/tags/Authentik/"/>
     
-    <category term="nezha" scheme="https://blog.ning.moe/tags/nezha/"/>
-    
     <category term="SSO" scheme="https://blog.ning.moe/tags/SSO/"/>
     
     <category term="OIDC" scheme="https://blog.ning.moe/tags/OIDC/"/>
     
     <category term="OAuth2" scheme="https://blog.ning.moe/tags/OAuth2/"/>
+    
+    <category term="nezha" scheme="https://blog.ning.moe/tags/nezha/"/>
     
   </entry>
   
@@ -215,13 +240,13 @@
     
     <category term="Authentik" scheme="https://blog.ning.moe/tags/Authentik/"/>
     
+    <category term="Gitea" scheme="https://blog.ning.moe/tags/Gitea/"/>
+    
     <category term="SSO" scheme="https://blog.ning.moe/tags/SSO/"/>
     
     <category term="OIDC" scheme="https://blog.ning.moe/tags/OIDC/"/>
     
     <category term="OAuth2" scheme="https://blog.ning.moe/tags/OAuth2/"/>
-    
-    <category term="Gitea" scheme="https://blog.ning.moe/tags/Gitea/"/>
     
   </entry>
   
@@ -549,34 +574,6 @@
     <category term="CloudFlare" scheme="https://blog.ning.moe/tags/CloudFlare/"/>
     
     <category term="写bug的小能手" scheme="https://blog.ning.moe/tags/%E5%86%99bug%E7%9A%84%E5%B0%8F%E8%83%BD%E6%89%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo Butterfly的SEO优化</title>
-    <link href="https://blog.ning.moe/posts/hexo-butterfly-seo/"/>
-    <id>https://blog.ning.moe/posts/hexo-butterfly-seo/</id>
-    <published>2023-07-20T02:32:42.000Z</published>
-    <updated>2024-03-12T16:32:13.695Z</updated>
-    
-    <content type="html"><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>以前没有怎么优化过seo、站点地图、rss订阅链接、robots 文件，一个都没有写过，不过今年打算重启博客了，自然这些改加上的东西都需要加一下了。</p><p>前前后后半年多吧，陆陆续续的，把这些玩意补齐了，但看了很多文章都写的补全，我就只好在来全部整理一下了。</p><h1 id="一些插件"><a href="#一些插件" class="headerlink" title="一些插件"></a>一些插件</h1><ul><li><a href="https://github.com/hexojs/hexo-generator-sitemap" rel="external nofollow noreferrer">hexo-generator-sitemap</a> 构建网站地图 </li><li><a href="https://github.com/coneycode/hexo-generator-baidu-sitemap" rel="external nofollow noreferrer">hexo-generator-baidu-sitemap</a> 百度专用的（为什么百度这么有特权😔）</li><li><a href="https://github.com/cjh0613/hexo-submit-urls-to-search-engine" rel="external nofollow noreferrer">hexo-submit-urls-to-search-engine</a> 自动化提交文章给爬虫</li><li><a href="https://github.com/hexojs/hexo-generator-feed" rel="external nofollow noreferrer">hexo-generator-feed</a> 生成RSS订阅链接</li><li><a href="https://github.com/hexojs/hexo-filter-nofollow" rel="external nofollow noreferrer">hexo-filter-nofollow</a> 为合适的外链打上 <code>external nofollow noreferrer noopener</code> <ul><li>作用：<ul><li>防止搜索引擎追踪该链接，不会直接影响站点的排名。</li><li>阻止被链接的页面获取来源页面的信息，增加用户隐私保护。</li><li>防止被链接的页面通过 <code>window.opener</code> 访问和操纵打开它的页面，增强安全性。</li></ul></li></ul></li></ul><h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><h2 id="添加robots-txt"><a href="#添加robots-txt" class="headerlink" title="添加robots.txt"></a>添加robots.txt</h2><p>可以直接在hexo 项目下的<code>source</code>添加<code>robots.txt</code></p><p>比如说我的配置，让百度爬虫抓取百度专属的网站地图，其他搜索引擎直接抓取普通的网站地图。</p><figure class="highlight tex"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">User-agent: Baiduspider</span><br><span class="line"></span><br><span class="line">Sitemap: https://blog.ning.moe/baidusitemap.xml</span><br><span class="line"></span><br><span class="line">User-agent: *</span><br><span class="line">Disallow:</span><br><span class="line"></span><br><span class="line">Sitemap: https://blog.ning.moe/sitemap.xml</span><br></pre></td></tr></tbody></table></figure><h1 id="插件的使用和配置"><a href="#插件的使用和配置" class="headerlink" title="插件的使用和配置"></a>插件的使用和配置</h1><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>上述所有的插件的安装命令都类似 <code>npm install &lt;插件名字&gt; --save</code> 例如</p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-feed --save</span><br></pre></td></tr></tbody></table></figure><p>但就百度地图的插件稍微特殊：</p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-baidu-sitemap@0.1.4 --save</span><br></pre></td></tr></tbody></table></figure><h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p>至于配置可以访问GitHub的插件仓库地址，readme 会告诉你们这么配置，如果你很懒的话，我这边放上我的配置。</p><figure class="highlight yaml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 配置网站地图</span></span><br><span class="line"><span class="attr">sitemap:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">sitemap.xml</span></span><br><span class="line">  <span class="comment"># 配置百度专属地图（真臭不要脸）</span></span><br><span class="line"><span class="attr">baidusitemap:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">baidusitemap.xml</span></span><br><span class="line"><span class="comment"># Extensions</span></span><br><span class="line"><span class="attr">plugins:</span></span><br><span class="line">  <span class="string">hexo-generator-feed</span></span><br><span class="line"><span class="comment">#Feed Atom</span></span><br><span class="line"><span class="attr">feed:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">atom</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">atom.xml</span></span><br><span class="line">  <span class="attr">limit:</span> <span class="number">20</span></span><br><span class="line"><span class="comment"># 为网站使用到的所有外链添加rel="noopener external nofollow noreferrer", 可以有效地加强网站SEO和防止权重流失</span></span><br><span class="line"><span class="comment"># field 是指定那些页面我指定的post 是所有文章全部启用，如果你想启动全站都屏蔽链接的话就是 site，如果你有友联的话慎用。</span></span><br><span class="line"><span class="comment">#exclude是放行这些域名下的。</span></span><br><span class="line"><span class="attr">nofollow:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">field:</span> <span class="string">post</span></span><br><span class="line">  <span class="attr">exclude:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">'*.misaka.pics'</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">'icp.gov.moe'</span></span><br></pre></td></tr></tbody></table></figure><p>但 <code>hexo-submit-urls-to-search-engine</code> 稍微有些特殊(我更倾向于你先去看看原来的教程)，建议在操作之前备份一下  <code>_config.yaml</code> ，请确保你的推送分支为你自己的分支<code>deploy</code>,当然这边也有一个bug就是在推送的是我这边是选择了main 作为我的主分支，但是推送过去的时候还是<code>master</code> 如果你遇到和我一样的问题建议去提出<code>issues</code>，还有一个就是bing 的推送貌似是坏掉的状态，但百度正常。</p><figure class="highlight yaml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># hexo-submit-urls-to-search-engine 主动将 url 提交到 Google Bing Baidu 搜索</span></span><br><span class="line"><span class="attr">hexo_submit_urls_to_search_engine:</span></span><br><span class="line">  <span class="attr">submit_condition:</span> <span class="string">count</span> <span class="comment">#链接被提交的条件，可选值：count | period 现仅支持count</span></span><br><span class="line">  <span class="attr">count:</span> <span class="number">10</span> <span class="comment"># 提交最新的10个链接</span></span><br><span class="line">  <span class="attr">period:</span> <span class="number">900</span> <span class="comment"># 提交修改时间在 900 秒内的链接</span></span><br><span class="line">  <span class="attr">google:</span> <span class="number">0</span> <span class="comment"># 是否向Google提交，可选值：1 | 0（0：否；1：是）</span></span><br><span class="line">  <span class="attr">bing:</span> <span class="number">1</span> <span class="comment"># 是否向bing提交，可选值：1 | 0（0：否；1：是）</span></span><br><span class="line">  <span class="attr">baidu:</span> <span class="number">1</span> <span class="comment"># 是否向baidu提交，可选值：1 | 0（0：否；1：是）</span></span><br><span class="line">  <span class="attr">txt_path:</span> <span class="string">submit_urls.txt</span> <span class="comment">## 文本文档名， 需要推送的链接会保存在此文本文档里</span></span><br><span class="line">  <span class="attr">baidu_host:</span> <span class="string">https://blog.ning.moe</span> <span class="comment">## 在百度站长平台中注册的域名</span></span><br><span class="line">  <span class="attr">baidu_token:</span> <span class="string">&lt;Token&gt;</span> <span class="comment">## 请注意这是您的秘钥， 所以请不要把它直接发布在公众仓库里!</span></span><br><span class="line">  <span class="attr">bing_host:</span> <span class="string">https://blog.ning.moe</span> <span class="comment">## 在bing站长平台中注册的域名</span></span><br><span class="line">  <span class="attr">bing_token:</span> <span class="string">&lt;Token&gt;</span> <span class="comment">## 请注意这是您的秘钥， 所以请不要把它直接发布在公众仓库里!</span></span><br><span class="line">  <span class="attr">google_host:</span> <span class="string">https://blog.ning.moe</span> <span class="comment">## 在google站长平台中注册的域名</span></span><br><span class="line">  <span class="attr">google_key_file:</span> <span class="string">Project.json</span> <span class="comment">#存放google key的json文件，放于网站根目录（与hexo _config.yml文件位置相同），请不要把json文件内容直接发布在公众仓库里!</span></span><br><span class="line">  <span class="attr">google_proxy:</span> <span class="string">http://127.0.0.1:7890</span> <span class="comment"># 向谷歌提交网址所使用的系统 http 代理，填 0 不使用</span></span><br><span class="line">  <span class="attr">replace:</span> <span class="number">0</span>  <span class="comment"># 是否替换链接中的部分字符串，可选值：1 | 0（0：否；1：是）</span></span><br><span class="line">  <span class="comment"># find_what: http://cjh0613.github.io/blog</span></span><br><span class="line">  <span class="comment"># replace_with: https://cjh0613.com</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 推送git的配置</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="bullet">-</span> <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> </span><br><span class="line">    <span class="attr">coding:</span> <span class="string">https://github.com/biliblihuorong/biliblihuorong.github.io.git</span> <span class="comment"># 你的仓库地址</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">main</span> </span><br><span class="line">  </span><br><span class="line">  <span class="comment"># hexo-submit-urls-to-search-engine 添加本插件的配置项：</span></span><br><span class="line"><span class="bullet">-</span> <span class="attr">type:</span> <span class="string">cjh_google_url_submitter</span></span><br><span class="line"><span class="bullet">-</span> <span class="attr">type:</span> <span class="string">cjh_bing_url_submitter</span></span><br><span class="line"><span class="bullet">-</span> <span class="attr">type:</span> <span class="string">cjh_baidu_url_submitter</span></span><br></pre></td></tr></tbody></table></figure><h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>hexo-filter-nofollow：<a href="https://github.com/hexojs/hexo-filter-nofollow" rel="external nofollow noreferrer">https://github.com/hexojs/hexo-filter-nofollow</a></p><p>hexo-generator-feed：<a href="https://github.com/hexojs/hexo-generator-feed" rel="external nofollow noreferrer">https://github.com/hexojs/hexo-generator-feed</a></p><p>hexo-submit-urls-to-search-engine：<a href="https://github.com/cjh0613/hexo-submit-urls-to-search-engine" rel="external nofollow noreferrer">https://github.com/cjh0613/hexo-submit-urls-to-search-engine</a></p><p>hexo-generator-baidu-sitemap：<a href="https://github.com/coneycode/hexo-generator-baidu-sitemap" rel="external nofollow noreferrer">https://github.com/coneycode/hexo-generator-baidu-sitemap</a></p><p>hexo-generator-sitemap：<a href="https://github.com/hexojs/hexo-generator-sitemap" rel="external nofollow noreferrer">https://github.com/hexojs/hexo-generator-sitemap</a></p></body></html>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;以前没有怎么优化过seo、站点地图、rss订阅链接、robots 文件，一个都没有写过，不</summary>
-      
-    
-    
-    
-    <category term="网络技术" scheme="https://blog.ning.moe/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/"/>
-    
-    
-    <category term="hexo" scheme="https://blog.ning.moe/tags/hexo/"/>
-    
-    <category term="butterfly" scheme="https://blog.ning.moe/tags/butterfly/"/>
-    
-    <category term="SEO" scheme="https://blog.ning.moe/tags/SEO/"/>
     
   </entry>
   
