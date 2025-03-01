@@ -6,7 +6,7 @@
   <link href="https://blog.ning.moe/atom.xml" rel="self"/>
   
   <link href="https://blog.ning.moe/"/>
-  <updated>2025-02-07T06:58:06.974Z</updated>
+  <updated>2025-03-01T09:05:55.765Z</updated>
   <id>https://blog.ning.moe/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【记】第一次收发信</title>
+    <link href="https://blog.ning.moe/posts/First-sending-and-receiving-mail/"/>
+    <id>https://blog.ning.moe/posts/First-sending-and-receiving-mail/</id>
+    <published>2025-02-28T10:08:52.000Z</published>
+    <updated>2025-03-01T09:05:55.765Z</updated>
+    
+    <content type="html"><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>关于纸质信件，在本次亲历收发过程之前，我的记忆始终蒙着一层雾霭。作为Z世代的一员，即便频繁使用电子邮件，却总觉得这种数字信笺与传统书信都带着某种时代滤镜。朋友意外收到三封来自英国电信商<code>giffgaff</code>的平信，犹如推开了一扇通往古典通信艺术的暗门。我们相约以国内平信互寄，恰逢几位三月寿星好友生辰将近，索性决定批量寄送这份手写的温度。</p><h1 id="寄信"><a href="#寄信" class="headerlink" title="寄信"></a>寄信</h1><p>邮局之旅远比想象中简单，倒是寻找大学收发室成了隐藏关卡（这个伏笔将在收信时引发连锁反应）。即便存在收发室，在这个即时通讯时代，其功能大概也仅剩被动收件了。业余无线电 X 中国邮政 战略合作伙伴，可惜我尚未取得业余无线电操作证（火腿族入门考试究竟何时重启啊！）。现代邮政服务确实便捷许多，不再强求专用邮封，理论上任何容器都能承载心意——B站甚至有UP主用高铁清洁袋改造成信封，堪称行为艺术。</p><p>原计划将信件投入街边邮筒，但两封挂号信让我不得不走进邮局。当13封信件摊在柜台时，连自己都惊讶于这份执着。最惊艳的是邮戳加盖仪式：工作人员手持铁锤敲击邮戳的刹那，时光仿佛倒流三十年。在电子印章普及的今天，这种保留原始机械美感的操作，俨然是活着的邮政博物馆。</p><p>原计划将信件投入街边邮筒，可是有两封信件需要寄挂号，那么顺便直接拿过去吧，一共13封信件，不知道为什么写着写着就这么多了。顺手还集了一个邮戳，最惊艳的是邮戳加盖仪式：工作人员手持铁锤敲击邮戳的刹那，时光仿佛倒流三十年。在电子印章普及的今天，这种保留原始机械美感的操作，俨然是活着的邮政博物馆。</p><table><thead><tr><th><img src="https://img.misaka.pics/ShellBlogImg/1/2025/03/01/67c2c3e5958c7.webp" alt="邮局信封.webp"></th><th><img src="https://img.misaka.pics/ShellBlogImg/1/2025/03/01/67c2c3fd2ba52.webp" alt="业务办理.webp"></th></tr></thead></table><h1 id="寻信"><a href="#寻信" class="headerlink" title="寻信"></a>寻信</h1><p>还记博主说过并不知道大学的收发室在哪里，Baka 博主甚至都开始怀疑学校还有没有收发室，很急啊 急急急 ，那就开始电话询问吧，但是真丢信了中国邮政是不负责的，应该不会丢吧？！</p><p>这里引出一个中国邮政的业务负责的板块，寄信的属于 营业厅不参与投递的业务的，投递业务有单独的投递部，那么就是说这个锅还是需要找投递部问问了，打了中国邮政电话，把地址给他给我一个投递部电话。</p><p>投递部的电话基本上异常难打，终于得知了平信他给我放在那里了，这才知道学校还是有一个收发室，实际过去是藏在一个小角落里面。</p><h1 id="收信"><a href="#收信" class="headerlink" title="收信"></a>收信</h1><p>兜兜转转终于拿到信了</p><p><img src="https://img.misaka.pics/ShellBlogImg/1/2025/03/01/67c2c86522448.webp" alt="收信.webp"></p></body></html>]]></content>
+    
+    
+    <summary type="html">在数字时代，传统信件依然散发着独特魅力。本文记录了作者从寄信到找信的全过程，展现了复古邮局的别样温情与邮政体验。</summary>
+    
+    
+    
+    <category term="生活随想" scheme="https://blog.ning.moe/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E6%83%B3/"/>
+    
+    
+    <category term="mail" scheme="https://blog.ning.moe/tags/mail/"/>
+    
+    <category term="平信" scheme="https://blog.ning.moe/tags/%E5%B9%B3%E4%BF%A1/"/>
+    
+    <category term="挂号信" scheme="https://blog.ning.moe/tags/%E6%8C%82%E5%8F%B7%E4%BF%A1/"/>
+    
+  </entry>
   
   <entry>
     <title>【记】中国移动携号转网至中国电信</title>
@@ -62,9 +87,9 @@
     <category term="生活随想" scheme="https://blog.ning.moe/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E6%83%B3/"/>
     
     
-    <category term="2024" scheme="https://blog.ning.moe/tags/2024/"/>
-    
     <category term="总结" scheme="https://blog.ning.moe/tags/%E6%80%BB%E7%BB%93/"/>
+    
+    <category term="2024" scheme="https://blog.ning.moe/tags/2024/"/>
     
   </entry>
   
@@ -205,6 +230,8 @@
     <category term="网络技术" scheme="https://blog.ning.moe/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/"/>
     
     
+    <category term="2024" scheme="https://blog.ning.moe/tags/2024/"/>
+    
     <category term="Authentik" scheme="https://blog.ning.moe/tags/Authentik/"/>
     
     <category term="SSO" scheme="https://blog.ning.moe/tags/SSO/"/>
@@ -212,8 +239,6 @@
     <category term="OIDC" scheme="https://blog.ning.moe/tags/OIDC/"/>
     
     <category term="OAuth2" scheme="https://blog.ning.moe/tags/OAuth2/"/>
-    
-    <category term="2024" scheme="https://blog.ning.moe/tags/2024/"/>
     
     <category term="nezha" scheme="https://blog.ning.moe/tags/nezha/"/>
     
@@ -236,6 +261,8 @@
     <category term="网络技术" scheme="https://blog.ning.moe/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/"/>
     
     
+    <category term="2024" scheme="https://blog.ning.moe/tags/2024/"/>
+    
     <category term="Authentik" scheme="https://blog.ning.moe/tags/Authentik/"/>
     
     <category term="Gitea" scheme="https://blog.ning.moe/tags/Gitea/"/>
@@ -245,8 +272,6 @@
     <category term="OIDC" scheme="https://blog.ning.moe/tags/OIDC/"/>
     
     <category term="OAuth2" scheme="https://blog.ning.moe/tags/OAuth2/"/>
-    
-    <category term="2024" scheme="https://blog.ning.moe/tags/2024/"/>
     
   </entry>
   
@@ -356,6 +381,8 @@
     <category term="网络技术" scheme="https://blog.ning.moe/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/"/>
     
     
+    <category term="2024" scheme="https://blog.ning.moe/tags/2024/"/>
+    
     <category term="Authentik" scheme="https://blog.ning.moe/tags/Authentik/"/>
     
     <category term="SSO" scheme="https://blog.ning.moe/tags/SSO/"/>
@@ -363,8 +390,6 @@
     <category term="OIDC" scheme="https://blog.ning.moe/tags/OIDC/"/>
     
     <category term="OAuth2" scheme="https://blog.ning.moe/tags/OAuth2/"/>
-    
-    <category term="2024" scheme="https://blog.ning.moe/tags/2024/"/>
     
     <category term="Memos" scheme="https://blog.ning.moe/tags/Memos/"/>
     
@@ -536,44 +561,6 @@
     <category term="SpringSecuriy" scheme="https://blog.ning.moe/tags/SpringSecuriy/"/>
     
     <category term="WebSocket" scheme="https://blog.ning.moe/tags/WebSocket/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Cachefly自动证书上传</title>
-    <link href="https://blog.ning.moe/posts/CacheflySSLUpDate/"/>
-    <id>https://blog.ning.moe/posts/CacheflySSLUpDate/</id>
-    <published>2023-07-31T09:07:10.000Z</published>
-    <updated>2024-12-31T03:35:18.892Z</updated>
-    
-    <content type="html"><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>自从 <code>Cachefly</code> 推出了<a href="https://www.cachefly.com/pricing/" rel="external nofollow noreferrer">免费套餐</a>， 作为一个白嫖党，第一时间就去体验了一下，注册需要外币卡需要注意一下，所以注册门槛稍微相对较高吧。试了一下速度，很不错，回国速度非常好，北方基本上走的是ntt 和俄罗斯的线路，南方走的是 hk 的CN2 线路，至少分发的图片和静态资源不成问题。</p><p><img src="https://img.misaka.pics/ShellBlogImg/1/2023/08/02/64ca088d41e00.webp" alt="Cachefly-ItDog.webp"></p><p>但有个很烦人的问题，它不支持 免费的证书自动签发，需要我自己上传证书，好在他的ssl 证书是自动检测的，也就是说你上传了一个证书是在8月份到期了在7月份又上传了这个域名的证书是11月到期了，会自动在证书过期之前调整成11月的。而且最近学了学go，就用这三脚猫的功夫配合chatGPT 写了一个简单的小玩意。</p><h1 id="自动证书上传程序"><a href="#自动证书上传程序" class="headerlink" title="自动证书上传程序"></a>自动证书上传程序</h1><p>我已经把这个项目开源并且放在了 <a href="https://github.com/biliblihuorong/CacheflySSLUpDate" rel="external nofollow noreferrer">我的GitHub仓库上</a> 。</p><p>其实在仓库的README的文件上已经有写了使用方式，我就直接把README拿过来了。</p><h2 id="使用方式"><a href="#使用方式" class="headerlink" title="使用方式"></a>使用方式</h2><ol><li><p>首先，您需要在 <a href="https://github.com/biliblihuorong/CacheflySSLUpDate/releases" rel="external nofollow noreferrer">https://github.com/biliblihuorong/CacheflySSLUpDate/releases</a> 页面下载适用于您设备的可执行文件。</p></li><li><p>然后，在执行文件所在目录下创建一个名为 <code>config.json</code> 的文件，并按照以下示例填入相应的内容。您也可以直接下载本仓库中的 <code>config.json</code> 文件，填入您的配置信息。</p></li></ol><figure class="highlight json"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">{</span></span><br><span class="line">  <span class="attr">"token"</span><span class="punctuation">:</span> <span class="string">"您的 Cachefly Token，可在 https://portal.cachefly.com/app/tokens 获取"</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">"certificateFile"</span><span class="punctuation">:</span> <span class="string">"&lt;证书文件路径&gt;"</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">"certificateKeyFile"</span><span class="punctuation">:</span> <span class="string">"&lt;密钥文件路径&gt;"</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">"password"</span><span class="punctuation">:</span> <span class="string">"&lt;您的 Cachefly 密码&gt;"</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">"taskInterval"</span><span class="punctuation">:</span> <span class="number">7</span></span><br><span class="line"><span class="punctuation">}</span></span><br></pre></td></tr></tbody></table></figure><ul><li><code>token</code>：您需要前往 <a href="https://portal.cachefly.com/app/tokens" rel="external nofollow noreferrer">https://portal.cachefly.com/app/tokens</a> 获取 Cachefly Token，并将其填写在此处。</li><li><code>certificateFile</code> 和 <code>certificateKeyFile</code>：这两个字段应填入您本地 SSL 证书和密钥的文件路径。如果您使用宝塔面板自动签发证书，则签发地址通常在 <code>/www/server/panel/vhost/ssl/&lt;您的域名&gt;/</code> 下，其中公钥为 <code>fullchain.pem</code>，私钥为 <code>privkey.pem</code>。</li><li><code>password</code>：填入您的 Cachefly 密码，用于上传证书到 Cachefly。</li><li><code>taskInterval</code>：此字段定义了执行任务的间隔天数。例如，设置为 7 表示每隔 7 天执行一次上传任务。</li></ul><p><strong>注意：</strong> 请确保 <code>config.json</code> 文件的格式正确，否则工具将无法正常运行。</p><p>改好之后在项目文件夹下，运行</p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">nohup</span> &lt;可执行文件&gt;</span><br></pre></td></tr></tbody></table></figure><p>然后文件夹下会又一个 nohup.out 的文件，正常来说程序首次启动会运行一次ssl 证书上传。</p></body></html>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;自从 &lt;code&gt;Cachefly&lt;/code&gt; 推出了&lt;a href=&quot;https://</summary>
-      
-    
-    
-    
-    <category term="网络技术" scheme="https://blog.ning.moe/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/"/>
-    
-    
-    <category term="2023" scheme="https://blog.ning.moe/tags/2023/"/>
-    
-    <category term="go" scheme="https://blog.ning.moe/tags/go/"/>
-    
-    <category term="Cachefly" scheme="https://blog.ning.moe/tags/Cachefly/"/>
-    
-    <category term="SSL" scheme="https://blog.ning.moe/tags/SSL/"/>
-    
-    <category term="宝塔面板" scheme="https://blog.ning.moe/tags/%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF/"/>
-    
-    <category term="网络技术" scheme="https://blog.ning.moe/tags/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/"/>
-    
-    <category term="CloudFlare" scheme="https://blog.ning.moe/tags/CloudFlare/"/>
-    
-    <category term="写bug的小能手" scheme="https://blog.ning.moe/tags/%E5%86%99bug%E7%9A%84%E5%B0%8F%E8%83%BD%E6%89%8B/"/>
     
   </entry>
   
