@@ -1,3 +1,4 @@
+https://blog.ning.moe/posts/Amateur-radio/
 https://blog.ning.moe/posts/First-sending-and-receiving-mail/
 https://blog.ning.moe/posts/Mobile-Number-Portability/
 https://blog.ning.moe/posts/MisakaMikoto/
@@ -7,4 +8,3 @@ https://blog.ning.moe/posts/Spring-Security/
 https://blog.ning.moe/posts/Umami-fix/
 https://blog.ning.moe/posts/fuck-easyconnect/
 https://blog.ning.moe/posts/lskypro-backblaze/
-https://blog.ning.moe/posts/CloudFlare-Tunnel-Application-Access/
