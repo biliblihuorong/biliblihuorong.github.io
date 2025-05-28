@@ -6,7 +6,7 @@
   <link href="https://blog.ning.moe/atom.xml" rel="self"/>
   
   <link href="https://blog.ning.moe/"/>
-  <updated>2025-03-31T04:18:52.950Z</updated>
+  <updated>2025-05-28T13:21:19.114Z</updated>
   <id>https://blog.ning.moe/</id>
   
   <author>
@@ -17,11 +17,34 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>宝峰5rhPro的APRS功能</title>
+    <link href="https://blog.ning.moe/posts/BaoFeng-5rhPro-APRS/"/>
+    <id>https://blog.ning.moe/posts/BaoFeng-5rhPro-APRS/</id>
+    <published>2025-05-28T12:01:50.000Z</published>
+    <updated>2025-05-28T13:21:19.114Z</updated>
+    
+    <content type="html"><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>相信很多人购买 5RH Pro 手台，是因为它功能丰富且具备 10W 的发射功率。我手上的这台 5RH Pro 来自朋友，由我代为保管，经朋友同意后对机器的功能和硬件进行了测试。</p><p>先说结论：能用，但体验并不是很好。该机仅支持 GPS 定位，且并不能保证在室内接收到 GPS 信号；获取定位速度也极慢，在开阔场地通常需要 2 分钟以上才能定位成功。定位成功后即可发送 APRS 信息，当然也可以手动输入经纬度来发送。</p><p>本篇文章仅适用于 5RH Pro。至于 5R-H Ham 版本，博主未做研究，也暂无精力深入探讨。写本篇文章的原因是网上没有相关的公开资料，唯一的参考只在某个 Ham 论坛中，但该内容未向搜索引擎开放。文末我会将引用资料附上，希望能对拥有 5RH Pro 的各位 Ham 略有帮助。</p><h1 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h1><p>首先依次打开 <strong>菜单 → 对讲机设置 → 对讲机信息 → 版本信息</strong>，查询当前固件版本。建议保持在 <strong>v2.0.0.9</strong> 及以上（截至截稿时为该版本）。如果低于此版本，请下载固件并刷机。</p><p>5RH Pro 固件包：<a href="https://pan.moe/s/Pjeir" rel="external nofollow noreferrer">点击下载</a></p><p><img src="https://img.misaka.pics/ShellBlogImg/1/2025/05/28/6836fe287da13.webp" alt="5RH Pro 刷机步骤"></p><p>按以下步骤刷写固件：</p><blockquote><p><strong>操作顺序：</strong>  </p><ol><li>固件升级：同时按住 SK1+PTT+SK2 键开启对讲机，进入升级模式（屏幕黑屏属正常）。  </li><li>打开 <code>501_Update_115200_v1_2.exe</code>，插入刷机线，进行固件刷写。  </li><li>刷写完成后关机，拔出刷机线，再开机。  </li><li>重新插入刷机线，打开 <code>5RH_Font_tool</code>，选中 <code>font.txt</code>。  </li><li>写入字库（运行字库工具并打开对讲机）。  </li><li>对讲机复位（清除数据）。</li></ol></blockquote><h1 id="APRS-配置"><a href="#APRS-配置" class="headerlink" title="APRS 配置"></a>APRS 配置</h1><p>首先先调整一下显示亮度，因为新旧固件的显示方式不同。当然，也可直接在手台上修改。 :-(</p><p><img src="https://img.misaka.pics/ShellBlogImg/1/2025/05/28/683701d3ac261.webp" alt="常规配置图1"><br><img src="https://img.misaka.pics/ShellBlogImg/1/2025/05/28/68370135d50b5.webp" alt="常规配置图2"></p><p>将以下配置项按需填写：</p><ul><li><strong>呼号</strong>：替换为自己的呼号。  </li><li><strong>发射频率</strong>：可多设几个，通常中国大陆（及亚洲地区）为 <code>144.640</code>。  </li><li><strong>MIC-E 类型</strong>：<strong>务必选择非 <code>Emergency</code></strong> 状态。</li></ul><blockquote><p><strong>提示</strong>：可能是我操作失误，或使用旧版宝峰写频软件时默认选中了紧急状态。如果以此状态发送 APRS，收到信号的友台会误以为你遇险，设备会一直报警。不用问我是怎么知道的（逃），在此对受到影响的各位友台再次致歉。</p></blockquote><table><thead><tr><th>状态类型</th><th>MIC-E 状态码说明</th></tr></thead><tbody><tr><td>Emergency</td><td>紧急状态（触发报警）</td></tr><tr><td>Off Duty</td><td>非执勤状态（常用）</td></tr><tr><td>In Service</td><td>处于服务状态</td></tr><tr><td>En Route</td><td>在路上</td></tr><tr><td>Returning</td><td>正在返回</td></tr><tr><td>Committed</td><td>已分配任务</td></tr></tbody></table><p>刷机完成后，你就可以愉快地玩耍了。</p><h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><ul><li>关于宝峰 5RH Pro GPS 功能的探索：<a href="https://forum.hamcq.cn/d/4256/7" rel="external nofollow noreferrer">https://forum.hamcq.cn/d/4256/7</a>  </li><li>感谢 BA4WI 老师提供本地网关支持和技术指导。</li></ul></body></html>]]></content>
+    
+    
+    <summary type="html">本文介绍了宝峰5RH Pro 手台的APRS功能，包括GPS定位、固件刷机及配置方法。适用于业余无线电爱好者，提供详细的配置步骤和注意事项。</summary>
+    
+    
+    
+    <category term="业余无线电" scheme="https://blog.ning.moe/categories/%E4%B8%9A%E4%BD%99%E6%97%A0%E7%BA%BF%E7%94%B5/"/>
+    
+    
+    <category term="baofeng" scheme="https://blog.ning.moe/tags/baofeng/"/>
+    
+    <category term="APRS" scheme="https://blog.ning.moe/tags/APRS/"/>
+    
+  </entry>
+  
+  <entry>
     <title>【记】成为一支火腿（Ham）的故事</title>
     <link href="https://blog.ning.moe/posts/amateur-radio/"/>
     <id>https://blog.ning.moe/posts/amateur-radio/</id>
     <published>2025-03-31T04:22:56.000Z</published>
-    <updated>2025-03-31T04:18:52.950Z</updated>
+    <updated>2025-05-28T13:08:44.202Z</updated>
     
     <content type="html"><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote><p>我的呼号是 <code>BA4SAK</code></p></blockquote><p>早在 2019 年，我就萌生了成为一名火腿（HAM）的想法。那时候在折腾树莓派 Zero W2，偶然刷到一个视频，讲的是怎么用这个<a href="https://www.bilibili.com/video/av926697015/" rel="external nofollow noreferrer">小板子做 SDR</a>（软件定义无线电）。从那一刻起，我仿佛打开了无线电世界的大门。</p><p>博主来自江苏，但感觉江苏本地的业余无线电相关信息并不容易搜到，似乎整个群体都比较小众。曾看过一支视频里面说<a href="https://www.bilibili.com/video/av55534516/" rel="external nofollow noreferrer">中国的业余无线电的人数只占总人口的1%。</a></p><p>网上查到最多的信息主要集中在四川、河南、河北、辽宁、北京这些地方，其他省份的信息也有，但相对零散。以下是我从报名、考试、拿证到设备选购与执照申请的完整记录——从报名到拿证差不多只花了 7 天（仅供参考，各地可能不同）。</p><h1 id="考试"><a href="#考试" class="headerlink" title="考试"></a>考试</h1><p>其实考试并不难，最大的问题是<strong>考试时间和名额</strong>。因为各省的考试是地方无线电协会组织的，有的地方每月一次，有的地方可能一年才一次，人数也很有限。</p><p>我原本想报 3 月 16 日在上海的考试，结果报名一开放就被抢光了，连蹲点都没抢到。后来选择了安徽六安市 3 月 22 日的考试，最终顺利通过。</p><h2 id="如何备考？"><a href="#如何备考？" class="headerlink" title="如何备考？"></a>如何备考？</h2><p>我使用了两个非常实用的工具：</p><ul><li><strong>微信小程序</strong>：<code>HAM 模拟考试</code></li><li><strong>手机 App</strong>：<code>CRAC 智普</code></li></ul><p>建议先刷一遍题库，重点看错题，然后多做几次模拟考试。如果每次模拟都能稳定合格，正式考试就基本没问题。个人经验来说，三天时间就足够备考了，极限一点一个晚上搞定也不是不可能。</p><p>考试当天是周六，成绩周一就出了，操作证书编号在周三（3 月 26 日）拿到，效率非常高。有了证书编号，就可以申请执照啦！（当然你还得准备一台设备）</p><h1 id="设备选择"><a href="#设备选择" class="headerlink" title="设备选择"></a>设备选择</h1><p>我选择的是 <strong>森海克斯 8800Pro</strong>。虽然它不如泉盛 UV-K6 那么广为人知，但在圈子里也算是一款中低端的明星产品。</p><p>这款设备是一个老 HAM 推荐给我的，性价比很高。对于刚入坑的朋友来说非常合适，操作简单，性能也不错。</p><h1 id="呼号申请（业余无线电执照）"><a href="#呼号申请（业余无线电执照）" class="headerlink" title="呼号申请（业余无线电执照）"></a>呼号申请（业余无线电执照）</h1><p>申请执照的流程因省而异，但整体上差别不大。以江苏为例：</p><ol><li><p>进入 <strong>江苏政务服务平台</strong></p></li><li><p>搜索 <code>业余无线电台（站）设置、使用许可（个人）</code></p></li><li><p>按照页面提示提交以下资料：</p><ul><li>身份证正反面照片</li><li>设备 SN 码</li><li>验机报告</li><li>申请表（一般网站会提供模板）</li></ul></li></ol><p>提交后大约 7 个工作日左右就能下证，非常高效。</p><h1 id="中继查询"><a href="#中继查询" class="headerlink" title="中继查询"></a>中继查询</h1><p>我使用的是微信小程序 <strong>“业余无线电工具集”</strong>，可以查询你所在城市的中继频率、参数等信息。</p><p>不过要注意，网上的中继信息可能不够及时和准确，建议还是加入本地 HAM 群，直接请教群友，获取一手资料。</p><h1 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h1><p>目前我已经玩了三天无线电了，真的是越玩越上头。后续我准备深入研究 SDR（软件定义无线电）相关内容，尤其是软件方面的玩法。只是硬件设备真的有点贵（笑）。</p><p>如果你能看到这里，那我期待在空中与你相见！</p><p>这里是 <code>BA4SAK</code> —— Bravo Alpha Four Sugar Alpha Kilo，<br>期待与你空中相见，73！</p></body></html>]]></content>
     
@@ -29,6 +52,8 @@
     <summary type="html">从兴趣萌芽到正式拥有呼号BA4SAK，本文记录了作者考取业余无线电执照的全过程，包括考试经验、设备选择、执照申请及中继查询，分享一个新手火腿的真实成长之路。</summary>
     
     
+    
+    <category term="业余无线电" scheme="https://blog.ning.moe/categories/%E4%B8%9A%E4%BD%99%E6%97%A0%E7%BA%BF%E7%94%B5/"/>
     
     
     <category term="业余无线电" scheme="https://blog.ning.moe/tags/%E4%B8%9A%E4%BD%99%E6%97%A0%E7%BA%BF%E7%94%B5/"/>
@@ -255,9 +280,9 @@
     <category term="网络技术" scheme="https://blog.ning.moe/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="Authentik" scheme="https://blog.ning.moe/tags/Authentik/"/>
+    <category term="2024" scheme="https://blog.ning.moe/tags/2024/"/>
     
-    <category term="nezha" scheme="https://blog.ning.moe/tags/nezha/"/>
+    <category term="Authentik" scheme="https://blog.ning.moe/tags/Authentik/"/>
     
     <category term="SSO" scheme="https://blog.ning.moe/tags/SSO/"/>
     
@@ -265,7 +290,7 @@
     
     <category term="OAuth2" scheme="https://blog.ning.moe/tags/OAuth2/"/>
     
-    <category term="2024" scheme="https://blog.ning.moe/tags/2024/"/>
+    <category term="nezha" scheme="https://blog.ning.moe/tags/nezha/"/>
     
   </entry>
   
@@ -286,17 +311,17 @@
     <category term="网络技术" scheme="https://blog.ning.moe/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/"/>
     
     
+    <category term="2024" scheme="https://blog.ning.moe/tags/2024/"/>
+    
     <category term="Authentik" scheme="https://blog.ning.moe/tags/Authentik/"/>
+    
+    <category term="Gitea" scheme="https://blog.ning.moe/tags/Gitea/"/>
     
     <category term="SSO" scheme="https://blog.ning.moe/tags/SSO/"/>
     
     <category term="OIDC" scheme="https://blog.ning.moe/tags/OIDC/"/>
     
     <category term="OAuth2" scheme="https://blog.ning.moe/tags/OAuth2/"/>
-    
-    <category term="2024" scheme="https://blog.ning.moe/tags/2024/"/>
-    
-    <category term="Gitea" scheme="https://blog.ning.moe/tags/Gitea/"/>
     
   </entry>
   
@@ -406,6 +431,8 @@
     <category term="网络技术" scheme="https://blog.ning.moe/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/"/>
     
     
+    <category term="2024" scheme="https://blog.ning.moe/tags/2024/"/>
+    
     <category term="Authentik" scheme="https://blog.ning.moe/tags/Authentik/"/>
     
     <category term="SSO" scheme="https://blog.ning.moe/tags/SSO/"/>
@@ -413,8 +440,6 @@
     <category term="OIDC" scheme="https://blog.ning.moe/tags/OIDC/"/>
     
     <category term="OAuth2" scheme="https://blog.ning.moe/tags/OAuth2/"/>
-    
-    <category term="2024" scheme="https://blog.ning.moe/tags/2024/"/>
     
     <category term="Memos" scheme="https://blog.ning.moe/tags/Memos/"/>
     
@@ -528,33 +553,6 @@
     
     
     <category term="TeamSpeak" scheme="https://blog.ning.moe/tags/TeamSpeak/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>封印 Easyconnect</title>
-    <link href="https://blog.ning.moe/posts/fuck-easyconnect/"/>
-    <id>https://blog.ning.moe/posts/fuck-easyconnect/</id>
-    <published>2023-10-15T16:02:08.000Z</published>
-    <updated>2024-12-31T03:35:41.355Z</updated>
-    
-    <content type="html"><![CDATA[<html><head></head><body><h1 id="故事的起点"><a href="#故事的起点" class="headerlink" title="故事的起点"></a>故事的起点</h1><p>因为已经到了实习期，走<del>(滚)</del>出了学校,还要写这些烦人的周记属实难绷，还必须使用这个<code>Easyconnect</code>进行访问。</p><p>如果你只是想搜索 <code>Easyconnect</code>却看到了这一篇文章，那么您可以仔细权衡一下有必要再去下载和使用<code>Easyconnect</code>了,如果问为什么不要使用<code>Easyconnect</code>。您可以去跳转到<a href="https://taoshu.in/easyconnect-in-docker.html" rel="external nofollow noreferrer">这一篇文章</a>或者可以看我使用<code>Chat GPT</code>进行总结这一篇文章的核心。</p><blockquote><p>当讨论深信服的 EasyConnect 客户端的安全隐患时，可以简化描述如下：</p><ol><li><p><strong>依赖问题：</strong> EasyConnect 客户端使用了一些旧的系统功能，这在最新版本的 macOS 上会导致它无法正常工作。这就好比用一个老式的车钥匙开启现代汽车一样，不再适配。</p></li><li><p><strong>根证书问题：</strong> EasyConnect 客户端在你的电脑上安装了一个特殊的证书，而这个证书的作用可能不仅限于官方所说的提供更好的浏览体验。这有点像你的家门锁被复制一把，而你不知道。</p></li><li><p><strong>自启动问题：</strong> EasyConnect 客户端还有一个进程，名为 EasyMonitor，它在你的电脑开机时就自动启动。这个进程有权监听你的一举一动，而你却不能简单地关闭它，否则你无法使用 VPN 服务。</p></li></ol></blockquote><p>而且这个东西还是全局代理的，所有流量都要经过转发，以及可能会对一些游戏例如CSGO 进行冲突。</p><h1 id="需要准备的东西"><a href="#需要准备的东西" class="headerlink" title="需要准备的东西"></a>需要准备的东西</h1><ul><li>一台运行了 Windows/MAC os /Linux 的电脑</li><li>需要 docker 的使用</li><li>需要 vnc 的连接</li></ul><h1 id="开始启动"><a href="#开始启动" class="headerlink" title="开始启动"></a>开始启动</h1><p>当然有这种烦人的东西也就有大佬挺身而出，<a href="https://github.com/docker-easyconnect/docker-easyconnect" rel="external nofollow noreferrer">docker-easyconnect</a>就是来解决这个问题，使用docker 进行封印。</p><p>至于docker 和VNC的安装在这里就不进行赘述了，不是本篇文章的重点。使用以下命令运行docker 容器。</p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run --<span class="built_in">rm</span> --device /dev/net/tun --cap-add NET_ADMIN -ti -e PASSWORD=xxxx -e URLWIN=1 -v ~/.ecdata:/root -p 5901:5901 -p 1080:1080 -p 8888:8888 hagb/docker-easyconnect:7.6.7</span><br></pre></td></tr></tbody></table></figure><p>windows 版本的：</p><figure class="highlight powershell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run <span class="literal">--rm</span> <span class="literal">--device</span> /dev/net/tun <span class="literal">--cap-add</span> NET_ADMIN <span class="literal">-ti</span> <span class="literal">-e</span> PASSWORD=xxxx <span class="literal">-e</span> URLWIN=<span class="number">1</span> <span class="literal">-v</span> C:\Users\&lt;你的用户名&gt;\.ecdata:/root <span class="literal">-p</span> <span class="number">5901</span>:<span class="number">5901</span> <span class="literal">-p</span> <span class="number">1080</span>:<span class="number">1080</span> <span class="literal">-p</span> <span class="number">8888</span>:<span class="number">8888</span> hagb/docker<span class="literal">-easyconnect</span>:<span class="number">7.6</span>.<span class="number">7</span></span><br></pre></td></tr></tbody></table></figure><p>其中<code> -v ~/.ecdata:/root</code> 运行成功后会在你的用户目录下创建一个<code>.ecdata</code>文件夹里面保存了你的登陆信息，下一次运行的时候就可以不需要输入用户和密码以及连接地址了。</p><p>使用 <code>VNC</code> 连接就会发现和你在电脑版安装的之后页面是一样的输入连接的服务器地址以及账号和密码，记得勾选自动登录，下次启动的时候回去读取，你用户目录下的 <code>ecdata</code> 的文件。</p><p><img src="https://img.misaka.pics/ShellBlogImg/1/2023/10/22/65347edfb2da2.webp" alt="VNC-1.webp"></p><h1 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h1><p>我们暴露的 <code>1080</code> 和 <code>8888</code> 的端口分别是 <code>socket5</code>代理和<code>http</code>代理。</p><p>Firefox 的浏览器的用户可以直接使用 设置 配置有个代理配置。</p><p>这里更推荐使用edge ，因为国内好下载插件 打开这个网址下载：<a href="https://microsoftedge.microsoft.com/addons/detail/proxy-switchyomega/fdbloeknjpnloaggplaobopplkdhnikc?hl=zh-CN" rel="external nofollow noreferrer">Proxy SwitchyOmega - Microsoft Edge Addons</a></p><p>我们打开插件的配置选项，按照下方图片的填写。</p><p><img src="https://img.misaka.pics/ShellBlogImg/1/2023/10/22/65347b7f9620e.webp" alt="SwitchyOmega.webp"></p><p>然后选择 proxy 的代理组，访问完毕内网资源，记住调成 系统代理选项卡，不然这个安装这个浏览器的插件会无法上网。</p><p><img src="https://img.misaka.pics/ShellBlogImg/1/2023/10/22/65347c0eac9b4.webp" alt="SwitchyOmega-1.webp"></p><h1 id="意外情况？"><a href="#意外情况？" class="headerlink" title="意外情况？"></a>意外情况？</h1><p>如果你运行第一次是没问题的但第二次运行之后报错:</p><figure class="highlight powershell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker: Error response from daemon: Ports are not available: exposing port TCP <span class="number">0.0</span>.<span class="number">0.0</span>:<span class="number">1080</span> -&gt; <span class="number">0.0</span>.<span class="number">0.0</span>:<span class="number">0</span>: listen tcp <span class="number">0.0</span>.<span class="number">0.0</span>:<span class="number">1080</span>: bind: An attempt was made to access a socket <span class="keyword">in</span> a way forbidden by its access permissions. time=<span class="string">"2023-10-15T10:13:34+08:00"</span> level=error msg=<span class="string">"error waiting for container: "</span></span><br></pre></td></tr></tbody></table></figure><p>是说明你的 1080 端口被占用了，你可以使用<code>netstat -aon | findstr :1080</code> 的命令进行查询如果发现没有程序出现问题的话。那就是其实这是Windows中的一个小问题，只需要重启NAT网络就可以解决了，执行如下两条命令：</p><figure class="highlight powershell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">net stop winnat</span><br><span class="line">net <span class="built_in">start</span> winnat</span><br></pre></td></tr></tbody></table></figure><h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>引用涛叔博客 使用 Docker 封印 EasyConnect 一篇文章：<a href="https://taoshu.in/easyconnect-in-docker.html" rel="external nofollow noreferrer">https://taoshu.in/easyconnect-in-docker.html</a></p></body></html>]]></content>
-    
-    
-    <summary type="html">这篇文章介绍了如何使用Docker封印EasyConnect，以解决其安全隐患和全局代理带来的问题。作者指出EasyConnect存在依赖旧系统功能、安装特殊证书和自启动进程等安全隐患。通过Docker容器化部署EasyConnect，可以方便地管理和使用，避免安全问题和全局代理的不便。文章简明扼要地介绍了部署步骤和解决端口占用问题的方法。</summary>
-    
-    
-    
-    <category term="网络技术" scheme="https://blog.ning.moe/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/"/>
-    
-    
-    <category term="2023" scheme="https://blog.ning.moe/tags/2023/"/>
-    
-    <category term="easyconnect" scheme="https://blog.ning.moe/tags/easyconnect/"/>
-    
-    <category term="深信服" scheme="https://blog.ning.moe/tags/%E6%B7%B1%E4%BF%A1%E6%9C%8D/"/>
-    
-    <category term="vpn" scheme="https://blog.ning.moe/tags/vpn/"/>
     
   </entry>
   
