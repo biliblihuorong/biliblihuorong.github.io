@@ -6,7 +6,7 @@
   <link href="https://blog.ning.moe/atom.xml" rel="self"/>
   
   <link href="https://blog.ning.moe/"/>
-  <updated>2025-06-12T07:17:53.548Z</updated>
+  <updated>2025-07-25T16:05:53.142Z</updated>
   <id>https://blog.ning.moe/</id>
   
   <author>
@@ -15,6 +15,44 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>使用 n8n 工作流，打造自己的 QSL 卡片跟踪器</title>
+    <link href="https://blog.ning.moe/posts/Amateur-Radio-QSL-Tracker-power-by-n8n/"/>
+    <id>https://blog.ning.moe/posts/Amateur-Radio-QSL-Tracker-power-by-n8n/</id>
+    <published>2025-07-25T07:58:23.000Z</published>
+    <updated>2025-07-25T16:05:53.142Z</updated>
+    
+    <content type="html"><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>由于笔者，入了业余无线电的圈子，和通联过的人交换属于自己的 QSL 卡片，也是火腿之间的乐趣以及证明你和他互相通联过的凭证，扩大和收集他人的卡片，还是有很多成就感的。</p><p>但发卡和收卡需要一个能统计的地方，不然太乱了，以及这个是否给这个有台寄卡以及是否收到这位有台的卡片，属实令人头大，正巧手里有一台闲置的 轻量 并且部署了 n8n 的自动化工作流，我使用 notion 在线笔记软件用来存储信息，实现了 发送通知 和收到他人卡片的通知，通过电子邮件方式的通知。</p><h1 id="使用体验"><a href="#使用体验" class="headerlink" title="使用体验"></a>使用体验</h1><p><img src="https://img.misaka.pics/ShellBlogImg/1/2025/07/25/68832b33e6f85.webp" alt="QSL体验.webp"></p><table><thead><tr><th><img src="https://img.misaka.pics/ShellBlogImg/1/2025/07/25/68832bc48a0e0.webp" alt="QSL 寄出通知.webp"></th><th><img src="https://img.misaka.pics/ShellBlogImg/1/2025/07/25/688328dadcaae.webp" alt="QSL收.webp"></th></tr></thead></table><h1 id="前置条件"><a href="#前置条件" class="headerlink" title="前置条件"></a>前置条件</h1><ol><li><p>需要一个 notion 账号</p></li><li><p>添加我的 notion 模板 <a href="https://www.notion.so/misakashell/23be13b7739f803195fef18beb1ebadd?v=23be13b7739f81a3ae94000c50d2a636&amp;source=copy_link" rel="external nofollow noreferrer">模板链接</a></p></li><li><p>拥有一台服务器，博主使用的 <a href="https://curl.qcloud.com/1xGmO8Zu" rel="external nofollow noreferrer">腾讯云轻量</a></p></li><li><p>获取邮箱的SMTP密钥（163 126 qq 都是可以获取的）</p></li><li><p>准备好 n8n 工作流模板 <a href="/static/post-file/QSL跟踪器.json" download="QSL跟踪器.json">模板链接</a></p></li></ol><h1 id="开始搭建"><a href="#开始搭建" class="headerlink" title="开始搭建"></a>开始搭建</h1><h2 id="安装1pane"><a href="#安装1pane" class="headerlink" title="安装1pane"></a>安装1pane</h2><p>省心省力的话安装一个 1panel 面板就非常方便,下面是官网安装的命令。</p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bash -c <span class="string">"<span class="subst">$(curl -sSL https://resource.fit2cloud.com/1panel/package/v2/quick_start.sh)</span>"</span></span><br></pre></td></tr></tbody></table></figure><blockquote><p>这里推荐使用 <a href="https://curl.qcloud.com/1xGmO8Zu" rel="external nofollow noreferrer">腾讯云轻量服务器</a> , 推荐选择香港地区免备案，</p><p>还可以创建的时候直接选择1panel 、BT 面板，还有更多常用的应用一键开箱即用</p></blockquote><table><thead><tr><th><img src="https://img.misaka.pics/ShellBlogImg/1/2025/07/25/68832a9f134f1.webp" alt="腾讯云轻量购买页面.webp"></th><th><img src="https://img.misaka.pics/ShellBlogImg/1/2025/07/25/68832ad797a9b.webp" alt="腾讯云重装页面.webp"></th></tr></thead></table><p>tips: 腾讯云咨询也接入了 DeepSeek 的大模型，已经把常见问题归纳整理，常见问题可以直接询问即可，非常方便哒~</p><p><img src="https://img.misaka.pics/ShellBlogImg/1/2025/07/25/688334041890a.webp" alt="腾讯云-咨询问题.webp"></p><h2 id="安装-N8N"><a href="#安装-N8N" class="headerlink" title="安装 N8N"></a>安装 N8N</h2><p>如果您有域名 可以安装 OpenResty，配置安装，如果没有的话就直接搜索 N8N 安装即可，都是可以直接下一步的，ip 访问也一样的<br><img src="https://img.misaka.pics/ShellBlogImg/1/2025/07/25/68833685f10a3.webp" alt="install-OpenResty.webp"></p><p><img src="https://img.misaka.pics/ShellBlogImg/1/2025/07/25/688337017197c.webp" alt="install-n8n.webp"></p><h2 id="快速配置-N8N"><a href="#快速配置-N8N" class="headerlink" title="快速配置 N8N"></a>快速配置 N8N</h2><p>通过 服务ip + 端口 访问 n8n，快速配置，免费版本的key码会发到你的邮箱里面进行激活即可。</p><table><thead><tr><th><img src="https://img.misaka.pics/ShellBlogImg/1/2025/07/25/68833e4e7e8cb.webp" alt="n8n-quick.webp"></th><th><img src="https://img.misaka.pics/ShellBlogImg/1/2025/07/25/68833e69e7d7d.webp" alt="n8n-quick-key.webp"></th></tr></thead></table><h1 id="n8n-工作流配置"><a href="#n8n-工作流配置" class="headerlink" title="n8n 工作流配置"></a>n8n 工作流配置</h1><h2 id="导入工作流"><a href="#导入工作流" class="headerlink" title="导入工作流"></a>导入工作流</h2><p>点击 Create Workflow </p><p><img src="https://img.misaka.pics/ShellBlogImg/1/2025/07/25/68833ee343510.webp" alt="n8n-create wrokflow.webp"></p><p>导入下载的QSL<a href="#%E5%89%8D%E7%BD%AE%E6%9D%A1%E4%BB%B6"> n8n 工作流模板</a></p><p><img src="https://img.misaka.pics/ShellBlogImg/1/2025/07/25/68833efb9e5cb.webp" alt="n8n-import-qsl.webp"></p><h2 id="配置工作流"><a href="#配置工作流" class="headerlink" title="配置工作流"></a>配置工作流</h2><p>导入完毕之后会有 notion 和📧的有感叹号，博主这里分文两组，notion是 红框，蓝色框框是邮件相关的，目前需要更改的，如果你不需要发送任务通知你的话，可以把 <code>任务成功通知我</code>删除 鼠标选择右键delete，这样就少一个配置单元了。</p><blockquote><p>博主最下面的 notion 标记错了 应该也是红框框哦</p></blockquote><p><img src="https://img.misaka.pics/ShellBlogImg/1/2025/07/25/6883407940730.webp" alt="n8n-qsl-wrokflow.webp"></p><h3 id="notion-配置"><a href="#notion-配置" class="headerlink" title="notion 配置"></a>notion 配置</h3><p>访问您的notion配置获取令牌 <a href="https://www.notion.so/profile/integrations" rel="external nofollow noreferrer">https://www.notion.so/profile/integrations</a> </p><p>填写好您的工作空间 和集成名字</p><p><img src="https://img.misaka.pics/ShellBlogImg/1/2025/07/25/688343a461911.webp" alt="noiton-token.webp"></p><p>先临时保存好token，后续用得到</p><p><img src="https://img.misaka.pics/ShellBlogImg/1/2025/07/25/688343acb3abb.webp" alt="notion-toekn-config.webp"></p><p>然后允许可以操作的页面，如果您保存了我的模板将会在你的空间中搜索到，并且允许他操作页面数据。<br><img src="https://img.misaka.pics/ShellBlogImg/1/2025/07/25/688344016c1d8.webp" alt="notion-config-pages.webp"></p><p>然后我们回到首页,找到那个模板地址，拷贝保存稍后会使用。</p><p><img src="https://img.misaka.pics/ShellBlogImg/1/2025/07/25/688344077986f.webp" alt="notion-qsl-page-url.webp"></p><p>我们返回 n8n 配置 <code>获取数据源</code>的notion配置表，其他的 <code>更新notion收件人数据</code> 和 <code>更新notion寄件人数据</code> 只需要选中更改notion的账号即可<br><img src="https://img.misaka.pics/ShellBlogImg/1/2025/07/25/68834583536a9.webp" alt="n8n-noton-credential.webp"></p><h3 id="Email的配置"><a href="#Email的配置" class="headerlink" title="Email的配置"></a>Email的配置</h3><p>按照前面 如果您是 QQ邮箱 或者 163的邮箱请自行访问这两个链接获取 SMTP 密码</p><blockquote><p>QQ 邮箱：<a href="https://cloud.tencent.com/developer/article/2177098" rel="external nofollow noreferrer">https://cloud.tencent.com/developer/article/2177098</a></p><p>163 邮箱：<a href="https://mail.163.com/mailhelp/client.htm" rel="external nofollow noreferrer">https://mail.163.com/mailhelp/client.htm</a></p></blockquote><p>1号步骤和上面配置notion一样，重点说一下2好步骤，例如我现在的模板是 <code>BA4SAK QSL Service &lt;noreply@ning.moe&gt;</code> 你需要改成你的呼号加上邮件地址，例如 你的呼号是BA4SAK-7 电子邮件是 <a href="mailto:sak@qq.com" rel="external nofollow noreferrer">sak@qq.com</a> 那么你就需要改成  <code>BA4SAK-7 QSL Service &lt; sak@qq.com&gt;</code></p><table><thead><tr><th><img src="https://img.misaka.pics/ShellBlogImg/1/2025/07/25/688349cd3cc81.webp" alt="n8n-email-send.webp"></th><th><img src="https://img.misaka.pics/ShellBlogImg/1/2025/07/25/688349d3df0e7.webp" alt="n8n-email-config.webp"></th></tr></thead></table><p>第三部更改，邮件模板，按一下 <code>ctrl + f</code>调出搜索 搜索 ：<code>BA4SAK</code> 改成你的呼号即可。其他通知也是和这个一样的步骤改一下即可，由于篇幅原因就不在放了。</p><blockquote><p>提一嘴 应该每一个 HAM 都有 QRZ 吧，没有就应该你就是新火腿吧，那就速速注册一个吧。</p></blockquote><p><img src="https://img.misaka.pics/ShellBlogImg/1/2025/07/25/688349da657d8.webp" alt="#"></p><h3 id="保存"><a href="#保存" class="headerlink" title="保存"></a>保存</h3><p>最后记得保存。</p><p><img src="https://img.misaka.pics/ShellBlogImg/1/2025/07/25/68834bf21f792.webp" alt="n8n-save-active.webp"></p><h1 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h1><p>第一次写这么长的保姆级文章，文章总字符也来到历史的新高度近5k，后续在写可能真就需要，以视频发出来了，然后文章作为辅助了，感觉这个文章又臭又长，如果你能看到这里，非常感谢，如有不足或者有问题的地方也欢迎进行评论。</p><p>对啦对啦，也可以去看看 <a href="https://curl.qcloud.com/1xGmO8Zu" rel="external nofollow noreferrer">腾讯云轻量应用服务器</a> 哦。</p><h1 id="引用："><a href="#引用：" class="headerlink" title="引用："></a>引用：</h1><p>使用QQ邮箱发送邮件，QQ邮箱的smtp设置：<a href="https://cloud.tencent.com/developer/article/2177098" rel="external nofollow noreferrer">https://cloud.tencent.com/developer/article/2177098</a></p><p>网易邮箱帮助中心：<a href="https://mail.163.com/mailhelp/client.htm" rel="external nofollow noreferrer">https://mail.163.com/mailhelp/client.htm</a></p></body></html>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;由于笔者，入了业余无线电的圈子，和通联过的人交换属于自己的 QSL 卡片，也是火腿之间的乐</summary>
+      
+    
+    
+    
+    
+    <category term="n8n" scheme="https://blog.ning.moe/tags/n8n/"/>
+    
+    <category term="Notion" scheme="https://blog.ning.moe/tags/Notion/"/>
+    
+    <category term="QSL" scheme="https://blog.ning.moe/tags/QSL/"/>
+    
+    <category term="业余无线电" scheme="https://blog.ning.moe/tags/%E4%B8%9A%E4%BD%99%E6%97%A0%E7%BA%BF%E7%94%B5/"/>
+    
+    <category term="HAM" scheme="https://blog.ning.moe/tags/HAM/"/>
+    
+    <category term="火腿" scheme="https://blog.ning.moe/tags/%E7%81%AB%E8%85%BF/"/>
+    
+    <category term="工作流" scheme="https://blog.ning.moe/tags/%E5%B7%A5%E4%BD%9C%E6%B5%81/"/>
+    
+    <category term="教程" scheme="https://blog.ning.moe/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="2025" scheme="https://blog.ning.moe/tags/2025/"/>
+    
+  </entry>
   
   <entry>
     <title>宝峰5rhPro的APRS功能</title>
@@ -162,9 +200,9 @@
     
     <category term="2024" scheme="https://blog.ning.moe/tags/2024/"/>
     
-    <category term="PostgreSQL" scheme="https://blog.ning.moe/tags/PostgreSQL/"/>
-    
     <category term="Docker" scheme="https://blog.ning.moe/tags/Docker/"/>
+    
+    <category term="PostgreSQL" scheme="https://blog.ning.moe/tags/PostgreSQL/"/>
     
   </entry>
   
@@ -284,13 +322,13 @@
     
     <category term="Authentik" scheme="https://blog.ning.moe/tags/Authentik/"/>
     
+    <category term="nezha" scheme="https://blog.ning.moe/tags/nezha/"/>
+    
     <category term="SSO" scheme="https://blog.ning.moe/tags/SSO/"/>
     
     <category term="OIDC" scheme="https://blog.ning.moe/tags/OIDC/"/>
     
     <category term="OAuth2" scheme="https://blog.ning.moe/tags/OAuth2/"/>
-    
-    <category term="nezha" scheme="https://blog.ning.moe/tags/nezha/"/>
     
   </entry>
   
@@ -315,13 +353,13 @@
     
     <category term="Authentik" scheme="https://blog.ning.moe/tags/Authentik/"/>
     
-    <category term="Gitea" scheme="https://blog.ning.moe/tags/Gitea/"/>
-    
     <category term="SSO" scheme="https://blog.ning.moe/tags/SSO/"/>
     
     <category term="OIDC" scheme="https://blog.ning.moe/tags/OIDC/"/>
     
     <category term="OAuth2" scheme="https://blog.ning.moe/tags/OAuth2/"/>
+    
+    <category term="Gitea" scheme="https://blog.ning.moe/tags/Gitea/"/>
     
   </entry>
   
@@ -527,32 +565,6 @@
     <category term="总结" scheme="https://blog.ning.moe/tags/%E6%80%BB%E7%BB%93/"/>
     
     <category term="2023" scheme="https://blog.ning.moe/tags/2023/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>TeamSpeak 已经运行一年</title>
-    <link href="https://blog.ning.moe/posts/teamspeak-run-one-year/"/>
-    <id>https://blog.ning.moe/posts/teamspeak-run-one-year/</id>
-    <published>2023-11-06T13:32:10.000Z</published>
-    <updated>2024-03-12T16:32:13.696Z</updated>
-    
-    <content type="html"><![CDATA[<html><head></head><body><blockquote><p> <a href="ts3server://voice.ning.moe" rel="external nofollow noreferrer">点击此处唤醒</a>team speak</p></blockquote><p>看来 21多天没有更新了，来水一下，先浅浅的放一下运行一年的截图吧。</p><p> <img src="https://img.misaka.pics/ShellBlogImg/1/2023/11/06/6548eff53a156.webp" alt="TeamSpeak-one-year-1.webp"> </p><p>emmm ，艰难的存活了一年，感觉蛮不容易的，期间服务器很想进行重启的，应该来说是<a href="https://blog.ning.moe/blog/">两年之久</a>，在这个软件里面承载了我们之间的欢乐时光。</p><p> <img src="https://img.misaka.pics/ShellBlogImg/1/2023/11/06/6548f0c3abc56.webp" alt="TeamSpeak-one-year-2.webp"> </p><p>这个 TeamSpeak 服务器是在腾讯云hk轻量服务器上运行，用来方便我和我的朋友们进行连麦和交流。为我们提供了一个愉快的交流平台，让我们能够更轻松地一起玩游戏、讨论话题和共享欢乐时光。</p><p>我们主要的游戏是 彩虹六号，如果您也是彩虹六号玩家或者是对彩虹六号感兴趣，切没有人和你一起玩耍，我们非常欢迎你来加入我们，与我们一起畅谈、娱乐。</p></body></html>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;blockquote&gt;
-&lt;p&gt; &lt;a href=&quot;ts3server://voice.ning.moe&quot; rel=&quot;external nofollow noreferrer&quot;&gt;点击此处唤醒&lt;/a&gt;team speak&lt;/p&gt;
-&lt;</summary>
-      
-    
-    
-    
-    <category term="生活随想" scheme="https://blog.ning.moe/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E6%83%B3/"/>
-    
-    
-    <category term="TeamSpeak" scheme="https://blog.ning.moe/tags/TeamSpeak/"/>
     
   </entry>
   
