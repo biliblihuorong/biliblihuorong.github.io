@@ -1,0 +1,362 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>阿里云 ESA 使用体验 | 某科学的贝壳</title><meta name="author" content="shell"><meta name="copyright" content="shell"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="前言最近一段时间 ESA 、EdgeOne，阿里和腾讯相互推出类似产品，看到网上有很多对 EdgeOne (EO) 的体验博文，我就做一下 ESA 吧。ESA也是支持CNAME接入的，非常方便如果你是大量文件的下载那更推荐你使用ESA，因为EO会限速大概 500kb/s，所以你要有什么云盘常见资源的上下载，ESA更是一个不错的选择，其次ESA节点比EO要多这是优点也同样是一个缺点吧（后续会讲到）。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="阿里云 ESA 使用体验">
+<meta property="og:url" content="https://blog.ning.moe/posts/Aliyun-Cloud-ESA/">
+<meta property="og:site_name" content="某科学的贝壳">
+<meta property="og:description" content="前言最近一段时间 ESA 、EdgeOne，阿里和腾讯相互推出类似产品，看到网上有很多对 EdgeOne (EO) 的体验博文，我就做一下 ESA 吧。ESA也是支持CNAME接入的，非常方便如果你是大量文件的下载那更推荐你使用ESA，因为EO会限速大概 500kb/s，所以你要有什么云盘常见资源的上下载，ESA更是一个不错的选择，其次ESA节点比EO要多这是优点也同样是一个缺点吧（后续会讲到）。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://img.misaka.pics/ShellBlogImg/1/2025/07/31/688b019834346.webp">
+<meta property="article:published_time" content="2025-07-31T03:31:46.000Z">
+<meta property="article:modified_time" content="2025-07-31T05:40:34.065Z">
+<meta property="article:author" content="shell">
+<meta property="article:tag" content="CDN">
+<meta property="article:tag" content="Cloudflare">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img.misaka.pics/ShellBlogImg/1/2025/07/31/688b019834346.webp"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "阿里云 ESA 使用体验",
+  "url": "https://blog.ning.moe/posts/Aliyun-Cloud-ESA/",
+  "image": "https://img.misaka.pics/ShellBlogImg/1/2025/07/31/688b019834346.webp",
+  "datePublished": "2025-07-31T03:31:46.000Z",
+  "dateModified": "2025-07-31T05:40:34.065Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "shell",
+      "url": "https://blog.ning.moe/"
+    }
+  ]
+}</script><link rel="shortcut icon" href="https://img.misaka.pics/i/1/23/01/30/63d755db9649a.ico"><link rel="canonical" href="https://blog.ning.moe/posts/Aliyun-Cloud-ESA/"><link rel="preconnect"><link rel="preconnect" href="//busuanzi.ibruce.info"><link rel="manifest" href="/null"><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="/pluginsSrc/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="/pluginsSrc/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          const mediaQueryDark = window.matchMedia('(prefers-color-scheme: dark)')
+          const mediaQueryLight = window.matchMedia('(prefers-color-scheme: light)')
+          
+          if (theme === undefined) {
+            if (mediaQueryLight.matches) activateLightMode()
+            else if (mediaQueryDark.matches) activateDarkMode()
+            else {
+              const hour = new Date().getHours()
+              const isNight = hour <= 8 || hour >= 22
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            mediaQueryDark.addEventListener('change', () => {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else {
+            theme === 'light' ? activateLightMode() : activateDarkMode()
+          }
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: true
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'medium_zoom',
+  Snackbar: {"chs_to_cht":"已切换为繁体中文","cht_to_chs":"已切换为简体中文","day_to_night":"已切换为深色模式","night_to_day":"已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"top-center"},
+  infinitegrid: {
+    js: '/pluginsSrc/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: true,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '阿里云 ESA 使用体验',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><meta http-equiv="x-dns-prefetch-control" content="on"><link rel="dns-prefetch" href="blog.ning.moe"><link rel="dns-prefetch" href="www.ning.moe"><link rel="dns-prefetch" href="img.misaka.pics"><link rel="dns-prefetch" href="umami.asshell.top"><meta name="apple-mobile-web-app-capable" content="yes"><script async="" defer="" src="https://blog.ning.moe/static/js/script.js" data-website-id="9ff73ab5-a863-462d-8695-5db50d42cf66" data-host-url="https://umami.asshell.top/" data-domains="blog.ning.moe"></script><meta property="og:type" content="blog"><meta property="og:image" content="https://img.misaka.pics/i/1/23/01/30/63d7559a451ec.webp"><meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="某科学的贝壳" type="application/atom+xml">
+</head><body><div id="web_bg" style="background-color: #5BCEFA;"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="https://img.misaka.pics/i/1/23/01/30/63d7559a451ec.webp" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">57</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">115</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa-fw fas fa-filter"></i><span> 清单</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa-fw fa fa-gamepad"></i><span> 娱乐</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/movies/"><i class="fa-fw fab fa-youtube"></i><span> 追番</span></a></li><li><a class="site-page child" href="/steamgames/"><i class="fa-fw fab fa-steam"></i><span> Steam库</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/talking"><i class="fa-fw fas fa-comment-dots"></i><span> 叽喳</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/atom.xml"><i class="fa-fw fa fa-rss"></i><span> Rss订阅</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://travel.moe/go.html"><i class="fa-fw iconfont icon-xingqiu"></i><span> 异次元之旅</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://www.travellings.cn/go.html"><i class="fa-fw fas fa-train"></i><span> 开往</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-heart"></i><span> 关于</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/privacy-policy/"><i class="fa-fw fa-solid fa-user-secret"></i><span> 隐私</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fa-solid fa-user"></i><span> 我?</span></a></li><li><a class="site-page child" href="/blog/"><i class="fa-fw fa-solid fa-blog"></i><span> 本站?</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(https://img.misaka.pics/ShellBlogImg/1/2025/07/31/688b019834346.webp);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">某科学的贝壳</span></a><a class="nav-page-title" href="/"><span class="site-name">阿里云 ESA 使用体验</span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa-fw fas fa-filter"></i><span> 清单</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa-fw fa fa-gamepad"></i><span> 娱乐</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/movies/"><i class="fa-fw fab fa-youtube"></i><span> 追番</span></a></li><li><a class="site-page child" href="/steamgames/"><i class="fa-fw fab fa-steam"></i><span> Steam库</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/talking"><i class="fa-fw fas fa-comment-dots"></i><span> 叽喳</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/atom.xml"><i class="fa-fw fa fa-rss"></i><span> Rss订阅</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://travel.moe/go.html"><i class="fa-fw iconfont icon-xingqiu"></i><span> 异次元之旅</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://www.travellings.cn/go.html"><i class="fa-fw fas fa-train"></i><span> 开往</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-heart"></i><span> 关于</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/privacy-policy/"><i class="fa-fw fa-solid fa-user-secret"></i><span> 隐私</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fa-solid fa-user"></i><span> 我?</span></a></li><li><a class="site-page child" href="/blog/"><i class="fa-fw fa-solid fa-blog"></i><span> 本站?</span></a></li></ul></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">阿里云 ESA 使用体验</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-07-31T03:31:46.000Z" title="发表于 2025-07-31 11:31:46">2025-07-31</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-07-31T05:40:34.065Z" title="更新于 2025-07-31 13:40:34">2025-07-31</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="ArtalkPV"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><div id="post-outdate-notice" data="{&quot;limitDay&quot;:500,&quot;messagePrev&quot;:null,&quot;messageNext&quot;:&quot;自上次更新以来的天，文章的内容可能已过时。&quot;,&quot;postUpdate&quot;:&quot;2025-07-31 13:40:34&quot;}" hidden=""></div><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>最近一段时间 ESA 、EdgeOne，阿里和腾讯相互推出类似产品，看到网上有很多对 EdgeOne (EO) 的体验博文，我就做一下 ESA 吧。ESA也是支持CNAME接入的，非常方便如果你是大量文件的下载那更推荐你使用ESA，因为EO会限速大概 500kb/s，所以你要有什么云盘常见资源的上下载，ESA更是一个不错的选择，其次ESA节点比EO要多这是优点也同样是一个缺点吧（后续会讲到）。</p>
+<p>先放测速图片，国外节点（非备案域名）速度也还不错，下载文件我在能稳定10mbps 左右的速度，如果你有国内备案域名，也有大陆节点速度不限速在200mbps 左右吧，速度只能说飕飕的了。</p>
+<table>
+<thead>
+<tr>
+<th>国内域名</th>
+<th>国外域名</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a target="_blank" href="https://test.shell.ac.cn/" rel="external nofollow noreferrer noopener">https://test.shell.ac.cn/</a></td>
+<td><a target="_blank" href="https://ali-esa-blog.ning.moe/" rel="external nofollow noreferrer noopener">https://ali-esa-blog.ning.moe/</a></td>
+</tr>
+<tr>
+<td><a target="_blank" href="https://test.shell.ac.cn/testfile.bin" rel="external nofollow noreferrer noopener">https://test.shell.ac.cn/testfile.bin</a></td>
+<td><a target="_blank" href="https://test.ning.moe/testfile.bin" rel="external nofollow noreferrer noopener">https://test.ning.moe/testfile.bin</a></td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>非备案域名国外节点</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th><img src="https://img.misaka.pics/ShellBlogImg/1/2025/07/31/688adce84c9d3.webp" alt="ali-esa-hexo-test.webp"></th>
+<th><img src="https://img.misaka.pics/ShellBlogImg/1/2025/07/31/688adcee42630.webp" alt="ali-esa-download-test.webp"></th>
+</tr>
+</thead>
+</table>
+<blockquote>
+<p>备案域名国内节点</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th><img src="https://img.misaka.pics/ShellBlogImg/1/2025/07/31/688adedb15487.webp" alt="ali-esa-itdog.webp"></th>
+<th><img src="https://img.misaka.pics/ShellBlogImg/1/2025/07/31/688adee333494.webp" alt="ali-esa-download-test-1.webp"></th>
+</tr>
+</thead>
+</table>
+<p>前排直达链接了解详情 👇</p>
+<blockquote>
+<p>阿里云ESA国际站（alibabacloud.com)可以一直免费且不限CDN流量白嫖，而且还有中国加速！有需要的可以试试：<a target="_blank" href="http://s.tb.cn/e6.0Fu67m" rel="external nofollow noreferrer noopener">http://s.tb.cn/e6.0Fu67m</a></p>
+<p>中国站（aliyun.com)也可一直领取基础版：<a target="_blank" href="https://s.tb.cn/e6.0FuRjs" rel="external nofollow noreferrer noopener">https://s.tb.cn/e6.0FuRjs</a></p>
+</blockquote>
+<h1 id="使用配置"><a href="#使用配置" class="headerlink" title="使用配置"></a>使用配置</h1><p>ESA 的整体使用和 cloudflare 差不太多，大同小异，一股很熟悉的味道。</p>
+<p><img src="https://img.misaka.pics/ShellBlogImg/1/2025/07/31/688adfbfa2fa7.webp" alt="ali-esa-console.webp"></p>
+<p>暂时开启了如下基础配置，可以按需开启，目前我觉得这些功能都基本上常见和基础功能。<br><img src="https://img.misaka.pics/ShellBlogImg/1/2025/07/31/688ae056c8291.webp" alt="ali-esa-config.webp"></p>
+<h2 id="缓存配置"><a href="#缓存配置" class="headerlink" title="缓存配置"></a>缓存配置</h2><p><img src="https://img.misaka.pics/ShellBlogImg/1/2025/07/31/688ae0b1c986e.webp" alt="ali-esa-config-cache.webp"></p>
+<p>配置缓存常见的文件类型。</p>
+<figure class="highlight txt"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(http.request.uri.path.extension in {"jpg" "png" "jpeg" "gif" "svg" "webp" "ico" "js" "css" "txt" "pdf" "doc" "docx" "xls" "xlsx" "ppt" "pptx" "zip" "rar" "7z" "mp3" "mp4" "mov" "avi" "wmv" "flv" "webm" "ogg" "woff" "woff2" "ttf" "otf" "eot"})</span><br></pre></td></tr></tbody></table></figure>
+
+<p>关于更多 缓存规则如 缓存响应头类型、缓存信息、缓存逻辑 <a target="_blank" href="https://www.alibabacloud.com/help/zh/edge-security-acceleration/esa/user-guide/default-cache-rule?spm=a2c63.p38356.0.i6" rel="external nofollow noreferrer noopener">官网文档</a></p>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p> ESA 和 EO 都是可以的 目前是比 Cloud flare 的速度要快的，毕竟上半年 CF 的严重抽风，部分网站直接打不开，例如，本站域名也曾受到影响，Cloudflare 出现问题的网站，其解析地址会被导向一些特殊的 IP 详情请访问这里了解更多 详情  <a target="_blank" href="https://v2ex.com/t/1137482#reply1" rel="external nofollow noreferrer noopener">访问这里了解更多</a> ，可惜ESA free 版本并不支持 L2 等级缓存，可以看下面图了解区别：客户端向CDN节点发起连接请求，当L1节点有缓存资源时，会命中该资源，直接将数据返回给客户端。当L1节点无缓存资源时，会向L2节点请求对应资源，如果L2节点有缓存资源，则将资源同步到L1节点，并返回给用户；如果L2节点无缓存资源，则直接回客户源站获取资源，并按照配置的缓存策略进行缓存。如果没有L2 那么边缘节点L1 将会直接和源站对接。这会造成源站的巨大负担，如果您文件特别多特别大，<strong>请务必留意源站的压力</strong>。</p>
+<p><img src="http://help-static-aliyun-doc.aliyuncs.com/assets/img/zh-CN/2824794951/p68816.png"></p>
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>阿里云 ESA 官方文档 ：<a target="_blank" href="https://www.alibabacloud.com/help/zh/edge-security-acceleration/esa/user-guide/default-cache-rule?spm=a2c63.p38356.0.i6" rel="external nofollow noreferrer noopener">https://www.alibabacloud.com/help/zh/edge-security-acceleration/esa/user-guide/default-cache-rule?spm=a2c63.p38356.0.i6</a></p>
+<p>v2ex : <a target="_blank" href="https://v2ex.com/t/1137482#reply1" rel="external nofollow noreferrer noopener">https://v2ex.com/t/1137482#reply1</a></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://blog.ning.moe">shell</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://blog.ning.moe/posts/Aliyun-Cloud-ESA/">https://blog.ning.moe/posts/Aliyun-Cloud-ESA/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://blog.ning.moe" target="_blank">某科学的贝壳</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/CDN/">CDN</a><a class="post-meta__tags" href="/tags/Cloudflare/">Cloudflare</a></div><div class="post-share"><div class="social-share" data-image="https://img.misaka.pics/ShellBlogImg/1/2025/07/31/688b019834346.webp" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="/pluginsSrc/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="/pluginsSrc/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer=""></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i>赞助</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://img.misaka.pics/ShellBlogImg/1/2024/08/04/66aed9d806a94.webp" target="_blank"><img class="post-qr-code-img" src="https://img.misaka.pics/ShellBlogImg/1/2024/08/04/66aed9d806a94.webp" alt="alipay"></a><div class="post-qr-code-desc">alipay</div></li><li class="reward-item"><a href="https://img.misaka.pics/ShellBlogImg/1/2024/08/04/66aed9813de47.webp" target="_blank"><img class="post-qr-code-img" src="https://img.misaka.pics/ShellBlogImg/1/2024/08/04/66aed9813de47.webp" alt="wechat"></a><div class="post-qr-code-desc">wechat</div></li></ul></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related full-width" href="/posts/Amateur-Radio-QSL-Tracker-power-by-n8n/" title="使用 n8n 工作流，打造自己的 QSL 卡片跟踪器"><img class="cover" src="https://img.misaka.pics/ShellBlogImg/1/2025/07/25/68835275b1251.webp" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">使用 n8n 工作流，打造自己的 QSL 卡片跟踪器</div></div><div class="info-2"><div class="info-item-1">前言由于笔者，入了业余无线电的圈子，和通联过的人交换属于自己的 QSL 卡片，也是火腿之间的乐趣以及证明你和他互相通联过的凭证，扩大和收集他人的卡片，还是有很多成就感的。 但发卡和收卡需要一个能统计的地方，不然太乱了，以及这个是否给这个有台寄卡以及是否收到这位有台的卡片，属实令人头大，正巧手里有一台闲置的 轻量 并且部署了 n8n 的自动化工作流，我使用 notion 在线笔记软件用来存储信息，实现了 发送通知 和收到他人卡片的通知，通过电子邮件方式的通知。 使用体验         前置条件 需要一个 notion 账号  添加我的 notion 模板 模板链接  拥有一台服务器，博主使用的 腾讯云轻量  获取邮箱的SMTP密钥（163 126 qq 都是可以获取的）  准备好 n8n 工作流模板 模板链接   开始搭建安装1pane省心省力的话安装一个 1panel 面板就非常方便,下面是官网安装的命令。 1bash -c "$(curl -sSL...</div></div></div></a></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><a class="pagination-related" href="/posts/cdn/" title="关于启动CDN发生一些难受的小bug"><img class="cover" src="https://img.misaka.pics/i/1/23/01/30/63d759cdaccfe.webp" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2021-02-07</div><div class="info-item-2">关于启动CDN发生一些难受的小bug</div></div><div class="info-2"><div class="info-item-1">好久没有更新了，如果你要问我这段鸽了半年干了什么，我只能说啥事情都没有干，还是没有想好写什么,但是我一定会在6月结束会高产的。 当然关于:部署多的CDN同时加速的网上教程也很少（也可能我没有找到太多）  在这个星期又又又白嫖了Tencent Cloud的CDN活动，上次白嫖了一百块无门槛优惠卷，貌似我的域名在Tencent cloud只是首年续费了9块剩下5年都没有花过其他的了。  国内用腾讯的国外用的是CF，现在也是国内国外都使用的CDN(我是不会告诉你我原来没有使用CDN的) bug总结: https的问题: 使用腾讯CDN就麻烦不行，CF特别顺畅没有发生过https的问题.在腾讯云的CDN想开https你需要上传你的证书才可以。 开启CDN之后WordPress出现无法登陆后台的问题，腾讯需要**/wp-admin**变成不缓存即可。 3.指开启国内加速，可能导致国外的朋友出现无法访问的问题: 这个问题我还发过工单给腾讯云,简单总结一句话,你开国内的加速，跟国外有什么关系。 这个问题我只遇到过一次，有几率会抽风一下。...</div></div></div></a><a class="pagination-related" href="/posts/butterfly/" title="Hexo butterfly 优化"><img class="cover" src="https://img.misaka.pics/i/1/2023/04/22/6443a054a8a75.webp" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2023-04-22</div><div class="info-item-2">Hexo butterfly 优化</div></div><div class="info-2"><div class="info-item-1">前言 我也来水一篇博文吧，最近我也不知道在忙什么（明明就是懒得更新），也感谢  @夜灭博主,让我可以水一篇博文以及再次优化hexo博客，如你所见我的博客在国内访问基本上都能在5秒以内完成这个所有加载。  正文博客基本情况优化过的情况  源站在GitHub Pages上 使用双解析模式（国内 腾讯云 国外Cloudflare） 把 hexo 需要的静态js 资源全部缓存到源站，不在走jsdelivr 图床使用自建数据在backblaze存储桶上，详细的图床解决方案：https://blog.ning.moe/posts/lskypro-backblaze/ 图床使用cf的自定义域名进行双解析和第二点一样。   butterfly 静态资源优化在最新的 butterfly 4.8.1 中加入了自定义cdn 功能，虽然以前也能改那就要一个一个配置文件上改了 123456789101112131415161718CDN:  # The CDN provider of internal scripts (主題內部 js 的 cdn 配置)  # option:...</div></div></div></a></div></div><hr class="custom-hr"><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="artalk-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="https://img.misaka.pics/i/1/23/01/30/63d7559a451ec.webp" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"></div><div class="author-info-name">shell</div><div class="author-info-description">没错这是一个在学园都市的贝壳建立的博客!</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">57</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">115</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/biliblihuorong"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://t.me/shell_science" target="_blank" title="Telegram"><i class="fa-brands fa-telegram"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">欢迎访问本站,今天又是咕咕咕的一天!<br>
+<a href="https://blog.ning.moe/privacy-policy/" target="_blank">本站的隐私政策</a>
+</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E9%85%8D%E7%BD%AE"><span class="toc-number">2.</span> <span class="toc-text">使用配置</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BC%93%E5%AD%98%E9%85%8D%E7%BD%AE"><span class="toc-number">2.1.</span> <span class="toc-text">缓存配置</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-number">3.</span> <span class="toc-text">总结</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%BC%95%E7%94%A8"><span class="toc-number">4.</span> <span class="toc-text">引用</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/Aliyun-Cloud-ESA/" title="阿里云 ESA 使用体验"><img src="https://img.misaka.pics/ShellBlogImg/1/2025/07/31/688b019834346.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="阿里云 ESA 使用体验"></a><div class="content"><a class="title" href="/posts/Aliyun-Cloud-ESA/" title="阿里云 ESA 使用体验">阿里云 ESA 使用体验</a><time datetime="2025-07-31T03:31:46.000Z" title="发表于 2025-07-31 11:31:46">2025-07-31</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/Amateur-Radio-QSL-Tracker-power-by-n8n/" title="使用 n8n 工作流，打造自己的 QSL 卡片跟踪器"><img src="https://img.misaka.pics/ShellBlogImg/1/2025/07/25/68835275b1251.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="使用 n8n 工作流，打造自己的 QSL 卡片跟踪器"></a><div class="content"><a class="title" href="/posts/Amateur-Radio-QSL-Tracker-power-by-n8n/" title="使用 n8n 工作流，打造自己的 QSL 卡片跟踪器">使用 n8n 工作流，打造自己的 QSL 卡片跟踪器</a><time datetime="2025-07-25T07:58:23.000Z" title="发表于 2025-07-25 15:58:23">2025-07-25</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/BaoFeng-5rhPro-APRS/" title="宝峰5rhPro的APRS功能"><img src="https://img.misaka.pics/ShellBlogImg/1/2025/05/28/68370d29d969f.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="宝峰5rhPro的APRS功能"></a><div class="content"><a class="title" href="/posts/BaoFeng-5rhPro-APRS/" title="宝峰5rhPro的APRS功能">宝峰5rhPro的APRS功能</a><time datetime="2025-05-28T12:01:50.000Z" title="发表于 2025-05-28 20:01:50">2025-05-28</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/amateur-radio/" title="【记】成为一支火腿（Ham）的故事"><img src="https://img.misaka.pics/ShellBlogImg/1/2025/03/31/67ea097369c92.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【记】成为一支火腿（Ham）的故事"></a><div class="content"><a class="title" href="/posts/amateur-radio/" title="【记】成为一支火腿（Ham）的故事">【记】成为一支火腿（Ham）的故事</a><time datetime="2025-03-31T04:22:56.000Z" title="发表于 2025-03-31 12:22:56">2025-03-31</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/First-sending-and-receiving-mail/" title="【记】第一次收发信"><img src="https://img.misaka.pics/ShellBlogImg/1/2025/03/01/67c2cdebc05c9.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【记】第一次收发信"></a><div class="content"><a class="title" href="/posts/First-sending-and-receiving-mail/" title="【记】第一次收发信">【记】第一次收发信</a><time datetime="2025-02-28T10:08:52.000Z" title="发表于 2025-02-28 18:08:52">2025-02-28</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">©2019 - 2025 By shell</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 7.3.0</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.3.3</a></div><div class="footer_custom_text"><a href="https://icp.gov.moe/?keyword=2020021021" target="_blank"><img src="https://img.misaka.pics/i/1/23/01/30/63d75baf92f17.webp" width="20px" height="20px" alt="萌国ICP备案"> 萌ICP备 2020021021号</a> | 
+<a style="text-decoration:none;" href="https://travel.moe/go.html" title="异次元之旅-跃迁-我们一起去萌站成员的星球旅行吧！" target="_blank"><img src="https://img.misaka.pics/ShellBlogImg/1/2024/10/25/671b55666e1e0.webp" style="width:24px;height:24px" alt="travel.moe">异次元之旅</a> |
+<a href="https://www.travellings.cn/go.html" target="_blank" rel="noopener" title="开往-友链接力"> <img src="https://img.misaka.pics/ShellBlogImg/1/2024/10/25/671b5566b72fb.gif" alt="开往-友链接力" width="120"></a><br>
+<a href="https://www.cloudflare.com/" target="_blank" rel="external nofollow"><img src="https://img.misaka.pics/i/1/23/01/30/63d75c34b7358.webp" width="80px" height="30px" alt="CloudFlare"></a><br>
+</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="前往评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/pluginsSrc/medium-zoom/dist/medium-zoom.min.js"></script><script src="/pluginsSrc/node-snackbar/dist/snackbar.min.js"></script><div class="js-pjax"><script>(() => {
+  let artalkItem = null
+  const option = null
+  const isShuoshuo = GLOBAL_CONFIG_SITE.pageType === 'shuoshuo'
+
+  const destroyArtalk = () => {
+    if (artalkItem) {
+      artalkItem.destroy()
+      artalkItem = null
+    }
+  }
+
+  const artalkChangeMode = theme => artalkItem && artalkItem.setDarkMode(theme === 'dark')
+
+  const initArtalk = (el = document, pageKey = location.pathname) => {
+    artalkItem = Artalk.init({
+      el: el.querySelector('#artalk-wrap'),
+      server: 'https://artalk.ning.moe/',
+      site: 'shell-blog',
+      darkMode: document.documentElement.getAttribute('data-theme') === 'dark',
+      ...option,
+      pageKey: isShuoshuo ? pageKey : (option && option.pageKey) || pageKey
+    })
+
+    if (GLOBAL_CONFIG.lightbox === 'null') return
+    artalkItem.on('list-loaded', () => {
+      artalkItem.ctx.get('list').getCommentNodes().forEach(comment => {
+        const $content = comment.getRender().$content
+        btf.loadLightbox($content.querySelectorAll('img:not([atk-emoticon])'))
+      })
+    })
+
+    if (isShuoshuo) {
+      window.shuoshuoComment.destroyArtalk = () => {
+        destroyArtalk()
+        if (el.children.length) {
+          el.innerHTML = ''
+          el.classList.add('no-comment')
+        }
+      }
+    }
+
+    btf.addGlobalFn('pjaxSendOnce', destroyArtalk, 'destroyArtalk')
+    btf.addGlobalFn('themeChange', artalkChangeMode, 'artalk')
+  }
+
+  const loadArtalk = async (el, pageKey) => {
+    if (typeof Artalk === 'object') initArtalk(el, pageKey)
+    else {
+      await btf.getCSS('/pluginsSrc/artalk/dist/Artalk.css')
+      await btf.getScript('/pluginsSrc/artalk/dist/Artalk.js')
+      initArtalk(el, pageKey)
+    }
+  }
+
+  if (isShuoshuo) {
+    'Artalk' === 'Artalk'
+      ? window.shuoshuoComment = { loadComment: loadArtalk }
+      : window.loadOtherComment = loadArtalk
+    return
+  }
+
+  if ('Artalk' === 'Artalk' || !false) {
+    if (false) btf.loadComment(document.getElementById('artalk-wrap'), loadArtalk)
+    else setTimeout(loadArtalk, 100)
+  } else {
+    window.loadOtherComment = loadArtalk
+  }
+})()</script></div><script async="" data-pjax="" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"></div></div><hr><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div>
+      <div id="sakana" style="position:fixed;right:0;bottom:0px;"></div>
+      <script async="" onload="initSakanaWidget({&quot;character&quot;:&quot;takina&quot;,&quot;enable&quot;:true,&quot;enable_mobile&quot;:false,&quot;size&quot;:200,&quot;autoFit&quot;:false,&quot;bottom&quot;:&quot;0px&quot;,&quot;controls&quot;:true,&quot;stroke&quot;:{&quot;color&quot;:&quot;#b4b4b4&quot;,&quot;width&quot;:10},&quot;threshold&quot;:0.1,&quot;rotate&quot;:0,&quot;customCharacters&quot;:[]})" src="https://cdn.jsdelivr.net/npm/sakana-widget@2.3.0/lib/sakana.min.js"></script>
+      <script>
+      function log(msg) {
+        console.log("[hexo-sakana] " + msg);
+      }
+
+      function initSakanaWidget(config) {
+        if (
+          !config.enable_mobile &&
+          window.navigator.userAgent.match(
+            /(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i
+          )
+        ) {
+          log(
+            '检测为移动端，且配置中未开启在移动端启用组件，hexo-sakana 已禁用'
+          );
+          return;
+        }
+        for (character of config.customCharacters) {
+          if (!["takina", "chisato"].includes(character.base)) {
+            log(`无效基础角色 ${character.base}，取消注册`);
+            continue;
+          }
+          if (character.name === "") {
+            log("名称为空，取消注册");
+            continue;
+          }
+          const originCharacter = SakanaWidget.getCharacter(character.base);
+          originCharacter.initialState = {
+            ...originCharacter.initialState,
+            ...character,
+          };
+          originCharacter.image = !character.image ? originCharacter.image : character.image
+          SakanaWidget.registerCharacter(character.name, originCharacter);
+          log(`注册自定义角色：${character.name}`)
+        }
+        new SakanaWidget({
+          character: config.character,
+          size: config.size,
+          autoFit: config.autoFit,
+          controls: config.controls,
+          stroke: config.stroke,
+          threshold: config.threshold,
+          rotate: config.rotate,
+        }).mount("#sakana");
+      }
+  </script>
+    <script type="text/javascript" charset="utf-8" src="/js/lazyload-plugin/lazyload.intersectionObserver.min.js"></script></body></html>

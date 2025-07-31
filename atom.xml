@@ -6,7 +6,7 @@
   <link href="https://blog.ning.moe/atom.xml" rel="self"/>
   
   <link href="https://blog.ning.moe/"/>
-  <updated>2025-07-25T16:05:53.142Z</updated>
+  <updated>2025-07-31T05:40:34.065Z</updated>
   <id>https://blog.ning.moe/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>阿里云 ESA 使用体验</title>
+    <link href="https://blog.ning.moe/posts/Aliyun-Cloud-ESA/"/>
+    <id>https://blog.ning.moe/posts/Aliyun-Cloud-ESA/</id>
+    <published>2025-07-31T03:31:46.000Z</published>
+    <updated>2025-07-31T05:40:34.065Z</updated>
+    
+    <content type="html"><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>最近一段时间 ESA 、EdgeOne，阿里和腾讯相互推出类似产品，看到网上有很多对 EdgeOne (EO) 的体验博文，我就做一下 ESA 吧。ESA也是支持CNAME接入的，非常方便如果你是大量文件的下载那更推荐你使用ESA，因为EO会限速大概 500kb/s，所以你要有什么云盘常见资源的上下载，ESA更是一个不错的选择，其次ESA节点比EO要多这是优点也同样是一个缺点吧（后续会讲到）。</p><p>先放测速图片，国外节点（非备案域名）速度也还不错，下载文件我在能稳定10mbps 左右的速度，如果你有国内备案域名，也有大陆节点速度不限速在200mbps 左右吧，速度只能说飕飕的了。</p><table><thead><tr><th>国内域名</th><th>国外域名</th></tr></thead><tbody><tr><td><a href="https://test.shell.ac.cn/" rel="external nofollow noreferrer">https://test.shell.ac.cn/</a></td><td><a href="https://ali-esa-blog.ning.moe/" rel="external nofollow noreferrer">https://ali-esa-blog.ning.moe/</a></td></tr><tr><td><a href="https://test.shell.ac.cn/testfile.bin" rel="external nofollow noreferrer">https://test.shell.ac.cn/testfile.bin</a></td><td><a href="https://test.ning.moe/testfile.bin" rel="external nofollow noreferrer">https://test.ning.moe/testfile.bin</a></td></tr></tbody></table><blockquote><p>非备案域名国外节点</p></blockquote><table><thead><tr><th><img src="https://img.misaka.pics/ShellBlogImg/1/2025/07/31/688adce84c9d3.webp" alt="ali-esa-hexo-test.webp"></th><th><img src="https://img.misaka.pics/ShellBlogImg/1/2025/07/31/688adcee42630.webp" alt="ali-esa-download-test.webp"></th></tr></thead></table><blockquote><p>备案域名国内节点</p></blockquote><table><thead><tr><th><img src="https://img.misaka.pics/ShellBlogImg/1/2025/07/31/688adedb15487.webp" alt="ali-esa-itdog.webp"></th><th><img src="https://img.misaka.pics/ShellBlogImg/1/2025/07/31/688adee333494.webp" alt="ali-esa-download-test-1.webp"></th></tr></thead></table><p>前排直达链接了解详情 👇</p><blockquote><p>阿里云ESA国际站（alibabacloud.com)可以一直免费且不限CDN流量白嫖，而且还有中国加速！有需要的可以试试：<a href="http://s.tb.cn/e6.0Fu67m" rel="external nofollow noreferrer">http://s.tb.cn/e6.0Fu67m</a></p><p>中国站（aliyun.com)也可一直领取基础版：<a href="https://s.tb.cn/e6.0FuRjs" rel="external nofollow noreferrer">https://s.tb.cn/e6.0FuRjs</a></p></blockquote><h1 id="使用配置"><a href="#使用配置" class="headerlink" title="使用配置"></a>使用配置</h1><p>ESA 的整体使用和 cloudflare 差不太多，大同小异，一股很熟悉的味道。</p><p><img src="https://img.misaka.pics/ShellBlogImg/1/2025/07/31/688adfbfa2fa7.webp" alt="ali-esa-console.webp"></p><p>暂时开启了如下基础配置，可以按需开启，目前我觉得这些功能都基本上常见和基础功能。<br><img src="https://img.misaka.pics/ShellBlogImg/1/2025/07/31/688ae056c8291.webp" alt="ali-esa-config.webp"></p><h2 id="缓存配置"><a href="#缓存配置" class="headerlink" title="缓存配置"></a>缓存配置</h2><p><img src="https://img.misaka.pics/ShellBlogImg/1/2025/07/31/688ae0b1c986e.webp" alt="ali-esa-config-cache.webp"></p><p>配置缓存常见的文件类型。</p><figure class="highlight txt"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(http.request.uri.path.extension in {"jpg" "png" "jpeg" "gif" "svg" "webp" "ico" "js" "css" "txt" "pdf" "doc" "docx" "xls" "xlsx" "ppt" "pptx" "zip" "rar" "7z" "mp3" "mp4" "mov" "avi" "wmv" "flv" "webm" "ogg" "woff" "woff2" "ttf" "otf" "eot"})</span><br></pre></td></tr></tbody></table></figure><p>关于更多 缓存规则如 缓存响应头类型、缓存信息、缓存逻辑 <a href="https://www.alibabacloud.com/help/zh/edge-security-acceleration/esa/user-guide/default-cache-rule?spm=a2c63.p38356.0.i6" rel="external nofollow noreferrer">官网文档</a></p><h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p> ESA 和 EO 都是可以的 目前是比 Cloud flare 的速度要快的，毕竟上半年 CF 的严重抽风，部分网站直接打不开，例如，本站域名也曾受到影响，Cloudflare 出现问题的网站，其解析地址会被导向一些特殊的 IP 详情请访问这里了解更多 详情  <a href="https://v2ex.com/t/1137482#reply1" rel="external nofollow noreferrer">访问这里了解更多</a> ，可惜ESA free 版本并不支持 L2 等级缓存，可以看下面图了解区别：客户端向CDN节点发起连接请求，当L1节点有缓存资源时，会命中该资源，直接将数据返回给客户端。当L1节点无缓存资源时，会向L2节点请求对应资源，如果L2节点有缓存资源，则将资源同步到L1节点，并返回给用户；如果L2节点无缓存资源，则直接回客户源站获取资源，并按照配置的缓存策略进行缓存。如果没有L2 那么边缘节点L1 将会直接和源站对接。这会造成源站的巨大负担，如果您文件特别多特别大，<strong>请务必留意源站的压力</strong>。</p><p><img src="http://help-static-aliyun-doc.aliyuncs.com/assets/img/zh-CN/2824794951/p68816.png"></p><h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>阿里云 ESA 官方文档 ：<a href="https://www.alibabacloud.com/help/zh/edge-security-acceleration/esa/user-guide/default-cache-rule?spm=a2c63.p38356.0.i6" rel="external nofollow noreferrer">https://www.alibabacloud.com/help/zh/edge-security-acceleration/esa/user-guide/default-cache-rule?spm=a2c63.p38356.0.i6</a></p><p>v2ex : <a href="https://v2ex.com/t/1137482#reply1" rel="external nofollow noreferrer">https://v2ex.com/t/1137482#reply1</a></p></body></html>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;最近一段时间 ESA 、EdgeOne，阿里和腾讯相互推出类似产品，看到网上有很多对 Ed</summary>
+      
+    
+    
+    
+    
+    <category term="CDN" scheme="https://blog.ning.moe/tags/CDN/"/>
+    
+    <category term="Cloudflare" scheme="https://blog.ning.moe/tags/Cloudflare/"/>
+    
+  </entry>
   
   <entry>
     <title>使用 n8n 工作流，打造自己的 QSL 卡片跟踪器</title>
@@ -134,9 +158,9 @@
     <link href="https://blog.ning.moe/posts/Mobile-Number-Portability/"/>
     <id>https://blog.ning.moe/posts/Mobile-Number-Portability/</id>
     <published>2025-02-06T09:57:01.000Z</published>
-    <updated>2025-03-01T11:03:27.682Z</updated>
+    <updated>2025-07-31T04:39:05.012Z</updated>
     
-    <content type="html"><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>博主家曾全是中国移动，最长的一个号码已使用超过6000天。虽然一开始对于携号转网心存疑虑，但随着时间推移，尤其是19年将宽带迁移至电信后，我逐渐决定放弃中国移动。经过多次骚扰电话和长辈账户的额外费用，携号转网的想法再度提上日程。随着2025年携号转网政策实施五周年，流程已理论成熟，但实际操作过程中仍存在许多繁琐和问题。以下是我的转网经历与总结。</p><h1 id="携号准备"><a href="#携号准备" class="headerlink" title="携号准备"></a>携号准备</h1><p>在携号转网之前，首先需要确认自己的号码是否符合转网条件。你可以通过发送个人信息查询是否有资格办理。短信内容格式为：</p><blockquote><p>CXXZ#用户名#证件号码</p></blockquote><p>把上面的按照你的个人信息填好，发送至你现在的运营商(移动:10086、电信:10001、联通:10010)，基本上会有以下情况，如果同意那么准备阶段就已经结束了，如果没有就先打对应的运营商电话(移动:10086、电信:10001、联通:10010)，询问携号转网有影响的业务虽然一般业务取消是次月生效，但是如果解除了你可以再试试能否有资格携号转网，一般都是取消业务直接就可以了。</p><table><thead><tr><th>【携号转网告知提醒】尊敬的客户，您好！您的号码有在网协议“XXX活动（1年）”影响携号转网办理。详询10086。【中国移动】</th><th>【携号转网告知提醒】尊敬的客户，您好！您的号码满足携转条件，如需办理携号转网服务，请携带有效身份证件前往拟携入运营企业当地营业厅办理。受欠费、在网协议等因素影响，携转资格可能发生变化，建议办理前再次查询。详询10086。【中国移动心级服务，让爱连接】</th></tr></thead></table><h1 id="携入准备"><a href="#携入准备" class="headerlink" title="携入准备"></a>携入准备</h1><p>这个问题就开始比较棘手了，因为各地区的规定可能并不一样，一般情况下按照工信部发布的携号转网是可以直接去线下的营业厅进行办理的，但博主遇到的确实以各种理由延长或拒绝受理携号入网的。按照 <a href="https://www.gov.cn/xinwen/2019-11/11/content_5450928.htm" rel="external nofollow noreferrer">工业和信息化部关于印发《携号转网服务管理规定》的通知</a> 第九条第一小项：无正当理由拒绝、阻止、拖延向用户提供携号转网服务。</p><p>博主被告知的是没有名额需要预约，并且需要到下个月的8号，博主是2月4号去带长辈过去办理的，相当于等一月，而且预约并不能线上或者给营业厅打电话，必须本人携带身份证进行预约，经与工作人员沟通确认相关服务细则，并告知并没有，随后带着长辈先去逛逛商业街，给电信进行申请工单，到2月6号才被告知才可以进行携号转网，但是还只能先转入两个7号再转入一个，经过一系列的撕扯，最终他们同意6号当天进行转入3个。</p><p>所以这种东西建议还是去实地考察以下，毕竟就算一个省，不同地区都不一样，例如博主江苏省南京市携号转网，就没有预约和名额这个问题，但是博主家的市就有这个问题。</p><h1 id="进行携入"><a href="#进行携入" class="headerlink" title="进行携入"></a>进行携入</h1><p>随后6号去到营业厅，申请转移码,根据下面的个人信息填好，发送至你现在的运营商(移动:10086、电信:10001、联通:10010)。</p><blockquote><p>SQXZ#用户名#证件号码</p></blockquote><p>差不多是下面这种格式，转移码有效期一个小时</p><blockquote><p>【携号转网告知提醒】尊敬的客户，您好！您申请的携出授权码为464036，有效期到2025-02-06 12:03。您需在有效期内携带有效身份证件前往拟携入运营企业当地营业厅办理，逾期办理需重新申请授权码。详询10086。【中国移动心级服务，让爱连接】</p></blockquote><p>以及漫长的等待差不多一个号码转入需要花费20分钟，以及一个小时只能转移一个号码，什么意思呢？举个例子:</p><blockquote><p>例如 ：张三先生手里面有2个号码转入XXX运营商，例如他是9点 ~ 10点区间内转移的第一个号码，那么下次转移最快需要在10 ~ 11点区间进行转移，像博主转移三个号码但是A先生是有两个号码B女士是一个号码，那么实际上A先生需要花费两个小时进行转移，而B女士只需要不受等待期印象，因为系统只认你证件。</p></blockquote><p>所以假设有很多的号码尽量转移给不同的亲属名下，会加速转移的进程。</p><p>此外运营商同步信息是1个小时同步一次，例如 10~11点区间写好转移成功，那么新的sim卡会在12点之后才可以进行使用，再次之前您的旧卡仍然可以正常使用。</p><p>以及测试以下新卡启动服务之后拨打电话是否正常，以博主的举例：移动转电信，那么去找朋友或者亲戚有移动的手机号以及电信的手机号进行拨打是否正常，防止会出现这个新闻：<a href="https://news.qq.com/rain/a/20240528A071H300" rel="external nofollow noreferrer">同一号码竟有两家运营商用户同时在用？江苏省通信管理局现场回应</a></p><h1 id="旧运营商花费取出"><a href="#旧运营商花费取出" class="headerlink" title="旧运营商花费取出"></a>旧运营商花费取出</h1><p>在 <a href="#%E8%BF%9B%E8%A1%8C%E6%90%BA%E5%85%A5">进行携入</a> 章节有说过信息同步是1个小时，也就是说在你号码正式生效之后你就可以去老的运营商营业厅，携带有效证件进行退花费，博主这边移动退给你花费是工作人员直接微信扫码给你。但博主也搜索到案例说是次月6号之后，才可以办理，博主打算只是去碰碰运气，后面就详细询问了移动的工作人员，表示需要至少1个整点左右，不然系统不太能同步数据，基本上你这边转网成功一个整点后是可以退的。</p><h1 id="总结以下"><a href="#总结以下" class="headerlink" title="总结以下"></a>总结以下</h1><p>虽然携号转网政策已经实行五年之久了，本想着处理流程可能会进行优化，但是实际进行转网之后遇到各种问题，例如博主所在的城市的电信有着自己的小规定，但是网上也只有一篇搜狐的文章： <a href="https://www.sohu.com/a/782558519_121282114" rel="external nofollow noreferrer">记者调查：携号转网，不是想转就能转？</a> 以及线上貌似可以随便办理，但是没有办法进行复杂的选择例如电信只能 35元或者更贵的套餐，并没有办法进行复杂操作，以及携号转网受理时间之久，3个号不算等待期，只算工作人员进行受理，平均一个手机号需要20~30分钟的处理时间，说一比较坏的如果客服全部提交内容但正好已经到了下一个整点，就要在等一个整点了。只能说携号转网确实是好的，但是实际执行还是很歪歪扭扭的，以及网上并没有这种坑的存在，甚至这种等待期的整点生效也很少文章会提到，大多数的还是转发，多么简答的复制粘贴，只告诉你只需要发送两个短信就可以了。emmmm</p><p>好吧最后希望我的文章帮助更多的想进行携号转网，另外既然你看到这里了，我就说一个小秘密，其实我电信工单建立并没有处理我的诉求，后通过工信部用户申诉渠道推动问题解决(<a href="https://yhssglxt.miit.gov.cn/web/" rel="external nofollow noreferrer">工业和信息化部电信用户申诉受理中心</a>)，感谢主管部门的协调处理。</p><h1 id="免责声明"><a href="#免责声明" class="headerlink" title="免责声明"></a>免责声明</h1><p>本篇文章仅为博主个人在携号转网过程中的经历与分享。文章中的所有操作流程、规则及细节仅代表博主所在地区的实际情况，可能会因地区、运营商、时间等因素有所不同，具体流程请根据个人所在地区及运营商的规定进行咨询和确认。</p><p>博主并未接受任何公司或第三方的赞助，文章内容完全基于个人经验及公开可获取的信息。请读者在办理携号转网时，遵循官方运营商和相关部门的最新政策与指导，谨慎处理个人信息，并确保所提供的操作符合当地的法律法规。</p><p>如有任何关于携号转网的疑问，建议直接联系各运营商或相关主管部门，以获取更加准确和及时的帮助。</p><h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>工业和信息化部关于印发《携号转网服务管理规定》的通知：<a href="https://www.gov.cn/xinwen/2019-11/11/content_5450928.htm" rel="external nofollow noreferrer">https://www.gov.cn/xinwen/2019-11/11/content_5450928.htm</a><br>记者调查：携号转网，不是想转就能转？：<a href="https://www.sohu.com/a/782558519_121282114" rel="external nofollow noreferrer">https://www.sohu.com/a/782558519_121282114</a><br>同一号码竟有两家运营商用户同时在用？江苏省通信管理局现场回应：<a href="https://news.qq.com/rain/a/20240528A071H300" rel="external nofollow noreferrer">https://news.qq.com/rain/a/20240528A071H300</a><br>工业和信息化部电信用户申诉受理中心：<a href="https://yhssglxt.miit.gov.cn/web/" rel="external nofollow noreferrer">https://yhssglxt.miit.gov.cn/web/</a></p><p>封面图来自中国电信官网：<a href="https://www.189.cn/" rel="external nofollow noreferrer">https://www.189.cn/</a></p></body></html>]]></content>
+    <content type="html"><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>博主家曾全是中国移动，最长的一个号码已使用超过6000天。虽然一开始对于携号转网心存疑虑，但随着时间推移，尤其是19年将宽带迁移至电信后，我逐渐决定放弃中国移动。经过多次骚扰电话和长辈账户的额外费用，携号转网的想法再度提上日程。随着2025年携号转网政策实施五周年，流程已理论成熟，但实际操作过程中仍存在许多繁琐和问题。以下是我的转网经历与总结。</p><h1 id="携号准备"><a href="#携号准备" class="headerlink" title="携号准备"></a>携号准备</h1><p>在携号转网之前，首先需要确认自己的号码是否符合转网条件。你可以通过发送个人信息查询是否有资格办理。短信内容格式为：</p><blockquote><p>CXXZ#用户名#证件号码</p></blockquote><p>把上面的按照你的个人信息填好，发送至你现在的运营商(移动:10086、电信:10001、联通:10010)，基本上会有以下情况，如果同意那么准备阶段就已经结束了，如果没有就先打对应的运营商电话(移动:10086、电信:10001、联通:10010)，询问携号转网有影响的业务虽然一般业务取消是次月生效，但是如果解除了你可以再试试能否有资格携号转网，一般都是取消业务直接就可以了。</p><table><thead><tr><th>【携号转网告知提醒】尊敬的客户，您好！您的号码有在网协议“XXX活动（1年）”影响携号转网办理。详询10086。【中国移动】</th><th>【携号转网告知提醒】尊敬的客户，您好！您的号码满足携转条件，如需办理携号转网服务，请携带有效身份证件前往拟携入运营企业当地营业厅办理。受欠费、在网协议等因素影响，携转资格可能发生变化，建议办理前再次查询。详询10086。【中国移动心级服务，让爱连接】</th></tr></thead></table><h1 id="携入准备"><a href="#携入准备" class="headerlink" title="携入准备"></a>携入准备</h1><p>这个问题就开始比较棘手了，因为各地区的规定可能并不一样，一般情况下按照工信部发布的携号转网是可以直接去线下的营业厅进行办理的，但博主遇到的确实以各种理由延长或拒绝受理携号入网的。按照 <a href="https://www.gov.cn/xinwen/2019-11/11/content_5450928.htm" rel="external nofollow noreferrer">工业和信息化部关于印发《携号转网服务管理规定》的通知</a> 第九条第一小项：无正当理由拒绝、阻止、拖延向用户提供携号转网服务。</p><p>博主被告知的是没有名额需要预约，并且需要到下个月的8号，博主是2月4号去带长辈过去办理的，相当于等一月，而且预约并不能线上或者给营业厅打电话，必须本人携带身份证进行预约，经与工作人员沟通确认相关服务细则，并告知并没有，随后带着长辈先去逛逛商业街，给电信进行申请工单，到2月6号才被告知才可以进行携号转网，但是还只能先转入两个7号再转入一个，经过一系列的撕扯，最终他们同意6号当天进行转入3个。</p><p>所以这种东西建议还是去实地考察以下，毕竟就算一个省，不同地区都不一样，例如博主江苏省南京市携号转网，就没有预约和名额这个问题，但是博主家的市就有这个问题。</p><h1 id="进行携入"><a href="#进行携入" class="headerlink" title="进行携入"></a>进行携入</h1><p>随后6号去到营业厅，申请转移码,根据下面的个人信息填好，发送至你现在的运营商(移动:10086、电信:10001、联通:10010)。</p><blockquote><p>SQXZ#用户名#证件号码</p></blockquote><p>差不多是下面这种格式，转移码有效期一个小时</p><blockquote><p>【携号转网告知提醒】尊敬的客户，您好！您申请的携出授权码为464036，有效期到2025-02-06 12:03。您需在有效期内携带有效身份证件前往拟携入运营企业当地营业厅办理，逾期办理需重新申请授权码。详询10086。【中国移动心级服务，让爱连接】</p></blockquote><p>以及漫长的等待差不多一个号码转入需要花费20分钟，以及一个小时只能转移一个号码，什么意思呢？举个例子:</p><blockquote><p>例如 ：张三先生手里面有2个号码转入XXX运营商，例如他是9点 ~ 10点区间内转移的第一个号码，那么下次转移最快需要在10 ~ 11点区间进行转移，像博主转移三个号码但是A先生是有两个号码B女士是一个号码，那么实际上A先生需要花费两个小时进行转移，而B女士只需要不受等待期印象，因为系统只认你证件。</p></blockquote><p>所以假设有很多的号码尽量转移给不同的亲属名下，会加速转移的进程。</p><p>此外运营商同步信息是1个小时同步一次，例如 10~11点区间写好转移成功，那么新的sim卡会在12点之后才可以进行使用，再次之前您的旧卡仍然可以正常使用。</p><p>以及测试以下新卡启动服务之后拨打电话是否正常，以博主的举例：移动转电信，那么去找朋友或者亲戚有移动的手机号以及电信的手机号进行拨打是否正常，防止会出现这个新闻：<a href="https://news.qq.com/rain/a/20240528A071H300" rel="external nofollow noreferrer">同一号码竟有两家运营商用户同时在用？江苏省通信管理局现场回应</a></p><h1 id="旧运营商话费取出"><a href="#旧运营商话费取出" class="headerlink" title="旧运营商话费取出"></a>旧运营商话费取出</h1><p>在 <a href="#%E8%BF%9B%E8%A1%8C%E6%90%BA%E5%85%A5">进行携入</a> 章节有说过信息同步是1个小时，也就是说在你号码正式生效之后你就可以去老的运营商营业厅，携带有效证件进行退花费，博主这边移动退给你花费是工作人员直接微信扫码给你。但博主也搜索到案例说是次月6号之后，才可以办理，博主打算只是去碰碰运气，后面就详细询问了移动的工作人员，表示需要至少1个整点左右，不然系统不太能同步数据，基本上你这边转网成功一个整点后是可以退的。</p><h1 id="总结以下"><a href="#总结以下" class="headerlink" title="总结以下"></a>总结以下</h1><p>虽然携号转网政策已经实行五年之久了，本想着处理流程可能会进行优化，但是实际进行转网之后遇到各种问题，例如博主所在的城市的电信有着自己的小规定，但是网上也只有一篇搜狐的文章： <a href="https://www.sohu.com/a/782558519_121282114" rel="external nofollow noreferrer">记者调查：携号转网，不是想转就能转？</a> 以及线上貌似可以随便办理，但是没有办法进行复杂的选择例如电信只能 35元或者更贵的套餐，并没有办法进行复杂操作，以及携号转网受理时间之久，3个号不算等待期，只算工作人员进行受理，平均一个手机号需要20~30分钟的处理时间，说一比较坏的如果客服全部提交内容但正好已经到了下一个整点，就要在等一个整点了。只能说携号转网确实是好的，但是实际执行还是很歪歪扭扭的，以及网上并没有这种坑的存在，甚至这种等待期的整点生效也很少文章会提到，大多数的还是转发，多么简答的复制粘贴，只告诉你只需要发送两个短信就可以了。emmmm</p><p>好吧最后希望我的文章帮助更多的想进行携号转网，另外既然你看到这里了，我就说一个小秘密，其实我电信工单建立并没有处理我的诉求，后通过工信部用户申诉渠道推动问题解决(<a href="https://yhssglxt.miit.gov.cn/web/" rel="external nofollow noreferrer">工业和信息化部电信用户申诉受理中心</a>)，感谢主管部门的协调处理。</p><h1 id="免责声明"><a href="#免责声明" class="headerlink" title="免责声明"></a>免责声明</h1><p>本篇文章仅为博主个人在携号转网过程中的经历与分享。文章中的所有操作流程、规则及细节仅代表博主所在地区的实际情况，可能会因地区、运营商、时间等因素有所不同，具体流程请根据个人所在地区及运营商的规定进行咨询和确认。</p><p>博主并未接受任何公司或第三方的赞助，文章内容完全基于个人经验及公开可获取的信息。请读者在办理携号转网时，遵循官方运营商和相关部门的最新政策与指导，谨慎处理个人信息，并确保所提供的操作符合当地的法律法规。</p><p>如有任何关于携号转网的疑问，建议直接联系各运营商或相关主管部门，以获取更加准确和及时的帮助。</p><h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>工业和信息化部关于印发《携号转网服务管理规定》的通知：<a href="https://www.gov.cn/xinwen/2019-11/11/content_5450928.htm" rel="external nofollow noreferrer">https://www.gov.cn/xinwen/2019-11/11/content_5450928.htm</a><br>记者调查：携号转网，不是想转就能转？：<a href="https://www.sohu.com/a/782558519_121282114" rel="external nofollow noreferrer">https://www.sohu.com/a/782558519_121282114</a><br>同一号码竟有两家运营商用户同时在用？江苏省通信管理局现场回应：<a href="https://news.qq.com/rain/a/20240528A071H300" rel="external nofollow noreferrer">https://news.qq.com/rain/a/20240528A071H300</a><br>工业和信息化部电信用户申诉受理中心：<a href="https://yhssglxt.miit.gov.cn/web/" rel="external nofollow noreferrer">https://yhssglxt.miit.gov.cn/web/</a></p><p>封面图来自中国电信官网：<a href="https://www.189.cn/" rel="external nofollow noreferrer">https://www.189.cn/</a></p></body></html>]]></content>
     
     
     <summary type="html">在这篇文章中，博主分享了个人在中国移动携号转网至中国电信的亲身经历，从准备步骤到遇到的各种问题与解决方法。虽然携号转网政策已经实施多年，但实际操作仍充满挑战。通过这篇文章，你将了解如何顺利完成携号转网、避开常见陷阱，并掌握一些实用的小技巧。如果你正在考虑转网，这篇文章一定能为你提供宝贵的参考！</summary>
@@ -200,9 +224,9 @@
     
     <category term="2024" scheme="https://blog.ning.moe/tags/2024/"/>
     
-    <category term="Docker" scheme="https://blog.ning.moe/tags/Docker/"/>
-    
     <category term="PostgreSQL" scheme="https://blog.ning.moe/tags/PostgreSQL/"/>
+    
+    <category term="Docker" scheme="https://blog.ning.moe/tags/Docker/"/>
     
   </entry>
   
@@ -322,13 +346,13 @@
     
     <category term="Authentik" scheme="https://blog.ning.moe/tags/Authentik/"/>
     
-    <category term="nezha" scheme="https://blog.ning.moe/tags/nezha/"/>
-    
     <category term="SSO" scheme="https://blog.ning.moe/tags/SSO/"/>
     
     <category term="OIDC" scheme="https://blog.ning.moe/tags/OIDC/"/>
     
     <category term="OAuth2" scheme="https://blog.ning.moe/tags/OAuth2/"/>
+    
+    <category term="nezha" scheme="https://blog.ning.moe/tags/nezha/"/>
     
   </entry>
   
@@ -353,13 +377,13 @@
     
     <category term="Authentik" scheme="https://blog.ning.moe/tags/Authentik/"/>
     
+    <category term="Gitea" scheme="https://blog.ning.moe/tags/Gitea/"/>
+    
     <category term="SSO" scheme="https://blog.ning.moe/tags/SSO/"/>
     
     <category term="OIDC" scheme="https://blog.ning.moe/tags/OIDC/"/>
     
     <category term="OAuth2" scheme="https://blog.ning.moe/tags/OAuth2/"/>
-    
-    <category term="Gitea" scheme="https://blog.ning.moe/tags/Gitea/"/>
     
   </entry>
   
@@ -536,35 +560,6 @@
     <category term="Ikuai" scheme="https://blog.ning.moe/tags/Ikuai/"/>
     
     <category term="J4125" scheme="https://blog.ning.moe/tags/J4125/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2023 总结</title>
-    <link href="https://blog.ning.moe/posts/2023-Annual-Summary/"/>
-    <id>https://blog.ning.moe/posts/2023-Annual-Summary/</id>
-    <published>2023-12-31T15:59:59.000Z</published>
-    <updated>2024-11-02T08:26:03.593Z</updated>
-    
-    <content type="html"><![CDATA[<html><head></head><body><blockquote><p>应该这个文章会在 31/12/2024 发表</p></blockquote><p>转眼间 23年的就快过完了，回顾过往这一年的时间，貌似有些许的特殊，不至于和前几年一样是一个无聊又无趣。</p><h1 id="博客"><a href="#博客" class="headerlink" title="博客"></a>博客</h1><p>两年的宁静，博客在23年重新绽放光彩。</p><p>23年共计写了 19 篇 文章其中阅读最多的 <a href="https://blog.ning.moe/posts/Spring-Security/">新版本 Spring-Security 配置踩坑</a>  共阅读了 227次 从Google 来的最多，文章是其次是<br><a href="https://blog.ning.moe/posts/Java-CAPTCHA-cloudflare/">Java 使用 CloudFlare Turnstile 验证码</a> 共阅读了 205次。在重新开始写博客之后 本站从 23年6月记录截稿，共收获了  PV <strong>6.52k</strong>  UV <strong>2.16k</strong>。</p><img src="https://img.misaka.pics/ShellBlogImg/1/2023/12/29/658ed5482b2d5.webp" alt="2023-Blog-PV&amp;UV-Date.webp" style="zoom: 80%;"><blockquote><p>为什么只有6-12月的数据呢？</p><p><del>因为我把1-5月的数据搞丢了。</del></p></blockquote><p>在截稿前收到Google 发来的Email 28天从Google 来了120 的</p><img src="https://img.misaka.pics/ShellBlogImg/1/2023/12/31/65916362b2813.webp" alt="Google-search-PV.webp" style="zoom:50%;"><h1 id="赛项"><a href="#赛项" class="headerlink" title="赛项"></a>赛项</h1><p>我参加了<code>应用软件系统开发</code>  荣获一等奖。然而，对于这次比赛，我心中并未留下太多深刻的评价，因为涉及的内容大多是繁琐且重复的工作。</p><img src="https://img.misaka.pics/ShellBlogImg/1/2023/12/31/65916654c7cc0.webp" alt="ChinaSkills.webp" style="zoom: 50%;"><h1 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h1><p>23年的故事就此落幕，还有23年所遇到的人们，也开启了我线下第一次面基之旅（不展开叙述）。24年的故事即将开启，这一年里展开新的冒险。我希望在24年，能够踏上旅途，探访不同的地方，因为美好的青春如此短暂，而旅行是拓展视野和经历的最佳方式。同时，我收集更多计算机知识的奥秘，为自己的技术之旅添上浓墨重彩的一笔。至于博客吗，我也会继续写下去的。</p></body></html>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;blockquote&gt;
-&lt;p&gt;应该这个文章会在 31/12/2024 发表&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;转眼间 23年的就快过完了，回顾过往这一年的时间，貌似有些许的特殊，不至于和前几年一样是一个无聊又无趣。&lt;/p</summary>
-      
-    
-    
-    
-    <category term="生活随想" scheme="https://blog.ning.moe/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E6%83%B3/"/>
-    
-    
-    <category term="总结" scheme="https://blog.ning.moe/tags/%E6%80%BB%E7%BB%93/"/>
-    
-    <category term="2023" scheme="https://blog.ning.moe/tags/2023/"/>
     
   </entry>
   
