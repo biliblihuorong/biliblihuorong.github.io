@@ -394,7 +394,7 @@
       </tags>
   </entry>
   <entry>
-    <title>使用certd自动化推送EdgeOne和ESA</title>
+    <title>使用certd自动化推送EdgeOne和ESA,证书永不过期</title>
     <url>/posts/Auto-SSL/</url>
     <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>博主以前是全部使用 cloudflare CDN 也都是 cloud flare 帮我维护和管理证书，最近CF抽风严重，又随着国内 阿里 和 腾讯 开放自己的ESA和EO的免费版本，虽然也看到了他们能够自动签发证书，都是单个域名签发而不是泛域，如果你没事点开，博主一些服务的域名用的证书都是清一色 <strong>Google Trust Services</strong> （GTS）证书，博主有一种莫名对GTS的追求，肯定是他兼容性太好了。</p>
 <h1 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h1><ol>
