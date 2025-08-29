@@ -423,7 +423,7 @@
 <h1 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h1><ol>
 <li>拥有一台服务器，博主使用的 <a href="https://s.ning.moe/s/TencentCloud" rel="external nofollow noreferrer">腾讯云轻量</a> 强烈推荐一个海外的如果你不是申请GTS的话，也没啥问题。</li>
 <li>一个域名<del>（这个必须要有的吧）</del></li>
-<li>者腾讯云的 API ID 和密钥 (博主用的是国内站腾讯账号跳转link放在文章后)</li>
+<li>腾讯云的 API ID 和密钥 (博主用的是国内站腾讯账号跳转link放在文章后)</li>
 <li>Docker 环境（如果你有可要直接跳过安装步骤1了）</li>
 </ol>
 <h1 id="开始搭建"><a href="#开始搭建" class="headerlink" title="开始搭建"></a>开始搭建</h1><h2 id="安装1pane"><a href="#安装1pane" class="headerlink" title="安装1pane"></a>安装1pane</h2><p>省心省力的话安装一个 1panel 面板就非常方便,下面是官网安装的命令。</p>
