@@ -662,10 +662,16 @@
   <entry>
     <title>宝峰5rhPro的APRS功能</title>
     <url>/posts/BaoFeng-5rhPro-APRS/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>相信很多人购买 5RH Pro 手台，是因为它功能丰富且具备 10W 的发射功率。我手上的这台 5RH Pro 来自朋友，由我代为保管，经朋友同意后对机器的功能和硬件进行了测试。</p>
+    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
+<p>刷机有风险，刷机需谨慎，本篇文章仅是记录，如刷机遇到问题，本文概不负责。</p>
+</blockquote>
+<p>相信很多人购买 5RH Pro 手台，是因为它功能丰富且具备 10W 的发射功率。我手上的这台 5RH Pro 来自朋友，由我代为保管，经朋友同意后对机器的功能和硬件进行了测试。</p>
 <p>先说结论：能用，但体验并不是很好。该机仅支持 GPS 定位，且并不能保证在室内接收到 GPS 信号；获取定位速度也极慢，在开阔场地通常需要 2 分钟以上才能定位成功。定位成功后即可发送 APRS 信息，当然也可以手动输入经纬度来发送。</p>
 <p>本篇文章仅适用于 5RH Pro。至于 5R-H Ham 版本，博主未做研究，也暂无精力深入探讨。写本篇文章的原因是网上没有相关的公开资料，唯一的参考只在某个 Ham 论坛中，但该内容未向搜索引擎开放。文末我会将引用资料附上，希望能对拥有 5RH Pro 的各位 Ham 略有帮助。</p>
-<h1 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h1><p>首先依次打开 <strong>菜单 → 对讲机设置 → 对讲机信息 → 版本信息</strong>，查询当前固件版本。建议保持在 <strong>v2.0.0.9</strong> 及以上（截至截稿时为该版本）。如果低于此版本，请下载固件并刷机。</p>
+<h1 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h1><blockquote>
+<p>刷机有风险，刷机需谨慎，本篇文章仅是记录，如刷机遇到问题，本文概不负责。</p>
+</blockquote>
+<p>首先依次打开 <strong>菜单 → 对讲机设置 → 对讲机信息 → 版本信息</strong>，查询当前固件版本。建议保持在 <strong>v2.0.0.9</strong> 及以上（截至截稿时为该版本）。如果低于此版本，请下载固件并刷机。</p>
 <p>5RH Pro 固件包：<a href="https://pan.moe/s/Pjeir" rel="external nofollow noreferrer">点击下载</a></p>
 <p><img src="https://img.ning.moe/ShellBlogImg/1/2025/05/28/6836fe287da13.webp" alt="5RH Pro 刷机步骤"></p>
 <p>按以下步骤刷写固件：</p>
