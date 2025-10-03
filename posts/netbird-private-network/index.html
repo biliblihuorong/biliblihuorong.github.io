@@ -1,0 +1,537 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>使用 Netbird 进行组网 | 某科学的贝壳</title><meta name="author" content="shell"><meta name="copyright" content="shell"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="手把手搭建 NetBird 组网：涵盖准备环境、setup.env 基础项、Zitadel/Authentik 的 OIDC 对接、Docker Compose 与 Nginx 反代、端口规划及常见问题，帮助你在自托管环境快速部署稳定的 Mesh VPN。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="使用 Netbird 进行组网">
+<meta property="og:url" content="https://blog.ning.moe/posts/netbird-private-network/">
+<meta property="og:site_name" content="某科学的贝壳">
+<meta property="og:description" content="手把手搭建 NetBird 组网：涵盖准备环境、setup.env 基础项、Zitadel/Authentik 的 OIDC 对接、Docker Compose 与 Nginx 反代、端口规划及常见问题，帮助你在自托管环境快速部署稳定的 Mesh VPN。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://img.ning.moe/ShellBlogImg/1/2025/10/04/68dff97434af6.webp">
+<meta property="article:published_time" content="2025-10-03T09:27:10.000Z">
+<meta property="article:modified_time" content="2025-10-03T16:40:00.428Z">
+<meta property="article:author" content="shell">
+<meta property="article:tag" content="Authentik">
+<meta property="article:tag" content="OIDC">
+<meta property="article:tag" content="Docker">
+<meta property="article:tag" content="NetBird">
+<meta property="article:tag" content="WireGuard">
+<meta property="article:tag" content="MeshVPN">
+<meta property="article:tag" content="Zitadel">
+<meta property="article:tag" content="Nginx反向代理">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img.ning.moe/ShellBlogImg/1/2025/10/04/68dff97434af6.webp"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "使用 Netbird 进行组网",
+  "url": "https://blog.ning.moe/posts/netbird-private-network/",
+  "image": "https://img.ning.moe/ShellBlogImg/1/2025/10/04/68dff97434af6.webp",
+  "datePublished": "2025-10-03T09:27:10.000Z",
+  "dateModified": "2025-10-03T16:40:00.428Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "shell",
+      "url": "https://blog.ning.moe/"
+    }
+  ]
+}</script><link rel="shortcut icon" href="https://img.ning.moe/i/1/23/01/30/63d755db9649a.ico"><link rel="canonical" href="https://blog.ning.moe/posts/netbird-private-network/"><link rel="preconnect"><link rel="preconnect" href="//busuanzi.ibruce.info"><link rel="manifest" href="/null"><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="/pluginsSrc/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="/pluginsSrc/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          const mediaQueryDark = window.matchMedia('(prefers-color-scheme: dark)')
+          const mediaQueryLight = window.matchMedia('(prefers-color-scheme: light)')
+          
+          if (theme === undefined) {
+            if (mediaQueryLight.matches) activateLightMode()
+            else if (mediaQueryDark.matches) activateDarkMode()
+            else {
+              const hour = new Date().getHours()
+              const isNight = hour <= 8 || hour >= 22
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            mediaQueryDark.addEventListener('change', () => {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else {
+            theme === 'light' ? activateLightMode() : activateDarkMode()
+          }
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: true
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'medium_zoom',
+  Snackbar: {"chs_to_cht":"已切换为繁体中文","cht_to_chs":"已切换为简体中文","day_to_night":"已切换为深色模式","night_to_day":"已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"top-center"},
+  infinitegrid: {
+    js: '/pluginsSrc/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: true,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '使用 Netbird 进行组网',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><meta http-equiv="x-dns-prefetch-control" content="on"><link rel="dns-prefetch" href="blog.ning.moe"><link rel="dns-prefetch" href="www.ning.moe"><link rel="dns-prefetch" href="img.misaka.pics"><link rel="dns-prefetch" href="umami.asshell.top"><meta name="apple-mobile-web-app-capable" content="yes"><script async="" defer="" src="https://blog.ning.moe/static/js/script.js" data-website-id="9ff73ab5-a863-462d-8695-5db50d42cf66" data-host-url="https://analytic.ning.moe/" data-domains="blog.ning.moe"></script><meta property="og:type" content="blog"><meta property="og:image" content="https://img.ning.moe/i/1/23/01/30/63d7559a451ec.webp"><meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="某科学的贝壳" type="application/atom+xml">
+</head><body><div id="web_bg" style="background-color: #5BCEFA;"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="https://img.ning.moe/i/1/23/01/30/63d7559a451ec.webp" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">59</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">125</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa-fw fas fa-filter"></i><span> 清单</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa-fw fa fa-gamepad"></i><span> 娱乐</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/movies/"><i class="fa-fw fab fa-youtube"></i><span> 追番</span></a></li><li><a class="site-page child" href="/steamgames/"><i class="fa-fw fab fa-steam"></i><span> Steam库</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/talking"><i class="fa-fw fas fa-comment-dots"></i><span> 叽喳</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/atom.xml"><i class="fa-fw fa fa-rss"></i><span> Rss订阅</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://travel.moe/go.html"><i class="fa-fw iconfont icon-xingqiu"></i><span> 异次元之旅</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://www.travellings.cn/go.html"><i class="fa-fw fas fa-train"></i><span> 开往</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-heart"></i><span> 关于</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/privacy-policy/"><i class="fa-fw fa-solid fa-user-secret"></i><span> 隐私</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fa-solid fa-user"></i><span> 我?</span></a></li><li><a class="site-page child" href="/blog/"><i class="fa-fw fa-solid fa-blog"></i><span> 本站?</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(https://img.ning.moe/ShellBlogImg/1/2025/10/04/68dff97434af6.webp);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">某科学的贝壳</span></a><a class="nav-page-title" href="/"><span class="site-name">使用 Netbird 进行组网</span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa-fw fas fa-filter"></i><span> 清单</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa-fw fa fa-gamepad"></i><span> 娱乐</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/movies/"><i class="fa-fw fab fa-youtube"></i><span> 追番</span></a></li><li><a class="site-page child" href="/steamgames/"><i class="fa-fw fab fa-steam"></i><span> Steam库</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/talking"><i class="fa-fw fas fa-comment-dots"></i><span> 叽喳</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/atom.xml"><i class="fa-fw fa fa-rss"></i><span> Rss订阅</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://travel.moe/go.html"><i class="fa-fw iconfont icon-xingqiu"></i><span> 异次元之旅</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://www.travellings.cn/go.html"><i class="fa-fw fas fa-train"></i><span> 开往</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-heart"></i><span> 关于</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/privacy-policy/"><i class="fa-fw fa-solid fa-user-secret"></i><span> 隐私</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fa-solid fa-user"></i><span> 我?</span></a></li><li><a class="site-page child" href="/blog/"><i class="fa-fw fa-solid fa-blog"></i><span> 本站?</span></a></li></ul></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">使用 Netbird 进行组网</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-10-03T09:27:10.000Z" title="发表于 2025-10-03 17:27:10">2025-10-03</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-10-03T16:40:00.428Z" title="更新于 2025-10-04 00:40:00">2025-10-04</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="ArtalkPV"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><div id="post-outdate-notice" data="{&quot;limitDay&quot;:500,&quot;messagePrev&quot;:null,&quot;messageNext&quot;:&quot;自上次更新以来的天，文章的内容可能已过时。&quot;,&quot;postUpdate&quot;:&quot;2025-10-04 00:40:00&quot;}" hidden=""></div><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>部分服务器一直想组内网，原本想使用 Cloudflare Zero Trust 进行组网。无奈有时需要境外与境内互联，担心被封。NetBird 也是基于 WireGuard，但境外/境内的连通性目前对我来说稳定（也许是流量小…）。</p>
+<h2 id="关于-NetBird"><a href="#关于-NetBird" class="headerlink" title="关于 NetBird"></a>关于 NetBird</h2><blockquote>
+<p>NetBird 是一个由一系列组件组成的开源平台，负责处理点对点连接、隧道、身份验证和网络管理（IP、密钥、ACL 等）。<br>它使用 <a target="_blank" href="https://www.wireguard.com/" rel="external nofollow noreferrer noopener">WireGuard®</a>、<a target="_blank" href="https://github.com/pion/ice" rel="external nofollow noreferrer noopener">Pion ICE（WebRTC）</a>、<a target="_blank" href="https://github.com/coturn/coturn" rel="external nofollow noreferrer noopener">Coturn</a> 和 NetBird 自身的 <a target="_blank" href="https://github.com/netbirdio/netbird" rel="external nofollow noreferrer noopener">客户端</a> 等开源技术，简化安全的专用网络部署和管理。<br>NetBird 依赖四个组件：<strong>客户端</strong>（或代理）、<strong>管理</strong>、<strong>信号</strong> 和 <strong>中继</strong> 服务。只有经过身份验证的用户（或机器）才能访问被授权的资源。<br>对等体 <strong>Peer</strong> 指连接到网络的任何设备：云/本地 Linux 服务器、笔记本、手机或树莓派。</p>
+</blockquote>
+<p><img src="https://img.ning.moe/ShellBlogImg/1/2025/10/04/68dff52609711.webp" alt="how-netbird-works.webp"></p>
+<p>安装并授权后，机器将形成网状网络，通过加密的点对点 WireGuard 隧道直接相连：</p>
+<p><img src="https://img.ning.moe/ShellBlogImg/1/2025/10/04/68dff5285e79b.webp" alt="how-netbird-mesh.webp"></p>
+<h2 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h2><ol>
+<li>至少一台服务器（≥ <strong>1C/2G</strong>），如 <a target="_blank" href="https://s.ning.moe/s/TencentCloud" rel="external nofollow noreferrer noopener">腾讯云轻量</a>。</li>
+<li>一个可用的 <strong>IDP（Identity Provider）</strong>。自建可选 <strong>Zitadel</strong>（官方脚本也用它），或：<ul>
+<li>自建：Zitadel / Keycloak / Authentik</li>
+<li>托管：Azure AD（Entra ID）/ Okta / Google Workspace / Auth0 / JumpCloud</li>
+</ul>
+</li>
+<li>安装 <strong>1Panel</strong> 或 <strong>Docker</strong>（本文用 1Panel 管理 Docker）。</li>
+<li>放行端口：TCP <strong>33073、10000、33080</strong>；UDP <strong>3478、49152–65535</strong>。</li>
+<li>安装 <a target="_blank" href="https://jqlang.github.io/jq/" rel="external nofollow noreferrer noopener">jq</a>   <code>apt install jq</code> / <code>yum install jq</code></li>
+</ol>
+<blockquote>
+<p>这里推荐使用 <a target="_blank" href="https://s.ning.moe/s/TencentCloud" rel="external nofollow noreferrer noopener">腾讯云轻量服务器</a> , 推荐选择香港地区免备案，</p>
+<p>还可以创建的时候直接选择1panel 、BT 面板，还有更多常用的应用一键开箱即用</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th><img src="https://img.ning.moe/ShellBlogImg/1/2025/07/25/68832a9f134f1.webp" alt="腾讯云轻量购买页面.webp"></th>
+<th><img src="https://img.ning.moe/ShellBlogImg/1/2025/07/25/68832ad797a9b.webp" alt="腾讯云重装页面.webp"></th>
+</tr>
+</thead>
+</table>
+<p>tips: 腾讯云咨询也接入了 DeepSeek 的大模型，已经把常见问题归纳整理，常见问题可以直接询问即可，非常方便哒~</p>
+<p><img src="https://img.ning.moe/ShellBlogImg/1/2025/07/25/688334041890a.webp" alt="腾讯云-咨询问题.webp"></p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><h3 id="拉取-NetBird-仓库"><a href="#拉取-NetBird-仓库" class="headerlink" title="拉取 NetBird 仓库"></a>拉取 NetBird 仓库</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line">REPO=<span class="string">"https://hub.mwm.moe/https://github.com/netbirdio/netbird/"</span></span><br><span class="line"><span class="comment"># 获取最新 tag，例如 v0.8.x</span></span><br><span class="line">LATEST_TAG=$(<span class="built_in">basename</span> $(curl -fs -o/dev/null -w %{redirect_url} <span class="variable">${REPO}</span>releases/latest))</span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$LATEST_TAG</span></span><br><span class="line"><span class="comment"># 克隆对应版本</span></span><br><span class="line">git <span class="built_in">clone</span> --depth 1 --branch <span class="variable">$LATEST_TAG</span> <span class="variable">$REPO</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>切换到包含 docker-compose 的目录：</p>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> netbird/infrastructure_files/</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="配置-setup-env（基础）"><a href="#配置-setup-env（基础）" class="headerlink" title="配置 setup.env（基础）"></a>配置 setup.env（基础）</h2><p>新建或复制 <code>setup.env</code> 并填写基础项：</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># 访问域名</span><br><span class="line">NETBIRD_DOMAIN="vpn.example.com"</span><br><span class="line"># 关闭内置证书签发（改用 Nginx 反代）</span><br><span class="line">NETBIRD_DISABLE_LETSENCRYPT=true</span><br><span class="line"># 指定端口</span><br><span class="line">NETBIRD_MGMT_API_PORT=443</span><br><span class="line">NETBIRD_SIGNAL_PORT=443</span><br></pre></td></tr></tbody></table></figure>
+
+<blockquote>
+<p>接下来根据所选 IDP 追加配置。本文演示 <strong>Zitadel</strong> 与 <strong>Authentik</strong>。</p>
+</blockquote>
+<h2 id="IDP-配置"><a href="#IDP-配置" class="headerlink" title="IDP 配置"></a>IDP 配置</h2><h3 id="Zitadel"><a href="#Zitadel" class="headerlink" title="Zitadel"></a>Zitadel</h3><p>在保留上面基础项的前提下，按以下步骤操作：</p>
+<ol>
+<li><p><strong>创建应用（User Agent / PKCE）</strong>  </p>
+<ul>
+<li>进入 <strong>Projects → Create New Project</strong>：名称 <code>NETBIRD</code>  </li>
+<li>在 <strong>APPLICATIONS → New</strong>：<br>名称 <code>netbird</code>、应用类型 <code>User Agent</code>、认证方式 <code>PKCE</code>  </li>
+<li><strong>Redirect URIs</strong>：<br><code>https://&lt;domain&gt;/auth</code>、<code>https://&lt;domain&gt;/silent-auth</code>、<code>http://localhost:53000</code>（本地调试）<br><strong>Post Logout URIs</strong>：<code>https://&lt;domain&gt;/</code>  </li>
+<li><strong>授权模式</strong>：<code>Authorization Code</code>、<code>Device Code</code>、<code>Refresh Token</code>  </li>
+<li>复制 <strong>Client ID</strong> 备用  </li>
+<li>参考截图：<br><img src="https://docs.netbird.io/docs-static/img/integrations/identity-providers/self-hosted/zitadel-new-project.png" alt="创建项目"><br><img src="https://img.ning.moe/ShellBlogImg/1/2025/10/04/68dff579029a7.webp" alt="zitadel-new-application.webp"><br><img src="https://img.ning.moe/ShellBlogImg/1/2025/10/04/68dff5a5b4fd7.webp" alt="zitadel-new-application-auth.webp"><br><img src="https://img.ning.moe/ShellBlogImg/1/2025/10/04/68dff5bf8c8c8.webp" alt="zitadel-new-application-uri.webp"><br><img src="https://img.ning.moe/ShellBlogImg/1/2025/10/04/68dff5d441ff5.webp" alt="zitadel-new-application-overview.webp"></li>
+</ul>
+</li>
+<li><p><strong>配置 Token</strong><br>应用 → <strong>Token Settings</strong>：  </p>
+<ul>
+<li>Token 类型 <code>JWT</code>  </li>
+<li>勾选 <strong>Add user roles to the access token</strong><br><img src="https://img.ning.moe/ShellBlogImg/1/2025/10/04/68dff5f1e5814.webp" alt="zitadel-token-settings.webp"></li>
+</ul>
+</li>
+<li><p><strong>开发模式重定向（仅开发环境）</strong><br><strong>Redirect Settings</strong> 中开启 <strong>Development Mode</strong>。<br><img src="https://img.ning.moe/ShellBlogImg/1/2025/10/04/68dff60ce05e0.webp" alt="zitadel-redirect-settings.webp"></p>
+</li>
+<li><p><strong>创建服务用户</strong><br><strong>Users → Service Users → New</strong>：<br>用户名/名称 <code>netbird</code>，描述 <code>Netbird Service User</code>，Token 类型 <code>JWT</code>。<br>生成 <strong>Client Secret</strong> 并保存。<br><img src="https://img.ning.moe/ShellBlogImg/1/2025/10/04/68dff62061356.webp" alt="zitadel-create-user.webp"><br><img src="https://img.ning.moe/ShellBlogImg/1/2025/10/04/68dff64bde367.webp" alt="zitadel-service-user-secret.webp"></p>
+</li>
+<li><p><strong>为服务用户赋权</strong><br><strong>Organization</strong> 中为 <code>netbird</code> 赋予 <strong>Org User Manager</strong> 角色。<br><img src="https://img.ning.moe/ShellBlogImg/1/2025/10/04/68dff65e6ad30.webp" alt="zitadel-service-account-role.webp"></p>
+</li>
+<li><p><strong>在 <code>setup.env</code> 追加配置</strong></p>
+</li>
+</ol>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"># OIDC 配置端点</span><br><span class="line">NETBIRD_AUTH_OIDC_CONFIGURATION_ENDPOINT="https://&lt;你的域名&gt;/.well-known/openid-configuration"</span><br><span class="line">NETBIRD_USE_AUTH0=false</span><br><span class="line"></span><br><span class="line"># 应用 Client ID</span><br><span class="line">NETBIRD_AUTH_CLIENT_ID="&lt;ZITADEL_CLIENT_ID&gt;"</span><br><span class="line">NETBIRD_AUTH_SUPPORTED_SCOPES="openid profile email offline_access api"</span><br><span class="line">NETBIRD_AUTH_AUDIENCE=$NETBIRD_AUTH_CLIENT_ID</span><br><span class="line"></span><br><span class="line"># 授权回调</span><br><span class="line">NETBIRD_AUTH_REDIRECT_URI="/auth"</span><br><span class="line">NETBIRD_AUTH_SILENT_REDIRECT_URI="/silent-auth"</span><br><span class="line"></span><br><span class="line"># 设备授权</span><br><span class="line">NETBIRD_AUTH_DEVICE_AUTH_PROVIDER="hosted"</span><br><span class="line">NETBIRD_AUTH_DEVICE_AUTH_CLIENT_ID=$NETBIRD_AUTH_CLIENT_ID</span><br><span class="line">NETBIRD_AUTH_DEVICE_AUTH_AUDIENCE=$NETBIRD_AUTH_CLIENT_ID</span><br><span class="line"></span><br><span class="line"># 管理端对接 Zitadel</span><br><span class="line">NETBIRD_MGMT_IDP="zitadel"</span><br><span class="line">NETBIRD_IDP_MGMT_CLIENT_ID="&lt;SERVICE_USER_CLIENT_ID&gt;"</span><br><span class="line">NETBIRD_IDP_MGMT_CLIENT_SECRET="&lt;SERVICE_USER_CLIENT_SECRET&gt;"</span><br><span class="line">NETBIRD_IDP_MGMT_EXTRA_MANAGEMENT_ENDPOINT="https://&lt;你的域名&gt;/management/v1"</span><br><span class="line">NETBIRD_MGMT_IDP_SIGNKEY_REFRESH=true</span><br></pre></td></tr></tbody></table></figure>
+
+<blockquote>
+<p>至此，Zitadel 侧完成，可回到自建流程。</p>
+</blockquote>
+<h3 id="Authentik"><a href="#Authentik" class="headerlink" title="Authentik"></a>Authentik</h3><p>同样保留基础项，然后：</p>
+<ol>
+<li><p><strong>创建 Provider（OAuth2/OpenID）</strong><br><strong>Applications → Providers → Create</strong>：  </p>
+<ul>
+<li>类型：<code>OAuth2/OpenID Provider</code>  </li>
+<li>名称：<code>Netbird</code>  </li>
+<li>Authentication Flow：<code>default-authentication-flow</code>  </li>
+<li>Authorization Flow：<code>default-provider-authorization-explicit-consent</code>  </li>
+<li>协议：Client type <code>Public</code>；Redirect（RegEx）：<code>https://&lt;domain&gt;/.*</code>、<code>http://localhost:53000</code>  </li>
+<li>Signing Key：选择证书（如 <code>authentik Self-signed Certificate</code>）  </li>
+<li>高级：Access code validity <code>10 分钟</code>；Subject mode <code>Based on the User's ID</code><br>记录 <strong>Client ID</strong>。<br><img src="https://img.ning.moe/ShellBlogImg/1/2025/10/04/68dff67482f87.webp" alt="authentik-new-provider-type.webp"><br><img src="https://img.ning.moe/ShellBlogImg/1/2025/10/04/68dff697021bd.webp" alt="authentik-new-provider-config.webp"></li>
+</ul>
+</li>
+<li><p><strong>创建 External Application</strong><br><strong>Applications → Applications → Create</strong>：<br>Name <code>Netbird</code>，Slug <code>netbird</code>，Provider 选择上一步。<br><img src="https://img.ning.moe/ShellBlogImg/1/2025/10/04/68dff6d56d670.webp" alt="authentik-new-application.webp"></p>
+</li>
+<li><p><strong>创建服务账户</strong><br><strong>Directory → Users → Create Service Account</strong>：<br>Username <code>Netbird</code>，<code>Create Group: Disable</code>。<br>在 <strong>Directory → Tokens and App passwords</strong> 为其创建 <strong>App password</strong>。<br><img src="https://img.ning.moe/ShellBlogImg/1/2025/10/04/68dff6f1705c7.webp" alt="authentik-new-service-account.webp"><br><img src="https://docs.netbird.io/docs-static/img/integrations/identity-providers/self-hosted/authentik-service-account-details.png" alt="详情"></p>
+</li>
+<li><p><strong>授权服务账户</strong><br><strong>Directory → Groups → authentik Admins → Users → Add existing user</strong>，加入 <code>Netbird</code>。<br><img src="https://img.ning.moe/ShellBlogImg/1/2025/10/04/68dff7156dba1.webp" alt="authentik-add-user-group.webp"></p>
+</li>
+<li><p><strong>创建 Device Token 流程并绑定品牌</strong><br><strong>Flows and Stages → Flows → Create</strong>：<br>Name <code>default-device-code-flow</code>，Title <code>Device Code Flow</code>，Designation <code>Stage Configuration</code>，Authentication <code>Require authentication</code>。<br><strong>System → Brands</strong> 编辑 <code>authentik-default</code>，将 <strong>Device code flow</strong> 设为 <code>default-device-code-flow</code>。<br><img src="https://img.ning.moe/ShellBlogImg/1/2025/10/04/68dff7302881e.webp" alt="authentik-new-device-flow.webp"><br><img src="https://img.ning.moe/ShellBlogImg/1/2025/10/04/68dff7446200a.webp" alt="authentik-brand-device-flow.webp"></p>
+</li>
+<li><p><strong>在 <code>setup.env</code> 追加配置</strong></p>
+</li>
+</ol>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"># OIDC 配置端点</span><br><span class="line">NETBIRD_AUTH_OIDC_CONFIGURATION_ENDPOINT="https://&lt;YOUR_AUTHENTIK_HOST_AND_PORT&gt;/application/o/netbird/.well-known/openid-configuration"</span><br><span class="line">NETBIRD_USE_AUTH0=false</span><br><span class="line"></span><br><span class="line"># Client / Audience</span><br><span class="line">NETBIRD_AUTH_CLIENT_ID="&lt;PROVIDER_CLIENT_ID&gt;"</span><br><span class="line">NETBIRD_AUTH_SUPPORTED_SCOPES="openid profile email offline_access api"</span><br><span class="line">NETBIRD_AUTH_AUDIENCE="&lt;PROVIDER_CLIENT_ID&gt;"</span><br><span class="line"></span><br><span class="line"># 设备授权</span><br><span class="line">NETBIRD_AUTH_DEVICE_AUTH_CLIENT_ID="&lt;PROVIDER_CLIENT_ID&gt;"</span><br><span class="line">NETBIRD_AUTH_DEVICE_AUTH_AUDIENCE="&lt;PROVIDER_CLIENT_ID&gt;"</span><br><span class="line"></span><br><span class="line"># 回调</span><br><span class="line">NETBIRD_AUTH_REDIRECT_URI="/auth"</span><br><span class="line">NETBIRD_AUTH_SILENT_REDIRECT_URI="/silent-auth"</span><br><span class="line"></span><br><span class="line"># 管理端对接 Authentik</span><br><span class="line">NETBIRD_MGMT_IDP="authentik"</span><br><span class="line">NETBIRD_IDP_MGMT_CLIENT_ID="&lt;PROVIDER_CLIENT_ID&gt;"</span><br><span class="line">NETBIRD_IDP_MGMT_EXTRA_USERNAME="Netbird"</span><br><span class="line">NETBIRD_IDP_MGMT_EXTRA_PASSWORD="&lt;SERVICE_ACCOUNT_PASSWORD&gt;"</span><br><span class="line"></span><br><span class="line"># 已知问题：禁用 PKCE 的 login 提示（参考 issue #3654）</span><br><span class="line">NETBIRD_AUTH_PKCE_DISABLE_PROMPT_LOGIN=true</span><br></pre></td></tr></tbody></table></figure>
+
+<blockquote>
+<p>验证 <code>.../.well-known/openid-configuration</code> 能返回 JSON 即表示成功。</p>
+</blockquote>
+<h2 id="生成配置与-docker-compose"><a href="#生成配置与-docker-compose" class="headerlink" title="生成配置与 docker-compose"></a>生成配置与 docker-compose</h2><p>生成部署文件：</p>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./configure.sh</span><br></pre></td></tr></tbody></table></figure>
+
+<p>该命令会导出环境变量并生成：<br><code>artifacts/docker-compose.yml</code>、<code>artifacts/management.json</code>、<code>artifacts/turnserver.conf</code>。  </p>
+<blockquote>
+<p>之后修改 <code>setup.env</code> 需要再次运行 <code>./configure.sh</code> 才会生效。</p>
+</blockquote>
+<p>进入目录：</p>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> artifacts</span><br></pre></td></tr></tbody></table></figure>
+
+<p>如需走 <strong>Nginx 反代</strong>，可按下表调整端口（示例）：</p>
+<table>
+<thead>
+<tr>
+<th>路径</th>
+<th>协议</th>
+<th>内部端口</th>
+<th>外部端口</th>
+<th>反代 URL</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>/</td>
+<td>HTTP</td>
+<td>dashboard:80</td>
+<td>10080</td>
+<td>127.0.0.1:10080</td>
+</tr>
+<tr>
+<td>/signalexchange.SignalExchange/</td>
+<td>gRPC</td>
+<td>signal:80</td>
+<td>10081</td>
+<td>127.0.0.1:10081</td>
+</tr>
+<tr>
+<td>/api</td>
+<td>HTTP</td>
+<td>management:443</td>
+<td>10083</td>
+<td>127.0.0.1:10083</td>
+</tr>
+<tr>
+<td>/management.ManagementService/</td>
+<td>gRPC</td>
+<td>management:443</td>
+<td>10083</td>
+<td>127.0.0.1:10083</td>
+</tr>
+<tr>
+<td>/relay</td>
+<td>HTTP</td>
+<td>relay:443</td>
+<td>10084</td>
+<td>127.0.0.1:10084</td>
+</tr>
+</tbody></table>
+<p>示例 <code>docker-compose.yml</code> 片段：</p>
+<figure class="highlight yaml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">services:</span></span><br><span class="line">  <span class="attr">dashboard:</span></span><br><span class="line">    <span class="attr">image:</span> <span class="string">netbirdio/dashboard:latest</span></span><br><span class="line">    <span class="attr">ports:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="number">10080</span><span class="string">:80</span></span><br><span class="line">    <span class="attr">environment:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">NETBIRD_MGMT_API_ENDPOINT=https://vpn.example.com:443</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">NETBIRD_MGMT_GRPC_API_ENDPOINT=https://vpn.example.com:443</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">AUTH_AUDIENCE=338490954304520197</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">AUTH_CLIENT_ID=338490954304520197</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">AUTH_AUTHORITY=https://sso.example.com</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">USE_AUTH0=false</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">AUTH_SUPPORTED_SCOPES=openid</span> <span class="string">profile</span> <span class="string">email</span> <span class="string">offline_access</span> <span class="string">api</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">AUTH_REDIRECT_URI=/auth</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">AUTH_SILENT_REDIRECT_URI=/silent-auth</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">NETBIRD_TOKEN_SOURCE=accessToken</span></span><br><span class="line">    <span class="attr">volumes:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">netbird-letsencrypt:/etc/letsencrypt/</span></span><br><span class="line"></span><br><span class="line">  <span class="attr">signal:</span></span><br><span class="line">    <span class="attr">image:</span> <span class="string">netbirdio/signal:latest</span></span><br><span class="line">    <span class="attr">volumes:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">netbird-signal:/var/lib/netbird</span></span><br><span class="line">    <span class="attr">ports:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="number">10081</span><span class="string">:80</span></span><br><span class="line"></span><br><span class="line">  <span class="attr">relay:</span></span><br><span class="line">    <span class="attr">image:</span> <span class="string">netbirdio/relay:latest</span></span><br><span class="line">    <span class="attr">environment:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">NB_LOG_LEVEL=info</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">NB_LISTEN_ADDRESS=:33080</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">NB_EXPOSED_ADDRESS=rels://vpn.example.com:33080/relay</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">NB_AUTH_SECRET=gJ5WI25foN/yherA6dio5i1a3zNYLelwESDA663IYZE</span></span><br><span class="line">    <span class="attr">ports:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="number">10084</span><span class="string">:33080</span></span><br><span class="line"></span><br><span class="line">  <span class="attr">management:</span></span><br><span class="line">    <span class="attr">image:</span> <span class="string">netbirdio/management:latest</span></span><br><span class="line">    <span class="attr">depends_on:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">dashboard</span></span><br><span class="line">    <span class="attr">volumes:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">netbird-mgmt:/var/lib/netbird</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">netbird-letsencrypt:/etc/letsencrypt:ro</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">./management.json:/etc/netbird/management.json</span></span><br><span class="line">    <span class="attr">ports:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="number">10083</span><span class="string">:443</span></span><br><span class="line">    <span class="attr">command:</span> [</span><br><span class="line">      <span class="string">"--port"</span>, <span class="string">"443"</span>,</span><br><span class="line">      <span class="string">"--log-file"</span>, <span class="string">"console"</span>,</span><br><span class="line">      <span class="string">"--log-level"</span>, <span class="string">"info"</span>,</span><br><span class="line">      <span class="string">"--disable-anonymous-metrics=false"</span>,</span><br><span class="line">      <span class="string">"--single-account-mode-domain=vpn.example.com"</span>,</span><br><span class="line">      <span class="string">"--dns-domain=netbird.selfhosted"</span></span><br><span class="line">    ]</span><br><span class="line">    <span class="attr">environment:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">NETBIRD_STORE_ENGINE_POSTGRES_DSN=</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">NETBIRD_STORE_ENGINE_MYSQL_DSN=</span></span><br><span class="line"></span><br><span class="line">  <span class="attr">coturn:</span></span><br><span class="line">    <span class="attr">image:</span> <span class="string">coturn/coturn:latest</span></span><br><span class="line">    <span class="attr">volumes:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">./turnserver.conf:/etc/turnserver.conf:ro</span></span><br><span class="line">    <span class="attr">network_mode:</span> <span class="string">host</span></span><br><span class="line">    <span class="attr">command:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">-c</span> <span class="string">/etc/turnserver.conf</span></span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="添加-Nginx-反代（1Panel-示例）"><a href="#添加-Nginx-反代（1Panel-示例）" class="headerlink" title="添加 Nginx 反代（1Panel 示例）"></a>添加 Nginx 反代（1Panel 示例）</h2><table>
+<thead>
+<tr>
+<th>路径</th>
+<th>协议</th>
+<th>内部端口</th>
+<th>外部端口</th>
+<th>反代 URL</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>/</td>
+<td>HTTP</td>
+<td>dashboard:80</td>
+<td>10080</td>
+<td>127.0.0.1:10080</td>
+</tr>
+<tr>
+<td>/signalexchange.SignalExchange/</td>
+<td>gRPC</td>
+<td>signal:80</td>
+<td>10081</td>
+<td>127.0.0.1:10081</td>
+</tr>
+<tr>
+<td>/api</td>
+<td>HTTP</td>
+<td>management:443</td>
+<td>10083</td>
+<td>127.0.0.1:10083</td>
+</tr>
+<tr>
+<td>/management.ManagementService/</td>
+<td>gRPC</td>
+<td>management:443</td>
+<td>10083</td>
+<td>127.0.0.1:10083</td>
+</tr>
+<tr>
+<td>/relay</td>
+<td>HTTP</td>
+<td>relay:443</td>
+<td>10084</td>
+<td>127.0.0.1:10084</td>
+</tr>
+</tbody></table>
+<p><img src="https://img.ning.moe/ShellBlogImg/1/2025/10/03/68dfe6aea5122.webp" alt="proxy-1.webp"><br><img src="https://img.ning.moe/ShellBlogImg/1/2025/10/03/68dfe6ae8926e.webp" alt="proxy-2.webp"><br><img src="https://img.ning.moe/ShellBlogImg/1/2025/10/03/68dfe6b499e17.webp" alt="proxy-3.webp"></p>
+<p>Nginx 片段（gRPC 转发）：</p>
+<figure class="highlight nginx"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">location</span><span class="regexp"> ^~</span> /management.ManagementService/ {</span><br><span class="line">    <span class="attribute">grpc_read_timeout</span> <span class="number">300s</span>;</span><br><span class="line">    <span class="attribute">grpc_send_timeout</span> <span class="number">300s</span>;</span><br><span class="line">    <span class="attribute">grpc_socket_keepalive</span> <span class="literal">on</span>;</span><br><span class="line">    <span class="attribute">grpc_pass</span> grpc://127.0.0.1:10083;</span><br><span class="line">    <span class="attribute">access_log</span> <span class="literal">off</span>;</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="section">location</span><span class="regexp"> ^~</span> /signalexchange.SignalExchange/ {</span><br><span class="line">    <span class="attribute">grpc_read_timeout</span> <span class="number">300s</span>;</span><br><span class="line">    <span class="attribute">grpc_send_timeout</span> <span class="number">300s</span>;</span><br><span class="line">    <span class="attribute">grpc_socket_keepalive</span> <span class="literal">on</span>;</span><br><span class="line">    <span class="attribute">grpc_pass</span> grpc://127.0.0.1:10081;</span><br><span class="line">    <span class="attribute">access_log</span> <span class="literal">off</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<p>配置成功后，访问站点会跳转至 IDP 登录，完成后即可看到面板（下图为官方在线版示意）：</p>
+<p><img src="https://img.ning.moe/ShellBlogImg/1/2025/10/03/68dfec6193f7e.webp" alt="netbird-peers.webp"></p>
+<h2 id="常见问题（FAQ）"><a href="#常见问题（FAQ）" class="headerlink" title="常见问题（FAQ）"></a>常见问题（FAQ）</h2><h3 id="设备为什么会过期？"><a href="#设备为什么会过期？" class="headerlink" title="设备为什么会过期？"></a>设备为什么会过期？</h3><p>使用 SSO 登录默认 24 小时到期。可在设置中关闭或调整到期策略：<br><img src="https://img.ning.moe/ShellBlogImg/1/2025/10/03/68dfec6760db0.webp" alt="netbird-settings.webp"></p>
+<h3 id="无法使用-SSO-认证客户端"><a href="#无法使用-SSO-认证客户端" class="headerlink" title="无法使用 SSO 认证客户端"></a>无法使用 SSO 认证客户端</h3><p>报错示例：</p>
+<blockquote>
+<p>Error: daemon up failed: sso login failed: waiting sso login failed with: rpc error: code = InvalidArgument desc = invalid jwt token, err: token could not be parsed: token has invalid claims: token used before issued</p>
+</blockquote>
+<p>老实说博主没有什么能解决的办法并且博主也提了 <a target="_blank" href="https://github.com/netbirdio/netbird/issues/4500" rel="external nofollow noreferrer noopener">issue</a>  目前这个还没有官方回复如果各位遇到的话也可以继续开启和评论这个issue，如果你找到了解决办法不放贡献出你自己的一份力量，我只能告诉各位如果是只有个例设备无法认证那么如果那个客户端能使用 docker 部署，不妨试试 docker，博主就是有一台这样的问题使用 docker 就好了。</p>
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>netbird 官方文档 ：<a target="_blank" href="https://docs.netbird.io/" rel="external nofollow noreferrer noopener">https://docs.netbird.io/</a></p>
+<p>netbird 官方文档图片 ： <a target="_blank" href="https://docs.netbird.io/" rel="external nofollow noreferrer noopener">https://docs.netbird.io/</a></p>
+<p>netbird 官方 issue ： <a target="_blank" href="https://github.com/netbirdio/netbird/issues/4500" rel="external nofollow noreferrer noopener">https://github.com/netbirdio/netbird/issues/4500</a></p>
+<p>1Panel部署NetBird：实现内网穿透+零信任组网：<a target="_blank" href="https://blog.jiaxiang.wang/articles/deploy-netbird-via-1panel-for-nat-traversal-and-zero-trust-network" rel="external nofollow noreferrer noopener">https://blog.jiaxiang.wang/articles/deploy-netbird-via-1panel-for-nat-traversal-and-zero-trust-network</a></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://blog.ning.moe">shell</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://blog.ning.moe/posts/netbird-private-network/">https://blog.ning.moe/posts/netbird-private-network/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://blog.ning.moe" target="_blank">某科学的贝壳</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Authentik/">Authentik</a><a class="post-meta__tags" href="/tags/OIDC/">OIDC</a><a class="post-meta__tags" href="/tags/Docker/">Docker</a><a class="post-meta__tags" href="/tags/NetBird/">NetBird</a><a class="post-meta__tags" href="/tags/WireGuard/">WireGuard</a><a class="post-meta__tags" href="/tags/MeshVPN/">MeshVPN</a><a class="post-meta__tags" href="/tags/Zitadel/">Zitadel</a><a class="post-meta__tags" href="/tags/Nginx%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/">Nginx反向代理</a></div><div class="post-share"><div class="social-share" data-image="https://img.ning.moe/ShellBlogImg/1/2025/10/04/68dff97434af6.webp" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="/pluginsSrc/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="/pluginsSrc/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer=""></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i>赞助</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://img.ning.moe/ShellBlogImg/1/2024/08/04/66aed9d806a94.webp" target="_blank"><img class="post-qr-code-img" src="https://img.ning.moe/ShellBlogImg/1/2024/08/04/66aed9d806a94.webp" alt="alipay"></a><div class="post-qr-code-desc">alipay</div></li><li class="reward-item"><a href="https://img.ning.moe/ShellBlogImg/1/2024/08/04/66aed9813de47.webp" target="_blank"><img class="post-qr-code-img" src="https://img.ning.moe/ShellBlogImg/1/2024/08/04/66aed9813de47.webp" alt="wechat"></a><div class="post-qr-code-desc">wechat</div></li></ul></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related full-width" href="/posts/Auto-SSL/" title="使用certd自动化推送EdgeOne和1panel,证书永不过期"><img class="cover" src="https://img.ning.moe/ShellBlogImg/1/2025/08/05/6891ad56bea05.webp" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">使用certd自动化推送EdgeOne和1panel,证书永不过期</div></div><div class="info-2"><div class="info-item-1">前言博主以前是全部使用 cloudflare CDN 也都是 cloud flare 帮我维护和管理证书，最近CF抽风严重，又随着国内 阿里 和 腾讯 开放自己的ESA和EO的免费版本，虽然也看到了他们能够自动签发证书，都是单个域名签发而不是泛域，如果你没事点开，博主一些服务的域名用的证书都是清一色 Google Trust Services （GTS）证书，博主有一种莫名对GTS的追求，肯定是他兼容性太好了。 准备 拥有一台服务器，博主使用的 腾讯云轻量 强烈推荐一个海外的如果你不是申请GTS的话，也没啥问题。 一个域名（这个必须要有的吧） 腾讯云的 API ID 和密钥 (博主用的是国内站腾讯账号跳转link放在文章后) Docker 环境（如果你有可要直接跳过安装步骤1了）  开始搭建安装1pane省心省力的话安装一个 1panel 面板就非常方便,下面是官网安装的命令。 1bash -c "$(curl -sSL https://resource.fit2cloud.com/1panel/package/v2/quick_start.sh)"     这里推荐使用...</div></div></div></a></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><a class="pagination-related" href="/posts/Authentik-Gitea-SSO/" title="Gitea SSO 登录优化与自动注册设置"><img class="cover" src="https://img.ning.moe/ShellBlogImg/1/2024/08/04/66aee3cdf3a61.webp" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2024-08-04</div><div class="info-item-2">Gitea SSO 登录优化与自动注册设置</div></div><div class="info-2"><div class="info-item-1">前言gitea 的SSO登录逻辑，是通过OIDC 登录完毕和已经gitea自己的账户进行绑定，如果 没有账户gitea 会要求你注册一个再绑定，但是gitea 并没有能设置通过sso 进来的没有注册的用户开发注册，只有要么所有人都可以注册要么不可以注册。嗯。。。。感觉怪怪的。 并且更改配置文件还需要手动重启容器，不可能我认识人都创建好gitea吧，或者不能每次他们第一次要用gitea 我需要配置打开注册。 关于我的更多 Authentik 相关文章  ，详细安装（中文版本）Authentik 请访问 ecwuuu发布的B站视频关于正向代理： roywang的文章 前期准备此教程默认情况下视为你已经配置好了gitea 的OIDC登录。 如果您没有实现配置好，可以看 ecwuuuuu 的 你可以观看 将应用接入统一登陆 - OAuth 协议篇 - 以 Gitea 和 Grafana 为例 本文章配合 使用 Cloud Flare Tunnel 和 Acces Application 安全的暴露在公网 进行使用，使用 CloudFlare 的Zero...</div></div></div></a><a class="pagination-related" href="/posts/Authentik-NezhaDashboard-OIDC/" title="Authentik OIDC 哪吒面板"><img class="cover" src="https://img.ning.moe/ShellBlogImg/1/2024/08/07/66b3031ed345e.webp" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2024-08-07</div><div class="info-item-2">Authentik OIDC 哪吒面板</div></div><div class="info-2"><div class="info-item-1">前言最开始我的nezha面板 使用的 github 的OAuth 认证的，我的哪吒面板是自动更新到最新版本，最新版本更新好之后我发现无法登录我的nezha 面板了,报错提示是 http: named cookie not present试了试还是不行，最后看了一下新版本更新日志是改了OIDC不知道是不是这个关系，现在可以自定义oidc提供商了我就改成我自己的Authentik 吧。 关于我的更多 Authentik 相关文章  ，详细安装（中文版本）Authentik 请访问 ecwuuu发布的B站视频关于正向代理： roywang的文章 准备时间 本教程适用于官方哪吒面板和社区F大佬托管第三方服务商 确保你的哪吒面板在 0.18.6 + 你能在 Authentik 系统中已经配置完毕 哪吒面板 哪吒面板默认配置在/opt/nezha/dashboard/data/config.yaml  正文官方版本 如果您阅读本文是还没有安装哪吒面板的用户，您可以先安装面板，这里不再说明你可以访问 官方文档 对于要在安装时填写OIDC...</div></div></div></a><a class="pagination-related" href="/posts/authentik-OAuth2-memos/" title="Memos 对接 Authentik"><img class="cover" src="https://img.ning.moe/ShellBlogImg/1/2024/04/24/662875c24ad7f.webp" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2024-04-09</div><div class="info-item-2">Memos 对接 Authentik</div></div><div class="info-2"><div class="info-item-1">前言关于我的更多 Authentik 相关文章  ，详细安装（中文版本）Authentik 请访问 ecwuuu发布的B站视频关于正向代理： roywang的文章   配置中：这是什么啊，这么麻烦还没过去啊。 配置后：真香好方便。  使用本文前请自行在 Authentik 配置好 Memos使用的应用程序和提供程序 Authentik 配置默认你已经创建好了，一个给Memos使用的应用程序和提供程序,我们需要更改提供程序(给Memos 的)我们点击编辑   选择客户端可以使用哪些作用域。客户端仍然需要指定访问数据的范围。 按住 ctrl/command 键可选择多个项目。  我们选中authentik default OAuth Mapping: OpenID email 和 authentik default OAuth Mapping: OpenID openid将Subject 模式改成基于用户名，然后更新。  Memos配置 在截至发文时 Memos...</div></div></div></a><a class="pagination-related" href="/posts/Auto-SSL/" title="使用certd自动化推送EdgeOne和1panel,证书永不过期"><img class="cover" src="https://img.ning.moe/ShellBlogImg/1/2025/08/05/6891ad56bea05.webp" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2025-08-05</div><div class="info-item-2">使用certd自动化推送EdgeOne和1panel,证书永不过期</div></div><div class="info-2"><div class="info-item-1">前言博主以前是全部使用 cloudflare CDN 也都是 cloud flare 帮我维护和管理证书，最近CF抽风严重，又随着国内 阿里 和 腾讯 开放自己的ESA和EO的免费版本，虽然也看到了他们能够自动签发证书，都是单个域名签发而不是泛域，如果你没事点开，博主一些服务的域名用的证书都是清一色 Google Trust Services （GTS）证书，博主有一种莫名对GTS的追求，肯定是他兼容性太好了。 准备 拥有一台服务器，博主使用的 腾讯云轻量 强烈推荐一个海外的如果你不是申请GTS的话，也没啥问题。 一个域名（这个必须要有的吧） 腾讯云的 API ID 和密钥 (博主用的是国内站腾讯账号跳转link放在文章后) Docker 环境（如果你有可要直接跳过安装步骤1了）  开始搭建安装1pane省心省力的话安装一个 1panel 面板就非常方便,下面是官网安装的命令。 1bash -c "$(curl -sSL https://resource.fit2cloud.com/1panel/package/v2/quick_start.sh)"     这里推荐使用...</div></div></div></a><a class="pagination-related" href="/posts/docker-postgresql-Segmentation-fault/" title="Docker使用pg_restore 出现Segmentation fault (core dumped)"><img class="cover" src="https://img.ning.moe/ShellBlogImg/1/2024/12/21/6766a76c45daa.webp" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2024-12-21</div><div class="info-item-2">Docker使用pg_restore 出现Segmentation fault (core dumped)</div></div><div class="info-2"><div class="info-item-1">最近，在将 Authentik 从版本 2024.6.3 升级到 2024.12.0 的过程中， Authentik新版本需要升级 PostgreSQL 数据库版本，从 12 升级到了 16。整个升级过程总体较为顺利，但在尝试通过 pg_restore 恢复数据时，却意外遇到了（segmentation fault）。 问题背景升级步骤大致如下：  ✅ 使用 Docker 容器管理 PostgreSQL 和 Authentik。  📦 在升级前，通过以下命令将 PostgreSQL 数据库的内容备份到宿主机： 1docker exec -ti &lt;容器id&gt; pg_dump -Fc -U &lt;数据库用户名&gt; &lt;数据库名&gt; &gt; db.dump  🛠️ 安装新的 Authentik 和 PostgreSQL 容器。  🔄 尝试使用以下命令恢复数据： 12docker cp db.dump &lt;容器id&gt;:/db.dumpdocker exec -ti &lt;容器id&gt; pg_restore -U...</div></div></div></a><a class="pagination-related" href="/posts/learn-traefik/" title="在 Docker 环境中使用 Traefik进行反向代理"><img class="cover" src="https://img.ning.moe/ShellBlogImg/1/2024/10/05/6700b8baa35f6.webp" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2024-10-05</div><div class="info-item-2">在 Docker 环境中使用 Traefik进行反向代理</div></div><div class="info-2"><div class="info-item-1">前言对于家里面要部署很多 Docker 服务，用 Nginx 反向代理属实麻烦，所以就有了本篇文章 Traefik   Traefik 的logo 是一个go吉祥物进行指挥交通（流量）。 所以 Traefik的好处是自动发现服务，自动配置反向代理，以及自动续签SSL，以及不在需要对外暴露额外的端口了，宿主机自始至终之暴露 80 443 端口。但也有诸多问题例如它并不能像Nginx 一样可以灵活的配置反代一些程序，例如配置不在Docker 部署的程序，会有点麻烦，如果想我一样只是作为本地部署项目Traefik 仍然是一个不错的选择。 正文在快速启动前，有必要说明一下，本教程是使用CloudFlare 作为域名ns进行申请泛域名证书，如果你想使用其他提供商，可以在 Traefik 的文档 更改 Provider Code和 Environment Variables 这两个值，当然我会在本篇配置文件有注释提醒。 另外如果没有额外配置反代的需求（指不跑在docker的服务），需要建立config.yml 文件，当然还需要在traefik.yml 关闭注释。 快速启动...</div></div></div></a></div></div><hr class="custom-hr"><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="artalk-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="https://img.ning.moe/i/1/23/01/30/63d7559a451ec.webp" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"></div><div class="author-info-name">shell</div><div class="author-info-description">没错这是一个在学园都市的贝壳建立的博客!</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">59</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">125</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/biliblihuorong"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://t.me/shell_science" target="_blank" title="Telegram"><i class="fa-brands fa-telegram"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">欢迎访问本站,今天又是咕咕咕的一天!<br>
+<a href="https://blog.ning.moe/privacy-policy/" target="_blank">本站的隐私政策</a>
+</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E4%BA%8E-NetBird"><span class="toc-number">2.</span> <span class="toc-text">关于 NetBird</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E6%9C%9F%E5%87%86%E5%A4%87"><span class="toc-number">3.</span> <span class="toc-text">前期准备</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85"><span class="toc-number">4.</span> <span class="toc-text">安装</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8B%89%E5%8F%96-NetBird-%E4%BB%93%E5%BA%93"><span class="toc-number">4.1.</span> <span class="toc-text">拉取 NetBird 仓库</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE-setup-env%EF%BC%88%E5%9F%BA%E7%A1%80%EF%BC%89"><span class="toc-number">5.</span> <span class="toc-text">配置 setup.env（基础）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#IDP-%E9%85%8D%E7%BD%AE"><span class="toc-number">6.</span> <span class="toc-text">IDP 配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Zitadel"><span class="toc-number">6.1.</span> <span class="toc-text">Zitadel</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Authentik"><span class="toc-number">6.2.</span> <span class="toc-text">Authentik</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%9F%E6%88%90%E9%85%8D%E7%BD%AE%E4%B8%8E-docker-compose"><span class="toc-number">7.</span> <span class="toc-text">生成配置与 docker-compose</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B7%BB%E5%8A%A0-Nginx-%E5%8F%8D%E4%BB%A3%EF%BC%881Panel-%E7%A4%BA%E4%BE%8B%EF%BC%89"><span class="toc-number">8.</span> <span class="toc-text">添加 Nginx 反代（1Panel 示例）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%EF%BC%88FAQ%EF%BC%89"><span class="toc-number">9.</span> <span class="toc-text">常见问题（FAQ）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%BE%E5%A4%87%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BC%9A%E8%BF%87%E6%9C%9F%EF%BC%9F"><span class="toc-number">9.1.</span> <span class="toc-text">设备为什么会过期？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%97%A0%E6%B3%95%E4%BD%BF%E7%94%A8-SSO-%E8%AE%A4%E8%AF%81%E5%AE%A2%E6%88%B7%E7%AB%AF"><span class="toc-number">9.2.</span> <span class="toc-text">无法使用 SSO 认证客户端</span></a></li></ol></li></ol><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%BC%95%E7%94%A8"><span class="toc-number"></span> <span class="toc-text">引用</span></a></li></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/netbird-private-network/" title="使用 Netbird 进行组网"><img src="https://img.ning.moe/ShellBlogImg/1/2025/10/04/68dff97434af6.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="使用 Netbird 进行组网"></a><div class="content"><a class="title" href="/posts/netbird-private-network/" title="使用 Netbird 进行组网">使用 Netbird 进行组网</a><time datetime="2025-10-03T09:27:10.000Z" title="发表于 2025-10-03 17:27:10">2025-10-03</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/Auto-SSL/" title="使用certd自动化推送EdgeOne和1panel,证书永不过期"><img src="https://img.ning.moe/ShellBlogImg/1/2025/08/05/6891ad56bea05.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="使用certd自动化推送EdgeOne和1panel,证书永不过期"></a><div class="content"><a class="title" href="/posts/Auto-SSL/" title="使用certd自动化推送EdgeOne和1panel,证书永不过期">使用certd自动化推送EdgeOne和1panel,证书永不过期</a><time datetime="2025-08-05T06:54:49.000Z" title="发表于 2025-08-05 14:54:49">2025-08-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/Aliyun-Cloud-ESA/" title="阿里云 ESA 使用体验"><img src="https://img.ning.moe/ShellBlogImg/1/2025/07/31/688b019834346.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="阿里云 ESA 使用体验"></a><div class="content"><a class="title" href="/posts/Aliyun-Cloud-ESA/" title="阿里云 ESA 使用体验">阿里云 ESA 使用体验</a><time datetime="2025-07-31T03:31:46.000Z" title="发表于 2025-07-31 11:31:46">2025-07-31</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/Amateur-Radio-QSL-Tracker-power-by-n8n/" title="使用 n8n 工作流，打造自己的 QSL 卡片跟踪器"><img src="https://img.ning.moe/ShellBlogImg/1/2025/07/25/68835275b1251.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="使用 n8n 工作流，打造自己的 QSL 卡片跟踪器"></a><div class="content"><a class="title" href="/posts/Amateur-Radio-QSL-Tracker-power-by-n8n/" title="使用 n8n 工作流，打造自己的 QSL 卡片跟踪器">使用 n8n 工作流，打造自己的 QSL 卡片跟踪器</a><time datetime="2025-07-25T07:58:23.000Z" title="发表于 2025-07-25 15:58:23">2025-07-25</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/BaoFeng-5rhPro-APRS/" title="宝峰5rhPro的APRS功能"><img src="https://img.ning.moe/ShellBlogImg/1/2025/05/28/68370d29d969f.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="宝峰5rhPro的APRS功能"></a><div class="content"><a class="title" href="/posts/BaoFeng-5rhPro-APRS/" title="宝峰5rhPro的APRS功能">宝峰5rhPro的APRS功能</a><time datetime="2025-05-28T12:01:50.000Z" title="发表于 2025-05-28 20:01:50">2025-05-28</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">©2019 - 2025 By shell</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 7.3.0</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.3.3</a></div><div class="footer_custom_text"><a href="https://icp.gov.moe/?keyword=2020021021" target="_blank"><img src="https://img.ning.moe/i/1/23/01/30/63d75baf92f17.webp" width="20px" height="20px" alt="萌国ICP备案"> 萌ICP备 2020021021号</a> | 
+<a style="text-decoration:none;" href="https://travel.moe/go.html" title="异次元之旅-跃迁-我们一起去萌站成员的星球旅行吧！" target="_blank"><img src="https://img.ning.moe/ShellBlogImg/1/2024/10/25/671b55666e1e0.webp" style="width:24px;height:24px" alt="travel.moe">异次元之旅</a> |
+<a href="https://www.travellings.cn/go.html" target="_blank" rel="noopener" title="开往-友链接力"> <img src="https://img.ning.moe/ShellBlogImg/1/2024/10/25/671b5566b72fb.gif" alt="开往-友链接力" width="120"></a><br>
+<a href="https://www.cloudflare.com/" target="_blank" rel="external nofollow"><img src="https://img.ning.moe/i/1/23/01/30/63d75c34b7358.webp" width="80px" height="30px" alt="CloudFlare"></a><br>
+</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="前往评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/pluginsSrc/medium-zoom/dist/medium-zoom.min.js"></script><script src="/pluginsSrc/node-snackbar/dist/snackbar.min.js"></script><div class="js-pjax"><script>(() => {
+  let artalkItem = null
+  const option = null
+  const isShuoshuo = GLOBAL_CONFIG_SITE.pageType === 'shuoshuo'
+
+  const destroyArtalk = () => {
+    if (artalkItem) {
+      artalkItem.destroy()
+      artalkItem = null
+    }
+  }
+
+  const artalkChangeMode = theme => artalkItem && artalkItem.setDarkMode(theme === 'dark')
+
+  const initArtalk = (el = document, pageKey = location.pathname) => {
+    artalkItem = Artalk.init({
+      el: el.querySelector('#artalk-wrap'),
+      server: 'https://artalk.ning.moe/',
+      site: 'shell-blog',
+      darkMode: document.documentElement.getAttribute('data-theme') === 'dark',
+      ...option,
+      pageKey: isShuoshuo ? pageKey : (option && option.pageKey) || pageKey
+    })
+
+    if (GLOBAL_CONFIG.lightbox === 'null') return
+    artalkItem.on('list-loaded', () => {
+      artalkItem.ctx.get('list').getCommentNodes().forEach(comment => {
+        const $content = comment.getRender().$content
+        btf.loadLightbox($content.querySelectorAll('img:not([atk-emoticon])'))
+      })
+    })
+
+    if (isShuoshuo) {
+      window.shuoshuoComment.destroyArtalk = () => {
+        destroyArtalk()
+        if (el.children.length) {
+          el.innerHTML = ''
+          el.classList.add('no-comment')
+        }
+      }
+    }
+
+    btf.addGlobalFn('pjaxSendOnce', destroyArtalk, 'destroyArtalk')
+    btf.addGlobalFn('themeChange', artalkChangeMode, 'artalk')
+  }
+
+  const loadArtalk = async (el, pageKey) => {
+    if (typeof Artalk === 'object') initArtalk(el, pageKey)
+    else {
+      await btf.getCSS('/pluginsSrc/artalk/dist/Artalk.css')
+      await btf.getScript('/pluginsSrc/artalk/dist/Artalk.js')
+      initArtalk(el, pageKey)
+    }
+  }
+
+  if (isShuoshuo) {
+    'Artalk' === 'Artalk'
+      ? window.shuoshuoComment = { loadComment: loadArtalk }
+      : window.loadOtherComment = loadArtalk
+    return
+  }
+
+  if ('Artalk' === 'Artalk' || !false) {
+    if (false) btf.loadComment(document.getElementById('artalk-wrap'), loadArtalk)
+    else setTimeout(loadArtalk, 100)
+  } else {
+    window.loadOtherComment = loadArtalk
+  }
+})()</script></div><script async="" data-pjax="" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"></div></div><hr><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div>
+      <div id="sakana" style="position:fixed;right:0;bottom:0px;"></div>
+      <script async="" onload="initSakanaWidget({&quot;character&quot;:&quot;takina&quot;,&quot;enable&quot;:true,&quot;enable_mobile&quot;:false,&quot;size&quot;:200,&quot;autoFit&quot;:false,&quot;bottom&quot;:&quot;0px&quot;,&quot;controls&quot;:true,&quot;stroke&quot;:{&quot;color&quot;:&quot;#b4b4b4&quot;,&quot;width&quot;:10},&quot;threshold&quot;:0.1,&quot;rotate&quot;:0,&quot;customCharacters&quot;:[]})" src="https://cdn.jsdelivr.net/npm/sakana-widget@2.3.0/lib/sakana.min.js"></script>
+      <script>
+      function log(msg) {
+        console.log("[hexo-sakana] " + msg);
+      }
+
+      function initSakanaWidget(config) {
+        if (
+          !config.enable_mobile &&
+          window.navigator.userAgent.match(
+            /(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i
+          )
+        ) {
+          log(
+            '检测为移动端，且配置中未开启在移动端启用组件，hexo-sakana 已禁用'
+          );
+          return;
+        }
+        for (character of config.customCharacters) {
+          if (!["takina", "chisato"].includes(character.base)) {
+            log(`无效基础角色 ${character.base}，取消注册`);
+            continue;
+          }
+          if (character.name === "") {
+            log("名称为空，取消注册");
+            continue;
+          }
+          const originCharacter = SakanaWidget.getCharacter(character.base);
+          originCharacter.initialState = {
+            ...originCharacter.initialState,
+            ...character,
+          };
+          originCharacter.image = !character.image ? originCharacter.image : character.image
+          SakanaWidget.registerCharacter(character.name, originCharacter);
+          log(`注册自定义角色：${character.name}`)
+        }
+        new SakanaWidget({
+          character: config.character,
+          size: config.size,
+          autoFit: config.autoFit,
+          controls: config.controls,
+          stroke: config.stroke,
+          threshold: config.threshold,
+          rotate: config.rotate,
+        }).mount("#sakana");
+      }
+  </script>
+    <script type="text/javascript" charset="utf-8" src="/js/lazyload-plugin/lazyload.intersectionObserver.min.js"></script></body></html>
