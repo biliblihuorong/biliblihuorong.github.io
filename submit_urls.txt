@@ -1,4 +1,3 @@
-https://blog.ning.moe/posts/Zitadel/
 https://blog.ning.moe/posts/netbird-private-network/
 https://blog.ning.moe/posts/BaoFeng-5rhPro-APRS/
 https://blog.ning.moe/posts/Auto-SSL/
@@ -8,3 +7,4 @@ https://blog.ning.moe/posts/21-8-3/
 https://blog.ning.moe/posts/Aliyun-Cloud-ESA/
 https://blog.ning.moe/posts/ArchLinux/
 https://blog.ning.moe/posts/Amateur-Radio-QSL-Tracker-power-by-n8n/
+https://blog.ning.moe/posts/Authentik-NezhaDashboard-OIDC/

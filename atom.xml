@@ -6,7 +6,7 @@
   <link href="https://blog.ning.moe/atom.xml" rel="self"/>
   
   <link href="https://blog.ning.moe/"/>
-  <updated>2025-10-09T06:03:52.527Z</updated>
+  <updated>2025-10-04T10:18:50.684Z</updated>
   <id>https://blog.ning.moe/</id>
   
   <author>
@@ -15,26 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>Zitadel</title>
-    <link href="https://blog.ning.moe/posts/Zitadel/"/>
-    <id>https://blog.ning.moe/posts/Zitadel/</id>
-    <published>2025-10-09T06:03:52.000Z</published>
-    <updated>2025-10-09T06:03:52.527Z</updated>
-    
-    <content type="html"><![CDATA[<html><head></head><body></body></html>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;</summary>
-      
-    
-    
-    
-    
-  </entry>
   
   <entry>
     <title>使用 Netbird 轻松组建内网</title>
@@ -564,6 +544,37 @@
     <category term="CloudFlare" scheme="https://blog.ning.moe/tags/CloudFlare/"/>
     
     <category term="Zero Trust" scheme="https://blog.ning.moe/tags/Zero-Trust/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Memos 对接 Authentik</title>
+    <link href="https://blog.ning.moe/posts/authentik-OAuth2-memos/"/>
+    <id>https://blog.ning.moe/posts/authentik-OAuth2-memos/</id>
+    <published>2024-04-09T14:40:34.000Z</published>
+    <updated>2025-08-17T01:42:18.093Z</updated>
+    
+    <content type="html"><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>关于我的更多 <a href="/tags/Authentik/"><code>Authentik </code>相关文章</a>  ，详细安装（中文版本）<code>Authentik </code>请访问 <a href="https://www.bilibili.com/video/av1902852247/" rel="external nofollow noreferrer"><strong>ecwuuu</strong>发布的B站视频</a>关于正向代理： <a href="https://roy.wang/authentik-open-source-sso/#%E6%AD%A3%E5%90%91%E4%BB%A3%E7%90%86" rel="external nofollow noreferrer">roywang的文章</a></p><blockquote><p> 配置中：这是什么啊，这么麻烦还没过去啊。 配置后：真香好方便。</p></blockquote><p>使用本文前请自行在 <code>Authentik </code>配置好 Memos使用的<code>应用程序</code>和<code>提供程序</code></p><h1 id="Authentik-配置"><a href="#Authentik-配置" class="headerlink" title="Authentik 配置"></a>Authentik 配置</h1><p>默认你已经创建好了，一个给Memos使用的<code>应用程序</code>和<code>提供程序</code>,我们需要更改<code>提供程序</code>(给Memos 的)我们点击编辑</p><p><img src="https://img.ning.moe/ShellBlogImg/1/2024/04/09/66155d6445bbc.webp" alt="Authentik 配置 Memos-1.webp"></p><blockquote><p>选择客户端可以使用哪些作用域。客户端仍然需要指定访问数据的范围。</p><p>按住 <code>ctrl/command</code> 键可选择多个项目。</p></blockquote><p>我们选中<code>authentik default OAuth Mapping: OpenID email</code> 和 <code>authentik default OAuth Mapping: OpenID openid</code>将<code>Subject 模式</code>改成基于用户名，然后更新。</p><p><img src="https://img.ning.moe/ShellBlogImg/1/2024/04/09/6615597f90737.webp" alt="Authentik 配置 Memos.webp"></p><h1 id="Memos配置"><a href="#Memos配置" class="headerlink" title="Memos配置"></a>Memos配置</h1><blockquote><p>在截至发文时 <code>Memos</code> 的版本为<code>v0.20.1</code>版本，<code>Memos</code>通过用户名为主键，其实只需要给<code>username</code>字段即可。</p></blockquote><p>根据上文调整的，现在sub 是我们的用户名字段，按照文章截屏填写其他的自行替换。这样你的的<code>Memos</code>就可以使用<code>Authentik</code>进行登录了。</p><p><img src="https://img.ning.moe/ShellBlogImg/1/2024/04/09/66155e6ca6dc7.webp" alt="Memos-Oauth2-config.webp"></p><h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p><code>Memos</code>的文档：<a href="https://www.usememos.com/docs/advanced-settings/keycloak" rel="external nofollow noreferrer">https://www.usememos.com/docs/advanced-settings/keycloak</a></p></body></html>]]></content>
+    
+    
+    <summary type="html">Authentik uses OAuth2 to interface with Memos. Authentik 使用 OAuth2 对接 Memos</summary>
+    
+    
+    
+    <category term="网络技术" scheme="https://blog.ning.moe/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="2024" scheme="https://blog.ning.moe/tags/2024/"/>
+    
+    <category term="Authentik" scheme="https://blog.ning.moe/tags/Authentik/"/>
+    
+    <category term="SSO" scheme="https://blog.ning.moe/tags/SSO/"/>
+    
+    <category term="OIDC" scheme="https://blog.ning.moe/tags/OIDC/"/>
+    
+    <category term="OAuth2" scheme="https://blog.ning.moe/tags/OAuth2/"/>
+    
+    <category term="Memos" scheme="https://blog.ning.moe/tags/Memos/"/>
     
   </entry>
   
