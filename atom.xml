@@ -6,7 +6,7 @@
   <link href="https://blog.ning.moe/atom.xml" rel="self"/>
   
   <link href="https://blog.ning.moe/"/>
-  <updated>2025-10-04T10:18:50.684Z</updated>
+  <updated>2025-10-12T09:02:53.658Z</updated>
   <id>https://blog.ning.moe/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>快速搭建 Zitadel 身份认证服务（IDP）</title>
+    <link href="https://blog.ning.moe/posts/Zitadel/"/>
+    <id>https://blog.ning.moe/posts/Zitadel/</id>
+    <published>2025-10-11T06:03:52.000Z</published>
+    <updated>2025-10-12T09:02:53.658Z</updated>
+    
+    <content type="html"><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>这篇文章是用来辅助 <a href="/posts/netbird-private-network/">《使用 Netbird 轻松组建内网》</a> 的。<br>本来是不打算写的，但在安装配置 Zitadel 的过程中踩了一些坑，所以还是决定写一篇前置文章，帮助大家少走弯路。</p><hr><h2 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h2><ol><li>至少一台服务器（≥ <strong>1C/2G</strong>），推荐使用 <a href="https://s.ning.moe/s/TencentCloud" rel="external nofollow noreferrer">腾讯云轻量</a>。</li><li>已安装 Docker 环境。博主这里使用的是 <strong>1Panel</strong> 面板进行管理。</li></ol><blockquote><p>💡 推荐使用 <a href="https://s.ning.moe/s/TencentCloud" rel="external nofollow noreferrer">腾讯云轻量服务器</a>，香港地区免备案。</p><p>创建时可直接选择预装的 1Panel、宝塔（BT）面板等，常用应用一键开箱即用，十分方便。</p></blockquote><table><thead><tr><th><img src="https://img.ning.moe/ShellBlogImg/1/2025/07/25/68832a9f134f1.webp" alt="腾讯云轻量购买页面.webp"></th><th><img src="https://img.ning.moe/ShellBlogImg/1/2025/07/25/68832ad797a9b.webp" alt="腾讯云重装页面.webp"></th></tr></thead></table><p>tips: 腾讯云的咨询系统也接入了 <strong>DeepSeek 大模型</strong>，常见问题可以直接询问，非常方便哒~ </p><p><img src="https://img.ning.moe/ShellBlogImg/1/2025/07/25/688334041890a.webp" alt="腾讯云-咨询问题.webp"></p><hr><h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><h2 id="PostgreSQL-数据库安装"><a href="#PostgreSQL-数据库安装" class="headerlink" title="PostgreSQL 数据库安装"></a>PostgreSQL 数据库安装</h2><p>Zitadel 推荐使用 <strong>PostgreSQL</strong> 作为数据库。<br>我们可以直接在 <strong>1Panel 应用商店</strong>中搜索 “PostgreSQL” 并安装即可。  </p><p>相比“隔壁那条鲸鱼 🐳（MySQL）”，PostgreSQL 更轻量，资源占用也更友好。</p><p><img src="https://img.ning.moe/ShellBlogImg/1/2025/10/09/68e75afe6441d.webp" alt="PostgreSQL-01.webp"></p><p><img src="https://img.ning.moe/ShellBlogImg/1/2025/10/09/68e75b03e9798.webp" alt="PostgreSQL-2.webp"></p><hr><h2 id="Zitadel-安装"><a href="#Zitadel-安装" class="headerlink" title="Zitadel 安装"></a>Zitadel 安装</h2><p>Zitadel 同样已经被 <strong>1Panel 官方适配</strong>，可以直接在应用商店中安装。</p><p>在安装过程中，需要设置一个 <strong>管理密钥</strong>（<code>ZITADEL_MASTERKEY</code>），长度建议为 <strong>32 位随机字符串</strong>。<br>可以使用 <a href="https://1password.com/password-generator" rel="external nofollow noreferrer">1Password Generator</a> 生成。</p><p><img src="https://img.ning.moe/ShellBlogImg/1/2025/10/09/68e75b0c2bc28.webp" alt="Zitadel-1.webp"></p><p><img src="https://img.ning.moe/ShellBlogImg/1/2025/10/09/68e75b1212306.webp" alt="Zitadel-2.webp"></p><hr><h1 id="意外情况与排查"><a href="#意外情况与排查" class="headerlink" title="意外情况与排查"></a>意外情况与排查</h1><p>如果你在配置好反代后访问 Zitadel，发现页面出现如下提示画面，那么问题多半出在反向代理配置上：</p><p><img src="https://img.ning.moe/ShellBlogImg/1/2025/10/09/68e75b17b5cde.webp" alt="Zitadel-3.webp"></p><p>Zitadel 使用 <code>.well-known</code> 路径进行 <strong>OIDC 发现</strong>。<br>如果反向代理配置中拦截了这段路径，页面就会加载失败。</p><p>解决方法：<br>进入反代配置文件，找到如下内容并删除：</p><pre><code class="nginx">^~ /.well-known</code></pre></body></html>]]></content>
+    
+    
+    <summary type="html">这篇文章是《使用 Netbird 轻松组建内网》的前置篇，主要讲解如何在 1Panel 上快速安装和配置 Zitadel 身份认证服务（IDP），并解决安装过程中的一些坑。</summary>
+    
+    
+    
+    
+    <category term="Zitadel" scheme="https://blog.ning.moe/tags/Zitadel/"/>
+    
+    <category term="IDP" scheme="https://blog.ning.moe/tags/IDP/"/>
+    
+    <category term="1Panel" scheme="https://blog.ning.moe/tags/1Panel/"/>
+    
+    <category term="PostgreSQL" scheme="https://blog.ning.moe/tags/PostgreSQL/"/>
+    
+  </entry>
   
   <entry>
     <title>使用 Netbird 轻松组建内网</title>
@@ -37,13 +62,13 @@
     
     <category term="Docker" scheme="https://blog.ning.moe/tags/Docker/"/>
     
+    <category term="Zitadel" scheme="https://blog.ning.moe/tags/Zitadel/"/>
+    
     <category term="NetBird" scheme="https://blog.ning.moe/tags/NetBird/"/>
     
     <category term="WireGuard" scheme="https://blog.ning.moe/tags/WireGuard/"/>
     
     <category term="MeshVPN" scheme="https://blog.ning.moe/tags/MeshVPN/"/>
-    
-    <category term="Zitadel" scheme="https://blog.ning.moe/tags/Zitadel/"/>
     
     <category term="Nginx反向代理" scheme="https://blog.ning.moe/tags/Nginx%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/"/>
     
@@ -544,37 +569,6 @@
     <category term="CloudFlare" scheme="https://blog.ning.moe/tags/CloudFlare/"/>
     
     <category term="Zero Trust" scheme="https://blog.ning.moe/tags/Zero-Trust/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Memos 对接 Authentik</title>
-    <link href="https://blog.ning.moe/posts/authentik-OAuth2-memos/"/>
-    <id>https://blog.ning.moe/posts/authentik-OAuth2-memos/</id>
-    <published>2024-04-09T14:40:34.000Z</published>
-    <updated>2025-08-17T01:42:18.093Z</updated>
-    
-    <content type="html"><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>关于我的更多 <a href="/tags/Authentik/"><code>Authentik </code>相关文章</a>  ，详细安装（中文版本）<code>Authentik </code>请访问 <a href="https://www.bilibili.com/video/av1902852247/" rel="external nofollow noreferrer"><strong>ecwuuu</strong>发布的B站视频</a>关于正向代理： <a href="https://roy.wang/authentik-open-source-sso/#%E6%AD%A3%E5%90%91%E4%BB%A3%E7%90%86" rel="external nofollow noreferrer">roywang的文章</a></p><blockquote><p> 配置中：这是什么啊，这么麻烦还没过去啊。 配置后：真香好方便。</p></blockquote><p>使用本文前请自行在 <code>Authentik </code>配置好 Memos使用的<code>应用程序</code>和<code>提供程序</code></p><h1 id="Authentik-配置"><a href="#Authentik-配置" class="headerlink" title="Authentik 配置"></a>Authentik 配置</h1><p>默认你已经创建好了，一个给Memos使用的<code>应用程序</code>和<code>提供程序</code>,我们需要更改<code>提供程序</code>(给Memos 的)我们点击编辑</p><p><img src="https://img.ning.moe/ShellBlogImg/1/2024/04/09/66155d6445bbc.webp" alt="Authentik 配置 Memos-1.webp"></p><blockquote><p>选择客户端可以使用哪些作用域。客户端仍然需要指定访问数据的范围。</p><p>按住 <code>ctrl/command</code> 键可选择多个项目。</p></blockquote><p>我们选中<code>authentik default OAuth Mapping: OpenID email</code> 和 <code>authentik default OAuth Mapping: OpenID openid</code>将<code>Subject 模式</code>改成基于用户名，然后更新。</p><p><img src="https://img.ning.moe/ShellBlogImg/1/2024/04/09/6615597f90737.webp" alt="Authentik 配置 Memos.webp"></p><h1 id="Memos配置"><a href="#Memos配置" class="headerlink" title="Memos配置"></a>Memos配置</h1><blockquote><p>在截至发文时 <code>Memos</code> 的版本为<code>v0.20.1</code>版本，<code>Memos</code>通过用户名为主键，其实只需要给<code>username</code>字段即可。</p></blockquote><p>根据上文调整的，现在sub 是我们的用户名字段，按照文章截屏填写其他的自行替换。这样你的的<code>Memos</code>就可以使用<code>Authentik</code>进行登录了。</p><p><img src="https://img.ning.moe/ShellBlogImg/1/2024/04/09/66155e6ca6dc7.webp" alt="Memos-Oauth2-config.webp"></p><h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p><code>Memos</code>的文档：<a href="https://www.usememos.com/docs/advanced-settings/keycloak" rel="external nofollow noreferrer">https://www.usememos.com/docs/advanced-settings/keycloak</a></p></body></html>]]></content>
-    
-    
-    <summary type="html">Authentik uses OAuth2 to interface with Memos. Authentik 使用 OAuth2 对接 Memos</summary>
-    
-    
-    
-    <category term="网络技术" scheme="https://blog.ning.moe/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/"/>
-    
-    
-    <category term="2024" scheme="https://blog.ning.moe/tags/2024/"/>
-    
-    <category term="Authentik" scheme="https://blog.ning.moe/tags/Authentik/"/>
-    
-    <category term="SSO" scheme="https://blog.ning.moe/tags/SSO/"/>
-    
-    <category term="OIDC" scheme="https://blog.ning.moe/tags/OIDC/"/>
-    
-    <category term="OAuth2" scheme="https://blog.ning.moe/tags/OAuth2/"/>
-    
-    <category term="Memos" scheme="https://blog.ning.moe/tags/Memos/"/>
     
   </entry>
   

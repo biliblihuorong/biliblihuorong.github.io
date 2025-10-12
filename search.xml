@@ -53,6 +53,48 @@
       </tags>
   </entry>
   <entry>
+    <title>Linux安装宝塔面板</title>
+    <url>/posts/21-8-3/</url>
+    <content><![CDATA[<html><head></head><body><blockquote>
+<p>本篇，是未其他博文服务，帮助小白更容易接触，还能节省博文写作时间</p>
+</blockquote>
+<h1 id="连接服务器"><a href="#连接服务器" class="headerlink" title="连接服务器"></a>连接服务器</h1><p>你可以购买腾讯云，阿里云等云服务厂商。</p>
+<p>你也可以在虚拟机或者已经退役的电脑上安装完Linux继续安装宝塔面板。</p>
+<h2 id="云服务厂商连接"><a href="#云服务厂商连接" class="headerlink" title="云服务厂商连接"></a>云服务厂商连接</h2><p><code>这里以腾讯云为例</code></p>
+<ol>
+<li>进入控制台一般是整个web端的右上角。</li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/biliblihuorong/Resources@master/Image/20210804122647.png" alt="image-20210804122645077"></p>
+<ol start="2">
+<li>进入这个页面首先我们需要提一下权限，在里面输入<code>sudo su</code>即可</li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/biliblihuorong/Resources@master/Image/20210804122851.png" alt="image-20210804122848569"></p>
+<h2 id="使用ssh连接"><a href="#使用ssh连接" class="headerlink" title="使用ssh连接"></a>使用ssh连接</h2><p>ssh连接的话你可以使用Xshell或其他的ssh连接工具,如果你是Windows10或者是MAC的话可以直接在终端连接</p>
+<p>以Windows10为例,打开<code>cmd</code>输入用户名@主机地址</p>
+<p>tips:一般用户名就是root</p>
+<p>弹出这些东西:</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">C:\Users\shell&gt;ssh root@10.10.10.194</span><br><span class="line">The authenticity of host <span class="string">'10.10.10.194 (10.10.10.194)'</span> can<span class="string">'t be established.</span></span><br><span class="line"><span class="string">ECDSA key fingerprint is SHA256:wTW6E3eH1uT9NXqPIYJdfBFWSv9LyAenGMIKKAJD1TA.</span></span><br><span class="line"><span class="string">Are you sure you want to continue connecting (yes/no/[fingerprint])?</span></span><br><span class="line"><span class="string"></span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>输入<code>yes</code>回车</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">C:\Users\shell&gt;ssh root@10.10.10.194</span><br><span class="line">The authenticity of host <span class="string">'10.10.10.194 (10.10.10.194)'</span> can<span class="string">'t be established.</span></span><br><span class="line"><span class="string">ECDSA key fingerprint is SHA256:wTW6E3eH1uT9NXqPIYJdfBFWSv9LyAenGMIKKAJD1TA.</span></span><br><span class="line"><span class="string">Are you sure you want to continue connecting (yes/no/[fingerprint])? yes</span></span><br><span class="line"><span class="string">Warning: Permanently added '</span>10.10.10.194<span class="string">' (ECDSA) to the list of known hosts.</span></span><br><span class="line"><span class="string">root@10.10.10.194'</span>s password:</span><br></pre></td></tr></tbody></table></figure>
+
+<p>现在输入你的密码,密码输入时不会显示密码.</p>
+<h1 id="安装宝塔"><a href="#安装宝塔" class="headerlink" title="安装宝塔"></a>安装宝塔</h1><p>[点击这个连接跳转到宝塔官网安装界面.][<a href="https://www.bt.cn/download/linux.html]" rel="external nofollow noreferrer">https://www.bt.cn/download/linux.html]</a></p>
+<p><img src="https://cdn.jsdelivr.net/gh/biliblihuorong/Resources@master/Image/20210806125447.png" alt="image-20210806125445624"></p>
+<p>根据你用的Linux的发行商来复制哪一个指令,执行.</p>
+<p><img src="https://cdn.jsdelivr.net/gh/biliblihuorong/Resources@master/Image/20210806125859.png" alt="image-20210806125629698"></p>
+<p>输入<code>y</code>回车.</p>
+<p>出现这样的记得保存一下账号和密码,如果你是云服务商的服务器请到防火墙放行8888端口才可以.</p>
+<p><img src="https://cdn.jsdelivr.net/gh/biliblihuorong/Resources@master/Image/20210806125902.png" alt="image-20210806125855734"></p>
+</body></html>]]></content>
+      <categories>
+        <category>网络技术</category>
+      </categories>
+      <tags>
+        <tag>宝塔</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>2023 总结</title>
     <url>/posts/2023-Annual-Summary/</url>
     <content><![CDATA[<html><head></head><body><blockquote>
@@ -114,48 +156,6 @@
       <tags>
         <tag>总结</tag>
         <tag>2024</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Linux安装宝塔面板</title>
-    <url>/posts/21-8-3/</url>
-    <content><![CDATA[<html><head></head><body><blockquote>
-<p>本篇，是未其他博文服务，帮助小白更容易接触，还能节省博文写作时间</p>
-</blockquote>
-<h1 id="连接服务器"><a href="#连接服务器" class="headerlink" title="连接服务器"></a>连接服务器</h1><p>你可以购买腾讯云，阿里云等云服务厂商。</p>
-<p>你也可以在虚拟机或者已经退役的电脑上安装完Linux继续安装宝塔面板。</p>
-<h2 id="云服务厂商连接"><a href="#云服务厂商连接" class="headerlink" title="云服务厂商连接"></a>云服务厂商连接</h2><p><code>这里以腾讯云为例</code></p>
-<ol>
-<li>进入控制台一般是整个web端的右上角。</li>
-</ol>
-<p><img src="https://cdn.jsdelivr.net/gh/biliblihuorong/Resources@master/Image/20210804122647.png" alt="image-20210804122645077"></p>
-<ol start="2">
-<li>进入这个页面首先我们需要提一下权限，在里面输入<code>sudo su</code>即可</li>
-</ol>
-<p><img src="https://cdn.jsdelivr.net/gh/biliblihuorong/Resources@master/Image/20210804122851.png" alt="image-20210804122848569"></p>
-<h2 id="使用ssh连接"><a href="#使用ssh连接" class="headerlink" title="使用ssh连接"></a>使用ssh连接</h2><p>ssh连接的话你可以使用Xshell或其他的ssh连接工具,如果你是Windows10或者是MAC的话可以直接在终端连接</p>
-<p>以Windows10为例,打开<code>cmd</code>输入用户名@主机地址</p>
-<p>tips:一般用户名就是root</p>
-<p>弹出这些东西:</p>
-<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">C:\Users\shell&gt;ssh root@10.10.10.194</span><br><span class="line">The authenticity of host <span class="string">'10.10.10.194 (10.10.10.194)'</span> can<span class="string">'t be established.</span></span><br><span class="line"><span class="string">ECDSA key fingerprint is SHA256:wTW6E3eH1uT9NXqPIYJdfBFWSv9LyAenGMIKKAJD1TA.</span></span><br><span class="line"><span class="string">Are you sure you want to continue connecting (yes/no/[fingerprint])?</span></span><br><span class="line"><span class="string"></span></span><br></pre></td></tr></tbody></table></figure>
-
-<p>输入<code>yes</code>回车</p>
-<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">C:\Users\shell&gt;ssh root@10.10.10.194</span><br><span class="line">The authenticity of host <span class="string">'10.10.10.194 (10.10.10.194)'</span> can<span class="string">'t be established.</span></span><br><span class="line"><span class="string">ECDSA key fingerprint is SHA256:wTW6E3eH1uT9NXqPIYJdfBFWSv9LyAenGMIKKAJD1TA.</span></span><br><span class="line"><span class="string">Are you sure you want to continue connecting (yes/no/[fingerprint])? yes</span></span><br><span class="line"><span class="string">Warning: Permanently added '</span>10.10.10.194<span class="string">' (ECDSA) to the list of known hosts.</span></span><br><span class="line"><span class="string">root@10.10.10.194'</span>s password:</span><br></pre></td></tr></tbody></table></figure>
-
-<p>现在输入你的密码,密码输入时不会显示密码.</p>
-<h1 id="安装宝塔"><a href="#安装宝塔" class="headerlink" title="安装宝塔"></a>安装宝塔</h1><p>[点击这个连接跳转到宝塔官网安装界面.][<a href="https://www.bt.cn/download/linux.html]" rel="external nofollow noreferrer">https://www.bt.cn/download/linux.html]</a></p>
-<p><img src="https://cdn.jsdelivr.net/gh/biliblihuorong/Resources@master/Image/20210806125447.png" alt="image-20210806125445624"></p>
-<p>根据你用的Linux的发行商来复制哪一个指令,执行.</p>
-<p><img src="https://cdn.jsdelivr.net/gh/biliblihuorong/Resources@master/Image/20210806125859.png" alt="image-20210806125629698"></p>
-<p>输入<code>y</code>回车.</p>
-<p>出现这样的记得保存一下账号和密码,如果你是云服务商的服务器请到防火墙放行8888端口才可以.</p>
-<p><img src="https://cdn.jsdelivr.net/gh/biliblihuorong/Resources@master/Image/20210806125902.png" alt="image-20210806125855734"></p>
-</body></html>]]></content>
-      <categories>
-        <category>网络技术</category>
-      </categories>
-      <tags>
-        <tag>宝塔</tag>
       </tags>
   </entry>
   <entry>
@@ -222,30 +222,6 @@
       <tags>
         <tag>CDN</tag>
         <tag>Cloudflare</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>ArchLinux 使用体验</title>
-    <url>/posts/ArchLinux/</url>
-    <content><![CDATA[<html><head></head><body><img src="https://img.ning.moe/i/1/2023/02/09/63e4c0b786de8.webp" alt="archlinux-logo-dark-1200dpi.webp" style="zoom: 25%;">
-
-<h1 id="关于-ArchLinux"><a href="#关于-ArchLinux" class="headerlink" title="关于 ArchLinux"></a>关于 ArchLinux</h1><p>Arch 是Linux发行版的一个分支，arch的理念是完全自定义，没有所谓的系统版本，全部是滚动升级（长时间不滚，会滚炸，当然我每天开机第一件事就是滚一下）</p>
-<h1 id="正片开始"><a href="#正片开始" class="headerlink" title="正片开始"></a>正片开始</h1><h2 id="为什么非要选择Arch？"><a href="#为什么非要选择Arch？" class="headerlink" title="为什么非要选择Arch？"></a>为什么非要选择Arch？</h2><p>其实如果你要是在非中国大陆的话，我觉得你使用Ubuntu 或者其他的发行版大同小异，因为我看中了 Arch的万能的AUR软件仓库源，这里面有各位大佬自封装的软件，庞大的软件仓库，例如微信 需要wine 以及烦琐的配置 AUR 可以直接解决这些问题。</p>
-<h2 id="听说安装Arch很难？"><a href="#听说安装Arch很难？" class="headerlink" title="听说安装Arch很难？"></a>听说安装Arch很难？</h2><p>是的 Arch 的安装异常的烦琐切复杂 ，不过如果你擅用<code>Search</code>和<a href="https://wiki.archlinuxcn.org/wiki/%E9%A6%96%E9%A1%B5" rel="external nofollow noreferrer" title="ArchWiKi">ArchWiki</a> 和时间耐心的研究，其实很简单，我是一个纯Linux小白，在查阅ArchWiki花费大量的时间研究之后也安装成功。</p>
-<h2 id="我现在的状态？"><a href="#我现在的状态？" class="headerlink" title="我现在的状态？"></a>我现在的状态？</h2><p>我现在给电脑装载了双系统（怕arch崩了就无了） win11+arch</p>
-<p><img src="https://img.ning.moe/i/1/2023/02/09/63e4bbfff1e9c.webp" alt="ArchLinux 配置.webp"></p>
-<h2 id="使用体验"><a href="#使用体验" class="headerlink" title="使用体验"></a>使用体验</h2><p>我用Arch差不多3个月了，除了刚开始的不适逐渐慢慢适应之后逐渐习惯，但我偶尔也很想换回windows，因为我现在还没有适应在linux只用一个根的感念，而不像windows的区概念（而且我分区还很多）。</p>
-<h1 id="你要现在立刻安装Arch？"><a href="#你要现在立刻安装Arch？" class="headerlink" title="你要现在立刻安装Arch？"></a>你要现在立刻安装Arch？</h1><h3 id="你会首先面临的问题"><a href="#你会首先面临的问题" class="headerlink" title="你会首先面临的问题"></a>你会首先面临的问题</h3><h4 id="游戏生态"><a href="#游戏生态" class="headerlink" title="游戏生态"></a>游戏生态</h4><p>首先Linux上虽然有steam 的Steam Play的加持，游戏生态逐步扩大，但还是有诸多游戏不能游玩，详情可以看这个<a href="https://www.protondb.com/" rel="external nofollow noreferrer" title="protondb">protondb</a>上搜索🔍，还有原神属于能玩的级别但是配置很烦琐。</p>
-<h4 id="软件的生态"><a href="#软件的生态" class="headerlink" title="软件的生态"></a>软件的生态</h4><p>虽然有AUR 的加持但仍然有很多软件只有windows平台还用<code>wine</code>调教不好它例如<code>office</code> ，但这不是说你不能使用这些功能，Linux有很多平替软件可以选择例如 <code>libreoffice</code> or <code>WPS</code>。</p>
-<h4 id="使用习惯"><a href="#使用习惯" class="headerlink" title="使用习惯"></a>使用习惯</h4><p>就像我前面提到的 Linux和Windows对于磁盘区的概念来说，以及你要面临一个新的桌面使用环境。</p>
-</body></html>]]></content>
-      <categories>
-        <category>生活随想</category>
-      </categories>
-      <tags>
-        <tag>2023</tag>
-        <tag>Arch</tag>
-        <tag>Linux</tag>
       </tags>
   </entry>
   <entry>
@@ -394,6 +370,92 @@
       </tags>
   </entry>
   <entry>
+    <title>使用certd自动化推送EdgeOne和1panel,证书永不过期</title>
+    <url>/posts/Auto-SSL/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>博主以前是全部使用 cloudflare CDN 也都是 cloud flare 帮我维护和管理证书，最近CF抽风严重，又随着国内 阿里 和 腾讯 开放自己的ESA和EO的免费版本，虽然也看到了他们能够自动签发证书，都是单个域名签发而不是泛域，如果你没事点开，博主一些服务的域名用的证书都是清一色 <strong>Google Trust Services</strong> （GTS）证书，博主有一种莫名对GTS的追求，肯定是他兼容性太好了。</p>
+<h1 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h1><ol>
+<li>拥有一台服务器，博主使用的 <a href="https://s.ning.moe/s/TencentCloud" rel="external nofollow noreferrer">腾讯云轻量</a> 强烈推荐一个海外的如果你不是申请GTS的话，也没啥问题。</li>
+<li>一个域名<del>（这个必须要有的吧）</del></li>
+<li>腾讯云的 API ID 和密钥 (博主用的是国内站腾讯账号跳转link放在文章后)</li>
+<li>Docker 环境（如果你有可要直接跳过安装步骤1了）</li>
+</ol>
+<h1 id="开始搭建"><a href="#开始搭建" class="headerlink" title="开始搭建"></a>开始搭建</h1><h2 id="安装1pane"><a href="#安装1pane" class="headerlink" title="安装1pane"></a>安装1pane</h2><p>省心省力的话安装一个 1panel 面板就非常方便,下面是官网安装的命令。</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">bash -c <span class="string">"<span class="subst">$(curl -sSL https://resource.fit2cloud.com/1panel/package/v2/quick_start.sh)</span>"</span></span><br></pre></td></tr></tbody></table></figure>
+
+
+
+<blockquote>
+<p>这里推荐使用 <a href="https://s.ning.moe/s/TencentCloud" rel="external nofollow noreferrer">腾讯云轻量服务器</a> , 推荐选择香港地区免备案，</p>
+<p>还可以创建的时候直接选择1panel 、BT 面板，还有更多常用的应用一键开箱即用</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th><img src="https://img.ning.moe/ShellBlogImg/1/2025/07/25/68832a9f134f1.webp" alt="腾讯云轻量购买页面.webp"></th>
+<th><img src="https://img.ning.moe/ShellBlogImg/1/2025/07/25/68832ad797a9b.webp" alt="腾讯云重装页面.webp"></th>
+</tr>
+</thead>
+</table>
+<p>tips: 腾讯云咨询也接入了 DeepSeek 的大模型，已经把常见问题归纳整理，常见问题可以直接询问即可，非常方便哒~</p>
+<p><img src="https://img.ning.moe/ShellBlogImg/1/2025/07/25/688334041890a.webp" alt="腾讯云-咨询问题.webp">****</p>
+<h2 id="安装-certd"><a href="#安装-certd" class="headerlink" title="安装 certd"></a>安装 certd</h2><p>复制下方内容</p>
+<figure class="highlight yaml"><table><tbody><tr><td class="code"><pre><span class="line"><span class="attr">version:</span> <span class="string">'3.3'</span> <span class="comment"># 兼容旧版docker-compose</span></span><br><span class="line"><span class="attr">services:</span></span><br><span class="line">  <span class="attr">certd:</span></span><br><span class="line">    <span class="comment"># 镜像                                                  #  ↓↓↓↓↓ ---- 镜像版本号，建议改成固定版本号,例如：certd:1.29.0</span></span><br><span class="line">    <span class="attr">image:</span> <span class="string">registry.cn-shenzhen.aliyuncs.com/handsfree/certd:latest</span></span><br><span class="line">    <span class="comment"># image: ghcr.io/certd/certd:latest                    #   --------- 如果 报镜像not found，可以尝试其他镜像源</span></span><br><span class="line">    <span class="comment"># image: greper/certd:latest</span></span><br><span class="line">    <span class="attr">container_name:</span> <span class="string">certd</span> <span class="comment"># 容器名</span></span><br><span class="line">    <span class="attr">restart:</span> <span class="string">unless-stopped</span> <span class="comment"># 自动重启</span></span><br><span class="line">    <span class="attr">volumes:</span></span><br><span class="line">      <span class="comment">#   ↓↓↓↓↓ ----------- 数据库以及证书存储路径,默认存在宿主机的/data/certd/目录下，【您需要定时备份此目录，以保障数据容灾】</span></span><br><span class="line">      <span class="comment">#                  只要修改冒号前面的，冒号后面的/app/data不要动</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">./data/certd:/app/data</span></span><br><span class="line">    <span class="attr">ports:</span> <span class="comment"># 端口映射</span></span><br><span class="line">      <span class="comment">#  ↓↓↓↓ ---- 如果端口有冲突，可以修改第一个7001为其他不冲突的端口号，第二个7001不要动</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"7001:7001"</span></span><br><span class="line"></span><br><span class="line">    <span class="attr">labels:</span></span><br><span class="line">      <span class="attr">com.centurylinklabs.watchtower.enable:</span> <span class="string">"true"</span></span><br><span class="line"><span class="comment">#    ↓↓↓↓ -------------------------------------------------------------- 启用ipv6网络，还需要把下面networks的注释放开</span></span><br><span class="line"><span class="comment">#    networks:</span></span><br><span class="line"><span class="comment">#      - ip6net</span></span><br><span class="line">    <span class="attr">environment:</span></span><br><span class="line"></span><br><span class="line">      <span class="bullet">-</span> <span class="string">TZ=Asia/Shanghai</span></span><br><span class="line"><span class="comment">#  #↓↓↓↓ ----------------------------- 如果忘记管理员密码，可以设置为true，重启之后，管理员密码将改成123456，然后请及时修改回false</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">certd_system_resetAdminPasswd=false</span></span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
+
+<p><img src="https://img.ning.moe/ShellBlogImg/1/2025/08/01/688c7e569cad7.webp" alt="1panel-containers-compose-certd.webp"></p>
+<p>部署好之后访问，过掉基本的注册信息即可。</p>
+<h2 id="配置certtd"><a href="#配置certtd" class="headerlink" title="配置certtd"></a>配置certtd</h2><p>来到 <code>证书自动化流水线</code> - <code>创建证书流</code> 输入你的域名即可。 例如博主的是 <code>ning.moe</code> 和下属的 <code>*.ning.moe</code> 那么 就这样写 <code>*.ning.moe;ning.moe</code>，如果你要申请Google 还需要配置EAB 您可以访问这个博主和写的博文 ：<a href="https://www.alcy.cc/archives/huo-qu-googlezheng-shu-eab" rel="external nofollow noreferrer">获取Google证书EAB</a> </p>
+<p><img src="https://img.ning.moe/ShellBlogImg/1/2025/08/01/688ca9f423dd9.webp" alt="Certd-config.webp"></p>
+<p>保存完毕我们进入编辑工作流</p>
+<p><img src="https://img.ning.moe/ShellBlogImg/1/2025/08/01/688cb62ea5ab0.webp" alt="Certd-config-2.webp"></p>
+<h3 id="配置1Panel"><a href="#配置1Panel" class="headerlink" title="配置1Panel"></a>配置1Panel</h3><p>1Panel的比较简单一点</p>
+<p><img src="https://img.ning.moe/ShellBlogImg/1/2025/08/29/68b138cca75fa.webp" alt="Certd-config-6.webp"></p>
+<p><img src="https://img.ning.moe/ShellBlogImg/1/2025/08/29/68b138d1049a4.webp" alt="Certd-config-8.webp"></p>
+<h3 id="配置-腾讯云-EO"><a href="#配置-腾讯云-EO" class="headerlink" title="配置 腾讯云 EO"></a>配置 腾讯云 EO</h3><p>EO 配置稍微有点麻烦你需要选择你的 站的ID 以及你所有加速的域名，例如博主的加速以下  <code>test.ning.moe</code>  <code>shell.ning.moe</code> 那么都需要挨个输入进去</p>
+<blockquote>
+<p>国内站 API 凭证： <a href="https://console.cloud.tencent.com/cam/capi" rel="external nofollow noreferrer">https://console.cloud.tencent.com/cam/capi</a></p>
+</blockquote>
+<p><img src="https://img.ning.moe/ShellBlogImg/1/2025/08/05/6891a678d2b5b.webp" alt="Certd-config-4.webp"></p>
+<p><img src="https://img.ning.moe/ShellBlogImg/1/2025/08/05/6891a67f7fb32.webp" alt="Certd-config-5.webp"></p>
+<h2 id="保存发布"><a href="#保存发布" class="headerlink" title="保存发布"></a>保存发布</h2><p>最后不要忘记保存然后手动触发工作流看看有什么问题吗。</p>
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>获取Google证书EAB:<a href="https://www.alcy.cc/archives/huo-qu-googlezheng-shu-eab" rel="external nofollow noreferrer">https://www.alcy.cc/archives/huo-qu-googlezheng-shu-eab</a></p>
+</body></html>]]></content>
+      <tags>
+        <tag>教程</tag>
+        <tag>2025</tag>
+        <tag>certd</tag>
+        <tag>1panel</tag>
+        <tag>Docker</tag>
+        <tag>SSL</tag>
+        <tag>GTS</tag>
+        <tag>泛域名</tag>
+        <tag>自动化</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>ArchLinux 使用体验</title>
+    <url>/posts/ArchLinux/</url>
+    <content><![CDATA[<html><head></head><body><img src="https://img.ning.moe/i/1/2023/02/09/63e4c0b786de8.webp" alt="archlinux-logo-dark-1200dpi.webp" style="zoom: 25%;">
+
+<h1 id="关于-ArchLinux"><a href="#关于-ArchLinux" class="headerlink" title="关于 ArchLinux"></a>关于 ArchLinux</h1><p>Arch 是Linux发行版的一个分支，arch的理念是完全自定义，没有所谓的系统版本，全部是滚动升级（长时间不滚，会滚炸，当然我每天开机第一件事就是滚一下）</p>
+<h1 id="正片开始"><a href="#正片开始" class="headerlink" title="正片开始"></a>正片开始</h1><h2 id="为什么非要选择Arch？"><a href="#为什么非要选择Arch？" class="headerlink" title="为什么非要选择Arch？"></a>为什么非要选择Arch？</h2><p>其实如果你要是在非中国大陆的话，我觉得你使用Ubuntu 或者其他的发行版大同小异，因为我看中了 Arch的万能的AUR软件仓库源，这里面有各位大佬自封装的软件，庞大的软件仓库，例如微信 需要wine 以及烦琐的配置 AUR 可以直接解决这些问题。</p>
+<h2 id="听说安装Arch很难？"><a href="#听说安装Arch很难？" class="headerlink" title="听说安装Arch很难？"></a>听说安装Arch很难？</h2><p>是的 Arch 的安装异常的烦琐切复杂 ，不过如果你擅用<code>Search</code>和<a href="https://wiki.archlinuxcn.org/wiki/%E9%A6%96%E9%A1%B5" rel="external nofollow noreferrer" title="ArchWiKi">ArchWiki</a> 和时间耐心的研究，其实很简单，我是一个纯Linux小白，在查阅ArchWiki花费大量的时间研究之后也安装成功。</p>
+<h2 id="我现在的状态？"><a href="#我现在的状态？" class="headerlink" title="我现在的状态？"></a>我现在的状态？</h2><p>我现在给电脑装载了双系统（怕arch崩了就无了） win11+arch</p>
+<p><img src="https://img.ning.moe/i/1/2023/02/09/63e4bbfff1e9c.webp" alt="ArchLinux 配置.webp"></p>
+<h2 id="使用体验"><a href="#使用体验" class="headerlink" title="使用体验"></a>使用体验</h2><p>我用Arch差不多3个月了，除了刚开始的不适逐渐慢慢适应之后逐渐习惯，但我偶尔也很想换回windows，因为我现在还没有适应在linux只用一个根的感念，而不像windows的区概念（而且我分区还很多）。</p>
+<h1 id="你要现在立刻安装Arch？"><a href="#你要现在立刻安装Arch？" class="headerlink" title="你要现在立刻安装Arch？"></a>你要现在立刻安装Arch？</h1><h3 id="你会首先面临的问题"><a href="#你会首先面临的问题" class="headerlink" title="你会首先面临的问题"></a>你会首先面临的问题</h3><h4 id="游戏生态"><a href="#游戏生态" class="headerlink" title="游戏生态"></a>游戏生态</h4><p>首先Linux上虽然有steam 的Steam Play的加持，游戏生态逐步扩大，但还是有诸多游戏不能游玩，详情可以看这个<a href="https://www.protondb.com/" rel="external nofollow noreferrer" title="protondb">protondb</a>上搜索🔍，还有原神属于能玩的级别但是配置很烦琐。</p>
+<h4 id="软件的生态"><a href="#软件的生态" class="headerlink" title="软件的生态"></a>软件的生态</h4><p>虽然有AUR 的加持但仍然有很多软件只有windows平台还用<code>wine</code>调教不好它例如<code>office</code> ，但这不是说你不能使用这些功能，Linux有很多平替软件可以选择例如 <code>libreoffice</code> or <code>WPS</code>。</p>
+<h4 id="使用习惯"><a href="#使用习惯" class="headerlink" title="使用习惯"></a>使用习惯</h4><p>就像我前面提到的 Linux和Windows对于磁盘区的概念来说，以及你要面临一个新的桌面使用环境。</p>
+</body></html>]]></content>
+      <categories>
+        <category>生活随想</category>
+      </categories>
+      <tags>
+        <tag>2023</tag>
+        <tag>Arch</tag>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Authentik OIDC 哪吒面板</title>
     <url>/posts/Authentik-NezhaDashboard-OIDC/</url>
     <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>最开始我的<code>nezha面板</code> 使用的 <code>github</code> 的<code>OAuth 认证</code>的，我的哪吒面板是自动更新到最新版本，最新版本更新好之后我发现无法登录我的<code>nezha 面板</code>了,报错提示是 http: named cookie not present<a href="https://nezha.wiki/guide/loginq.html#http-named-cookie-not-present" rel="external nofollow noreferrer"></a>试了试还是不行，最后看了一下新版本更新日志是改了OIDC不知道是不是这个关系，现在可以自定义oidc提供商了我就改成我自己的<code>Authentik</code> 吧。</p>
@@ -438,6 +500,78 @@
         <tag>OIDC</tag>
         <tag>OAuth2</tag>
         <tag>nezha</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Cachefly自动证书上传</title>
+    <url>/posts/CacheflySSLUpDate/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>自从 <code>Cachefly</code> 推出了<a href="https://www.cachefly.com/pricing/" rel="external nofollow noreferrer">免费套餐</a>， 作为一个白嫖党，第一时间就去体验了一下，注册需要外币卡需要注意一下，所以注册门槛稍微相对较高吧。试了一下速度，很不错，回国速度非常好，北方基本上走的是ntt 和俄罗斯的线路，南方走的是 hk 的CN2 线路，至少分发的图片和静态资源不成问题。</p>
+<p><img src="https://img.ning.moe/ShellBlogImg/1/2023/08/02/64ca088d41e00.webp" alt="Cachefly-ItDog.webp"></p>
+<p>但有个很烦人的问题，它不支持 免费的证书自动签发，需要我自己上传证书，好在他的ssl 证书是自动检测的，也就是说你上传了一个证书是在8月份到期了在7月份又上传了这个域名的证书是11月到期了，会自动在证书过期之前调整成11月的。而且最近学了学go，就用这三脚猫的功夫配合chatGPT 写了一个简单的小玩意。</p>
+<h1 id="自动证书上传程序"><a href="#自动证书上传程序" class="headerlink" title="自动证书上传程序"></a>自动证书上传程序</h1><p>我已经把这个项目开源并且放在了 <a href="https://github.com/biliblihuorong/CacheflySSLUpDate" rel="external nofollow noreferrer">我的GitHub仓库上</a> 。</p>
+<p>其实在仓库的README的文件上已经有写了使用方式，我就直接把README拿过来了。</p>
+<h2 id="使用方式"><a href="#使用方式" class="headerlink" title="使用方式"></a>使用方式</h2><ol>
+<li><p>首先，您需要在 <a href="https://github.com/biliblihuorong/CacheflySSLUpDate/releases" rel="external nofollow noreferrer">https://github.com/biliblihuorong/CacheflySSLUpDate/releases</a> 页面下载适用于您设备的可执行文件。</p>
+</li>
+<li><p>然后，在执行文件所在目录下创建一个名为 <code>config.json</code> 的文件，并按照以下示例填入相应的内容。您也可以直接下载本仓库中的 <code>config.json</code> 文件，填入您的配置信息。</p>
+</li>
+</ol>
+<figure class="highlight json"><table><tbody><tr><td class="code"><pre><span class="line"><span class="punctuation">{</span></span><br><span class="line">  <span class="attr">"token"</span><span class="punctuation">:</span> <span class="string">"您的 Cachefly Token，可在 https://portal.cachefly.com/app/tokens 获取"</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">"certificateFile"</span><span class="punctuation">:</span> <span class="string">"&lt;证书文件路径&gt;"</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">"certificateKeyFile"</span><span class="punctuation">:</span> <span class="string">"&lt;密钥文件路径&gt;"</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">"password"</span><span class="punctuation">:</span> <span class="string">"&lt;您的 Cachefly 密码&gt;"</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">"taskInterval"</span><span class="punctuation">:</span> <span class="number">7</span></span><br><span class="line"><span class="punctuation">}</span></span><br></pre></td></tr></tbody></table></figure>
+
+<ul>
+<li><code>token</code>：您需要前往 <a href="https://portal.cachefly.com/app/tokens" rel="external nofollow noreferrer">https://portal.cachefly.com/app/tokens</a> 获取 Cachefly Token，并将其填写在此处。</li>
+<li><code>certificateFile</code> 和 <code>certificateKeyFile</code>：这两个字段应填入您本地 SSL 证书和密钥的文件路径。如果您使用宝塔面板自动签发证书，则签发地址通常在 <code>/www/server/panel/vhost/ssl/&lt;您的域名&gt;/</code> 下，其中公钥为 <code>fullchain.pem</code>，私钥为 <code>privkey.pem</code>。</li>
+<li><code>password</code>：填入您的 Cachefly 密码，用于上传证书到 Cachefly。</li>
+<li><code>taskInterval</code>：此字段定义了执行任务的间隔天数。例如，设置为 7 表示每隔 7 天执行一次上传任务。</li>
+</ul>
+<p><strong>注意：</strong> 请确保 <code>config.json</code> 文件的格式正确，否则工具将无法正常运行。</p>
+<p>改好之后在项目文件夹下，运行</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line"><span class="built_in">nohup</span> &lt;可执行文件&gt;</span><br></pre></td></tr></tbody></table></figure>
+
+<p>然后文件夹下会又一个 nohup.out 的文件，正常来说程序首次启动会运行一次ssl 证书上传。</p>
+</body></html>]]></content>
+      <categories>
+        <category>网络技术</category>
+      </categories>
+      <tags>
+        <tag>2023</tag>
+        <tag>SSL</tag>
+        <tag>go</tag>
+        <tag>Cachefly</tag>
+        <tag>宝塔面板</tag>
+        <tag>网络技术</tag>
+        <tag>CloudFlare</tag>
+        <tag>写bug的小能手</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>使用Cloud Flare Tunnel和 Acces Application安全的暴露在公网</title>
+    <url>/posts/CloudFlare-Tunnel-Application-Access/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h1><p>如果搞 Home Lab 始终绕不开的话题是，我们如何将自己的内网服务暴露到公网上，又如何保证我们的安全。<br>现在可以使用我们赛博菩萨 Cloudflare 提供的 Zero Trust 来保护我们的安全。</p>
+<p>演示的dome ： <a href="https://hp.ning.moe/" rel="external nofollow noreferrer">HomePage</a> 和 <a href="https://misakashell.cloudflareaccess.com/" rel="external nofollow noreferrer">Cloud Flare Zero Trust 主页</a></p>
+<h1 id="正文："><a href="#正文：" class="headerlink" title="正文："></a>正文：</h1><h2 id="使用-Tunnel-暴露服务"><a href="#使用-Tunnel-暴露服务" class="headerlink" title="使用 Tunnel 暴露服务"></a>使用 Tunnel 暴露服务</h2><p>我们需要先登录<a href="https://one.dash.cloudflare.com/" rel="external nofollow noreferrer">CF zero trust的管理平台</a>，添加新的隧道点击：<code>Networks/Tunnels</code> 我们需要添加一个隧道让我们本地和 <code>Cloudflare Zero Trust</code>服务器进行连接。简单的配置完隧道名字</p>
+<p><img src="https://img.ning.moe/ShellBlogImg/1/2024/04/22/6626359570249.webp" alt="Cloud-Flare-Zero-Trust-Dash-Tunnels.webp"></p>
+<p>会自动跳转到tunnel 这个页面，没跳转的 Networks/Tunnels/你的隧道/config。我们需要安装一个cloudflared的程序，这个页面已经为我们提供好了常见的系统，如Linux MacOS Windows，复制命令直接在我们终端运行即可。</p>
+<p><img src="https://img.ning.moe/ShellBlogImg/1/2024/04/22/66263669cc5c3.webp" alt="CloudFlared-Download.webp"></p>
+<p>然后 下一步 ，简单配置一下。保存即可。返回菜单会发现刚刚创建的 <code>Tunnel</code> 等待 <code>Status</code> 显示<code>HEALTHY</code> 访问你的 配置好的域名应该就可以访问了。</p>
+<p><img src="https://img.ning.moe/ShellBlogImg/1/2024/04/22/6626371255c1f.webp" alt="Cloud-Flare-Tunnel-Config.webp"></p>
+<h2 id="使用-Access-Applications-认证"><a href="#使用-Access-Applications-认证" class="headerlink" title="使用 Access Applications 认证"></a>使用 Access Applications 认证</h2><p>首先你需要确保你有登录方式 <code>Settings</code> –&gt;<code>Authentication</code>–&gt;<code>Login methods</code> ,如果没有你需要自行创建。</p>
+<p>来到<code> Access</code> –&gt;<code> Applications</code> –&gt; <code> Add an application</code> 选择<code>Self-hosted</code>，填写你刚才的域名，然后下一步。</p>
+<p><img src="https://img.ning.moe/ShellBlogImg/1/2024/04/22/66263cfec6386.webp" alt="CF-Access-Applications.webp"></p>
+<p><code>policy name</code> 可以随便填写 记得 <code>Action</code>是 <code>Allow</code>，这里的Session 是多久在进行登录验证，可以调节时间长一点。</p>
+<p><code>Create additional rules</code> 根据你刚才配置的 <code>Authentication</code> 来填写，我这里是填写CF自带的邮箱验证码进行登录的。</p>
+<p><img src="https://img.ning.moe/ShellBlogImg/1/2024/04/22/66263cff40b37.webp" alt="CF-Add an application.webp"></p>
+<p>配置完毕之后，访问你配置的域名就会出现拦截了，例如我<a href="https://hp.ning.moe/" rel="external nofollow noreferrer">配置好的</a>这我设置了自动跳转所以会到我的<code>SSO.ning.moe</code></p>
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p><a href="https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/" rel="external nofollow noreferrer">Cloudflare Tunnel 配置文档</a></p>
+<p><a href="https://developers.cloudflare.com/cloudflare-one/applications/" rel="external nofollow noreferrer">Applications Access</a></p>
+</body></html>]]></content>
+      <categories>
+        <category>网络技术</category>
+      </categories>
+      <tags>
+        <tag>2024</tag>
+        <tag>CloudFlare</tag>
+        <tag>Zero Trust</tag>
       </tags>
   </entry>
   <entry>
@@ -525,234 +659,6 @@
       </tags>
   </entry>
   <entry>
-    <title>使用certd自动化推送EdgeOne和1panel,证书永不过期</title>
-    <url>/posts/Auto-SSL/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>博主以前是全部使用 cloudflare CDN 也都是 cloud flare 帮我维护和管理证书，最近CF抽风严重，又随着国内 阿里 和 腾讯 开放自己的ESA和EO的免费版本，虽然也看到了他们能够自动签发证书，都是单个域名签发而不是泛域，如果你没事点开，博主一些服务的域名用的证书都是清一色 <strong>Google Trust Services</strong> （GTS）证书，博主有一种莫名对GTS的追求，肯定是他兼容性太好了。</p>
-<h1 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h1><ol>
-<li>拥有一台服务器，博主使用的 <a href="https://s.ning.moe/s/TencentCloud" rel="external nofollow noreferrer">腾讯云轻量</a> 强烈推荐一个海外的如果你不是申请GTS的话，也没啥问题。</li>
-<li>一个域名<del>（这个必须要有的吧）</del></li>
-<li>腾讯云的 API ID 和密钥 (博主用的是国内站腾讯账号跳转link放在文章后)</li>
-<li>Docker 环境（如果你有可要直接跳过安装步骤1了）</li>
-</ol>
-<h1 id="开始搭建"><a href="#开始搭建" class="headerlink" title="开始搭建"></a>开始搭建</h1><h2 id="安装1pane"><a href="#安装1pane" class="headerlink" title="安装1pane"></a>安装1pane</h2><p>省心省力的话安装一个 1panel 面板就非常方便,下面是官网安装的命令。</p>
-<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">bash -c <span class="string">"<span class="subst">$(curl -sSL https://resource.fit2cloud.com/1panel/package/v2/quick_start.sh)</span>"</span></span><br></pre></td></tr></tbody></table></figure>
-
-
-
-<blockquote>
-<p>这里推荐使用 <a href="https://s.ning.moe/s/TencentCloud" rel="external nofollow noreferrer">腾讯云轻量服务器</a> , 推荐选择香港地区免备案，</p>
-<p>还可以创建的时候直接选择1panel 、BT 面板，还有更多常用的应用一键开箱即用</p>
-</blockquote>
-<table>
-<thead>
-<tr>
-<th><img src="https://img.ning.moe/ShellBlogImg/1/2025/07/25/68832a9f134f1.webp" alt="腾讯云轻量购买页面.webp"></th>
-<th><img src="https://img.ning.moe/ShellBlogImg/1/2025/07/25/68832ad797a9b.webp" alt="腾讯云重装页面.webp"></th>
-</tr>
-</thead>
-</table>
-<p>tips: 腾讯云咨询也接入了 DeepSeek 的大模型，已经把常见问题归纳整理，常见问题可以直接询问即可，非常方便哒~</p>
-<p><img src="https://img.ning.moe/ShellBlogImg/1/2025/07/25/688334041890a.webp" alt="腾讯云-咨询问题.webp">****</p>
-<h2 id="安装-certd"><a href="#安装-certd" class="headerlink" title="安装 certd"></a>安装 certd</h2><p>复制下方内容</p>
-<figure class="highlight yaml"><table><tbody><tr><td class="code"><pre><span class="line"><span class="attr">version:</span> <span class="string">'3.3'</span> <span class="comment"># 兼容旧版docker-compose</span></span><br><span class="line"><span class="attr">services:</span></span><br><span class="line">  <span class="attr">certd:</span></span><br><span class="line">    <span class="comment"># 镜像                                                  #  ↓↓↓↓↓ ---- 镜像版本号，建议改成固定版本号,例如：certd:1.29.0</span></span><br><span class="line">    <span class="attr">image:</span> <span class="string">registry.cn-shenzhen.aliyuncs.com/handsfree/certd:latest</span></span><br><span class="line">    <span class="comment"># image: ghcr.io/certd/certd:latest                    #   --------- 如果 报镜像not found，可以尝试其他镜像源</span></span><br><span class="line">    <span class="comment"># image: greper/certd:latest</span></span><br><span class="line">    <span class="attr">container_name:</span> <span class="string">certd</span> <span class="comment"># 容器名</span></span><br><span class="line">    <span class="attr">restart:</span> <span class="string">unless-stopped</span> <span class="comment"># 自动重启</span></span><br><span class="line">    <span class="attr">volumes:</span></span><br><span class="line">      <span class="comment">#   ↓↓↓↓↓ ----------- 数据库以及证书存储路径,默认存在宿主机的/data/certd/目录下，【您需要定时备份此目录，以保障数据容灾】</span></span><br><span class="line">      <span class="comment">#                  只要修改冒号前面的，冒号后面的/app/data不要动</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">./data/certd:/app/data</span></span><br><span class="line">    <span class="attr">ports:</span> <span class="comment"># 端口映射</span></span><br><span class="line">      <span class="comment">#  ↓↓↓↓ ---- 如果端口有冲突，可以修改第一个7001为其他不冲突的端口号，第二个7001不要动</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"7001:7001"</span></span><br><span class="line"></span><br><span class="line">    <span class="attr">labels:</span></span><br><span class="line">      <span class="attr">com.centurylinklabs.watchtower.enable:</span> <span class="string">"true"</span></span><br><span class="line"><span class="comment">#    ↓↓↓↓ -------------------------------------------------------------- 启用ipv6网络，还需要把下面networks的注释放开</span></span><br><span class="line"><span class="comment">#    networks:</span></span><br><span class="line"><span class="comment">#      - ip6net</span></span><br><span class="line">    <span class="attr">environment:</span></span><br><span class="line"></span><br><span class="line">      <span class="bullet">-</span> <span class="string">TZ=Asia/Shanghai</span></span><br><span class="line"><span class="comment">#  #↓↓↓↓ ----------------------------- 如果忘记管理员密码，可以设置为true，重启之后，管理员密码将改成123456，然后请及时修改回false</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">certd_system_resetAdminPasswd=false</span></span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
-
-<p><img src="https://img.ning.moe/ShellBlogImg/1/2025/08/01/688c7e569cad7.webp" alt="1panel-containers-compose-certd.webp"></p>
-<p>部署好之后访问，过掉基本的注册信息即可。</p>
-<h2 id="配置certtd"><a href="#配置certtd" class="headerlink" title="配置certtd"></a>配置certtd</h2><p>来到 <code>证书自动化流水线</code> - <code>创建证书流</code> 输入你的域名即可。 例如博主的是 <code>ning.moe</code> 和下属的 <code>*.ning.moe</code> 那么 就这样写 <code>*.ning.moe;ning.moe</code>，如果你要申请Google 还需要配置EAB 您可以访问这个博主和写的博文 ：<a href="https://www.alcy.cc/archives/huo-qu-googlezheng-shu-eab" rel="external nofollow noreferrer">获取Google证书EAB</a> </p>
-<p><img src="https://img.ning.moe/ShellBlogImg/1/2025/08/01/688ca9f423dd9.webp" alt="Certd-config.webp"></p>
-<p>保存完毕我们进入编辑工作流</p>
-<p><img src="https://img.ning.moe/ShellBlogImg/1/2025/08/01/688cb62ea5ab0.webp" alt="Certd-config-2.webp"></p>
-<h3 id="配置1Panel"><a href="#配置1Panel" class="headerlink" title="配置1Panel"></a>配置1Panel</h3><p>1Panel的比较简单一点</p>
-<p><img src="https://img.ning.moe/ShellBlogImg/1/2025/08/29/68b138cca75fa.webp" alt="Certd-config-6.webp"></p>
-<p><img src="https://img.ning.moe/ShellBlogImg/1/2025/08/29/68b138d1049a4.webp" alt="Certd-config-8.webp"></p>
-<h3 id="配置-腾讯云-EO"><a href="#配置-腾讯云-EO" class="headerlink" title="配置 腾讯云 EO"></a>配置 腾讯云 EO</h3><p>EO 配置稍微有点麻烦你需要选择你的 站的ID 以及你所有加速的域名，例如博主的加速以下  <code>test.ning.moe</code>  <code>shell.ning.moe</code> 那么都需要挨个输入进去</p>
-<blockquote>
-<p>国内站 API 凭证： <a href="https://console.cloud.tencent.com/cam/capi" rel="external nofollow noreferrer">https://console.cloud.tencent.com/cam/capi</a></p>
-</blockquote>
-<p><img src="https://img.ning.moe/ShellBlogImg/1/2025/08/05/6891a678d2b5b.webp" alt="Certd-config-4.webp"></p>
-<p><img src="https://img.ning.moe/ShellBlogImg/1/2025/08/05/6891a67f7fb32.webp" alt="Certd-config-5.webp"></p>
-<h2 id="保存发布"><a href="#保存发布" class="headerlink" title="保存发布"></a>保存发布</h2><p>最后不要忘记保存然后手动触发工作流看看有什么问题吗。</p>
-<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>获取Google证书EAB:<a href="https://www.alcy.cc/archives/huo-qu-googlezheng-shu-eab" rel="external nofollow noreferrer">https://www.alcy.cc/archives/huo-qu-googlezheng-shu-eab</a></p>
-</body></html>]]></content>
-      <tags>
-        <tag>教程</tag>
-        <tag>2025</tag>
-        <tag>certd</tag>
-        <tag>1panel</tag>
-        <tag>Docker</tag>
-        <tag>SSL</tag>
-        <tag>GTS</tag>
-        <tag>泛域名</tag>
-        <tag>自动化</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Cachefly自动证书上传</title>
-    <url>/posts/CacheflySSLUpDate/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>自从 <code>Cachefly</code> 推出了<a href="https://www.cachefly.com/pricing/" rel="external nofollow noreferrer">免费套餐</a>， 作为一个白嫖党，第一时间就去体验了一下，注册需要外币卡需要注意一下，所以注册门槛稍微相对较高吧。试了一下速度，很不错，回国速度非常好，北方基本上走的是ntt 和俄罗斯的线路，南方走的是 hk 的CN2 线路，至少分发的图片和静态资源不成问题。</p>
-<p><img src="https://img.ning.moe/ShellBlogImg/1/2023/08/02/64ca088d41e00.webp" alt="Cachefly-ItDog.webp"></p>
-<p>但有个很烦人的问题，它不支持 免费的证书自动签发，需要我自己上传证书，好在他的ssl 证书是自动检测的，也就是说你上传了一个证书是在8月份到期了在7月份又上传了这个域名的证书是11月到期了，会自动在证书过期之前调整成11月的。而且最近学了学go，就用这三脚猫的功夫配合chatGPT 写了一个简单的小玩意。</p>
-<h1 id="自动证书上传程序"><a href="#自动证书上传程序" class="headerlink" title="自动证书上传程序"></a>自动证书上传程序</h1><p>我已经把这个项目开源并且放在了 <a href="https://github.com/biliblihuorong/CacheflySSLUpDate" rel="external nofollow noreferrer">我的GitHub仓库上</a> 。</p>
-<p>其实在仓库的README的文件上已经有写了使用方式，我就直接把README拿过来了。</p>
-<h2 id="使用方式"><a href="#使用方式" class="headerlink" title="使用方式"></a>使用方式</h2><ol>
-<li><p>首先，您需要在 <a href="https://github.com/biliblihuorong/CacheflySSLUpDate/releases" rel="external nofollow noreferrer">https://github.com/biliblihuorong/CacheflySSLUpDate/releases</a> 页面下载适用于您设备的可执行文件。</p>
-</li>
-<li><p>然后，在执行文件所在目录下创建一个名为 <code>config.json</code> 的文件，并按照以下示例填入相应的内容。您也可以直接下载本仓库中的 <code>config.json</code> 文件，填入您的配置信息。</p>
-</li>
-</ol>
-<figure class="highlight json"><table><tbody><tr><td class="code"><pre><span class="line"><span class="punctuation">{</span></span><br><span class="line">  <span class="attr">"token"</span><span class="punctuation">:</span> <span class="string">"您的 Cachefly Token，可在 https://portal.cachefly.com/app/tokens 获取"</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">"certificateFile"</span><span class="punctuation">:</span> <span class="string">"&lt;证书文件路径&gt;"</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">"certificateKeyFile"</span><span class="punctuation">:</span> <span class="string">"&lt;密钥文件路径&gt;"</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">"password"</span><span class="punctuation">:</span> <span class="string">"&lt;您的 Cachefly 密码&gt;"</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">"taskInterval"</span><span class="punctuation">:</span> <span class="number">7</span></span><br><span class="line"><span class="punctuation">}</span></span><br></pre></td></tr></tbody></table></figure>
-
-<ul>
-<li><code>token</code>：您需要前往 <a href="https://portal.cachefly.com/app/tokens" rel="external nofollow noreferrer">https://portal.cachefly.com/app/tokens</a> 获取 Cachefly Token，并将其填写在此处。</li>
-<li><code>certificateFile</code> 和 <code>certificateKeyFile</code>：这两个字段应填入您本地 SSL 证书和密钥的文件路径。如果您使用宝塔面板自动签发证书，则签发地址通常在 <code>/www/server/panel/vhost/ssl/&lt;您的域名&gt;/</code> 下，其中公钥为 <code>fullchain.pem</code>，私钥为 <code>privkey.pem</code>。</li>
-<li><code>password</code>：填入您的 Cachefly 密码，用于上传证书到 Cachefly。</li>
-<li><code>taskInterval</code>：此字段定义了执行任务的间隔天数。例如，设置为 7 表示每隔 7 天执行一次上传任务。</li>
-</ul>
-<p><strong>注意：</strong> 请确保 <code>config.json</code> 文件的格式正确，否则工具将无法正常运行。</p>
-<p>改好之后在项目文件夹下，运行</p>
-<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line"><span class="built_in">nohup</span> &lt;可执行文件&gt;</span><br></pre></td></tr></tbody></table></figure>
-
-<p>然后文件夹下会又一个 nohup.out 的文件，正常来说程序首次启动会运行一次ssl 证书上传。</p>
-</body></html>]]></content>
-      <categories>
-        <category>网络技术</category>
-      </categories>
-      <tags>
-        <tag>2023</tag>
-        <tag>SSL</tag>
-        <tag>go</tag>
-        <tag>Cachefly</tag>
-        <tag>宝塔面板</tag>
-        <tag>网络技术</tag>
-        <tag>CloudFlare</tag>
-        <tag>写bug的小能手</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>使用Cloud Flare Tunnel和 Acces Application安全的暴露在公网</title>
-    <url>/posts/CloudFlare-Tunnel-Application-Access/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h1><p>如果搞 Home Lab 始终绕不开的话题是，我们如何将自己的内网服务暴露到公网上，又如何保证我们的安全。<br>现在可以使用我们赛博菩萨 Cloudflare 提供的 Zero Trust 来保护我们的安全。</p>
-<p>演示的dome ： <a href="https://hp.ning.moe/" rel="external nofollow noreferrer">HomePage</a> 和 <a href="https://misakashell.cloudflareaccess.com/" rel="external nofollow noreferrer">Cloud Flare Zero Trust 主页</a></p>
-<h1 id="正文："><a href="#正文：" class="headerlink" title="正文："></a>正文：</h1><h2 id="使用-Tunnel-暴露服务"><a href="#使用-Tunnel-暴露服务" class="headerlink" title="使用 Tunnel 暴露服务"></a>使用 Tunnel 暴露服务</h2><p>我们需要先登录<a href="https://one.dash.cloudflare.com/" rel="external nofollow noreferrer">CF zero trust的管理平台</a>，添加新的隧道点击：<code>Networks/Tunnels</code> 我们需要添加一个隧道让我们本地和 <code>Cloudflare Zero Trust</code>服务器进行连接。简单的配置完隧道名字</p>
-<p><img src="https://img.ning.moe/ShellBlogImg/1/2024/04/22/6626359570249.webp" alt="Cloud-Flare-Zero-Trust-Dash-Tunnels.webp"></p>
-<p>会自动跳转到tunnel 这个页面，没跳转的 Networks/Tunnels/你的隧道/config。我们需要安装一个cloudflared的程序，这个页面已经为我们提供好了常见的系统，如Linux MacOS Windows，复制命令直接在我们终端运行即可。</p>
-<p><img src="https://img.ning.moe/ShellBlogImg/1/2024/04/22/66263669cc5c3.webp" alt="CloudFlared-Download.webp"></p>
-<p>然后 下一步 ，简单配置一下。保存即可。返回菜单会发现刚刚创建的 <code>Tunnel</code> 等待 <code>Status</code> 显示<code>HEALTHY</code> 访问你的 配置好的域名应该就可以访问了。</p>
-<p><img src="https://img.ning.moe/ShellBlogImg/1/2024/04/22/6626371255c1f.webp" alt="Cloud-Flare-Tunnel-Config.webp"></p>
-<h2 id="使用-Access-Applications-认证"><a href="#使用-Access-Applications-认证" class="headerlink" title="使用 Access Applications 认证"></a>使用 Access Applications 认证</h2><p>首先你需要确保你有登录方式 <code>Settings</code> –&gt;<code>Authentication</code>–&gt;<code>Login methods</code> ,如果没有你需要自行创建。</p>
-<p>来到<code> Access</code> –&gt;<code> Applications</code> –&gt; <code> Add an application</code> 选择<code>Self-hosted</code>，填写你刚才的域名，然后下一步。</p>
-<p><img src="https://img.ning.moe/ShellBlogImg/1/2024/04/22/66263cfec6386.webp" alt="CF-Access-Applications.webp"></p>
-<p><code>policy name</code> 可以随便填写 记得 <code>Action</code>是 <code>Allow</code>，这里的Session 是多久在进行登录验证，可以调节时间长一点。</p>
-<p><code>Create additional rules</code> 根据你刚才配置的 <code>Authentication</code> 来填写，我这里是填写CF自带的邮箱验证码进行登录的。</p>
-<p><img src="https://img.ning.moe/ShellBlogImg/1/2024/04/22/66263cff40b37.webp" alt="CF-Add an application.webp"></p>
-<p>配置完毕之后，访问你配置的域名就会出现拦截了，例如我<a href="https://hp.ning.moe/" rel="external nofollow noreferrer">配置好的</a>这我设置了自动跳转所以会到我的<code>SSO.ning.moe</code></p>
-<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p><a href="https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/" rel="external nofollow noreferrer">Cloudflare Tunnel 配置文档</a></p>
-<p><a href="https://developers.cloudflare.com/cloudflare-one/applications/" rel="external nofollow noreferrer">Applications Access</a></p>
-</body></html>]]></content>
-      <categories>
-        <category>网络技术</category>
-      </categories>
-      <tags>
-        <tag>2024</tag>
-        <tag>CloudFlare</tag>
-        <tag>Zero Trust</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>自建属于自己的递归DNS</title>
-    <url>/posts/Create-Recursive-DNS/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>截至发稿前阿里<code>DNS</code> 也宣布了对公共<code>DNS</code>进行限速了，其实在出这篇文章之前阿里<code>DNS</code>并没有限速，这里只是顺带提一嘴，想说的是，江苏地区使用阿里<code>DNS</code>解析会出现污染情况，先上两张图，来源<code>Adguard Home</code>日志和<code>itdog</code> 测试，<code>Adguard Home</code>使用的还是<code>dot</code>进行连接，也就是说不会在数据传输中被篡改。</p>
-<table>
-<thead>
-<tr>
-<th><img src="https://img.ning.moe/ShellBlogImg/1/2024/07/20/669bc956e1a64.webp" alt="adguard-gome-dns-log.webp" title="adguard-gome-dns-log.webp"></th>
-<th><img src="https://img.ning.moe/ShellBlogImg/1/2024/07/20/669bc92cee346.webp" alt="itdog-dns-log.webp" title="itdog-dns-log.webp"></th>
-</tr>
-</thead>
-</table>
-<p>在看看其他的dns.</p>
-<table>
-<thead>
-<tr>
-<th><img src="https://img.ning.moe/ShellBlogImg/1/2024/07/20/669bdc6578294.webp" alt="dns-119.29.29.29.webp" title="dns-119.29.29.29.webp"></th>
-<th><img src="https://img.ning.moe/ShellBlogImg/1/2024/07/20/669bdc646c07f.webp" alt="dns-114.114.114.webp" title="dns-114.114.114.webp"></th>
-</tr>
-</thead>
-<tbody><tr>
-<td><img src="https://img.ning.moe/ShellBlogImg/1/2024/07/20/669bdc640dd71.webp" alt="dns-1.1.1.1.webp" title="dns-1.1.1.1.webp"></td>
-<td></td>
-</tr>
-</tbody></table>
-<p><code>Adgurad Home</code> 虽然很好用，但也是请求上游的递归<code>DNS</code>服务器，严格来说并不是一个递归<code>DNS</code>，现在上游也已经遭受污染，是时候只能选择自建递归<code>DNS</code>了，从根查起减少被污染的概率，同时使用<code>dnscrypt</code>来进行解析国外域名，<code>mosdns</code> 负责进行代理<code>DNS</code>规则，<code>unbound </code>负责进行递归<code>DNS</code>，感觉是不是已经脑袋抓狂了，需要配置这么多服务，别怕,感谢 <a href="https://github.com/kkkgo/PaoPaoDNS" rel="external nofollow noreferrer">kkkgo大佬打包好的项目PaoPaoDNS</a>。</p>
-<p>这里会有人想，从根开始查起延迟不会很高吗？这里放上我<code>Adguard Home</code>指向我在本地自建的递归<code>dns</code>的日志。<br><img src="https://img.ning.moe/ShellBlogImg/1/2024/07/20/669bcf912251b.webp" alt="adgurad-36ms.webp"></p>
-<h1 id="PaoPaoDns工作流程"><a href="#PaoPaoDns工作流程" class="headerlink" title="PaoPaoDns工作流程"></a>PaoPaoDns工作流程</h1><p>可能这里又说的不对的地方，欢迎在评论指出。</p>
-<p><img src="https://img.ning.moe/ShellBlogImg/1/2024/07/20/669bdd0462122.webp" alt="PaoPaoDNS-workflow.webp"></p>
-<h1 id="搭建前的准备"><a href="#搭建前的准备" class="headerlink" title="搭建前的准备"></a>搭建前的准备</h1><p>需要准备一个<code>x86</code>小主机，能跑<code>docker </code>就好了，内存至少有<code>512mb</code> 可用的内存。</p>
-<p>对于最近docker hub 连接不上的，可以试试 <a href="https://docker.lmirror.top/" rel="external nofollow noreferrer">栗子的docker hub 代理</a>。</p>
-<h1 id="搭建开始"><a href="#搭建开始" class="headerlink" title="搭建开始"></a>搭建开始</h1><p>我这里放上我自己的docker-compose 配置。</p>
-<figure class="highlight yaml"><table><tbody><tr><td class="code"><pre><span class="line"><span class="attr">version:</span> <span class="string">'3'</span></span><br><span class="line"><span class="attr">services:</span></span><br><span class="line">  <span class="attr">paopaodns:</span></span><br><span class="line">    <span class="attr">image:</span> <span class="string">sliamb/paopaodns:latest</span></span><br><span class="line">    <span class="attr">container_name:</span> <span class="string">paopaodns</span></span><br><span class="line">    <span class="attr">volumes:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">&lt;宿主机地址&gt;/mydata:/data</span>    <span class="comment"># 将数据挂载到容器内部的 /data 目录</span></span><br><span class="line">    <span class="attr">environment:</span></span><br><span class="line">      <span class="attr">CNAUTO:</span> <span class="string">"yes"</span>           <span class="comment"># 是否CN规则分流（可选值: yes, no）</span></span><br><span class="line">      <span class="attr">DNSPORT:</span> <span class="string">"53"</span>           <span class="comment"># DNS 服务端口号</span></span><br><span class="line">      <span class="attr">DNS_SERVERNAME:</span> <span class="string">"ShellDns.ning.moe"</span>  <span class="comment"># DNS 服务器名称（不含空格的英文字符串）</span></span><br><span class="line">      <span class="attr">TZ:</span> <span class="string">"Asia/Shanghai"</span>     <span class="comment"># 时区设置</span></span><br><span class="line">      <span class="attr">UPDATE:</span> <span class="string">"weekly"</span>        <span class="comment"># 更新IP、域名库的频率（可选值: no, daily, weekly, monthly）</span></span><br><span class="line">      <span class="attr">IPV6:</span> <span class="string">"raw"</span>              <span class="comment"># 是否启用 IPv6（可选值: no, yes, only6, yes_only6, raw）</span></span><br><span class="line">      <span class="attr">CNFALL:</span> <span class="string">"yes"</span>           <span class="comment"># 是否包含中国大陆列表（可选值: no, yes）</span></span><br><span class="line">      <span class="attr">EXPIRED_FLUSH:</span> <span class="string">"yes"</span>    <span class="comment"># 是否自动清理过期缓存（可选值: no, yes）</span></span><br><span class="line">      <span class="attr">CUSTOM_FORWARD_TTL:</span> <span class="string">"0"</span> <span class="comment"># 自定义转发 TTL</span></span><br><span class="line">      <span class="attr">ADDINFO:</span> <span class="string">"yes"</span>          <span class="comment"># 在DNS查询结果中增加ADDITIONAL SECTION的调试信息，如结果来源、查询延迟、失败原因等，使用dig命令就可以实时追踪域名结果来源</span></span><br><span class="line">      <span class="attr">USE_MARK_DATA:</span> <span class="string">"yes"</span>    <span class="comment"># 全球百万域名库，在判断大陆分流的时候优先使用该数据.</span></span><br><span class="line">    <span class="attr">restart:</span> <span class="string">always</span></span><br><span class="line">    <span class="attr">ports:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"5533:53/tcp"</span>           <span class="comment"># 对外开放 TCP 53 端口</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"5533:53/udp"</span>           <span class="comment"># 对外开放 UDP 53 端口</span></span><br><span class="line">    <span class="attr">deploy:</span></span><br><span class="line">      <span class="attr">resources:</span></span><br><span class="line">        <span class="attr">limits:</span></span><br><span class="line">          <span class="attr">memory:</span> <span class="number">1.</span><span class="string">5G</span>			<span class="comment">#限制容器内存</span></span><br></pre></td></tr></tbody></table></figure>
-
-<p>需要了解其他配置信息看看GitHub的文档：<a href="https://github.com/kkkgo/PaoPaoDNS?tab=readme-ov-file#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E" rel="external nofollow noreferrer">https://github.com/kkkgo/PaoPaoDNS?tab=readme-ov-file#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E</a></p>
-<p>验证你的递归DNS正常运行，执行以下命令：</p>
-<figure class="highlight cmd"><table><tbody><tr><td class="code"><pre><span class="line">nslookup -<span class="built_in">type</span>=TXT whoami.ds.akahelp.<span class="built_in">net</span> &lt;PaoPaoDnsIp&gt;</span><br></pre></td></tr></tbody></table></figure>
-
-<figure class="highlight cmd"><table><tbody><tr><td class="code"><pre><span class="line"><span class="function">Server:  <span class="title">ShellDns.ning.moe</span></span></span><br><span class="line"><span class="function"><span class="title">Address</span>:  10.0.0.3</span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function"><span class="title">Non</span>-<span class="title">authoritative</span> <span class="title">answer</span>:</span></span><br><span class="line"><span class="function"><span class="title">whoami.ds.akahelp.net</span>   <span class="title">text</span> =</span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">        "<span class="title">ns</span>"</span></span><br><span class="line"><span class="function">        "1.1.1.1"  #如果这里是你的出口<span class="title">ip</span> 就代表<span class="title">paopaodns</span> 正常工作了</span></span><br></pre></td></tr></tbody></table></figure>
-
-<blockquote>
-<p>引用文档：</p>
-</blockquote>
-<p>验证你的递归DNS正常运行，可以执行以下命令：</p>
-<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment"># 在容器内置执行 test.sh</span></span><br><span class="line">docker <span class="built_in">exec</span> paopaodns test.sh</span><br><span class="line"><span class="comment"># 如果执行后输出 ALL TEST PASS，则所有组件都工作正常。</span></span><br><span class="line"><span class="comment"># 如果显示 FAIL，可以执行 debug.sh 进一步分析原因。</span></span><br></pre></td></tr></tbody></table></figure>
-
-<p>同时你可以查阅<a href="https://github.com/kkkgo/PaoPaoDNS/discussions/categories/%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97" rel="external nofollow noreferrer">更新日志</a>的最新版本公告时间，检查输出的镜像版本时间是否大于等于当前最新版本。<br>需要注意的是，如果你的网络有“自动分流<code>IP</code>”的功能，请把容器的IP加入不分流的名单，因为权威<code>DNS</code>需要准确的IP去判断，<code>IP</code>分流会影响权威<code>DNS</code>的判断。此外，一些软路由存在劫持<code>DNS</code>请求的情况，解决办法参见<a href="https://github.com/kkkgo/PaoPaoDNS/issues/2#issuecomment-1504708367" rel="external nofollow noreferrer">这个issue</a>。<br><em><strong>[DNS hijack]DNS劫持算是经常问的高频问题了，<a href="https://github.com/kkkgo/PaoPaoDNS/discussions/111#discussioncomment-8872824" rel="external nofollow noreferrer">请参考</a></strong></em></p>
-<h1 id="引用："><a href="#引用：" class="headerlink" title="引用："></a>引用：</h1><p>PaoPaoDns项目&amp;文档：<a href="https://github.com/kkkgo/PaoPaoDNS" rel="external nofollow noreferrer">https://github.com/kkkgo/PaoPaoDNS</a></p>
-<p>栗次元镜像世界-Docker加速源：<a href="https://www.lmirror.top/docker.html" rel="external nofollow noreferrer">https://www.lmirror.top/docker.html</a></p>
-</body></html>]]></content>
-      <categories>
-        <category>网络技术</category>
-      </categories>
-      <tags>
-        <tag>2024</tag>
-        <tag>DNS</tag>
-        <tag>Adguard Home</tag>
-        <tag>Root Servers</tag>
-        <tag>网络安全</tag>
-        <tag>unbound</tag>
-        <tag>dnscrypt</tag>
-        <tag>mosdns</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【记】第一次收发信</title>
-    <url>/posts/First-sending-and-receiving-mail/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>关于纸质信件，在本次亲历收发过程之前，我的记忆始终蒙着一层雾霭。作为Z世代的一员，即便频繁使用电子邮件，却总觉得这种数字信笺与传统书信都带着某种时代滤镜。朋友意外收到三封来自英国电信商<code>giffgaff</code>的平信，犹如推开了一扇通往古典通信艺术的暗门。我们相约以国内平信互寄，恰逢几位三月寿星好友生辰将近，索性决定批量寄送这份手写的温度。</p>
-<h1 id="寄信"><a href="#寄信" class="headerlink" title="寄信"></a>寄信</h1><p>邮局之旅远比想象中简单，倒是寻找大学收发室成了隐藏关卡（这个伏笔将在收信时引发连锁反应）。即便存在收发室，在这个即时通讯时代，其功能大概也仅剩被动收件了。业余无线电 X 中国邮政 战略合作伙伴，可惜我尚未取得业余无线电操作证（火腿族入门考试究竟何时重启啊！）。现代邮政服务确实便捷许多，不再强求专用邮封，理论上任何容器都能承载心意——<a href="https://www.bilibili.com/video/av113100816777685/" rel="external nofollow noreferrer">B站甚至有UP主用高铁清洁袋改造成信封</a>，堪称行为艺术。</p>
-<p>原计划将信件投入街边邮筒，但两封挂号信让我不得不走进邮局。当13封信件摊在柜台时，连自己都惊讶于这份执着。最惊艳的是邮戳加盖仪式：工作人员手持铁锤敲击邮戳的刹那，时光仿佛倒流三十年。在电子印章普及的今天，这种保留原始机械美感的操作，俨然是活着的邮政博物馆。</p>
-<p>原计划将信件投入街边邮筒，可是有两封信件需要寄挂号，那么顺便直接拿过去吧，一共13封信件，不知道为什么写着写着就这么多了。顺手还集了一个邮戳，最惊艳的是邮戳加盖仪式：工作人员手持铁锤敲击邮戳的刹那，时光仿佛倒流三十年。在电子印章普及的今天，这种保留原始机械美感的操作，俨然是活着的邮政博物馆。</p>
-<table>
-<thead>
-<tr>
-<th><img src="https://img.ning.moe/ShellBlogImg/1/2025/03/01/67c2c3e5958c7.webp" alt="邮局信封.webp"></th>
-<th><img src="https://img.ning.moe/ShellBlogImg/1/2025/03/01/67c2c3fd2ba52.webp" alt="业务办理.webp"></th>
-</tr>
-</thead>
-</table>
-<h1 id="寻信"><a href="#寻信" class="headerlink" title="寻信"></a>寻信</h1><p>还记博主说过并不知道大学的收发室在哪里，Baka 博主甚至都开始怀疑学校还有没有收发室，很急啊 急急急 ，那就开始电话询问吧，但是真丢信了中国邮政是不负责的，应该不会丢吧？！</p>
-<p>这里引出一个中国邮政的业务负责的板块，寄信的属于 营业厅不参与投递的业务的，投递业务有单独的投递部，那么就是说这个锅还是需要找投递部问问了，打了中国邮政电话，把地址给他给我一个投递部电话。</p>
-<p>投递部的电话基本上异常难打，终于得知了平信他给我放在那里了，这才知道学校还是有一个收发室，实际过去是藏在一个小角落里面。</p>
-<h1 id="收信"><a href="#收信" class="headerlink" title="收信"></a>收信</h1><p>兜兜转转终于拿到信了</p>
-<p><img src="https://img.ning.moe/ShellBlogImg/1/2025/03/01/67c2c86522448.webp" alt="收信.webp"></p>
-</body></html>]]></content>
-      <categories>
-        <category>生活随想</category>
-      </categories>
-      <tags>
-        <tag>mail</tag>
-        <tag>平信</tag>
-        <tag>挂号信</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>你可能需要知道的docker 的端口问题。</title>
     <url>/posts/DockerSecurity/</url>
     <content><![CDATA[<html><head></head><body><h1 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h1><p>docker 这个东西呢，对于我来说又爱又恨吧，爱的事情是可以很快速的进行部署项目，解决一些复杂和繁琐的问题，这也是docker 设计的初衷。恨得呢，本身我对于docker 来说是是一个小白用户，我只会 docker run xxxx 来完成我在github 找到的有趣应用，但是出了问题的时候，我需要去使用搜索引擎查阅的知识。</p>
@@ -835,6 +741,166 @@
       <tags>
         <tag>Ikuai</tag>
         <tag>J4125</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【记】第一次收发信</title>
+    <url>/posts/First-sending-and-receiving-mail/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>关于纸质信件，在本次亲历收发过程之前，我的记忆始终蒙着一层雾霭。作为Z世代的一员，即便频繁使用电子邮件，却总觉得这种数字信笺与传统书信都带着某种时代滤镜。朋友意外收到三封来自英国电信商<code>giffgaff</code>的平信，犹如推开了一扇通往古典通信艺术的暗门。我们相约以国内平信互寄，恰逢几位三月寿星好友生辰将近，索性决定批量寄送这份手写的温度。</p>
+<h1 id="寄信"><a href="#寄信" class="headerlink" title="寄信"></a>寄信</h1><p>邮局之旅远比想象中简单，倒是寻找大学收发室成了隐藏关卡（这个伏笔将在收信时引发连锁反应）。即便存在收发室，在这个即时通讯时代，其功能大概也仅剩被动收件了。业余无线电 X 中国邮政 战略合作伙伴，可惜我尚未取得业余无线电操作证（火腿族入门考试究竟何时重启啊！）。现代邮政服务确实便捷许多，不再强求专用邮封，理论上任何容器都能承载心意——<a href="https://www.bilibili.com/video/av113100816777685/" rel="external nofollow noreferrer">B站甚至有UP主用高铁清洁袋改造成信封</a>，堪称行为艺术。</p>
+<p>原计划将信件投入街边邮筒，但两封挂号信让我不得不走进邮局。当13封信件摊在柜台时，连自己都惊讶于这份执着。最惊艳的是邮戳加盖仪式：工作人员手持铁锤敲击邮戳的刹那，时光仿佛倒流三十年。在电子印章普及的今天，这种保留原始机械美感的操作，俨然是活着的邮政博物馆。</p>
+<p>原计划将信件投入街边邮筒，可是有两封信件需要寄挂号，那么顺便直接拿过去吧，一共13封信件，不知道为什么写着写着就这么多了。顺手还集了一个邮戳，最惊艳的是邮戳加盖仪式：工作人员手持铁锤敲击邮戳的刹那，时光仿佛倒流三十年。在电子印章普及的今天，这种保留原始机械美感的操作，俨然是活着的邮政博物馆。</p>
+<table>
+<thead>
+<tr>
+<th><img src="https://img.ning.moe/ShellBlogImg/1/2025/03/01/67c2c3e5958c7.webp" alt="邮局信封.webp"></th>
+<th><img src="https://img.ning.moe/ShellBlogImg/1/2025/03/01/67c2c3fd2ba52.webp" alt="业务办理.webp"></th>
+</tr>
+</thead>
+</table>
+<h1 id="寻信"><a href="#寻信" class="headerlink" title="寻信"></a>寻信</h1><p>还记博主说过并不知道大学的收发室在哪里，Baka 博主甚至都开始怀疑学校还有没有收发室，很急啊 急急急 ，那就开始电话询问吧，但是真丢信了中国邮政是不负责的，应该不会丢吧？！</p>
+<p>这里引出一个中国邮政的业务负责的板块，寄信的属于 营业厅不参与投递的业务的，投递业务有单独的投递部，那么就是说这个锅还是需要找投递部问问了，打了中国邮政电话，把地址给他给我一个投递部电话。</p>
+<p>投递部的电话基本上异常难打，终于得知了平信他给我放在那里了，这才知道学校还是有一个收发室，实际过去是藏在一个小角落里面。</p>
+<h1 id="收信"><a href="#收信" class="headerlink" title="收信"></a>收信</h1><p>兜兜转转终于拿到信了</p>
+<p><img src="https://img.ning.moe/ShellBlogImg/1/2025/03/01/67c2c86522448.webp" alt="收信.webp"></p>
+</body></html>]]></content>
+      <categories>
+        <category>生活随想</category>
+      </categories>
+      <tags>
+        <tag>mail</tag>
+        <tag>平信</tag>
+        <tag>挂号信</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>自建属于自己的递归DNS</title>
+    <url>/posts/Create-Recursive-DNS/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>截至发稿前阿里<code>DNS</code> 也宣布了对公共<code>DNS</code>进行限速了，其实在出这篇文章之前阿里<code>DNS</code>并没有限速，这里只是顺带提一嘴，想说的是，江苏地区使用阿里<code>DNS</code>解析会出现污染情况，先上两张图，来源<code>Adguard Home</code>日志和<code>itdog</code> 测试，<code>Adguard Home</code>使用的还是<code>dot</code>进行连接，也就是说不会在数据传输中被篡改。</p>
+<table>
+<thead>
+<tr>
+<th><img src="https://img.ning.moe/ShellBlogImg/1/2024/07/20/669bc956e1a64.webp" alt="adguard-gome-dns-log.webp" title="adguard-gome-dns-log.webp"></th>
+<th><img src="https://img.ning.moe/ShellBlogImg/1/2024/07/20/669bc92cee346.webp" alt="itdog-dns-log.webp" title="itdog-dns-log.webp"></th>
+</tr>
+</thead>
+</table>
+<p>在看看其他的dns.</p>
+<table>
+<thead>
+<tr>
+<th><img src="https://img.ning.moe/ShellBlogImg/1/2024/07/20/669bdc6578294.webp" alt="dns-119.29.29.29.webp" title="dns-119.29.29.29.webp"></th>
+<th><img src="https://img.ning.moe/ShellBlogImg/1/2024/07/20/669bdc646c07f.webp" alt="dns-114.114.114.webp" title="dns-114.114.114.webp"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://img.ning.moe/ShellBlogImg/1/2024/07/20/669bdc640dd71.webp" alt="dns-1.1.1.1.webp" title="dns-1.1.1.1.webp"></td>
+<td></td>
+</tr>
+</tbody></table>
+<p><code>Adgurad Home</code> 虽然很好用，但也是请求上游的递归<code>DNS</code>服务器，严格来说并不是一个递归<code>DNS</code>，现在上游也已经遭受污染，是时候只能选择自建递归<code>DNS</code>了，从根查起减少被污染的概率，同时使用<code>dnscrypt</code>来进行解析国外域名，<code>mosdns</code> 负责进行代理<code>DNS</code>规则，<code>unbound </code>负责进行递归<code>DNS</code>，感觉是不是已经脑袋抓狂了，需要配置这么多服务，别怕,感谢 <a href="https://github.com/kkkgo/PaoPaoDNS" rel="external nofollow noreferrer">kkkgo大佬打包好的项目PaoPaoDNS</a>。</p>
+<p>这里会有人想，从根开始查起延迟不会很高吗？这里放上我<code>Adguard Home</code>指向我在本地自建的递归<code>dns</code>的日志。<br><img src="https://img.ning.moe/ShellBlogImg/1/2024/07/20/669bcf912251b.webp" alt="adgurad-36ms.webp"></p>
+<h1 id="PaoPaoDns工作流程"><a href="#PaoPaoDns工作流程" class="headerlink" title="PaoPaoDns工作流程"></a>PaoPaoDns工作流程</h1><p>可能这里又说的不对的地方，欢迎在评论指出。</p>
+<p><img src="https://img.ning.moe/ShellBlogImg/1/2024/07/20/669bdd0462122.webp" alt="PaoPaoDNS-workflow.webp"></p>
+<h1 id="搭建前的准备"><a href="#搭建前的准备" class="headerlink" title="搭建前的准备"></a>搭建前的准备</h1><p>需要准备一个<code>x86</code>小主机，能跑<code>docker </code>就好了，内存至少有<code>512mb</code> 可用的内存。</p>
+<p>对于最近docker hub 连接不上的，可以试试 <a href="https://docker.lmirror.top/" rel="external nofollow noreferrer">栗子的docker hub 代理</a>。</p>
+<h1 id="搭建开始"><a href="#搭建开始" class="headerlink" title="搭建开始"></a>搭建开始</h1><p>我这里放上我自己的docker-compose 配置。</p>
+<figure class="highlight yaml"><table><tbody><tr><td class="code"><pre><span class="line"><span class="attr">version:</span> <span class="string">'3'</span></span><br><span class="line"><span class="attr">services:</span></span><br><span class="line">  <span class="attr">paopaodns:</span></span><br><span class="line">    <span class="attr">image:</span> <span class="string">sliamb/paopaodns:latest</span></span><br><span class="line">    <span class="attr">container_name:</span> <span class="string">paopaodns</span></span><br><span class="line">    <span class="attr">volumes:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">&lt;宿主机地址&gt;/mydata:/data</span>    <span class="comment"># 将数据挂载到容器内部的 /data 目录</span></span><br><span class="line">    <span class="attr">environment:</span></span><br><span class="line">      <span class="attr">CNAUTO:</span> <span class="string">"yes"</span>           <span class="comment"># 是否CN规则分流（可选值: yes, no）</span></span><br><span class="line">      <span class="attr">DNSPORT:</span> <span class="string">"53"</span>           <span class="comment"># DNS 服务端口号</span></span><br><span class="line">      <span class="attr">DNS_SERVERNAME:</span> <span class="string">"ShellDns.ning.moe"</span>  <span class="comment"># DNS 服务器名称（不含空格的英文字符串）</span></span><br><span class="line">      <span class="attr">TZ:</span> <span class="string">"Asia/Shanghai"</span>     <span class="comment"># 时区设置</span></span><br><span class="line">      <span class="attr">UPDATE:</span> <span class="string">"weekly"</span>        <span class="comment"># 更新IP、域名库的频率（可选值: no, daily, weekly, monthly）</span></span><br><span class="line">      <span class="attr">IPV6:</span> <span class="string">"raw"</span>              <span class="comment"># 是否启用 IPv6（可选值: no, yes, only6, yes_only6, raw）</span></span><br><span class="line">      <span class="attr">CNFALL:</span> <span class="string">"yes"</span>           <span class="comment"># 是否包含中国大陆列表（可选值: no, yes）</span></span><br><span class="line">      <span class="attr">EXPIRED_FLUSH:</span> <span class="string">"yes"</span>    <span class="comment"># 是否自动清理过期缓存（可选值: no, yes）</span></span><br><span class="line">      <span class="attr">CUSTOM_FORWARD_TTL:</span> <span class="string">"0"</span> <span class="comment"># 自定义转发 TTL</span></span><br><span class="line">      <span class="attr">ADDINFO:</span> <span class="string">"yes"</span>          <span class="comment"># 在DNS查询结果中增加ADDITIONAL SECTION的调试信息，如结果来源、查询延迟、失败原因等，使用dig命令就可以实时追踪域名结果来源</span></span><br><span class="line">      <span class="attr">USE_MARK_DATA:</span> <span class="string">"yes"</span>    <span class="comment"># 全球百万域名库，在判断大陆分流的时候优先使用该数据.</span></span><br><span class="line">    <span class="attr">restart:</span> <span class="string">always</span></span><br><span class="line">    <span class="attr">ports:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"5533:53/tcp"</span>           <span class="comment"># 对外开放 TCP 53 端口</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">"5533:53/udp"</span>           <span class="comment"># 对外开放 UDP 53 端口</span></span><br><span class="line">    <span class="attr">deploy:</span></span><br><span class="line">      <span class="attr">resources:</span></span><br><span class="line">        <span class="attr">limits:</span></span><br><span class="line">          <span class="attr">memory:</span> <span class="number">1.</span><span class="string">5G</span>			<span class="comment">#限制容器内存</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>需要了解其他配置信息看看GitHub的文档：<a href="https://github.com/kkkgo/PaoPaoDNS?tab=readme-ov-file#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E" rel="external nofollow noreferrer">https://github.com/kkkgo/PaoPaoDNS?tab=readme-ov-file#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E</a></p>
+<p>验证你的递归DNS正常运行，执行以下命令：</p>
+<figure class="highlight cmd"><table><tbody><tr><td class="code"><pre><span class="line">nslookup -<span class="built_in">type</span>=TXT whoami.ds.akahelp.<span class="built_in">net</span> &lt;PaoPaoDnsIp&gt;</span><br></pre></td></tr></tbody></table></figure>
+
+<figure class="highlight cmd"><table><tbody><tr><td class="code"><pre><span class="line"><span class="function">Server:  <span class="title">ShellDns.ning.moe</span></span></span><br><span class="line"><span class="function"><span class="title">Address</span>:  10.0.0.3</span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function"><span class="title">Non</span>-<span class="title">authoritative</span> <span class="title">answer</span>:</span></span><br><span class="line"><span class="function"><span class="title">whoami.ds.akahelp.net</span>   <span class="title">text</span> =</span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">        "<span class="title">ns</span>"</span></span><br><span class="line"><span class="function">        "1.1.1.1"  #如果这里是你的出口<span class="title">ip</span> 就代表<span class="title">paopaodns</span> 正常工作了</span></span><br></pre></td></tr></tbody></table></figure>
+
+<blockquote>
+<p>引用文档：</p>
+</blockquote>
+<p>验证你的递归DNS正常运行，可以执行以下命令：</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment"># 在容器内置执行 test.sh</span></span><br><span class="line">docker <span class="built_in">exec</span> paopaodns test.sh</span><br><span class="line"><span class="comment"># 如果执行后输出 ALL TEST PASS，则所有组件都工作正常。</span></span><br><span class="line"><span class="comment"># 如果显示 FAIL，可以执行 debug.sh 进一步分析原因。</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>同时你可以查阅<a href="https://github.com/kkkgo/PaoPaoDNS/discussions/categories/%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97" rel="external nofollow noreferrer">更新日志</a>的最新版本公告时间，检查输出的镜像版本时间是否大于等于当前最新版本。<br>需要注意的是，如果你的网络有“自动分流<code>IP</code>”的功能，请把容器的IP加入不分流的名单，因为权威<code>DNS</code>需要准确的IP去判断，<code>IP</code>分流会影响权威<code>DNS</code>的判断。此外，一些软路由存在劫持<code>DNS</code>请求的情况，解决办法参见<a href="https://github.com/kkkgo/PaoPaoDNS/issues/2#issuecomment-1504708367" rel="external nofollow noreferrer">这个issue</a>。<br><em><strong>[DNS hijack]DNS劫持算是经常问的高频问题了，<a href="https://github.com/kkkgo/PaoPaoDNS/discussions/111#discussioncomment-8872824" rel="external nofollow noreferrer">请参考</a></strong></em></p>
+<h1 id="引用："><a href="#引用：" class="headerlink" title="引用："></a>引用：</h1><p>PaoPaoDns项目&amp;文档：<a href="https://github.com/kkkgo/PaoPaoDNS" rel="external nofollow noreferrer">https://github.com/kkkgo/PaoPaoDNS</a></p>
+<p>栗次元镜像世界-Docker加速源：<a href="https://www.lmirror.top/docker.html" rel="external nofollow noreferrer">https://www.lmirror.top/docker.html</a></p>
+</body></html>]]></content>
+      <categories>
+        <category>网络技术</category>
+      </categories>
+      <tags>
+        <tag>2024</tag>
+        <tag>DNS</tag>
+        <tag>Adguard Home</tag>
+        <tag>Root Servers</tag>
+        <tag>网络安全</tag>
+        <tag>unbound</tag>
+        <tag>dnscrypt</tag>
+        <tag>mosdns</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>爱快IPv6防火墙配置</title>
+    <url>/posts/Ikuai-firewall-IPv6/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>爱快尽然默认没有开启<code>IPv6</code>对内网设备的阻断，我发现的时候十分震惊，而且已经在公网上暴露有一天以上了，最糟糕的事情，内网设备的密码全部是弱密码，吓得我先立刻断掉<code>IPv6</code>接入，仔细排查了一下内网设备还好没有人扫到并且进行爆破。</p>
+<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><p>请确保你的<code>ikuai </code>系统是最新版本并且登录<code>ikuai Web</code>后台，<code>安全设置</code> –&gt;<code>ACL规则</code></p>
+<h2 id="阻断所有IPv6链接"><a href="#阻断所有IPv6链接" class="headerlink" title="阻断所有IPv6链接"></a>阻断所有IPv6链接</h2><blockquote>
+<p>此操作不会阻断响应<code>IPv6</code>的流量</p>
+</blockquote>
+<p>由于 <code>ikuai </code>在 3.7.11 版本还不支持放行或阻断<code> ICMP</code> 协议，如果您想外网设备能ping通内网的话，需要需要创建两个配置，一个是阻断<code>TCP</code>还有一个阻断<code>UDP</code>，不想<code>ping</code>通的话，只需要创建一个配置选择任意协议即可。</p>
+<p><img src="https://img.ning.moe/ShellBlogImg/1/2024/03/06/65e834d3a0bdd.webp" alt="ipv6防护墙介绍.webp"></p>
+<p><img src="https://img.ning.moe/ShellBlogImg/1/2024/03/06/65e834d40ca02.webp" alt="ipv6阻断.webp"></p>
+<p>进接口一定是<code>wan</code>口由于笔者只有一个<code>wan</code>口，如果您有多个话请务必全部勾选，出接口是<code>lan</code>同样如果您有多个<code>lan</code>接口请全部勾上，这样我们内网设备就不会暴露外网了。</p>
+<h2 id="打开指定IPv6的连接"><a href="#打开指定IPv6的连接" class="headerlink" title="打开指定IPv6的连接"></a>打开指定IPv6的连接</h2><blockquote>
+<p>再说指定放行<code>IPv6</code>地址，如果您是静态<code>IPv6</code>，那你自己放行那个ip 即可，但是身为家庭宽带的话都是动态<code>IPv6</code>地址根本不可能知道ip会变成什么样子，还是说每次变化ip 的地址重新改吗？这里需要了解一下ipv6 的后缀生成是受MAC 地址影响的，通过EUI-64 编码进行处理，详情访问: <a href="https://ccie.lol/knowledge-base/ipv6-use-eui-64-convert-link-local-address/" rel="external nofollow noreferrer">【转】通过EUI-64自动生成IPv6地址和IPv6链路本地地址（Link-Local Address）</a></p>
+</blockquote>
+<p><strong>对于windows 获取ipv6地址使用 EUI-64 编码得到的理论值和实际值可能不一样</strong></p>
+<p>可以使用 <a href="https://eui64-calc.princelle.org/" rel="external nofollow noreferrer">EUI-64 计算器</a></p>
+<p>例如 <code>bc:34:11:c6:8a:19 </code>通过计算可以得到 <code>BE34:11FF:FEC6:8A19</code> 理论情况的<code>ipv6</code>，据我测试后四位基本上都是一样的，前面受到<code>IPv6</code>前缀影响。</p>
+<img src="https://img.ning.moe/ShellBlogImg/1/2024/03/06/65e846c30a412.webp" alt="指定IPv6放行.webp" style="zoom:67%;">
+
+<p>在已经匹配的内容中<code>::8A19</code>改成你自己的后缀四位，<code>ikuai </code>的防火墙逻辑是先放行后阻断，所以不需要关系防火墙配置的顺序。</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">::8a1f/::ffff</span><br></pre></td></tr></tbody></table></figure>
+
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p><a href="https://ccie.lol/knowledge-base/ipv6-use-eui-64-convert-link-local-address/" rel="external nofollow noreferrer">【转】通过EUI-64自动生成IPv6地址和IPv6链路本地地址（Link-Local Address）</a></p>
+<p> <a href="https://eui64-calc.princelle.org/" rel="external nofollow noreferrer">EUI-64 计算器</a></p>
+</body></html>]]></content>
+      <tags>
+        <tag>2024</tag>
+        <tag>防火墙</tag>
+        <tag>firewall</tag>
+        <tag>Ikuai</tag>
+        <tag>IPv6</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>御坂美琴生日快乐</title>
+    <url>/posts/MisakaMikoto/</url>
+    <content><![CDATA[<html><head></head><body><blockquote>
+<p><strong>你指间闪烁的电光，是我此生不变的信仰唯有这超电磁炮将永世长存！！！</strong></p>
+</blockquote>
+<h1 id="首先-祝姐姐大人生日快乐，又一年生日到啦吗，真快呀。"><a href="#首先-祝姐姐大人生日快乐，又一年生日到啦吗，真快呀。" class="headerlink" title="首先,祝姐姐大人生日快乐，又一年生日到啦吗，真快呀。"></a>首先,祝姐姐大人生日快乐，又一年生日到啦吗，真快呀。</h1><img src="https://img.ning.moe/i/1/2023/05/01/644f7e2e4fa62.webp" alt="d6e89b5.webp" style="zoom:50%;">
+
+<img src="https://img.ning.moe/i/1/2023/05/01/644f7e24d2d9a.webp" alt="7606d4f59bf.webp" style="zoom:50%;">
+
+
+
+
+<h1 id="感想"><a href="#感想" class="headerlink" title="感想"></a>感想</h1><h2 id="对我个人："><a href="#对我个人：" class="headerlink" title="对我个人："></a>对我个人：</h2><p>我已经是一个入宅很晚很晚的人了，我的入宅番是 <code>约战</code> 我并不是完完全全的 某科学的 世界的粉丝，我也并没有看过魔法禁书目录，我仅对于 超电磁炮 御坂美琴的热爱。</p>
+<blockquote>
+<p>摘抄一部分萌娘百科的话。</p>
+<p>天真活泼、爱唠叨的14岁元气少女。有着一头及肩的茶色发丝、同样是茶色的瞳孔、绝不服输的眼神、不需要化妆也很俏丽的面孔。因为外形秀丽加上成绩优秀，因此成为校内学生心目中的偶像，甚至会被学妹们尊称为“御坂大人”。平素都是穿着常盘台的制服，而裙底的安全裤则是美琴活泼的象征。性格好胜、正义感强，有着男孩子般的爽朗性格，但是尤其是在面对可爱的东西时，就显得缺乏耐心、非常不坦率。当喜欢的东西（呱太）或中意的东西被别人评价说“太儿童化”的时候，都会义正言辞地的否决，然后愉♂悦地享受。紧张时会蹦出“喵”的口癖，并且在担心他人慌乱时会自称“美琴姐姐”</p>
+</blockquote>
+<h2 id="对于B站："><a href="#对于B站：" class="headerlink" title="对于B站："></a>对于B站：</h2><p>虽然我入宅很晚，我接触B站也是比较晚了，但最近几年B站环境都是人尽皆知的事情了，对于 B站往年 不管是对 美琴的庆生 还是对其他知名的动漫人物，都是在发的，对于去年B站没有给美琴庆生以及其他人物，我表示非常是生气也表示非常的无奈，但对于今年B站的改变，对于庆生很早就开始宣传了，但并不是 哔哩哔哩弹幕网 这个账号进行宣传，而是 哔哩哔哩番剧组和哔哩哔哩会员购 进行宣传的。剩下的我就不想多说了，B站快要嗝屁的时候还想在收割一波自己以前最老以及起家的人，怎么说呢。从以前B站属于二次元的天地，到最后 二次元滚出B站。</p>
+<p>可能以前 别人说我是二刺螈 我表示可能会有点开心，但对于近几年 <strong>滚，老子不是二次元</strong></p>
+<h2 id="结束语"><a href="#结束语" class="headerlink" title="结束语"></a>结束语</h2><p>时间会磨损一切，那么我又能坚持多久呢？</p>
+<h1 id="引用："><a href="#引用：" class="headerlink" title="引用："></a>引用：</h1><p> 萌娘百科：<a href="https://zh.moegirl.org.cn/%E5%BE%A1%E5%9D%82%E7%BE%8E%E7%90%B4" rel="external nofollow noreferrer">御坂美琴人物简介</a></p>
+</body></html>]]></content>
+      <categories>
+        <category>生活随想</category>
+      </categories>
+      <tags>
+        <tag>Misaka</tag>
+        <tag>御坂美琴</tag>
+        <tag>某科学的</tag>
       </tags>
   </entry>
   <entry>
@@ -1056,44 +1122,10 @@
       </categories>
       <tags>
         <tag>Linux</tag>
-        <tag>网络安全</tag>
         <tag>IPtables</tag>
         <tag>防火墙</tag>
         <tag>firewall</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>爱快IPv6防火墙配置</title>
-    <url>/posts/Ikuai-firewall-IPv6/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>爱快尽然默认没有开启<code>IPv6</code>对内网设备的阻断，我发现的时候十分震惊，而且已经在公网上暴露有一天以上了，最糟糕的事情，内网设备的密码全部是弱密码，吓得我先立刻断掉<code>IPv6</code>接入，仔细排查了一下内网设备还好没有人扫到并且进行爆破。</p>
-<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><p>请确保你的<code>ikuai </code>系统是最新版本并且登录<code>ikuai Web</code>后台，<code>安全设置</code> –&gt;<code>ACL规则</code></p>
-<h2 id="阻断所有IPv6链接"><a href="#阻断所有IPv6链接" class="headerlink" title="阻断所有IPv6链接"></a>阻断所有IPv6链接</h2><blockquote>
-<p>此操作不会阻断响应<code>IPv6</code>的流量</p>
-</blockquote>
-<p>由于 <code>ikuai </code>在 3.7.11 版本还不支持放行或阻断<code> ICMP</code> 协议，如果您想外网设备能ping通内网的话，需要需要创建两个配置，一个是阻断<code>TCP</code>还有一个阻断<code>UDP</code>，不想<code>ping</code>通的话，只需要创建一个配置选择任意协议即可。</p>
-<p><img src="https://img.ning.moe/ShellBlogImg/1/2024/03/06/65e834d3a0bdd.webp" alt="ipv6防护墙介绍.webp"></p>
-<p><img src="https://img.ning.moe/ShellBlogImg/1/2024/03/06/65e834d40ca02.webp" alt="ipv6阻断.webp"></p>
-<p>进接口一定是<code>wan</code>口由于笔者只有一个<code>wan</code>口，如果您有多个话请务必全部勾选，出接口是<code>lan</code>同样如果您有多个<code>lan</code>接口请全部勾上，这样我们内网设备就不会暴露外网了。</p>
-<h2 id="打开指定IPv6的连接"><a href="#打开指定IPv6的连接" class="headerlink" title="打开指定IPv6的连接"></a>打开指定IPv6的连接</h2><blockquote>
-<p>再说指定放行<code>IPv6</code>地址，如果您是静态<code>IPv6</code>，那你自己放行那个ip 即可，但是身为家庭宽带的话都是动态<code>IPv6</code>地址根本不可能知道ip会变成什么样子，还是说每次变化ip 的地址重新改吗？这里需要了解一下ipv6 的后缀生成是受MAC 地址影响的，通过EUI-64 编码进行处理，详情访问: <a href="https://ccie.lol/knowledge-base/ipv6-use-eui-64-convert-link-local-address/" rel="external nofollow noreferrer">【转】通过EUI-64自动生成IPv6地址和IPv6链路本地地址（Link-Local Address）</a></p>
-</blockquote>
-<p><strong>对于windows 获取ipv6地址使用 EUI-64 编码得到的理论值和实际值可能不一样</strong></p>
-<p>可以使用 <a href="https://eui64-calc.princelle.org/" rel="external nofollow noreferrer">EUI-64 计算器</a></p>
-<p>例如 <code>bc:34:11:c6:8a:19 </code>通过计算可以得到 <code>BE34:11FF:FEC6:8A19</code> 理论情况的<code>ipv6</code>，据我测试后四位基本上都是一样的，前面受到<code>IPv6</code>前缀影响。</p>
-<img src="https://img.ning.moe/ShellBlogImg/1/2024/03/06/65e846c30a412.webp" alt="指定IPv6放行.webp" style="zoom:67%;">
-
-<p>在已经匹配的内容中<code>::8A19</code>改成你自己的后缀四位，<code>ikuai </code>的防火墙逻辑是先放行后阻断，所以不需要关系防火墙配置的顺序。</p>
-<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">::8a1f/::ffff</span><br></pre></td></tr></tbody></table></figure>
-
-<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p><a href="https://ccie.lol/knowledge-base/ipv6-use-eui-64-convert-link-local-address/" rel="external nofollow noreferrer">【转】通过EUI-64自动生成IPv6地址和IPv6链路本地地址（Link-Local Address）</a></p>
-<p> <a href="https://eui64-calc.princelle.org/" rel="external nofollow noreferrer">EUI-64 计算器</a></p>
-</body></html>]]></content>
-      <tags>
-        <tag>2024</tag>
-        <tag>防火墙</tag>
-        <tag>firewall</tag>
-        <tag>Ikuai</tag>
-        <tag>IPv6</tag>
+        <tag>网络安全</tag>
       </tags>
   </entry>
   <entry>
@@ -1202,38 +1234,6 @@
       </tags>
   </entry>
   <entry>
-    <title>御坂美琴生日快乐</title>
-    <url>/posts/MisakaMikoto/</url>
-    <content><![CDATA[<html><head></head><body><blockquote>
-<p><strong>你指间闪烁的电光，是我此生不变的信仰唯有这超电磁炮将永世长存！！！</strong></p>
-</blockquote>
-<h1 id="首先-祝姐姐大人生日快乐，又一年生日到啦吗，真快呀。"><a href="#首先-祝姐姐大人生日快乐，又一年生日到啦吗，真快呀。" class="headerlink" title="首先,祝姐姐大人生日快乐，又一年生日到啦吗，真快呀。"></a>首先,祝姐姐大人生日快乐，又一年生日到啦吗，真快呀。</h1><img src="https://img.ning.moe/i/1/2023/05/01/644f7e2e4fa62.webp" alt="d6e89b5.webp" style="zoom:50%;">
-
-<img src="https://img.ning.moe/i/1/2023/05/01/644f7e24d2d9a.webp" alt="7606d4f59bf.webp" style="zoom:50%;">
-
-
-
-
-<h1 id="感想"><a href="#感想" class="headerlink" title="感想"></a>感想</h1><h2 id="对我个人："><a href="#对我个人：" class="headerlink" title="对我个人："></a>对我个人：</h2><p>我已经是一个入宅很晚很晚的人了，我的入宅番是 <code>约战</code> 我并不是完完全全的 某科学的 世界的粉丝，我也并没有看过魔法禁书目录，我仅对于 超电磁炮 御坂美琴的热爱。</p>
-<blockquote>
-<p>摘抄一部分萌娘百科的话。</p>
-<p>天真活泼、爱唠叨的14岁元气少女。有着一头及肩的茶色发丝、同样是茶色的瞳孔、绝不服输的眼神、不需要化妆也很俏丽的面孔。因为外形秀丽加上成绩优秀，因此成为校内学生心目中的偶像，甚至会被学妹们尊称为“御坂大人”。平素都是穿着常盘台的制服，而裙底的安全裤则是美琴活泼的象征。性格好胜、正义感强，有着男孩子般的爽朗性格，但是尤其是在面对可爱的东西时，就显得缺乏耐心、非常不坦率。当喜欢的东西（呱太）或中意的东西被别人评价说“太儿童化”的时候，都会义正言辞地的否决，然后愉♂悦地享受。紧张时会蹦出“喵”的口癖，并且在担心他人慌乱时会自称“美琴姐姐”</p>
-</blockquote>
-<h2 id="对于B站："><a href="#对于B站：" class="headerlink" title="对于B站："></a>对于B站：</h2><p>虽然我入宅很晚，我接触B站也是比较晚了，但最近几年B站环境都是人尽皆知的事情了，对于 B站往年 不管是对 美琴的庆生 还是对其他知名的动漫人物，都是在发的，对于去年B站没有给美琴庆生以及其他人物，我表示非常是生气也表示非常的无奈，但对于今年B站的改变，对于庆生很早就开始宣传了，但并不是 哔哩哔哩弹幕网 这个账号进行宣传，而是 哔哩哔哩番剧组和哔哩哔哩会员购 进行宣传的。剩下的我就不想多说了，B站快要嗝屁的时候还想在收割一波自己以前最老以及起家的人，怎么说呢。从以前B站属于二次元的天地，到最后 二次元滚出B站。</p>
-<p>可能以前 别人说我是二刺螈 我表示可能会有点开心，但对于近几年 <strong>滚，老子不是二次元</strong></p>
-<h2 id="结束语"><a href="#结束语" class="headerlink" title="结束语"></a>结束语</h2><p>时间会磨损一切，那么我又能坚持多久呢？</p>
-<h1 id="引用："><a href="#引用：" class="headerlink" title="引用："></a>引用：</h1><p> 萌娘百科：<a href="https://zh.moegirl.org.cn/%E5%BE%A1%E5%9D%82%E7%BE%8E%E7%90%B4" rel="external nofollow noreferrer">御坂美琴人物简介</a></p>
-</body></html>]]></content>
-      <categories>
-        <category>生活随想</category>
-      </categories>
-      <tags>
-        <tag>Misaka</tag>
-        <tag>御坂美琴</tag>
-        <tag>某科学的</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>改造宿舍网络</title>
     <url>/posts/Modification-of-dormitory-network/</url>
     <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>到了新学校了，最担心的还是宿舍的校园网，嗯非常的坑（校园网络是被一个平台垄断了，然后出口是三大运营商，需要办理对应的卡解锁网络出口），在用完我一个月的流量之后打算还是办理一张卡吧，其实在没办理看的时候我就收集了一下信息，学校使用的是<a href="https://www.ruijie.com.cn/cp/yyxt-yygl/samx/" rel="external nofollow noreferrer">锐捷认证的</a>，emmm 又是锐捷漏洞真多的，我尝试试了一下已知漏洞，好吧果然没用，再加上博主并不是安全的专业只会点皮毛而已。</p>
@@ -1283,6 +1283,38 @@
       <tags>
         <tag>2024</tag>
         <tag>OpenWrt</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>应对恶意评论：从 Twikoo 到 Artalk 的防护之路</title>
+    <url>/posts/Management-Commentary/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>起初，博客使用的评论系统是 <code>twikoo</code>，它小巧实用，功能虽然简洁，但已包含主要的评论功能、邮箱通知以及反垃圾评论机制，评论数据以 <code>json</code> 文件存储。这对我这样的小站来说，本已绰绰有余。然而，近一个月以来，某人莫名开始恶意评论，甚至模仿其他人的留言反复发送（起初我还以为是 <code>twikoo</code> 的问题）。本以为只是几天的恶作剧，没想到持续了整整一个月。在此，我真心佩服这位恶意评论者，竟然愿意在他的人生中耗费如此多的时间和精力，专注于折腾我这个小破站。</p>
+<table>
+<thead>
+<tr>
+<th><img src="https://img.ning.moe/ShellBlogImg/1/2024/11/15/67370eb853aa7.webp" alt="恶意评论-1.webp"></th>
+<th><img src="https://img.ning.moe/ShellBlogImg/1/2024/11/15/67370eb85a43b.webp" alt="恶意评论-2.webp"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://img.ning.moe/ShellBlogImg/1/2024/11/15/67370eb877da9.webp" alt="恶意评论-3.webp"></td>
+<td><img src="https://img.ning.moe/ShellBlogImg/1/2024/11/15/67370eb8d753a.webp" alt="恶意评论-4.webp"></td>
+</tr>
+</tbody></table>
+<h1 id="整治"><a href="#整治" class="headerlink" title="整治"></a>整治</h1><p>我首先将评论系统从 <code>twikoo</code> 更换为 <code>artalk</code>，因为 <code>twikoo</code> 使用 <code>POST</code> 方法获取评论，而我的初衷是阻止恶意评论的同时尽量不影响正常用户。更换为 <code>artalk</code> 后，评论获取改为使用 <code>GET</code> 方法，同时我还设置了 <code>artalk</code> 的首次评论需经过审核。  </p>
+<p>接着，我在 <code>Cloudflare</code> 中配置了 <code>WAF</code>（Web 应用防火墙），并添加了以下规则：  </p>
+<figure class="highlight js"><table><tbody><tr><td class="code"><pre><span class="line">(http.<span class="property">host</span> eq <span class="string">"artalk.ning.moe"</span> and http.<span class="property">request</span>.<span class="property">uri</span>.<span class="property">path</span> eq <span class="string">"/api/v2/comments"</span> and ip.<span class="property">geoip</span>.<span class="property">asnum</span> eq <span class="number">13335</span> and http.<span class="property">request</span>.<span class="property">method</span> eq <span class="string">"POST"</span>)</span><br></pre></td></tr></tbody></table></figure>
+
+<p>判断主机名，判断请求路径、判断 ASN 段 判断POST请求，如果全中，就无法进行评论。后续我会收录一些常见的免费代理的 <code>ASN</code> 段</p>
+<h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1><p>如果上述防护措施无意中影响了正常用户的评论体验，我深表歉意。作为一个小站，最初只是希望能有更多人来这里留言互动，因此并未做过多的防护设置。没想到遇到恶意刷评论的情况，不得不采取一定的措施来保护站点。感谢每一位支持和理解的小伙伴，你们的留言是这个小站继续前行的动力！</p>
+</body></html>]]></content>
+      <categories>
+        <category>网络技术</category>
+      </categories>
+      <tags>
+        <tag>2024</tag>
+        <tag>twikoo</tag>
+        <tag>Artalk</tag>
       </tags>
   </entry>
   <entry>
@@ -1339,35 +1371,44 @@
       </tags>
   </entry>
   <entry>
-    <title>应对恶意评论：从 Twikoo 到 Artalk 的防护之路</title>
-    <url>/posts/Management-Commentary/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>起初，博客使用的评论系统是 <code>twikoo</code>，它小巧实用，功能虽然简洁，但已包含主要的评论功能、邮箱通知以及反垃圾评论机制，评论数据以 <code>json</code> 文件存储。这对我这样的小站来说，本已绰绰有余。然而，近一个月以来，某人莫名开始恶意评论，甚至模仿其他人的留言反复发送（起初我还以为是 <code>twikoo</code> 的问题）。本以为只是几天的恶作剧，没想到持续了整整一个月。在此，我真心佩服这位恶意评论者，竟然愿意在他的人生中耗费如此多的时间和精力，专注于折腾我这个小破站。</p>
-<table>
-<thead>
-<tr>
-<th><img src="https://img.ning.moe/ShellBlogImg/1/2024/11/15/67370eb853aa7.webp" alt="恶意评论-1.webp"></th>
-<th><img src="https://img.ning.moe/ShellBlogImg/1/2024/11/15/67370eb85a43b.webp" alt="恶意评论-2.webp"></th>
-</tr>
-</thead>
-<tbody><tr>
-<td><img src="https://img.ning.moe/ShellBlogImg/1/2024/11/15/67370eb877da9.webp" alt="恶意评论-3.webp"></td>
-<td><img src="https://img.ning.moe/ShellBlogImg/1/2024/11/15/67370eb8d753a.webp" alt="恶意评论-4.webp"></td>
-</tr>
-</tbody></table>
-<h1 id="整治"><a href="#整治" class="headerlink" title="整治"></a>整治</h1><p>我首先将评论系统从 <code>twikoo</code> 更换为 <code>artalk</code>，因为 <code>twikoo</code> 使用 <code>POST</code> 方法获取评论，而我的初衷是阻止恶意评论的同时尽量不影响正常用户。更换为 <code>artalk</code> 后，评论获取改为使用 <code>GET</code> 方法，同时我还设置了 <code>artalk</code> 的首次评论需经过审核。  </p>
-<p>接着，我在 <code>Cloudflare</code> 中配置了 <code>WAF</code>（Web 应用防火墙），并添加了以下规则：  </p>
-<figure class="highlight js"><table><tbody><tr><td class="code"><pre><span class="line">(http.<span class="property">host</span> eq <span class="string">"artalk.ning.moe"</span> and http.<span class="property">request</span>.<span class="property">uri</span>.<span class="property">path</span> eq <span class="string">"/api/v2/comments"</span> and ip.<span class="property">geoip</span>.<span class="property">asnum</span> eq <span class="number">13335</span> and http.<span class="property">request</span>.<span class="property">method</span> eq <span class="string">"POST"</span>)</span><br></pre></td></tr></tbody></table></figure>
+    <title>解决Umami v2.3升级问题，Something went wrong.</title>
+    <url>/posts/Umami-fix/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>是的没错，发生这样的事情，应该很多<code>Umami</code>只要是v2.2版本应该都遇到了。 </p>
+<p><img src="https://img.ning.moe/ShellBlogImg/1/2023/07/19/64b7cb785693f.webp" alt="Umami v2.2 Something went wrong."></p>
+<p>我浏览了部分 <code>issues</code> 只能升级到v2.3版本了。</p>
+<h1 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h1><p>我先说一下我自己的环境，我自己的使用：</p>
+<ol>
+<li>属于编译安装，没有放在docker</li>
+<li>Mysql 5.7</li>
+<li>nodjs 18.16.0</li>
+<li>npm 9.5.1</li>
+</ol>
+<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><p>解决办法有两种，第一种你可以直接尝试升级到<code>MySQL</code> 8.0，如果你想继续和我一样，小鸡的配置不行还想用5.7，请继续往下看。</p>
+<p>如果你是和我一样都是<code>Mysql</code> 5.7版本，你需要查看这篇 <a href="https://github.com/umami-software/umami/issues/2118" rel="external nofollow noreferrer">issues</a> 或者继续往下看。</p>
+<ol>
+<li>你需要从GitHub 拉去一份最新的<a href="https://github.com/umami-software/umami/releases" rel="external nofollow noreferrer">Umami</a> 的代码，你需要找到<code>db/mysql/migrations/02_report_schema_session_data</code>文件夹下的<code>migration.sql</code>这份sql文件，将下面的代码替换和保存。</li>
+</ol>
+<figure class="highlight sql"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> `event_data` CHANGE `event_data_type` `data_type` <span class="type">int</span> unsigned <span class="keyword">NOT</span> <span class="keyword">NULL</span>;</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> `event_data` CHANGE `event_date_value` `date_value` <span class="type">timestamp</span> <span class="keyword">NULL</span>;</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> `event_data` CHANGE `event_id` `event_data_id` <span class="type">varchar</span>(<span class="number">36</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span>;</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> `event_data` CHANGE `event_numeric_value` `number_value` <span class="type">decimal</span>(<span class="number">19</span>, <span class="number">4</span>) <span class="keyword">NULL</span>;</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> `event_data` CHANGE `event_string_value` `string_value`<span class="type">varchar</span>(<span class="number">500</span>) <span class="keyword">NULL</span>;</span><br></pre></td></tr></tbody></table></figure>
 
-<p>判断主机名，判断请求路径、判断 ASN 段 判断POST请求，如果全中，就无法进行评论。后续我会收录一些常见的免费代理的 <code>ASN</code> 段</p>
-<h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1><p>如果上述防护措施无意中影响了正常用户的评论体验，我深表歉意。作为一个小站，最初只是希望能有更多人来这里留言互动，因此并未做过多的防护设置。没想到遇到恶意刷评论的情况，不得不采取一定的措施来保护站点。感谢每一位支持和理解的小伙伴，你们的留言是这个小站继续前行的动力！</p>
+<p>终于我遇到的问题，你需要备份原来的 <code>Umami</code> 数据库，然后创建一个新的数据库，讲数据源配置在<code>.env</code>里面，不然通过初始化数据库。</p>
+<ol start="2">
+<li><p>然后你需要在终端中运行这段命令<code>npx prisma migrate resolve --rolled-back "02_report_schema_session_data"</code></p>
+</li>
+<li><p>重新部署，请看 <a href="https://umami.is/docs/install" rel="external nofollow noreferrer">https://umami.is/docs/install</a></p>
+</li>
+</ol>
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>Umami 的GitHub issues ：<a href="https://github.com/umami-software/umami/issues/2118" rel="external nofollow noreferrer">https://github.com/umami-software/umami/issues/2118</a></p>
 </body></html>]]></content>
       <categories>
         <category>网络技术</category>
       </categories>
       <tags>
-        <tag>2024</tag>
-        <tag>twikoo</tag>
-        <tag>Artalk</tag>
+        <tag>2023</tag>
+        <tag>Umami</tag>
+        <tag>PV</tag>
+        <tag>网站统计，UV</tag>
+        <tag>Ip</tag>
+        <tag>MySql</tag>
       </tags>
   </entry>
   <entry>
@@ -1418,44 +1459,38 @@
       </tags>
   </entry>
   <entry>
-    <title>解决Umami v2.3升级问题，Something went wrong.</title>
-    <url>/posts/Umami-fix/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>是的没错，发生这样的事情，应该很多<code>Umami</code>只要是v2.2版本应该都遇到了。 </p>
-<p><img src="https://img.ning.moe/ShellBlogImg/1/2023/07/19/64b7cb785693f.webp" alt="Umami v2.2 Something went wrong."></p>
-<p>我浏览了部分 <code>issues</code> 只能升级到v2.3版本了。</p>
-<h1 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h1><p>我先说一下我自己的环境，我自己的使用：</p>
-<ol>
-<li>属于编译安装，没有放在docker</li>
-<li>Mysql 5.7</li>
-<li>nodjs 18.16.0</li>
-<li>npm 9.5.1</li>
-</ol>
-<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><p>解决办法有两种，第一种你可以直接尝试升级到<code>MySQL</code> 8.0，如果你想继续和我一样，小鸡的配置不行还想用5.7，请继续往下看。</p>
-<p>如果你是和我一样都是<code>Mysql</code> 5.7版本，你需要查看这篇 <a href="https://github.com/umami-software/umami/issues/2118" rel="external nofollow noreferrer">issues</a> 或者继续往下看。</p>
-<ol>
-<li>你需要从GitHub 拉去一份最新的<a href="https://github.com/umami-software/umami/releases" rel="external nofollow noreferrer">Umami</a> 的代码，你需要找到<code>db/mysql/migrations/02_report_schema_session_data</code>文件夹下的<code>migration.sql</code>这份sql文件，将下面的代码替换和保存。</li>
-</ol>
-<figure class="highlight sql"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> `event_data` CHANGE `event_data_type` `data_type` <span class="type">int</span> unsigned <span class="keyword">NOT</span> <span class="keyword">NULL</span>;</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> `event_data` CHANGE `event_date_value` `date_value` <span class="type">timestamp</span> <span class="keyword">NULL</span>;</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> `event_data` CHANGE `event_id` `event_data_id` <span class="type">varchar</span>(<span class="number">36</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span>;</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> `event_data` CHANGE `event_numeric_value` `number_value` <span class="type">decimal</span>(<span class="number">19</span>, <span class="number">4</span>) <span class="keyword">NULL</span>;</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> `event_data` CHANGE `event_string_value` `string_value`<span class="type">varchar</span>(<span class="number">500</span>) <span class="keyword">NULL</span>;</span><br></pre></td></tr></tbody></table></figure>
-
-<p>终于我遇到的问题，你需要备份原来的 <code>Umami</code> 数据库，然后创建一个新的数据库，讲数据源配置在<code>.env</code>里面，不然通过初始化数据库。</p>
-<ol start="2">
-<li><p>然后你需要在终端中运行这段命令<code>npx prisma migrate resolve --rolled-back "02_report_schema_session_data"</code></p>
-</li>
-<li><p>重新部署，请看 <a href="https://umami.is/docs/install" rel="external nofollow noreferrer">https://umami.is/docs/install</a></p>
-</li>
-</ol>
-<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>Umami 的GitHub issues ：<a href="https://github.com/umami-software/umami/issues/2118" rel="external nofollow noreferrer">https://github.com/umami-software/umami/issues/2118</a></p>
+    <title>Memos 对接 Authentik</title>
+    <url>/posts/authentik-OAuth2-memos/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>关于我的更多 <a href="/tags/Authentik/"><code>Authentik </code>相关文章</a>  ，详细安装（中文版本）<code>Authentik </code>请访问 <a href="https://www.bilibili.com/video/av1902852247/" rel="external nofollow noreferrer"><strong>ecwuuu</strong>发布的B站视频</a>关于正向代理： <a href="https://roy.wang/authentik-open-source-sso/#%E6%AD%A3%E5%90%91%E4%BB%A3%E7%90%86" rel="external nofollow noreferrer">roywang的文章</a></p>
+<blockquote>
+<p> 配置中：这是什么啊，这么麻烦还没过去啊。 配置后：真香好方便。</p>
+</blockquote>
+<p>使用本文前请自行在 <code>Authentik </code>配置好 Memos使用的<code>应用程序</code>和<code>提供程序</code></p>
+<h1 id="Authentik-配置"><a href="#Authentik-配置" class="headerlink" title="Authentik 配置"></a>Authentik 配置</h1><p>默认你已经创建好了，一个给Memos使用的<code>应用程序</code>和<code>提供程序</code>,我们需要更改<code>提供程序</code>(给Memos 的)我们点击编辑</p>
+<p><img src="https://img.ning.moe/ShellBlogImg/1/2024/04/09/66155d6445bbc.webp" alt="Authentik 配置 Memos-1.webp"></p>
+<blockquote>
+<p>选择客户端可以使用哪些作用域。客户端仍然需要指定访问数据的范围。</p>
+<p>按住 <code>ctrl/command</code> 键可选择多个项目。</p>
+</blockquote>
+<p>我们选中<code>authentik default OAuth Mapping: OpenID email</code> 和 <code>authentik default OAuth Mapping: OpenID openid</code>将<code>Subject 模式</code>改成基于用户名，然后更新。</p>
+<p><img src="https://img.ning.moe/ShellBlogImg/1/2024/04/09/6615597f90737.webp" alt="Authentik 配置 Memos.webp"></p>
+<h1 id="Memos配置"><a href="#Memos配置" class="headerlink" title="Memos配置"></a>Memos配置</h1><blockquote>
+<p>在截至发文时 <code>Memos</code> 的版本为<code>v0.20.1</code>版本，<code>Memos</code>通过用户名为主键，其实只需要给<code>username</code>字段即可。</p>
+</blockquote>
+<p>根据上文调整的，现在sub 是我们的用户名字段，按照文章截屏填写其他的自行替换。这样你的的<code>Memos</code>就可以使用<code>Authentik</code>进行登录了。</p>
+<p><img src="https://img.ning.moe/ShellBlogImg/1/2024/04/09/66155e6ca6dc7.webp" alt="Memos-Oauth2-config.webp"></p>
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p><code>Memos</code>的文档：<a href="https://www.usememos.com/docs/advanced-settings/keycloak" rel="external nofollow noreferrer">https://www.usememos.com/docs/advanced-settings/keycloak</a></p>
 </body></html>]]></content>
       <categories>
         <category>网络技术</category>
       </categories>
       <tags>
-        <tag>2023</tag>
-        <tag>Umami</tag>
-        <tag>PV</tag>
-        <tag>网站统计，UV</tag>
-        <tag>Ip</tag>
-        <tag>MySql</tag>
+        <tag>2024</tag>
+        <tag>Authentik</tag>
+        <tag>SSO</tag>
+        <tag>OIDC</tag>
+        <tag>OAuth2</tag>
+        <tag>Memos</tag>
       </tags>
   </entry>
   <entry>
@@ -1506,58 +1541,6 @@
 </body></html>]]></content>
       <tags>
         <tag>2024</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【记】成为一支火腿（Ham）的故事</title>
-    <url>/posts/amateur-radio/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
-<p>我的呼号是 <code>BA4SAK</code></p>
-</blockquote>
-<p>早在 2019 年，我就萌生了成为一名火腿（HAM）的想法。那时候在折腾树莓派 Zero W2，偶然刷到一个视频，讲的是怎么用这个<a href="https://www.bilibili.com/video/av926697015/" rel="external nofollow noreferrer">小板子做 SDR</a>（软件定义无线电）。从那一刻起，我仿佛打开了无线电世界的大门。</p>
-<p>博主来自江苏，但感觉江苏本地的业余无线电相关信息并不容易搜到，似乎整个群体都比较小众。曾看过一支视频里面说<a href="https://www.bilibili.com/video/av55534516/" rel="external nofollow noreferrer">中国的业余无线电的人数只占总人口的1%。</a></p>
-<p>网上查到最多的信息主要集中在四川、河南、河北、辽宁、北京这些地方，其他省份的信息也有，但相对零散。以下是我从报名、考试、拿证到设备选购与执照申请的完整记录——从报名到拿证差不多只花了 7 天（仅供参考，各地可能不同）。</p>
-<h1 id="考试"><a href="#考试" class="headerlink" title="考试"></a>考试</h1><p>其实考试并不难，最大的问题是<strong>考试时间和名额</strong>。因为各省的考试是地方无线电协会组织的，有的地方每月一次，有的地方可能一年才一次，人数也很有限。</p>
-<p>我原本想报 3 月 16 日在上海的考试，结果报名一开放就被抢光了，连蹲点都没抢到。后来选择了安徽六安市 3 月 22 日的考试，最终顺利通过。</p>
-<h2 id="如何备考？"><a href="#如何备考？" class="headerlink" title="如何备考？"></a>如何备考？</h2><p>我使用了两个非常实用的工具：</p>
-<ul>
-<li><strong>微信小程序</strong>：<code>HAM 模拟考试</code></li>
-<li><strong>手机 App</strong>：<code>CRAC 智普</code></li>
-</ul>
-<p>建议先刷一遍题库，重点看错题，然后多做几次模拟考试。如果每次模拟都能稳定合格，正式考试就基本没问题。个人经验来说，三天时间就足够备考了，极限一点一个晚上搞定也不是不可能。</p>
-<p>考试当天是周六，成绩周一就出了，操作证书编号在周三（3 月 26 日）拿到，效率非常高。有了证书编号，就可以申请执照啦！（当然你还得准备一台设备）</p>
-<h1 id="设备选择"><a href="#设备选择" class="headerlink" title="设备选择"></a>设备选择</h1><p>我选择的是 <strong>森海克斯 8800Pro</strong>。虽然它不如泉盛 UV-K6 那么广为人知，但在圈子里也算是一款中低端的明星产品。</p>
-<p>这款设备是一个老 HAM 推荐给我的，性价比很高。对于刚入坑的朋友来说非常合适，操作简单，性能也不错。</p>
-<h1 id="呼号申请（业余无线电执照）"><a href="#呼号申请（业余无线电执照）" class="headerlink" title="呼号申请（业余无线电执照）"></a>呼号申请（业余无线电执照）</h1><p>申请执照的流程因省而异，但整体上差别不大。以江苏为例：</p>
-<ol>
-<li><p>进入 <strong>江苏政务服务平台</strong></p>
-</li>
-<li><p>搜索 <code>业余无线电台（站）设置、使用许可（个人）</code></p>
-</li>
-<li><p>按照页面提示提交以下资料：</p>
-<ul>
-<li>身份证正反面照片</li>
-<li>设备 SN 码</li>
-<li>验机报告</li>
-<li>申请表（一般网站会提供模板）</li>
-</ul>
-</li>
-</ol>
-<p>提交后大约 7 个工作日左右就能下证，非常高效。</p>
-<h1 id="中继查询"><a href="#中继查询" class="headerlink" title="中继查询"></a>中继查询</h1><p>我使用的是微信小程序 <strong>“业余无线电工具集”</strong>，可以查询你所在城市的中继频率、参数等信息。</p>
-<p>不过要注意，网上的中继信息可能不够及时和准确，建议还是加入本地 HAM 群，直接请教群友，获取一手资料。</p>
-<h1 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h1><p>目前我已经玩了三天无线电了，真的是越玩越上头。后续我准备深入研究 SDR（软件定义无线电）相关内容，尤其是软件方面的玩法。只是硬件设备真的有点贵（笑）。</p>
-<p>如果你能看到这里，那我期待在空中与你相见！</p>
-<p>这里是 <code>BA4SAK</code> —— Bravo Alpha Four Sugar Alpha Kilo，<br>期待与你空中相见，73！</p>
-</body></html>]]></content>
-      <categories>
-        <category>业余无线电</category>
-      </categories>
-      <tags>
-        <tag>业余无线电</tag>
-        <tag>HAM</tag>
-        <tag>考证经历</tag>
-        <tag>无线电设备</tag>
       </tags>
   </entry>
   <entry>
@@ -1613,38 +1596,125 @@
       </tags>
   </entry>
   <entry>
-    <title>Memos 对接 Authentik</title>
-    <url>/posts/authentik-OAuth2-memos/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>关于我的更多 <a href="/tags/Authentik/"><code>Authentik </code>相关文章</a>  ，详细安装（中文版本）<code>Authentik </code>请访问 <a href="https://www.bilibili.com/video/av1902852247/" rel="external nofollow noreferrer"><strong>ecwuuu</strong>发布的B站视频</a>关于正向代理： <a href="https://roy.wang/authentik-open-source-sso/#%E6%AD%A3%E5%90%91%E4%BB%A3%E7%90%86" rel="external nofollow noreferrer">roywang的文章</a></p>
-<blockquote>
-<p> 配置中：这是什么啊，这么麻烦还没过去啊。 配置后：真香好方便。</p>
-</blockquote>
-<p>使用本文前请自行在 <code>Authentik </code>配置好 Memos使用的<code>应用程序</code>和<code>提供程序</code></p>
-<h1 id="Authentik-配置"><a href="#Authentik-配置" class="headerlink" title="Authentik 配置"></a>Authentik 配置</h1><p>默认你已经创建好了，一个给Memos使用的<code>应用程序</code>和<code>提供程序</code>,我们需要更改<code>提供程序</code>(给Memos 的)我们点击编辑</p>
-<p><img src="https://img.ning.moe/ShellBlogImg/1/2024/04/09/66155d6445bbc.webp" alt="Authentik 配置 Memos-1.webp"></p>
-<blockquote>
-<p>选择客户端可以使用哪些作用域。客户端仍然需要指定访问数据的范围。</p>
-<p>按住 <code>ctrl/command</code> 键可选择多个项目。</p>
-</blockquote>
-<p>我们选中<code>authentik default OAuth Mapping: OpenID email</code> 和 <code>authentik default OAuth Mapping: OpenID openid</code>将<code>Subject 模式</code>改成基于用户名，然后更新。</p>
-<p><img src="https://img.ning.moe/ShellBlogImg/1/2024/04/09/6615597f90737.webp" alt="Authentik 配置 Memos.webp"></p>
-<h1 id="Memos配置"><a href="#Memos配置" class="headerlink" title="Memos配置"></a>Memos配置</h1><blockquote>
-<p>在截至发文时 <code>Memos</code> 的版本为<code>v0.20.1</code>版本，<code>Memos</code>通过用户名为主键，其实只需要给<code>username</code>字段即可。</p>
-</blockquote>
-<p>根据上文调整的，现在sub 是我们的用户名字段，按照文章截屏填写其他的自行替换。这样你的的<code>Memos</code>就可以使用<code>Authentik</code>进行登录了。</p>
-<p><img src="https://img.ning.moe/ShellBlogImg/1/2024/04/09/66155e6ca6dc7.webp" alt="Memos-Oauth2-config.webp"></p>
-<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p><code>Memos</code>的文档：<a href="https://www.usememos.com/docs/advanced-settings/keycloak" rel="external nofollow noreferrer">https://www.usememos.com/docs/advanced-settings/keycloak</a></p>
+    <title>clash 使用</title>
+    <url>/posts/clash/</url>
+    <content><![CDATA[<html><head></head><body><p><strong><font color="red">请根据当地网络法律使用,本文章仅供学习使用,不负任何责任!</font></strong><br><strong><font color="red">请根据当地网络法律使用,本文章仅供学习使用,不负任何责任!</font></strong><br><strong><font color="red">请根据当地网络法律使用,本文章仅供学习使用,不负任何责任!</font></strong></p>
+<h1 id="clash-for-windows"><a href="#clash-for-windows" class="headerlink" title="clash for windows :"></a>clash for windows :</h1><p>此项目地址:<a href="https://github.com/Fndroid/clash_for_windows_pkg/releases" rel="external nofollow noreferrer">https://github.com/Fndroid/clash_for_windows_pkg/releases</a></p>
+<p>安装运行是这样的页面:<img src="https://cdn.jsdelivr.net/gh/biliblihuorong/Resources/Image/image-20210514120949169.png" alt="image-20210514120949169"></p>
+<h2 id="导入配置文件"><a href="#导入配置文件" class="headerlink" title="导入配置文件"></a>导入配置文件</h2><p>然后我们到<code>Proflies</code>.</p>
+<p>支持url和本地配置文件直接拖入的两种方式.</p>
+<p>URL导入:<img src="https://cdn.jsdelivr.net/gh/biliblihuorong/Resources/Image/image-20210514122121043.png" alt="image-20210514122121043"></p>
+<p>文件导入:<img src="https://docs.cfw.lbyczf.com/assets/img/quickstart3.b68e5259.gif" alt="img"></p>
+<p>记得回到<code>General</code>把<code>System Proxy</code>和<code>Start with windows</code>打开即可.</p>
+<h1 id="Clash-for-Android"><a href="#Clash-for-Android" class="headerlink" title="Clash for Android :"></a>Clash for Android :</h1><p>项目地址: <a href="https://github.com/Kr328/ClashForAndroid/releases" rel="external nofollow noreferrer">https://github.com/Kr328/ClashForAndroid/releases</a></p>
+<h2 id="导入配置文件-1"><a href="#导入配置文件-1" class="headerlink" title="导入配置文件:"></a>导入配置文件:</h2><p>导入和Windows基本一样,只不过<code>Android</code>app语言是中文了.</p>
+<p><img src="https://cdn.jsdelivr.net/gh/biliblihuorong/Resources/Image/clashAndroid1.png" alt="clashAndroid1"></p>
 </body></html>]]></content>
       <categories>
         <category>网络技术</category>
       </categories>
       <tags>
-        <tag>2024</tag>
-        <tag>Authentik</tag>
-        <tag>SSO</tag>
-        <tag>OIDC</tag>
-        <tag>OAuth2</tag>
-        <tag>Memos</tag>
+        <tag>clash</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【记】成为一支火腿（Ham）的故事</title>
+    <url>/posts/amateur-radio/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
+<p>我的呼号是 <code>BA4SAK</code></p>
+</blockquote>
+<p>早在 2019 年，我就萌生了成为一名火腿（HAM）的想法。那时候在折腾树莓派 Zero W2，偶然刷到一个视频，讲的是怎么用这个<a href="https://www.bilibili.com/video/av926697015/" rel="external nofollow noreferrer">小板子做 SDR</a>（软件定义无线电）。从那一刻起，我仿佛打开了无线电世界的大门。</p>
+<p>博主来自江苏，但感觉江苏本地的业余无线电相关信息并不容易搜到，似乎整个群体都比较小众。曾看过一支视频里面说<a href="https://www.bilibili.com/video/av55534516/" rel="external nofollow noreferrer">中国的业余无线电的人数只占总人口的1%。</a></p>
+<p>网上查到最多的信息主要集中在四川、河南、河北、辽宁、北京这些地方，其他省份的信息也有，但相对零散。以下是我从报名、考试、拿证到设备选购与执照申请的完整记录——从报名到拿证差不多只花了 7 天（仅供参考，各地可能不同）。</p>
+<h1 id="考试"><a href="#考试" class="headerlink" title="考试"></a>考试</h1><p>其实考试并不难，最大的问题是<strong>考试时间和名额</strong>。因为各省的考试是地方无线电协会组织的，有的地方每月一次，有的地方可能一年才一次，人数也很有限。</p>
+<p>我原本想报 3 月 16 日在上海的考试，结果报名一开放就被抢光了，连蹲点都没抢到。后来选择了安徽六安市 3 月 22 日的考试，最终顺利通过。</p>
+<h2 id="如何备考？"><a href="#如何备考？" class="headerlink" title="如何备考？"></a>如何备考？</h2><p>我使用了两个非常实用的工具：</p>
+<ul>
+<li><strong>微信小程序</strong>：<code>HAM 模拟考试</code></li>
+<li><strong>手机 App</strong>：<code>CRAC 智普</code></li>
+</ul>
+<p>建议先刷一遍题库，重点看错题，然后多做几次模拟考试。如果每次模拟都能稳定合格，正式考试就基本没问题。个人经验来说，三天时间就足够备考了，极限一点一个晚上搞定也不是不可能。</p>
+<p>考试当天是周六，成绩周一就出了，操作证书编号在周三（3 月 26 日）拿到，效率非常高。有了证书编号，就可以申请执照啦！（当然你还得准备一台设备）</p>
+<h1 id="设备选择"><a href="#设备选择" class="headerlink" title="设备选择"></a>设备选择</h1><p>我选择的是 <strong>森海克斯 8800Pro</strong>。虽然它不如泉盛 UV-K6 那么广为人知，但在圈子里也算是一款中低端的明星产品。</p>
+<p>这款设备是一个老 HAM 推荐给我的，性价比很高。对于刚入坑的朋友来说非常合适，操作简单，性能也不错。</p>
+<h1 id="呼号申请（业余无线电执照）"><a href="#呼号申请（业余无线电执照）" class="headerlink" title="呼号申请（业余无线电执照）"></a>呼号申请（业余无线电执照）</h1><p>申请执照的流程因省而异，但整体上差别不大。以江苏为例：</p>
+<ol>
+<li><p>进入 <strong>江苏政务服务平台</strong></p>
+</li>
+<li><p>搜索 <code>业余无线电台（站）设置、使用许可（个人）</code></p>
+</li>
+<li><p>按照页面提示提交以下资料：</p>
+<ul>
+<li>身份证正反面照片</li>
+<li>设备 SN 码</li>
+<li>验机报告</li>
+<li>申请表（一般网站会提供模板）</li>
+</ul>
+</li>
+</ol>
+<p>提交后大约 7 个工作日左右就能下证，非常高效。</p>
+<h1 id="中继查询"><a href="#中继查询" class="headerlink" title="中继查询"></a>中继查询</h1><p>我使用的是微信小程序 <strong>“业余无线电工具集”</strong>，可以查询你所在城市的中继频率、参数等信息。</p>
+<p>不过要注意，网上的中继信息可能不够及时和准确，建议还是加入本地 HAM 群，直接请教群友，获取一手资料。</p>
+<h1 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h1><p>目前我已经玩了三天无线电了，真的是越玩越上头。后续我准备深入研究 SDR（软件定义无线电）相关内容，尤其是软件方面的玩法。只是硬件设备真的有点贵（笑）。</p>
+<p>如果你能看到这里，那我期待在空中与你相见！</p>
+<p>这里是 <code>BA4SAK</code> —— Bravo Alpha Four Sugar Alpha Kilo，<br>期待与你空中相见，73！</p>
+</body></html>]]></content>
+      <categories>
+        <category>业余无线电</category>
+      </categories>
+      <tags>
+        <tag>业余无线电</tag>
+        <tag>HAM</tag>
+        <tag>考证经历</tag>
+        <tag>无线电设备</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>快速搭建 Zitadel 身份认证服务（IDP）</title>
+    <url>/posts/Zitadel/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>这篇文章是用来辅助 <a href="/posts/netbird-private-network/">《使用 Netbird 轻松组建内网》</a> 的。<br>本来是不打算写的，但在安装配置 Zitadel 的过程中踩了一些坑，所以还是决定写一篇前置文章，帮助大家少走弯路。</p>
+<hr>
+<h2 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h2><ol>
+<li>至少一台服务器（≥ <strong>1C/2G</strong>），推荐使用 <a href="https://s.ning.moe/s/TencentCloud" rel="external nofollow noreferrer">腾讯云轻量</a>。</li>
+<li>已安装 Docker 环境。博主这里使用的是 <strong>1Panel</strong> 面板进行管理。</li>
+</ol>
+<blockquote>
+<p>💡 推荐使用 <a href="https://s.ning.moe/s/TencentCloud" rel="external nofollow noreferrer">腾讯云轻量服务器</a>，香港地区免备案。</p>
+<p>创建时可直接选择预装的 1Panel、宝塔（BT）面板等，常用应用一键开箱即用，十分方便。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th><img src="https://img.ning.moe/ShellBlogImg/1/2025/07/25/68832a9f134f1.webp" alt="腾讯云轻量购买页面.webp"></th>
+<th><img src="https://img.ning.moe/ShellBlogImg/1/2025/07/25/68832ad797a9b.webp" alt="腾讯云重装页面.webp"></th>
+</tr>
+</thead>
+</table>
+<p>tips: 腾讯云的咨询系统也接入了 <strong>DeepSeek 大模型</strong>，常见问题可以直接询问，非常方便哒~ </p>
+<p><img src="https://img.ning.moe/ShellBlogImg/1/2025/07/25/688334041890a.webp" alt="腾讯云-咨询问题.webp"></p>
+<hr>
+<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><h2 id="PostgreSQL-数据库安装"><a href="#PostgreSQL-数据库安装" class="headerlink" title="PostgreSQL 数据库安装"></a>PostgreSQL 数据库安装</h2><p>Zitadel 推荐使用 <strong>PostgreSQL</strong> 作为数据库。<br>我们可以直接在 <strong>1Panel 应用商店</strong>中搜索 “PostgreSQL” 并安装即可。  </p>
+<p>相比“隔壁那条鲸鱼 🐳（MySQL）”，PostgreSQL 更轻量，资源占用也更友好。</p>
+<p><img src="https://img.ning.moe/ShellBlogImg/1/2025/10/09/68e75afe6441d.webp" alt="PostgreSQL-01.webp"></p>
+<p><img src="https://img.ning.moe/ShellBlogImg/1/2025/10/09/68e75b03e9798.webp" alt="PostgreSQL-2.webp"></p>
+<hr>
+<h2 id="Zitadel-安装"><a href="#Zitadel-安装" class="headerlink" title="Zitadel 安装"></a>Zitadel 安装</h2><p>Zitadel 同样已经被 <strong>1Panel 官方适配</strong>，可以直接在应用商店中安装。</p>
+<p>在安装过程中，需要设置一个 <strong>管理密钥</strong>（<code>ZITADEL_MASTERKEY</code>），长度建议为 <strong>32 位随机字符串</strong>。<br>可以使用 <a href="https://1password.com/password-generator" rel="external nofollow noreferrer">1Password Generator</a> 生成。</p>
+<p><img src="https://img.ning.moe/ShellBlogImg/1/2025/10/09/68e75b0c2bc28.webp" alt="Zitadel-1.webp"></p>
+<p><img src="https://img.ning.moe/ShellBlogImg/1/2025/10/09/68e75b1212306.webp" alt="Zitadel-2.webp"></p>
+<hr>
+<h1 id="意外情况与排查"><a href="#意外情况与排查" class="headerlink" title="意外情况与排查"></a>意外情况与排查</h1><p>如果你在配置好反代后访问 Zitadel，发现页面出现如下提示画面，那么问题多半出在反向代理配置上：</p>
+<p><img src="https://img.ning.moe/ShellBlogImg/1/2025/10/09/68e75b17b5cde.webp" alt="Zitadel-3.webp"></p>
+<p>Zitadel 使用 <code>.well-known</code> 路径进行 <strong>OIDC 发现</strong>。<br>如果反向代理配置中拦截了这段路径，页面就会加载失败。</p>
+<p>解决方法：<br>进入反代配置文件，找到如下内容并删除：</p>
+<pre><code class="nginx">^~ /.well-known
+</code></pre>
+</body></html>]]></content>
+      <tags>
+        <tag>Zitadel</tag>
+        <tag>IDP</tag>
+        <tag>1Panel</tag>
+        <tag>PostgreSQL</tag>
       </tags>
   </entry>
   <entry>
@@ -1744,28 +1814,6 @@
         <tag>docker</tag>
         <tag>bitwarden</tag>
         <tag>Vaultwarden</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>clash 使用</title>
-    <url>/posts/clash/</url>
-    <content><![CDATA[<html><head></head><body><p><strong><font color="red">请根据当地网络法律使用,本文章仅供学习使用,不负任何责任!</font></strong><br><strong><font color="red">请根据当地网络法律使用,本文章仅供学习使用,不负任何责任!</font></strong><br><strong><font color="red">请根据当地网络法律使用,本文章仅供学习使用,不负任何责任!</font></strong></p>
-<h1 id="clash-for-windows"><a href="#clash-for-windows" class="headerlink" title="clash for windows :"></a>clash for windows :</h1><p>此项目地址:<a href="https://github.com/Fndroid/clash_for_windows_pkg/releases" rel="external nofollow noreferrer">https://github.com/Fndroid/clash_for_windows_pkg/releases</a></p>
-<p>安装运行是这样的页面:<img src="https://cdn.jsdelivr.net/gh/biliblihuorong/Resources/Image/image-20210514120949169.png" alt="image-20210514120949169"></p>
-<h2 id="导入配置文件"><a href="#导入配置文件" class="headerlink" title="导入配置文件"></a>导入配置文件</h2><p>然后我们到<code>Proflies</code>.</p>
-<p>支持url和本地配置文件直接拖入的两种方式.</p>
-<p>URL导入:<img src="https://cdn.jsdelivr.net/gh/biliblihuorong/Resources/Image/image-20210514122121043.png" alt="image-20210514122121043"></p>
-<p>文件导入:<img src="https://docs.cfw.lbyczf.com/assets/img/quickstart3.b68e5259.gif" alt="img"></p>
-<p>记得回到<code>General</code>把<code>System Proxy</code>和<code>Start with windows</code>打开即可.</p>
-<h1 id="Clash-for-Android"><a href="#Clash-for-Android" class="headerlink" title="Clash for Android :"></a>Clash for Android :</h1><p>项目地址: <a href="https://github.com/Kr328/ClashForAndroid/releases" rel="external nofollow noreferrer">https://github.com/Kr328/ClashForAndroid/releases</a></p>
-<h2 id="导入配置文件-1"><a href="#导入配置文件-1" class="headerlink" title="导入配置文件:"></a>导入配置文件:</h2><p>导入和Windows基本一样,只不过<code>Android</code>app语言是中文了.</p>
-<p><img src="https://cdn.jsdelivr.net/gh/biliblihuorong/Resources/Image/clashAndroid1.png" alt="clashAndroid1"></p>
-</body></html>]]></content>
-      <categories>
-        <category>网络技术</category>
-      </categories>
-      <tags>
-        <tag>clash</tag>
       </tags>
   </entry>
   <entry>
@@ -2009,16 +2057,6 @@
       </tags>
   </entry>
   <entry>
-    <title>世界，您好！</title>
-    <url>/posts/hello-world-2-2/</url>
-    <content><![CDATA[<html><head></head><body><p>欢迎使用WordPress。这是您的第一篇文章。编辑或删除它，然后开始写作吧！</p>
-<p><embed src="//music.163.com/style/swf/widget.swf?sid=5110133&amp;type=2&amp;auto=1&amp;width=320&amp;height=66" width="340" height="86" allownetworking="all"></p>
-</body></html>]]></content>
-      <categories>
-        <category>生活随想</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Hexo Butterfly的SEO优化</title>
     <url>/posts/hexo-butterfly-seo/</url>
     <content><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>以前没有怎么优化过seo、站点地图、rss订阅链接、robots 文件，一个都没有写过，不过今年打算重启博客了，自然这些改加上的东西都需要加一下了。</p>
@@ -2072,70 +2110,24 @@
       </tags>
   </entry>
   <entry>
-    <title>兰空图床使用backblaze作为存储策略</title>
-    <url>/posts/lskypro-backblaze/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h1><p>因为我很久之前就在使用兰空了，当时是直接默认存储扔到本地的，反正也没有啥问题，还很方便，但那台服务器快到期了。所以我就打算迁移，先来说说虽然为什么不用CF的R2存储，原因是我尝试了很多种办法，但这个兰空图床对于我自己而言就是链接不上，很烦人，所以找到了也是S3协议的<code>backblaze</code>作为我后面使用的存储策略。</p>
-<h1 id="为什么要使用-backblaze"><a href="#为什么要使用-backblaze" class="headerlink" title="为什么要使用 backblaze"></a>为什么要使用 backblaze</h1><p>有以下几点</p>
-<ol>
-<li>所有用户无需信用卡都有10gb存储</li>
-<li>从<code>CloudFlare</code>出去的流量每个月免费1TB</li>
-<li>价格十分便宜，你可以去他们的官网了解更多：<a href="https://www.backblaze.com/b2/cloud-storage-pricing.html" rel="external nofollow noreferrer">官网地址价格</a></li>
-</ol>
-<h1 id="开始准备前"><a href="#开始准备前" class="headerlink" title="开始准备前"></a>开始准备前</h1><p>在开始之前你需要知道和准备的东西：</p>
-<ol>
-<li>兰空图床的版本确保是和我在同一个版本在V2.1</li>
-<li>有一个<code>Cloud Flare</code>的账号</li>
-<li>有一个<code>backblaze</code>的账号</li>
-<li>你需要有一个域名（应该看到这一篇博文的人都有吧）</li>
-<li>在后面的内容<code>CloudFlare</code> 将被简写成CF</li>
-<li>在后面的内容<code>backblaze</code>将被简写成B2</li>
-</ol>
-<h1 id="正片开始"><a href="#正片开始" class="headerlink" title="正片开始"></a>正片开始</h1><h2 id="B2创建存储桶"><a href="#B2创建存储桶" class="headerlink" title="B2创建存储桶"></a>B2创建存储桶</h2><p>请访问：<a href="https://secure.backblaze.com/b2_buckets.htm" rel="external nofollow noreferrer">https://secure.backblaze.com/b2_buckets.htm</a> 进入B2创建页面。再此页面往下翻，可以更改语言。</p>
-<p>起一个你的桶的名字，你需要把桶的档案改成<code>公众</code>。</p>
-<p><img src="https://img.ning.moe/ShellBlogImg/1/2023/06/18/648edb4430902.webp"></p>
-<p>很好你现在应该已经创建好桶了并选择<code>上传/下载</code></p>
-<p><img src="https://img.ning.moe/ShellBlogImg/1/2023/06/18/648edbb7f1ea5.webp"></p>
-<p>你需要上传一个文件用作与测试，知道你的桶的地址。</p>
-<p><img src="https://img.ning.moe/ShellBlogImg/1/2023/06/18/648edc77d6fda.webp"></p>
-<p>你需要记得<code>友好地址</code>以及<code>S3</code>地址</p>
-<ul>
-<li>友好地址你需要记住到你的桶名</li>
-<li>S3 地址你只需要记住S3的域名即可。</li>
-</ul>
-<h2 id="CF的配置"><a href="#CF的配置" class="headerlink" title="CF的配置"></a>CF的配置</h2><blockquote>
-<p>B2只允许https，并且需要有效证书的验证，你需要检查以下你的CF上的 SSL/TLS –&gt; 概述调成完全严格</p>
+    <title>换域名了！！</title>
+    <url>/posts/moe/</url>
+    <content><![CDATA[<html><head></head><body><blockquote>
+<p>换域名了正好可以来水一篇文章了。</p>
 </blockquote>
-<p>你现在需要解析一个<code>CNAME</code>的域名,例如img.example.com,解析到友好URL的域名上，如果你解析成功你可以试着访问你的域名并带上桶名/以及文件名进行访问。</p>
-<p>到这里你应该也许已经明白我们需要后面要配置什么了，我们需要使用CF的	规则–&gt;转换规则—&gt;URi 重写。</p>
-<p><img src="https://img.ning.moe/ShellBlogImg/1/2023/06/18/648ede10f0886.webp"></p>
-<p>我这边提供一下表达式，需要把<code>&lt;&gt;</code>的内容替换成你自己的包括<code>&lt;&gt;</code></p>
-<figure class="highlight js"><table><tbody><tr><td class="code"><pre><span class="line">(http.<span class="property">request</span>.<span class="property">uri</span>.<span class="property">path</span> ne <span class="string">"/file/&lt;桶名&gt;"</span> and http.<span class="property">host</span> eq <span class="string">"&lt;你的域名&gt;"</span>)</span><br></pre></td></tr></tbody></table></figure>
-
-<p><img src="https://img.ning.moe/ShellBlogImg/1/2023/06/18/648edeb220412.webp"></p>
-<p>这里提供一些Dynamic的表达式写法</p>
-<figure class="highlight js"><table><tbody><tr><td class="code"><pre><span class="line"><span class="title function_">concat</span>(<span class="string">"/file/&lt;你的桶名&gt;"</span>,http.<span class="property">request</span>.<span class="property">uri</span>.<span class="property">path</span>)</span><br></pre></td></tr></tbody></table></figure>
-
-<p>经过这样一改，你可以现在尝试以下，不加任何东西直接使用域名+上文件名再试试。</p>
-<h2 id="兰空图床更改策略"><a href="#兰空图床更改策略" class="headerlink" title="兰空图床更改策略"></a>兰空图床更改策略</h2><p>你可以参考这一篇官方的 <a href="https://github.com/lsky-org/lsky-pro/discussions/448" rel="external nofollow noreferrer">discussions</a> 进行改写，我就不再重复造轮子了。</p>
-<p>我在这边贴一张我自己配置的图，方便各位佬进行参考。</p>
-<ul>
-<li>存储策略选择Minio</li>
-<li>区域根据S3的URL 域名中就有写。</li>
-</ul>
-<p><img src="https://img.ning.moe/ShellBlogImg/1/2023/06/18/648ee05d47c3b.webp"></p>
-<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p> 兰空Github Discussions：<a href="https://github.com/lsky-org/lsky-pro/discussions/448" rel="external nofollow noreferrer">https://github.com/lsky-org/lsky-pro/discussions/448</a></p>
-<h1 id="致谢"><a href="#致谢" class="headerlink" title="致谢"></a>致谢</h1><p>感谢 <a href="https://yuan.moe/">YanMOE站长</a> 发现本篇文章的错误。（已经修改）</p>
+<p>对于域名对于网站来说，很是重要的一部分了，但是我创建博客的时候，对于域名而言起什么，一直很苦恼，然后就给自己起了一个c-dreamer 的域，但是后来慢慢用下来，域名太长了而且也不方便记忆，就四处寻找这域名。</p>
+<p><code>ning.moe</code> 这个域名其实我想给我的朋友的，他的网名就是 <code>lemon</code> 但他自己也不会建站 ，对建站没有任何想法，所以这个个域名就纳入我的手里吧。</p>
+<h1 id="moe-的意义？"><a href="#moe-的意义？" class="headerlink" title="moe 的意义？"></a>moe 的意义？</h1><p>对于我而言正好可以组成 拼音的 <code>柠檬</code> 对于域名本身？ </p>
+<p>看看wiki？：<a href="https://zh.moegirl.org.cn/.moe" rel="external nofollow noreferrer">https://zh.moegirl.org.cn/.moe</a></p>
+<p>当然悄悄告诉你，貌似有一个虚拟的国度叫做 <code>gov.moe</code></p>
 </body></html>]]></content>
       <categories>
-        <category>网络技术</category>
+        <category>生活随想</category>
       </categories>
       <tags>
-        <tag>2023</tag>
-        <tag>butterfly</tag>
-        <tag>backblaze</tag>
-        <tag>lskypro</tag>
-        <tag>蓝空图床</tag>
-        <tag>兰空图床</tag>
+        <tag>moe</tag>
+        <tag>域名</tag>
+        <tag>柠檬</tag>
       </tags>
   </entry>
   <entry>
@@ -2268,24 +2260,70 @@
       </tags>
   </entry>
   <entry>
-    <title>换域名了！！</title>
-    <url>/posts/moe/</url>
-    <content><![CDATA[<html><head></head><body><blockquote>
-<p>换域名了正好可以来水一篇文章了。</p>
+    <title>兰空图床使用backblaze作为存储策略</title>
+    <url>/posts/lskypro-backblaze/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h1><p>因为我很久之前就在使用兰空了，当时是直接默认存储扔到本地的，反正也没有啥问题，还很方便，但那台服务器快到期了。所以我就打算迁移，先来说说虽然为什么不用CF的R2存储，原因是我尝试了很多种办法，但这个兰空图床对于我自己而言就是链接不上，很烦人，所以找到了也是S3协议的<code>backblaze</code>作为我后面使用的存储策略。</p>
+<h1 id="为什么要使用-backblaze"><a href="#为什么要使用-backblaze" class="headerlink" title="为什么要使用 backblaze"></a>为什么要使用 backblaze</h1><p>有以下几点</p>
+<ol>
+<li>所有用户无需信用卡都有10gb存储</li>
+<li>从<code>CloudFlare</code>出去的流量每个月免费1TB</li>
+<li>价格十分便宜，你可以去他们的官网了解更多：<a href="https://www.backblaze.com/b2/cloud-storage-pricing.html" rel="external nofollow noreferrer">官网地址价格</a></li>
+</ol>
+<h1 id="开始准备前"><a href="#开始准备前" class="headerlink" title="开始准备前"></a>开始准备前</h1><p>在开始之前你需要知道和准备的东西：</p>
+<ol>
+<li>兰空图床的版本确保是和我在同一个版本在V2.1</li>
+<li>有一个<code>Cloud Flare</code>的账号</li>
+<li>有一个<code>backblaze</code>的账号</li>
+<li>你需要有一个域名（应该看到这一篇博文的人都有吧）</li>
+<li>在后面的内容<code>CloudFlare</code> 将被简写成CF</li>
+<li>在后面的内容<code>backblaze</code>将被简写成B2</li>
+</ol>
+<h1 id="正片开始"><a href="#正片开始" class="headerlink" title="正片开始"></a>正片开始</h1><h2 id="B2创建存储桶"><a href="#B2创建存储桶" class="headerlink" title="B2创建存储桶"></a>B2创建存储桶</h2><p>请访问：<a href="https://secure.backblaze.com/b2_buckets.htm" rel="external nofollow noreferrer">https://secure.backblaze.com/b2_buckets.htm</a> 进入B2创建页面。再此页面往下翻，可以更改语言。</p>
+<p>起一个你的桶的名字，你需要把桶的档案改成<code>公众</code>。</p>
+<p><img src="https://img.ning.moe/ShellBlogImg/1/2023/06/18/648edb4430902.webp"></p>
+<p>很好你现在应该已经创建好桶了并选择<code>上传/下载</code></p>
+<p><img src="https://img.ning.moe/ShellBlogImg/1/2023/06/18/648edbb7f1ea5.webp"></p>
+<p>你需要上传一个文件用作与测试，知道你的桶的地址。</p>
+<p><img src="https://img.ning.moe/ShellBlogImg/1/2023/06/18/648edc77d6fda.webp"></p>
+<p>你需要记得<code>友好地址</code>以及<code>S3</code>地址</p>
+<ul>
+<li>友好地址你需要记住到你的桶名</li>
+<li>S3 地址你只需要记住S3的域名即可。</li>
+</ul>
+<h2 id="CF的配置"><a href="#CF的配置" class="headerlink" title="CF的配置"></a>CF的配置</h2><blockquote>
+<p>B2只允许https，并且需要有效证书的验证，你需要检查以下你的CF上的 SSL/TLS –&gt; 概述调成完全严格</p>
 </blockquote>
-<p>对于域名对于网站来说，很是重要的一部分了，但是我创建博客的时候，对于域名而言起什么，一直很苦恼，然后就给自己起了一个c-dreamer 的域，但是后来慢慢用下来，域名太长了而且也不方便记忆，就四处寻找这域名。</p>
-<p><code>ning.moe</code> 这个域名其实我想给我的朋友的，他的网名就是 <code>lemon</code> 但他自己也不会建站 ，对建站没有任何想法，所以这个个域名就纳入我的手里吧。</p>
-<h1 id="moe-的意义？"><a href="#moe-的意义？" class="headerlink" title="moe 的意义？"></a>moe 的意义？</h1><p>对于我而言正好可以组成 拼音的 <code>柠檬</code> 对于域名本身？ </p>
-<p>看看wiki？：<a href="https://zh.moegirl.org.cn/.moe" rel="external nofollow noreferrer">https://zh.moegirl.org.cn/.moe</a></p>
-<p>当然悄悄告诉你，貌似有一个虚拟的国度叫做 <code>gov.moe</code></p>
+<p>你现在需要解析一个<code>CNAME</code>的域名,例如img.example.com,解析到友好URL的域名上，如果你解析成功你可以试着访问你的域名并带上桶名/以及文件名进行访问。</p>
+<p>到这里你应该也许已经明白我们需要后面要配置什么了，我们需要使用CF的	规则–&gt;转换规则—&gt;URi 重写。</p>
+<p><img src="https://img.ning.moe/ShellBlogImg/1/2023/06/18/648ede10f0886.webp"></p>
+<p>我这边提供一下表达式，需要把<code>&lt;&gt;</code>的内容替换成你自己的包括<code>&lt;&gt;</code></p>
+<figure class="highlight js"><table><tbody><tr><td class="code"><pre><span class="line">(http.<span class="property">request</span>.<span class="property">uri</span>.<span class="property">path</span> ne <span class="string">"/file/&lt;桶名&gt;"</span> and http.<span class="property">host</span> eq <span class="string">"&lt;你的域名&gt;"</span>)</span><br></pre></td></tr></tbody></table></figure>
+
+<p><img src="https://img.ning.moe/ShellBlogImg/1/2023/06/18/648edeb220412.webp"></p>
+<p>这里提供一些Dynamic的表达式写法</p>
+<figure class="highlight js"><table><tbody><tr><td class="code"><pre><span class="line"><span class="title function_">concat</span>(<span class="string">"/file/&lt;你的桶名&gt;"</span>,http.<span class="property">request</span>.<span class="property">uri</span>.<span class="property">path</span>)</span><br></pre></td></tr></tbody></table></figure>
+
+<p>经过这样一改，你可以现在尝试以下，不加任何东西直接使用域名+上文件名再试试。</p>
+<h2 id="兰空图床更改策略"><a href="#兰空图床更改策略" class="headerlink" title="兰空图床更改策略"></a>兰空图床更改策略</h2><p>你可以参考这一篇官方的 <a href="https://github.com/lsky-org/lsky-pro/discussions/448" rel="external nofollow noreferrer">discussions</a> 进行改写，我就不再重复造轮子了。</p>
+<p>我在这边贴一张我自己配置的图，方便各位佬进行参考。</p>
+<ul>
+<li>存储策略选择Minio</li>
+<li>区域根据S3的URL 域名中就有写。</li>
+</ul>
+<p><img src="https://img.ning.moe/ShellBlogImg/1/2023/06/18/648ee05d47c3b.webp"></p>
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p> 兰空Github Discussions：<a href="https://github.com/lsky-org/lsky-pro/discussions/448" rel="external nofollow noreferrer">https://github.com/lsky-org/lsky-pro/discussions/448</a></p>
+<h1 id="致谢"><a href="#致谢" class="headerlink" title="致谢"></a>致谢</h1><p>感谢 <a href="https://yuan.moe/">YanMOE站长</a> 发现本篇文章的错误。（已经修改）</p>
 </body></html>]]></content>
       <categories>
-        <category>生活随想</category>
+        <category>网络技术</category>
       </categories>
       <tags>
-        <tag>moe</tag>
-        <tag>域名</tag>
-        <tag>柠檬</tag>
+        <tag>2023</tag>
+        <tag>butterfly</tag>
+        <tag>backblaze</tag>
+        <tag>lskypro</tag>
+        <tag>蓝空图床</tag>
+        <tag>兰空图床</tag>
       </tags>
   </entry>
   <entry>
@@ -2375,6 +2413,53 @@
       </tags>
   </entry>
   <entry>
+    <title>使用QQ机器人来进行通知课程信息</title>
+    <url>/posts/%E4%BD%BF%E7%94%A8QQ%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%9D%A5%E8%BF%9B%E8%A1%8C%E9%80%9A%E7%9F%A5%E8%AF%BE%E7%A8%8B%E4%BF%A1%E6%81%AF/</url>
+    <content><![CDATA[<html><head></head><body><h1 id="使用QQ机器人来进行通知课程信息"><a href="#使用QQ机器人来进行通知课程信息" class="headerlink" title="使用QQ机器人来进行通知课程信息"></a>使用QQ机器人来进行通知课程信息</h1><p><strong>此机器人是使用<a href="https://github.com/mamoe/mirai/" rel="external nofollow noreferrer">mirai</a>框架加上<a href="https://github.com/KonnyakuCamp/SuperCourseTimetableBot" rel="external nofollow noreferrer">SuperCourseTimetableBot</a>课程表插件</strong></p>
+<h2 id="机器人使用"><a href="#机器人使用" class="headerlink" title="机器人使用"></a>机器人使用</h2><ul>
+<li>首先你需要下载超级课程表app,查看你所上的高校是否被超级课程收录</li>
+<li>注册超级课程表的账户,我强烈推荐你使用手机号＋密码的方式登录等会机器人需要这个</li>
+<li>满足第一点开始从教务系统导入.tips:如果教务系统无法打开,可能需要进入学校内网</li>
+<li>添加<strong>1504128036</strong> QQ号码</li>
+<li>发送关键字帮助</li>
+</ul>
+<figure class="highlight txt"><table><tbody><tr><td class="code"><pre><span class="line">欢迎使用 超级课表课程提醒QQ机器人。</span><br><span class="line">它可以在你下一节课上课前提醒你这节课的信息，避免你错过课程。</span><br><span class="line">指令：</span><br><span class="line">  "登录超级课表" - 使用密码登录你的超课表账户</span><br><span class="line">  "查看时间表" - 查看本校的作息时间表</span><br><span class="line">  "修改时间表" - 修改本校的作息时间表</span><br><span class="line">  "同步课程" - 手动从超级课表同步你的课程</span><br><span class="line">  "今(明)日课程" - 查看你今(明)天的所有课程信息</span><br><span class="line">  "周X课程" - 查看你周X的所有课程信息</span><br><span class="line">  "怎么用/帮助" - 显示这条信息</span><br><span class="line">  "修改密码" - 修改记录在机器人数据库中的密码</span><br><span class="line">  "删除用户" - 删除你的记录在机器人数据库中的信息，并停止课程提醒服务。</span><br><span class="line">  "修改提前提醒时间" - 修改上课提前多长时间提醒</span><br><span class="line">  "状态" - 查看超级课表课程提醒QQ机器人的运行情况</span><br><span class="line"></span><br><span class="line">注意：当前处于初代测试阶段。</span><br></pre></td></tr></tbody></table></figure>
+
+<ul>
+<li>会收到一下信息,我们需要发送关键字”登录超级课程表”</li>
+</ul>
+<figure class="highlight txt"><table><tbody><tr><td class="code"><pre><span class="line">请输入超级课表账号</span><br></pre></td></tr></tbody></table></figure>
+
+<ul>
+<li><p>输入完成账户发送</p>
+<figure class="highlight txt"><table><tbody><tr><td class="code"><pre><span class="line">请输入超级课表密码</span><br><span class="line">注意：若用手机验证码登录的超级课表，请先在超级课表app设置账号密码</span><br></pre></td></tr></tbody></table></figure>
+</li>
+<li><p>输入完成密码即将开始导入,此时即可使用</p>
+</li>
+<li><p>导入成功需要修改一下对应的周数才能显示正常,调好之后你可以发送”今天课程”或者”明天课程”查看是否正确.</p>
+</li>
+</ul>
+</body></html>]]></content>
+      <categories>
+        <category>网络技术</category>
+      </categories>
+      <tags>
+        <tag>QQ</tag>
+        <tag>Tencent</tag>
+        <tag>Bot</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>世界，您好！</title>
+    <url>/posts/hello-world-2-2/</url>
+    <content><![CDATA[<html><head></head><body><p>欢迎使用WordPress。这是您的第一篇文章。编辑或删除它，然后开始写作吧！</p>
+<p><embed src="//music.163.com/style/swf/widget.swf?sid=5110133&amp;type=2&amp;auto=1&amp;width=320&amp;height=66" width="340" height="86" allownetworking="all"></p>
+</body></html>]]></content>
+      <categories>
+        <category>生活随想</category>
+      </categories>
+  </entry>
+  <entry>
     <title>TeamSpeak 已经运行一年</title>
     <url>/posts/teamspeak-run-one-year/</url>
     <content><![CDATA[<html><head></head><body><blockquote>
@@ -2392,6 +2477,24 @@
       </categories>
       <tags>
         <tag>TeamSpeak</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于WordPress分类目录404问题</title>
+    <url>/posts/%E5%85%B3%E4%BA%8Ewordpress%E5%88%86%E7%B1%BB%E7%9B%AE%E5%BD%95404%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<html><head></head><body><h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>前两天把博客给玩脱了和，也没有备份，重新搞了之后我其实想隐藏博文中链接地址里面的index.php无意间隐藏了index.php还神奇的把分类目录的404解决了。</p>
+<h2 id="我遇到的问题，本人萌新，如果有什么不对的地方希望大佬手下留情ヾ-≧へ≦-〃"><a href="#我遇到的问题，本人萌新，如果有什么不对的地方希望大佬手下留情ヾ-≧へ≦-〃" class="headerlink" title="我遇到的问题，本人萌新，如果有什么不对的地方希望大佬手下留情ヾ(≧へ≦)〃"></a>我遇到的问题，本人萌新，如果有什么不对的地方希望大佬手下留情ヾ(≧へ≦)〃</h2><p>我的博客的问题是就算使用word press的 月份和名称型类型地址也会报错。 以及我的分类目录404，但是文章标签就可以正常打开，这对于我来说已经非常玄学了。</p>
+<h2 id="开始解决："><a href="#开始解决：" class="headerlink" title="开始解决："></a>开始解决：</h2><p>我是用的nginx。我抄的是nginx修改的代码是这个<a href="https://blog.csdn.net/weixin_41846803/article/details/80488726" rel="external nofollow noreferrer" title="博主写的">博主写的</a></p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">location / {</span><br><span class="line">       if (!-e $request_filename) {</span><br><span class="line">            #一级目录</span><br><span class="line">            rewrite ^/(.*)$ /index.php/$1 last;</span><br><span class="line">        } </span><br><span class="line">    }</span><br></pre></td></tr></tbody></table></figure>
+
+<p>然后进入你的宝塔面板，网站——选择你需要改的网站——设置——更改配置——拆入代码。我插入的是第50行 <img src="http://c-dreamer.top/wp-content/uploads/2020/06/word-press%E7%9A%84404.png"></p>
+</body></html>]]></content>
+      <categories>
+        <category>网络技术</category>
+      </categories>
+      <tags>
+        <tag>WordPress</tag>
+        <tag>Nginx</tag>
       </tags>
   </entry>
   <entry>
@@ -2631,76 +2734,24 @@
         <tag>Authentik</tag>
         <tag>OIDC</tag>
         <tag>Docker</tag>
+        <tag>Zitadel</tag>
         <tag>NetBird</tag>
         <tag>WireGuard</tag>
         <tag>MeshVPN</tag>
-        <tag>Zitadel</tag>
         <tag>Nginx反向代理</tag>
       </tags>
   </entry>
   <entry>
-    <title>使用QQ机器人来进行通知课程信息</title>
-    <url>/posts/%E4%BD%BF%E7%94%A8QQ%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%9D%A5%E8%BF%9B%E8%A1%8C%E9%80%9A%E7%9F%A5%E8%AF%BE%E7%A8%8B%E4%BF%A1%E6%81%AF/</url>
-    <content><![CDATA[<html><head></head><body><h1 id="使用QQ机器人来进行通知课程信息"><a href="#使用QQ机器人来进行通知课程信息" class="headerlink" title="使用QQ机器人来进行通知课程信息"></a>使用QQ机器人来进行通知课程信息</h1><p><strong>此机器人是使用<a href="https://github.com/mamoe/mirai/" rel="external nofollow noreferrer">mirai</a>框架加上<a href="https://github.com/KonnyakuCamp/SuperCourseTimetableBot" rel="external nofollow noreferrer">SuperCourseTimetableBot</a>课程表插件</strong></p>
-<h2 id="机器人使用"><a href="#机器人使用" class="headerlink" title="机器人使用"></a>机器人使用</h2><ul>
-<li>首先你需要下载超级课程表app,查看你所上的高校是否被超级课程收录</li>
-<li>注册超级课程表的账户,我强烈推荐你使用手机号＋密码的方式登录等会机器人需要这个</li>
-<li>满足第一点开始从教务系统导入.tips:如果教务系统无法打开,可能需要进入学校内网</li>
-<li>添加<strong>1504128036</strong> QQ号码</li>
-<li>发送关键字帮助</li>
-</ul>
-<figure class="highlight txt"><table><tbody><tr><td class="code"><pre><span class="line">欢迎使用 超级课表课程提醒QQ机器人。</span><br><span class="line">它可以在你下一节课上课前提醒你这节课的信息，避免你错过课程。</span><br><span class="line">指令：</span><br><span class="line">  "登录超级课表" - 使用密码登录你的超课表账户</span><br><span class="line">  "查看时间表" - 查看本校的作息时间表</span><br><span class="line">  "修改时间表" - 修改本校的作息时间表</span><br><span class="line">  "同步课程" - 手动从超级课表同步你的课程</span><br><span class="line">  "今(明)日课程" - 查看你今(明)天的所有课程信息</span><br><span class="line">  "周X课程" - 查看你周X的所有课程信息</span><br><span class="line">  "怎么用/帮助" - 显示这条信息</span><br><span class="line">  "修改密码" - 修改记录在机器人数据库中的密码</span><br><span class="line">  "删除用户" - 删除你的记录在机器人数据库中的信息，并停止课程提醒服务。</span><br><span class="line">  "修改提前提醒时间" - 修改上课提前多长时间提醒</span><br><span class="line">  "状态" - 查看超级课表课程提醒QQ机器人的运行情况</span><br><span class="line"></span><br><span class="line">注意：当前处于初代测试阶段。</span><br></pre></td></tr></tbody></table></figure>
-
-<ul>
-<li>会收到一下信息,我们需要发送关键字”登录超级课程表”</li>
-</ul>
-<figure class="highlight txt"><table><tbody><tr><td class="code"><pre><span class="line">请输入超级课表账号</span><br></pre></td></tr></tbody></table></figure>
-
-<ul>
-<li><p>输入完成账户发送</p>
-<figure class="highlight txt"><table><tbody><tr><td class="code"><pre><span class="line">请输入超级课表密码</span><br><span class="line">注意：若用手机验证码登录的超级课表，请先在超级课表app设置账号密码</span><br></pre></td></tr></tbody></table></figure>
-</li>
-<li><p>输入完成密码即将开始导入,此时即可使用</p>
-</li>
-<li><p>导入成功需要修改一下对应的周数才能显示正常,调好之后你可以发送”今天课程”或者”明天课程”查看是否正确.</p>
-</li>
-</ul>
+    <title>备案</title>
+    <url>/posts/%E5%A4%87%E6%A1%88/</url>
+    <content><![CDATA[<html><head></head><body><p>历尽千辛万苦终于备案了感谢 工信部的速度，本以为要等20天才可以，没有想到工信部工作效率如此之高仅用2天时间审核完毕，也感谢阿里云初审人员的速度审核。</p>
 </body></html>]]></content>
       <categories>
-        <category>网络技术</category>
+        <category>生活随想</category>
       </categories>
       <tags>
-        <tag>QQ</tag>
-        <tag>Tencent</tag>
-        <tag>Bot</tag>
+        <tag>备案</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>关于WordPress分类目录404问题</title>
-    <url>/posts/%E5%85%B3%E4%BA%8Ewordpress%E5%88%86%E7%B1%BB%E7%9B%AE%E5%BD%95404%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<html><head></head><body><h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>前两天把博客给玩脱了和，也没有备份，重新搞了之后我其实想隐藏博文中链接地址里面的index.php无意间隐藏了index.php还神奇的把分类目录的404解决了。</p>
-<h2 id="我遇到的问题，本人萌新，如果有什么不对的地方希望大佬手下留情ヾ-≧へ≦-〃"><a href="#我遇到的问题，本人萌新，如果有什么不对的地方希望大佬手下留情ヾ-≧へ≦-〃" class="headerlink" title="我遇到的问题，本人萌新，如果有什么不对的地方希望大佬手下留情ヾ(≧へ≦)〃"></a>我遇到的问题，本人萌新，如果有什么不对的地方希望大佬手下留情ヾ(≧へ≦)〃</h2><p>我的博客的问题是就算使用word press的 月份和名称型类型地址也会报错。 以及我的分类目录404，但是文章标签就可以正常打开，这对于我来说已经非常玄学了。</p>
-<h2 id="开始解决："><a href="#开始解决：" class="headerlink" title="开始解决："></a>开始解决：</h2><p>我是用的nginx。我抄的是nginx修改的代码是这个<a href="https://blog.csdn.net/weixin_41846803/article/details/80488726" rel="external nofollow noreferrer" title="博主写的">博主写的</a></p>
-<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">location / {</span><br><span class="line">       if (!-e $request_filename) {</span><br><span class="line">            #一级目录</span><br><span class="line">            rewrite ^/(.*)$ /index.php/$1 last;</span><br><span class="line">        } </span><br><span class="line">    }</span><br></pre></td></tr></tbody></table></figure>
-
-<p>然后进入你的宝塔面板，网站——选择你需要改的网站——设置——更改配置——拆入代码。我插入的是第50行 <img src="http://c-dreamer.top/wp-content/uploads/2020/06/word-press%E7%9A%84404.png"></p>
-</body></html>]]></content>
-      <categories>
-        <category>网络技术</category>
-      </categories>
-      <tags>
-        <tag>WordPress</tag>
-        <tag>Nginx</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>博客数据库损坏，正在维护！</title>
-    <url>/posts/%E5%8D%9A%E5%AE%A2%E6%95%B0%E6%8D%AE%E5%BA%93%E6%8D%9F%E5%9D%8F%EF%BC%8C%E6%AD%A3%E5%9C%A8%E7%BB%B4%E6%8A%A4%EF%BC%81/</url>
-    <content><![CDATA[<html><head></head><body><p>因博主手残把动了数据库而且还没有恢复到最近的备份，本博客访问可能会存在一定问题，在博主紧急抢修下，恢复了部分基础功能，博文图片可能暂时无法加载，我相信很快恢复，我现在先睡觉了都12点了。</p>
-</body></html>]]></content>
-      <categories>
-        <category>网络技术</category>
-      </categories>
   </entry>
   <entry>
     <title>博客转移备案</title>
@@ -2721,40 +2772,13 @@
     <content><![CDATA[<html><head></head><body></body></html>]]></content>
   </entry>
   <entry>
-    <title>备案</title>
-    <url>/posts/%E5%A4%87%E6%A1%88/</url>
-    <content><![CDATA[<html><head></head><body><p>历尽千辛万苦终于备案了感谢 工信部的速度，本以为要等20天才可以，没有想到工信部工作效率如此之高仅用2天时间审核完毕，也感谢阿里云初审人员的速度审核。</p>
-</body></html>]]></content>
-      <categories>
-        <category>生活随想</category>
-      </categories>
-      <tags>
-        <tag>备案</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>搭建镜像网站</title>
-    <url>/posts/%E6%90%AD%E5%BB%BA%E9%95%9C%E5%83%8F%E7%BD%91%E7%AB%99/</url>
-    <content><![CDATA[<html><head></head><body><ol>
-<li><p>不过多介绍知道就好，使用Cloudflare Worker来建造镜像网站。 2. 为什么选择Cloudflare Worker因为他免费而且个人进步够用还能访问全球。 - 开始操练起来！ 1. 你需要首先用一个Cloudflare账号<a href="https://dash.cloudflare.com/sign-up" rel="external nofollow noreferrer">打开注册链接</a><img src="https://c-dreamer.top/wp-content/uploads/2020/01/%E5%AE%9E%E4%BE%8B0-1024x430.png" alt="width=640height">搭建<a href="https://workers.cloudflare.com/" rel="external nofollow noreferrer">Cloudflare Workerd</a> <img src="https://c-dreamer.top/wp-content/uploads/2020/01/2-1024x551.png"><img src="https://c-dreamer.top/wp-content/uploads/2020/01/3-1024x483.png"><img src="https://c-dreamer.top/wp-content/uploads/2020/01/4-1024x453.png"><img src="https://c-dreamer.top/wp-content/uploads/2020/01/4-1024x453.png"><img src="https://c-dreamer.top/wp-content/uploads/2020/01/5-1024x551.png"><img src="https://c-dreamer.top/wp-content/uploads/2020/01/6-1024x458.png"><img src="https://c-dreamer.top/wp-content/uploads/2020/01/7-1024x504.png"><img src="https://c-dreamer.top/wp-content/uploads/2020/01/8-1024x509.png"><img src="https://c-dreamer.top/wp-content/uploads/2020/01/9-1024x559.png"></p>
-<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">// 替换成你想镜像的站点</span><br><span class="line">const upstream = 'www.google.com'</span><br><span class="line">// 如果那个站点有专门的移动适配站点，否则保持和上面一致</span><br><span class="line">const upstream_mobile = 'www.google.com'</span><br><span class="line">// 你希望禁止哪些国家访问</span><br><span class="line">const blocked_region = ['KP', 'SY', 'PK', 'CU']</span><br><span class="line">// 禁止自访问</span><br><span class="line">const blocked_ip_address = ['0.0.0.0', '127.0.0.1']</span><br><span class="line">// 替换成你想镜像的站点</span><br><span class="line">const replace_dict = {</span><br><span class="line">'$upstream': '$custom_domain',</span><br><span class="line">'//google.com': ''</span><br><span class="line">}</span><br><span class="line">//以下内容都不用动</span><br><span class="line">addEventListener('fetch', event =&gt; {</span><br><span class="line">event.respondWith(fetchAndApply(event.request));</span><br><span class="line">})</span><br><span class="line">async function fetchAndApply(request) {</span><br><span class="line">const region = request.headers.get('cf-ipcountry').toUpperCase();</span><br><span class="line">const ip_address = request.headers.get('cf-connecting-ip');</span><br><span class="line">const user_agent = request.headers.get('user-agent');</span><br><span class="line">let response = null;</span><br><span class="line">let url = new URL(request.url);</span><br><span class="line">let url_host = url.host;</span><br><span class="line">if (url.protocol == 'http:') {</span><br><span class="line">url.protocol = 'https:'</span><br><span class="line">response = Response.redirect(url.href);</span><br><span class="line">return response;</span><br><span class="line">}</span><br><span class="line">if (await device_status(user_agent)) {</span><br><span class="line">upstream_domain = upstream</span><br><span class="line">} else {</span><br><span class="line">upstream_domain = upstream_mobile</span><br><span class="line">}</span><br><span class="line">url.host = upstream_domain;</span><br><span class="line">if (blocked_region.includes(region)) {</span><br><span class="line">response = new Response('Access denied: WorkersProxy is not available in your region yet.', {</span><br><span class="line">status: 403</span><br><span class="line">});</span><br><span class="line">} else if(blocked_ip_address.includes(ip_address)){</span><br><span class="line">response = new Response('Access denied: Your IP address is blocked by WorkersProxy.', {</span><br><span class="line">status: 403</span><br><span class="line">});</span><br><span class="line">} else{</span><br><span class="line">let method = request.method;</span><br><span class="line">let request_headers = request.headers;</span><br><span class="line">let new_request_headers = new Headers(request_headers);</span><br><span class="line">new_request_headers.set('Host', upstream_domain);</span><br><span class="line">new_request_headers.set('Referer', url.href);</span><br><span class="line">let original_response = await fetch(url.href, {</span><br><span class="line">method: method,</span><br><span class="line">headers: new_request_headers</span><br><span class="line">})</span><br><span class="line">let original_response_clone = original_response.clone();</span><br><span class="line">let original_text = null;</span><br><span class="line">let response_headers = original_response.headers;</span><br><span class="line">let new_response_headers = new Headers(response_headers);</span><br><span class="line">let status = original_response.status;</span><br><span class="line">new_response_headers.set('access-control-allow-origin', '*');</span><br><span class="line">new_response_headers.set('access-control-allow-credentials', true);</span><br><span class="line">new_response_headers.delete('content-security-policy');</span><br><span class="line">new_response_headers.delete('content-security-policy-report-only');</span><br><span class="line">new_response_headers.delete('clear-site-data');</span><br><span class="line">const content_type = new_response_headers.get('content-type');</span><br><span class="line">if (content_type.includes('text/html') &amp;&amp; content_type.includes('UTF-8')) {</span><br><span class="line">original_text = await replace_response_text(original_response_clone, upstream_domain, url_host);</span><br><span class="line">} else {</span><br><span class="line">original_text = original_response_clone.body</span><br><span class="line">}</span><br><span class="line">response = new Response(original_text, {</span><br><span class="line">status,</span><br><span class="line">headers: new_response_headers</span><br><span class="line">})</span><br><span class="line">}</span><br><span class="line">return response;</span><br><span class="line">}</span><br><span class="line">async function replace_response_text(response, upstream_domain, host_name) {</span><br><span class="line">let text = await response.text()</span><br><span class="line">var i, j;</span><br><span class="line">for (i in replace_dict) {</span><br><span class="line">j = replace_dict[i]</span><br><span class="line">if (i == '$upstream') {</span><br><span class="line">i = upstream_domain</span><br><span class="line">} else if (i == '$custom_domain') {</span><br><span class="line">i = host_name</span><br><span class="line">}</span><br><span class="line">if (j == '$upstream') {</span><br><span class="line">j = upstream_domain</span><br><span class="line">} else if (j == '$custom_domain') {</span><br><span class="line">j = host_name</span><br><span class="line">}</span><br><span class="line">let re = new RegExp(i, 'g')</span><br><span class="line">text = text.replace(re, j);</span><br><span class="line">}</span><br><span class="line">return text;</span><br><span class="line">}</span><br><span class="line">async function device_status (user_agent_info) {</span><br><span class="line">var agents = ["Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod"];</span><br><span class="line">var flag = true;</span><br><span class="line">for (var v = 0; v &lt; agents.length; v++) {</span><br><span class="line">if (user_agent_info.indexOf(agents[v]) &gt; 0) {</span><br><span class="line">flag = false;</span><br><span class="line">break;</span><br><span class="line">}</span><br><span class="line">}</span><br><span class="line">return flag;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure></li>
-</ol>
+    <title>博客数据库损坏，正在维护！</title>
+    <url>/posts/%E5%8D%9A%E5%AE%A2%E6%95%B0%E6%8D%AE%E5%BA%93%E6%8D%9F%E5%9D%8F%EF%BC%8C%E6%AD%A3%E5%9C%A8%E7%BB%B4%E6%8A%A4%EF%BC%81/</url>
+    <content><![CDATA[<html><head></head><body><p>因博主手残把动了数据库而且还没有恢复到最近的备份，本博客访问可能会存在一定问题，在博主紧急抢修下，恢复了部分基础功能，博文图片可能暂时无法加载，我相信很快恢复，我现在先睡觉了都12点了。</p>
 </body></html>]]></content>
       <categories>
         <category>网络技术</category>
       </categories>
-  </entry>
-  <entry>
-    <title>本站建立一周年!</title>
-    <url>/posts/%E6%9C%AC%E7%AB%99%E5%BB%BA%E7%AB%8B%E4%B8%80%E5%91%A8%E5%B9%B4/</url>
-    <content><![CDATA[<html><head></head><body><p>不知不觉当中,blog已经陪我走完一年,而我在这一年当中也没有写过什么东西,觉得浪费了资源.虽然建站容易但是,维护确实相当的麻烦. 大概明年五月份的时候可能本站要从word press迁移至Typecho. 不过至于下一次更新可能要继续等到2021年暑假的时候.</p>
-</body></html>]]></content>
-      <categories>
-        <category>生活随想</category>
-      </categories>
-      <tags>
-        <tag>生活随想</tag>
-      </tags>
   </entry>
   <entry>
     <title>用Java编写一个简易的计算器</title>
@@ -2773,6 +2797,18 @@
       </tags>
   </entry>
   <entry>
+    <title>本站建立一周年!</title>
+    <url>/posts/%E6%9C%AC%E7%AB%99%E5%BB%BA%E7%AB%8B%E4%B8%80%E5%91%A8%E5%B9%B4/</url>
+    <content><![CDATA[<html><head></head><body><p>不知不觉当中,blog已经陪我走完一年,而我在这一年当中也没有写过什么东西,觉得浪费了资源.虽然建站容易但是,维护确实相当的麻烦. 大概明年五月份的时候可能本站要从word press迁移至Typecho. 不过至于下一次更新可能要继续等到2021年暑假的时候.</p>
+</body></html>]]></content>
+      <categories>
+        <category>生活随想</category>
+      </categories>
+      <tags>
+        <tag>生活随想</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>本站正式启动邮箱评论功能</title>
     <url>/posts/%E6%9C%AC%E7%AB%99%E6%AD%A3%E5%BC%8F%E5%90%AF%E5%8A%A8%E9%82%AE%E7%AE%B1%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/</url>
     <content><![CDATA[<html><head></head><body><p>邮箱评论功能欢迎大家测试如有bug,请联系我的QQ，谢谢！</p>
@@ -2784,5 +2820,17 @@
         <tag>Email</tag>
         <tag>SMTP</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>搭建镜像网站</title>
+    <url>/posts/%E6%90%AD%E5%BB%BA%E9%95%9C%E5%83%8F%E7%BD%91%E7%AB%99/</url>
+    <content><![CDATA[<html><head></head><body><ol>
+<li><p>不过多介绍知道就好，使用Cloudflare Worker来建造镜像网站。 2. 为什么选择Cloudflare Worker因为他免费而且个人进步够用还能访问全球。 - 开始操练起来！ 1. 你需要首先用一个Cloudflare账号<a href="https://dash.cloudflare.com/sign-up" rel="external nofollow noreferrer">打开注册链接</a><img src="https://c-dreamer.top/wp-content/uploads/2020/01/%E5%AE%9E%E4%BE%8B0-1024x430.png" alt="width=640height">搭建<a href="https://workers.cloudflare.com/" rel="external nofollow noreferrer">Cloudflare Workerd</a> <img src="https://c-dreamer.top/wp-content/uploads/2020/01/2-1024x551.png"><img src="https://c-dreamer.top/wp-content/uploads/2020/01/3-1024x483.png"><img src="https://c-dreamer.top/wp-content/uploads/2020/01/4-1024x453.png"><img src="https://c-dreamer.top/wp-content/uploads/2020/01/4-1024x453.png"><img src="https://c-dreamer.top/wp-content/uploads/2020/01/5-1024x551.png"><img src="https://c-dreamer.top/wp-content/uploads/2020/01/6-1024x458.png"><img src="https://c-dreamer.top/wp-content/uploads/2020/01/7-1024x504.png"><img src="https://c-dreamer.top/wp-content/uploads/2020/01/8-1024x509.png"><img src="https://c-dreamer.top/wp-content/uploads/2020/01/9-1024x559.png"></p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">// 替换成你想镜像的站点</span><br><span class="line">const upstream = 'www.google.com'</span><br><span class="line">// 如果那个站点有专门的移动适配站点，否则保持和上面一致</span><br><span class="line">const upstream_mobile = 'www.google.com'</span><br><span class="line">// 你希望禁止哪些国家访问</span><br><span class="line">const blocked_region = ['KP', 'SY', 'PK', 'CU']</span><br><span class="line">// 禁止自访问</span><br><span class="line">const blocked_ip_address = ['0.0.0.0', '127.0.0.1']</span><br><span class="line">// 替换成你想镜像的站点</span><br><span class="line">const replace_dict = {</span><br><span class="line">'$upstream': '$custom_domain',</span><br><span class="line">'//google.com': ''</span><br><span class="line">}</span><br><span class="line">//以下内容都不用动</span><br><span class="line">addEventListener('fetch', event =&gt; {</span><br><span class="line">event.respondWith(fetchAndApply(event.request));</span><br><span class="line">})</span><br><span class="line">async function fetchAndApply(request) {</span><br><span class="line">const region = request.headers.get('cf-ipcountry').toUpperCase();</span><br><span class="line">const ip_address = request.headers.get('cf-connecting-ip');</span><br><span class="line">const user_agent = request.headers.get('user-agent');</span><br><span class="line">let response = null;</span><br><span class="line">let url = new URL(request.url);</span><br><span class="line">let url_host = url.host;</span><br><span class="line">if (url.protocol == 'http:') {</span><br><span class="line">url.protocol = 'https:'</span><br><span class="line">response = Response.redirect(url.href);</span><br><span class="line">return response;</span><br><span class="line">}</span><br><span class="line">if (await device_status(user_agent)) {</span><br><span class="line">upstream_domain = upstream</span><br><span class="line">} else {</span><br><span class="line">upstream_domain = upstream_mobile</span><br><span class="line">}</span><br><span class="line">url.host = upstream_domain;</span><br><span class="line">if (blocked_region.includes(region)) {</span><br><span class="line">response = new Response('Access denied: WorkersProxy is not available in your region yet.', {</span><br><span class="line">status: 403</span><br><span class="line">});</span><br><span class="line">} else if(blocked_ip_address.includes(ip_address)){</span><br><span class="line">response = new Response('Access denied: Your IP address is blocked by WorkersProxy.', {</span><br><span class="line">status: 403</span><br><span class="line">});</span><br><span class="line">} else{</span><br><span class="line">let method = request.method;</span><br><span class="line">let request_headers = request.headers;</span><br><span class="line">let new_request_headers = new Headers(request_headers);</span><br><span class="line">new_request_headers.set('Host', upstream_domain);</span><br><span class="line">new_request_headers.set('Referer', url.href);</span><br><span class="line">let original_response = await fetch(url.href, {</span><br><span class="line">method: method,</span><br><span class="line">headers: new_request_headers</span><br><span class="line">})</span><br><span class="line">let original_response_clone = original_response.clone();</span><br><span class="line">let original_text = null;</span><br><span class="line">let response_headers = original_response.headers;</span><br><span class="line">let new_response_headers = new Headers(response_headers);</span><br><span class="line">let status = original_response.status;</span><br><span class="line">new_response_headers.set('access-control-allow-origin', '*');</span><br><span class="line">new_response_headers.set('access-control-allow-credentials', true);</span><br><span class="line">new_response_headers.delete('content-security-policy');</span><br><span class="line">new_response_headers.delete('content-security-policy-report-only');</span><br><span class="line">new_response_headers.delete('clear-site-data');</span><br><span class="line">const content_type = new_response_headers.get('content-type');</span><br><span class="line">if (content_type.includes('text/html') &amp;&amp; content_type.includes('UTF-8')) {</span><br><span class="line">original_text = await replace_response_text(original_response_clone, upstream_domain, url_host);</span><br><span class="line">} else {</span><br><span class="line">original_text = original_response_clone.body</span><br><span class="line">}</span><br><span class="line">response = new Response(original_text, {</span><br><span class="line">status,</span><br><span class="line">headers: new_response_headers</span><br><span class="line">})</span><br><span class="line">}</span><br><span class="line">return response;</span><br><span class="line">}</span><br><span class="line">async function replace_response_text(response, upstream_domain, host_name) {</span><br><span class="line">let text = await response.text()</span><br><span class="line">var i, j;</span><br><span class="line">for (i in replace_dict) {</span><br><span class="line">j = replace_dict[i]</span><br><span class="line">if (i == '$upstream') {</span><br><span class="line">i = upstream_domain</span><br><span class="line">} else if (i == '$custom_domain') {</span><br><span class="line">i = host_name</span><br><span class="line">}</span><br><span class="line">if (j == '$upstream') {</span><br><span class="line">j = upstream_domain</span><br><span class="line">} else if (j == '$custom_domain') {</span><br><span class="line">j = host_name</span><br><span class="line">}</span><br><span class="line">let re = new RegExp(i, 'g')</span><br><span class="line">text = text.replace(re, j);</span><br><span class="line">}</span><br><span class="line">return text;</span><br><span class="line">}</span><br><span class="line">async function device_status (user_agent_info) {</span><br><span class="line">var agents = ["Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod"];</span><br><span class="line">var flag = true;</span><br><span class="line">for (var v = 0; v &lt; agents.length; v++) {</span><br><span class="line">if (user_agent_info.indexOf(agents[v]) &gt; 0) {</span><br><span class="line">flag = false;</span><br><span class="line">break;</span><br><span class="line">}</span><br><span class="line">}</span><br><span class="line">return flag;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure></li>
+</ol>
+</body></html>]]></content>
+      <categories>
+        <category>网络技术</category>
+      </categories>
   </entry>
 </search>
