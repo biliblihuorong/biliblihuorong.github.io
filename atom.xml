@@ -6,7 +6,7 @@
   <link href="https://blog.ning.moe/atom.xml" rel="self"/>
   
   <link href="https://blog.ning.moe/"/>
-  <updated>2025-10-12T09:02:53.658Z</updated>
+  <updated>2025-12-25T10:51:34.178Z</updated>
   <id>https://blog.ning.moe/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2025年总结</title>
+    <link href="https://blog.ning.moe/posts/2025-annual-summary/"/>
+    <id>https://blog.ning.moe/posts/2025-annual-summary/</id>
+    <published>2025-12-24T07:20:46.000Z</published>
+    <updated>2025-12-25T10:51:34.178Z</updated>
+    
+    <content type="html"><![CDATA[<html><head></head><body><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>2025年，是真的让我感觉到目前人生中流失得最快的一年。转眼又到了毕业季——之所以说“又”，是因为我刚从专科考入本科，这两年制的生活转瞬即逝。回望整年，总觉得记忆是从3月份拿到业余无线电呼号后才真正鲜活起来的。 既然到了年终总结的时间，还是按照惯例，先用数据说话。</p><h1 id="博客数据"><a href="#博客数据" class="headerlink" title="博客数据"></a>博客数据</h1><table><thead><tr><th><img src="https://img.ning.moe/ShellBlogImg/1/2025/12/15/693f77b6b9a40.webp" alt="2025-annual-blog-1.webp"></th><th><img src="https://img.ning.moe/ShellBlogImg/1/2025/12/15/693f77bbf0a1d.webp" alt="2025-annual-blog-2.webp"></th></tr></thead></table><p>截至12月14日截稿，本站今年的总访客数为 <strong>10.8k</strong>，与去年相比基本持平。今年依然维持着平均每月一更的频率，虽然其中夹杂了一些软文，但仍希望这些内容能真正帮到有需要的人。</p><h1 id="业余无线电：电波中的新世界"><a href="#业余无线电：电波中的新世界" class="headerlink" title="业余无线电：电波中的新世界"></a>业余无线电：电波中的新世界</h1><p>今年的总结里多了一个全新的板块——业余无线电。3月26日，我成功拿到了操作证和呼号，正式成为了一名“HAM”。 作为一个刚入门的“火腿”，今年我留下了不少痕迹：粗略统计收到非眼球卡 134 张，发出 QSL 卡片 140 张。截至截稿，我在省中继担任了 13 次主控。 有人说在普通圈子里很难遇到无线电爱好者，但在业余无线电的圈子里，你可以遇到来自各行各业的人。每到一个新的城市，我总习惯打开电台进行呼叫。有时应答寥寥，有时热闹非凡，这种感觉就像阿甘手中的巧克力，你永远不知道下一个通联会带来怎样的惊喜。 至今仍记得电波穿透空间、成功完成远距离通联时的那种激动，或是接收卫星 SSTV 图像时的仪式感。那一刻，我仿佛能跨越时空，与当年完成跨大洋通联的马可尼产生共鸣。</p><h1 id="往后人生"><a href="#往后人生" class="headerlink" title="往后人生"></a>往后人生</h1><p>本科生涯即将结束，我再一次站在了人生的十字路口。 很多人问：是继续考研深造，还是考公求稳？ 坦白说，我有点累了。老朋友们可能知道其中的原委，至于考公，目前确实不在我的计划之内。如果一切顺利，我将在明年6月底毕业。目前还没想好要去哪座城市生活和工作。既然那是26年的课题，就让我们在26年的总结里再见分晓吧。</p></body></html>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;2025年，是真的让我感觉到目前人生中流失得最快的一年。转眼又到了毕业季——之所以说“又”</summary>
+      
+    
+    
+    
+    <category term="生活随想" scheme="https://blog.ning.moe/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E6%83%B3/"/>
+    
+    
+    <category term="总结" scheme="https://blog.ning.moe/tags/%E6%80%BB%E7%BB%93/"/>
+    
+    <category term="2024" scheme="https://blog.ning.moe/tags/2024/"/>
+    
+  </entry>
   
   <entry>
     <title>快速搭建 Zitadel 身份认证服务（IDP）</title>
@@ -544,31 +570,6 @@
     <category term="网站统计，UV" scheme="https://blog.ning.moe/tags/%E7%BD%91%E7%AB%99%E7%BB%9F%E8%AE%A1%EF%BC%8CUV/"/>
     
     <category term="Ip" scheme="https://blog.ning.moe/tags/Ip/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>使用Cloud Flare Tunnel和 Acces Application安全的暴露在公网</title>
-    <link href="https://blog.ning.moe/posts/CloudFlare-Tunnel-Application-Access/"/>
-    <id>https://blog.ning.moe/posts/CloudFlare-Tunnel-Application-Access/</id>
-    <published>2024-04-23T01:43:40.000Z</published>
-    <updated>2025-08-17T01:42:18.086Z</updated>
-    
-    <content type="html"><![CDATA[<html><head></head><body><h1 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h1><p>如果搞 Home Lab 始终绕不开的话题是，我们如何将自己的内网服务暴露到公网上，又如何保证我们的安全。<br>现在可以使用我们赛博菩萨 Cloudflare 提供的 Zero Trust 来保护我们的安全。</p><p>演示的dome ： <a href="https://hp.ning.moe/" rel="external nofollow noreferrer">HomePage</a> 和 <a href="https://misakashell.cloudflareaccess.com/" rel="external nofollow noreferrer">Cloud Flare Zero Trust 主页</a></p><h1 id="正文："><a href="#正文：" class="headerlink" title="正文："></a>正文：</h1><h2 id="使用-Tunnel-暴露服务"><a href="#使用-Tunnel-暴露服务" class="headerlink" title="使用 Tunnel 暴露服务"></a>使用 Tunnel 暴露服务</h2><p>我们需要先登录<a href="https://one.dash.cloudflare.com/" rel="external nofollow noreferrer">CF zero trust的管理平台</a>，添加新的隧道点击：<code>Networks/Tunnels</code> 我们需要添加一个隧道让我们本地和 <code>Cloudflare Zero Trust</code>服务器进行连接。简单的配置完隧道名字</p><p><img src="https://img.ning.moe/ShellBlogImg/1/2024/04/22/6626359570249.webp" alt="Cloud-Flare-Zero-Trust-Dash-Tunnels.webp"></p><p>会自动跳转到tunnel 这个页面，没跳转的 Networks/Tunnels/你的隧道/config。我们需要安装一个cloudflared的程序，这个页面已经为我们提供好了常见的系统，如Linux MacOS Windows，复制命令直接在我们终端运行即可。</p><p><img src="https://img.ning.moe/ShellBlogImg/1/2024/04/22/66263669cc5c3.webp" alt="CloudFlared-Download.webp"></p><p>然后 下一步 ，简单配置一下。保存即可。返回菜单会发现刚刚创建的 <code>Tunnel</code> 等待 <code>Status</code> 显示<code>HEALTHY</code> 访问你的 配置好的域名应该就可以访问了。</p><p><img src="https://img.ning.moe/ShellBlogImg/1/2024/04/22/6626371255c1f.webp" alt="Cloud-Flare-Tunnel-Config.webp"></p><h2 id="使用-Access-Applications-认证"><a href="#使用-Access-Applications-认证" class="headerlink" title="使用 Access Applications 认证"></a>使用 Access Applications 认证</h2><p>首先你需要确保你有登录方式 <code>Settings</code> –&gt;<code>Authentication</code>–&gt;<code>Login methods</code> ,如果没有你需要自行创建。</p><p>来到<code> Access</code> –&gt;<code> Applications</code> –&gt; <code> Add an application</code> 选择<code>Self-hosted</code>，填写你刚才的域名，然后下一步。</p><p><img src="https://img.ning.moe/ShellBlogImg/1/2024/04/22/66263cfec6386.webp" alt="CF-Access-Applications.webp"></p><p><code>policy name</code> 可以随便填写 记得 <code>Action</code>是 <code>Allow</code>，这里的Session 是多久在进行登录验证，可以调节时间长一点。</p><p><code>Create additional rules</code> 根据你刚才配置的 <code>Authentication</code> 来填写，我这里是填写CF自带的邮箱验证码进行登录的。</p><p><img src="https://img.ning.moe/ShellBlogImg/1/2024/04/22/66263cff40b37.webp" alt="CF-Add an application.webp"></p><p>配置完毕之后，访问你配置的域名就会出现拦截了，例如我<a href="https://hp.ning.moe/" rel="external nofollow noreferrer">配置好的</a>这我设置了自动跳转所以会到我的<code>SSO.ning.moe</code></p><h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p><a href="https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/" rel="external nofollow noreferrer">Cloudflare Tunnel 配置文档</a></p><p><a href="https://developers.cloudflare.com/cloudflare-one/applications/" rel="external nofollow noreferrer">Applications Access</a></p></body></html>]]></content>
-    
-    
-    <summary type="html">利用 Cloudflare 提供的 Zero Trust 解决方案，将内网服务安全地暴露到公网的方法。通过配置 Tunnel 和 Access Applications，我们可以轻松实现安全连接和认证，确保数据传输和访问的安全性。这一方案简单易用，为 Home Lab 的搭建提供了可靠的安全保障。</summary>
-    
-    
-    
-    <category term="网络技术" scheme="https://blog.ning.moe/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/"/>
-    
-    
-    <category term="2024" scheme="https://blog.ning.moe/tags/2024/"/>
-    
-    <category term="CloudFlare" scheme="https://blog.ning.moe/tags/CloudFlare/"/>
-    
-    <category term="Zero Trust" scheme="https://blog.ning.moe/tags/Zero-Trust/"/>
     
   </entry>
   
