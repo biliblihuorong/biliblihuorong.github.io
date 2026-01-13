@@ -122,13 +122,13 @@
     
     <category term="2025" scheme="https://blog.ning.moe/tags/2025/"/>
     
-    <category term="SSL" scheme="https://blog.ning.moe/tags/SSL/"/>
-    
     <category term="certd" scheme="https://blog.ning.moe/tags/certd/"/>
     
     <category term="1panel" scheme="https://blog.ning.moe/tags/1panel/"/>
     
     <category term="Docker" scheme="https://blog.ning.moe/tags/Docker/"/>
+    
+    <category term="SSL" scheme="https://blog.ning.moe/tags/SSL/"/>
     
     <category term="GTS" scheme="https://blog.ning.moe/tags/GTS/"/>
     
@@ -468,13 +468,13 @@
     
     <category term="Authentik" scheme="https://blog.ning.moe/tags/Authentik/"/>
     
-    <category term="nezha" scheme="https://blog.ning.moe/tags/nezha/"/>
-    
     <category term="SSO" scheme="https://blog.ning.moe/tags/SSO/"/>
     
     <category term="OIDC" scheme="https://blog.ning.moe/tags/OIDC/"/>
     
     <category term="OAuth2" scheme="https://blog.ning.moe/tags/OAuth2/"/>
+    
+    <category term="nezha" scheme="https://blog.ning.moe/tags/nezha/"/>
     
   </entry>
   
@@ -499,13 +499,13 @@
     
     <category term="Authentik" scheme="https://blog.ning.moe/tags/Authentik/"/>
     
+    <category term="Gitea" scheme="https://blog.ning.moe/tags/Gitea/"/>
+    
     <category term="SSO" scheme="https://blog.ning.moe/tags/SSO/"/>
     
     <category term="OIDC" scheme="https://blog.ning.moe/tags/OIDC/"/>
     
     <category term="OAuth2" scheme="https://blog.ning.moe/tags/OAuth2/"/>
-    
-    <category term="Gitea" scheme="https://blog.ning.moe/tags/Gitea/"/>
     
   </entry>
   
