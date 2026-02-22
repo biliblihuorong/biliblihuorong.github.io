@@ -6,5 +6,5 @@ https://blog.ning.moe/posts/Auto-SSL/
 https://blog.ning.moe/posts/17-1/
 https://blog.ning.moe/posts/2023-Annual-Summary/
 https://blog.ning.moe/posts/21-8-3/
+https://blog.ning.moe/posts/Amateur-Radio-QSL-Tracker-power-by-n8n/
 https://blog.ning.moe/posts/Aliyun-Cloud-ESA/
-https://blog.ning.moe/posts/ArchLinux/
